@@ -1,0 +1,47 @@
+{
+  "experiment_name": "suffix_evidence_ablation",
+  "source_data": "data/pilot_2000/twinworld_multi_action_2000.npz",
+  "output_dir": "experiments/suffix_evidence_ablation",
+  "conditions": [
+    "history_only",
+    "shuffled_full",
+    "last_frame",
+    "prefix_1",
+    "prefix_5",
+    "prefix_10",
+    "full_20",
+    "residual_innovation_20"
+  ],
+  "coordinate_transform": "episode_anchor_relative",
+  "shuffle_match": ["split", "factual_action_0", "cf_action", "cf_duration"],
+  "shuffle_seed": 20260907,
+  "effect_model": {
+    "hidden_dim": 48,
+    "action_embedding_dim": 8,
+    "batch_size": 256,
+    "max_epochs": 60,
+    "early_stopping_patience": 10,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "training_seeds": [11, 22, 33, 44, 55]
+  },
+  "residual_model": {
+    "hidden_dim": 128,
+    "batch_size": 512,
+    "max_epochs": 40,
+    "early_stopping_patience": 6,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "seed": 777
+  },
+  "statistics": {
+    "primary_contrast": "shuffled_full_minus_full_20",
+    "primary_endpoint": "effect_FDE_at_20",
+    "bootstrap_resamples": 10000,
+    "confidence_level": 0.95,
+    "minimum_practical_improvement_percent": 5.0,
+    "strong_improvement_percent": 10.0,
+    "secondary_contrasts_are_exploratory": true
+  }
+}
+

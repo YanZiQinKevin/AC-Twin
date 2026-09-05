@@ -1,0 +1,46 @@
+{
+  "experiment_name": "pilot_2000",
+  "env_id": "merge-v0",
+  "collection_seed": 20260904,
+  "n_pairs": 2000,
+  "horizon": 20,
+  "history_len": 10,
+  "t_star_low": 10,
+  "t_star_high": 15,
+  "intervention_durations": [1, 3],
+  "vehicles_count": 25,
+  "observed_vehicles_count": 5,
+  "duration": 100,
+  "simulation_frequency": 15,
+  "policy_frequency": 5,
+  "max_attempt_multiplier": 12,
+  "determinism_checks": 20,
+  "split": {
+    "train": 0.70,
+    "val": 0.15,
+    "test": 0.15,
+    "stratify_by": ["cf_action", "cf_duration"]
+  },
+  "model": {
+    "hidden_dim": 48,
+    "action_embedding_dim": 8,
+    "batch_size": 256,
+    "max_epochs": 60,
+    "early_stopping_patience": 10,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "training_seeds": [11, 22, 33, 44, 55]
+  },
+  "statistics": {
+    "primary_endpoint": "effect_FDE_at_20",
+    "bootstrap_resamples": 10000,
+    "confidence_level": 0.95,
+    "minimum_practical_improvement_percent": 5.0,
+    "strong_improvement_percent": 10.0
+  },
+  "paths": {
+    "data": "data/pilot_2000/twinworld_multi_action_2000.npz",
+    "output_dir": "experiments/pilot_2000"
+  }
+}
+

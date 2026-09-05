@@ -1,0 +1,51 @@
+# Deny research artifacts and generated outputs
+data/
+experiments/
+logs/
+plans/
+docs/
+paper/
+literature/
+legacy/
+GPT_memory/
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Models, arrays, reports, and generated media
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.csv
+*.tiff
+*.tif
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# Local environment and credentials
+.env
+.env.*
+*.key
+*.pem
+credentials*
+secrets*
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
