@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / "code"))
 
 from run_architecture_comparison import (  # noqa: E402
     build_model,
+    contrast_pairs,
     initialize_model,
     validate_config,
 )
@@ -151,3 +152,33 @@ def test_model_initialization_is_reproducible_independent_of_prior_rng_use() -> 
 
     for first_parameter, second_parameter in zip(first.parameters(), second.parameters()):
         torch.testing.assert_close(first_parameter, second_parameter)
+
+
+def test_frozen_roundabout_capacity_config_is_stable_id_only() -> None:
+    config_path = ROOT / "config" / "architecture_capacity_roundabout.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+
+    validate_config(config)
+
+    assert [condition["name"] for condition in config["conditions"]] == [
+        "row_65k",
+        "set_65k",
+        "set_shuffled_65k",
+        "row_83k",
+        "set_83k",
+        "set_shuffled_83k",
+    ]
+    assert config["model"]["training_seeds"] == [11, 22, 33, 44, 55]
+    assert config["model"]["max_epochs"] == 200
+
+
+def test_set_only_contrasts_include_structure_and_negative_control() -> None:
+    config_path = ROOT / "config" / "architecture_capacity_roundabout.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+
+    assert contrast_pairs(config["conditions"]) == [
+        ("row_65k", "set_65k"),
+        ("set_shuffled_65k", "set_65k"),
+        ("row_83k", "set_83k"),
+        ("set_shuffled_83k", "set_83k"),
+    ]

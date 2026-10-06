@@ -1,0 +1,51 @@
+{
+  "experiment_name": "stage3a_plus_qualification",
+  "analysis_status": "stage3a_plus_qualification",
+  "purpose": "stage3a_plus_qualification",
+  "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+  "scene": "merge-v0",
+  "env_id": "merge-v0",
+  "n_pairs": 1000,
+  "actions": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "intervention_durations": [
+    1,
+    3
+  ],
+  "episodes_per_stratum": 100,
+  "stratified_equal_counts": true,
+  "no_posthoc_selection": true,
+  "collection_seed": 20261009,
+  "seed_schedule_size": 15000,
+  "max_attempts": 15000,
+  "horizon": 20,
+  "history_len": 10,
+  "t_star_low": 10,
+  "t_star_high": 15,
+  "vehicles_count": 25,
+  "observed_vehicles_count": 5,
+  "duration": 100,
+  "simulation_frequency": 15,
+  "policy_frequency": 5,
+  "determinism_checks": 20,
+  "action_weights": {
+    "idle_maintain": 0.45,
+    "faster": 0.18,
+    "slower": 0.18,
+    "other": 0.095
+  },
+  "factual_suffix_steps": 10,
+  "checkpoint_every_accepted": 25,
+  "output_dir": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\collection",
+  "data_output": "data\\object_centric_stage\\stage3a_plus_qualification\\object_twinworld_stage3a_plus_qualification.npz",
+  "rejection_ledger": "data\\object_centric_stage\\stage3a_plus_qualification\\rejection_ledger.jsonl",
+  "collection_receipt": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\collection_receipt.json",
+  "historical_data_root": "data",
+  "power_report_sha256": "2549679fe1c2ce3326be14dc0775c836d48ba303147667cdb78e9ac024fb810b",
+  "seed_schedule_sha256": "1b82717155c0bf4acb4144de7a488dcc8b9cf2b35f83511f810d43dfe0e45cd5"
+}

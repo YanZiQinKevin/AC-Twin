@@ -1,0 +1,78 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4B-RISK-CONFIRM-2026-09-15-V0.1",
+  "purpose": "stage4_merge_risk_confirm",
+  "analysis_status": "stage4_merge_risk_confirm",
+  "experiment_name": "stage4b_merge_risk_confirm",
+  "scene": "merge",
+  "env_id": "merge-v0",
+  "run_dir": "experiments/stage4_reliability/stage4b",
+  "output_dir": "experiments/stage4_reliability/stage4b/collection",
+  "data_output": "data/object_centric_stage/stage4_merge_risk_confirm/object_twinworld_stage4_merge_risk_confirm.npz",
+  "rejection_ledger": "data/object_centric_stage/stage4_merge_risk_confirm/rejection_ledger.jsonl",
+  "collection_receipt": "experiments/stage4_reliability/stage4b/collection/collection_receipt.json",
+  "historical_data_root": "data",
+
+  "candidate_ns": [2000, 3000, 4000, 5000],
+  "cf_actions": [0, 1, 2, 3, 4],
+  "intervention_durations": [1, 3],
+
+  "collection_seed": 2026091701,
+  "seed_entropy": 2026091701,
+  "seed_schedule_size": 12000,
+  "max_attempts": 12000,
+  "seed_low": 1,
+  "seed_high_inclusive": 2147483646,
+
+  "power_entropy": 2026091702,
+  "bootstrap_entropy_confirm": 2026091703,
+  "power_bootstrap_resamples": 10000,
+  "power_monte_carlo": 10000,
+  "power_target": 0.8,
+  "power_shrink_main": 0.75,
+  "power_shrink_scenarios": [1.0, 0.75, 0.5],
+
+  "bootstrap_resamples_confirm": 10000,
+  "confidence_level": 0.95,
+
+  "horizon": 20,
+  "history_len": 10,
+  "t_star_low": 10,
+  "t_star_high": 15,
+  "vehicles_count": 25,
+  "observed_vehicles_count": 5,
+  "duration": 100,
+  "simulation_frequency": 15,
+  "policy_frequency": 5,
+  "determinism_checks": 20,
+  "checkpoint_every_accepted": 50,
+  "action_weights": {
+    "idle_maintain": 0.45,
+    "faster": 0.18,
+    "slower": 0.18,
+    "other": 0.095
+  },
+
+  "stage3r_run_dir": "experiments/stage3_routing/stage3r",
+  "stage3b_binding": "experiments/stage3_routing/stage3b/input_binding_receipt.json",
+  "scaler_path": "experiments/stage3_routing/stage3r/scaler.json",
+  "response_predictor_seeds": [101, 202, 303, 404, 505],
+  "expert_router_seeds": [1101, 1202, 1303, 1404, 1505],
+  "primary_constant_w": 0.6,
+
+  "batch_size": 32,
+  "device": "cuda",
+
+  "top_error_threshold": 0.41601440122246675,
+  "coverage_levels": [0.8, 0.9],
+
+  "gate_i_aurc_min": 0.02,
+  "gate_i_c80_min": 0.02,
+  "gate_min_positive_pairs": 4,
+  "gate_strata_i_aurc_floor": -0.1,
+
+  "finalist": "COMBINED_RISK_HEAD",
+  "combined_implementation": "mlp",
+  "primary_predictor": "END_TO_END_MIXTURE",
+  "standard_baseline": "UNCERTAINTY_ONLY",
+  "second_baseline": "GEOMETRY_ONLY"
+}

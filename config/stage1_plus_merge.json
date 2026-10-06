@@ -1,0 +1,24 @@
+{
+  "experiment_name": "stage1_plus_merge_shape_and_power",
+  "analysis_status": "DEVELOPMENT_DIAGNOSTIC_ONLY",
+  "scene": "merge",
+  "source_data": "data/object_centric_stage/merge_2000/object_twinworld_2000.npz",
+  "stage1_config": "config/stage1_evidence_value_merge.json",
+  "stage1_output_dir": "experiments/stage1_evidence_value/merge",
+  "sealed_hash_manifest": "experiments/stage1_evidence_value/stage1_sealed_artifact_hashes_before_protocol_fix.json",
+  "output_dir": "experiments/stage1_evidence_value/stage1_plus_merge",
+  "training_seeds": [11, 22, 33, 44, 55],
+  "conditions": ["no_suffix", "uniform_suffix", "shuffled_suffix"],
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "confidence_level": 0.95,
+    "eta_epsilon_m": 0.0001,
+    "bootstrap_seed": 20260970,
+    "power_seed": 20261070,
+    "power_monte_carlo_replicates": 10000,
+    "candidate_episode_counts": [300, 450, 600, 750, 900, 1200, 1500, 1800, 2400],
+    "minimum_bin_episodes": 30,
+    "drop_high_error_episode_fractions": [0.01, 0.05],
+    "power_effect_multipliers": [1.0, 0.75, 0.5]
+  }
+}

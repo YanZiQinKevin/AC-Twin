@@ -1,0 +1,23 @@
+{
+  "experiment_name": "identity_continuity_roundabout",
+  "scene": "roundabout",
+  "source_data": "data/object_centric_stage/roundabout_2000/object_twinworld_2000.npz",
+  "frozen_test_data": "data/identity_continuity_stage/roundabout_holdout_1000/object_twinworld_holdout_1000.npz",
+  "output_dir": "experiments/identity_continuity_stage/roundabout",
+  "capacity_tiers": ["65k", "83k"],
+  "conditions": [
+    {"name": "stable_temporal", "order_mode": "stable", "encoder_type": "identity_temporal"},
+    {"name": "distance_temporal", "order_mode": "distance", "encoder_type": "identity_temporal"},
+    {"name": "permuted_temporal", "order_mode": "permuted", "encoder_type": "identity_temporal"},
+    {"name": "set_pool", "order_mode": "stable", "encoder_type": "set"}
+  ],
+  "factual_suffix_steps": 10,
+  "permutation_seed": 20260905,
+  "progress_every_epochs": 5,
+  "model": {
+    "action_embedding_dim": 8, "batch_size": 128, "max_epochs": 200,
+    "early_stopping_patience": 25, "learning_rate": 0.001, "weight_decay": 0.0001,
+    "training_seeds": [11, 22, 33, 44, 55]
+  },
+  "statistics": {"bootstrap_resamples": 10000, "confidence_level": 0.95}
+}

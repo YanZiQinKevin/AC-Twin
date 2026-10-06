@@ -104,6 +104,39 @@ class ObjectTemporalEncoder(nn.Module):
         return state[-1]
 
 
+class IdentityTemporalEncoder(nn.Module):
+    """Shared per-object temporal encoding before masked object aggregation."""
+
+    def __init__(self, feature_dim: int, hidden_dim: int) -> None:
+        super().__init__()
+        self.temporal = nn.GRU(feature_dim, hidden_dim, batch_first=True)
+        self.combine = nn.Sequential(
+            nn.Linear(2 * hidden_dim, hidden_dim), nn.ReLU()
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        mask = x[..., 0] > 0
+        batch, steps, objects, features = x.shape
+        sequences = x.permute(0, 2, 1, 3).reshape(batch * objects, steps, features)
+        sequence_mask = mask.permute(0, 2, 1).reshape(batch * objects, steps)
+        sequences = torch.where(
+            sequence_mask.unsqueeze(-1), sequences, torch.zeros_like(sequences)
+        )
+        state = sequences.new_zeros(1, batch * objects, self.temporal.hidden_size)
+        for step in range(steps):
+            _, next_state = self.temporal(sequences[:, step : step + 1], state)
+            state = torch.where(
+                sequence_mask[:, step].view(1, -1, 1), next_state, state
+            )
+        encoded = state[-1].reshape(batch, objects, -1)
+        active = mask.any(dim=1)
+        encoded = encoded * active.unsqueeze(-1)
+        ego = encoded[:, 0]
+        non_ego_mask = active[:, 1:].unsqueeze(-1)
+        non_ego = (encoded[:, 1:] * non_ego_mask).sum(1) / non_ego_mask.sum(1).clamp_min(1)
+        return self.combine(torch.cat([ego, non_ego], dim=-1))
+
+
 class GraphTemporalEncoder(nn.Module):
     """Message passing over stable vehicle identities followed by a temporal GRU."""
 
@@ -161,7 +194,7 @@ class DynamicGraphTemporalEncoder(GraphTemporalEncoder):
 
 
 class PairedObjectEffectGRU(nn.Module):
-    """Counterfactual effect decoder with either set or dynamic-graph object encoding."""
+    """Counterfactual effect decoder with set, identity, or graph object encoding."""
 
     def __init__(self, feature_dim: int, action_dim: int, hidden_dim: int = 48,
                  action_embedding_dim: int = 8, encoder_type: str = "set", radius: float = 60.0,
@@ -169,6 +202,7 @@ class PairedObjectEffectGRU(nn.Module):
         super().__init__()
         encoders = {
             "set": ObjectTemporalEncoder,
+            "identity_temporal": IdentityTemporalEncoder,
             "static_graph": StaticGraphTemporalEncoder,
             "dynamic_graph": DynamicGraphTemporalEncoder,
         }
@@ -177,7 +211,7 @@ class PairedObjectEffectGRU(nn.Module):
                 f"Unknown encoder_type {encoder_type!r}; expected one of {sorted(encoders)}"
             )
         encoder = encoders[encoder_type]
-        kwargs = {} if encoder_type == "set" else {
+        kwargs = {} if encoder_type in {"set", "identity_temporal"} else {
             "radius": radius,
             "position_scale_xy": position_scale_xy,
         }

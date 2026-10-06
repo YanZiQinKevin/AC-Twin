@@ -1,0 +1,41 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+  "stage": "3A-plus",
+  "run_dir": "experiments/stage3_routing/stage3a_plus",
+  "development_source": "data/object_centric_stage/merge_2000/object_twinworld_2000.npz",
+  "replacement_source": "data/object_centric_stage/stage3a_replacement_dev/object_twinworld_stage3a_replacement_dev.npz",
+  "prior_run_dir": "experiments/stage3_routing/stage3a_retrain_v1",
+  "device": "cuda",
+  "final_config": {
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "lambda_cls": 0.1
+  },
+  "training": {
+    "max_epochs": 40,
+    "early_stopping_patience": 6,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "device": "cuda"
+  },
+  "dev_seeds": [101, 202, 303, 404, 505],
+  "stress_seeds": [606, 707, 808, 909, 1010],
+  "n_production_seeds": 5,
+  "dev_bootstrap_resamples": 2000,
+  "dev_bootstrap_seed": 20260929,
+  "gate": {
+    "ece_guard": 0.05,
+    "ece_relative_improvement": 0.20,
+    "min_positive_brier_seeds": 8,
+    "worst_seed_noninferiority_frac": 0.05,
+    "nondegenerate_std_floor": 1e-06
+  },
+  "round1": {
+    "lambda_brier_candidates": [0.05, 0.10, 0.20]
+  },
+  "round2": {
+    "weight_decay": [0.0, 1e-05, 0.0001],
+    "label_smoothing": [0.0, 0.02]
+  },
+  "notes": "Stage 3A Plus development config. Round 0 reuses the frozen h96_r32_l0.1 production checkpoints and trains the five stress seeds with the IDENTICAL training config (no architecture/loss/optimizer/early-stopping change). Calibrators fit on merge_2000 validation only; dev A (split 2) and dev B (replacement) are diagnostics only."
+}

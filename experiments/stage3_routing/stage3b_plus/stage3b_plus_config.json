@@ -1,0 +1,19 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3B-PLUS-2026-09-10-V0.1",
+  "state": "ACTIVE_IMPLEMENTATION",
+  "predictor_seeds": [101, 202, 303, 404, 505],
+  "router_seeds": [1101, 1202, 1303, 1404, 1505],
+  "oracle_screen_seeds": [1101, 1303, 1505],
+  "architectures": ["state_full", "state_two_channel"],
+  "shape_lambdas": [0.0, 0.05],
+  "shape_margin": 0.1,
+  "router_hidden_dim": 64,
+  "max_epochs": 40,
+  "early_stopping_patience": 6,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "device": "cuda",
+  "bootstrap_seed": 20260910,
+  "gate_t_plus_seed_entropy": 20260911,
+  "gate_t_plus_n_candidates": [800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600]
+}

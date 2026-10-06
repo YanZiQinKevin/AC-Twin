@@ -1,0 +1,13 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-15-V0.4",
+  "source_pilot_config": "config/stage2b_intersection_pilot.json",
+  "source_files": {
+    "pilot_data": "data/object_centric_stage/stage2b_intersection_pilot_b/object_twinworld_stage2b_intersection_pilot_b.npz",
+    "pilot_receipt": "data/object_centric_stage/stage2b_intersection_pilot_b/collection_receipt.json",
+    "pilot_manifest": "experiments/stage2b_intersection/pilot_b/collection_manifest.json",
+    "pilot_schedule": "experiments/stage2b_intersection/pilot_b/seed_schedule.npy",
+    "v03_selection": "experiments/stage2b_intersection/profile_selection.json",
+    "v04_plan": "plans/2026-09-15_AC-Twin_Stage2B_Intersection恢复实施计划_v0.4.md"
+  },
+  "profile_selection_json": "experiments/stage2b_intersection/profile_selection_v04.json"
+}

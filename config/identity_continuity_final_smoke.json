@@ -1,0 +1,24 @@
+{
+  "experiment_name": "identity_continuity_final_smoke",
+  "scene": "merge",
+  "smoke_test": true,
+  "source_data": "data/object_centric_stage/merge_2000/object_twinworld_2000.npz",
+  "output_dir": "experiments/identity_continuity_stage/final_smoke",
+  "capacity_tiers": ["65k"],
+  "conditions": [
+    {"name": "stable_temporal", "order_mode": "stable", "encoder_type": "identity_temporal"},
+    {"name": "distance_temporal", "order_mode": "distance", "encoder_type": "identity_temporal"},
+    {"name": "permuted_temporal", "order_mode": "permuted", "encoder_type": "identity_temporal"},
+    {"name": "set_pool", "order_mode": "stable", "encoder_type": "set"}
+  ],
+  "factual_suffix_steps": 10,
+  "permutation_seed": 20260905,
+  "progress_every_epochs": 1,
+  "sample_limits": {"train": 64, "validation": 16, "test": 16},
+  "model": {
+    "action_embedding_dim": 8, "batch_size": 32, "max_epochs": 2,
+    "early_stopping_patience": 2, "learning_rate": 0.001, "weight_decay": 0.0001,
+    "training_seeds": [11]
+  },
+  "statistics": {"bootstrap_resamples": 100, "confidence_level": 0.95}
+}

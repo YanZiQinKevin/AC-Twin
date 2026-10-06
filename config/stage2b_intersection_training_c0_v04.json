@@ -1,0 +1,33 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-15-V0.4",
+  "variant": "C0",
+  "scene": "intersection",
+  "source_data": "data/object_centric_stage/stage2b_intersection_development_v04/object_twinworld_stage2b_intersection_development_v04.npz",
+  "source_receipt": "data/object_centric_stage/stage2b_intersection_development_v04/collection_receipt.json",
+  "output_dir": "experiments/stage2b_intersection/development_v04/qualification_c0",
+  "factual_suffix_steps": 10,
+  "progress_every_epochs": 1,
+  "training_seeds": [11, 22, 33, 44, 55],
+  "architecture": {
+    "object_embedding_dim": 64,
+    "hidden_dim": 64,
+    "action_embedding_dim": 8
+  },
+  "training": {
+    "batch_size": 128,
+    "max_epochs": 200,
+    "early_stopping_patience": 25,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 5.0
+  },
+  "derangement": {
+    "train_base_seed": 2026091401,
+    "validation_seed": 2026091402
+  },
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "confidence_level": 0.95,
+    "bootstrap_seed": 20260915
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3-2026-09-08-V0.2",
+  "stage": "3A",
+  "search_space": {
+    "hidden_dim": [64, 96],
+    "response_feature_dim": [32, 64],
+    "lambda_cls": [0.10, 0.25]
+  },
+  "max_finalist_configs": 2,
+  "n_seed_pairs": 5,
+  "train_episodes": 1400,
+  "max_epochs": 40,
+  "early_stopping_patience": 6,
+  "learning_rate": 0.001,
+  "batch_size": 32,
+  "device": "cuda",
+  "checkpoint_gb_per_run": 0.5,
+  "gatec_id_episodes": 1600,
+  "gatec_unseen_episodes": 800,
+  "notes": "Search space is the v0.2-registered bounded space; do not expand. Single-seed screen -> <=2 finalists -> five seeds. Selection uses validation loss only. device must match the benchmark device (cuda on the RTX 3070 Ti formal device)."
+}

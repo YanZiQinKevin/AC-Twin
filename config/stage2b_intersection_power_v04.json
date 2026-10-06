@@ -1,0 +1,18 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-15-V0.4",
+  "development_data": "data/object_centric_stage/stage2b_intersection_development_v04/object_twinworld_stage2b_intersection_development_v04.npz",
+  "development_receipt": "data/object_centric_stage/stage2b_intersection_development_v04/collection_receipt.json",
+  "qualification_dir": "experiments/stage2b_intersection/development_v04/qualification_c0",
+  "pilot_data": "data/object_centric_stage/stage2b_intersection_pilot_b/object_twinworld_stage2b_intersection_pilot_b.npz",
+  "pilot_receipt": "data/object_centric_stage/stage2b_intersection_pilot_b/collection_receipt.json",
+  "output": "experiments/stage2b_intersection/development_v04/power_report.json",
+  "candidate_episode_counts": [1200, 1800, 2400, 3600],
+  "monte_carlo_replicates": 10000,
+  "confidence_level": 0.95,
+  "effect_shrinkage": 0.75,
+  "numeric_joint_power_target": 0.90,
+  "positive_bin_support_target": 0.95,
+  "min_positive_bin_episodes": 100,
+  "practical_point_screen": 0.05,
+  "power_seed": 2026091601
+}

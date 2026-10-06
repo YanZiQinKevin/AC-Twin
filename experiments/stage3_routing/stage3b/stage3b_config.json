@@ -1,0 +1,17 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3B-2026-09-10-V0.1",
+  "parent_plan_id": "AC-TWIN-RFER-STAGE3-2026-09-08-V0.2",
+  "stage3a_plus_run_dir": "experiments/stage3_routing/stage3a_plus",
+  "development_source": "data/object_centric_stage/merge_2000/object_twinworld_2000.npz",
+  "historical_dev_b": "data/object_centric_stage/stage3a_replacement_dev/object_twinworld_stage3a_replacement_dev.npz",
+  "run_dir": "experiments/stage3_routing/stage3b",
+  "predictor_seeds": [101, 202, 303, 404, 505],
+  "router_seeds": [1101, 1202, 1303, 1404, 1505],
+  "gate_hidden_dim_candidates": [32, 64],
+  "tier1_conditions": ["uniform_suffix", "direct", "dual_router", "oracle_reference"],
+  "device": "cuda",
+  "max_epochs": 40,
+  "early_stopping_patience": 6,
+  "batch_size": 32,
+  "learning_rate": 0.001
+}

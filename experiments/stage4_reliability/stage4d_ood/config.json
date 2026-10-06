@@ -1,0 +1,204 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "stage_namespace": "stage4d_ood",
+  "purpose": "stage4d_merge_ood",
+  "experiment_name": "stage4d_merge_ood",
+  "scene": "merge",
+  "env_id": "merge-v0",
+  "run_dir": "experiments/stage4_reliability/stage4d_ood",
+  "data_root": "data/object_centric_stage/stage4d_merge_ood",
+  "historical_scan_roots": ["data", "experiments"],
+
+  "action_plans": [[0, 1], [0, 3], [1, 1], [1, 3], [2, 1], [2, 3], [3, 1], [3, 3], [4, 1], [4, 3]],
+  "cf_actions": [0, 1, 2, 3, 4],
+  "intervention_durations": [1, 3],
+  "n_actions": 10,
+  "n_branches_per_group": 11,
+  "history_len": 10,
+  "horizon": 20,
+  "factual_suffix_steps": 10,
+  "t_star_low": 10,
+  "t_star_high": 15,
+  "simulation_frequency": 15,
+  "policy_frequency": 5,
+  "duration": 100,
+  "vehicles_count": 25,
+  "observed_vehicles_count": 5,
+  "object_capacity": 5,
+  "n_object_features": 8,
+  "action_weights": {
+    "idle_maintain": 0.45,
+    "faster": 0.18,
+    "slower": 0.18,
+    "other": 0.095
+  },
+
+  "architecture": "SAME_INFORMATION_DIRECT",
+  "model_seeds": [8101, 8202, 8303, 8404, 8505],
+  "n_competitors": 9,
+  "token_dim": 34,
+  "global_dim": 9,
+  "direct_hidden_width": 43,
+  "dropout": 0.1,
+  "expected_trainable_parameters": 15740,
+  "idle_plan_index": 3,
+  "primary_score_definition": "risk_score = sigmoid(logit_high) * 0.01 * expm1(softplus(raw_mu)); ensemble = arithmetic mean of the five model seeds' risk_score",
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "response_predictor_seeds": [101, 202, 303, 404, 505],
+  "expert_router_seeds": [1101, 1202, 1303, 1404, 1505],
+
+  "primary_baseline": "SEED_VOTE_ENTROPY",
+  "standard_baselines": ["MARGIN_ONLY", "SEED_VOTE_ENTROPY", "SEED_MARGIN_STD"],
+  "reference_baselines": ["COMBINED_TOP2_MAX", "CONSTANT_RANDOM"],
+  "baseline_tie_tolerance": 1e-12,
+  "high_regret_threshold": 0.01,
+  "coverage": 0.8,
+  "confidence": 0.95,
+
+  "smoke_seed_entropy": 2026100099,
+  "smoke_schedule_size": 256,
+  "smoke_schedule_raw_sha256": "5414ba4289044a3af39633c335f69a8c8880fb008b03d459640a4ea47d7f6722",
+  "pilot_behavior_seed_entropy": 2026101000,
+  "pilot_geometry_seed_entropy": 2026102001,
+  "pilot_joint_seed_entropy": 2026103002,
+  "pilot_schedule_size": 6000,
+  "pilot_behavior_schedule_raw_sha256": "f3605a836186d478d60d652d434f489b771bb312c69242d28f61552bbae11430",
+  "pilot_geometry_schedule_raw_sha256": "835811b5376aff3b1acef60dfc2411f742d4b1088415536424e8b4e0af1d27b7",
+  "pilot_joint_schedule_raw_sha256": "fe51c90a86c67bd594107def30aa9f4c55c0489b6e9776875c321dc2d5acb0ad",
+  "pilot_accepted_groups": 300,
+  "pilot_max_candidate_seeds": 6000,
+  "d1_candidate_seed_entropy": 2026110994,
+  "d1_candidate_schedule_size": 30000,
+  "d1_candidate_schedule_raw_sha256": "aafbba57ecc19096c66a85e59f2a6d248dac518b7523e3924b370c50bb6a536a",
+  "d1_bootstrap_entropy": 2026110995,
+  "bootstrap_resamples": 10000,
+  "domain_classifier_bootstrap_entropies": {
+    "behavior": 2026104101,
+    "geometry": 2026104102,
+    "joint": 2026104103
+  },
+  "domain_classifier_bootstrap_resamples": 5000,
+  "domain_classifier_confidence": 0.8,
+  "domain_shift_smd_min": 0.5,
+  "domain_classifier_auc_ci_lb_min": 0.7,
+  "action_stream_roots": {
+    "smoke": [2026100099, 0],
+    "pilot_behavior": [2026101000, 1],
+    "pilot_geometry": [2026102001, 2],
+    "pilot_joint": [2026103002, 3],
+    "d1_confirm": [2026110994, 4]
+  },
+
+  "candidate_ns": [1000, 2000, 3000, 4000],
+  "retention_factors": [1.0, 0.75, 0.5, 0.25],
+  "power_selection_retention": 0.5,
+  "power_target": 0.8,
+  "power_monte_carlo": 10000,
+  "power_and_chain": {
+    "i_aurc_min": 0.05,
+    "i_regret80_min": 0.03,
+    "min_positive_seeds": 4
+  },
+
+  "gate_task_ood": {
+    "min_high_regret_frac": 0.15,
+    "regret_eps": 0.01,
+    "min_distinct_oracle": 3,
+    "min_oracle_frac": 0.05,
+    "min_stratum_frac": 0.1,
+    "smd_min": 0.5,
+    "domain_auc_ci_lb_min": 0.7
+  },
+  "gate_ood_risk": {
+    "i_aurc_min": 0.05,
+    "i_regret80_min": 0.03,
+    "min_positive_seed_metrics": 4
+  },
+
+  "ood_profiles": {
+    "profiles": ["BEHAVIOR_OOD", "GEOMETRY_OOD", "JOINT_OOD"],
+    "selection_priority": ["JOINT_OOD", "BEHAVIOR_OOD", "GEOMETRY_OOD"],
+    "behavior": {
+      "n_vehicles": 4,
+      "n_aggressive": 2,
+      "n_cautious": 2,
+      "aggressive": {
+        "DISTANCE_WANTED": 5.0,
+        "TIME_WANTED": 0.8,
+        "COMFORT_ACC_MAX": 4.0,
+        "COMFORT_ACC_MIN": -6.0,
+        "POLITENESS": 0.0,
+        "LANE_CHANGE_MIN_ACC_GAIN": 0.1,
+        "LANE_CHANGE_MAX_BRAKING_IMPOSED": 3.0
+      },
+      "cautious": {
+        "DISTANCE_WANTED": 15.0,
+        "TIME_WANTED": 2.2,
+        "COMFORT_ACC_MAX": 2.0,
+        "COMFORT_ACC_MIN": -3.0,
+        "POLITENESS": 0.5,
+        "LANE_CHANGE_MIN_ACC_GAIN": 0.3,
+        "LANE_CHANGE_MAX_BRAKING_IMPOSED": 1.5
+      },
+      "id_reference": {
+        "DISTANCE_WANTED": 10.0,
+        "TIME_WANTED": 1.5,
+        "COMFORT_ACC_MAX": 3.0,
+        "COMFORT_ACC_MIN": -5.0,
+        "POLITENESS": 0.0,
+        "LANE_CHANGE_MIN_ACC_GAIN": 0.2,
+        "LANE_CHANGE_MAX_BRAKING_IMPOSED": 2.0
+      },
+      "unchanged": {
+        "ACC_MAX": 6.0,
+        "DELTA": 4.0,
+        "LANE_CHANGE_DELAY": 1.0
+      }
+    },
+    "geometry": {
+      "highway_positions_base": [78.0, 58.0, 12.0],
+      "highway_positions_jitter": 8.0,
+      "highway_speeds_base": [27.0, 33.0, 29.0],
+      "highway_speeds_jitter": 2.0,
+      "merging_x_base": 125.0,
+      "merging_x_jitter": 5.0,
+      "merging_speed_base": 17.0,
+      "merging_speed_jitter": 1.0,
+      "merging_target_speed": 30.0
+    }
+  },
+
+  "r2_development_dir": "experiments/stage4_reliability/stage4c_r2/development",
+  "r2_pinned_sources": {
+    "experiments/stage4_reliability/stage4c_r2/development/protocol_lock.json": "c19c5bdce54fe039a10003b4ab78d1fb22040ac740ba950457c4534fc5e8aa71",
+    "experiments/stage4_reliability/stage4c_r2/development/final_selection.json": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+    "experiments/stage4_reliability/stage4c_r2/development/model_inventory.json": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+    "experiments/stage4_reliability/stage4c_r2/development/feature_schema.json": "4d45bb5556502df06630c20ffaea4fcacc5f818bde28854aec8c434ee9d23033",
+    "experiments/stage4_reliability/stage4c_r2/development/feature_scaler.npz": "2f21c11ae248f5883d8e9c4c8fa7efb876ad1afb453ee7eec462509a48104194",
+    "experiments/stage4_reliability/stage4c_r2/development/screen_group_quantities.npz": "d68a2c89d6e6827bd366ade73a37ed7e9050fcc06a444e3d533e66ba6c7ed20b",
+    "experiments/stage4_reliability/stage4c_r2/development/train_collection_receipt.json": "e5e7a098c8cdc4a1fe00ac27576a337b8f01bbd749f9ebc21921cdaad4f5f126",
+    "experiments/stage4_reliability/stage4cr2_confirm/protocol/recovery_lock_r1.json": "24795b601a02d13725c45704c73248a2f560df7caa1f2d4e6adbcb852c3bacd8",
+    "experiments/stage4_reliability/stage4cr2_confirm/reports/stage4cr2_confirmatory_report.json": "46798b2d3dac509091d70971ff2b94a556b6b3795c16882dd35290fc8514fe9b",
+    "experiments/stage4_reliability/stage4cr2_confirm/reports/STAGE4CR2_CONFIRMATORY_DECISION.md": "4455ef156cabefad814b0b0ec60be3c27af663c2d8cedd5c9b47b77be85fc969"
+  },
+
+  "paths": {
+    "protocol_dir": "experiments/stage4_reliability/stage4d_ood/protocol",
+    "protocol_lock": "experiments/stage4_reliability/stage4d_ood/protocol/protocol_lock.json",
+    "source_inventory": "experiments/stage4_reliability/stage4d_ood/protocol/source_inventory.json",
+    "code_inventory": "experiments/stage4_reliability/stage4d_ood/protocol/code_inventory.json",
+    "seed_inventory": "experiments/stage4_reliability/stage4d_ood/protocol/seed_inventory.json",
+    "ood_profile_selection": "experiments/stage4_reliability/stage4d_ood/pilot/ood_profile_selection.json",
+    "power_report": "experiments/stage4_reliability/stage4d_ood/power/power_report.json",
+    "inference_inputs": "experiments/stage4_reliability/stage4d_ood/collection/inference_inputs.npz",
+    "confirmation_truth": "experiments/stage4_reliability/stage4d_ood/collection/confirmation_truth.npz",
+    "collection_receipt": "experiments/stage4_reliability/stage4d_ood/collection/collection_receipt.json",
+    "inference_predictions": "experiments/stage4_reliability/stage4d_ood/inference/predictions.npz",
+    "inference_risk_scores": "experiments/stage4_reliability/stage4d_ood/inference/risk_scores.npz",
+    "determinism_receipt": "experiments/stage4_reliability/stage4d_ood/inference/determinism_receipt.json",
+    "score_freeze_receipt": "experiments/stage4_reliability/stage4d_ood/inference/score_freeze_receipt.json",
+    "confirmation_used_lock": "experiments/stage4_reliability/stage4d_ood/confirmation_used.lock",
+    "confirmatory_report": "experiments/stage4_reliability/stage4d_ood/reports/stage4d_ood_confirmatory_report.json",
+    "confirmatory_decision": "experiments/stage4_reliability/stage4d_ood/reports/STAGE4D_OOD_DECISION.md"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "experiment_name": "identity_holdout_merge_1000",
+  "env_id": "merge-v0",
+  "collection_seed": 20261011,
+  "save_object_centric": true,
+  "n_pairs": 1000,
+  "horizon": 20,
+  "history_len": 10,
+  "t_star_low": 10,
+  "t_star_high": 15,
+  "intervention_durations": [1, 3],
+  "vehicles_count": 25,
+  "observed_vehicles_count": 5,
+  "duration": 100,
+  "simulation_frequency": 15,
+  "policy_frequency": 5,
+  "max_attempt_multiplier": 15,
+  "determinism_checks": 20,
+  "checkpoint_every_accepted": 100,
+  "progress_every_accepted": 20,
+  "split": {
+    "train": 0.70,
+    "val": 0.15,
+    "test": 0.15,
+    "stratify_by": ["cf_action", "cf_duration"]
+  },
+  "paths": {
+    "data": "data/identity_continuity_stage/merge_holdout_1000/object_twinworld_holdout_1000.npz",
+    "output_dir": "experiments/identity_continuity_stage/merge_holdout_collection"
+  }
+}

@@ -1,0 +1,4 @@
+numpy>=1.24
+gymnasium>=0.29
+highway-env>=1.9
+torch>=2.1

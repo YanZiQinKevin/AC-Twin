@@ -1,0 +1,41 @@
+{
+  "experiment_name": "stage3a_replacement_dev",
+  "analysis_status": "stage3a_replacement_development_test",
+  "purpose": "stage3a_replacement_development_test",
+  "plan_id": "AC-TWIN-RFER-STAGE3A-REPAIR-2026-09-09-V0.1",
+  "scene": "merge",
+  "env_id": "merge-v0",
+  "n_pairs": 400,
+  "collection_seed": 20260919,
+  "seed_schedule_size": 6000,
+  "max_attempts": 6000,
+  "horizon": 20,
+  "history_len": 10,
+  "t_star_low": 10,
+  "t_star_high": 15,
+  "intervention_durations": [
+    1,
+    3
+  ],
+  "vehicles_count": 25,
+  "observed_vehicles_count": 5,
+  "duration": 100,
+  "simulation_frequency": 15,
+  "policy_frequency": 5,
+  "determinism_checks": 20,
+  "action_weights": {
+    "idle_maintain": 0.45,
+    "faster": 0.18,
+    "slower": 0.18,
+    "other": 0.095
+  },
+  "factual_suffix_steps": 10,
+  "checkpoint_every_accepted": 25,
+  "output_dir": "experiments\\stage3_routing\\stage3a_retrain_v1\\replacement_dev\\collection",
+  "data_output": "data\\object_centric_stage\\stage3a_replacement_dev\\object_twinworld_stage3a_replacement_dev.npz",
+  "rejection_ledger": "data\\object_centric_stage\\stage3a_replacement_dev\\rejection_ledger.jsonl",
+  "collection_receipt": "experiments\\stage3_routing\\stage3a_retrain_v1\\replacement_dev\\replacement_dev_collection_receipt.json",
+  "historical_data_root": "data",
+  "power_report_sha256": "b7cf53ec734e56c9c0a994396c67ae554bd3c079694fe3627e7ec790c4023b72",
+  "seed_schedule_sha256": "ad282c4d6f6bd5092071335c3481517090c93a248dca507a67c69f3b0de67367"
+}

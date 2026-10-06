@@ -1,0 +1,88 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "purpose": "stage4_merge_risk_dev",
+  "analysis_status": "stage4_merge_risk_dev",
+  "experiment_name": "stage4a_merge_risk_dev",
+  "scene": "merge",
+  "env_id": "merge-v0",
+  "run_dir": "experiments/stage4_reliability/stage4a",
+  "output_dir": "experiments/stage4_reliability/stage4a/collection",
+  "data_output": "data/object_centric_stage/stage4_merge_risk_dev/object_twinworld_stage4_merge_risk_dev.npz",
+  "rejection_ledger": "data/object_centric_stage/stage4_merge_risk_dev/rejection_ledger.jsonl",
+  "collection_receipt": "experiments/stage4_reliability/stage4a/collection/collection_receipt.json",
+  "historical_data_root": "data",
+
+  "n_pairs": 5000,
+  "strata_per_cell": 500,
+  "cf_actions": [0, 1, 2, 3, 4],
+  "intervention_durations": [1, 3],
+  "split_per_stratum": {"risk_train": 300, "risk_validation": 100, "development_screen": 100},
+
+  "seed_entropy": 20260911,
+  "collection_seed": 20260911,
+  "seed_schedule_size": 12000,
+  "max_attempts": 12000,
+  "seed_low": 1,
+  "seed_high_inclusive": 2147483646,
+
+  "horizon": 20,
+  "history_len": 10,
+  "t_star_low": 10,
+  "t_star_high": 15,
+  "vehicles_count": 25,
+  "observed_vehicles_count": 5,
+  "duration": 100,
+  "simulation_frequency": 15,
+  "policy_frequency": 5,
+  "determinism_checks": 20,
+  "checkpoint_every_accepted": 50,
+  "action_weights": {
+    "idle_maintain": 0.45,
+    "faster": 0.18,
+    "slower": 0.18,
+    "other": 0.095
+  },
+
+  "stage3r_run_dir": "experiments/stage3_routing/stage3r",
+  "stage3b_binding": "experiments/stage3_routing/stage3b/input_binding_receipt.json",
+  "scaler_path": "experiments/stage3_routing/stage3r/scaler.json",
+  "response_predictor_seeds": [101, 202, 303, 404, 505],
+  "expert_router_seeds": [1101, 1202, 1303, 1404, 1505],
+  "primary_constant_w": 0.60,
+
+  "batch_size": 32,
+  "device": "cuda",
+
+  "winsor_lower_q": 0.01,
+  "winsor_upper_q": 0.99,
+  "top_error_fraction": 0.20,
+  "coverage_levels": [0.80, 0.90],
+  "learning_curve_sizes": [500, 1000, 2000, 3000],
+  "learning_curve_per_stratum": [50, 100, 200, 300],
+
+  "ridge_alpha": 1.0,
+  "histgb": {
+    "learning_rate": 0.05,
+    "max_iter": 200,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false
+  },
+  "mlp": {
+    "hidden_dim": 32,
+    "dropout": 0.0,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "max_epochs": 100,
+    "patience": 10
+  },
+
+  "bootstrap_resamples_screen": 5000,
+  "bootstrap_entropy_screen": 2026091101,
+  "confidence_level": 0.80,
+  "gate_i_aurc_min": 0.02,
+  "gate_i_c80_min": 0.02,
+  "gate_min_positive_pairs": 4,
+  "reversal_aurc_tolerance": 0.10
+}

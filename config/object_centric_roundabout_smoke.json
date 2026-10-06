@@ -1,0 +1,31 @@
+{
+  "experiment_name": "object_centric_roundabout_smoke",
+  "env_id": "roundabout-v0",
+  "collection_seed": 20261003,
+  "save_object_centric": true,
+  "n_pairs": 40,
+  "horizon": 20,
+  "history_len": 10,
+  "t_star_low": 10,
+  "t_star_high": 15,
+  "intervention_durations": [1, 3],
+  "vehicles_count": 25,
+  "observed_vehicles_count": 5,
+  "duration": 100,
+  "simulation_frequency": 15,
+  "policy_frequency": 5,
+  "max_attempt_multiplier": 100,
+  "determinism_checks": 2,
+  "checkpoint_every_accepted": 10,
+  "progress_every_accepted": 2,
+  "split": {
+    "train": 0.50,
+    "val": 0.25,
+    "test": 0.25,
+    "stratify_by": ["cf_action", "cf_duration"]
+  },
+  "paths": {
+    "data": "data/object_centric_stage/roundabout_smoke/object_twinworld_smoke.npz",
+    "output_dir": "experiments/object_centric_stage/roundabout_smoke_collection"
+  }
+}
