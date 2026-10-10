@@ -16,6 +16,14 @@ def main():
  rows=list(csv.DictReader((ROOT/'release/manifest.csv').open(encoding='utf-8')))
  inventory={r['path']:r for r in rows}
  if len(inventory)!=len(rows):problems.append('duplicate manifest paths')
+ large=json.loads((ROOT/'release/large_data_inventory.json').read_text(encoding='utf-8'))
+ external={r['path']:r for r in rows if r['storage']=='external-download'}
+ if large.get('access_policy')!='CONTACT_AUTHORS_NO_HOSTED_LINK':problems.append('incorrect large-data access policy')
+ if {r['path'] for r in large['files']}!=set(external):problems.append('large-data inventory differs from manifest')
+ for r in large['files']:
+  if 'url' in r or r.get('availability')!='contact_authors':problems.append(r['path']+': hosted link or incorrect access policy')
+  ref=external.get(r['path'],{})
+  if r['sha256']!=ref.get('sha256') or int(r['bytes'])!=int(ref.get('bytes',-1)):problems.append(r['path']+': inventory metadata mismatch')
  total=0
  for i,(name,row) in enumerate(inventory.items(),1):
   p=ROOT/name

@@ -2,7 +2,7 @@
 
 AC-Twin studies retrospective counterfactual traffic prediction in reactive multi-agent simulations. The code covers response-conditioned factual-evidence evaluation, multi-action prediction, decision-regret supervision, and risk-based auditing of a frozen action selector. Earlier ablation and architecture source is retained for implementation traceability.
 
-This repository contains source, tests, run configurations, model weights, simulation datasets below 10 MiB per file, experimental reports, numerical exports and figure/table source data. Larger products are indexed separately for external download; see [data availability](DATA_AVAILABILITY.md). MetaDrive training samples and their prediction caches, raw Waymo TFRecords and converted third-party scenarios are excluded. Manuscripts, research plans and discussion drafts remain outside the release. No open-source licence has been selected yet.
+This repository contains source, tests, run configurations, model weights, simulation datasets below 10 MiB per file, experimental reports, numerical exports and figure/table source data. Larger products are not distributed through GitHub. Please contact the authors for access to the complete experimental data; see [data availability](DATA_AVAILABILITY.md). MetaDrive training samples and their prediction caches, raw Waymo TFRecords and converted third-party scenarios are excluded. Manuscripts, research plans and discussion drafts remain outside the release. No open-source licence has been selected yet.
 
 ## Layout
 
@@ -16,11 +16,11 @@ data/                 Smaller highway-env simulation datasets and collection met
 paper/figures/        Figure scripts, plotted source data and rendered assets
 paper/tables/         Numbered table source data and editable exports
 tests/                Unit, integration and historical-artifact checks
-release/              File checksums, exclusions, size summary and external download index
+release/              File checksums, exclusions, size summary and large-data inventory
 tools/check_release.py  Release boundary, hash, size, syntax and credential checks
 ```
 
-The original relative data and experiment paths are preserved. Files at least 10 MiB are excluded from Git and listed in `release/downloads.json`; restore downloaded files to their recorded paths and verify SHA-256. A listed file with `availability: awaiting_host` does not yet have a published download route. See [reproduction paths](REPRODUCIBILITY.md).
+The original relative data and experiment paths are preserved. Files at least 10 MiB are excluded from Git and listed in `release/large_data_inventory.json`. For the complete experimental data, please contact the authors. The inventory provides paths, sizes and SHA-256 checksums; it does not publish hosted download links. See [reproduction paths](REPRODUCIBILITY.md).
 
 ## Main environment
 
@@ -42,9 +42,9 @@ $env:CUBLAS_WORKSPACE_CONFIG = ':4096:8'
 
 ## Data sources
 
-- **Merge, intersection and roundabout simulation:** generated locally with [Farama highway-env](https://github.com/Farama-Foundation/HighwayEnv), using the collection configurations included here. Smaller generated episode archives are included; larger archives are recorded in the external download index.
+- **Merge, intersection and roundabout simulation:** generated locally with [Farama highway-env](https://github.com/Farama-Foundation/HighwayEnv), using the collection configurations included here. Smaller generated episode archives are included; larger archives are listed in the large-data inventory and may be requested from the authors.
 - **External scenarios:** [Waymo Open Motion Dataset](https://waymo.com/open/data/motion/), scenario release v1.2.0, `training_20s`, converted with [ScenarioNet](https://github.com/metadriverse/scenarionet) and simulated with [MetaDrive](https://github.com/metadriverse/metadrive). Obtain the dataset from the provider and comply with its terms. Raw TFRecords and converted scenario files are not redistributed.
-- **Analysis inputs:** checkpoints, predictions, paired branch outcomes, group metadata, result tables and figure CSVs are generated products. Weights and smaller outputs are included. Large products require separate download; MetaDrive training arrays and train prediction caches are excluded regardless of size.
+- **Analysis inputs:** checkpoints, predictions, paired branch outcomes, group metadata, result tables and figure CSVs are generated products. Weights and smaller outputs are included. Large products require contacting the authors; MetaDrive training arrays and train prediction caches are excluded regardless of size.
 
 The configurations specify expected local input and output paths. External-platform paths must be configured consistently with the corresponding environment checks. Current figure source assets and rendered evaluation illustrations are included. Raw Waymo and converted ScenarioNet databases are not included.
 
@@ -139,9 +139,9 @@ python tools/check_release.py
 python -m pytest tests/test_progress.py tests/test_checkpointing.py tests/test_stage1_model.py tests/test_stage1_statistics.py tests/test_stage4c_objective.py -q
 ```
 
-The release check validates inventory hashes, rejects excluded training data and unregistered files, parses source/JSON and scans text for credential patterns. `.gitignore` remains an explicit allowlist. Files at least 10 MiB are recorded for external download rather than committed. Newly generated products remain ignored until deliberately synchronized.
+The release check validates inventory hashes, rejects excluded training data and unregistered files, parses source/JSON and scans text for credential patterns. `.gitignore` remains an explicit allowlist. Files at least 10 MiB are inventoried for author-mediated access rather than committed. Newly generated products remain ignored until deliberately synchronized.
 
-The full test collection includes platform-specific and historical-artifact checks requiring externally hosted large data, excluded MetaDrive training data, internal documents or separate environments. A passing standalone test subset does not establish full scientific reproduction.
+The full test collection includes platform-specific and historical-artifact checks requiring large data obtained separately, excluded MetaDrive training data, internal documents or separate environments. A passing standalone test subset does not establish full scientific reproduction.
 
 ## Interpretation boundaries
 

@@ -1,6 +1,6 @@
 # Inspecting and reproducing the released results
 
-Start with `release/summary.json` and `release/manifest.csv`. Large-file download locations, when published, are recorded in `release/downloads.json`. Relative paths match the research workspace; verify SHA-256 after restoring external files.
+Start with `release/summary.json` and `release/manifest.csv`. Large-file metadata are recorded in `release/large_data_inventory.json`. Contact the authors for access; no hosted download links are provided. Relative paths match the research workspace; verify SHA-256 after obtaining external files.
 
 ## Evidence-to-artifact map
 
@@ -41,4 +41,4 @@ python tools/sync_release.py --source <research-workspace>
 python tools/check_release.py
 ```
 
-Synchronization is read-only toward the source. Review the inventory and exclusion report before committing. Large products remain outside Git; publication addresses require a real hosting location.
+Synchronization is read-only toward the source. Review the inventory and exclusion report before committing. Large products remain outside Git; access is discussed directly with the authors.

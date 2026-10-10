@@ -3187,7 +3187,7 @@
 !/paper/tables/table_stage5_sota/build_table_stage5_sota.py
 !/parse_failures.py
 !/pytest.ini
-!/release/downloads.json
+!/release/large_data_inventory.json
 !/release/excluded_files.json
 !/release/manifest.csv
 !/release/summary.json

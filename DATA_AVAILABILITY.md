@@ -1,6 +1,6 @@
 # Data and model availability
 
-The release inventory is [release/manifest.csv](release/manifest.csv). It records original relative paths, file sizes, SHA-256 checksums, product categories and storage routes. The inventory distinguishes files supplied in this checkout from larger files requiring external download.
+The release inventory is [release/manifest.csv](release/manifest.csv). It records original relative paths, file sizes, SHA-256 checksums, product categories and storage routes. The inventory distinguishes files supplied in this checkout from larger files accessible by contacting the authors.
 
 ## Included in Git
 
@@ -13,9 +13,9 @@ Historical unsuccessful experiments remain labelled by their own reports. Their 
 
 ## Large generated products
 
-Files at least 10 MiB are omitted from Git. Their original paths, sizes and checksums appear in [release/downloads.json](release/downloads.json). Restore each downloaded file to its recorded relative path.
+Files at least 10 MiB are omitted from Git. Their original paths, sizes and checksums appear in [release/large_data_inventory.json](release/large_data_inventory.json). After obtaining files from the authors, restore them to their recorded relative paths.
 
-A null URL and `availability: awaiting_host` mean that a download location has not yet been supplied. Such a record is an inventory entry, not a claim of online availability. The release summary reports included and externally stored byte counts separately.
+Large data are not distributed on GitHub. Please contact the authors to discuss access to the complete experimental data. Records marked `availability: contact_authors` provide provenance and checksums only; no OneDrive or other hosted download link is supplied. The release summary reports included and externally stored byte counts separately.
 
 ## Third-party sources and training-data exclusion
 

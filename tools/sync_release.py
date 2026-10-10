@@ -99,7 +99,7 @@ def main():
     (release/'excluded_files.json').write_text(json.dumps(excluded,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (release/'source_transformations.json').write_text(json.dumps(transformations,indent=2)+'\n',encoding='utf-8')
     extras=['.gitignore','.gitattributes','README.md','DATA_AVAILABILITY.md','REPRODUCIBILITY.md',
-            'release/manifest.csv','release/excluded_files.json','release/summary.json','release/downloads.json','release/source_transformations.json',
+            'release/manifest.csv','release/excluded_files.json','release/summary.json','release/large_data_inventory.json','release/source_transformations.json',
             'tools/check_release.py','tools/sync_release.py']
     allowed={r['path'] for r in rows if r['storage']=='git'}|set(extras)|{n for n in tracked if n and n.startswith('tools/')}
     # Preserve existing source-only files that are absent from the current source tree.
@@ -108,20 +108,17 @@ def main():
     (ROOT/'.gitignore').write_text('# Approved research release: deny by default. Regenerate with tools/sync_release.py.\n*\n!*/\n'+''.join('!/'+n.replace('[','\\[').replace(']','\\]')+'\n' for n in sorted(allowed)),encoding='utf-8')
     external=[r for r in rows if r['storage']=='external-download']
     (ROOT/'.gitattributes').write_text('# Preserve frozen artifact bytes and checksums on every platform.\n* -text\n# Large data are obtained separately; no LFS payload in this release.\n',encoding='utf-8')
-    # Preserve published addresses during future synchronizations.
-    previous={}
-    if (release/'downloads.json').exists():
-        previous={r['path']:r for r in json.loads((release/'downloads.json').read_text(encoding='utf-8'))['files']}
-    downloads=[]
-    for r in external:
-        old=previous.get(r['path'],{})
-        if old.get('sha256')!=r['sha256']:old={}
-        downloads.append(dict(r,url=old.get('url'),availability=old.get('availability','awaiting_host')))
-    (release/'downloads.json').write_text(json.dumps({'files':downloads},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    # Large data remain with the authors; do not publish hosting addresses.
+    inventory=[dict(r, availability='contact_authors',
+                    access_note='Large data are not distributed through GitHub. Contact the authors to discuss access.')
+               for r in external]
+    (release/'large_data_inventory.json').write_text(json.dumps(
+        {'access_policy':'CONTACT_AUTHORS_NO_HOSTED_LINK','files':inventory},
+        ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     summary={'date':'2026-10-10','files':len(rows),'bytes':sum(r['bytes'] for r in rows),'categories':dict(Counter(r['category'] for r in rows)),
              'external_files':len(external),'external_bytes':sum(r['bytes'] for r in external),'excluded_files':len(excluded),
              'git_product_files':len(rows)-len(external),'git_product_bytes':sum(r['bytes'] for r in rows if r['storage']=='git'),
-             'download_status':'READY' if all(r['url'] for r in downloads) else 'AWAITING_USER_HOSTING_ROUTE',
+             'download_status':'CONTACT_AUTHORS_NO_HOSTED_LINK',
              'excluded_metadrive_training_files':sum(r['reason']=='metadrive_training_data_or_prediction_cache' for r in excluded),
              'largest_file_bytes':max(r['bytes'] for r in rows),'source_read_only':True}
     (release/'summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')
