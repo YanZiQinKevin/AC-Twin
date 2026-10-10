@@ -1,7 +1,11 @@
-# Table 6｜三个范围的独立确认结果
+# Table 6: Independent confirmation in three scopes
 
-[中英文表体与表注](TABLE_6.md)；[可编辑Excel](Table_6_Confirmed_Results.xlsx)；[原始底表](table6_data.xlsx)。
+All numerical values come from frozen confirmation reports for Merge ID, JOINT_OOD and MetaDrive. The three scopes have different comparison baselines and model relationships; do not pool or rank their effects.
 
-每个范围各2,000个完整十动作组；三个范围的任务分布、模型关系和冻结主基线不同，改善比例只在范围内解释，不合并或跨行排名。完整稳健性结果见[补充表S3](../tableS3/README.md)。
+## Files
 
-由原Table II按正文出现顺序改为Table 6。只调整编号、路径和呈现，确认结果保持不变。
+- [table6_data.xlsx](table6_data.xlsx)
+- [TABLE_6.md](TABLE_6.md)
+- [Table_6_Confirmed_Results.xlsx](Table_6_Confirmed_Results.xlsx)
+
+Build scripts organize existing frozen products only. They do not authorize training, inference, bootstrap reruns or re-adjudication. Some historical builders also require the manuscript source, maintained outside this code/data release.

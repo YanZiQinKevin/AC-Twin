@@ -15,10 +15,10 @@
 
 ## Paper boundary (plan section 7)
 
-在所测Merge、回溯事实后缀可用的十动作任务中，直接监督决策风险审计改善了选择性保留组的regret。
+On the evaluated ten-action Merge task with retrospective factual suffixes available, directly supervised decision-risk auditing reduced regret among selectively retained groups.
 
-确认集必须原样报告动作频率；即使总体Gate通过，也不得声称十动作获得均衡证据、每种动作同等可靠或稀有动作已被充分验证。
+Report confirmation action frequencies as observed. Passing the overall gate does not establish balanced evidence across ten actions, equal reliability for every action, or adequate validation of rare actions.
 
-禁止由此声称：复杂DCR结构优势、响应特征的独立因果贡献、仅增加数据导致成功、跨场景/跨平台泛化、线上预测可用、实际碰撞率降低或闭环策略改善。
+These results do not establish an advantage of complex DCR architectures, an independent causal contribution of response features, success attributable solely to more data, cross-scene or cross-platform generalization, online prediction readiness, lower actual collision rates, or improved closed-loop policies.
 
-Trim 稳健性依赖真值，仅为预注册稳健性分析，不是可部署的过滤器。单项 CI 是边际 CI，不宣称所有次分析联合 95% 覆盖。无论确认成败，不改写 Stage 4B 或 R2 已有终态。
+Trimming requires ground truth and is a preregistered robustness analysis, not a deployable filter. Individual CIs are marginal intervals; joint 95% coverage across all secondary analyses is not claimed. Confirmation outcomes do not overwrite the existing Stage 4B or R2 terminal states.

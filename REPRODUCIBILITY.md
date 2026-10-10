@@ -42,3 +42,11 @@ python tools/check_release.py
 ```
 
 Synchronization is read-only toward the source. Review the inventory and exclusion report before committing. Large products remain outside Git; access is discussed directly with the authors.
+
+## English publication documents and frozen originals
+
+Repository Markdown is maintained in English. Internal handoff/status, budget, readiness and engineering-QA documents are omitted; `release/document_cleanup.json` lists those publication exclusions. Result reports, essential protocols and a concise `experiments/README.md` evidence index remain available. README files omit internal production history. `release/document_translations.json` records original-source and publication-copy hashes, including the renamed case-panel note.
+
+Two decision documents are referenced by literal original hashes in historical scientific code. Their byte-identical originals are stored as plain text in `release/frozen_document_originals/`; the displayed Markdown is the English publication copy. In a separate historical reconstruction workspace, copy each original back to its recorded report path before checking the corresponding frozen hashes. Never replace scientific-code constants or protocol hashes with translation hashes. This restoration is for provenance verification and does not authorize repeating consumed confirmation.
+
+Future synchronization preserves registered English documents when their source hashes match, refuses source drift requiring a translation update, and omits removed internal documents. Original research files, model weights, numerical products and scientific code are unchanged by documentation translation.

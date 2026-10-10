@@ -42198,5 +42198,320 @@
     "path": "paper/tables/table7/__pycache__/build_stage5_manuscript_assets.cpython-312.pyc",
     "reason": "cache_or_duplicate_backup",
     "bytes": 14714
+  },
+  {
+    "path": "experiments/identity_continuity_stage/HOLDOUT_COLLECTION.md",
+    "reason": "internal_publication_document",
+    "bytes": 3457
+  },
+  {
+    "path": "experiments/identity_continuity_stage/HOLDOUT_QA_2026-09-06.md",
+    "reason": "internal_publication_document",
+    "bytes": 3604
+  },
+  {
+    "path": "experiments/identity_continuity_stage/RUNBOOK.md",
+    "reason": "internal_publication_document",
+    "bytes": 10147
+  },
+  {
+    "path": "experiments/identity_continuity_stage/final_smoke/QA.md",
+    "reason": "internal_publication_document",
+    "bytes": 2644
+  },
+  {
+    "path": "experiments/identity_continuity_stage/smoke/QA.md",
+    "reason": "internal_publication_document",
+    "bytes": 3007
+  },
+  {
+    "path": "experiments/object_centric_stage/REVIEW_ALIGNMENT_2026-09-05.md",
+    "reason": "internal_publication_document",
+    "bytes": 3652
+  },
+  {
+    "path": "experiments/object_centric_stage/architecture_capacity_merge/QA.md",
+    "reason": "internal_publication_document",
+    "bytes": 3432
+  },
+  {
+    "path": "experiments/object_centric_stage/architecture_capacity_roundabout/QA.md",
+    "reason": "internal_publication_document",
+    "bytes": 2336
+  },
+  {
+    "path": "experiments/paper_revision/m1_supervised_ablation_v02/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 443
+  },
+  {
+    "path": "experiments/pilot_2000/QA.md",
+    "reason": "internal_publication_document",
+    "bytes": 3266
+  },
+  {
+    "path": "experiments/replication_v2/QA.md",
+    "reason": "internal_publication_document",
+    "bytes": 2783
+  },
+  {
+    "path": "experiments/stage1_evidence_value/smoke/QA.md",
+    "reason": "internal_publication_document",
+    "bytes": 2349
+  },
+  {
+    "path": "experiments/stage2_confirmatory/smoke/STAGE2_CONFIRMATORY_DECISION.md",
+    "reason": "internal_publication_document",
+    "bytes": 402
+  },
+  {
+    "path": "experiments/stage2b_intersection/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 3818
+  },
+  {
+    "path": "experiments/stage2b_intersection/HANDOFF_V04.md",
+    "reason": "internal_publication_document",
+    "bytes": 3177
+  },
+  {
+    "path": "experiments/stage3_routing/COMPUTE_BUDGET.md",
+    "reason": "internal_publication_document",
+    "bytes": 4035
+  },
+  {
+    "path": "experiments/stage3_routing/STAGE3A_READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 5830
+  },
+  {
+    "path": "experiments/stage3_routing/STAGE3_IMPLEMENTATION_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 11140
+  },
+  {
+    "path": "experiments/stage3_routing/stage3a_plus/COMPUTE_BUDGET.md",
+    "reason": "internal_publication_document",
+    "bytes": 2865
+  },
+  {
+    "path": "experiments/stage3_routing/stage3a_plus/DEV_READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 3885
+  },
+  {
+    "path": "experiments/stage3_routing/stage3a_plus/QUALIFICATION_READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 3112
+  },
+  {
+    "path": "experiments/stage3_routing/stage3a_plus/STAGE3A_PLUS_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 10759
+  },
+  {
+    "path": "experiments/stage3_routing/stage3a_retrain_v1/RETRAIN_READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 3439
+  },
+  {
+    "path": "experiments/stage3_routing/stage3b/STAGE3B_READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 1581
+  },
+  {
+    "path": "experiments/stage3_routing/stage3b/STAGE3B_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 5258
+  },
+  {
+    "path": "experiments/stage3_routing/stage3b_plus/STAGE3B_PLUS_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 953
+  },
+  {
+    "path": "experiments/stage3_routing/stage3r/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 1782
+  },
+  {
+    "path": "experiments/stage3_routing/stage3r/RSCREEN_READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 1467
+  },
+  {
+    "path": "experiments/stage3_routing/stage3r/STAGE3R_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 2142
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a/DEV_READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 2891
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 1370
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a/STAGE4A_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 1298
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a_v2/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 728
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a_v2/STAGE4A_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 1154
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a_v3/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 725
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a_v3/STAGE4A_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 1844
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a_v4/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 637
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4a_v4/STAGE4A_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 633
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4b/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 651
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4b/READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 736
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4b/STAGE4B_STATUS.md",
+    "reason": "internal_publication_document",
+    "bytes": 235
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4c/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 4885
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4c_plus/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 5546
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4c_r2/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 6516
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4c_r2/READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 2215
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4cr2_confirm/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 2584
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4cr2_confirm/READINESS_CHECKLIST.md",
+    "reason": "internal_publication_document",
+    "bytes": 4342
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4d_d2e/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 13650
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4d_d2f/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 7387
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4d_d2r/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 7867
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4d_external/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 34372
+  },
+  {
+    "path": "experiments/stage4_reliability/stage4d_ood/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 28179
+  },
+  {
+    "path": "experiments/stage5_sota_comparison/HANDOFF_STATE.md",
+    "reason": "internal_publication_document",
+    "bytes": 5922
+  },
+  {
+    "path": "experiments/suffix_evidence_ablation/QA.md",
+    "reason": "internal_publication_document",
+    "bytes": 4425
+  },
+  {
+    "path": "paper/figures/fig2/FIGURE_CONTRACT.md",
+    "reason": "internal_publication_document",
+    "bytes": 4085
+  },
+  {
+    "path": "paper/figures/fig2/QA_NOTES.md",
+    "reason": "internal_publication_document",
+    "bytes": 994
+  },
+  {
+    "path": "paper/figures/fig4/FIGURE_CONTRACT.md",
+    "reason": "internal_publication_document",
+    "bytes": 6106
+  },
+  {
+    "path": "paper/figures/fig5/FIG5_REBUILD_PLAN.md",
+    "reason": "internal_publication_document",
+    "bytes": 3425
+  },
+  {
+    "path": "paper/figures/fig5_2/FIGURE_CONTRACT.md",
+    "reason": "internal_publication_document",
+    "bytes": 2617
+  },
+  {
+    "path": "paper/figures/fig5_2/QA_NOTES.md",
+    "reason": "internal_publication_document",
+    "bytes": 2219
+  },
+  {
+    "path": "paper/figures/fig_suffix_evidence/FIGURE_CONTRACT.md",
+    "reason": "internal_publication_document",
+    "bytes": 1953
+  },
+  {
+    "path": "paper/figures/graphical_abstract/DRAWING_PROMPT.md",
+    "reason": "internal_publication_document",
+    "bytes": 5252
+  },
+  {
+    "path": "paper/figures/graphical_abstract/FIGURE_CONTRACT.md",
+    "reason": "internal_publication_document",
+    "bytes": 3640
   }
 ]

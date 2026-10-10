@@ -1,8 +1,8 @@
-# 补充表 S1：完整相关工作定位矩阵
+# Supplementary Table S1: Complete Related-Work Positioning Matrix
 
-> 2026-10-04：按作者确认从 §2 转存；18 篇外部文献 + This work 的逐项内容不变。主文 Table 1 改为研究线简表。本表不是新的实验比较。
+> 2026-10-04: moved from §2 with author approval; entries for 18 external papers plus This work are unchanged. Main Table 1 summarizes research strands. This is not a new experimental comparison.
 
-**Table S1. 代表性相关工作的任务与信息合同定位。**
+**Table S1. Task and information-contract positioning of representative related work.**
 
 | Work | Target and task | Factual suffix / paired CF truth | Decision-regret use | Reject / defer meaning | Guarantee / evidence boundary |
 | --- | --- | --- | --- | --- | --- |
@@ -26,4 +26,4 @@
 | Nakamura et al. (2025) [@nakamura2025regret] | System-level trajectory-prediction failure mining | Observed deployment interactions for hindsight evaluation; not rerun paired action branches | Canonical/likelihood regret; not learned pre-outcome risk ranking | Offline high-regret scene mining and predictor fine-tuning | Context-normalized hindsight metric and empirical downstream improvements |
 | This work | Response-conditioned factual-evidence value and decision-regret audit | Factual suffix in frozen predictor; paired CF truth for labels/evaluation only | Learned regret ranking for a frozen base selector | Offline decision-group retention at fixed coverage | Three scoped confirmations vs frozen standard baselines; published-method comparison is development-only |
 
-表注：本表比较原论文报告的任务与条件，不把 “Not the evaluated endpoint” 解释为方法不能扩展。理论保证与经验评价分别注明，原条件保证不转移给 AC-Twin。This work 的三项确认只相对各自冻结标准基线；已发表方法比较仍限开发范围，不构成确认性 SOTA 优势。正文另引 decision-focused learning 与 learning-to-defer 作为概念划界锚点，不扩展本表的 18 篇定位矩阵或实验对照。
+Note: compare tasks and conditions reported in the original papers. “Not the evaluated endpoint” does not imply inability to extend a method. Distinguish theoretical guarantees from empirical evaluation; original-condition guarantees do not transfer to AC-Twin. The three decision-risk confirmations compare only their own frozen standard baselines. Published-method comparisons remain development-only, without confirmed SOTA superiority. Decision-focused learning and learning-to-defer provide conceptual boundaries in the text without expanding this 18-paper matrix or the experimental controls.

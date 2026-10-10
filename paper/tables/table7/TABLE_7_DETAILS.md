@@ -1,20 +1,20 @@
-# Stage 5 已发表方法开发比较 — 完整内部审计包（非第二张论文 Comparison 表）
+# Stage 5 Published-Method Development Comparison: Detailed Audit Tables
 
-> 计划：`AC-TWIN-RFER-STAGE5-SOTA-COMPARISON-2026-09-27-V0.3`  
-> **终态：`STAGE5_MERGE_COMPARISON_UNDERPOWERED`（2026-09-28，永久，不得重判）**  
-> 范围：Stage 4C-R2 开发划分 validation（1,500 组）上的 `ADAPTIVE_DEVELOPMENT_ONLY` 诊断。Stage 5 comparison holdout **从未创建**（§6.2 功效终态禁止采集）。本包任何数字都不是确认比较结果。
+> Plan: `AC-TWIN-RFER-STAGE5-SOTA-COMPARISON-2026-09-27-V0.3`
+> **Terminal state: `STAGE5_MERGE_COMPARISON_UNDERPOWERED` (2026-09-28; permanent, no re-adjudication)**
+> Scope: `ADAPTIVE_DEVELOPMENT_ONLY` diagnostics on Stage 4C-R2 validation (1,500 groups). The Stage 5 comparison holdout was **never created**, because the §6.2 power terminal state forbids collection. No numbers here are confirmatory comparisons.
 >
-> **论文表入口：** `TABLE_7.md`。下列 A–E 仅保留完整审计、复现和补充信息，不应拆成多张论文 Comparison 表。
+> Main manuscript table: `TABLE_7.md`. Tables A–E preserve audit, reproduction and supplementary detail, not additional manuscript comparison tables.
 
-## 主张边界（计划 §11）
+## Claim boundaries (plan §11)
 
-- §11.1 的 SOTA 优势句**不可写**：主比较未达到 0.90 联合功效，未生成 holdout，未做裁判。
-- 按 §11.3：保留 Stage 4 与 D2F 已确认结论；不写优于已发表方法；本开发比较按真实结果完整报告，不删除失败结果。
-- 允许写法：完成了系统的文献定位与五项已发表方法的统一合法输入适配，并在开发数据上冻结了唯一 `STRONGEST_PUBLISHED_BASELINE`；正式比较因预注册功效不足而未进行。
+- No §11.1 SOTA-superiority claim: primary comparison failed the 0.90 joint-power criterion; no holdout or adjudication.
+- Under §11.3, Stage 4/D2F confirmations remain valid; superiority over published methods is not established. Report this development comparison fully, including failures.
+- Supported statement: five published methods were adapted under common legal inputs; one `STRONGEST_PUBLISHED_BASELINE` was frozen on development data. Formal comparison was not performed because preregistered power was insufficient.
 
-## Table A：已发表方法适配矩阵（P1–P5，全部 `ELIGIBLE_ADAPTED_VERIFIED`）
+## Table A: Adaptation matrix (P1–P5, all `ELIGIBLE_ADAPTED_VERIFIED`)
 
-| 方法 | 来源 | 家族 | 合法字段 | 训练目标 | 风险输出 | 冻结网格 | 适配偏差 | 中选 | 参数量 |
+| Method | Source | Family | Legal fields | Training objective | Risk output | Frozen grid | Adaptation deviation | Selected | Parameters |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | CCTR_DRIVING_CALIBRATION_ADAPTED | Chengtai Cao et al. 2024 (AAAI 2024 (38(19):20949-20957)) | learned/driving calibrated confidence | J_hat_by_seed, global_features, selected_action, strata metadata | train-truth selected-action regret / consequence error under temperature-rescaled NLL | calibrated selected-action uncertainty sigma(x) (higher = riskier) | [{"depth": 3, "hidden_width": 64}, {"depth": 2, "hidden_width": 96}] | Original CCTR computes temperature from a CNN-over-BEV + GRU post-processing network and does NOT use ensembles; the adaptation uses five-seed frozen prediction disagreement + legal context features as the temperature inputs because AC-Twin's legal bundle carries seed-level consequence predictions, not BEV maps. | grid1 | 11522 |
 | CONFIDNET_TCP_ADAPTED | Charles Corbiere et al. 2019 (NeurIPS 2019 (pp. 2902-2913)) | learned/driving calibrated confidence | J_hat, global_features, selected_action | probability the tempered J_hat softmax assigns to the train-time oracle action | 1 - predicted_TCP (higher = riskier) | [{"temperature": 0.5}, {"temperature": 1.0}, {"temperature": 2.0}] | Inputs are AC-Twin legal decision features instead of image encoder features; classifier confidence (TCP over actions) replaces class TCP. | grid1 | 9665 |
@@ -22,9 +22,9 @@
 | RWR_NN_KNN_REJECT_ADAPTED | Xiaocheng Li et al. 2024 (AISTATS 2024 (PMLR 238:1126-1134)) | joint selective/rejection | tokens, token_mask, global_features, J_hat, selected_action | true selected-action decision regret (train truth only) | kNN-averaged reference residual in representation space (higher = riskier) | [{"k": 16}, {"k": 32}, {"k": 64}] | Reference residuals are in-sample train residuals (validation is reserved for selection/power and cannot serve as the rejector reference); kernel weights reduce to uniform kNN average in the frozen representation. | grid0 | 11201 |
 | SELECTIVENET_REGRET_ADAPTED | Yonatan Geifman et al. 2019 (ICML 2019 (PMLR 97:2151-2159)) | joint selective/rejection | tokens, token_mask, global_features, J_hat, selected_action | true selected-action decision regret (train truth only) | 1 - selection_probability (higher = riskier) | [{"hidden_width": 64}, {"hidden_width": 96}] | Regression of decision regret on legal driving features replaces image/tabular prediction; single-task auxiliary head mirrors the paper's regression variant. | grid1 | 23139 |
 
-## Table B1：validation 主指标（开发范围；AC-Twin、五方法中选配置、三个内部基线）
+## Table B1: Primary validation endpoints (development scope; AC-Twin, selected adaptations, three internal baselines)
 
-| 方法 | AURC_REGRET | REGRET@70 | REGRET@80 | REGRET@90 | REGRET@95 | PR−prevalence | Spearman | per-seed AURC [min,max] |
+| Method | AURC_REGRET | REGRET@70 | REGRET@80 | REGRET@90 | REGRET@95 | PR−prevalence | Spearman | per-seed AURC [min,max] |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AC-Twin Direct (frozen R2 audit) | 0.010970 | 0.013534 | 0.014781 | 0.016172 | 0.017732 | 0.3314 | 0.4301 | [0.010475, 0.011855] |
 | CCTR_DRIVING_CALIBRATION_ADAPTED (selected grid1) | 0.012762 | 0.015793 | 0.017978 | 0.018778 | 0.019828 | 0.1610 | 0.2830 | [0.013394, 0.015139] |
@@ -36,9 +36,9 @@
 | SEED_MARGIN_STD (internal baseline) | 0.021838 | 0.022828 | 0.022366 | 0.022959 | 0.022868 | -0.0064 | 0.0033 | [0.021838, 0.021838] |
 | SEED_VOTE_ENTROPY (internal baseline) | 0.018959 | 0.020078 | 0.020542 | 0.021644 | 0.022256 | 0.0542 | 0.1161 | [0.018959, 0.018959] |
 
-## Table B2：validation 次要面板（开发范围）
+## Table B2: Secondary validation endpoints (development scope)
 
-| 方法 | 尾部严重度@20 | 尾部捕获@20 | oracle gap 闭合@80 | 保留80% regret p95 | 保留80% regret max | trim1% AURC | trim5% AURC |
+| Method | Tail severity@20 | Tail capture@20 | Oracle-gap closure@80 | Retained-80% regret p95 | Retained-80% regret max | trim1% AURC | trim5% AURC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | AC-Twin Direct (frozen R2 audit) | 0.055897 | 0.4444 | 0.3758 | 0.098665 | 0.389067 | 0.009436 | 0.005940 |
 | CCTR_DRIVING_CALIBRATION_ADAPTED (selected grid1) | 0.043110 | 0.3305 | 0.2297 | 0.111214 | 0.389067 | 0.011462 | 0.006783 |
@@ -50,9 +50,9 @@
 | SEED_MARGIN_STD (internal baseline) | 0.025558 | 0.1966 | 0.0292 | 0.151046 | 0.389067 | 0.020053 | 0.013295 |
 | SEED_VOTE_ENTROPY (internal baseline) | 0.032853 | 0.2764 | 0.1125 | 0.139407 | 0.364099 | 0.017121 | 0.009376 |
 
-## Table B3：全部候选（含未中选；机械选择回执）
+## Table B3: All candidates, including unselected configurations (mechanical-selection receipt)
 
-| 方法 | 配置 | AURC_REGRET | REGRET@80 | 参数量 | 单组推理 ms | 中选 |
+| Method | Configuration | AURC_REGRET | REGRET@80 | Parameters | Inference ms/group | Selected |
 | --- | --- | --- | --- | --- | --- | --- |
 | CCTR_DRIVING_CALIBRATION_ADAPTED | grid0 | 0.012855 | 0.017250 | 9794 | 0.0133 | no |
 | CCTR_DRIVING_CALIBRATION_ADAPTED | grid1 | 0.012762 | 0.017978 | 11522 | 0.0132 | **YES** |
@@ -67,18 +67,18 @@
 | SELECTIVENET_REGRET_ADAPTED | grid0 | 0.022952 | 0.021331 | 11331 | 0.0273 | no |
 | SELECTIVENET_REGRET_ADAPTED | grid1 | 0.022915 | 0.021438 | 23139 | 0.0268 | **YES** |
 
-## Table C：AC-Twin vs 冻结最强已发表基线（`CCTR_DRIVING_CALIBRATION_ADAPTED`，validation 配对 bootstrap，开发范围）
+## Table C: AC-Twin vs frozen strongest published baseline (`CCTR_DRIVING_CALIBRATION_ADAPTED`; validation paired bootstrap; development scope)
 
-| 量 | 点估计 | 95% CI 下界 | 95% CI 上界 |
+| Quantity | Point estimate | 95% CI lower | 95% CI upper |
 | --- | --- | --- | --- |
 | I_AURC_REGRET | 0.1404 | -0.0097 | 0.2710 |
 | I_REGRET@80 | 0.1778 | 0.0807 | 0.2789 |
 
-实质效应（75% 收缩）：I_AURC 0.1404 → 0.1053 ≥ 0.05 ✓；I_REGRET80 0.1778 → 0.1334 ≥ 0.03 ✓ → **material**，进入功效网格。
+Materiality at 75% effect shrinkage: I_AURC 0.1404 → 0.1053 ≥ 0.05 ✓; I_REGRET80 0.1778 → 0.1334 ≥ 0.03 ✓ → **material**, proceeding to the power grid.
 
-逐 seed 与四分层点估计（开发范围，描述性）：
+Per-seed and four-stratum point estimates (descriptive development evidence):
 
-| 量 | 点估计 |
+| Quantity | Point estimate |
 | --- | --- |
 | seed0 I_AURC / I_REGRET@80 | 0.1340 / 0.1739 |
 | seed1 I_AURC / I_REGRET@80 | 0.2804 / 0.2201 |
@@ -90,20 +90,20 @@
 | interaction_low_i_aurc | 0.0455 |
 | interaction_high_i_aurc | 0.2204 |
 
-## Table D：联合功效与终态（计划 §6.2；候选 n 冻结于功效运行前）
+## Table D: Joint power and terminal state (plan §6.2; candidate n frozen before power analysis)
 
-| n | ρ=1.00 联合功效 | ρ=0.75 联合功效（裁判情景） | ρ=0.50 联合功效 | 绑定条件 | 绑定功效@0.75 |
+| n | ρ=1.00 joint power | ρ=0.75 joint power (adjudication scenario) | ρ=0.50 joint power | Binding condition | Binding power@0.75 |
 | --- | --- | --- | --- | --- | --- |
 | 2000 | 0.6111 | 0.3778 | 0.1571 | r1_i_aurc | 0.4000 |
 | 3000 | 0.7889 | 0.5472 | 0.2486 | r1_i_aurc | 0.5605 |
 | 4000 | 0.8937 | 0.6872 | 0.3473 | r1_i_aurc | 0.6930 |
 | 6000 | 0.9696 | 0.8354 | 0.4890 | r1_i_aurc | 0.8371 |
 
-75% 情景下最大冻结 n=6000 的联合功效 0.8354 < 0.90 → `selected_n=null`，终态 **`STAGE5_MERGE_COMPARISON_UNDERPOWERED`**。不创建 comparison holdout，不降低门槛、不换 seed、不换方法或主基线（计划 §6.2/§10）。
+At the maximum frozen n=6000 under 75% shrinkage, joint power 0.8354 < 0.90 → `selected_n=null`; terminal state **`STAGE5_MERGE_COMPARISON_UNDERPOWERED`**. No comparison holdout, gate relaxation, seed substitution, method replacement or primary-baseline change (plan §6.2/§10).
 
-## Table E：成本与完整性（开发范围）
+## Table E: Cost and integrity (development scope)
 
-| 方法 | 参数量 | 近似前向 FLOPs/组（MAC×2） | 单组推理 ms | 原生校准 |
+| Method | Parameters | Approximate forward FLOPs/group (MAC×2) | Inference ms/group | Native calibration |
 | --- | --- | --- | --- | --- |
 | CCTR_DRIVING_CALIBRATION_ADAPTED | 11522 | 23044 | 0.0132 | OK |
 | CONFIDNET_TCP_ADAPTED | 9665 | 19330 | 0.0097 | OK |
@@ -112,11 +112,11 @@
 | SELECTIVENET_REGRET_ADAPTED | 23139 | 46278 | 0.0268 | NOT_APPLICABLE |
 | AC-Twin Direct (frozen R2 audit) | 15740 | 31480 | frozen (R2 receipt) | NOT_APPLICABLE |
 
-原生校准细节：P1 ECE 0.2483；P4 经验覆盖 0.9527（目标 0.90）；P5 NLL 0.2255、95% 经验覆盖 0.8933；P2/P3 `NOT_APPLICABLE`。
+Native calibration: P1 ECE 0.2483; P4 empirical coverage 0.9527 (target 0.90); P5 NLL 0.2255, 95% empirical coverage 0.8933; P2/P3 `NOT_APPLICABLE`.
 
-训练成本：60 个（方法×配置×seed）拟合合计约 468 s 墙钟（CUDA；峰值显存 NOT_MEASURED）。
+Training cost: 60 method×configuration×seed fits, approximately 468 s wall time (CUDA; peak GPU memory NOT_MEASURED).
 
-## 来源与重建
+## Sources and reconstruction
 
-- 冻结源：`experiments/stage5_sota_comparison/` 下 `literature/`、`development/`、`power/` 的 create-once 产物；本表由 `build_table7_details.py` 重新导出，数字不改写、不重选、不重判。
-- risk–coverage 曲线数据：`paper/figures/stage5_sota/figS_stage5_risk_coverage_data.csv`（同一冻结源，开发范围）。
+- Frozen sources: create-once `literature/`, `development/` and `power/` products in `experiments/stage5_sota_comparison/`. `build_table7_details.py` re-exports them without numerical rewriting, reselection or re-adjudication.
+- Risk–coverage data: `paper/figures/stage5_sota/figS_stage5_risk_coverage_data.csv`, from the same frozen development sources.

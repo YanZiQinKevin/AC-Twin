@@ -1,95 +1,95 @@
-# 身份连续性正式实验：联合 QA、统计分析与结论判定
+# Formal Identity-Continuity Experiment: Joint QA, Statistics and Decision
 
-日期：2026-09-06  
-最终状态：`QA_PASS`  
-科研判定：`INCONCLUSIVE`
+Date: 2026-09-06
+Final engineering status: `QA_PASS`
+Scientific decision: `INCONCLUSIVE`
 
-## 1. 判定含义
+## 1. Meaning of the decision
 
-本轮公平对照没有形成“稳定车辆 ID 连续性具有稳定独立性能收益”的充分证据。结果不是实验失败，也不等于稳定 ID 无用；准确含义是：在当前两个场景、两个容量和五个训练种子下，稳定身份的性能优势不稳定，随场景、容量和训练种子变化，不能通过预先冻结的跨场景判定门槛。
+The fair comparison did not provide sufficient evidence for a stable independent performance gain from vehicle-ID continuity. This is neither an experimental failure nor evidence that stable IDs are useless. Across two scenes, two capacities and five training seeds, the advantage depended on scene, capacity and seed, failing the frozen cross-scene decision gate.
 
-因此不得记录为 `PASS_IDENTITY_CONTINUITY`、`SCENE_LIMITED_IDENTITY_EVIDENCE` 或 `DISTANCE_ONLY_DIFFERENCE_NOT_IDENTITY`。由于环岛 83k 的 `set_pool - stable` 主指标置信区间下界大于 0，四个“场景×容量”组合并非全部显示集合池化与稳定身份无可靠差异，所以也不满足优先判为 `PREFER_SET_POOL` 的冻结规则。剩余合法状态为 `INCONCLUSIVE`。
+Do not record `PASS_IDENTITY_CONTINUITY`, `SCENE_LIMITED_IDENTITY_EVIDENCE` or `DISTANCE_ONLY_DIFFERENCE_NOT_IDENTITY`. At Roundabout 83k, the primary `set_pool - stable` CI lower bound exceeded 0, so the four scene-by-capacity combinations did not all show no reliable difference between set pooling and stable identity. The frozen preference rule for `PREFER_SET_POOL` therefore also failed. The remaining valid status is `INCONCLUSIVE`.
 
-## 2. 正式 QA 结果
+## 2. Formal QA
 
-以下九项均依据本次正式产物重新检查并通过：
+All nine checks were repeated on formal outputs and passed:
 
-| QA 项 | 结果 | 主要证据 |
+| QA item | Result | Main evidence |
 |---|---|---|
-| `fairness` | PASS | 四条件共用对象特征、样本、训练/验证/测试索引、归一化、动作、目标和训练设置；同容量三个身份时序条件参数量完全一致 |
-| `object_multiset` | PASS | 对两场景源数据和冻结数据的 history/future 全量逐帧检查；距离排序与 ID 打乱均未增删或修改对象行 |
-| `ego_slot` | PASS | 全量检查四条件 slot 0 均与稳定输入逐元素相同 |
-| `permutation` | PASS | 打乱可确定复现且确实改变非自车跨帧槽位；合流改变 269,654 个对象行，环岛改变 270,129 个对象行；距离条件按原始米制距离非降序排列 |
-| `data_consistency` | PASS | 两个正式 preflight 通过；源/冻结场景、维度、特征、容量、history、horizon 与种子隔离一致 |
-| `capacity` | PASS | 所有模型距 65k/83k 目标的误差为 0.773%–1.185%，均小于冻结上限 1.5% |
-| `finite_values` | PASS | 两场景共 80 个模型权重、80 个训练日志、80 个逐种子预测、80 个 run metadata、两份汇总预测及报告统计均无 NaN/Inf |
-| `resume` | PASS | 两场景分别重新执行原命令，均有 40/40 个运行显示 `resumed=complete`，退出码为 0 |
-| `holdout_collection` | PASS | 两份冻结测试集完整性复检通过，各 1,000 个 episode；哈希、配置绑定和种子隔离与冻结 QA 记录一致 |
+| `fairness` | PASS | Shared object features, samples, train/validation/test indices, normalization, actions, targets and training settings; identical parameter counts for the three temporal-identity conditions at each capacity |
+| `object_multiset` | PASS | Exhaustive framewise history/future checks on source and frozen data in both scenes; sorting and permutation neither added nor removed or modified object rows |
+| `ego_slot` | PASS | Slot 0 matched the stable input elementwise in all four conditions |
+| `permutation` | PASS | Deterministic reproducible shuffling changed non-ego cross-frame slots: 269,654 rows in Merge and 270,129 in Roundabout; distance sorting used nondecreasing original metric distance |
+| `data_consistency` | PASS | Both formal preflights passed; source/frozen scenes, dimensions, features, capacity, history, horizon and seed separation matched |
+| `capacity` | PASS | Deviations from 65k/83k targets were 0.773%–1.185%, below the frozen 1.5% cap |
+| `finite_values` | PASS | Across scenes, 80 weights, 80 logs, 80 per-seed predictions, 80 run metadata records, two aggregate predictions and report statistics contained no NaN/Inf |
+| `resume` | PASS | Repeating the original command in each scene reported `resumed=complete` for 40/40 runs; exit code 0 |
+| `holdout_collection` | PASS | Both frozen sets passed integrity rechecks, with 1,000 episodes each; hashes, configuration bindings and seed separation matched frozen QA records |
 
-完整测试命令以 warning 作为 error 执行，结果为 `181 passed in 39.75s`。
+The complete test command treated warnings as errors: `181 passed in 39.75s`.
 
-### 数据和实验签名
+### Data and experiment signatures
 
-| 场景 | 源数据 SHA-256 | 冻结测试 SHA-256 | 正式 preflight 签名 |
+| Scene | Source data SHA-256 | Frozen test SHA-256 | Formal preflight signature |
 |---|---|---|---|
-| 合流 | `eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b` | `c533be651eeefffdc38c0d0929bedaa9e24da498757062ab86f7292da9c542d5` | `248b751f14fa73f45457a616ed711d2cd8c5de33e7f245b1dd3579914df2bef4` |
-| 环岛 | `7e50bf4a17f55d6666549d7743b1d2e5924f5dfa10411f94bd62431146de8672` | `6bfc294488a399b3fe9d6ab708693446386666799e7a916b9614d38dd82920d5` | `72c2da78484a16badb32e4a73cbe3d98e0a8710ae88eef02f707582dd11de6ce` |
+| Merge | `eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b` | `c533be651eeefffdc38c0d0929bedaa9e24da498757062ab86f7292da9c542d5` | `248b751f14fa73f45457a616ed711d2cd8c5de33e7f245b1dd3579914df2bef4` |
+| Roundabout | `7e50bf4a17f55d6666549d7743b1d2e5924f5dfa10411f94bd62431146de8672` | `6bfc294488a399b3fe9d6ab708693446386666799e7a916b9614d38dd82920d5` | `72c2da78484a16badb32e4a73cbe3d98e0a8710ae88eef02f707582dd11de6ce` |
 
-每个场景均使用源数据 1,400 个训练 episode、300 个验证 episode，以及独立冻结测试集的全部 1,000 个 episode。每个场景包含 4 条件 × 2 容量 × 5 种子 = 40 个运行。
+Each scene used 1,400 source-training episodes, 300 validation episodes and all 1,000 independent frozen test episodes. Each contained 4 conditions × 2 capacities × 5 seeds = 40 runs.
 
-## 3. 各条件平均误差
+## 3. Mean errors by condition
 
-数值为五个训练种子和 1,000 个冻结 episode 的总体平均。越小越好。
+Values average five training seeds and 1,000 frozen episodes. Lower is better.
 
-| 场景 | 容量 | 条件 | ADE | FDE@20 |
+| Scene | Capacity | Condition | ADE | FDE@20 |
 |---|---:|---|---:|---:|
-| 合流 | 65k | stable_temporal | 0.8214 | 1.5132 |
-| 合流 | 65k | distance_temporal | 0.8373 | 1.5393 |
-| 合流 | 65k | permuted_temporal | 0.8339 | 1.5253 |
-| 合流 | 65k | set_pool | 0.8543 | 1.5521 |
-| 合流 | 83k | stable_temporal | 0.7831 | 1.4687 |
-| 合流 | 83k | distance_temporal | 0.7827 | 1.4709 |
-| 合流 | 83k | permuted_temporal | 0.7678 | 1.4226 |
-| 合流 | 83k | set_pool | 0.8157 | 1.4811 |
-| 环岛 | 65k | stable_temporal | 1.4836 | 2.6407 |
-| 环岛 | 65k | distance_temporal | 1.4478 | 2.6138 |
-| 环岛 | 65k | permuted_temporal | 1.5094 | 2.6921 |
-| 环岛 | 65k | set_pool | 1.5724 | 2.7770 |
-| 环岛 | 83k | stable_temporal | 1.3443 | 2.4343 |
-| 环岛 | 83k | distance_temporal | 1.4234 | 2.5418 |
-| 环岛 | 83k | permuted_temporal | 1.5113 | 2.6983 |
-| 环岛 | 83k | set_pool | 1.4588 | 2.5983 |
+| Merge | 65k | stable_temporal | 0.8214 | 1.5132 |
+| Merge | 65k | distance_temporal | 0.8373 | 1.5393 |
+| Merge | 65k | permuted_temporal | 0.8339 | 1.5253 |
+| Merge | 65k | set_pool | 0.8543 | 1.5521 |
+| Merge | 83k | stable_temporal | 0.7831 | 1.4687 |
+| Merge | 83k | distance_temporal | 0.7827 | 1.4709 |
+| Merge | 83k | permuted_temporal | 0.7678 | 1.4226 |
+| Merge | 83k | set_pool | 0.8157 | 1.4811 |
+| Roundabout | 65k | stable_temporal | 1.4836 | 2.6407 |
+| Roundabout | 65k | distance_temporal | 1.4478 | 2.6138 |
+| Roundabout | 65k | permuted_temporal | 1.5094 | 2.6921 |
+| Roundabout | 65k | set_pool | 1.5724 | 2.7770 |
+| Roundabout | 83k | stable_temporal | 1.3443 | 2.4343 |
+| Roundabout | 83k | distance_temporal | 1.4234 | 2.5418 |
+| Roundabout | 83k | permuted_temporal | 1.5113 | 2.6983 |
+| Roundabout | 83k | set_pool | 1.4588 | 2.5983 |
 
-## 4. 主指标的两层配对统计
+## 4. Two-level paired statistics for the primary endpoint
 
-差值为“对照条件 FDE − stable FDE”，正数表示 stable 更好。每项使用五个对齐训练种子 × 1,000 个同一冻结 episode、10,000 次两层配对 Bootstrap 和 95% CI。冻结的“可靠正向”还要求至少四个种子均值为正，且删除任一种子后的四种子均值仍为正。
+Differences are control FDE minus stable FDE; positive values favor stable identity. Each comparison uses five aligned seeds × the same 1,000 frozen episodes, 10,000 two-level paired bootstrap resamples and 95% CIs. Reliable positivity additionally requires at least four positive seed means and positive four-seed means after omitting any seed.
 
-| 场景 | 容量 | 比较 | 平均差 | 95% CI | 正向种子 | 删除任一种子仍为正 | 可靠正向 |
+| Scene | Capacity | Contrast | Mean difference | 95% CI | Positive seeds | Positive after omitting any seed | Reliably positive |
 |---|---:|---|---:|---|---:|---|---|
-| 合流 | 65k | permuted − stable | +0.0121 | [-0.0826, 0.1244] | 2/5 | 否 | 否 |
-| 合流 | 65k | distance − stable | +0.0261 | [-0.0487, 0.1055] | 3/5 | 否 | 否 |
-| 合流 | 65k | set_pool − stable | +0.0389 | [-0.0680, 0.1440] | 3/5 | 否 | 否 |
-| 合流 | 83k | permuted − stable | -0.0460 | [-0.0816, -0.0122] | 0/5 | 否 | 否；方向相反 |
-| 合流 | 83k | distance − stable | +0.0023 | [-0.0389, 0.0447] | 2/5 | 否 | 否 |
-| 合流 | 83k | set_pool − stable | +0.0124 | [-0.0762, 0.1124] | 2/5 | 否 | 否 |
-| 环岛 | 65k | permuted − stable | +0.0514 | [-0.1118, 0.2093] | 3/5 | 否 | 否 |
-| 环岛 | 65k | distance − stable | -0.0269 | [-0.1601, 0.1140] | 1/5 | 否 | 否 |
-| 环岛 | 65k | set_pool − stable | +0.1363 | [-0.0082, 0.2881] | 4/5 | 是 | 否；CI 跨 0 |
-| 环岛 | 83k | permuted − stable | +0.2640 | [0.1198, 0.3945] | 5/5 | 是 | 是 |
-| 环岛 | 83k | distance − stable | +0.1075 | [-0.0030, 0.2137] | 4/5 | 是 | 否；CI 略跨 0 |
-| 环岛 | 83k | set_pool − stable | +0.1640 | [0.0220, 0.3334] | 5/5 | 是 | 是 |
+| Merge | 65k | permuted − stable | +0.0121 | [-0.0826, 0.1244] | 2/5 | No | No |
+| Merge | 65k | distance − stable | +0.0261 | [-0.0487, 0.1055] | 3/5 | No | No |
+| Merge | 65k | set_pool − stable | +0.0389 | [-0.0680, 0.1440] | 3/5 | No | No |
+| Merge | 83k | permuted − stable | -0.0460 | [-0.0816, -0.0122] | 0/5 | No | No; opposite direction |
+| Merge | 83k | distance − stable | +0.0023 | [-0.0389, 0.0447] | 2/5 | No | No |
+| Merge | 83k | set_pool − stable | +0.0124 | [-0.0762, 0.1124] | 2/5 | No | No |
+| Roundabout | 65k | permuted − stable | +0.0514 | [-0.1118, 0.2093] | 3/5 | No | No |
+| Roundabout | 65k | distance − stable | -0.0269 | [-0.1601, 0.1140] | 1/5 | No | No |
+| Roundabout | 65k | set_pool − stable | +0.1363 | [-0.0082, 0.2881] | 4/5 | Yes | No; CI crosses 0 |
+| Roundabout | 83k | permuted − stable | +0.2640 | [0.1198, 0.3945] | 5/5 | Yes | Yes |
+| Roundabout | 83k | distance − stable | +0.1075 | [-0.0030, 0.2137] | 4/5 | Yes | No; CI slightly crosses 0 |
+| Roundabout | 83k | set_pool − stable | +0.1640 | [0.0220, 0.3334] | 5/5 | Yes | Yes |
 
-两层统计已从报告内 `[训练种子, 冻结 episode]` 误差阵列重新计算，并与两份原始报告逐项完全一致。
+Two-level statistics were recomputed from `[training seed, frozen episode]` error arrays and matched both original reports exactly.
 
-## 5. 解释与边界
+## 5. Interpretation and boundaries
 
-最明确的正向信号出现在环岛 83k：稳定身份优于 ID 打乱，并优于集合池化；但同容量下对距离排序的 FDE 区间下界为 -0.0030，尚未越过冻结门槛。环岛 65k 的全部比较均未达到可靠正向。合流场景没有任何可靠正向比较，并且 83k 下 ID 打乱的 FDE 反而显著低于稳定身份。这说明结果具有明显的场景、容量和训练种子依赖。
+The clearest positive signal occurred at Roundabout 83k: stable identity outperformed ID permutation and set pooling, but its FDE CI lower bound against distance sorting was -0.0030, below the frozen gate. No Roundabout 65k comparison was reliably positive. Merge had no reliably positive comparison, and at 83k ID permutation had significantly lower FDE than stable identity. Results depend on scene, capacity and training seed.
 
-辅助 ADE 与这一解释基本一致：环岛 83k 的三项比较均为正区间，但冻结协议规定 FDE@20 是主指标，不能用 ADE 替代 FDE 来改变判定。
+Secondary ADE broadly agreed: all three Roundabout 83k intervals were positive. However, FDE@20 was the frozen primary endpoint; ADE cannot replace FDE to change the decision.
 
-本轮只能回答表示层的独立性能问题。结论不能外推为稳定 ID 对因果可识别性、显式溯因、多车响应、安全收益或跨场景泛化有贡献。冻结测试集只包含事实与反事实分支均具有完整 20 步未来的事件，不能代表提前终止或其他安全关键事件。
+This study addresses independent representation-level performance only. It does not establish contributions to causal identifiability, explicit abduction, multi-vehicle response, safety gains or cross-scene generalization. Frozen sets contain only events with complete 20-step futures in both branches and do not represent early termination or other safety-critical events.
 
-## 6. 后续建议
+## 6. Historical recommendations
 
-在不篡改本轮冻结结论的前提下，下一步应先诊断“为什么稳定身份收益只在环岛 83k 明显”：检查稳定时序编码器是否受槽位缺失/车辆进出影响、不同容量下优化稳定性，以及合流 83k 中 ID 打乱反向优势是否来自正则化效应。后续诊断应使用开发/验证数据或新预注册实验，不得回头调参后复用本轮冻结测试集声称确认性结论。
+Without altering this frozen decision, diagnose why gains were clearest only at Roundabout 83k: missing slots/vehicle entry and exit, capacity-dependent optimization stability, and possible regularization from permutation in Merge 83k. Use development/validation data or a new preregistered study; do not tune retrospectively and reuse this frozen set to claim confirmation.
 

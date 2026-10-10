@@ -1,52 +1,52 @@
-# 稳定身份连续性公平对照冻结协议
+# Frozen Protocol for Fair Identity-Continuity Controls
 
-日期：2026-09-05  
-状态：`SMOKE_PENDING`
+Date: 2026-09-05
+Status at protocol freezing: `SMOKE_PENDING`
 
-本文件在短时 CPU 冒烟实验开始前冻结。冒烟只验证工程数据流、训练、产物与恢复机制，不形成科研性能结论，也不得触发合流或环岛正式训练。
+This document was frozen before a short CPU smoke run. Smoke checks cover data flow, training, outputs and recovery only; they do not support scientific performance conclusions or authorize formal Merge/Roundabout training.
 
-## 1. 四个冻结条件
+## 1. Four frozen conditions
 
-同一容量档必须完整包含以下四个条件，且不得通过条件级超参数覆盖改变公平比较：
+Each parameter budget must contain all four conditions, without condition-specific hyperparameter overrides that change comparison fairness:
 
-1. `stable_temporal`：episode 内稳定车辆槽位；共享逐车时序编码器先沿时间编码每辆车，再汇总车辆表示。
-2. `distance_temporal`：每帧保留自车槽位，非自车按相对自车欧氏距离重排；编码器与预测头和 `stable_temporal` 相同。
-3. `permuted_temporal`：每个 episode、每一帧按冻结随机种子确定性打乱非自车槽位；自车槽位不变；编码器与预测头和 `stable_temporal` 相同。
-4. `set_pool`：使用稳定槽位输入，但逐帧先做置换不变的掩码集合池化，再进行时间编码。
+1. `stable_temporal`: stable vehicle slots within an episode; a shared per-vehicle temporal encoder encodes each vehicle over time before aggregating vehicle representations.
+2. `distance_temporal`: preserve the ego slot and reorder other vehicles by Euclidean distance to ego in every frame; use the same encoder and prediction head as `stable_temporal`.
+3. `permuted_temporal`: deterministically shuffle non-ego slots for every episode and frame using frozen seeds; preserve the ego slot and use the same encoder and head as `stable_temporal`.
+4. `set_pool`: stable-slot inputs, with permutation-invariant masked set pooling per frame before temporal encoding.
 
-## 2. 统一输入与训练约束
+## 2. Shared inputs and training constraints
 
-四条件必须来自同一份对象中心张量，使用完全相同的 episode、训练/验证/测试索引、对象容量、可见范围、历史、事实后缀、事实与反事实动作计划、目标、损失函数、优化器、学习率、批量大小和最大 epoch。统一输入固定为 8 维：
+All conditions use the same object-centric tensor, episodes, train/validation/test indices, object capacity, visibility range, history, factual suffix, factual/counterfactual action plans, targets, loss, optimizer, learning rate, batch size and maximum epoch. The shared input has 8 dimensions:
 
 `presence, is_ego, x, y, vx, vy, cos_heading, sin_heading`
 
-排序或打乱必须在原始米制坐标中完成，随后应用同一组仅由源训练划分可见样本拟合的对象与目标归一化统计量。锚点为每个样本最后一帧历史自车位置。排列不得增加、删除或修改对象特征。
+Sort or shuffle in original metric coordinates, then apply shared object and target normalization statistics fitted only on visible source-training samples. Anchor coordinates at the final historical ego position. Permutations may not add, remove or alter object features.
 
-## 3. 容量、随机种子与正式评估冻结
+## 3. Frozen capacity, seeds and formal evaluation
 
-- 正式实验固定两个容量档：65,000 与 83,000 个可训练参数；每个模型相对对应目标的绝对偏差不得超过 1.5%，并报告准确参数量。
-- 正式实验固定五个训练随机种子及顺序：`11, 22, 33, 44, 55`。
-- smoke 仅允许 65k、种子 11、最多 2 epoch 和小样本限制。
-- 合流与环岛各自使用独立的新冻结测试集。正式训练期间不得查看冻结测试指标；所有配置与训练选择冻结后，每个场景只做一次正式评估。
-- 开发阶段旧测试划分只用于诊断和 smoke，不得形成最终论文结论。
+- Formal budgets: 65,000 and 83,000 trainable parameters; absolute relative deviation from each target must not exceed 1.5%. Report exact counts.
+- Five training seeds in fixed order: `11, 22, 33, 44, 55`.
+- Smoke scope: 65k, seed 11, at most 2 epochs and limited samples.
+- Merge and Roundabout use independent fresh frozen test sets. Do not inspect test metrics during training; evaluate each scene once after configurations and training choices are frozen.
+- Old development test splits support diagnostics and smoke checks only, not final paper conclusions.
 
-## 4. 统计分析冻结
+## 4. Frozen statistical analysis
 
-主指标为自车 `effect-FDE@20`，`effect-ADE` 为辅助指标。固定主比较为 `permuted_temporal - stable_temporal` 和 `distance_temporal - stable_temporal`，次比较为 `set_pool - stable_temporal`；正差表示候选条件误差高于稳定身份条件。
+The primary endpoint is ego `effect-FDE@20`; `effect-ADE` is secondary. Primary contrasts are `permuted_temporal - stable_temporal` and `distance_temporal - stable_temporal`; `set_pool - stable_temporal` is secondary. Positive differences indicate higher control error than stable identity.
 
-正式分析必须保留对齐的 `[训练种子, 测试 episode]` 误差阵列，并采用两层配对 Bootstrap：每次同时有放回重采样训练种子和测试 episode，进行 10,000 次重采样并报告 95% 置信区间。仅按 episode 重采样的旧式区间只能作为 episode 不确定性描述，不能解释为包含完整训练随机性。
+Retain aligned `[training seed, test episode]` error arrays. For 10,000 two-level paired bootstrap resamples, resample training seeds and test episodes with replacement and report 95% CIs. Episode-only intervals describe episode uncertainty and do not capture full training randomness.
 
-## 5. `PASS_IDENTITY_CONTINUITY` 冻结门槛
+## 5. Frozen `PASS_IDENTITY_CONTINUITY` gate
 
-只有同时满足以下全部条件，才允许记录 `PASS_IDENTITY_CONTINUITY`：
+Record `PASS_IDENTITY_CONTINUITY` only if all conditions hold:
 
-1. `stable_temporal` 相对 `permuted_temporal` 在合流和环岛两个场景的主指标方向均更优。
-2. `stable_temporal` 相对 `distance_temporal` 在合流和环岛两个场景的主指标方向均更优。
-3. 两层不确定性分析不显示结论完全由单个训练种子驱动。
-4. 公平性、对象多重集合、自车槽位、排列性质、数据一致性、容量、有限数值和恢复 QA 全部通过。
+1. `stable_temporal` improves the primary endpoint over `permuted_temporal` in both Merge and Roundabout.
+2. `stable_temporal` improves the primary endpoint over `distance_temporal` in both scenes.
+3. Two-level uncertainty analysis does not show a conclusion driven entirely by one training seed.
+4. Fairness, object multiset, ego slot, permutation, data consistency, capacity, finite values and recovery QA all pass.
 
-仅一个场景通过只能视为场景限定证据；仅优于距离排序而不优于 ID 打乱不能归因于身份连续性；`set_pool` 与 `stable_temporal` 无可靠差异时优先采用更简单的集合池化模型。无论判定结果如何，都不能自动推出显式溯因、因果可识别性、多车响应、安全收益或跨场景泛化成立。
+Passing one scene supports scene-limited evidence only. Beating distance sorting without beating ID permutation does not identify an identity-continuity gain. Prefer simpler set pooling when `set_pool` and `stable_temporal` show no reliable difference. No outcome automatically establishes explicit abduction, causal identifiability, multi-vehicle response, safety gains or cross-scene generalization.
 
-## 6. 当前执行边界
+## 6. Execution scope at protocol freezing
 
-当前仅执行 CPU smoke：四条件 × 65k × 单种子 11 × 2 epoch。smoke 的层次 Bootstrap 因只有一个训练种子必须标记为不可用，不得替代正式两层推断。工程结果只允许记录 `SMOKE_PASS` 或 `SMOKE_FAIL`；本协议在运行前保持 `SMOKE_PENDING`，科研门槛仍未判定。
+Only CPU smoke was in scope: four conditions × 65k × one seed 11 × 2 epochs. Hierarchical bootstrap is unavailable with one training seed and cannot replace formal two-level inference. Engineering outcomes are restricted to `SMOKE_PASS` or `SMOKE_FAIL`; the pre-run protocol status remains `SMOKE_PENDING`, with the scientific gate unevaluated.

@@ -17,9 +17,17 @@ SUFFIXES = {'.py', '.ps1', '.sh', '.js', '.mjs', '.json', '.jsonl', '.csv', '.ts
 RAW = {'.npz', '.npy', '.pkl', '.pickle', '.tfrecord', '.tfrecords', '.record', '.bin'}
 META = ('stage4d_external', 'stage4d_d2e', 'stage4d_d2f', 'stage4d_d2r')
 EXTERNAL_THRESHOLD = 10 * 1024 * 1024
+CLEANUP_PATH = ROOT/'release/document_cleanup.json'
+OMITTED_DOCUMENTS = set(json.loads(CLEANUP_PATH.read_text(encoding='utf-8'))['removed']) if CLEANUP_PATH.exists() else set()
+TRANSLATIONS_PATH = ROOT/'release/document_translations.json'
+DOCUMENT_TRANSLATIONS = json.loads(TRANSLATIONS_PATH.read_text(encoding='utf-8')).get('files',[]) if TRANSLATIONS_PATH.exists() else []
+TRANSLATION_BY_SOURCE = {r['source_path']:r for r in DOCUMENT_TRANSLATIONS}
+TRANSLATION_BY_TARGET = {r['path']:r for r in DOCUMENT_TRANSLATIONS}
+
 
 def excluded_reason(rel: Path):
     name=rel.as_posix(); parts=rel.parts
+    if name in OMITTED_DOCUMENTS:return 'internal_publication_document'
     if any(p in SKIP_PARTS or p.startswith('_dup_repair_backup') for p in parts):
         return 'cache_or_duplicate_backup'
     if any(p.startswith('~$') for p in parts):return 'temporary_file'
@@ -58,7 +66,8 @@ def main():
             rel=p.relative_to(source); reason=excluded_reason(rel)
             if reason:
                 excluded.append({'path':rel.as_posix(),'reason':reason,'bytes':p.stat().st_size});continue
-            selected[rel.as_posix()]=p
+            name=rel.as_posix()
+            selected[TRANSLATION_BY_SOURCE.get(name,{}).get('path',name)]=p
     # Include source helpers already distributed at the repository root and legacy.
     tracked=subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0')
     for name in tracked:
@@ -69,13 +78,22 @@ def main():
             selected[name]=ROOT/name  # Preserve previously released historical source.
     for p in (source/'paper/figures/fig2/icon').glob('*'):
         if p.is_file() and p.suffix in {'.png','.svg'}:selected[p.relative_to(source).as_posix()]=p
+    # Keep the public experiment index, which is maintained in the release only.
+    if (ROOT/'experiments/README.md').is_file():selected['experiments/README.md']=ROOT/'experiments/README.md'
     total=sum(p.stat().st_size for p in selected.values());done=0;start=time.monotonic();rows=[];transformations=[]
     print(f'COPY phase: 0/{len(selected)} files, 0.0%, 0/{total} bytes, elapsed=0s ETA=calculating',flush=True)
     last=start
     for i,(name,p) in enumerate(sorted(selected.items()),1):
         target=ROOT/name; target.parent.mkdir(parents=True,exist_ok=True)
         before=p.stat();sha=digest(p)
-        if name=='code/drive_stage4d_d2f.py':
+        translated=TRANSLATION_BY_TARGET.get(name)
+        if translated:
+            if sha!=translated['source_sha256']:
+                raise RuntimeError(name+': source document changed; update its English publication copy before synchronization')
+            if not target.is_file() or digest(target)!=translated['release_sha256']:
+                raise RuntimeError(name+': English publication copy differs from its registered hash')
+            sha=translated['release_sha256'];transformations.append(translated)
+        elif name=='code/drive_stage4d_d2f.py':
             raw=p.read_bytes();portable=raw.replace(b'95%-CI',b'95%%-CI').replace(b'(95% CI)',b'(95%% CI)')
             source_sha=sha;sha=hashlib.sha256(portable).hexdigest()
             if not target.exists() or digest(target)!=sha:target.write_bytes(portable)
@@ -86,7 +104,7 @@ def main():
             shutil.copy2(p,target)
         if before.st_size<EXTERNAL_THRESHOLD:assert digest(target)==sha,name
         after=p.stat();assert (before.st_size,before.st_mtime_ns)==(after.st_size,after.st_mtime_ns),name
-        size=len(portable) if name=='code/drive_stage4d_d2f.py' else before.st_size;done+=before.st_size
+        size=target.stat().st_size if translated else len(portable) if name=='code/drive_stage4d_d2f.py' else before.st_size;done+=before.st_size
         category='weights' if p.suffix in {'.pt','.pth','.ckpt'} else 'data' if name.startswith('data/') else 'source' if p.suffix in {'.py','.ps1','.js','.mjs','.sh'} or name.startswith('config/') else 'experiment_output'
         rows.append({'path':name,'bytes':size,'sha256':sha,'category':category,'storage':'external-download' if size>=EXTERNAL_THRESHOLD else 'git'})
         now=time.monotonic()
@@ -99,12 +117,12 @@ def main():
     (release/'excluded_files.json').write_text(json.dumps(excluded,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (release/'source_transformations.json').write_text(json.dumps(transformations,indent=2)+'\n',encoding='utf-8')
     extras=['.gitignore','.gitattributes','README.md','DATA_AVAILABILITY.md','REPRODUCIBILITY.md',
-            'release/manifest.csv','release/excluded_files.json','release/summary.json','release/large_data_inventory.json','release/source_transformations.json',
+            'release/manifest.csv','release/excluded_files.json','release/summary.json','release/large_data_inventory.json','release/source_transformations.json','release/document_cleanup.json','release/document_translations.json',
             'tools/check_release.py','tools/sync_release.py']
     allowed={r['path'] for r in rows if r['storage']=='git'}|set(extras)|{n for n in tracked if n and n.startswith('tools/')}
     # Preserve existing source-only files that are absent from the current source tree.
     large_names={r['path'] for r in rows if r['storage']=='external-download'}
-    allowed.update(n for n in tracked if n and (ROOT/n).is_file() and n not in large_names)
+    allowed.update(n for n in tracked if n and (ROOT/n).is_file() and n not in large_names and n not in OMITTED_DOCUMENTS and n not in {r['source_path'] for r in DOCUMENT_TRANSLATIONS if r['source_path']!=r['path']})
     (ROOT/'.gitignore').write_text('# Approved research release: deny by default. Regenerate with tools/sync_release.py.\n*\n!*/\n'+''.join('!/'+n.replace('[','\\[').replace(']','\\]')+'\n' for n in sorted(allowed)),encoding='utf-8')
     external=[r for r in rows if r['storage']=='external-download']
     (ROOT/'.gitattributes').write_text('# Preserve frozen artifact bytes and checksums on every platform.\n* -text\n# Large data are obtained separately; no LFS payload in this release.\n',encoding='utf-8')
@@ -120,7 +138,10 @@ def main():
              'git_product_files':len(rows)-len(external),'git_product_bytes':sum(r['bytes'] for r in rows if r['storage']=='git'),
              'download_status':'CONTACT_AUTHORS_NO_HOSTED_LINK',
              'excluded_metadrive_training_files':sum(r['reason']=='metadrive_training_data_or_prediction_cache' for r in excluded),
-             'largest_file_bytes':max(r['bytes'] for r in rows),'source_read_only':True}
+             'largest_file_bytes':max(r['bytes'] for r in rows),'source_read_only':True,
+             'removed_internal_markdown_files':len(OMITTED_DOCUMENTS),
+             'translated_or_edited_markdown_files':len(DOCUMENT_TRANSLATIONS),
+             'english_markdown_files':sum(r['path'].endswith('.md') for r in rows)+3}
     (release/'summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')
     print('COPY SUCCESS: '+json.dumps(summary),flush=True)
 

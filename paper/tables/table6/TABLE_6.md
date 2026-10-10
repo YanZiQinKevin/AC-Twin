@@ -1,8 +1,8 @@
 # Table 6 — AC-Twin audit across the three measured scopes
 
-对应 Fig. 4。数字全部取自冻结确认报告，未重估、未重选基线、未重算裁判。
+Corresponds to Fig. 4. All numbers come from frozen confirmation reports, without re-estimation, baseline reselection or re-adjudication.
 
-## 表体
+## Table
 
 | Scope | Method | AURC-regret ↓ | Regret@80 ↓ | PR−prevalence ↑ | I_AURC-regret [95% CI] | I_Regret@80 [95% CI] |
 | --- | --- | ---: | ---: | ---: | --- | --- |
@@ -19,22 +19,22 @@
 |  | MARGIN_ONLY | 0.065541 | 0.062677 | 0.008458 | — | — |
 |  | SEED_VOTE_ENTROPY | 0.039973 | 0.050337 | 0.126450 | — | — |
 
-n = 2,000 decision groups per scope in every row. 相对改善只写在 `AC-Twin audit` 行，分母是该行所属范围的冻结主基线；其余行只给绝对量。
+n = 2,000 decision groups per scope in every row. Relative improvements appear only on the `AC-Twin audit` rows, against each scope's frozen primary baseline; other rows report absolute metrics.
 
-## Caption（英文，供正文）
+## Main-text caption
 
 **Table 6 | AC-Twin audit across the three measured scopes.** The three scopes are `Merge ID` (Merge in-distribution), `JOINT_OOD` (the prospectively specified generator-mismatch profile) and `MetaDrive` (MetaDrive/ScenarioNet/Waymo, retrained and frozen inside that platform); the same names are used in Fig. 4. Each scope is an independent confirmation set of 2,000 ten-action decision groups. AURC-regret and Regret@80 are lower-is-better; PR−prevalence is higher-is-better. Relative improvements are defined as I_Q = (Q_baseline − Q_audit)/Q_baseline against the scope's primary baseline frozen before confirmation, marked in italics; these are ratios, not absolute differences. `AC-Twin audit` is the risk ranking produced by the AC-Twin framework's Direct audit head (Fig. 2); Fig. 4 uses the same label. Merge ID selected `SEED_VOTE_ENTROPY` using the fixed development-validation rule; JOINT_OOD inherited that frozen baseline without selection on OOD validation data. MetaDrive selected `SEED_MARGIN_STD` on its platform-internal validation data. These comparison targets were frozen before confirmation and were not changed afterwards. All three standard baselines are reported per scope, in this table and in Fig. 4. The two metrics do not agree on one strongest standard baseline in any scope: on Merge ID and JOINT_OOD the lowest AURC-regret is `MARGIN_ONLY` while the lowest Regret@80 is `SEED_VOTE_ENTROPY`; on MetaDrive the lowest AURC-regret is `SEED_MARGIN_STD` while the lowest Regret@80 is `SEED_VOTE_ENTROPY`. The audit has lower point estimates than every evaluated standard baseline on both metrics in all three scopes, with the narrowest margin 10.1% (MetaDrive/Waymo, Regret@80 against `SEED_VOTE_ENTROPY`). The three scopes differ in task distribution, baseline and model relation — Merge and JOINT_OOD share frozen Merge weights, MetaDrive/Waymo uses a platform-internally retrained and frozen pipeline — so the rows are not comparable with one another and their effect sizes are not ranked, pooled or read as cross-platform performance. CIs are two-sided percentile intervals from 10,000 whole-group paired bootstrap resamples of the adjudicated confirmation sets. Full baseline, seed, stratum, trim and ablation results are in Table S3.
 
-## 表注要点（中文备忘）
+## Interpretation notes
 
-- 方法行名统一为 `AC-Twin audit`；`Direct audit` 只作组件名（`Direct audit head`，见总蓝图 §7 术语账本），裸 `AC-Twin` 只指整套框架；
-- Merge 与 JOINT_OOD 共享主基线 `SEED_VOTE_ENTROPY`，MetaDrive 的主基线为 `SEED_MARGIN_STD`；**不写 "the strongest baseline" 而不加限定**——Merge 与 JOINT_OOD 的 AURC 最低基线是 `MARGIN_ONLY`，MetaDrive 的 R@80 最低基线是 `SEED_VOTE_ENTROPY`，两者都不是该范围的冻结主基线；
-- 三行的任务分布、基线、模型关系都不同，禁止横向排名、合并效应或当作跨平台性能差；
-- Fig. 4 的曲线是逐组量的描述性重绘，本表的 CI 来自正式裁判报告，二者在 80% coverage 处逐位一致（脚本内以断言固定）。
+- `AC-Twin audit` is the result-level method; `Direct audit head` is a component; AC-Twin denotes the framework.
+- Merge and JOINT_OOD share primary `SEED_VOTE_ENTROPY`; MetaDrive uses `SEED_MARGIN_STD`. Qualify any strongest-baseline statement by endpoint: `MARGIN_ONLY` has lowest AURC in Merge/OOD; `SEED_VOTE_ENTROPY` has lowest Regret@80 in MetaDrive, differing from the frozen primary.
+- Distributions, baselines and weight relationships differ; do not rank, pool or interpret rows as cross-platform performance differences.
+- Fig. 4 curves are descriptive redraws of per-group quantities; table CIs come from formal adjudication. The script asserts agreement at 80% coverage.
 
-## 支持性事实：审计对其余全部基线的相对改善
+## Supporting values: improvements against other evaluated baselines
 
-用于支撑 caption 中"击败全部评估基线"的表述，取自同一批冻结报告的 baseline 曲线。
+These values support the caption's comparisons against all evaluated baselines and come from the same frozen baseline curves.
 
 | Scope | Baseline | AURC-regret | Regret@80 | I_AURC-regret | I_Regret@80 |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -52,16 +52,16 @@ n = 2,000 decision groups per scope in every row. 相对改善只写在 `AC-Twin
 | MetaDrive | SEED_MARGIN_STD | 0.037276 | 0.053470 | +0.1949 | +0.1532 |
 | MetaDrive | SEED_VOTE_ENTROPY | 0.039973 | 0.050337 | +0.2492 | +0.1005 |
 
-## 取数出处
+## Numerical provenance
 
-| 范围 | 正式报告 | 路径 |
+| Scope | Formal report | Directory |
 | --- | --- | --- |
 | Merge in distribution | `stage4cr2_confirmatory_report.json` | `experiments/stage4_reliability/stage4cr2_confirm/reports/` |
 | Prospectively specified JOINT_OOD | `stage4d_ood_confirmatory_report.json` | `experiments/stage4_reliability/stage4d_ood/reports/` |
 | MetaDrive / Waymo | `confirm_report.json` | `experiments/stage4_reliability/stage4d_d2f/confirm/` |
 
-主指标取各报告 `metrics.point / ci_lower / ci_upper`（Merge 与 JOINT_OOD 位于 `decision.metrics`）；基线绝对量与 PR−prevalence 取 `decision.ablations.baseline_curves`（MetaDrive 为顶层 `baseline_curves.curves`）。数据表 `table6_data.xlsx` 保留同一批数字。
+Primary endpoints use `metrics.point / ci_lower / ci_upper` (`decision.metrics` in Merge/OOD). Absolute baseline metrics and PR−prevalence use `decision.ablations.baseline_curves` (top-level `baseline_curves.curves` in MetaDrive). `table6_data.xlsx` contains the same values.
 
-## 检索/复算方式
+## Retrieval and consistency checks
 
-`paper/figures/fig3/build_fig3.py` 在绘图前逐位核对 80% coverage 处的模型值与基线值等于报告值（atol 1e-12）；上表由同一批报告字段抄录，未做任何重新估计。
+`paper/figures/fig3/build_fig3.py` checks model/baseline curve values at 80% coverage against report values within atol 1e-12 before plotting. This table transcribes those frozen fields without re-estimation.

@@ -1,16 +1,16 @@
-# 事实证据来源消融实验结果
+# Factual-Evidence Source Ablation Results
 
-运行时间：2026-09-04T12:58:45.717392+08:00
+Run time: 2026-09-04T12:58:45.717392+08:00
 
-## 确认性结论
+## Confirmatory conclusion
 
-判定：**STRONG_PASS**。完整同episode事实后缀相对动作匹配的打乱后缀，effect-FDE@20改善 32.77%。
+Decision: **STRONG_PASS**. Complete same-episode factual suffixes reduced effect-FDE@20 by 32.77% relative to action-matched shuffled suffixes.
 
-episode级配对均值差（shuffled - full）为 1.1262 m，95% CI [0.8623, 1.3884]，n=300。
+The episode-level paired mean difference (shuffled - full) was 1.1262 m, 95% CI [0.8623, 1.3884], n=300.
 
-## 全部条件
+## All conditions
 
-| 条件 | effect-ADE@20 (m) | effect-FDE@20 (m) | seed间FDE SD |
+| Condition | effect-ADE@20 (m) | effect-FDE@20 (m) | FDE SD across seeds |
 |---|---:|---:|---:|
 | history_only | 1.8685 | 3.2428 | 0.1875 |
 | shuffled_full | 1.9959 | 3.4365 | 0.1096 |
@@ -21,11 +21,11 @@ episode级配对均值差（shuffled - full）为 1.1262 m，95% CI [0.8623, 1.3
 | full_20 | 1.3560 | 2.3103 | 0.1764 |
 | residual_innovation_20 | 2.3655 | 4.1562 | 0.2731 |
 
-## 解释
+## Interpretation
 
-- `full_20`优于`shuffled_full`才支持同episode事实证据，而不是单纯增加输入长度。
-- `prefix_1/5/10/20`用于观察信息长度曲线；这些属于探索性分析。
-- `residual_innovation_20`是一阶动力学残差代理，不等于真实外生噪声或完成了结构因果溯因。
-- 所有推断以episode为独立单位；五个训练seed不增加n。
+- An advantage of `full_20` over `shuffled_full` supports same-episode factual evidence rather than input length alone.
+- `prefix_1/5/10/20` describes the information-length curve; these analyses are exploratory.
+- `residual_innovation_20` is a first-order dynamics-residual proxy, not true exogenous noise or completed structural causal abduction.
+- Episodes are independent units for all inference; five training seeds do not increase n.
 
-详细对比置信区间、打乱匹配质量和残差模型信息见 `report.json`。
+See `report.json` for contrast CIs, shuffle-matching quality and residual-model details.

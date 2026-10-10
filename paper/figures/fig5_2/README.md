@@ -1,6 +1,5 @@
-# Fig. 2｜审计头结构与评分
+# Fig. 2: Audit-head architecture and scoring
 
-> 当前正文编号（2026-10-08）：**Fig. 2**。目录 `fig5_2` 与资产文件名沿用既有命名；下方日期记录中的旧图号为当时快照。
 
 Current manuscript figure: `Direct_audit_head_architecture_v2.png` (600 dpi), with matching editable SVG/PDF exports. Rebuild with `draw_direct_audit_v2.py`; caption in `FIGURE_LEGEND_v2.md`.
 

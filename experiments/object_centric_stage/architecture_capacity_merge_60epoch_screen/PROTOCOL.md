@@ -1,66 +1,66 @@
-# 合流场景参数匹配结构比较协议
+# Capacity-Matched Architecture Comparison Protocol: Merge
 
-冻结时间：2026-09-04  
-实验名称：`architecture_capacity_merge`
+Frozen on: 2026-09-04
+Experiment: `architecture_capacity_merge`
 
-## 研究问题
+## Research question
 
-在相同参数容量下，稳定实体身份、静态消息传递和距离门控动态消息传递是否分别降低自车反事实效应误差？
+At matched parameter budgets, do stable entity identity, static message passing and distance-gated dynamic message passing each reduce ego counterfactual-effect error?
 
-## 数据与独立单位
+## Data and independent unit
 
-- 数据：`data/object_centric_stage/merge_2000/object_twinworld_2000.npz`
-- 数据SHA256：`EB6122AC62AF20219FC0B27D346740A935587FF32D82E4000127A50A41466E2B`
-- 2,000个独立episode；训练/验证/测试为1,400/300/300。
-- 统计独立单位为test episode；训练随机种子不增加样本量。
+- Data: `data/object_centric_stage/merge_2000/object_twinworld_2000.npz`
+- Data SHA256: `EB6122AC62AF20219FC0B27D346740A935587FF32D82E4000127A50A41466E2B`
+- 2,000 independent episodes; train/validation/test: 1,400/300/300.
+- Independent unit: test episode; training seeds do not increase sample size.
 
-## 冻结配置
+## Frozen configuration
 
-- 配置：`config/architecture_capacity_merge.json`
-- 配置SHA256：`28C5AE3DF0E58DE9769B024A995BE110626B815D8316DCE486B315F4E08760BE`
-- 两个参数容量档：约65k和约83k。
-- 每档包含距离排序GRU、稳定ID集合编码器、静态全连接图、60米距离门控动态图和动态图打乱后缀负对照。
-- 事实证据窗口：10步；预测时域：20步。
-- 每个条件使用训练种子`[11,22,33,44,55]`。
-- 优化器：AdamW；学习率0.001；权重衰减0.0001；批量128。
-- 最大60 epoch；早停耐心10。
+- Configuration: `config/architecture_capacity_merge.json`
+- Configuration SHA256: `28C5AE3DF0E58DE9769B024A995BE110626B815D8316DCE486B315F4E08760BE`
+- Two parameter budgets: approximately 65k and 83k.
+- Each includes a distance-sorted GRU, stable-ID set encoder, static fully connected graph, 60 m distance-gated dynamic graph and shuffled-suffix dynamic-graph negative control.
+- Factual-evidence window: 10 steps; prediction horizon: 20 steps.
+- Training seeds for every condition: `[11,22,33,44,55]`.
+- AdamW; learning rate 0.001; weight decay 0.0001; batch size 128.
+- Maximum 60 epochs; early-stopping patience 10.
 
-## 参数匹配
+## Parameter matching
 
-| 容量档 | 距离排序GRU | 稳定ID集合 | 静态图 | 动态图 |
+| Parameter budget | Distance-sorted GRU | Stable-ID set encoder | Static graph | Dynamic graph |
 |---|---:|---:|---:|---:|
-| 约65k | 64,734 | 64,266 | 64,302 | 64,302 |
-| 约83k | 83,246 | 83,642 | 83,274 | 83,274 |
+| ~65k | 64,734 | 64,266 | 64,302 | 64,302 |
+| ~83k | 83,246 | 83,642 | 83,274 | 83,274 |
 
-同一容量档内相对65,000或83,000的偏差不得超过1.5%。静态图与动态图参数量和消息函数完全相同，只改变邻接规则。
+Deviation from 65,000 or 83,000 must not exceed 1.5% within each budget. Static/dynamic graphs have identical parameters and message functions; only adjacency differs.
 
-## 指标与统计
+## Endpoints and statistics
 
-- 主指标：`effect-FDE@20`。
-- 次指标：`effect-ADE@20`。
-- 对比：row-minus-set、set-minus-static、static-minus-dynamic、shuffled-dynamic-minus-same-episode-dynamic。
-- 对test episode误差先在5个训练种子间求平均，再做10,000次配对bootstrap，报告95%置信区间。
+- Primary: `effect-FDE@20`.
+- Secondary: `effect-ADE@20`.
+- Contrasts: row-minus-set, set-minus-static, static-minus-dynamic, shuffled-dynamic-minus-same-episode-dynamic.
+- Average test-episode errors across 5 seeds, then use 10,000 paired bootstrap resamples and 95% CIs.
 
-## 预设判定
+## Prespecified decisions
 
-- 只有动态图相对静态图在两个容量档方向一致，且汇总主对比的episode级95%置信区间不跨0，才支持独立动态结构收益。
-- 若任一核心条件至少3/5个种子的最佳epoch落在最后6个epoch内，则该容量档全部核心条件统一延长到120 epoch、耐心15后重跑。
-- 打乱后缀仅作为事实证据负对照，不参与选择最佳结构。
-- 本实验的动态图为距离门控动态交互图；没有干预边真值时不称为已发现的真实因果图。
+- Independent dynamic-structure gains require consistent direction at both budgets and a pooled episode-level primary 95% CI excluding 0.
+- If any core condition has best epochs in the last 6 epochs for at least 3/5 seeds, uniformly rerun all core conditions at that budget with 120 epochs and patience 15.
+- Shuffled suffixes are evidence negative controls only, not architecture-selection criteria.
+- This is a distance-gated dynamic interaction graph; without intervention-edge ground truth, it is not a discovered true causal graph.
 
-## 实现前质量修复
+## Pre-run implementation repairs
 
-- 增加模型、遮罩、参数量、配置合法性和可重复初始化测试，共32项通过。
-- 修复对象位置标准化后仍直接使用60米阈值的问题；节点输入保持标准化，建边距离使用训练集位置标准差恢复为米制。
-- 修复模型创建早于随机种子设置导致首个条件初始权重不可复现的问题。
-- 设置`CUBLAS_WORKSPACE_CONFIG=:4096:8`；相同smoke配置的全部内部预测数组已逐字节复现。
+- Added model, mask, parameter-count, configuration-validity and reproducible-initialization tests; all 32 passed.
+- Fixed direct use of a 60 m threshold after position standardization; standardized node inputs are retained, while training position SDs restore metric distances for adjacency.
+- Fixed model creation before seed setting, which prevented reproducible initialization of the first condition.
+- Set `CUBLAS_WORKSPACE_CONFIG=:4096:8`; all internal prediction arrays reproduced byte for byte under the same smoke configuration.
 
-## 运行环境
+## Environment
 
 - Python 3.12.7
 - PyTorch 2.9.1+cu130
 - NumPy 1.26.4
-- CUDA可用：是
+- CUDA available: Yes
 - GPU：NVIDIA GeForce RTX 3070 Ti，8192 MiB
-- NVIDIA驱动：616.56
+- NVIDIA driver: 616.56
 

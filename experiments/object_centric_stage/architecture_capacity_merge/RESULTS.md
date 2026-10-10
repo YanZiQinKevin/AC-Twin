@@ -1,69 +1,69 @@
-# 合流场景参数匹配结构比较结果
+# Merge Capacity-Matched Architecture Comparison Results
 
-完成日期：2026 年 9 月 5 日
+Completed on: 2026-09-05
 
-## 结论
+## Conclusion
 
-合流场景判定：**稳定ID对象表示通过；当前距离门控动态图不通过。**
+Merge decision: **stable-ID object representation passed; the current distance-gated dynamic graph did not pass.**
 
-在最终统一的200 epoch训练预算下，稳定ID集合编码器在约65k和约83k两个容量档均优于参数匹配的距离排序GRU。相反，60米距离门控动态图在两个容量档均劣于参数完全相同的静态全连接消息传递模型。因此，当前证据不支持把动态建边作为独立方法贡献。
+Under a uniform final 200-epoch budget, the stable-ID set encoder outperformed the capacity-matched distance-sorted GRU at approximately 65k and 83k parameters. Conversely, the 60 m distance-gated dynamic graph underperformed the parameter-identical static fully connected message-passing model at both budgets. Dynamic adjacency construction is not supported as an independent method contribution.
 
-## 主结果
+## Main results
 
-| 容量档 | 模型 | 参数量 | effect-ADE@20 | effect-FDE@20 | seed间FDE SD |
+| Parameter budget | Model | Parameters | effect-ADE@20 | effect-FDE@20 | FDE SD across seeds |
 |---|---|---:|---:|---:|---:|
-| 约65k | 距离排序GRU | 64,734 | 0.8725 | 1.5126 | 0.1087 |
-| 约65k | 稳定ID集合 | 64,266 | 0.8053 | **1.3707** | 0.1367 |
-| 约65k | 静态全连接图 | 64,302 | 0.8035 | 1.4054 | 0.0805 |
-| 约65k | 60米动态图 | 64,302 | 0.8376 | 1.4578 | 0.1093 |
-| 约65k | 60米动态图＋打乱后缀 | 64,302 | 1.2761 | 2.2716 | 0.1998 |
-| 约83k | 距离排序GRU | 83,246 | 0.7941 | 1.3699 | 0.1197 |
-| 约83k | 稳定ID集合 | 83,642 | 0.7420 | **1.2563** | 0.0238 |
-| 约83k | 静态全连接图 | 83,274 | 0.7678 | 1.3232 | 0.0861 |
-| 约83k | 60米动态图 | 83,274 | 0.7911 | 1.3854 | 0.0754 |
-| 约83k | 60米动态图＋打乱后缀 | 83,274 | 1.1919 | 2.1450 | 0.3196 |
+| ~65k | Distance-sorted GRU | 64,734 | 0.8725 | 1.5126 | 0.1087 |
+| ~65k | Stable-ID set encoder | 64,266 | 0.8053 | **1.3707** | 0.1367 |
+| ~65k | Static fully connected graph | 64,302 | 0.8035 | 1.4054 | 0.0805 |
+| ~65k | 60 m dynamic graph | 64,302 | 0.8376 | 1.4578 | 0.1093 |
+| ~65k | 60 m dynamic graph + shuffled suffix | 64,302 | 1.2761 | 2.2716 | 0.1998 |
+| ~83k | Distance-sorted GRU | 83,246 | 0.7941 | 1.3699 | 0.1197 |
+| ~83k | Stable-ID set encoder | 83,642 | 0.7420 | **1.2563** | 0.0238 |
+| ~83k | Static fully connected graph | 83,274 | 0.7678 | 1.3232 | 0.0861 |
+| ~83k | 60 m dynamic graph | 83,274 | 0.7911 | 1.3854 | 0.0754 |
+| ~83k | 60 m dynamic graph + shuffled suffix | 83,274 | 1.1919 | 2.1450 | 0.3196 |
 
-## 预设配对对比
+## Prespecified paired contrasts
 
-正值表示候选模型优于参考模型。
+Positive differences favor the candidate model over its reference.
 
-| 容量档 | 对比 | 配对差值 | 95% CI | 判定 |
+| Parameter budget | Contrast | Paired difference | 95% CI | Decision |
 |---|---|---:|---:|---|
-| 约65k | 距离排序－稳定ID集合 | 0.1419 m | [0.0524, 0.2345] | 稳定ID集合较好 |
-| 约83k | 距离排序－稳定ID集合 | 0.1137 m | [0.0315, 0.1960] | 稳定ID集合较好 |
-| 约65k | 稳定ID集合－静态图 | -0.0346 m | [-0.1065, 0.0327] | 无静态图收益证据 |
-| 约83k | 稳定ID集合－静态图 | -0.0669 m | [-0.1360, -0.0008] | 静态图较差 |
-| 约65k | 静态图－动态图 | -0.0524 m | [-0.0931, -0.0100] | 动态图较差 |
-| 约83k | 静态图－动态图 | -0.0622 m | [-0.1023, -0.0231] | 动态图较差 |
-| 约65k | 打乱动态图－同episode动态图 | 0.8138 m | [0.6412, 0.9949] | 事实证据负对照通过 |
-| 约83k | 打乱动态图－同episode动态图 | 0.7596 m | [0.5909, 0.9381] | 事实证据负对照通过 |
+| ~65k | Distance-sorted minus stable-ID set | 0.1419 m | [0.0524, 0.2345] | Stable-ID set better |
+| ~83k | Distance-sorted minus stable-ID set | 0.1137 m | [0.0315, 0.1960] | Stable-ID set better |
+| ~65k | Stable-ID set minus static graph | -0.0346 m | [-0.1065, 0.0327] | No evidence of static-graph gain |
+| ~83k | Stable-ID set minus static graph | -0.0669 m | [-0.1360, -0.0008] | Static graph worse |
+| ~65k | Static minus dynamic graph | -0.0524 m | [-0.0931, -0.0100] | Dynamic graph worse |
+| ~83k | Static minus dynamic graph | -0.0622 m | [-0.1023, -0.0231] | Dynamic graph worse |
+| ~65k | Shuffled minus same-episode dynamic graph | 0.8138 m | [0.6412, 0.9949] | Factual-evidence negative control passed |
+| ~83k | Shuffled minus same-episode dynamic graph | 0.7596 m | [0.5909, 0.9381] | Factual-evidence negative control passed |
 
-跨容量档对episode误差取平均后的探索性汇总为：
+Exploratory pooled results after averaging episode errors across budgets:
 
-- 距离排序－稳定ID集合：0.1278 m，95% CI [0.0500, 0.2095]；
-- 静态图－动态图：-0.0573 m，95% CI [-0.0913, -0.0231]。
+- Distance-sorted minus stable-ID set: 0.1278 m, 95% CI [0.0500, 0.2095];
+- Static minus dynamic graph: -0.0573 m, 95% CI [-0.0913, -0.0231].
 
-## 训练预算敏感性
+## Training-budget sensitivity
 
-| 预算 | 65k 静态图－动态图 | 83k 静态图－动态图 |
+| Budget | 65k static minus dynamic graph | 83k static minus dynamic graph |
 |---|---:|---:|
 | 60 epoch | 0.0340 [-0.0025, 0.0698] | 0.0566 [0.0281, 0.0850] |
 | 120 epoch | -0.0176 [-0.0528, 0.0180] | 0.0520 [0.0043, 0.1005] |
 | 200 epoch | -0.0524 [-0.0931, -0.0100] | -0.0622 [-0.1023, -0.0231] |
 
-正值表示动态图较好，负值表示动态图较差。动态图的方向随训练预算反转，说明早期结果受到不同模型收敛速度影响。完整60轮和120轮筛查结果均已保留，不能只选择有利于动态图的早期预算。
+Positive values favor the dynamic graph; negative values favor the static graph. Direction reverses with training budget, indicating different convergence rates. Complete 60- and 120-epoch screens are preserved; selecting only early budgets favorable to the dynamic graph is not justified.
 
-## 当前研究决策建议
+## Research recommendations at this historical stage
 
-1. 当前动态距离门控图不进入主要贡献，停止使用早期“动态图优于集合编码器”的确定性表述。
-2. 保留稳定episode内车辆ID和对象中心集合编码，因为它在两个容量档的最终预算下均优于距离排序输入。
-3. 下一步在`roundabout-v0`复现“距离排序与稳定ID集合”核心对比；动态图只作为记录完整性的诊断对照，不据此扩展更复杂图模块。
-4. 在跨场景复现前，稳定ID收益仍限定为合流场景证据。
-5. 事实后缀相对打乱后缀的收益再次稳定成立，不受当前结构选择失败影响。
+1. Exclude the current distance-gated dynamic graph from primary contributions and stop categorical claims that it outperforms set encoding based on early runs.
+2. Retain stable within-episode vehicle IDs and object-centric set encoding, which outperform distance-sorted inputs at both final budgets.
+3. Replicate the distance-sorted versus stable-ID set contrast in `roundabout-v0`; retain the dynamic graph as a diagnostic control, without extending to more complex graph modules on this basis.
+4. Until replication, the stable-ID gain is limited to Merge evidence.
+5. Factual suffixes again outperform shuffled suffixes; this result is unaffected by the architecture-selection failure.
 
-## 边界
+## Boundaries
 
-- 多个静态图和动态图种子的最佳验证epoch仍接近200轮上限，因此不能声称所有模型已达到理论最优；但动态图没有跨预算稳定的正收益，已经足以否定当前实现的主要创新主张。
-- 本实验只比较当前的60米硬距离门控，不否定所有可能的动态图方法。
-- 当前只评价自车反事实效应，尚未评价周车响应传播和结构真值。
+- Several static/dynamic graph seeds had best validation epochs near the 200-epoch cap, so theoretical optimality is not established. However, the absence of a stable dynamic-graph gain across budgets is sufficient to reject the innovation claim for this implementation.
+- This experiment evaluates only the current 60 m hard distance gate; it does not reject every dynamic-graph method.
+- Only ego counterfactual effects are evaluated; surrounding-vehicle response propagation and structural ground truth are not evaluated.
 

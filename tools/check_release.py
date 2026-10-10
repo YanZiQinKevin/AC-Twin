@@ -24,6 +24,14 @@ def main():
   if 'url' in r or r.get('availability')!='contact_authors':problems.append(r['path']+': hosted link or incorrect access policy')
   ref=external.get(r['path'],{})
   if r['sha256']!=ref.get('sha256') or int(r['bytes'])!=int(ref.get('bytes',-1)):problems.append(r['path']+': inventory metadata mismatch')
+ docs=json.loads((ROOT/'release/document_translations.json').read_text(encoding='utf-8'))
+ for row in docs['files']:
+  target=ROOT/row['path']
+  if not target.is_file() or digest(target)!=row['release_sha256']:problems.append(row['path']+': publication document hash mismatch')
+ for row in docs['frozen_originals']:
+  original=ROOT/row['original'];entry=next(r for r in docs['files'] if r['path']==row['path'])
+  if digest(original)!=entry['source_sha256']:problems.append(row['path']+': frozen original hash mismatch')
+ if names & set(json.loads((ROOT/'release/document_cleanup.json').read_text(encoding='utf-8'))['removed']):problems.append('internal documents returned to release')
  total=0
  for i,(name,row) in enumerate(inventory.items(),1):
   p=ROOT/name
@@ -55,6 +63,7 @@ def main():
       # Preserve the original bytes and verify their SHA-256 above.
       s=raw.decode('utf-8',errors='replace')
     if SECRET.search(s):problems.append(name+': credential pattern')
+    if p.suffix=='.md' and re.search(r'[\u4e00-\u9fff]',s):problems.append(name+': untranslated Chinese text')
     if p.suffix=='.py':ast.parse(s,filename=name)
     if p.suffix=='.json':json.loads(s)
     if p.suffix=='.jsonl':

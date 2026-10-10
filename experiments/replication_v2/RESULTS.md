@@ -1,21 +1,21 @@
-# replication_v2 综合结果
+# replication_v2 Combined Results
 
-总体判定：**PASS**。
+Overall decision: **PASS**.
 
-| 数据集 | shuffled-full FDE (m) | prefix-10 FDE (m) | 改善 | 配对差及95% CI (m) | 判定 |
+| Dataset | shuffled-full FDE (m) | prefix-10 FDE (m) | Improvement | Paired difference and 95% CI (m) | Decision |
 |---|---:|---:|---:|---:|---|
 | merge_original | 3.4365 | 2.2975 | 33.14% | 1.1390 [0.8936, 1.3887] | PASS |
 | merge_independent_seed | 3.3350 | 2.2575 | 32.31% | 1.0775 [0.8515, 1.3045] | PASS |
 | roundabout_independent_scene | 5.8847 | 3.5767 | 39.22% | 2.3080 [1.9088, 2.7253] | PASS |
 
-## 动作分层审计
+## Action-stratum audit
 
-两组新复现数据共检查 20 个动作×持续时间分层，平均效应反转 0 个。完整结果见 `stratum_results.csv`。
+Across two newly collected replication datasets, 20 action-by-duration strata were checked, with 0 mean-effect reversals. See `stratum_results.csv` for complete results.
 
-## 结论
+## Conclusion
 
-同episode 10步事实后缀相对匹配打乱后缀的收益，在独立采集种子和不同道路拓扑上均复现。因此，项目可以进入稳定实体ID和对象中心动态交互模型阶段。
+The advantage of same-episode 10-step factual suffixes over matched shuffled suffixes replicated under independent collection seeds and a different road topology. At that historical stage, this supported proceeding to stable entity IDs and object-centric dynamic-interaction models.
 
-## 边界
+## Boundaries
 
-当前证据支持事实后缀包含事件特异信息，但尚不等于完成了结构外生噪声识别；跨模拟器验证也尚未完成。
+The evidence supports event-specific information in factual suffixes, not identified structural exogenous noise. Cross-simulator validation had not yet been completed at this stage.

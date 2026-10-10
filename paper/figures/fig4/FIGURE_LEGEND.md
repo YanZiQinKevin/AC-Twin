@@ -4,24 +4,24 @@
 
 ---
 
-## 中文备忘（不入正文）
+## Interpretation notes (outside the manuscript caption)
 
-**范围串号警告（已修一次，勿再犯）：** 三个范围的"最窄余量"不同 —— Merge 是 **26.0%**、
-JOINT_OOD 是 **18.6%**、MetaDrive 是 **10.1%**。本图 (a)–(c) 全部来自 Merge，**只能写 26.0%**；
-Table 6 里那个 10.1% 属于 MetaDrive，自带 (MetaDrive/Waymo, Regret@80 against `SEED_VOTE_ENTROPY`)
-的范围限定，不得搬到 Merge 面板上。
+**Do not mix scopes:** narrowest margins differ: Merge **26.0%**,
+JOINT_OOD **18.6%**, MetaDrive **10.1%**. Panels (a)–(c) use Merge and **only 26.0% applies**.
+The Table 6 value 10.1% belongs to MetaDrive (MetaDrive/Waymo, Regret@80 against `SEED_VOTE_ENTROPY`),
+and must not be assigned to Merge panels.
 
-- (a) 两条参考评分**没有裁判区间**，这一句不能省，否则等于给它们补了 CI；轴标签同理写明
+- (a) The two reference scores **have no adjudication CIs**; retain that qualification and the corresponding axis-label wording.
   "for adjudicated rows"。
-- (a) 的横轴是"相对每条基线的提升"，所以**条越长 = 该基线越弱**；图内已放
-  `longer bar = weaker baseline`，正文若引用 (a) 不得读成"最重要的胜利在最上面"。
-- (a) 的"最强"必须带指标限定：AURC 最低是 `MARGIN_ONLY`，Regret@80 最低是 `SEED_VOTE_ENTROPY`。
-- (c) 只能写"方向稳定"，必须指向 Table S3；不得把分层当独立 confirm。
-- (d) 域分类器只证明失配，不进风险打分；不得写"对任意 OOD 鲁棒"；`BEHAVIOR_OOD` 未通过资格是
-  资格筛选的结果，不是"审计失败"。
-- 红虚线在图中有两义：在 (b) 是**正式集成裁判值**、在 (d) 是**冻结失配阈值**；(d) 资格矩阵里的
-  "no"已刻意改为中性斜体而非红色，避免与这两条参考线混淆。
-- **统计相关性别误用：** R2 确认的 bootstrap 对每次重采样是用**同一个重采样索引向量**重算该
-  draw 的全部指标，因此 (a) 各行、(b) 各 seed 的区间彼此高度相关。**不得**用"两个区间不重叠"
-  推断两行差异显著；行间比较需要专门的配对差区间。
-- 本图不承载 Fig. 2 的范围主结果；跨范围结论只回指 Fig. 2 与 Table 6。
+- (a) The horizontal axis is improvement relative to each baseline, so **longer bars indicate weaker baselines**. The figure states
+  `longer bar = weaker baseline`; do not interpret the top bar as the most important victory.
+- Specify the endpoint when calling a baseline strongest: `MARGIN_ONLY` for AURC; `SEED_VOTE_ENTROPY` for Regret@80.
+- (c) Supports directional stability only, with full values in Table S3; strata are not independent confirmations.
+- (d) Domain classification establishes mismatch only and does not enter risk scoring; do not claim arbitrary-OOD robustness. BEHAVIOR_OOD failed
+  qualification, which is not an audit failure.
+- Red dashed lines denote the adjudicated ensemble effect in (b) and the frozen mismatch threshold in (d). In the qualification matrix,
+  `no` is neutral italic text, avoiding confusion with the reference-line color.
+- **Statistical dependence:** each R2 confirmation bootstrap draw uses **the same resampling index vector** for
+  all endpoints, so row/seed intervals in (a)/(b) are highly correlated. **Do not** infer a significant between-row difference
+  from nonoverlapping intervals; use a dedicated paired difference interval.
+- Overall cross-scope effects belong in the three-scope figure (current Fig. 4) and Table 6.

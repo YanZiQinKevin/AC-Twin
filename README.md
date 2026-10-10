@@ -4,6 +4,8 @@ AC-Twin studies retrospective counterfactual traffic prediction in reactive mult
 
 This repository contains source, tests, run configurations, model weights, simulation datasets below 10 MiB per file, experimental reports, numerical exports and figure/table source data. Larger products are not distributed through GitHub. Please contact the authors for access to the complete experimental data; see [data availability](DATA_AVAILABILITY.md). MetaDrive training samples and their prediction caches, raw Waymo TFRecords and converted third-party scenarios are excluded. Manuscripts, research plans and discussion drafts remain outside the release. No open-source licence has been selected yet.
 
+Experiment reports and essential protocols are indexed in [experiments/README.md](experiments/README.md). Public Markdown is in English; internal process records are omitted. Translation provenance and frozen-document originals are described in [reproduction notes](REPRODUCIBILITY.md).
+
 ## Layout
 
 ```text

@@ -1,20 +1,23 @@
 {
   "date": "2026-10-10",
-  "files": 3360,
-  "bytes": 5374659430,
+  "files": 3298,
+  "bytes": 5374378555,
   "categories": {
     "source": 401,
     "data": 74,
-    "experiment_output": 1951,
+    "experiment_output": 1889,
     "weights": 934
   },
-  "excluded_files": 8440,
+  "excluded_files": 8503,
   "excluded_metadrive_training_files": 4,
   "largest_file_bytes": 1249861405,
   "source_read_only": true,
   "external_files": 38,
   "external_bytes": 3981971515,
-  "git_product_files": 3322,
-  "git_product_bytes": 1392687915,
-  "download_status": "CONTACT_AUTHORS_NO_HOSTED_LINK"
+  "git_product_files": 3260,
+  "git_product_bytes": 1392407040,
+  "download_status": "CONTACT_AUTHORS_NO_HOSTED_LINK",
+  "removed_internal_markdown_files": 63,
+  "english_markdown_files": 81,
+  "translated_or_edited_markdown_files": 69
 }

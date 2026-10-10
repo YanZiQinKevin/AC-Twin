@@ -1,0 +1,500 @@
+{
+  "files": [
+    {
+      "source_path": "experiments/identity_continuity_stage/FORMAL_QA_AND_JOINT_DECISION_2026-09-06.md",
+      "path": "experiments/identity_continuity_stage/FORMAL_QA_AND_JOINT_DECISION_2026-09-06.md",
+      "source_sha256": "d08098bab3e3e8262778919afd2a9a1319b4ff01df79e91e977db2609b8cae2c",
+      "release_sha256": "eec0877104ca422041592de4a177275e4b585adc921e8c2534c33f36faa7883b",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/identity_continuity_stage/PROTOCOL.md",
+      "path": "experiments/identity_continuity_stage/PROTOCOL.md",
+      "source_sha256": "376d662e7f5ffd48d69c4bf097f2ce8ca4f56ba1ffeec745f36e072e9a01bbb9",
+      "release_sha256": "75b4967c4fe201c5ca212801e540239ac2ee57271f8cb4a958f930ffc0d54e7a",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/object_centric_stage/PROTOCOL.md",
+      "path": "experiments/object_centric_stage/PROTOCOL.md",
+      "source_sha256": "dd132d9eef8e7f6e18ebec7d1a9d78b23d8b4eb3062b79b7dd9dcc407f08a60f",
+      "release_sha256": "dd8a11ed5cd6e7b2ce5cfae9b996f569fba7a142ba9629f7e0cac48f1273fcb7",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/object_centric_stage/RESULTS.md",
+      "path": "experiments/object_centric_stage/RESULTS.md",
+      "source_sha256": "1b9891b61d7fa0974144eac9337eb03cc61dfe48341082783d0df0f41c419f51",
+      "release_sha256": "5ba5559396185837a1adbdc5dbae01e383f49a1f5c83643dd87efcc87507f778",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/pilot_2000/PROTOCOL.md",
+      "path": "experiments/pilot_2000/PROTOCOL.md",
+      "source_sha256": "25c435240748f16eafcd27d02867734a713d2003e35b9c1f601d60b94b0fe9d5",
+      "release_sha256": "c42609d3924d521a46efc462dd3665d57cb9d6a2009d9dd37e254c1b823f822a",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/pilot_2000/RESULTS.md",
+      "path": "experiments/pilot_2000/RESULTS.md",
+      "source_sha256": "13b9dbbfc4135aaca1fbc95add0fb3fb8dc9d5eb6b0158af7066fa0a54b94aa3",
+      "release_sha256": "fe2d9de0c749d8c1aa9eae0c08e09f0e5c2b0bc2cd11b73c286569025ef52fd3",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/replication_v2/PROTOCOL.md",
+      "path": "experiments/replication_v2/PROTOCOL.md",
+      "source_sha256": "d4d0f9f8c78605a335d073d804d940f4664e83c141a866cc48bd546654094b8a",
+      "release_sha256": "55dc6677c766e47ad2bf0dba771252c87541891c8aa52e178db396f8611d9645",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/replication_v2/RESULTS.md",
+      "path": "experiments/replication_v2/RESULTS.md",
+      "source_sha256": "00792c22a0b0477afc1d0d25df220f331080ff01edc99cd3bdced4105f183288",
+      "release_sha256": "ab033bb25b7f024d0de5c207fe3ce3567a9476d14ee7584a11368f94c6af170e",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage1_evidence_value/PROTOCOL.md",
+      "path": "experiments/stage1_evidence_value/PROTOCOL.md",
+      "source_sha256": "9c51b02d1f9dd3c277a14eec0ec9bf1eb3e0f59628704dda78585b42abbbbe58",
+      "release_sha256": "6d69a4b79aef4eeb805c2a62e474e9c908a4bc1fdd1c616e9b5fa8fd3fb8a0d7",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage1_evidence_value/STAGE1_DEVELOPMENT_GO_NO_GO_2026-09-07.md",
+      "path": "experiments/stage1_evidence_value/STAGE1_DEVELOPMENT_GO_NO_GO_2026-09-07.md",
+      "source_sha256": "edc94b1fe1297c523fb7cce0cbc6cecee0f2068674e78cd852f2590cd348f44c",
+      "release_sha256": "cdfebea91f2845a253f2c50dc219b1548e09eb2bfd4949da21153fb272a8c4b6",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage2_confirmatory/PROTOCOL.md",
+      "path": "experiments/stage2_confirmatory/PROTOCOL.md",
+      "source_sha256": "1eecccbcffccc851650f71425deffd1620ede1268a43cbe54778690626dd4e55",
+      "release_sha256": "31e754eb1d0c4a1db146b025150be0089c9b1a23f1faec1bc79d2dc20d6bbd2e",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/suffix_evidence_ablation/PROTOCOL.md",
+      "path": "experiments/suffix_evidence_ablation/PROTOCOL.md",
+      "source_sha256": "51091160ef173136057ac154f60e3d5773c880ee4e3025c5ccedefe3557d9740",
+      "release_sha256": "31318971a9c3bcfa49855737bfb45aafe060acc28cb8854c1026b6f6fc723e82",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/suffix_evidence_ablation/RESULTS.md",
+      "path": "experiments/suffix_evidence_ablation/RESULTS.md",
+      "source_sha256": "33398ffb9a4ff4ac350abb32d1cfa5c90c42e0b87fa1b974823a1bc7fcf315da",
+      "release_sha256": "642cc9e637d137945ca9a8c0e15aa2392b04e02e85eab5f76c64d27575c811de",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/object_centric_stage/architecture_capacity_merge/PROTOCOL.md",
+      "path": "experiments/object_centric_stage/architecture_capacity_merge/PROTOCOL.md",
+      "source_sha256": "1f35070d92d4bbdbb8dd4978127ee318595e6d6341a11a5c1e3fa9764f9ef142",
+      "release_sha256": "112ad6844f4ad2e9405c79e9941e6e817018e2effec7a2aa2c75a20eed1582e4",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/object_centric_stage/architecture_capacity_merge/RESULTS.md",
+      "path": "experiments/object_centric_stage/architecture_capacity_merge/RESULTS.md",
+      "source_sha256": "83f97f3e924844cc209ce4333ec1e76205ea3d319e2be02ca95c0b65f13bfd59",
+      "release_sha256": "2f742f1d79af2f1e68ab7d7fb56f8434c31d181a44a4be2fe4b3e1f4426a89fa",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/object_centric_stage/architecture_capacity_merge_120epoch_screen/PROTOCOL.md",
+      "path": "experiments/object_centric_stage/architecture_capacity_merge_120epoch_screen/PROTOCOL.md",
+      "source_sha256": "8dc25a361c27a941360df7c9ef3b101e7027c95c699b13cb0f55e5c4b884869e",
+      "release_sha256": "0ef7f47d601452c03760fb02ab42167091ff2b85b71be2ea7e26d70e1e3b7d61",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/object_centric_stage/architecture_capacity_merge_60epoch_screen/PROTOCOL.md",
+      "path": "experiments/object_centric_stage/architecture_capacity_merge_60epoch_screen/PROTOCOL.md",
+      "source_sha256": "8ae8a22485c591464b46162293769933425bdc3fb1f42cd3d21a38e806069c8c",
+      "release_sha256": "5802d0912acae7a74d882adafd1e2eacd5d7658c782e1d72ddb4b153b0cef29b",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/object_centric_stage/architecture_capacity_roundabout/PROTOCOL.md",
+      "path": "experiments/object_centric_stage/architecture_capacity_roundabout/PROTOCOL.md",
+      "source_sha256": "0cbb5b3e3419d22081b0e5fbb32081d16fa680303d6a16c17b1c85826306d69a",
+      "release_sha256": "4a48ace84bee447869ec0e710c45a6bcb27e62f0ab490c609a598a27efa6d558",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/object_centric_stage/architecture_capacity_roundabout/RESULTS.md",
+      "path": "experiments/object_centric_stage/architecture_capacity_roundabout/RESULTS.md",
+      "source_sha256": "37ce44f65daf7bf07dd22037cbef6856eaf72a16d345b38e37b57b492d4b02ec",
+      "release_sha256": "04293eeeb58b960e797cce94c5322d0db02bf2fda81ff42e5aa230e7728401a2",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/paper_revision/m1_supervised_ablation_v02/report/M1_claim_boundary_addendum.md",
+      "path": "experiments/paper_revision/m1_supervised_ablation_v02/report/M1_claim_boundary_addendum.md",
+      "source_sha256": "cc1b6a192ae6eeed2f3d253d574d7ba91f185c185183c90ee922144bc44823cc",
+      "release_sha256": "d5cb114a67b9bbc6ca656dca4bb50118bab169b5b936eaa0be2b444563c00a75",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/paper_revision/m1_supervised_ablation_v02/report/M1_report.md",
+      "path": "experiments/paper_revision/m1_supervised_ablation_v02/report/M1_report.md",
+      "source_sha256": "a4243dacb858fb9509094407c231ce38cb2767fa9e39e8ca2d17ef3252851af6",
+      "release_sha256": "c9866acd7dd1e8c3cc10521765796a5f0e1d3cc3294d52e10b3bc944e6dd3724",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/replication_v2/merge_seed2/RESULTS.md",
+      "path": "experiments/replication_v2/merge_seed2/RESULTS.md",
+      "source_sha256": "6416f42a4002b7b6c1ff44125f6facd0c849521895d4038849fbbf5bc52131d3",
+      "release_sha256": "f125b98ffb4141a9d3763d9fed370384f5da235576b648e7a21f19a28a09f218",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/replication_v2/roundabout/RESULTS.md",
+      "path": "experiments/replication_v2/roundabout/RESULTS.md",
+      "source_sha256": "3d5c8a5e8b5a0cd1b918c64bcb5b581e764700b52812c88ca926738164a5fe37",
+      "release_sha256": "dc98ed1c9a973c14ce3ac1d61bbe1c5468e4fe89a9acef8cb73c4b5df6fc4c31",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage1_evidence_value/stage1_plus_merge/STAGE1_PLUS_DIAGNOSTIC_DECISION_2026-09-07.md",
+      "path": "experiments/stage1_evidence_value/stage1_plus_merge/STAGE1_PLUS_DIAGNOSTIC_DECISION_2026-09-07.md",
+      "source_sha256": "4f58fc109c8bd774d636d90d8cd81def45df7591e3aa313eaecb4c07f703a503",
+      "release_sha256": "666b1f73ba11abc2e74a482452155c1f241e8989818463dcf3d0c2f391bf3053",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage2_confirmatory/merge/STAGE2_CONFIRMATORY_DECISION.md",
+      "path": "experiments/stage2_confirmatory/merge/STAGE2_CONFIRMATORY_DECISION.md",
+      "source_sha256": "317fa755da60ca5e27e4f2c28d16122a450a393e0fe4cbd1488df4f429ea530a",
+      "release_sha256": "1bffc17209641805e6d9ee199145b72583c262d3ae180fab70128fbc2aaa0cbd",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage4_reliability/stage4a_v4/reports/STAGE4A_DEV_DECISION.md",
+      "path": "experiments/stage4_reliability/stage4a_v4/reports/STAGE4A_DEV_DECISION.md",
+      "source_sha256": "e9b74c78a051ac04d29154a0ba5aeed89d126ea66f369d47b20dff79644b4a22",
+      "release_sha256": "e83f61c1a232fb8329fa8cbc7ff44157e50a7472cb06fc557b18e01510d91fa0",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage4_reliability/stage4b/reports/STAGE4B_CONFIRMATORY_DECISION.md",
+      "path": "experiments/stage4_reliability/stage4b/reports/STAGE4B_CONFIRMATORY_DECISION.md",
+      "source_sha256": "2cedbf99be3d1d5463cb8896767a92f85df93696eb9d5033aeac140a850c5f2b",
+      "release_sha256": "48001b9c888e89fc672453a1c5b9286e6b63fbebce17eebdbc5b87fef5ad6c3d",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage4_reliability/stage4cr2_confirm/reports/STAGE4CR2_CONFIRMATORY_DECISION.md",
+      "path": "experiments/stage4_reliability/stage4cr2_confirm/reports/STAGE4CR2_CONFIRMATORY_DECISION.md",
+      "source_sha256": "4455ef156cabefad814b0b0ec60be3c27af663c2d8cedd5c9b47b77be85fc969",
+      "release_sha256": "b79f98abf1d9bfe3599006086436e576b1fb773622a032f9329a2f291fbfd4db",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "experiments/stage4_reliability/stage4d_ood/reports/STAGE4D_OOD_DECISION.md",
+      "path": "experiments/stage4_reliability/stage4d_ood/reports/STAGE4D_OOD_DECISION.md",
+      "source_sha256": "c84b4026d73bb47175c10ef756c60c0d466926ea0fee18b516b1cea30785e662",
+      "release_sha256": "cca26127698db0d79a17725da6975b7b1a0a777e6386e7247a076070e6d4b912",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/README.md",
+      "path": "paper/figures/README.md",
+      "source_sha256": "7ddc86f63c46f34abc89b6dd155a48d72bee7d64fac5590c201d1fb698b4e4f2",
+      "release_sha256": "583ab83c0a9c1c74dd5d7eae35cc4a1d14ba30a718d4e07116f93d869dd5a216",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/README.md",
+      "path": "paper/tables/README.md",
+      "source_sha256": "3ed04f1a91c06eebdf8881e925c550f27fe63e0b91a01b11848bb400e19300d9",
+      "release_sha256": "068f16e2c4cb77031f93329aeef77e5092b0ff9fd4f4c4a4eacaf3e937f4d2e0",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig1/README.md",
+      "path": "paper/figures/fig1/README.md",
+      "source_sha256": "7be087678d410b797c5421341b81cbbe58d1f9c46aec03af408d3033118e49fa",
+      "release_sha256": "45e199b0396bd5da7bbb3a8c012eebb74736be47085c6e14595402279694ff00",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig2/README.md",
+      "path": "paper/figures/fig2/README.md",
+      "source_sha256": "bd04efa2ef50263237841f7dc80c2672464b6f29d2307052a8f04abf866a7014",
+      "release_sha256": "90fc7e4acd08dffbd10d96d6f0e48d4684182fa186e989836569fc2d8d56a684",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig3/README.md",
+      "path": "paper/figures/fig3/README.md",
+      "source_sha256": "c5fea2baf400d0c7843acf25ef86088181f7d279685131c96caee9509646eb4b",
+      "release_sha256": "14e2266c3d60db24610505733386b3cb5282e34c6a3d78ec29b4759ed942f208",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig4/FIGURE_LEGEND.md",
+      "path": "paper/figures/fig4/FIGURE_LEGEND.md",
+      "source_sha256": "38a1458766b5e09aa427a490d4bbf846beb0d54334ef9fa37fb2813ace393786",
+      "release_sha256": "0e8a0bbefbc330025e5ba0083e96352fb1fafaeac6aaefc45b26c14c63e50540",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig4/README.md",
+      "path": "paper/figures/fig4/README.md",
+      "source_sha256": "8895f512f97a3e7c66046972d104806fbaa6cf913e40deec289df5892633dc6f",
+      "release_sha256": "95b2a70288e1fa1e630edac246883d3d682720dc22c3e3ad13d040db8cb14601",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig5/FIGURE_LEGEND.md",
+      "path": "paper/figures/fig5/FIGURE_LEGEND.md",
+      "source_sha256": "02d4a351be98831432053b02625714e0d9605fc264b563469afc0ee65df8d520",
+      "release_sha256": "4e155a6b61d5ae572983fef40c2cdadc8345624a1f5068459fe6821eda18d113",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig5/FIXED_CASE_COST_EXPLANATION.md",
+      "path": "paper/figures/fig5/FIXED_CASE_COST_EXPLANATION.md",
+      "source_sha256": "f7225f39fd623bbc0c774e5951e38817d4ee72a8f370478dd20505a0816362fb",
+      "release_sha256": "b9dac5e8b191af49c2b57075b765a0875df718be8201489aca52256a992e757c",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig5/README.md",
+      "path": "paper/figures/fig5/README.md",
+      "source_sha256": "3c062355cc89af1c57fe3927a4e22cc5568a25a15203c755421a71d60d73e31b",
+      "release_sha256": "046ae195756e5626e9ea7471ea33b044e3da9d92d3de2ea28549c36ad9c08fa9",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig5_2/FIGURE_LEGEND.md",
+      "path": "paper/figures/fig5_2/FIGURE_LEGEND.md",
+      "source_sha256": "6e75adf63e572dfdc5cfd69fb9596c8bc506a4b67410a0d19fe59a534fa580f9",
+      "release_sha256": "5266324fbfa27417df6a10df0aeb4333a8b7405d7388a3395e1a1aac1a774542",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig5_2/README.md",
+      "path": "paper/figures/fig5_2/README.md",
+      "source_sha256": "e54da2b86fdaece91984d26006a247a909e74cb0f460b8fd1ae9c62b67921d84",
+      "release_sha256": "0198109b2a9913cf3c4be49b1c6f6a2f8dbfceb4d24a87b109c5f70a61219940",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/fig_suffix_evidence/FIGURE_LEGEND.md",
+      "path": "paper/figures/fig_suffix_evidence/FIGURE_LEGEND.md",
+      "source_sha256": "4ad4b37c98dd430b81dbab1aeee4ca27f6af0a355e9a2ae46403998531e08fae",
+      "release_sha256": "ed4d423a3dbd740d5f03980a1e1a0f8966f04fedf8d3d000d7bc25838b6d5272",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/graphical_abstract/FIGURE_LEGEND.md",
+      "path": "paper/figures/graphical_abstract/FIGURE_LEGEND.md",
+      "source_sha256": "68468227899ee5e1d35da1b2cc1a41542883018a85819d05e22f8483f1685cc9",
+      "release_sha256": "1eda86f8243a00d26db43672c178b7a1e1fd6730d31ef1761f9bff24e4b25f03",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/stage4d_d2f/README.md",
+      "path": "paper/figures/stage4d_d2f/README.md",
+      "source_sha256": "63a861edcdcda34819a65efab72c1da64e1d05e6f6514192fd93805acb20bc5b",
+      "release_sha256": "da7a45027b1f2e43b4940adc62154213c2aa65e7cd34a5a06ed860309c0d84b9",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/stage5_sota/FIGURE_LEGEND.md",
+      "path": "paper/figures/stage5_sota/FIGURE_LEGEND.md",
+      "source_sha256": "8fb833b950a1d3a4e8c0df5d2cea9446e2c43a522484111dabc3cdc6ac7d8d63",
+      "release_sha256": "d6d834dafa967fb6ed1c37ff6d7d7c6d26eb11983c20e7eeec626e7ea1e27168",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/figures/stage4d_d2f/cases/六张子图说明.md",
+      "path": "paper/figures/stage4d_d2f/cases/CASE_PANELS.md",
+      "source_sha256": "dacdde9cac82b0e1ba99a0c5972c92b7b2ea9382fd700a9d094681bb895a0661",
+      "release_sha256": "581736c15bbef665272eab40d1454ec259e6bb2bacb62818a5f0daf45223cd81",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/internal_method_history/README.md",
+      "path": "paper/tables/internal_method_history/README.md",
+      "source_sha256": "75990581a5c65a152bcc51ccf957c08dfa655d99ff6e2b6b7e44b59d5b7f46fe",
+      "release_sha256": "58b97c645806ee91450d9011f7601a481bd7f11fe2a8e89f92ed3c520f0428c6",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table1/README.md",
+      "path": "paper/tables/table1/README.md",
+      "source_sha256": "d30112e4ad2dfc94fd5eaa2b42e1634c571e34d398bde94a93db172ec5f35591",
+      "release_sha256": "02b920a656b7af8b5b8147bb688fd9dee683388469d1176bf01ede15b70e7e96",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table1/TABLE_1.md",
+      "path": "paper/tables/table1/TABLE_1.md",
+      "source_sha256": "145eb7f9393bd11268e5cbf5912558c1480341c514f8db9fe1a39e36e9760c4c",
+      "release_sha256": "8518925bc9087f67088106b3f9f51fa0e59c0efef86702a9fc09579c21385107",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table2/README.md",
+      "path": "paper/tables/table2/README.md",
+      "source_sha256": "8c38fd43bfe5a976978abc07372ca153f3ffba6fd665dc7f7c218713bb224e14",
+      "release_sha256": "dbea0417dbab751d7e4aa61b0b5758517d6de74511fb670cecec6d362f3c974e",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table2/TABLE_2.md",
+      "path": "paper/tables/table2/TABLE_2.md",
+      "source_sha256": "594c0a60959f82d55935afaf391b3004614f5edc274fb8799a1e410b30d787d7",
+      "release_sha256": "04baa70d28848add8a40ebb7506583b93f1b23d4e56a4cce8286c9142078ad27",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table3/README.md",
+      "path": "paper/tables/table3/README.md",
+      "source_sha256": "0b234b497347942211b62d4e540423438d3e4e239e2fce82c2d3921a42fc8828",
+      "release_sha256": "f5e291f025a67111e3490b3f5753c73650a034b8ca60bd212e9b3a652e43deba",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table3/TABLE_3.md",
+      "path": "paper/tables/table3/TABLE_3.md",
+      "source_sha256": "72ecbd6a55b03803af51e65bec1e60ed1fadee0710c5cdf2550fb6ec44f14b99",
+      "release_sha256": "64289a23e60624bab32dbdc8704ee9f96aa048fc07422aefcd5599ed141a92dd",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table4/README.md",
+      "path": "paper/tables/table4/README.md",
+      "source_sha256": "26d009aec53e6c6fc66cec6659959a30d3482c7f715baf5cbafa708a8fcb7aab",
+      "release_sha256": "d26ec9f7915191e55312698b5666fcd982a1031b0a3e491a3875fefadd368c1a",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table4/TABLE_4.md",
+      "path": "paper/tables/table4/TABLE_4.md",
+      "source_sha256": "65e06e650b7387a3f5735a7279087bfe4f7558f3d95ffe14d0a17b23a348f9d0",
+      "release_sha256": "081128bc3e25a0213b185a9354998faa3b7f70753d58d236ce92852dceb0c17c",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table5/README.md",
+      "path": "paper/tables/table5/README.md",
+      "source_sha256": "f9ef5a7393cfcfb2079cb21b5d23293e58cb3c892db1267c5146fbdf8c0abdd1",
+      "release_sha256": "3046ee17d4d2a88a209abfa35752910938f93462d8952e1fa606025c3e68c7a3",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table5/TABLE_5.md",
+      "path": "paper/tables/table5/TABLE_5.md",
+      "source_sha256": "99705157d8c0fdfbd6b6fa9f05a9d2a893cf917fa3f9710120d5f5ca6ff60171",
+      "release_sha256": "fcf093d042a30b6067b3a054cbee057b0404cfa2aa9c847f6bacec35098aff9a",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table6/README.md",
+      "path": "paper/tables/table6/README.md",
+      "source_sha256": "7c5de9ad4e5954176f91dcd8b213c11e9d9650a9e96f9430ac7e36221c1a953d",
+      "release_sha256": "2150eeca34dc8df1f3e95506336cd937cb81ff256ad3e9b7ad1b913d9f042173",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table6/TABLE_6.md",
+      "path": "paper/tables/table6/TABLE_6.md",
+      "source_sha256": "eeacd5e48d7c0fb2cde6a13c328152a07e593890d8c63f68d20419eb91313595",
+      "release_sha256": "fe1006f64838ed116e75c9d50653f05166c005b047430aa36d41cd241e93bd4a",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table7/README.md",
+      "path": "paper/tables/table7/README.md",
+      "source_sha256": "8b89dcb5f6336ed218a9f083188a4101a53df531c4d61949b3be7e531d4962fe",
+      "release_sha256": "9bb0650a31f37922454d622fc7729ffc831b5d6b46621e0f6998e2de9000efba",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table7/TABLE_7_DETAILS.md",
+      "path": "paper/tables/table7/TABLE_7_DETAILS.md",
+      "source_sha256": "a45383a427fcd53d2990b4a3f60d5d956688aa5d7ff7f0a5ce1ecb7157f4ce20",
+      "release_sha256": "786d5a81c377344049ffb88f78a151e441328c5b951372f77c8d23e01e36144d",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table8/README.md",
+      "path": "paper/tables/table8/README.md",
+      "source_sha256": "b8884b62d214557a5af9996a650f07849efef62b1f20e689799dceff835e0af6",
+      "release_sha256": "1fd815c6ddc01a006b5d99c44801701d57cfe9d6e5c10babdd3ae35ad9c28287",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/table8/TABLE_8.md",
+      "path": "paper/tables/table8/TABLE_8.md",
+      "source_sha256": "20cc43d43b6581378447080ded4d930d03da2a78d3f844aee21171c0de23fa2c",
+      "release_sha256": "a28d2aacb7f193d81ace016f43aa5ba5571176a48bc00e6df5e0a11c6c1dfe0f",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/tableS1/README.md",
+      "path": "paper/tables/tableS1/README.md",
+      "source_sha256": "d1d72ac7d7164193b11a00085431d145ee35acf88155c0694b510b227c5e2fd6",
+      "release_sha256": "dca55c0454594d543f2b4edefde86e52fbdda9f0a69815dd2589264c800c124a",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/tableS1/TABLE_S1.md",
+      "path": "paper/tables/tableS1/TABLE_S1.md",
+      "source_sha256": "d88c7855456c25d3fce72662168c6574fa872a97100785ce2ecb9ec9e90ed849",
+      "release_sha256": "665e1148ef54610680772a7f05dbe2093eedf8d102d177a18fe5f9548bf0f41d",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/tableS2/README.md",
+      "path": "paper/tables/tableS2/README.md",
+      "source_sha256": "786b5c8254d3edfd11fa41d6887da73c81564eabbf6c2f6aee998d76b3728d4c",
+      "release_sha256": "e765cdf75179d511773e40084e21423e5664dc057287bbd18492345626d12acc",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/tableS3/README.md",
+      "path": "paper/tables/tableS3/README.md",
+      "source_sha256": "1176c5fff5d3edf828dbf81a067d8710bc22a86a0071797acd940024ad200699",
+      "release_sha256": "574f9e3f3188853aac34c4269c910249e3a3477b6f8530616de5c7f89a7f8f3d",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/tableS4/README.md",
+      "path": "paper/tables/tableS4/README.md",
+      "source_sha256": "66b83004d79853214e70a6c39344fc2cd53fb229687781e5cdf32347594308b6",
+      "release_sha256": "818574ffa0a090c7b393dbf1a7677dd6454674f32ef9014d7a6370eae130681e",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    },
+    {
+      "source_path": "paper/tables/tableS5/README.md",
+      "path": "paper/tables/tableS5/README.md",
+      "source_sha256": "e6fefd147ad84cdd93ef9a440991d2744eed506b9df558c917883f719cfaacf8",
+      "release_sha256": "ddd41845eac1df1226f48ecc878cb65149450a1030935e2e0d0f7773772c47d4",
+      "reason": "English publication copy; numerical results unchanged. Internal production history may be omitted from README files."
+    }
+  ],
+  "renames": {
+    "paper/figures/stage4d_d2f/cases/六张子图说明.md": "paper/figures/stage4d_d2f/cases/CASE_PANELS.md"
+  },
+  "frozen_originals": [
+    {
+      "path": "experiments/stage4_reliability/stage4b/reports/STAGE4B_CONFIRMATORY_DECISION.md",
+      "original": "release/frozen_document_originals/STAGE4B_CONFIRMATORY_DECISION.md.txt"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4cr2_confirm/reports/STAGE4CR2_CONFIRMATORY_DECISION.md",
+      "original": "release/frozen_document_originals/STAGE4CR2_CONFIRMATORY_DECISION.md.txt"
+    }
+  ]
+}

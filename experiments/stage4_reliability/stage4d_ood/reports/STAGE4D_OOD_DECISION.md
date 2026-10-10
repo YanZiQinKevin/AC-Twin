@@ -15,8 +15,8 @@
 
 ## Paper boundary (plan §8.2)
 
-冻结 decision-risk 方法在预注册 Merge 生成机失配下仍获支持。
+The frozen decision-risk method remained supported under the preregistered Merge generator mismatch.
 
-禁止由此声称：跨平台外部有效性、真实道路泛化、线上安全提升、闭环策略已改善或对任意 OOD 鲁棒。
+These results do not establish cross-platform external validity, real-road generalization, online safety gains, improved closed-loop policies, or robustness to arbitrary OOD shifts.
 
-单项 CI 是边际 CI，不宣称所有次分析联合 95% 覆盖。描述性次分析只入次表，不进主 AND Gate，不挽救主结果。无论裁判成败，不改写 Stage 4C-R2 或任何更早阶段已有终态。
+Individual CIs are marginal intervals; joint 95% coverage across all secondary analyses is not claimed. Descriptive secondary analyses belong in secondary tables, do not enter the primary AND gate, and cannot rescue the primary result. Adjudication outcomes do not overwrite Stage 4C-R2 or earlier terminal states.

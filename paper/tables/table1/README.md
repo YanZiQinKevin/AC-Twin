@@ -1,3 +1,11 @@
-# Table 1｜四条研究线与本文评价问题
+# Table 1: Four research strands
 
-[表体](TABLE_1.md)；[Excel](Table_1_Related_Work.xlsx)。完整相关工作矩阵见[Table S1](../tableS1/README.md)。
+The Markdown table is the current readable version. Editable workbooks, machine-readable data and provenance are listed below. Original experimental values are unchanged.
+
+## Files
+
+- [table1_source.json](table1_source.json)
+- [TABLE_1.md](TABLE_1.md)
+- [Table_1_Related_Work.xlsx](Table_1_Related_Work.xlsx)
+
+Build scripts organize existing frozen products only. They do not authorize training, inference, bootstrap reruns or re-adjudication. Some historical builders also require the manuscript source, maintained outside this code/data release.

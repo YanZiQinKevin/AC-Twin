@@ -1,5 +1,12 @@
-# Table 3｜Data roles and sample sizes for the reported evidence.
+# Table 3: Data roles and sample sizes
 
-[表体](TABLE_3.md)；[源数据](table3_data.csv)；[Excel](Table_3.xlsx)。
+The Markdown table is the current readable version. Editable workbooks, machine-readable data and provenance are listed below. Original experimental values are unchanged.
 
-按正文首次出现顺序编号；只整理已有表值，不重算实验。
+## Files
+
+- [table3_data.csv](table3_data.csv)
+- [table3_source.json](table3_source.json)
+- [TABLE_3.md](TABLE_3.md)
+- [Table_3.xlsx](Table_3.xlsx)
+
+Build scripts organize existing frozen products only. They do not authorize training, inference, bootstrap reruns or re-adjudication. Some historical builders also require the manuscript source, maintained outside this code/data release.

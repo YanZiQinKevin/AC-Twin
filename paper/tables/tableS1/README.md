@@ -1,5 +1,5 @@
-# Table S1｜完整相关工作定位矩阵
+# Table S1: Complete related-work positioning matrix
 
-[表体](TABLE_S1.md)；[原始底表](tableS1_data.xlsx)；[来源](tableS1_source.json)。
+[Table](TABLE_S1.md), [historical workbook](tableS1_data.xlsx), [provenance](tableS1_source.json).
 
-主文四条研究线简表为 Table 1；本补表按首次引用顺序编号，不是新的实验比较。原始底表的历史行范围保持不变，以当前Markdown矩阵为内容准。
+Main Table 1 summarizes four research strands. This supplement compares literature tasks and information contracts, not new experimental performance. The current Markdown matrix is authoritative; historical workbook row ranges are retained.

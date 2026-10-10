@@ -1,57 +1,57 @@
-# 合流场景参数匹配结构比较协议
+# Capacity-Matched Architecture Comparison Protocol: Merge
 
-冻结时间：2026 年 9 月 4 日  
-实验名称：`architecture_capacity_merge`
+Frozen on: 2026-09-04
+Experiment: `architecture_capacity_merge`
 
-## 研究问题
+## Research question
 
-在相同参数容量下，稳定实体身份、静态消息传递和距离门控动态消息传递是否分别降低自车反事实效应误差？
+At matched parameter budgets, do stable entity identity, static message passing and distance-gated dynamic message passing each reduce ego counterfactual-effect error?
 
-## 数据与独立单位
+## Data and independent unit
 
-- 数据：`data/object_centric_stage/merge_2000/object_twinworld_2000.npz`
-- 数据SHA256：`EB6122AC62AF20219FC0B27D346740A935587FF32D82E4000127A50A41466E2B`
-- 2,000个独立episode；训练/验证/测试为1,400/300/300。
-- 统计独立单位为test episode；训练随机种子不增加样本量。
+- Data: `data/object_centric_stage/merge_2000/object_twinworld_2000.npz`
+- Data SHA256: `EB6122AC62AF20219FC0B27D346740A935587FF32D82E4000127A50A41466E2B`
+- 2,000 independent episodes; train/validation/test: 1,400/300/300.
+- Independent unit: test episode; training seeds do not increase sample size.
 
-## 最终冻结配置
+## Final frozen configuration
 
-- 配置：`config/architecture_capacity_merge.json`
-- 配置SHA256：`784503C0CDFDCFDCE81F91670369E7D171139F18F5B288226DEFF906F89DC765`
-- 两个容量档：约65k和约83k。
-- 每档包含距离排序GRU、稳定ID集合、静态全连接图、60米距离门控动态图和动态图打乱后缀负对照。
-- 事实证据窗口10步；预测时域20步；训练种子`[11,22,33,44,55]`。
-- AdamW，学习率0.001，权重衰减0.0001，批量128。
-- 最大200 epoch，早停耐心25。
+- Configuration: `config/architecture_capacity_merge.json`
+- Configuration SHA256: `784503C0CDFDCFDCE81F91670369E7D171139F18F5B288226DEFF906F89DC765`
+- Two parameter budgets: approximately 65k and 83k.
+- Each budget includes a distance-sorted GRU, stable-ID set encoder, static fully connected graph, 60 m distance-gated dynamic graph and shuffled-suffix dynamic-graph negative control.
+- Factual-evidence window: 10 steps; prediction horizon: 20 steps; training seeds: `[11,22,33,44,55]`.
+- AdamW, learning rate 0.001, weight decay 0.0001, batch size 128.
+- Maximum 200 epochs; early-stopping patience 25.
 
-## 统一延长训练的依据
+## Basis for uniformly extending training
 
-- 60轮筛查保存在`architecture_capacity_merge_60epoch_screen/`：所有核心条件均触发预设的末段最佳epoch规则。
-- 120轮筛查保存在`architecture_capacity_merge_120epoch_screen/`：多个条件仍有至少3/5个种子的最佳epoch接近上限，静态图末10轮验证损失的种子中位改善仍约5%。
-- 因此仅依据验证曲线、而不是根据测试集模型输赢，将全部条件统一延长到200轮；模型、数据、学习率和评价口径不变。
+- The 60-epoch screen is preserved in `architecture_capacity_merge_60epoch_screen/`: every core condition triggered the prespecified late-best-epoch rule.
+- The 120-epoch screen is preserved in `architecture_capacity_merge_120epoch_screen/`: several conditions still had best epochs near the cap for at least 3/5 seeds; the static graph's median validation-loss improvement over the last 10 epochs was approximately 5%.
+- All conditions were therefore extended uniformly to 200 epochs based only on validation curves, not test-set winners. Models, data, learning rates and evaluation definitions were unchanged.
 
-## 参数匹配
+## Parameter matching
 
-| 容量档 | 距离排序GRU | 稳定ID集合 | 静态图 | 动态图 |
+| Parameter budget | Distance-sorted GRU | Stable-ID set encoder | Static graph | Dynamic graph |
 |---|---:|---:|---:|---:|
-| 约65k | 64,734 | 64,266 | 64,302 | 64,302 |
-| 约83k | 83,246 | 83,642 | 83,274 | 83,274 |
+| ~65k | 64,734 | 64,266 | 64,302 | 64,302 |
+| ~83k | 83,246 | 83,642 | 83,274 | 83,274 |
 
-同档参数偏差不超过1.5%。静态图与动态图参数量和消息函数完全相同，只改变邻接规则。
+Within-budget deviations are at most 1.5%. Static and dynamic graphs have identical parameter counts and message functions; only adjacency rules differ.
 
-## 指标、统计与判定
+## Endpoints, statistics and decisions
 
-- 主指标：`effect-FDE@20`；次指标：`effect-ADE@20`。
-- 对比：row-minus-set、set-minus-static、static-minus-dynamic、shuffled-dynamic-minus-same-episode-dynamic。
-- test episode误差先在5个训练种子间求平均，再进行10,000次配对bootstrap。
-- 只有动态图相对静态图在两个容量档方向一致，且汇总95%置信区间不跨0，才支持独立动态结构收益。
-- 打乱后缀只作为事实证据负对照；没有干预边真值时不称动态图为真实因果图。
+- Primary endpoint: `effect-FDE@20`; secondary endpoint: `effect-ADE@20`.
+- Contrasts: row-minus-set, set-minus-static, static-minus-dynamic, shuffled-dynamic-minus-same-episode-dynamic.
+- Average test-episode errors over 5 training seeds before 10,000 paired bootstrap resamples.
+- Independent dynamic-structure gains require consistent direction across both budgets and a pooled 95% CI excluding 0.
+- Shuffled suffixes are factual-evidence negative controls only; without intervention-edge ground truth, the dynamic graph is not called a true causal graph.
 
-## 实现质量与环境
+## Implementation quality and environment
 
-- 32项测试通过。
-- 已修复米制距离阈值在标准化坐标上误用、模型初始化早于随机种子设置两项问题。
-- CuBLAS确定性工作区已设置；smoke预测内部数组逐字节复现。
+- 32 tests passed.
+- Fixed use of metric distance thresholds on standardized coordinates and model initialization before seed setting.
+- CuBLAS deterministic workspace configured; internal smoke-prediction arrays reproduced byte for byte.
 - Python 3.12.7；PyTorch 2.9.1+cu130；NumPy 1.26.4。
-- NVIDIA GeForce RTX 3070 Ti，8192 MiB；驱动616.56。
+- NVIDIA GeForce RTX 3070 Ti, 8192 MiB; driver 616.56.
 

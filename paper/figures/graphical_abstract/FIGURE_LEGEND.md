@@ -21,12 +21,12 @@ pooled against one another.
 
 ---
 
-## 中文备忘（不入正文）
+## Production and interpretation notes
 
-- 本图**无图内标题与页脚**，全部说明由本图注承接；与正文 Fig. 1 / Fig. 2 / Fig. 3 同一做法。
-- 图身**不含任何结果数字**；唯一进入图内的冻结量是 (b) 四个点的**高度**。
-- (c) 右端的 risk–coverage 曲线是**示意**，必须与 Fig. 3 的确认曲线明确区分，图注不可省略这一句。
-- 底部三范围**只放范围名**，不放效应大小；三块用同一底色（§9.1：范围差异不用三种主方法颜色表达）。
-- 禁用词：`external generalization`；MetaDrive 固定为 `platform-internal retraining`。
-- 术语：结果层方法名统一 `AC-Twin audit`，`Direct audit head` 只作组件名（图内组件标签用
-  `Direct risk head`，与 Fig. 2 的组件命名一致，正文首次出现时对齐）。
+- No internal title or footer; the caption provides the explanation, consistently with the main figures.
+- No numerical results are printed inside the image; only the **heights** of the four points in (b) use frozen quantities.
+- The right-hand risk–coverage curve in (c) is **schematic**, distinct from the confirmed curves; this qualification must remain in the caption.
+- The three scope blocks show names only, not effect sizes, and share one background color; scope differences do not imply different method colors.
+- Avoid `external generalization`; use `platform-internal retraining` for MetaDrive.
+- Use `AC-Twin audit` for the result-level method; `Direct audit head` is a component name. The image uses
+  `Direct risk head`, aligned with the component terminology in the main text.

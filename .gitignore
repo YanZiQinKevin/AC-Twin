@@ -1,4 +1,4 @@
-# Approved research release: deny by default; large files use external downloads.
+# Approved research release: deny by default. Regenerate with tools/sync_release.py.
 *
 !*/
 !/.gitattributes
@@ -298,12 +298,9 @@
 !/data/replication_v2/merge_seed2/twinworld_multi_action_2000.stats.json
 !/data/replication_v2/roundabout/twinworld_multi_action_2000.npz
 !/data/replication_v2/roundabout/twinworld_multi_action_2000.stats.json
+!/experiments/README.md
 !/experiments/identity_continuity_stage/FORMAL_QA_AND_JOINT_DECISION_2026-09-06.md
-!/experiments/identity_continuity_stage/HOLDOUT_COLLECTION.md
-!/experiments/identity_continuity_stage/HOLDOUT_QA_2026-09-06.md
 !/experiments/identity_continuity_stage/PROTOCOL.md
-!/experiments/identity_continuity_stage/RUNBOOK.md
-!/experiments/identity_continuity_stage/final_smoke/QA.md
 !/experiments/identity_continuity_stage/final_smoke/distance_temporal_65k_seed11.pt
 !/experiments/identity_continuity_stage/final_smoke/distance_temporal_65k_seed11_prediction.npy
 !/experiments/identity_continuity_stage/final_smoke/distance_temporal_65k_seed11_run.json
@@ -651,7 +648,6 @@
 !/experiments/identity_continuity_stage/roundabout/stable_temporal_83k_seed55_prediction.npy
 !/experiments/identity_continuity_stage/roundabout/stable_temporal_83k_seed55_run.json
 !/experiments/identity_continuity_stage/roundabout/stable_temporal_83k_seed55_training.json
-!/experiments/identity_continuity_stage/smoke/QA.md
 !/experiments/identity_continuity_stage/smoke/distance_temporal_65k_seed11.pt
 !/experiments/identity_continuity_stage/smoke/distance_temporal_65k_seed11_prediction.npy
 !/experiments/identity_continuity_stage/smoke/distance_temporal_65k_seed11_run.json
@@ -673,9 +669,7 @@
 !/experiments/identity_continuity_stage/smoke/stable_temporal_65k_seed11_training.json
 !/experiments/object_centric_stage/PROTOCOL.md
 !/experiments/object_centric_stage/RESULTS.md
-!/experiments/object_centric_stage/REVIEW_ALIGNMENT_2026-09-05.md
 !/experiments/object_centric_stage/architecture_capacity_merge/PROTOCOL.md
-!/experiments/object_centric_stage/architecture_capacity_merge/QA.md
 !/experiments/object_centric_stage/architecture_capacity_merge/RESULTS.md
 !/experiments/object_centric_stage/architecture_capacity_merge/dynamic_graph_65k_seed11.pt
 !/experiments/object_centric_stage/architecture_capacity_merge/dynamic_graph_65k_seed11_training.json
@@ -986,7 +980,6 @@
 !/experiments/object_centric_stage/architecture_capacity_merge_60epoch_screen/static_graph_83k_seed55.pt
 !/experiments/object_centric_stage/architecture_capacity_merge_60epoch_screen/static_graph_83k_seed55_training.json
 !/experiments/object_centric_stage/architecture_capacity_roundabout/PROTOCOL.md
-!/experiments/object_centric_stage/architecture_capacity_roundabout/QA.md
 !/experiments/object_centric_stage/architecture_capacity_roundabout/RESULTS.md
 !/experiments/object_centric_stage/architecture_capacity_roundabout/analysis.json
 !/experiments/object_centric_stage/architecture_capacity_roundabout/predictions.npz
@@ -1172,7 +1165,6 @@
 !/experiments/object_centric_stage/architecture_comparison_merge/stable_id_set_seed44.pt
 !/experiments/object_centric_stage/architecture_comparison_merge/stable_id_set_seed55.pt
 !/experiments/object_centric_stage/identity_audit.json
-!/experiments/paper_revision/m1_supervised_ablation_v02/HANDOFF_STATE.md
 !/experiments/paper_revision/m1_supervised_ablation_v02/config.json
 !/experiments/paper_revision/m1_supervised_ablation_v02/evaluation/absolute_metrics.csv
 !/experiments/paper_revision/m1_supervised_ablation_v02/evaluation/bootstrap_receipt.json
@@ -1216,7 +1208,6 @@
 !/experiments/paper_revision/m1_supervised_ablation_v02/scores/validation_scores.npz
 !/experiments/paper_revision/m1_supervised_ablation_v02/split.json
 !/experiments/pilot_2000/PROTOCOL.md
-!/experiments/pilot_2000/QA.md
 !/experiments/pilot_2000/RESULTS.md
 !/experiments/pilot_2000/factual_suffix_seed11.pt
 !/experiments/pilot_2000/factual_suffix_seed22.pt
@@ -1241,7 +1232,6 @@
 !/experiments/pilot_2000/training_history_only_seed44.json
 !/experiments/pilot_2000/training_history_only_seed55.json
 !/experiments/replication_v2/PROTOCOL.md
-!/experiments/replication_v2/QA.md
 !/experiments/replication_v2/RESULTS.md
 !/experiments/replication_v2/merge_seed2/RESULTS.md
 !/experiments/replication_v2/merge_seed2/history_only_seed11.pt
@@ -1498,7 +1488,6 @@
 !/experiments/stage1_evidence_value/roundabout/uniform_suffix_seed55_val_prediction_with_frozen_shuffled_suffix.npy
 !/experiments/stage1_evidence_value/roundabout/uniform_suffix_seed55_val_suffix_swap_metadata.json
 !/experiments/stage1_evidence_value/roundabout/validation_manifest.json
-!/experiments/stage1_evidence_value/smoke/QA.md
 !/experiments/stage1_evidence_value/smoke/no_suffix_seed11.pt
 !/experiments/stage1_evidence_value/smoke/no_suffix_seed11_run.json
 !/experiments/stage1_evidence_value/smoke/no_suffix_seed11_test_prediction.npy
@@ -1577,7 +1566,6 @@
 !/experiments/stage2_confirmatory/merge/uniform_suffix_seed44_primary_swap_prediction.npy
 !/experiments/stage2_confirmatory/merge/uniform_suffix_seed55_prediction.npy
 !/experiments/stage2_confirmatory/merge/uniform_suffix_seed55_primary_swap_prediction.npy
-!/experiments/stage2_confirmatory/smoke/STAGE2_CONFIRMATORY_DECISION.md
 !/experiments/stage2_confirmatory/smoke/confirmatory_manifest_donor20272907.json
 !/experiments/stage2_confirmatory/smoke/confirmatory_manifest_donor20272917.json
 !/experiments/stage2_confirmatory/smoke/confirmatory_manifest_donor20272927.json
@@ -1630,8 +1618,6 @@
 !/experiments/stage2_confirmatory/smoke/uniform_suffix_seed44_primary_swap_prediction.npy
 !/experiments/stage2_confirmatory/smoke/uniform_suffix_seed55_prediction.npy
 !/experiments/stage2_confirmatory/smoke/uniform_suffix_seed55_primary_swap_prediction.npy
-!/experiments/stage2b_intersection/HANDOFF_STATE.md
-!/experiments/stage2b_intersection/HANDOFF_V04.md
 !/experiments/stage2b_intersection/development_v04/collection_manifest.json
 !/experiments/stage2b_intersection/development_v04/power_report.json
 !/experiments/stage2b_intersection/development_v04/qualification_c0/gate_s_report.json
@@ -1714,9 +1700,6 @@
 !/experiments/stage2b_intersection/smoke/collection_manifest.json
 !/experiments/stage2b_intersection/smoke/seed_schedule.npy
 !/experiments/stage2b_intersection/smoke/smoke_receipt.json
-!/experiments/stage3_routing/COMPUTE_BUDGET.md
-!/experiments/stage3_routing/STAGE3A_READINESS_CHECKLIST.md
-!/experiments/stage3_routing/STAGE3_IMPLEMENTATION_STATUS.md
 !/experiments/stage3_routing/benchmark.json
 !/experiments/stage3_routing/run_stage3a_pipeline.ps1
 !/experiments/stage3_routing/smoke/smoke_report.json
@@ -1779,10 +1762,6 @@
 !/experiments/stage3_routing/stage3a_config.json
 !/experiments/stage3_routing/stage3a_pipeline_20260909_013615.log
 !/experiments/stage3_routing/stage3a_pipeline_20260909_014348.log
-!/experiments/stage3_routing/stage3a_plus/COMPUTE_BUDGET.md
-!/experiments/stage3_routing/stage3a_plus/DEV_READINESS_CHECKLIST.md
-!/experiments/stage3_routing/stage3a_plus/QUALIFICATION_READINESS_CHECKLIST.md
-!/experiments/stage3_routing/stage3a_plus/STAGE3A_PLUS_STATUS.md
 !/experiments/stage3_routing/stage3a_plus/checkpoints/h96_r32_l0.1_seed1010.ckpt
 !/experiments/stage3_routing/stage3a_plus/checkpoints/h96_r32_l0.1_seed1010.pt
 !/experiments/stage3_routing/stage3a_plus/checkpoints/h96_r32_l0.1_seed1010.state.json
@@ -1823,7 +1802,6 @@
 !/experiments/stage3_routing/stage3a_plus/qualification/qualification_used.lock
 !/experiments/stage3_routing/stage3a_plus/qualification/seed_schedule.json
 !/experiments/stage3_routing/stage3a_plus/stage3a_plus_state.json
-!/experiments/stage3_routing/stage3a_retrain_v1/RETRAIN_READINESS_CHECKLIST.md
 !/experiments/stage3_routing/stage3a_retrain_v1/fit_five/fit_five_results.json
 !/experiments/stage3_routing/stage3a_retrain_v1/fit_five/h64_r32_l0.1_seed101.ckpt
 !/experiments/stage3_routing/stage3a_retrain_v1/fit_five/h64_r32_l0.1_seed101.pt
@@ -1894,8 +1872,6 @@
 !/experiments/stage3_routing/stage3a_retrain_v1/search/search_results.json
 !/experiments/stage3_routing/stage3a_retrain_v1/selection/final_selection.json
 !/experiments/stage3_routing/stage3b/BUDGET_REVIEW.json
-!/experiments/stage3_routing/stage3b/STAGE3B_READINESS_CHECKLIST.md
-!/experiments/stage3_routing/stage3b/STAGE3B_STATUS.md
 !/experiments/stage3_routing/stage3b/fit_tier1/dual_channel_learned_router_g32_pair0_r1101.ckpt
 !/experiments/stage3_routing/stage3b/fit_tier1/dual_channel_learned_router_g32_pair0_r1101.pt
 !/experiments/stage3_routing/stage3b/fit_tier1/dual_channel_learned_router_g32_pair0_r1101.state.json
@@ -1969,7 +1945,6 @@
 !/experiments/stage3_routing/stage3b/screen_gate_hidden/gate_hidden_selection.json
 !/experiments/stage3_routing/stage3b/smoke/smoke_report.json
 !/experiments/stage3_routing/stage3b/stage3b_config.json
-!/experiments/stage3_routing/stage3b_plus/STAGE3B_PLUS_STATUS.md
 !/experiments/stage3_routing/stage3b_plus/fit_five/checkpoints/state_full_learned_router_r1101_ls0p05.pt
 !/experiments/stage3_routing/stage3b_plus/fit_five/checkpoints/state_full_learned_router_r1101_ls0p05.state.json
 !/experiments/stage3_routing/stage3b_plus/fit_five/checkpoints/state_full_learned_router_r1101_ls0p05.train.ckpt
@@ -2085,9 +2060,6 @@
 !/experiments/stage3_routing/stage3b_plus/smoke/handoff_state.json
 !/experiments/stage3_routing/stage3b_plus/smoke/smoke_report.json
 !/experiments/stage3_routing/stage3b_plus/stage3b_plus_config.json
-!/experiments/stage3_routing/stage3r/HANDOFF_STATE.md
-!/experiments/stage3_routing/stage3r/RSCREEN_READINESS_CHECKLIST.md
-!/experiments/stage3_routing/stage3r/STAGE3R_STATUS.md
 !/experiments/stage3_routing/stage3r/direct/checkpoints/direct_pair0_s1101.json
 !/experiments/stage3_routing/stage3r/direct/checkpoints/direct_pair0_s1101.pt
 !/experiments/stage3_routing/stage3r/direct/checkpoints/direct_pair1_s1202.json
@@ -2364,9 +2336,6 @@
 !/experiments/stage3_routing/stage3r/rscreen/rscreen_seed_schedule.npy
 !/experiments/stage3_routing/stage3r/scaler.json
 !/experiments/stage3_routing/stage3r/stage3r_config.json
-!/experiments/stage4_reliability/stage4a/DEV_READINESS_CHECKLIST.md
-!/experiments/stage4_reliability/stage4a/HANDOFF_STATE.md
-!/experiments/stage4_reliability/stage4a/STAGE4A_STATUS.md
 !/experiments/stage4_reliability/stage4a/collection/collection_receipt.json
 !/experiments/stage4_reliability/stage4a/protocol/candidate_seed_schedule.json
 !/experiments/stage4_reliability/stage4a/protocol/candidate_seed_schedule.npy
@@ -2374,8 +2343,6 @@
 !/experiments/stage4_reliability/stage4a/protocol/protocol_lock.json
 !/experiments/stage4_reliability/stage4a/smoke/smoke_report.json
 !/experiments/stage4_reliability/stage4a/stage4a_config.json
-!/experiments/stage4_reliability/stage4a_v2/HANDOFF_STATE.md
-!/experiments/stage4_reliability/stage4a_v2/STAGE4A_STATUS.md
 !/experiments/stage4_reliability/stage4a_v2/inference/prediction_receipt.json
 !/experiments/stage4_reliability/stage4a_v2/protocol/recovery_lock.json
 !/experiments/stage4_reliability/stage4a_v2/risk/models/combined_risk_head_histgb.pt
@@ -2384,8 +2351,6 @@
 !/experiments/stage4_reliability/stage4a_v2/risk/models/response_only_ridge.pt
 !/experiments/stage4_reliability/stage4a_v2/risk/primary_predictor_receipt.json
 !/experiments/stage4_reliability/stage4a_v2/stage4a_config.json
-!/experiments/stage4_reliability/stage4a_v3/HANDOFF_STATE.md
-!/experiments/stage4_reliability/stage4a_v3/STAGE4A_STATUS.md
 !/experiments/stage4_reliability/stage4a_v3/protocol/recovery_lock.json
 !/experiments/stage4_reliability/stage4a_v3/risk/fit_receipt.json
 !/experiments/stage4_reliability/stage4a_v3/risk/models/combined_risk_head_histgb.pt
@@ -2395,8 +2360,6 @@
 !/experiments/stage4_reliability/stage4a_v3/risk/models/response_only_ridge.pt
 !/experiments/stage4_reliability/stage4a_v3/risk/risk_dataset.npz
 !/experiments/stage4_reliability/stage4a_v3/stage4a_config.json
-!/experiments/stage4_reliability/stage4a_v4/HANDOFF_STATE.md
-!/experiments/stage4_reliability/stage4a_v4/STAGE4A_STATUS.md
 !/experiments/stage4_reliability/stage4a_v4/development_screen_used.lock
 !/experiments/stage4_reliability/stage4a_v4/protocol/recovery_lock.json
 !/experiments/stage4_reliability/stage4a_v4/protocol/runner_fix_receipt.json
@@ -2406,9 +2369,6 @@
 !/experiments/stage4_reliability/stage4a_v4/risk/fit_receipt.json
 !/experiments/stage4_reliability/stage4a_v4/risk/risk_dataset.npz
 !/experiments/stage4_reliability/stage4a_v4/stage4a_config.json
-!/experiments/stage4_reliability/stage4b/HANDOFF_STATE.md
-!/experiments/stage4_reliability/stage4b/READINESS_CHECKLIST.md
-!/experiments/stage4_reliability/stage4b/STAGE4B_STATUS.md
 !/experiments/stage4_reliability/stage4b/collection/collection_receipt.json
 !/experiments/stage4_reliability/stage4b/confirmation_used.lock
 !/experiments/stage4_reliability/stage4b/inference/prediction_receipt.json
@@ -2434,7 +2394,6 @@
 !/experiments/stage4_reliability/stage4b/reports/stage4b_confirmatory_report.json
 !/experiments/stage4_reliability/stage4b/smoke/smoke_report.json
 !/experiments/stage4_reliability/stage4b/stage4b_config.json
-!/experiments/stage4_reliability/stage4c/HANDOFF_STATE.md
 !/experiments/stage4_reliability/stage4c/development/STAGE4C_DEV_DECISION.md
 !/experiments/stage4_reliability/stage4c/development/collection_receipt_development_screen.json
 !/experiments/stage4_reliability/stage4c/development/collection_receipt_development_selection.json
@@ -2454,13 +2413,10 @@
 !/experiments/stage4_reliability/stage4c/smoke/smoke_ledger_selection.jsonl
 !/experiments/stage4_reliability/stage4c/smoke/smoke_report.json
 !/experiments/stage4_reliability/stage4c/stage4c_config.json
-!/experiments/stage4_reliability/stage4c_plus/HANDOFF_STATE.md
 !/experiments/stage4_reliability/stage4c_plus/phase0/fold_assignment.npy
 !/experiments/stage4_reliability/stage4c_plus/phase0/oof_predictions.npz
 !/experiments/stage4_reliability/stage4c_plus/phase0/phase0_report.json
 !/experiments/stage4_reliability/stage4c_plus/stage4cp_config.json
-!/experiments/stage4_reliability/stage4c_r2/HANDOFF_STATE.md
-!/experiments/stage4_reliability/stage4c_r2/READINESS_CHECKLIST.md
 !/experiments/stage4_reliability/stage4c_r2/development/confirmation_power_diagnostic.json
 !/experiments/stage4_reliability/stage4c_r2/development/development_screen_report.json
 !/experiments/stage4_reliability/stage4c_r2/development/development_screen_used.lock
@@ -2506,8 +2462,6 @@
 !/experiments/stage4_reliability/stage4c_r2/smoke/smoke_predictions.npz
 !/experiments/stage4_reliability/stage4c_r2/smoke/smoke_scores.npz
 !/experiments/stage4_reliability/stage4c_r2/stage4cr2_config.json
-!/experiments/stage4_reliability/stage4cr2_confirm/HANDOFF_STATE.md
-!/experiments/stage4_reliability/stage4cr2_confirm/READINESS_CHECKLIST.md
 !/experiments/stage4_reliability/stage4cr2_confirm/collection/collection_receipt.json
 !/experiments/stage4_reliability/stage4cr2_confirm/confirmation_used.lock
 !/experiments/stage4_reliability/stage4cr2_confirm/inference/determinism_receipt.json
@@ -2540,7 +2494,6 @@
 !/experiments/stage4_reliability/stage4cr2_confirm/smoke/smoke_recheck_receipt.json
 !/experiments/stage4_reliability/stage4cr2_confirm/smoke/smoke_risk_scores.npz
 !/experiments/stage4_reliability/stage4cr2_confirm/stage4cr2_confirm_config.json
-!/experiments/stage4_reliability/stage4d_d2e/HANDOFF_STATE.md
 !/experiments/stage4_reliability/stage4d_d2e/config.json
 !/experiments/stage4_reliability/stage4d_d2e/development/ego_models/ego_EGO_TRAJECTORY_PLUS_RANK_seed1101.pt
 !/experiments/stage4_reliability/stage4d_d2e/development/ego_models/ego_EGO_TRAJECTORY_PLUS_RANK_seed1202.pt
@@ -2575,7 +2528,6 @@
 !/experiments/stage4_reliability/stage4d_d2e/riskfit_EGO_TRAJECTORY_PLUS_RANK/development/models/direct_seed9505.pt
 !/experiments/stage4_reliability/stage4d_d2e/riskfit_EGO_TRAJECTORY_PLUS_RANK/development/models/fit_receipt.json
 !/experiments/stage4_reliability/stage4d_d2e/source_inventory.json
-!/experiments/stage4_reliability/stage4d_d2f/HANDOFF_STATE.md
 !/experiments/stage4_reliability/stage4d_d2f/code_inventory.json
 !/experiments/stage4_reliability/stage4d_d2f/confirm/confirm_determinism_receipt.json
 !/experiments/stage4_reliability/stage4d_d2f/confirm/confirm_group_quantities.npz
@@ -2662,12 +2614,10 @@
 !/experiments/stage4_reliability/stage4d_d2f/smoke/rejection_ledger.jsonl
 !/experiments/stage4_reliability/stage4d_d2f/smoke/smoke_receipt.json
 !/experiments/stage4_reliability/stage4d_d2f/source_binding.json
-!/experiments/stage4_reliability/stage4d_d2r/HANDOFF_STATE.md
 !/experiments/stage4_reliability/stage4d_d2r/phase0/diagnostic.npz
 !/experiments/stage4_reliability/stage4d_d2r/phase0/final_policy.json
 !/experiments/stage4_reliability/stage4d_d2r/phase0/report.json
 !/experiments/stage4_reliability/stage4d_d2r/power/screen_power_report.json
-!/experiments/stage4_reliability/stage4d_external/HANDOFF_STATE.md
 !/experiments/stage4_reliability/stage4d_external/build_index.log
 !/experiments/stage4_reliability/stage4d_external/collector_memory_recovery_receipt.json
 !/experiments/stage4_reliability/stage4d_external/config.json
@@ -2783,7 +2733,6 @@
 !/experiments/stage4_reliability/stage4d_external/roles/validation/groups_meta.json
 !/experiments/stage4_reliability/stage4d_external/roles/validation/rejection_ledger.jsonl
 !/experiments/stage4_reliability/stage4d_external/smoke.log
-!/experiments/stage4_reliability/stage4d_ood/HANDOFF_STATE.md
 !/experiments/stage4_reliability/stage4d_ood/adjudicate_run.log
 !/experiments/stage4_reliability/stage4d_ood/collect_d1.log
 !/experiments/stage4_reliability/stage4d_ood/collection/collection_receipt.json
@@ -2825,7 +2774,6 @@
 !/experiments/stage4_reliability/stage4d_ood/reports/d1_group_quantities_receipt.json
 !/experiments/stage4_reliability/stage4d_ood/reports/stage4d_ood_confirmatory_report.json
 !/experiments/stage4_reliability/stage4d_ood/smoke/smoke_collection_receipt.json
-!/experiments/stage5_sota_comparison/HANDOFF_STATE.md
 !/experiments/stage5_sota_comparison/development/final_method_selection.json
 !/experiments/stage5_sota_comparison/development/method_search_space.json
 !/experiments/stage5_sota_comparison/development/models/CCTR_DRIVING_CALIBRATION_ADAPTED/grid0/CCTR_DRIVING_CALIBRATION_ADAPTED_seed8101.pt
@@ -2901,7 +2849,6 @@
 !/experiments/stage5_sota_comparison/power/power_report.json
 !/experiments/stage5_sota_comparison/power_run.log
 !/experiments/suffix_evidence_ablation/PROTOCOL.md
-!/experiments/suffix_evidence_ablation/QA.md
 !/experiments/suffix_evidence_ablation/RESULTS.md
 !/experiments/suffix_evidence_ablation/factual_residual_model.pt
 !/experiments/suffix_evidence_ablation/full_20_seed11.pt
@@ -3010,12 +2957,10 @@
 !/paper/figures/fig1/fig1_bins_plot_data.csv
 !/paper/figures/fig1/fig1_contrasts_plot_data.csv
 !/paper/figures/fig1/fig1_data.xlsx
-!/paper/figures/fig2/FIGURE_CONTRACT.md
 !/paper/figures/fig2/FIGURE_LEGEND.md
 !/paper/figures/fig2/Fig2_AC_Twin_method_overview_v4.pdf
 !/paper/figures/fig2/Fig2_AC_Twin_method_overview_v4.png
 !/paper/figures/fig2/Fig2_AC_Twin_method_overview_v4.svg
-!/paper/figures/fig2/QA_NOTES.md
 !/paper/figures/fig2/README.md
 !/paper/figures/fig2/build_fig2.py
 !/paper/figures/fig2/icon/Observed prefix.png
@@ -3036,7 +2981,6 @@
 !/paper/figures/fig3/README.md
 !/paper/figures/fig3/build_fig3.py
 !/paper/figures/fig3/fig3_data.xlsx
-!/paper/figures/fig4/FIGURE_CONTRACT.md
 !/paper/figures/fig4/FIGURE_LEGEND.md
 !/paper/figures/fig4/Fig4_credibility_closure.pdf
 !/paper/figures/fig4/Fig4_credibility_closure.png
@@ -3049,7 +2993,6 @@
 !/paper/figures/fig4/fig4_panel_c_data.csv
 !/paper/figures/fig4/fig4_panel_d_data.csv
 !/paper/figures/fig5/AUTHOR_APPROVAL.json
-!/paper/figures/fig5/FIG5_REBUILD_PLAN.md
 !/paper/figures/fig5/FIGURE_LEGEND.md
 !/paper/figures/fig5/FIXED_CASE_COST_EXPLANATION.md
 !/paper/figures/fig5/Fig5_layout_manifest.json
@@ -3073,14 +3016,11 @@
 !/paper/figures/fig5_2/Direct_audit_head_architecture_v2.pdf
 !/paper/figures/fig5_2/Direct_audit_head_architecture_v2.png
 !/paper/figures/fig5_2/Direct_audit_head_architecture_v2.svg
-!/paper/figures/fig5_2/FIGURE_CONTRACT.md
 !/paper/figures/fig5_2/FIGURE_LEGEND.md
 !/paper/figures/fig5_2/FIGURE_LEGEND_v2.md
-!/paper/figures/fig5_2/QA_NOTES.md
 !/paper/figures/fig5_2/README.md
 !/paper/figures/fig5_2/draw_direct_audit.py
 !/paper/figures/fig5_2/draw_direct_audit_v2.py
-!/paper/figures/fig_suffix_evidence/FIGURE_CONTRACT.md
 !/paper/figures/fig_suffix_evidence/FIGURE_LEGEND.md
 !/paper/figures/fig_suffix_evidence/Fig_suffix_evidence.pdf
 !/paper/figures/fig_suffix_evidence/Fig_suffix_evidence.png
@@ -3088,8 +3028,6 @@
 !/paper/figures/fig_suffix_evidence/Fig_suffix_evidence.tiff
 !/paper/figures/fig_suffix_evidence/condition_seed_metrics.csv
 !/paper/figures/fig_suffix_evidence/paired_episode_fde.csv
-!/paper/figures/graphical_abstract/DRAWING_PROMPT.md
-!/paper/figures/graphical_abstract/FIGURE_CONTRACT.md
 !/paper/figures/graphical_abstract/FIGURE_LEGEND.md
 !/paper/figures/graphical_abstract/GA_AC_Twin_overview.pdf
 !/paper/figures/graphical_abstract/GA_AC_Twin_overview.png
@@ -3098,13 +3036,13 @@
 !/paper/figures/stage4d_d2f/Fig_D2_metadrive_platform_and_branch.png
 !/paper/figures/stage4d_d2f/Fig_D5_best_of_k_success_and_failure.png
 !/paper/figures/stage4d_d2f/README.md
+!/paper/figures/stage4d_d2f/cases/CASE_PANELS.md
 !/paper/figures/stage4d_d2f/cases/failure_01_factual.png
 !/paper/figures/stage4d_d2f/cases/failure_02_selected.png
 !/paper/figures/stage4d_d2f/cases/failure_03_oracle.png
 !/paper/figures/stage4d_d2f/cases/success_01_factual.png
 !/paper/figures/stage4d_d2f/cases/success_02_selected.png
 !/paper/figures/stage4d_d2f/cases/success_03_oracle.png
-!/paper/figures/stage4d_d2f/cases/六张子图说明.md
 !/paper/figures/stage4d_d2f/platform/Fig_D2_metadrive_platform_and_branch.pdf
 !/paper/figures/stage4d_d2f/platform/Fig_D2_metadrive_platform_and_branch.png
 !/paper/figures/stage4d_d2f/platform/raw_metadrive_platform.png
@@ -3187,9 +3125,14 @@
 !/paper/tables/table_stage5_sota/build_table_stage5_sota.py
 !/parse_failures.py
 !/pytest.ini
-!/release/large_data_inventory.json
+!/release/document_cleanup.json
+!/release/document_translations.json
 !/release/excluded_files.json
+!/release/frozen_document_originals/STAGE4B_CONFIRMATORY_DECISION.md.txt
+!/release/frozen_document_originals/STAGE4CR2_CONFIRMATORY_DECISION.md.txt
+!/release/large_data_inventory.json
 !/release/manifest.csv
+!/release/source_transformations.json
 !/release/summary.json
 !/requirements-waymo-conversion.txt
 !/requirements.txt
@@ -3336,4 +3279,3 @@
 !/tests/test_training_resume.py
 !/tools/check_release.py
 !/tools/sync_release.py
-!/release/source_transformations.json

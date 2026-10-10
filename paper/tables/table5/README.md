@@ -1,5 +1,12 @@
-# Table 5｜Prospectively specified confirmation contrasts.
+# Table 5: Prospectively specified confirmation contrasts
 
-[表体](TABLE_5.md)；[源数据](table5_data.csv)；[Excel](Table_5.xlsx)。
+The Markdown table is the current readable version. Editable workbooks, machine-readable data and provenance are listed below. Original experimental values are unchanged.
 
-按正文首次出现顺序编号；只整理已有表值，不重算实验。
+## Files
+
+- [table5_data.csv](table5_data.csv)
+- [table5_source.json](table5_source.json)
+- [TABLE_5.md](TABLE_5.md)
+- [Table_5.xlsx](Table_5.xlsx)
+
+Build scripts organize existing frozen products only. They do not authorize training, inference, bootstrap reruns or re-adjudication. Some historical builders also require the manuscript source, maintained outside this code/data release.

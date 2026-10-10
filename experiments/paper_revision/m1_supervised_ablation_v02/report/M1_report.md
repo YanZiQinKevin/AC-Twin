@@ -1,42 +1,42 @@
-# M1 监督对照与特征消融：开发性诊断报告
+# Supervised Controls and Feature Ablations: Development Diagnostic Report
 
-- 计划 ID：`AC-TWIN-RFER-M1-SUPERVISED-ABLATION-2026-10-07-V0.2`
-- 性质：Merge 开发性组件诊断，`ADAPTIVE_DEVELOPMENT_ONLY`；非确认、非新预注册
-- 数据：R2 train 5,000 组（main 4,500 / monitor 500）与 validation 1,500 组；未采集新数据，未创建 screen/power/confirm
-- bootstrap：10000 次整组配对重抽样，entropy 2026100701；主家族 C1–C5 AURC 对比 99% 区间（0.005/0.995，Bonferroni 家族 95%），次指标家族同口径；另附未校正 95% 仅供参考
-- 连续性核验：旧冻结 Direct 与三项启发式相对 R2 validation_gate_report 全部在 1e-8 内（passed=True）
-- **正文编辑边界：无论结果如何，本报告不写回摘要、正文、补充稿、Word 或稿件图表；任何修稿须作者另行明确确认。**
+- Plan ID: `AC-TWIN-RFER-M1-SUPERVISED-ABLATION-2026-10-07-V0.2`
+- Scope: Merge component diagnostics, `ADAPTIVE_DEVELOPMENT_ONLY`; neither confirmation nor a new preregistered study.
+- Data: R2 train 5,000 groups (main 4,500 / monitor 500) and validation 1,500 groups; no new collection or screen/power/confirm resources.
+- Bootstrap: 10000 whole-group paired resamples, entropy 2026100701; primary C1–C5 AURC family uses 99% intervals (0.005/0.995, Bonferroni family-level 95%); the secondary-endpoint family uses the same specification. Uncorrected 95% intervals are provided for reference only.
+- Continuity check: frozen Direct and three heuristics agree with R2 validation_gate_report within 1e-8 throughout (passed=True).
+- **Historical manuscript-editing boundary: this report did not automatically update the abstract, main text, supplement, Word or manuscript figures/tables; manuscript changes required separate explicit author authorization.**
 
-## 1. 绝对指标（validation 1,500 组，配对同一套 draws）
+## 1. Absolute metrics (validation 1,500 groups; shared paired draws)
 
-| 方法 | 信息集 | 活跃维度 | 名义参数 | AURC-regret | Regret@80 |
+| Method | Information set | Active dimensions | Nominal parameters | AURC-regret | Regret@80 |
 | --- | --- | ---: | ---: | ---: | ---: |
-| FULL_MATCHED | 完整315维 | 315 | 15740 | 0.010970 | 0.014781 |
-| BASELINE3_MATCHED | 仅三基线标量 | 3 | 15740 | 0.019369 | 0.020117 |
-| NO_RISK_MATCHED | 屏蔽五类风险通道 | 180 | 15740 | 0.012409 | 0.014493 |
-| FULL_FROZEN_REFERENCE | 完整315维 | — | 15740 | 0.010970 | 0.014781 |
-| MARGIN_ONLY | 固定启发式 | — | 0 | 0.020824 | 0.021217 |
-| SEED_VOTE_ENTROPY | 固定启发式 | — | 0 | 0.018959 | 0.020542 |
-| SEED_MARGIN_STD | 固定启发式 | — | 0 | 0.021838 | 0.022366 |
+| FULL_MATCHED | Full 315-dimensional input | 315 | 15740 | 0.010970 | 0.014781 |
+| BASELINE3_MATCHED | Three baseline scalars only | 3 | 15740 | 0.019369 | 0.020117 |
+| NO_RISK_MATCHED | Five risk-channel families masked | 180 | 15740 | 0.012409 | 0.014493 |
+| FULL_FROZEN_REFERENCE | Full 315-dimensional input | — | 15740 | 0.010970 | 0.014781 |
+| MARGIN_ONLY | Fixed heuristic | — | 0 | 0.020824 | 0.021217 |
+| SEED_VOTE_ENTROPY | Fixed heuristic | — | 0 | 0.018959 | 0.020542 |
+| SEED_MARGIN_STD | Fixed heuristic | — | 0 | 0.021838 | 0.022366 |
 
-## 2. C1–C5 主对比（改善率 = 1 − 方法/参照；99% 为家族校正区间）
+## 2. C1–C5 primary contrasts (improvement = 1 − method/reference; family-adjusted 99% intervals)
 
-| 对比 | 指标 | 点估计 | 99% CI（家族） | 95% CI（未校正） | 绝对差（点） | 判定 |
+| Contrast | Metric | Point estimate | 99% CI (family) | 95% CI (uncorrected) | Absolute difference (point) | Decision |
 | --- | --- | ---: | --- | --- | ---: | --- |
-| C1 | aurc_regret | 0.4336 | [0.2819, 0.5541] | [0.3250, 0.5274] | 0.008398 | 区间下界>0 |
-| C1 | regret_at_80 | 0.2653 | [0.1449, 0.3807] | [0.1733, 0.3509] | 0.005336 | 区间下界>0 |
-| C2 | aurc_regret | 0.1159 | [-0.0307, 0.2289] | [0.0066, 0.2038] | 0.001439 | 区间跨零（未建立） |
-| C2 | regret_at_80 | -0.0199 | [-0.1177, 0.0696] | [-0.0907, 0.0499] | -0.000288 | 区间跨零（未建立） |
-| C3 | aurc_regret | -0.0216 | [-0.1929, 0.1250] | [-0.1491, 0.0916] | -0.000409 | 区间跨零（未建立） |
-| C3 | regret_at_80 | 0.0207 | [-0.0419, 0.0592] | [-0.0256, 0.0473] | 0.000425 | 区间跨零（未建立） |
-| C4 | aurc_regret | 0.0699 | [-0.0887, 0.2061] | [-0.0505, 0.1766] | 0.001456 | 区间跨零（未建立） |
-| C4 | regret_at_80 | 0.0518 | [-0.0296, 0.1480] | [-0.0069, 0.1246] | 0.001099 | 区间跨零（未建立） |
-| C5 | aurc_regret | 0.1131 | [-0.1295, 0.3058] | [-0.0624, 0.2624] | 0.002469 | 区间跨零（未建立） |
-| C5 | regret_at_80 | 0.1005 | [-0.0437, 0.2375] | [-0.0042, 0.2028] | 0.002248 | 区间跨零（未建立） |
+| C1 | aurc_regret | 0.4336 | [0.2819, 0.5541] | [0.3250, 0.5274] | 0.008398 | CI lower bound >0 |
+| C1 | regret_at_80 | 0.2653 | [0.1449, 0.3807] | [0.1733, 0.3509] | 0.005336 | CI lower bound >0 |
+| C2 | aurc_regret | 0.1159 | [-0.0307, 0.2289] | [0.0066, 0.2038] | 0.001439 | CI crosses zero (not established) |
+| C2 | regret_at_80 | -0.0199 | [-0.1177, 0.0696] | [-0.0907, 0.0499] | -0.000288 | CI crosses zero (not established) |
+| C3 | aurc_regret | -0.0216 | [-0.1929, 0.1250] | [-0.1491, 0.0916] | -0.000409 | CI crosses zero (not established) |
+| C3 | regret_at_80 | 0.0207 | [-0.0419, 0.0592] | [-0.0256, 0.0473] | 0.000425 | CI crosses zero (not established) |
+| C4 | aurc_regret | 0.0699 | [-0.0887, 0.2061] | [-0.0505, 0.1766] | 0.001456 | CI crosses zero (not established) |
+| C4 | regret_at_80 | 0.0518 | [-0.0296, 0.1480] | [-0.0069, 0.1246] | 0.001099 | CI crosses zero (not established) |
+| C5 | aurc_regret | 0.1131 | [-0.1295, 0.3058] | [-0.0624, 0.2624] | 0.002469 | CI crosses zero (not established) |
+| C5 | regret_at_80 | 0.1005 | [-0.0437, 0.2375] | [-0.0042, 0.2028] | 0.002248 | CI crosses zero (not established) |
 
-## 3. 五 seed 方向（点估计，描述性）
+## 3. Five-seed directions (descriptive point estimates)
 
-| 对比 | 指标 | 正/负/零 | 范围 | 中位数 |
+| Contrast | Metric | Positive/negative/zero | Range | Median |
 | --- | --- | --- | --- | ---: |
 | C1 | aurc_regret | 5/0/0 | [0.3592, 0.4412] | 0.4086 |
 | C1 | regret_at_80 | 5/0/0 | [0.2420, 0.2953] | 0.2615 |
@@ -49,12 +49,12 @@
 | C5 | aurc_regret | 5/0/0 | [0.1073, 0.1604] | 0.1223 |
 | C5 | regret_at_80 | 5/0/0 | [0.0949, 0.1096] | 0.1025 |
 
-## 4. 结论映射（冻结口径，§8）
+## 4. Conclusion mapping (frozen specification, §8)
 
-- C1（完整输入 vs 三基线监督组合，AURC）：区间下界>0
-- C2（显式风险通道条件增量，AURC）：区间跨零（未建立）
-- C3（监督组合 vs 原冻结主启发式 SEED_VOTE_ENTROPY，AURC）：区间跨零（未建立）
-- C4（监督组合 vs MARGIN_ONLY，AURC）：区间跨零（未建立）
-- C5（监督组合 vs SEED_MARGIN_STD，AURC）：区间跨零（未建立）
+- C1 (full input versus supervised three-baseline combination, AURC): CI lower bound >0.
+- C2 (conditional increment from explicit risk channels, AURC): CI crosses zero (not established).
+- C3 (supervised combination versus frozen primary heuristic SEED_VOTE_ENTROPY, AURC): CI crosses zero (not established).
+- C4 (supervised combination versus MARGIN_ONLY, AURC): CI crosses zero (not established).
+- C5 (supervised combination versus SEED_MARGIN_STD, AURC): CI crosses zero (not established).
 
-解释边界：区间条件于已训练模型与历史开发数据；即使区间全为正，也仅为开发性增量证据。不得把改善率相减去归因原确认 26.0% 的构成；C1 跨零不证明 FULL 与 BASELINE3 等效（本方案无等效/非劣效设计）；任何负结果或不稳定均如实报告，不追加候选或调整训练挽救。
+Interpretation boundaries: intervals are conditional on fitted models and historical development data. Even wholly positive intervals provide development-only incremental evidence. Do not subtract improvements to attribute components of the original confirmed 26.0% gain. A C1 interval crossing zero would not establish FULL–BASELINE3 equivalence; this is not an equivalence/noninferiority design. Report all negative or unstable results without adding candidates or modifying training to rescue them.

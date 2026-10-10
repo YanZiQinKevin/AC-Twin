@@ -1,24 +1,24 @@
-# 事实证据来源消融实验结果
+# Factual-Evidence Source Ablation Results
 
-运行时间：2026-09-04T14:54:16.101769+08:00
+Run time: 2026-09-04T14:54:16.101769+08:00
 
-## 确认性结论
+## Confirmatory conclusion
 
-判定：**STRONG_PASS**。`prefix_10`相对`shuffled_full`，effect-FDE@20改善 32.31%。
+Decision: **STRONG_PASS**. `prefix_10` reduced effect-FDE@20 by 32.31% relative to `shuffled_full`.
 
-episode级配对均值差（shuffled_full - prefix_10）为 1.0775 m，95% CI [0.8509, 1.3078]，n=300。
+The episode-level paired mean difference (shuffled_full - prefix_10) was 1.0775 m, 95% CI [0.8509, 1.3078], n=300.
 
-## 全部条件
+## All conditions
 
-| 条件 | effect-ADE@20 (m) | effect-FDE@20 (m) | seed间FDE SD |
+| Condition | effect-ADE@20 (m) | effect-FDE@20 (m) | FDE SD across seeds |
 |---|---:|---:|---:|
 | history_only | 1.8306 | 3.2210 | 0.1746 |
 | shuffled_full | 1.9250 | 3.3350 | 0.1906 |
 | prefix_10 | 1.2861 | 2.2575 | 0.1002 |
 
-## 解释
+## Interpretation
 
-- `prefix_10`优于`shuffled_full`才支持同episode事实证据，而不是单纯增加输入长度。
-- 所有推断以episode为独立单位；五个训练seed不增加n。
+- An advantage of `prefix_10` over `shuffled_full` supports same-episode factual information rather than input length alone.
+- Episodes are independent units for all inference; five training seeds do not increase n.
 
-详细对比置信区间、打乱匹配质量和残差模型信息见 `report.json`。
+See `report.json` for contrast CIs, shuffle-matching quality and residual-model details.

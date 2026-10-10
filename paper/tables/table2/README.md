@@ -1,5 +1,12 @@
-# Table 2｜Information roles and permitted access.
+# Table 2: Information roles and permitted access
 
-[表体](TABLE_2.md)；[源数据](table2_data.csv)；[Excel](Table_2.xlsx)。
+The Markdown table is the current readable version. Editable workbooks, machine-readable data and provenance are listed below. Original experimental values are unchanged.
 
-按正文首次出现顺序编号；只整理已有表值，不重算实验。
+## Files
+
+- [table2_data.csv](table2_data.csv)
+- [table2_source.json](table2_source.json)
+- [TABLE_2.md](TABLE_2.md)
+- [Table_2.xlsx](Table_2.xlsx)
+
+Build scripts organize existing frozen products only. They do not authorize training, inference, bootstrap reruns or re-adjudication. Some historical builders also require the manuscript source, maintained outside this code/data release.

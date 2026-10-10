@@ -1,41 +1,41 @@
-# 环岛稳定 ID 跨场景复现结果
+# Roundabout Stable-ID Cross-Scene Replication Results
 
-总体判定：**PASS_STABLE_ID_CROSS_SCENE_REPLICATION**。
+Overall decision: **PASS_STABLE_ID_CROSS_SCENE_REPLICATION**.
 
-在冻结的`roundabout-v0`对象中心数据、两档近似参数量、5个训练随机种子和300个独立测试episode上，稳定ID集合编码器在两档容量中均优于距离排序GRU。
+On frozen `roundabout-v0` object-centric data, two approximately matched parameter budgets, 5 training seeds and 300 independent test episodes, the stable-ID set encoder outperformed the distance-sorted GRU at both budgets.
 
-| 参数量档位 | 距离排序GRU | 稳定ID集合 | 相对改善 | GRU减集合的配对差及95% CI |
+| Parameter budget | Distance-sorted GRU | Stable-ID set encoder | Relative improvement | Paired GRU minus set difference and 95% CI |
 |---|---:|---:|---:|---:|
-| 约65k | 2.7884 m | **2.4637 m** | 11.65% | 0.3247 [0.1344, 0.5172] m |
-| 约83k | 2.7241 m | **2.4793 m** | 8.99% | 0.2448 [0.0671, 0.4291] m |
+| ~65k | 2.7884 m | **2.4637 m** | 11.65% | 0.3247 [0.1344, 0.5172] m |
+| ~83k | 2.7241 m | **2.4793 m** | 8.99% | 0.2448 [0.0671, 0.4291] m |
 
-将两档容量的episode误差先取平均再进行配对Bootstrap，稳定ID集合编码器的合并改善为0.2847 m，95% CI为[0.1145, 0.4605] m。
+After averaging episode errors across budgets and applying paired bootstrap, the pooled stable-ID set improvement was 0.2847 m, 95% CI [0.1145, 0.4605] m.
 
-## 事实后缀负对照
+## Factual-suffix negative control
 
-| 参数量档位 | 打乱后缀集合 | 同episode后缀集合 | 打乱减同episode的配对差及95% CI |
+| Parameter budget | Shuffled-suffix set encoder | Same-episode-suffix set encoder | Paired shuffled minus same-episode difference and 95% CI |
 |---|---:|---:|---:|
-| 约65k | 3.0633 m | **2.4637 m** | 0.5997 [0.3978, 0.8042] m |
-| 约83k | 3.5795 m | **2.4793 m** | 1.1002 [0.8737, 1.3312] m |
+| ~65k | 3.0633 m | **2.4637 m** | 0.5997 [0.3978, 0.8042] m |
+| ~83k | 3.5795 m | **2.4793 m** | 1.1002 [0.8737, 1.3312] m |
 
-两档合并的打乱后缀劣势为0.8499 m，95% CI为[0.6495, 1.0498] m。这说明稳定ID模型的收益仍依赖同一事件的事实证据，而不是仅由对象编码器容量造成。
+The pooled shuffled-suffix disadvantage was 0.8499 m, 95% CI [0.6495, 1.0498] m. The model's gain therefore still depends on same-event factual evidence, rather than object-encoder capacity alone.
 
-## 稳健性与异质性
+## Robustness and heterogeneity
 
-- 约65k容量下5/5个配对随机种子方向为正；约83k容量下4/5为正，seed 33出现轻微反转（-0.0480 m），但该档episode级95% CI仍整体大于0。
-- 五类动作的平均差均未反转；左换道、右换道和减速的95% CI大于0，保持和加速方向为正但区间跨0。
-- 3步干预改善0.3825 m，95% CI为[0.1252, 0.6410]；1步干预改善0.1870 m，但区间跨0。
-- 大效应事件改善0.6113 m，95% CI为[0.2177, 1.0221]；零效应和中等效应事件方向为正但区间跨0。
-- 0至1 m的小效应组只有7个测试episode，不作独立结论。
+- Positive paired differences for 5/5 seeds at approximately 65k and 4/5 at approximately 83k; seed 33 showed a small reversal (-0.0480 m), but the budget's episode-level 95% CI remained above 0.
+- Mean differences did not reverse for any of the five actions. Left/right lane changes and deceleration had 95% CIs above 0; idle and acceleration were positive with intervals crossing 0.
+- The 3-step intervention improvement was 0.3825 m, 95% CI [0.1252, 0.6410]; the 1-step improvement was 0.1870 m, with its interval crossing 0.
+- Large-effect improvement was 0.6113 m, 95% CI [0.2177, 1.0221]; zero- and medium-effect estimates were positive with intervals crossing 0.
+- The 0-to-1 m small-effect group contained only 7 test episodes and supports no independent conclusion.
 
-因此，结果没有显示系统性的分层方向反转，但稳定ID的性能收益具有明显异质性，主要集中在换道、减速、较长干预和大效应事件。
+There was no systematic stratum-level directional reversal, but performance gains were heterogeneous and concentrated in lane changes, deceleration, longer interventions and large effects.
 
-## 跨场景结论
+## Cross-scene conclusion at this historical stage
 
-合流场景的容量合并改善为0.1278 m，95% CI为[0.0500, 0.2095]；本轮独立环岛场景改善为0.2847 m，95% CI为[0.1145, 0.4605]。两个场景均满足预先固定的正向且置信区间不跨0标准。
+The pooled Merge improvement was 0.1278 m, 95% CI [0.0500, 0.2095]; independent Roundabout improvement was 0.2847 m, 95% CI [0.1145, 0.4605]. Both met the prespecified positive-direction and nonzero-CI criteria.
 
-因此可以把“episode内稳定车辆ID＋对象集合编码”固化为AC-Twin的对象表示模块。该结论不等于已经完成真实外生变量识别、结构创新量重放或多车辆因果传播。
+This supported adopting stable within-episode vehicle IDs plus object-set encoding as the AC-Twin representation module. It does not establish true exogenous-variable identification, structural innovation replay or multi-vehicle causal propagation.
 
-## 训练边界
+## Training boundaries
 
-部分集合模型运行接近200轮上限，其中约65k的两个种子运行到200轮、最佳轮次分别为191和199；约83k有一个种子运行到200轮、最佳轮次为188。结果按预先冻结的200轮预算和最佳验证检查点报告，不追加训练追逐结果。由于接近上限的是获胜的集合模型，这一现象不构成GRU获得额外训练优势的证据，但仍应在论文中公开。
+Some set-encoder runs approached the 200-epoch cap. At approximately 65k, two seeds reached 200 epochs, with best epochs 191 and 199; at approximately 83k, one reached 200, with best epoch 188. Results use the frozen 200-epoch budget and best-validation checkpoints, without extra training to pursue favorable outcomes. Because the winning set models approached the cap, this does not show an extra training advantage for the GRU, but should still be disclosed.

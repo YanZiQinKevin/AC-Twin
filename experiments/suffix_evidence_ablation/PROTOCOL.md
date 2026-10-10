@@ -1,49 +1,49 @@
-# 事实证据来源消融实验协议
+# Factual-Evidence Source Ablation Protocol
 
-冻结日期：2026-09-04  
-源数据：`data/pilot_2000/twinworld_multi_action_2000.npz`
+Frozen on: 2026-09-04
+Source data: `data/pilot_2000/twinworld_multi_action_2000.npz`
 
-## 研究问题
+## Research question
 
-上一轮显示完整事实后缀相对历史模型降低了反事实效应误差。本轮判断这一收益是否依赖“同一episode的事实证据”，并区分完整轨迹、局部轨迹、末状态和动力学残差代理的作用。
+The previous run found lower counterfactual-effect error with complete factual suffixes than with history alone. This study tests whether that gain requires evidence from the same episode and distinguishes complete trajectories, partial trajectories, terminal states and a dynamics-residual proxy.
 
-## 表示控制
+## Representation controls
 
-为避免打乱实验被不同道路绝对位置轻易识别，所有车辆的 `x/y` 坐标均减去该episode干预时刻的自车位置，再进行训练集标准化。事实证据额外增加一个可见性mask通道。所有效应模型结构、参数量、训练/验证/测试划分、优化预算和训练seed保持一致。
+To prevent different absolute road positions from trivially revealing shuffled inputs, subtract the ego position at intervention from every vehicle's `x/y` coordinates before training-set standardization. Add a visibility-mask channel to factual evidence. Keep model architecture, parameter count, train/validation/test splits, optimization budget and training seeds identical.
 
-## 八个条件
+## Eight conditions
 
-1. `history_only`：只使用干预前历史；事实证据上下文强制为0。
-2. `shuffled_full`：使用来自同一数据划分、尽量匹配事实动作、反事实动作和持续时间的其他episode完整后缀。
-3. `last_frame`：只显示事实后缀第20步状态。
-4. `prefix_1`：只显示事实后缀前1步。
-5. `prefix_5`：只显示前5步。
-6. `prefix_10`：只显示前10步。
-7. `full_20`：显示完整20步事实后缀。
-8. `residual_innovation_20`：先仅用训练集事实转移训练一阶动力学模型，再把真实状态增量减去预测增量所得残差作为事实证据。该残差只是“创新量代理”，不能称为已经识别的外生噪声。
+1. `history_only`: preceding history only; factual-evidence context forced to 0.
+2. `shuffled_full`: a complete suffix from another episode in the same split, matching factual action, counterfactual action and duration where possible.
+3. `last_frame`: only the factual state at step 20.
+4. `prefix_1`: only the first 1 factual-suffix step.
+5. `prefix_5`: only the first 5 steps.
+6. `prefix_10`: only the first 10 steps.
+7. `full_20`: the complete 20-step factual suffix.
+8. `residual_innovation_20`: fit a first-order dynamics model using training factual transitions only, then use observed minus predicted state increments as factual evidence. These residuals are an innovation proxy, not identified exogenous noise.
 
-## 确认性主检验
+## Confirmatory primary test
 
-主对比：`shuffled_full error - full_20 error`。主指标为 effect-FDE@20。
+Primary contrast: `shuffled_full error - full_20 error`. Primary endpoint: effect-FDE@20.
 
-每个test episode先在五个训练seed下分别计算误差，再对误差求平均。以300个test episode为独立单位，进行10,000次配对bootstrap并报告95%置信区间。
+Compute errors separately for five training seeds and average errors per test episode. Use 300 test episodes as independent units for 10,000 paired bootstrap resamples and report 95% CIs.
 
-- `STRONG_PASS`：完整后缀相对打乱后缀改善至少10%，且95% CI下界大于0。
-- `PASS`：改善至少5%，且95% CI下界大于0。
-- `STATISTICAL_BUT_SMALL`：CI下界大于0但改善不足5%。
-- `INCONCLUSIVE`：CI跨0。
-- `FAIL`：CI上界不大于0。
+- `STRONG_PASS`: at least 10% improvement over shuffled suffixes and 95% CI lower bound above 0.
+- `PASS`: at least 5% improvement and 95% CI lower bound above 0.
+- `STATISTICAL_BUT_SMALL`: CI lower bound above 0 but improvement below 5%.
+- `INCONCLUSIVE`: CI crosses 0.
+- `FAIL`: CI upper bound at or below 0.
 
-## 探索性分析
+## Exploratory analyses
 
-- `prefix_1/5/10/20`的剂量—信息长度曲线；
-- `last_frame`与`full_20`比较；
-- `residual_innovation_20`与原始完整后缀比较；
-- 各动作和持续时间分层结果。
+- Information-length curve for `prefix_1/5/10/20`;
+- `last_frame` versus `full_20`;
+- `residual_innovation_20` versus the complete raw suffix;
+- Action and duration strata.
 
-探索性对比不作未经校正的确认性显著性声明。
+Exploratory comparisons do not support uncorrected confirmatory significance claims.
 
-## 解释边界
+## Interpretation boundaries
 
-若完整后缀优于动作匹配的打乱后缀，支持“episode特异事实证据”有用；仍不能单凭该实验证明因果可识别性。若残差代理优于原始后缀，只能支持继续开发结构创新量反演，不能把一阶预测残差直接解释成真实外生变量。
+An advantage over action-matched shuffled suffixes supports episode-specific factual information, but does not alone establish causal identifiability. Better residual-proxy performance would motivate structural innovation inversion; first-order prediction residuals cannot be interpreted directly as true exogenous variables.
 
