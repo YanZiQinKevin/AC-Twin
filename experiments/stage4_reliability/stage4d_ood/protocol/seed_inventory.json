@@ -1,0 +1,99 @@
+{
+  "action_stream_roots": {
+    "d1_confirm": [
+      2026110994,
+      4
+    ],
+    "pilot_behavior": [
+      2026101000,
+      1
+    ],
+    "pilot_geometry": [
+      2026102001,
+      2
+    ],
+    "pilot_joint": [
+      2026103002,
+      3
+    ],
+    "smoke": [
+      2026100099,
+      0
+    ]
+  },
+  "domains": {
+    "d1_confirm": {
+      "entropy": 2026110994,
+      "schedule_raw_sha256": "aafbba57ecc19096c66a85e59f2a6d248dac518b7523e3924b370c50bb6a536a",
+      "size": 30000
+    },
+    "pilot_behavior": {
+      "entropy": 2026101000,
+      "schedule_raw_sha256": "f3605a836186d478d60d652d434f489b771bb312c69242d28f61552bbae11430",
+      "size": 6000
+    },
+    "pilot_geometry": {
+      "entropy": 2026102001,
+      "schedule_raw_sha256": "835811b5376aff3b1acef60dfc2411f742d4b1088415536424e8b4e0af1d27b7",
+      "size": 6000
+    },
+    "pilot_joint": {
+      "entropy": 2026103002,
+      "schedule_raw_sha256": "fe51c90a86c67bd594107def30aa9f4c55c0489b6e9776875c321dc2d5acb0ad",
+      "size": 6000
+    },
+    "smoke": {
+      "entropy": 2026100099,
+      "schedule_raw_sha256": "5414ba4289044a3af39633c335f69a8c8880fb008b03d459640a4ea47d7f6722",
+      "size": 256
+    }
+  },
+  "inventory_sha256": "e9f2aad2241ea9100bafccfeea612b015aa81db59d2dc0d04200c75769266be7",
+  "n_inventory": 432868,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "reserved_entropies": {
+    "action_stream_roots": {
+      "d1_confirm": [
+        2026110994,
+        4
+      ],
+      "pilot_behavior": [
+        2026101000,
+        1
+      ],
+      "pilot_geometry": [
+        2026102001,
+        2
+      ],
+      "pilot_joint": [
+        2026103002,
+        3
+      ],
+      "smoke": [
+        2026100099,
+        0
+      ]
+    },
+    "behavior_assign_stream": 2026105101,
+    "collection": {
+      "d1_candidate": 2026110994,
+      "pilot_behavior": 2026101000,
+      "pilot_geometry": 2026102001,
+      "pilot_joint": 2026103002,
+      "smoke": 2026100099
+    },
+    "d1_bootstrap": 2026110995,
+    "domain_classifier_bootstrap": {
+      "behavior": 2026104101,
+      "geometry": 2026104102,
+      "joint": 2026104103
+    },
+    "geometry_stream": 2026105102,
+    "power": 2026104201
+  },
+  "scan_roots": [
+    "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data",
+    "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments"
+  ],
+  "stage_namespace": "stage4d_ood"
+}

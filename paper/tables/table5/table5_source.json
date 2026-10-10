@@ -1,0 +1,28 @@
+{
+  "table": "Table 5",
+  "source": "paper/manuscript/AC-Twin_论文初稿_中文.md",
+  "source_sha256": "6daa829ae5a658f0bb82a2c6cbe3b96bd9ea3f35020c03e6874932c9d6c08aef",
+  "data_operation": "copy_existing_table_without_recomputation",
+  "rows": [
+    [
+      "预先设定的确认对比",
+      "点估计",
+      "95% CI"
+    ],
+    [
+      "$C_{\\mathrm{presence}}=V_{\\mathrm{zero}}-V_{\\mathrm{positive-all}}$",
+      "0.2258",
+      "[0.1932, 0.2584]"
+    ],
+    [
+      "$C_{\\mathrm{high-low}}=V_{\\mathrm{high}}-V_{\\mathrm{low}}$",
+      "0.1222",
+      "[0.0312, 0.2180]"
+    ],
+    [
+      "$C_{\\mathrm{high-mid}}=V_{\\mathrm{high}}-V_{\\mathrm{mid}}$",
+      "0.2725",
+      "[0.2234, 0.3263]"
+    ]
+  ]
+}

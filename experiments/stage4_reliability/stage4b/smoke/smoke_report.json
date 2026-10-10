@@ -1,0 +1,12 @@
+{
+  "status": "ENGINEERING_SMOKE_ONLY",
+  "episodes": 12,
+  "feature_count": 29,
+  "whitelist_rejects_truth_input": true,
+  "finalist_loads_and_deterministic": true,
+  "finalist_score_finite": true,
+  "geometry_score_finite": true,
+  "uncertainty_score_finite": true,
+  "risk_target_finite": true,
+  "curve_points": 12
+}

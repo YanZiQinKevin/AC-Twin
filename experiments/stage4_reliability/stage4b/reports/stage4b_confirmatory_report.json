@@ -1,0 +1,170 @@
+{
+  "bootstrap": {
+    "confidence_level": 0.95,
+    "n_resamples": 10000,
+    "seed": 2026091703
+  },
+  "combined_implementation": "mlp",
+  "data_sha256": "a9a381a491e8e9253392f95b0af3bbce5eb27bbcbb43b8ac707d81e8798bde2e",
+  "finalist": "COMBINED_RISK_HEAD",
+  "n_confirm_episodes": 2000,
+  "note": "Stage 4B \u662f Merge \u57df\u5185\u72ec\u7acb\u786e\u8ba4\uff1b\u4e0d\u627f\u62c5\u8de8\u573a\u666f\u5916\u90e8\u6709\u6548\u6027\u3002",
+  "plan_id": "AC-TWIN-RFER-STAGE4B-RISK-CONFIRM-2026-09-15-V0.1",
+  "predictions_sha256": "18cb74aec7adddc388082f0bbb0040d527ed727bcd03fdaddb376555f07c48c9",
+  "primary_predictor": "END_TO_END_MIXTURE",
+  "qa": {
+    "checks": {
+      "data_hash_match": true,
+      "episode_order_consistent": true,
+      "locked_inputs_hash_match": true,
+      "mask_has_valid_cell": true,
+      "prediction_shapes": true,
+      "prefix_identity_clean": true,
+      "scores_finite": true,
+      "seed_disjoint_from_history": true,
+      "seed_unique": true,
+      "seed_within_schedule": true,
+      "stage4a_frozen_chain": true,
+      "strata_balanced": true,
+      "whitelist_no_truth_param": true
+    },
+    "passed": true
+  },
+  "quantities": {
+    "ci_lower": [
+      0.05072787412241395,
+      0.01256330978075906,
+      0.2300687687053796,
+      0.09484197783916792,
+      0.24847380109599837,
+      0.04010613519545,
+      0.0692910878352054,
+      0.05725097063598623,
+      0.024084158421111317,
+      0.06247576574773338,
+      0.03347710568488697,
+      0.07408180984925464,
+      0.011380583431133084,
+      -0.04086147491925906,
+      0.0445508738721846,
+      0.060489738173879745,
+      0.01913263465200229
+    ],
+    "ci_upper": [
+      0.09536086781115119,
+      0.04431947739912539,
+      0.2889438750056024,
+      0.1455836106533092,
+      0.3317699014569391,
+      0.08507175214444393,
+      0.11526931976327354,
+      0.10565355693927123,
+      0.0670137747854326,
+      0.10930892591418906,
+      0.10253486759199439,
+      0.19092982569314185,
+      0.06381224467194785,
+      0.08404352641101333,
+      0.12324893594088278,
+      0.14204197245220057,
+      0.06570600885729184
+    ],
+    "point": [
+      0.07281084533295229,
+      0.030653772724318244,
+      0.26081781346668015,
+      0.12016398034882544,
+      0.28971379403182684,
+      0.06242825523007722,
+      0.09192445927983084,
+      0.08112365625849073,
+      0.0454221596312584,
+      0.08573441628437603,
+      0.06845527025420897,
+      0.1352699683163403,
+      0.038236246693217055,
+      0.01818430952194837,
+      0.08581032795174691,
+      0.10107286302729365,
+      0.04262592738786268
+    ]
+  },
+  "risk_scores_sha256": "5487a3ec77d14ed4df604983eb0316bbb58d49a7215a8362fc06e9d93f1c335d",
+  "second_baseline": "GEOMETRY_ONLY",
+  "secondary": {
+    "ablations": {
+      "DISAGREEMENT_ONLY": {
+        "ade@80": 0.21994594079243185,
+        "ade@90": 0.23837770972844952,
+        "aurc": 0.18008468847872422,
+        "n_episodes": 2000,
+        "pr_auc": 0.4255139142775286,
+        "pr_auc_minus_prevalence": 0.2135139142775286,
+        "prevalence": 0.212
+      },
+      "GEOMETRY_ONLY": {
+        "ade@80": 0.24363533738037568,
+        "ade@90": 0.2528254954687999,
+        "aurc": 0.2218254445540128,
+        "n_episodes": 2000,
+        "pr_auc": 0.30618200896871733,
+        "pr_auc_minus_prevalence": 0.09418200896871734,
+        "prevalence": 0.212
+      },
+      "RESPONSE_ONLY": {
+        "ade@80": 0.216990660108632,
+        "ade@90": 0.23858185680014649,
+        "aurc": 0.17443804103010413,
+        "n_episodes": 2000,
+        "pr_auc": 0.4583528362165574,
+        "pr_auc_minus_prevalence": 0.24635283621655743,
+        "prevalence": 0.212
+      },
+      "UNCERTAINTY_ONLY": {
+        "ade@80": 0.2211378550361419,
+        "ade@90": 0.23630996570675236,
+        "aurc": 0.1768457022052227,
+        "n_episodes": 2000,
+        "pr_auc": 0.45544916720615347,
+        "pr_auc_minus_prevalence": 0.24344916720615348,
+        "prevalence": 0.212
+      }
+    },
+    "ade@90": 0.2347613976057576,
+    "decile_mean_error": [
+      0.10257311795288565,
+      0.13320221454084943,
+      0.15980311487854654,
+      0.19335220257016494,
+      0.22310998863310352,
+      0.24595844822255158,
+      0.30168841663461676,
+      0.35518566046424765,
+      0.39797941455485214,
+      0.5585257042636236
+    ],
+    "i_aurc_trim_top_1pct": 0.07439489910310701,
+    "i_aurc_trim_top_5pct": 0.07206759314166336
+  },
+  "selected_n": 2000,
+  "standard_baseline": "UNCERTAINTY_ONLY",
+  "status": "STAGE4B_RISK_CONFIRMED",
+  "top_error_threshold": 0.41601440122246675,
+  "verdict": {
+    "conditions": {
+      "at_least_4_of_5_pairs_positive": true,
+      "gate_q_passed": true,
+      "i_aurc_vs_geometry": true,
+      "i_aurc_vs_uncertainty": true,
+      "i_c80_vs_geometry": true,
+      "i_c80_vs_uncertainty": true,
+      "no_strata_below_floor": true,
+      "pr_auc_minus_prevalence": true
+    },
+    "gate_q_passed": true,
+    "passed": true,
+    "positive_pairs": 5,
+    "status": "STAGE4B_RISK_CONFIRMED",
+    "strata_min_i_aurc": 0.01818430952194837
+  }
+}

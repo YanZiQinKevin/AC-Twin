@@ -1,0 +1,41 @@
+{
+  "bindings": {
+    "inference_inputs_sha256": "5626d11b46746409cb7c974be78768cc57a6ce75aa9db82feae3c024f9b1cc56",
+    "sealed_truth_sha256": "c44c8f5e832c4c8f972aa456bb5e4bb39d5811024ae3dd258497df6273aa2e25",
+    "source_collection_receipt_sha256": "6832c1d50e284cf5d38964ccdb1d66def2ea277394a26b942b82c4f50d05a96d",
+    "source_groups_sha256": "c9622ea24045fd8e7b6e043b95953fdc44b104ca936d91315c3bde3544d58d34",
+    "source_meta_sha256": "20280e4e50315e2b94225fb6feb58da2aba19a998af198da68dd3a981864c73b"
+  },
+  "group_seed_derivation": "stage4d_external_training.group_seed_from_scenario_id(scenario_id, role_salt)",
+  "inference_inputs_fields": [
+    "object_history",
+    "object_factual_future",
+    "factual_actions",
+    "inference_mask",
+    "t_star",
+    "cf_actions",
+    "cf_durations",
+    "n_actions",
+    "object_features_json",
+    "action_plans_json",
+    "group_seed",
+    "scenario_ids_json",
+    "source_groups_sha256",
+    "source_meta_sha256"
+  ],
+  "n_actions": 10,
+  "n_groups": 2000,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "role": "development_screen",
+  "sealed_truth_fields": [
+    "object_counterfactual_futures",
+    "object_factual_future",
+    "evaluation_mask",
+    "history_last_xy",
+    "group_seed",
+    "scenario_ids_json",
+    "source_groups_sha256"
+  ],
+  "separation": "the inference_inputs carry NO counterfactual future; the scoring process is structurally unable to read the sealed truth",
+  "written_at": "2026-09-25T15:56:35"
+}

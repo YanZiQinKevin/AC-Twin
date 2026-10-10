@@ -1,0 +1,12 @@
+{
+  "best_validation_ade": 0.2523113787174225,
+  "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair1_s1202.pt",
+  "condition": "end_to_end_mixture",
+  "epochs_run": 10,
+  "input_dim": 70,
+  "lambda_cew": 0.0,
+  "lambda_rank": 0.0,
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "seed": 1202,
+  "sha256": "082dd9cde4e5702a708b340e7c76760f7d0606ff60d6e3e0496cc09c52e2a60b"
+}

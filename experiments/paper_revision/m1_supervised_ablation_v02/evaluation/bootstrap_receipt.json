@@ -1,0 +1,18 @@
+{
+  "draws": 10000,
+  "entropy": 2026100701,
+  "main_family": "C1-C5 AURC contrasts, per-contrast 99% CI (0.005/0.995), Bonferroni family-95%",
+  "plan_id": "AC-TWIN-RFER-M1-SUPERVISED-ABLATION-2026-10-07-V0.2",
+  "pr_auc_minus_prevalence_descriptive": {
+    "BASELINE3_MATCHED": 0.08060599505383251,
+    "FULL_FROZEN_REFERENCE": 0.3314341963877817,
+    "FULL_MATCHED": 0.3314341963877817,
+    "MARGIN_ONLY": 0.05186805318411716,
+    "NO_RISK_MATCHED": 0.32403604709112155,
+    "SEED_MARGIN_STD": -0.006367855090520652,
+    "SEED_VOTE_ENTROPY": 0.054186208873032576
+  },
+  "recompute": "run_m1_ablation.py evaluate --config <config>",
+  "secondary_family": "C1-C5 Regret@80 contrasts, same intervals, never upgraded",
+  "uncorrected_95": "labelled uncorrected; narrative uses the family 99% CI"
+}

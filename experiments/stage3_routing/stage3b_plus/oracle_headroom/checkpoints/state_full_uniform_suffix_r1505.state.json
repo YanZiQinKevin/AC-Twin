@@ -1,0 +1,18 @@
+{
+  "architecture": "state_full",
+  "best_val_loss": 0.2856378766274266,
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_full_uniform_suffix_r1505.pt",
+  "condition": "uniform_suffix",
+  "config": {
+    "architecture": "state_full",
+    "condition": "uniform_suffix",
+    "hidden_dim": 64,
+    "horizon": 20,
+    "response_feature_dim": 32
+  },
+  "epochs_run": 30,
+  "name": "state_full_uniform_suffix_r1505",
+  "router_seed": 1505,
+  "signature": "c1e19497309930d2e9408ee27d4f861a8891a7ea85ce97f667e8d4e966e25c61",
+  "state": "COMPLETE"
+}

@@ -1,0 +1,22 @@
+{
+  "run": "oracle_response_reference_g32_pair1_r1202",
+  "state": "COMPLETE",
+  "condition": "oracle_response_reference",
+  "pair_index": 1,
+  "seed_pair": [
+    202,
+    1202
+  ],
+  "gate_hidden_dim": 32,
+  "config": {
+    "condition": "oracle_response_reference",
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "gate_hidden_dim": 32
+  },
+  "best_val_loss": 0.23114049018319036,
+  "validation_selection_score": 0.23114049018319036,
+  "epochs_run": 35,
+  "signature": "1b006263fdedc850a7d8f4f2c3a79a3af9d0fdecc311383f667f142908f82ef2",
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\oracle_response_reference_g32_pair1_r1202.pt"
+}

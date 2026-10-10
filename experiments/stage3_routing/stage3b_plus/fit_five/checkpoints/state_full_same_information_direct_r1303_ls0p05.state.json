@@ -1,0 +1,20 @@
+{
+  "architecture": "state_full",
+  "best_val_loss": 0.31544444374710634,
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_same_information_direct_r1303_ls0p05.pt",
+  "condition": "same_information_direct",
+  "config": {
+    "architecture": "state_full",
+    "condition": "same_information_direct",
+    "hidden_dim": 64,
+    "horizon": 20,
+    "response_feature_dim": 32,
+    "shape_lambda": 0.05,
+    "shape_margin": 0.1
+  },
+  "epochs_run": 12,
+  "name": "state_full_same_information_direct_r1303_ls0p05",
+  "router_seed": 1303,
+  "signature": "186bc0b1783a4930fc745b7a27189d845cc98c26587082d7494c802e41b5b126",
+  "state": "COMPLETE"
+}

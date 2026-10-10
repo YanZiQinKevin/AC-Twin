@@ -1,0 +1,18 @@
+{
+  "bindings": {
+    "data_sha256": "96bed045419cf42e106d74046247292984319211bc62ca430d7703ccd8c135d2",
+    "determinism_receipt_sha256": "68747d2dcd5893a4b6623d46a503e35ed5159614e798bb5eaac021c8c1343103",
+    "direct_scores_receipt_sha256": "f3d95885aa6e00966ae0b8f0dfeee1012494e942edf395ffea87e9ffdf7ec364",
+    "direct_scores_sha256": "15e4b179b16444c11d4e8aae8d8cd93eba7fcdc04af7d553593738c3df7d5339",
+    "final_selection_sha256": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+    "inference_receipt_sha256": "4b2efbf34e8a907bd5d9611e3c4e5453a70e83706e129b7da48cc13a684a8a85",
+    "predictions_sha256": "2e251c87a56f8eb20219ceead8e46768d72a1440afb1b1a4b649fc34cf0abe91",
+    "scores_sha256": "b36808e09558d301b19e78df6d40cc2a3f0da51ac751a1a289782b937542db6f"
+  },
+  "burned_at": "2026-09-17T03:29:42",
+  "interaction_threshold": 29.128996473819946,
+  "plan_id": "AC-TWIN-RFER-STAGE4C-R2-DECISION-RISK-SCALING-2026-09-16-V0.2",
+  "role": "development_screen",
+  "semantics": "one-shot: the screen truth may be read only after this lock exists; all screen scores are frozen and hash-bound above",
+  "strongest_standard_baseline": "SEED_VOTE_ENTROPY"
+}

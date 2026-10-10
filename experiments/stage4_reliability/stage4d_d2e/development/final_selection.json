@@ -1,0 +1,21 @@
+{
+  "ego_checkpoints": {
+    "1101": "development/ego_models/ego_EGO_TRAJECTORY_PLUS_RANK_seed1101.pt",
+    "1202": "development/ego_models/ego_EGO_TRAJECTORY_PLUS_RANK_seed1202.pt",
+    "1303": "development/ego_models/ego_EGO_TRAJECTORY_PLUS_RANK_seed1303.pt",
+    "1404": "development/ego_models/ego_EGO_TRAJECTORY_PLUS_RANK_seed1404.pt",
+    "1505": "development/ego_models/ego_EGO_TRAJECTORY_PLUS_RANK_seed1505.pt"
+  },
+  "ego_seeds": [
+    1101,
+    1202,
+    1303,
+    1404,
+    1505
+  ],
+  "ensemble_rule": "mean over the 5 index-paired seeds; slot-0 replacement only",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+  "risk_run_dir": "riskfit_EGO_TRAJECTORY_PLUS_RANK",
+  "selected_candidate": "EGO_TRAJECTORY_PLUS_RANK",
+  "written_at": "2026-09-24T17:31:50"
+}

@@ -1,0 +1,117 @@
+{
+  "finalists": [
+    {
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "per_seed": [
+        {
+          "seed": 101,
+          "signature": "ae2245433523c63264743e3434a527bd48774240ec1bd2d10defdf3226de711f",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h64_r32_l0.1_seed101.pt",
+          "best_val_loss": 0.14321142064117287,
+          "validation_selection_score": 0.14321142064117287
+        },
+        {
+          "seed": 202,
+          "signature": "6ef41b2a564d86d99649cc5b3b1740b8cc7c7ec2860ef912c87bb60d32eaeea8",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h64_r32_l0.1_seed202.pt",
+          "best_val_loss": 0.13630073363642392,
+          "validation_selection_score": 0.13630073363642392
+        },
+        {
+          "seed": 303,
+          "signature": "ef7b98b983449b923554c7ed632905550f23904468f978ef838f4839440595f8",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h64_r32_l0.1_seed303.pt",
+          "best_val_loss": 0.14022321375901145,
+          "validation_selection_score": 0.14022321375901145
+        },
+        {
+          "seed": 404,
+          "signature": "dd845f9e5c0e7eeb791047f78a904bb136bbb56f25e26699869da75d05389f22",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h64_r32_l0.1_seed404.pt",
+          "best_val_loss": 0.1501539591677905,
+          "validation_selection_score": 0.1501539591677905
+        },
+        {
+          "seed": 505,
+          "signature": "a6e0dc3b4c42042d07c043b4ab16abb25fe5f2d10d4ead815311907932d2b018",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h64_r32_l0.1_seed505.pt",
+          "best_val_loss": 0.151137215931058,
+          "validation_selection_score": 0.151137215931058
+        }
+      ],
+      "five_checkpoint_signatures": {
+        "count": 5,
+        "signatures": [
+          "ae2245433523c63264743e3434a527bd48774240ec1bd2d10defdf3226de711f",
+          "6ef41b2a564d86d99649cc5b3b1740b8cc7c7ec2860ef912c87bb60d32eaeea8",
+          "ef7b98b983449b923554c7ed632905550f23904468f978ef838f4839440595f8",
+          "dd845f9e5c0e7eeb791047f78a904bb136bbb56f25e26699869da75d05389f22",
+          "a6e0dc3b4c42042d07c043b4ab16abb25fe5f2d10d4ead815311907932d2b018"
+        ],
+        "all_distinct": true
+      },
+      "all_distinct": true
+    },
+    {
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "per_seed": [
+        {
+          "seed": 101,
+          "signature": "2dac69182ad082a073163f10e6d76180565f7afc426d451f69478f31c70ac1e6",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed101.pt",
+          "best_val_loss": 0.14714090604914104,
+          "validation_selection_score": 0.14714090604914104
+        },
+        {
+          "seed": 202,
+          "signature": "c4dcf6e205f52dda71ce345287160d51b3505632777993b3ea4d4ff54a7388b2",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed202.pt",
+          "best_val_loss": 0.13901672733248815,
+          "validation_selection_score": 0.13901672733248815
+        },
+        {
+          "seed": 303,
+          "signature": "d0f5106b634a837b32498c4c1d094e217766563abaed1419332fee10f9ca04bc",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed303.pt",
+          "best_val_loss": 0.13541584910605603,
+          "validation_selection_score": 0.13541584910605603
+        },
+        {
+          "seed": 404,
+          "signature": "01c943b04c387cb0a9cc9455a765a723d25d78c7ca63259127d56731f8ffbce4",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed404.pt",
+          "best_val_loss": 0.13523982076770158,
+          "validation_selection_score": 0.13523982076770158
+        },
+        {
+          "seed": 505,
+          "signature": "cce9a6414d94b7a0358da19f4f5e49a904f9b5d3eca1c84410da20d5db9e1975",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed505.pt",
+          "best_val_loss": 0.15124776437294712,
+          "validation_selection_score": 0.15124776437294712
+        }
+      ],
+      "five_checkpoint_signatures": {
+        "count": 5,
+        "signatures": [
+          "2dac69182ad082a073163f10e6d76180565f7afc426d451f69478f31c70ac1e6",
+          "c4dcf6e205f52dda71ce345287160d51b3505632777993b3ea4d4ff54a7388b2",
+          "d0f5106b634a837b32498c4c1d094e217766563abaed1419332fee10f9ca04bc",
+          "01c943b04c387cb0a9cc9455a765a723d25d78c7ca63259127d56731f8ffbce4",
+          "cce9a6414d94b7a0358da19f4f5e49a904f9b5d3eca1c84410da20d5db9e1975"
+        ],
+        "all_distinct": true
+      },
+      "all_distinct": true
+    }
+  ],
+  "search_results_sha256": "16b453882348f779c46ec26b0c64da14c89cf32f7a248849fe98d44ccc424c3a"
+}

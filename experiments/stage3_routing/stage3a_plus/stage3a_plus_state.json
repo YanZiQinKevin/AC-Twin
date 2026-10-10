@@ -1,0 +1,78 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+  "state": "RESPONSE_DEV_QUALIFIED_STAGE3A_PLUS",
+  "history": [
+    {
+      "from": "STAGE3A_PLUS_DESIGN_FROZEN",
+      "to": "SOFTWARE_TESTED",
+      "at": "2026-09-09T23:24:46",
+      "note": "targeted pytest green"
+    },
+    {
+      "from": "SOFTWARE_TESTED",
+      "to": "FORENSIC_DIAGNOSTIC_COMPLETE",
+      "at": "2026-09-09T23:53:36",
+      "note": ""
+    },
+    {
+      "from": "FORENSIC_DIAGNOSTIC_COMPLETE",
+      "to": "DEV_ROUND_0_COMPLETE",
+      "at": "2026-09-10T00:00:35",
+      "note": ""
+    },
+    {
+      "from": "DEV_ROUND_0_COMPLETE",
+      "to": "STAGE3A_PLUS_DEVELOPMENT_STABLE",
+      "at": "2026-09-10T00:00:35",
+      "note": "Round 0 Gate R+_dev passed on A and B"
+    },
+    {
+      "from": "STAGE3A_PLUS_DEVELOPMENT_STABLE",
+      "to": "FINAL_MODEL_FROZEN",
+      "at": "2026-09-10T00:00:35",
+      "note": ""
+    },
+    {
+      "from": "FINAL_MODEL_FROZEN",
+      "to": "COMPUTE_BUDGET_RECORDED_STAGE3A_PLUS",
+      "at": "2026-09-10T00:00:35",
+      "note": ""
+    },
+    {
+      "from": "COMPUTE_BUDGET_RECORDED_STAGE3A_PLUS",
+      "to": "QUALIFICATION_POWER_FROZEN",
+      "at": "2026-09-10T09:12:00",
+      "note": "n=1000"
+    },
+    {
+      "from": "QUALIFICATION_POWER_FROZEN",
+      "to": "MANUAL_COLLECTION_COMPLETE",
+      "at": "2026-09-10T09:17:27",
+      "note": "n=1000"
+    },
+    {
+      "from": "MANUAL_COLLECTION_COMPLETE",
+      "to": "FROZEN_INFERENCE_COMPLETE",
+      "at": "2026-09-10T09:17:28",
+      "note": "n=1000, ten seeds"
+    },
+    {
+      "from": "FROZEN_INFERENCE_COMPLETE",
+      "to": "AUTOMATIC_SINGLE_ADJUDICATION_STARTED",
+      "at": "2026-09-10T09:17:28",
+      "note": "single-use qualification adjudication started"
+    },
+    {
+      "from": "AUTOMATIC_SINGLE_ADJUDICATION_STARTED",
+      "to": "QUALIFICATION_ADJUDICATED",
+      "at": "2026-09-10T10:08:58",
+      "note": "RESPONSE_DEV_QUALIFIED_STAGE3A_PLUS"
+    },
+    {
+      "from": "QUALIFICATION_ADJUDICATED",
+      "to": "RESPONSE_DEV_QUALIFIED_STAGE3A_PLUS",
+      "at": "2026-09-10T10:08:58",
+      "note": ""
+    }
+  ]
+}

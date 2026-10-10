@@ -1,0 +1,245 @@
+{
+  "bootstrap": {
+    "confidence": 0.8,
+    "design": "covariance taken DIRECTLY from this run's whole-group paired bootstrap draws (deterministically recomputed with the frozen R2 screen entropy); a 95% SE is never derived from any CI width",
+    "n_resamples": 10000,
+    "seed": 2026092702
+  },
+  "candidate_ns": [
+    1000,
+    2000,
+    3000,
+    4000
+  ],
+  "max_candidate_n": 4000,
+  "monte_carlo": {
+    "entropy": 2026104201,
+    "n_draws": 10000
+  },
+  "n_reference": 8000,
+  "per_n": {
+    "1000": {
+      "binding_condition": "i_regret80",
+      "binding_power": 0.7884,
+      "joint_power_at_selection": 0.7311,
+      "scenarios": {
+        "0.25": {
+          "joint_power": 0.1578,
+          "marginal_power": {
+            "i_aurc_regret": 0.3572,
+            "i_regret80": 0.2888,
+            "pr_auc_minus_prevalence": 0.8273,
+            "seeds_both_directions_positive": 0.8136
+          }
+        },
+        "0.50": {
+          "joint_power": 0.7311,
+          "marginal_power": {
+            "i_aurc_regret": 0.8854,
+            "i_regret80": 0.7884,
+            "pr_auc_minus_prevalence": 0.9999,
+            "seeds_both_directions_positive": 0.9935
+          }
+        },
+        "0.75": {
+          "joint_power": 0.9832,
+          "marginal_power": {
+            "i_aurc_regret": 0.9968,
+            "i_regret80": 0.9863,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9997,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 0.9997,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        }
+      }
+    },
+    "2000": {
+      "binding_condition": "i_regret80",
+      "binding_power": 0.9731,
+      "joint_power_at_selection": 0.9688,
+      "scenarios": {
+        "0.25": {
+          "joint_power": 0.3841,
+          "marginal_power": {
+            "i_aurc_regret": 0.6211,
+            "i_regret80": 0.5044,
+            "pr_auc_minus_prevalence": 0.9827,
+            "seeds_both_directions_positive": 0.942
+          }
+        },
+        "0.50": {
+          "joint_power": 0.9688,
+          "marginal_power": {
+            "i_aurc_regret": 0.9946,
+            "i_regret80": 0.9731,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 0.9997
+          }
+        },
+        "0.75": {
+          "joint_power": 1.0,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 1.0,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 1.0,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 1.0,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        }
+      }
+    },
+    "3000": {
+      "binding_condition": "i_regret80",
+      "binding_power": 0.998,
+      "joint_power_at_selection": 0.998,
+      "scenarios": {
+        "0.25": {
+          "joint_power": 0.5852,
+          "marginal_power": {
+            "i_aurc_regret": 0.7907,
+            "i_regret80": 0.675,
+            "pr_auc_minus_prevalence": 0.9987,
+            "seeds_both_directions_positive": 0.9801
+          }
+        },
+        "0.50": {
+          "joint_power": 0.998,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 0.998,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        },
+        "0.75": {
+          "joint_power": 1.0,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 1.0,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 1.0,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 1.0,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        }
+      }
+    },
+    "4000": {
+      "binding_condition": "i_regret80",
+      "binding_power": 0.9998,
+      "joint_power_at_selection": 0.9998,
+      "scenarios": {
+        "0.25": {
+          "joint_power": 0.7407,
+          "marginal_power": {
+            "i_aurc_regret": 0.8919,
+            "i_regret80": 0.8011,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 0.9922
+          }
+        },
+        "0.50": {
+          "joint_power": 0.9998,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 0.9998,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        },
+        "0.75": {
+          "joint_power": 1.0,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 1.0,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 1.0,
+          "marginal_power": {
+            "i_aurc_regret": 1.0,
+            "i_regret80": 1.0,
+            "pr_auc_minus_prevalence": 1.0,
+            "seeds_both_directions_positive": 1.0
+          }
+        }
+      }
+    }
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "retention_factors": [
+    1.0,
+    0.75,
+    0.5,
+    0.25
+  ],
+  "screen_quantities_receipt_sha256": "6abc5b431e9c8cb40ca8f718770bf549de8e52a0a8e9e61bfbbda2e628ce399c",
+  "screen_quantities_sha256": "d68a2c89d6e6827bd366ade73a37ed7e9050fcc06a444e3d533e66ba6c7ed20b",
+  "se_reference": {
+    "i_aurc_regret": 0.024092386886655624,
+    "i_regret80": 0.018553404939463846,
+    "pr_auc_minus_prevalence": 0.010144556964835445,
+    "seed8101_i_aurc": 0.025440084504604984,
+    "seed8101_i_regret80": 0.01861127854521848,
+    "seed8202_i_aurc": 0.026067522238661434,
+    "seed8202_i_regret80": 0.018583417455071465,
+    "seed8303_i_aurc": 0.023781604174121944,
+    "seed8303_i_regret80": 0.018524165088890265,
+    "seed8404_i_aurc": 0.024922956641638717,
+    "seed8404_i_regret80": 0.01823702951033907,
+    "seed8505_i_aurc": 0.025529043675878174,
+    "seed8505_i_regret80": 0.018639914456910302
+  },
+  "selected_n": 2000,
+  "selection_retention": 0.5,
+  "sensitivity_at_max_n": {
+    "0.25": 0.7407,
+    "0.50": 0.9998,
+    "0.75": 1.0,
+    "1.00": 1.0
+  },
+  "status": "D1_POWER_FROZEN",
+  "target": 0.8,
+  "theta_hat": {
+    "i_aurc_regret": 0.432451720041522,
+    "i_regret80": 0.2910281204735409,
+    "pr_auc_minus_prevalence": 0.3326579220230341,
+    "seed8101_i_aurc": 0.3861419960426848,
+    "seed8101_i_regret80": 0.26765134513348715,
+    "seed8202_i_aurc": 0.4004672858098758,
+    "seed8202_i_regret80": 0.27113741384561735,
+    "seed8303_i_aurc": 0.4491028851679072,
+    "seed8303_i_regret80": 0.2999931341764434,
+    "seed8404_i_aurc": 0.40820872590865576,
+    "seed8404_i_regret80": 0.2773317462831106,
+    "seed8505_i_aurc": 0.4149344161632259,
+    "seed8505_i_regret80": 0.2791950726598837
+  },
+  "underpowered": false,
+  "written_at": "2026-09-20T15:42:27"
+}

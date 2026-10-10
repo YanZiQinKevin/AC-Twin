@@ -1,0 +1,93 @@
+{
+  "code": [
+    {
+      "path": "code/collect_stage4d_external.py",
+      "sha256": "2f3d8c8212a7d6cecf2c9a1fc5d93b241968f437e62161c379325f13bce2a703"
+    },
+    {
+      "path": "code/collect_stage4d_d2f.py",
+      "sha256": "32ca75ba7a8414148485eb8ce6cddf9bce15351b9a5fb8dc5c7c97c8c7e09ce2"
+    },
+    {
+      "path": "code/stage4d_metadrive_adapter.py",
+      "sha256": "72171147a823b513dc1f3ba265dfef0c23e1e5c9330be454055128684b3035a0"
+    },
+    {
+      "path": "code/stage4d_sim_entry.py",
+      "sha256": "e498c12b370313c506764a76dd235d23ab2eb057bdc5f25ac187808d249b872d"
+    },
+    {
+      "path": "code/stage4d_split_screen_truth.py",
+      "sha256": "490cf295b362c9eaaaeda44a6c321ff26ac66a124fb08bc190bb84cfd37030b0"
+    },
+    {
+      "path": "code/drive_stage4d_external_screen.py",
+      "sha256": "a0982b2076cee754890dd40abf5995e02be0ccc14f1106fc71a214bfab7c5a45"
+    },
+    {
+      "path": "code/drive_stage4d_d2f.py",
+      "sha256": "a45ba3d98d89931f32942310b0f69a4338aa897d7a04c59459c77bc1a5a6c667"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_features.py",
+      "sha256": "90e91accde21b1736650fb6fcceb7835f176bca670b85e84a867a71116e17489"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_split.py",
+      "sha256": "b71647b751c0fb97fdb727174170bb97ab0d4091d690dceab1cc106f0eb498b8"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_training.py",
+      "sha256": "8c8c06ab4bc3d935e8b695c6ce939333b82c34010170786275ad03e1cef48c7a"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_inference.py",
+      "sha256": "5dd458b8dae0e6ce123d4acc1557219da52f16f15095724cdc8390448ee5b385"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_statistics.py",
+      "sha256": "58374e081914a6d3b41833b54793f89d3be5f35e9c0d7239ea951a4104b53b84"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2e_ego.py",
+      "sha256": "5d5209a659bb871db24fa5ff875e61c517560ab59dd812876659a1395f3f7f25"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2e_pipeline.py",
+      "sha256": "d7c21cd126a4ef5a9cb17fcaefaf433d18aa70dcc6701bf0aa364f84296aa400"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2f_protocol.py",
+      "sha256": "76234d28b860b7bf2a23c31848a983c8eca2a0227a0269fe2338fb0925d0afb2"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2f_power.py",
+      "sha256": "61bf8276f0ee5695f84a00682075888116d13e31a71c046e0b8599bfe09b90ec"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2f_inference.py",
+      "sha256": "a12c8f96973d57e07a29d69429616854483bcd6d93b84ebd3784f7b5ad93d16e"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2f_statistics.py",
+      "sha256": "c726f03aee011beb9d23db407191ad1ce58d06c58256164b9265cc355fc34b51"
+    },
+    {
+      "path": "code/ac_twin/stage4c_objective.py",
+      "sha256": "a20da1805c14b57bc2ad02f363133b7c53c480909190f52fa5a1cc09964ac44e"
+    },
+    {
+      "path": "code/ac_twin/stage4cp_features.py",
+      "sha256": "101c389380dc85974acc43a34d32caf7eeb81599dca4f2b0e2db5cd8bd89ccf0"
+    },
+    {
+      "path": "code/ac_twin/stage4cp_statistics.py",
+      "sha256": "64dfe315080ee889bf1f6912426dd0be405e3dc9e5cf59983a4385fc637241bf"
+    }
+  ],
+  "create_once": true,
+  "note": "independent confirm-phase inventory: the confirm subcommands extend the same registered modules after the screen adjudication completed; the screen-phase code_inventory.json is frozen and never rewritten",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "role": "confirm",
+  "written_at": "2026-09-25T04:57:47"
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "verify",
+  "development_lock": "verified",
+  "final_selection": "VALIDATION_QUALIFIED",
+  "screen_report": "STAGE4CR2_DEV_READY_FOR_CONFIRMATION",
+  "power_diagnostic": {
+    "status": "STAGE4CR2_DEV_READY_FOR_CONFIRMATION",
+    "selected_n": 2000,
+    "underpowered": false
+  },
+  "all_verified": true
+}

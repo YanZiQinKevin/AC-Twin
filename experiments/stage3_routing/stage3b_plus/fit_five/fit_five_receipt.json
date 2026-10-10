@@ -1,0 +1,437 @@
+{
+  "architecture": "state_full",
+  "runs": {
+    "learned_router": {
+      "0": {
+        "architecture": "state_full",
+        "best_val_loss": 0.2997823177862451,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_learned_router_r1101_ls0p05.pt",
+        "condition": "learned_router",
+        "config": {
+          "architecture": "state_full",
+          "condition": "learned_router",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 19,
+        "name": "state_full_learned_router_r1101_ls0p05",
+        "router_seed": 1101,
+        "signature": "60cc907044eeeb29750f0773ff5160794b58dc5f48a8f9b18504c95f41f2a95b",
+        "state": "COMPLETE"
+      },
+      "1": {
+        "architecture": "state_full",
+        "best_val_loss": 0.3296164225006127,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_learned_router_r1202_ls0p05.pt",
+        "condition": "learned_router",
+        "config": {
+          "architecture": "state_full",
+          "condition": "learned_router",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 14,
+        "name": "state_full_learned_router_r1202_ls0p05",
+        "router_seed": 1202,
+        "signature": "a85608de0196f1d25db5a9f2789a6c078db8c4f4b70e39b8d20029a8e85248c4",
+        "state": "COMPLETE"
+      },
+      "2": {
+        "architecture": "state_full",
+        "best_val_loss": 0.31742127138001924,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_learned_router_r1303_ls0p05.pt",
+        "condition": "learned_router",
+        "config": {
+          "architecture": "state_full",
+          "condition": "learned_router",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 13,
+        "name": "state_full_learned_router_r1303_ls0p05",
+        "router_seed": 1303,
+        "signature": "fa3c0416a24c99cd4872ab60cf6d4438e0463149e8dc70a3c5ea0d5daf652d75",
+        "state": "COMPLETE"
+      },
+      "3": {
+        "architecture": "state_full",
+        "best_val_loss": 0.30858812206592345,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_learned_router_r1404_ls0p05.pt",
+        "condition": "learned_router",
+        "config": {
+          "architecture": "state_full",
+          "condition": "learned_router",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 17,
+        "name": "state_full_learned_router_r1404_ls0p05",
+        "router_seed": 1404,
+        "signature": "a98221e541af83919e8a0c0b012784b6991c5804d67eb44b7f08e575448695a5",
+        "state": "COMPLETE"
+      },
+      "4": {
+        "architecture": "state_full",
+        "best_val_loss": 0.2870281808194357,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_learned_router_r1505_ls0p05.pt",
+        "condition": "learned_router",
+        "config": {
+          "architecture": "state_full",
+          "condition": "learned_router",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 21,
+        "name": "state_full_learned_router_r1505_ls0p05",
+        "router_seed": 1505,
+        "signature": "24548aa252c2b1519122c8042bd3d164f8db9effaaa72093fc283e7650bcd80e",
+        "state": "COMPLETE"
+      }
+    },
+    "route_only_oracle": {
+      "0": {
+        "architecture": "state_full",
+        "best_val_loss": 0.16140047706693159,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_route_only_oracle_r1101.pt",
+        "condition": "route_only_oracle",
+        "config": {
+          "architecture": "state_full",
+          "condition": "route_only_oracle",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 40,
+        "name": "state_full_route_only_oracle_r1101",
+        "router_seed": 1101,
+        "signature": "c325fdfeb3a8921289e36c4618103862a6a40e8f6a6ba2bbdfeb1785ea678a7a",
+        "state": "COMPLETE"
+      },
+      "1": {
+        "architecture": "state_full",
+        "best_val_loss": 0.1655586589712664,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_route_only_oracle_r1202.pt",
+        "condition": "route_only_oracle",
+        "config": {
+          "architecture": "state_full",
+          "condition": "route_only_oracle",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 32,
+        "name": "state_full_route_only_oracle_r1202",
+        "router_seed": 1202,
+        "signature": "9c960d2ef4f4235c91564a87029e4693ff3dfa656f9cbf5fd1e33791c0c728f8",
+        "state": "COMPLETE"
+      },
+      "2": {
+        "architecture": "state_full",
+        "best_val_loss": 0.15559052254720807,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_route_only_oracle_r1303.pt",
+        "condition": "route_only_oracle",
+        "config": {
+          "architecture": "state_full",
+          "condition": "route_only_oracle",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 32,
+        "name": "state_full_route_only_oracle_r1303",
+        "router_seed": 1303,
+        "signature": "5d9a9954371888e961bb5232a43d33e890eb01122c30ffbd2bb81172901da711",
+        "state": "COMPLETE"
+      },
+      "3": {
+        "architecture": "state_full",
+        "best_val_loss": 0.1669608174080498,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_route_only_oracle_r1404.pt",
+        "condition": "route_only_oracle",
+        "config": {
+          "architecture": "state_full",
+          "condition": "route_only_oracle",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 27,
+        "name": "state_full_route_only_oracle_r1404",
+        "router_seed": 1404,
+        "signature": "3769c51fbef535d4a1c988c19a09b4bee52e2e826fa087bc0a1b0f850faa97ec",
+        "state": "COMPLETE"
+      },
+      "4": {
+        "architecture": "state_full",
+        "best_val_loss": 0.16449604059162462,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_route_only_oracle_r1505.pt",
+        "condition": "route_only_oracle",
+        "config": {
+          "architecture": "state_full",
+          "condition": "route_only_oracle",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 40,
+        "name": "state_full_route_only_oracle_r1505",
+        "router_seed": 1505,
+        "signature": "67e174a99c70207494bfbef790e9a05b4e7c2fae8eec10001f4c1e1fc1981f12",
+        "state": "COMPLETE"
+      }
+    },
+    "same_information_direct": {
+      "0": {
+        "architecture": "state_full",
+        "best_val_loss": 0.3123703036592447,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_same_information_direct_r1101_ls0p05.pt",
+        "condition": "same_information_direct",
+        "config": {
+          "architecture": "state_full",
+          "condition": "same_information_direct",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 20,
+        "name": "state_full_same_information_direct_r1101_ls0p05",
+        "router_seed": 1101,
+        "signature": "c4634e61be3a5ba754cdd1c56871bb22227fedc30e72d0432f928f2247029056",
+        "state": "COMPLETE"
+      },
+      "1": {
+        "architecture": "state_full",
+        "best_val_loss": 0.33745740492810633,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_same_information_direct_r1202_ls0p05.pt",
+        "condition": "same_information_direct",
+        "config": {
+          "architecture": "state_full",
+          "condition": "same_information_direct",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 17,
+        "name": "state_full_same_information_direct_r1202_ls0p05",
+        "router_seed": 1202,
+        "signature": "000bb72fc11e32bace258da1ffc0158b891edac5602fb8c6f26d157d8e2256a2",
+        "state": "COMPLETE"
+      },
+      "2": {
+        "architecture": "state_full",
+        "best_val_loss": 0.31544444374710634,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_same_information_direct_r1303_ls0p05.pt",
+        "condition": "same_information_direct",
+        "config": {
+          "architecture": "state_full",
+          "condition": "same_information_direct",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 12,
+        "name": "state_full_same_information_direct_r1303_ls0p05",
+        "router_seed": 1303,
+        "signature": "186bc0b1783a4930fc745b7a27189d845cc98c26587082d7494c802e41b5b126",
+        "state": "COMPLETE"
+      },
+      "3": {
+        "architecture": "state_full",
+        "best_val_loss": 0.30693859142252894,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_same_information_direct_r1404_ls0p05.pt",
+        "condition": "same_information_direct",
+        "config": {
+          "architecture": "state_full",
+          "condition": "same_information_direct",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 15,
+        "name": "state_full_same_information_direct_r1404_ls0p05",
+        "router_seed": 1404,
+        "signature": "198108d0257e63e2ad244718d76104f215608440cae1d42a60f285936a445296",
+        "state": "COMPLETE"
+      },
+      "4": {
+        "architecture": "state_full",
+        "best_val_loss": 0.3051811392901992,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_same_information_direct_r1505_ls0p05.pt",
+        "condition": "same_information_direct",
+        "config": {
+          "architecture": "state_full",
+          "condition": "same_information_direct",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 24,
+        "name": "state_full_same_information_direct_r1505_ls0p05",
+        "router_seed": 1505,
+        "signature": "a31e8cbb377675085aa27af8785a0c766cbb0942d59bcca2596a2fa76ec254bd",
+        "state": "COMPLETE"
+      }
+    },
+    "uniform_suffix": {
+      "0": {
+        "architecture": "state_full",
+        "best_val_loss": 0.29368778993979733,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_uniform_suffix_r1101.pt",
+        "condition": "uniform_suffix",
+        "config": {
+          "architecture": "state_full",
+          "condition": "uniform_suffix",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 27,
+        "name": "state_full_uniform_suffix_r1101",
+        "router_seed": 1101,
+        "signature": "64ece4e463f0a090e1fbee04cd534af8ae40e813f982d7f3299effb19abdb8ea",
+        "state": "COMPLETE"
+      },
+      "1": {
+        "architecture": "state_full",
+        "best_val_loss": 0.31354997594147965,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_uniform_suffix_r1202.pt",
+        "condition": "uniform_suffix",
+        "config": {
+          "architecture": "state_full",
+          "condition": "uniform_suffix",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 18,
+        "name": "state_full_uniform_suffix_r1202",
+        "router_seed": 1202,
+        "signature": "492d6c162de1bc4369d36a3704b53686436e216e9ef231bbd1054af18c7dbfec",
+        "state": "COMPLETE"
+      },
+      "2": {
+        "architecture": "state_full",
+        "best_val_loss": 0.27101270454063947,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_uniform_suffix_r1303.pt",
+        "condition": "uniform_suffix",
+        "config": {
+          "architecture": "state_full",
+          "condition": "uniform_suffix",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 33,
+        "name": "state_full_uniform_suffix_r1303",
+        "router_seed": 1303,
+        "signature": "4cddc730741c5c4832290155e974fb08b3a1a47e12a489f6b878ba50f069c096",
+        "state": "COMPLETE"
+      },
+      "3": {
+        "architecture": "state_full",
+        "best_val_loss": 0.27997485285228524,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_uniform_suffix_r1404.pt",
+        "condition": "uniform_suffix",
+        "config": {
+          "architecture": "state_full",
+          "condition": "uniform_suffix",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 24,
+        "name": "state_full_uniform_suffix_r1404",
+        "router_seed": 1404,
+        "signature": "56cea5c40e5b1d34b62cbc15f60c5436c5358b012a94d12a7fb6003ab63c50fa",
+        "state": "COMPLETE"
+      },
+      "4": {
+        "architecture": "state_full",
+        "best_val_loss": 0.2856378766274266,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_uniform_suffix_r1505.pt",
+        "condition": "uniform_suffix",
+        "config": {
+          "architecture": "state_full",
+          "condition": "uniform_suffix",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 30,
+        "name": "state_full_uniform_suffix_r1505",
+        "router_seed": 1505,
+        "signature": "c1e19497309930d2e9408ee27d4f861a8891a7ea85ce97f667e8d4e966e25c61",
+        "state": "COMPLETE"
+      }
+    }
+  },
+  "seed_pairs": [
+    [
+      101,
+      1101
+    ],
+    [
+      202,
+      1202
+    ],
+    [
+      303,
+      1303
+    ],
+    [
+      404,
+      1404
+    ],
+    [
+      505,
+      1505
+    ]
+  ],
+  "shape_lambda": 0.05,
+  "status": "FIT_FIVE_COMPLETE"
+}

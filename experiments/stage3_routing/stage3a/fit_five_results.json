@@ -1,0 +1,106 @@
+{
+  "finalists": [
+    {
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "per_seed": [
+        {
+          "seed": 101,
+          "signature": "6007e783dc57f9ba681df87c8d905ac86a5c4770e13655345bf8fd131a971023",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r32_l0.1_seed101.pt",
+          "best_val_loss": 0.10868094637989997
+        },
+        {
+          "seed": 202,
+          "signature": "bc502f5ec04209bdc756c6bfbe5dce3ce2d8ee0a9adf7b26980f2adc06400be4",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r32_l0.1_seed202.pt",
+          "best_val_loss": 0.10825173109769821
+        },
+        {
+          "seed": 303,
+          "signature": "62554b83cc8af8768fb5749f4c01226db3f4cc7560cd3f815d686b987a6955ff",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r32_l0.1_seed303.pt",
+          "best_val_loss": 0.09828624799847603
+        },
+        {
+          "seed": 404,
+          "signature": "b62ee3765719b0b8ace87b796f7cba511f5de70ca1b56d3bdd442fce745c9bcd",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r32_l0.1_seed404.pt",
+          "best_val_loss": 0.09646708369255066
+        },
+        {
+          "seed": 505,
+          "signature": "d251aaa3189b05531f30849524ed7c989c5d3d6618554327bb3d93da522b64d4",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r32_l0.1_seed505.pt",
+          "best_val_loss": 0.09680177494883538
+        }
+      ],
+      "five_checkpoint_signatures": {
+        "count": 5,
+        "signatures": [
+          "6007e783dc57f9ba681df87c8d905ac86a5c4770e13655345bf8fd131a971023",
+          "bc502f5ec04209bdc756c6bfbe5dce3ce2d8ee0a9adf7b26980f2adc06400be4",
+          "62554b83cc8af8768fb5749f4c01226db3f4cc7560cd3f815d686b987a6955ff",
+          "b62ee3765719b0b8ace87b796f7cba511f5de70ca1b56d3bdd442fce745c9bcd",
+          "d251aaa3189b05531f30849524ed7c989c5d3d6618554327bb3d93da522b64d4"
+        ],
+        "all_distinct": true
+      },
+      "all_distinct": true
+    },
+    {
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "per_seed": [
+        {
+          "seed": 101,
+          "signature": "602b0c544fa356058220d54994c9264c210e41d70e0e6070967ad33a99bd5778",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r32_l0.1_seed101.pt",
+          "best_val_loss": 0.09735450074076653
+        },
+        {
+          "seed": 202,
+          "signature": "5038add9fc956ed55844c09b258c41b57ac541f7f1534f76cd4db878954e1f4e",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r32_l0.1_seed202.pt",
+          "best_val_loss": 0.10163354501128197
+        },
+        {
+          "seed": 303,
+          "signature": "6238bb89070023aecc5cfe761930d3b4cd35aee3d17c11d40618dbac18365ccd",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r32_l0.1_seed303.pt",
+          "best_val_loss": 0.09841631203889847
+        },
+        {
+          "seed": 404,
+          "signature": "f10791b089a3517812663fad32cd87a8068fca8ca2dd8b9ed76447e70fddd064",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r32_l0.1_seed404.pt",
+          "best_val_loss": 0.09506555944681168
+        },
+        {
+          "seed": 505,
+          "signature": "6b7446e00249481c5b34b62ae50861762f3e592dcbd6d237ec11a2580c545270",
+          "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r32_l0.1_seed505.pt",
+          "best_val_loss": 0.0965457797050476
+        }
+      ],
+      "five_checkpoint_signatures": {
+        "count": 5,
+        "signatures": [
+          "602b0c544fa356058220d54994c9264c210e41d70e0e6070967ad33a99bd5778",
+          "5038add9fc956ed55844c09b258c41b57ac541f7f1534f76cd4db878954e1f4e",
+          "6238bb89070023aecc5cfe761930d3b4cd35aee3d17c11d40618dbac18365ccd",
+          "f10791b089a3517812663fad32cd87a8068fca8ca2dd8b9ed76447e70fddd064",
+          "6b7446e00249481c5b34b62ae50861762f3e592dcbd6d237ec11a2580c545270"
+        ],
+        "all_distinct": true
+      },
+      "all_distinct": true
+    }
+  ]
+}

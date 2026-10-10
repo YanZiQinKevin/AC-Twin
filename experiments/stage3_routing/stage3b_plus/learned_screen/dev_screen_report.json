@@ -1,0 +1,48 @@
+{
+  "bootstrap_seed": 20260910,
+  "checks": {
+    "a_direct": false,
+    "a_uniform": false,
+    "b_direct": false,
+    "b_uniform": false
+  },
+  "contrasts": {
+    "a_direct": {
+      "ci80_lower": -0.019064441559274312,
+      "ci80_upper": -0.008523455915732859,
+      "point": -0.013551379389900609
+    },
+    "a_uniform": {
+      "ci80_lower": -0.03811226146969889,
+      "ci80_upper": -0.0012547236549910951,
+      "point": -0.01983897348382508
+    },
+    "b_direct": {
+      "ci80_lower": -0.010763602728123533,
+      "ci80_upper": -0.0017034227860507126,
+      "point": -0.0061823766097919616
+    },
+    "b_uniform": {
+      "ci80_lower": -0.07240622717048292,
+      "ci80_upper": -0.03714546068288095,
+      "point": -0.055241382632663955
+    }
+  },
+  "effect_ade": {
+    "a": {
+      "learned_router": 0.2546930371453904,
+      "route_only_oracle": 0.14701589018795072,
+      "same_information_direct": 0.2512877416226308,
+      "uniform_suffix": 0.24973848202265225
+    },
+    "b": {
+      "learned_router": 0.2824162728812003,
+      "route_only_oracle": 0.16497436043895186,
+      "same_information_direct": 0.28068099724899503,
+      "uniform_suffix": 0.26763191581495355
+    }
+  },
+  "n_resamples": 2000,
+  "passed": false,
+  "status": "LEARNED_ROUTER_DEV_INSUFFICIENT"
+}

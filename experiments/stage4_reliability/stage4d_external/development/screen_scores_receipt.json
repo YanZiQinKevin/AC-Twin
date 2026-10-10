@@ -1,0 +1,23 @@
+{
+  "determinism_receipt_sha256": "15b044bb7ae4a5fb079cecab045dfc6e1f7c5be7bdd9d42255fc0b542dc7361c",
+  "direct_fit_receipt_sha256": "770dcb301ec1eedeffbac9f36c0d7a943905e93c844a9f5dbc85b70a1a735bce",
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "final_selection_sha256": "8327685d1bfd7123a21e3dc34280db49a56c3f862e9f752df5b98f11117ad39e",
+  "inference_inputs_sha256": "2051e470e66486346c2f50239f232c9a09936dce0fe7ce1bd3b4325840f51068",
+  "model_seeds": [
+    9101,
+    9202,
+    9303,
+    9404,
+    9505
+  ],
+  "n_groups": 4000,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "primary_score_definition": "risk_score = sigmoid(logit_high) * 0.01 * expm1(softplus(raw_mu)); ensemble = arithmetic mean of the five model seeds' risk_score",
+  "role": "development_screen",
+  "scores_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\development\\screen_scores.npz",
+  "scores_sha256": "da000b2ba5bac657ff84794849aeea85eaa1c0b5fa356194fb486df2430f3451",
+  "split_receipt_sha256": "ce99353ea0240e5cd98fa01287492e3c84d5ec0a4f9d671c299decb7665821fd",
+  "strongest_standard_baseline": "MARGIN_ONLY",
+  "written_at": "2026-09-24T08:03:51"
+}

@@ -1,0 +1,40 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "generated_at": "2026-09-22T05:44:08+0800",
+  "pilot_dir": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\roles\\pilot",
+  "replay_dir": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\roles\\pilot_replay",
+  "quota": 100,
+  "criteria": {
+    "1": {
+      "pass": true,
+      "detail": "groups=100/100, actions=10"
+    },
+    "2": {
+      "pass": true,
+      "detail": "unique_ids=100/100, finite=True"
+    },
+    "3": {
+      "pass": true,
+      "detail": "history/future/cf shapes + durations + t_star range"
+    },
+    "4": {
+      "pass": true,
+      "detail": "reactive_frac=0.290 >= 0.2"
+    },
+    "5": {
+      "pass": true,
+      "detail": "regret_frac=0.850>=0.15; oracle_plans>=5%=6>=3; oracle_dist={0: 11, 1: 22, 2: 6, 3: 3, 4: 10, 5: 16, 6: 4, 7: 26, 8: 1, 9: 1}"
+    },
+    "6": {
+      "pass": true,
+      "detail": "discrete_same=True, continuous_close=True"
+    },
+    "7": {
+      "pass": true,
+      "detail": "out_of_set_reasons=[]"
+    }
+  },
+  "failed_criteria": [],
+  "verdict": "ALL_PASS",
+  "terminal_status": "METADRIVE_PLATFORM_QUALIFIED"
+}

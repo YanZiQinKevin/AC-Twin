@@ -1,0 +1,29 @@
+{
+  "experiment": "stage1_plus_merge_shape_and_power",
+  "input_hashes": {
+    "source_data": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+    "stage1_config": "8cb71d294b77595ac2af001e80d5d46f2facabdbed52890944d02c93586cd762",
+    "response_bins": "8f6aeb078b12007b84da55d3c682cfce861f74a199640e2e1cad4bf45e5cc15f",
+    "test_manifest": "103395cb04ef20fe68b7e35e977d8a3b587f5768368f50a5bb84a8ca9bdb9236",
+    "no_suffix_seed11_test_prediction.npy": "cdc91efcd82cc04a73157845606aed74c77d43e067eab0018bf7745994b881d7",
+    "no_suffix_seed22_test_prediction.npy": "ba1ff0452e9316b39f40bb1f2af97b25008cf905b8d0b58d83985d89f606ae76",
+    "no_suffix_seed33_test_prediction.npy": "b6aceb2962b7f0c1cbdd98ac631f4d91b7631190add8197228f6cfe8ad3edc62",
+    "no_suffix_seed44_test_prediction.npy": "7402e63ef8039b968a7bb293b0a3767f6f2728312a2ad9c48befc36aa9b518ac",
+    "no_suffix_seed55_test_prediction.npy": "26beee4daeadabe4667f856c02e70b868ab74f1a304178e4c9698d3750cc0619",
+    "uniform_suffix_seed11_test_prediction.npy": "403733424784895a5f198c49d393209809c3d929ad246bc63baf07f99d10feb8",
+    "uniform_suffix_seed22_test_prediction.npy": "8a0e4b8e08f3e3adbf80db56c2a9c8223140b47825af1a7a9b1e438abbb9ae2f",
+    "uniform_suffix_seed33_test_prediction.npy": "5f55f0307d72d3070fac8a965cef6899edc78b37daaf52d52dbd5eb13f86ac68",
+    "uniform_suffix_seed44_test_prediction.npy": "eb89e2dc6fa5bea5664ebf0c6e8d0176270b29b4a907051b84a5c23a19510e4c",
+    "uniform_suffix_seed55_test_prediction.npy": "b5f23d0f5a16a3bdd3e17d57a782d3dd4fbd91a09e8a2b94b530af97ca393c54",
+    "shuffled_suffix_seed11_test_prediction.npy": "765e6e5aa5eb84b99f519999291c7bcc3d9b42e750cc21e7bb0ea27097f03dd6",
+    "shuffled_suffix_seed22_test_prediction.npy": "3b33c351b97a02987cef42c55a863e4c5b5c2bad7fda9801f12e85ac0c87a0db",
+    "shuffled_suffix_seed33_test_prediction.npy": "2d07e2bf6ed9918de9aaf9a1901bb78b4254b37162ff536fa389790beeacfc13",
+    "shuffled_suffix_seed44_test_prediction.npy": "c328a82f340cab1a9cb30a42d7e0eec5cc876794521356187afe1bcdd1c3381a",
+    "shuffled_suffix_seed55_test_prediction.npy": "1eb0968e394f9c65ba3d3e588a2440bb26ac4f883a4705f972392397b9dca34c"
+  },
+  "config_sha256": "988b9993cb0d4dfb89a3e0b417a04d2a4306d48b2849696b2b700bc4a1af1200",
+  "hash_conservation": {
+    "before_after_identical": true,
+    "n_files": 94
+  }
+}

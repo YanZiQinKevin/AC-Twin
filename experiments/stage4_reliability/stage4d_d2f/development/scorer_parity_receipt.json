@@ -1,0 +1,33 @@
+{
+  "batch_size": 4096,
+  "bindings": {
+    "d2e_power_validation_quantities_sha256": "023b83827cd278707e59dfcb8928917679e761a6993a9514378d66186985f21a",
+    "validation_groups_sha256": "7befe3dd5d74cacb7a960feedba9df056833209f27514d839e94cffdaf394995",
+    "validation_predictions_sha256": "451c71066617046c70bc519e06499605c771e917ef59c358c6485056dd6cdda4"
+  },
+  "device": "cuda",
+  "mode": "old_validation_scorer_parity",
+  "n_groups": 1500,
+  "passed": true,
+  "path_a_composition_parity": {
+    "J_hat_max_abs_diff": 0.0,
+    "argmin_identical": true,
+    "baseline_MARGIN_ONLY_max_abs_diff": 0.0,
+    "baseline_SEED_MARGIN_STD_max_abs_diff": 0.0,
+    "baseline_SEED_VOTE_ENTROPY_max_abs_diff": 0.0,
+    "ensemble_risk_max_abs_diff": 0.0,
+    "risk_by_seed_max_abs_diff": 0.0
+  },
+  "path_b_live_reinference_envelope": {
+    "max_abs_diff": {
+      "e2e": 0.024094581604003906,
+      "full": 0.024094581604003906,
+      "history": 0.005914926528930664
+    },
+    "note": "cross-process GPU float envelope on the frozen base stack; informational only \u2014 the formal screen scores each fresh group exactly once and gates >=32-group same-process determinism instead (plan 3.4)"
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "scope": "ENGINEERING_ACCEPTANCE_ONLY",
+  "tolerance": 1e-08,
+  "written_at": "2026-09-24T22:47:31"
+}

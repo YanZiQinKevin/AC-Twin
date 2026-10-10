@@ -1,0 +1,185 @@
+{
+  "audit_rule": {
+    "attempted_burned": "any scenario ID in ANY old role's append-only ledger (accepted or rejected) or accepted meta / checkpoint is permanently burned for every new role",
+    "one_scenario_one_role": "each scenario ID maps to exactly one context and one role; old train/validation/pilot/smoke/screen attempts are fully excluded",
+    "reserved_never_attempted": "pool IDs never attempted: the OLD CONFIRM pool is preserved for the D2F confirm ONLY (the screen never encroaches on it); every OTHER never-attempted scenario is the only legal D2F screen source (plan 2.2 classification + 3.1)"
+  },
+  "capacity": {
+    "confirm_admissible_ns": [
+      1000,
+      1500,
+      2000,
+      2500,
+      3000
+    ],
+    "confirm_below_3000_risk": false,
+    "confirm_candidates": [
+      1000,
+      1500,
+      2000,
+      2500,
+      3000
+    ],
+    "confirm_max_admissible": 3000,
+    "factor": 5,
+    "per_n_feasibility": {
+      "confirm": {
+        "1000": true,
+        "1500": true,
+        "2000": true,
+        "2500": true,
+        "3000": true
+      },
+      "screen": {
+        "1000": true,
+        "1500": true,
+        "2000": true,
+        "2500": true
+      }
+    },
+    "screen_admissible_ns": [
+      1000,
+      1500,
+      2000,
+      2500
+    ],
+    "screen_candidates": [
+      1000,
+      1500,
+      2000,
+      2500
+    ],
+    "smoke_candidate_budget": 160
+  },
+  "classification": {
+    "attempted_burned_unique": 41290,
+    "available_confirm": 15528,
+    "by_old_role": {
+      "confirm": {
+        "attempted_burned": 0,
+        "reserved_never_attempted": 15528
+      },
+      "development_screen": {
+        "attempted_burned": 15587,
+        "reserved_never_attempted": 5113
+      },
+      "pilot": {
+        "attempted_burned": 429,
+        "reserved_never_attempted": 88
+      },
+      "smoke": {
+        "attempted_burned": 57,
+        "reserved_never_attempted": 5
+      },
+      "train": {
+        "attempted_burned": 19365,
+        "reserved_never_attempted": 6510
+      },
+      "validation": {
+        "attempted_burned": 5852,
+        "reserved_never_attempted": 1910
+      }
+    },
+    "confirm_pool_attempted_overlap": 0,
+    "confirm_pool_total": 15528,
+    "prefilter_survivors": 70444,
+    "screen_available": 13626
+  },
+  "create_once": true,
+  "note": "the audit only excludes ex-ante impossible capacities; the post-screen confirm power may still be insufficient. If smoke consumes more than the 160-candidate budget, the collection halts and this read-only audit is redone before any lock (plan 2.2).",
+  "per_old_role": {
+    "confirm": {
+      "accepted_ids": 0,
+      "attempted_unique_ids": 0,
+      "burned_ids": 0,
+      "ledger_lines": 0
+    },
+    "development_screen": {
+      "accepted_ids": 4000,
+      "attempted_unique_ids": 15587,
+      "burned_ids": 15587,
+      "ledger_lines": 15587
+    },
+    "pilot": {
+      "accepted_ids": 100,
+      "attempted_unique_ids": 429,
+      "burned_ids": 429,
+      "ledger_lines": 429
+    },
+    "pilot_replay": {
+      "accepted_ids": 100,
+      "attempted_unique_ids": 429,
+      "burned_ids": 429,
+      "ledger_lines": 429
+    },
+    "smoke": {
+      "accepted_ids": 12,
+      "attempted_unique_ids": 57,
+      "burned_ids": 57,
+      "ledger_lines": 57
+    },
+    "stage4d_d2e": {
+      "attempted_unique_ids": 0,
+      "note": "plan reached a terminal state before any collection",
+      "roles_dir_present": false
+    },
+    "stage4d_d2r": {
+      "attempted_unique_ids": 0,
+      "note": "plan reached a terminal state before any collection",
+      "roles_dir_present": false
+    },
+    "train": {
+      "accepted_ids": 5000,
+      "attempted_unique_ids": 19365,
+      "burned_ids": 19365,
+      "ledger_lines": 19365
+    },
+    "validation": {
+      "accepted_ids": 1500,
+      "attempted_unique_ids": 5852,
+      "burned_ids": 5852,
+      "ledger_lines": 5852
+    }
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "raw_hashes": {
+    "ledgers": [
+      {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\roles\\smoke\\rejection_ledger.jsonl",
+        "role": "smoke",
+        "sha256": "779297d09089718c89f42e5ec8c5b57e42e1732eed6dbf8cbd3accf9439f1541"
+      },
+      {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\roles\\pilot\\rejection_ledger.jsonl",
+        "role": "pilot",
+        "sha256": "697bbb9f3051db82482d10feb41e2f7500dfb8dc9f58eca9e762a13bd9ecf3eb"
+      },
+      {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\roles\\pilot_replay\\rejection_ledger.jsonl",
+        "role": "pilot_replay",
+        "sha256": "697bbb9f3051db82482d10feb41e2f7500dfb8dc9f58eca9e762a13bd9ecf3eb"
+      },
+      {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\roles\\train\\rejection_ledger.jsonl",
+        "role": "train",
+        "sha256": "84899974c277fd99dd673f43e813cd83170ba85bc3f1d14b194976eee5cafc02"
+      },
+      {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\roles\\validation\\rejection_ledger.jsonl",
+        "role": "validation",
+        "sha256": "1f4d70b06b58b55dfdcb02db05814e78788ff1e3a8b46529df5761f2867d2c00"
+      },
+      {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\roles\\development_screen\\rejection_ledger.jsonl",
+        "role": "development_screen",
+        "sha256": "41deaa2e2671e6794efd81e771c0c694cfd44cc6240c20c05a6cd7a51f7db6a0"
+      }
+    ],
+    "scenario_split_manifest": "6c243960582a46b3b55ab20adda17e3532cf958d69d17c43b9505b7951c2c874",
+    "scenario_split_pools": "8b7aaac3f8a62f1e0b31af8f3a221318fc721f1ece64e38b111ce14be0372bf8"
+  },
+  "scope": "READ_ONLY_AUDIT",
+  "status": "D2F_POOL_AUDIT_PASS",
+  "terminal": false,
+  "written_at": "2026-09-24T21:48:42"
+}

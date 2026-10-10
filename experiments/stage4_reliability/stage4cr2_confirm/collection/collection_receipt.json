@@ -1,0 +1,74 @@
+{
+  "accepted_groups": 2000,
+  "action_stream_root": [
+    2026093012,
+    0
+  ],
+  "attempts": 4038,
+  "config_signature": "f5ed9e0a9ea4f6ce55acb47c8644d275708482d8293f7e36a36b6af97a7fb934",
+  "confirmation_truth": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_confirm\\confirmation_truth.npz",
+  "confirmation_truth_sha256": "35e71f4985ac2fe080876bd67a30290be1757161a85a46a334e49bddc3f0dd9e",
+  "counterfactual_branches": 20000,
+  "environment": {
+    "gymnasium_version": "1.3.0",
+    "highway_env_version": "1.10.2",
+    "numpy_version": "1.26.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.7",
+    "torch_version": "2.9.1+cu130"
+  },
+  "generated_at": "2026-09-20T06:11:56",
+  "group_order_binding": {
+    "confirmation_truth_group_seed_sha256": "154acd2478edba379456737a8d9b6ce525ee284ef409f8124ef8c7fd2515bfdb",
+    "inference_inputs_group_seed_sha256": "154acd2478edba379456737a8d9b6ce525ee284ef409f8124ef8c7fd2515bfdb",
+    "n_groups": 2000,
+    "order": "acceptance_order",
+    "same_order": true
+  },
+  "inference_inputs": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_confirm\\inference_inputs.npz",
+  "inference_inputs_sha256": "ba84748442c21e3dfb9fe9e0c58c24c3314d45af268dd99839dea3301ea254fc",
+  "legal_fields": [
+    "object_history",
+    "object_factual_future",
+    "factual_actions",
+    "cf_actions",
+    "cf_durations",
+    "t_star",
+    "group_seed",
+    "inference_mask"
+  ],
+  "partial": false,
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "prefix_max_abs_diff": 0.0,
+  "purpose": "stage4cr2_merge_multiaction_confirm",
+  "receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\collection\\collection_receipt.json",
+  "rejection_ledger": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_confirm\\rejection_ledger.jsonl",
+  "requested_groups": 2000,
+  "role": "confirm",
+  "seed_schedule_sha256": "4c0958fc5e801dfd62cbab0fbc7fe1d13a91704c649755a23fa7c6f23d5974c8",
+  "skip_counts": {
+    "counterfactual_future_short": 0,
+    "duplicate_seed": 0,
+    "eval_mask_mismatch": 0,
+    "factual_future_short": 0,
+    "initial_fingerprint_mismatch": 0,
+    "no_legal_agent_time": 0,
+    "non_finite": 0,
+    "object_prefix_mismatch": 0,
+    "observation_shape": 0,
+    "prefix_terminated": 2038,
+    "present_set_mismatch": 0,
+    "short_history": 0
+  },
+  "stage_namespace": "stage4cr2_confirm",
+  "status": "COLLECTED",
+  "truth_fields": [
+    "object_counterfactual_futures",
+    "cf_actions",
+    "cf_durations",
+    "factual_actions",
+    "t_star",
+    "group_seed",
+    "inference_mask"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "INVALID_ANALYSIS_EPISODE_ALIGNMENT_BUG",
+  "invalid_report": "gate_r_dev_report_h96_r32_l0.1.json",
+  "invalid_report_sha256": "3a91ad1e115b95f61b1fa72ad2a4d3e9ba594ba18bd589ccd8bc4ce001b45ecb",
+  "development_test_lock_sha256": "72df917a2c31e4190dbaf8020acf60dfbfaa276a4c289ae9107842243785e33d",
+  "pipeline_log_sha256": "748757515816df8c158a676c736c0b48bc19ecbb19e49b28479d1cd26a6dfcbd",
+  "root_cause": "prediction episode order was shuffled while labels and baselines remained in original order",
+  "scientific_use": "none; engineering failure evidence only",
+  "superseded_by": "stage3a_retrain_v1 replacement development test",
+  "recorded_at": "2026-09-09",
+  "repair_plan": "AC-TWIN-RFER-STAGE3A-REPAIR-2026-09-09-V0.1"
+}

@@ -1,0 +1,19 @@
+{
+  "run": "h64_r32_l0.1_seed303",
+  "state": "COMPLETE",
+  "seed": 303,
+  "config": {
+    "hidden_dim": 64,
+    "response_feature_dim": 32,
+    "lambda_cls": 0.1
+  },
+  "best_val_loss": 0.14022321375901145,
+  "train_lambda_cls": 0.1,
+  "selection_lambda_cls": 0.25,
+  "validation_reg_loss": 0.07870009014823821,
+  "validation_ce_loss": 0.24609249444309292,
+  "validation_selection_score": 0.14022321375901145,
+  "epochs_run": 25,
+  "signature": "ef7b98b983449b923554c7ed632905550f23904468f978ef838f4839440595f8",
+  "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h64_r32_l0.1_seed303.pt"
+}

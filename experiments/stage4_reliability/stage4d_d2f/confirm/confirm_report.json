@@ -1,0 +1,244 @@
+{
+  "baseline_curves": {
+    "curves": {
+      "MARGIN_ONLY": {
+        "aurc_regret": 0.06554078473011014,
+        "aurc_regret_ci95": [
+          0.05996678786416506,
+          0.0712626489680065
+        ],
+        "pr_auc_minus_prevalence": 0.008458171720329088,
+        "pr_auc_minus_prevalence_ci95": [
+          -0.01297612564873869,
+          0.032695212864449354
+        ],
+        "regret_at_80": 0.06267652514640434,
+        "regret_at_80_ci95": [
+          0.058605953254286226,
+          0.06693224728139421
+        ],
+        "role": "standard_baseline"
+      },
+      "SEED_MARGIN_STD": {
+        "aurc_regret": 0.037276263420257576,
+        "aurc_regret_ci95": [
+          0.03407768540989317,
+          0.04059209789140545
+        ],
+        "pr_auc_minus_prevalence": 0.0751115485648488,
+        "pr_auc_minus_prevalence_ci95": [
+          0.052537996685228745,
+          0.10135397370004764
+        ],
+        "regret_at_80": 0.05347019051902395,
+        "regret_at_80_ci95": [
+          0.04954582399006064,
+          0.05756678186715455
+        ],
+        "role": "strongest_standard_baseline"
+      },
+      "SEED_VOTE_ENTROPY": {
+        "aurc_regret": 0.03997300731717983,
+        "aurc_regret_ci95": [
+          0.037328566813762586,
+          0.04554195542175545
+        ],
+        "pr_auc_minus_prevalence": 0.12645004442859364,
+        "pr_auc_minus_prevalence_ci95": [
+          0.10391801611193419,
+          0.14960383512152978
+        ],
+        "regret_at_80": 0.05033658997321529,
+        "regret_at_80_ci95": [
+          0.046443964698834474,
+          0.05426645113946744
+        ],
+        "role": "standard_baseline"
+      }
+    },
+    "disclosure": {
+      "confirm_strongest_differs_from_frozen": false,
+      "confirm_strongest_standard_baseline": "SEED_MARGIN_STD",
+      "frozen_primary_baseline": "SEED_MARGIN_STD",
+      "model_beats_confirm_strongest_baseline": true,
+      "note": "only the validation-frozen baseline is adjudicated; 'better than the confirm-strongest standard baseline' may be written ONLY when the corresponding comparisons hold, otherwise the preregistered validation baseline phrasing is used (D2 10.4)"
+    }
+  },
+  "bootstrap": {
+    "confidence": 0.95,
+    "design": "whole-group paired bootstrap; every metric of a draw recomputed from the SAME resample index vector; two-sided 95% CI from the resample quantiles",
+    "n_resamples": 10000,
+    "seed": 2026122409
+  },
+  "gate_risk_x_dev": {
+    "baseline_denominators": {
+      "aurc_regret": 0.037276263420257576,
+      "regret_at_80": 0.05347019051902395
+    },
+    "baseline_valid": true,
+    "conditions": {
+      "r1_i_aurc_regret": true,
+      "r2_i_regret80": true,
+      "r3_pr_auc_minus_prevalence": true,
+      "r4_seed_consistency_both_positive": true,
+      "r5_baseline_denominators_valid": true,
+      "r6_no_leak_no_baseline_swap_no_model_swap": true
+    },
+    "min_positive_seeds": 4,
+    "passed": true,
+    "seeds_both_directions_positive": 5
+  },
+  "gate_task_x_dev": {
+    "baseline_valid": true,
+    "conditions": {
+      "c1_completeness_and_qa": true,
+      "c2_high_regret_frac_ge_15pct": true,
+      "c3_at_least_3_oracle_actions_ge_5pct": true,
+      "c4_branch_spearman_ci_lower_positive": true,
+      "c5_base_beats_random_and_not_worse_than_idle": true,
+      "c6_reactive_response_ge_20pct": true,
+      "c7_strata_each_ge_10pct": true,
+      "c8_denominators_projection_mask_valid": true
+    },
+    "eval_mask_nondegenerate": true,
+    "high_regret_frac": 0.489,
+    "oracle_action_shares": [
+      0.1225,
+      0.155,
+      0.0315,
+      0.0735,
+      0.099,
+      0.1185,
+      0.097,
+      0.2855,
+      0.0115,
+      0.006
+    ],
+    "oracle_actions_covered_ge_5pct": 7,
+    "passed": true,
+    "projection_nondegenerate": true,
+    "reactive_frac": 0.263,
+    "stratum_counts": {
+      "interaction_high": 980,
+      "interaction_low": 1020,
+      "tstar_high": 993,
+      "tstar_low": 1007
+    },
+    "stratum_fracs": {
+      "interaction_high": 0.49,
+      "interaction_low": 0.51,
+      "tstar_high": 0.4965,
+      "tstar_low": 0.5035
+    }
+  },
+  "metrics": {
+    "ci_lower": {
+      "aurc_baseline": 0.03407768540989317,
+      "aurc_model": 0.026986694514989418,
+      "base_mean_regret": 0.05584928221077096,
+      "base_vs_random_improvement": 0.455818021140482,
+      "high_regret_frac": 0.4679875000000001,
+      "i_aurc_regret": 0.12812313709313516,
+      "i_regret80": 0.10704276271293678,
+      "idle_mean_regret": 0.10466778723545998,
+      "margin_only_aurc": 0.05996678786416506,
+      "margin_only_pr": -0.01297612564873869,
+      "margin_only_regret80": 0.058605953254286226,
+      "pr_auc_minus_prevalence": 0.18582619825036473,
+      "random_mean_regret": 0.11313612786426824,
+      "regret80_baseline": 0.04954582399006064,
+      "regret80_model": 0.04159102541907571,
+      "seed9101_i_aurc": 0.09788473964177938,
+      "seed9101_i_regret80": 0.09808306056037834,
+      "seed9202_i_aurc": 0.1359983900817628,
+      "seed9202_i_regret80": 0.09619313894134111,
+      "seed9303_i_aurc": 0.10452769013779244,
+      "seed9303_i_regret80": 0.09031405322319605,
+      "seed9404_i_aurc": 0.11521676285226162,
+      "seed9404_i_regret80": 0.108134500571511,
+      "seed9505_i_aurc": 0.13049993730019846,
+      "seed9505_i_regret80": 0.10289442850926862,
+      "seed_margin_std_aurc": 0.03407768540989317,
+      "seed_margin_std_pr": 0.052537996685228745,
+      "seed_margin_std_regret80": 0.04954582399006064,
+      "seed_vote_entropy_aurc": 0.037328566813762586,
+      "seed_vote_entropy_pr": 0.10391801611193419,
+      "seed_vote_entropy_regret80": 0.046443964698834474,
+      "spearman_branch": 0.7095491227807468
+    },
+    "ci_upper": {
+      "aurc_baseline": 0.04059209789140545,
+      "aurc_model": 0.03312680773122401,
+      "base_mean_regret": 0.06307085620677408,
+      "base_vs_random_improvement": 0.5161449991376691,
+      "high_regret_frac": 0.511,
+      "i_aurc_regret": 0.25747934468610706,
+      "i_regret80": 0.19747480295502082,
+      "idle_mean_regret": 0.11282807290175365,
+      "margin_only_aurc": 0.0712626489680065,
+      "margin_only_pr": 0.032695212864449354,
+      "margin_only_regret80": 0.06693224728139421,
+      "pr_auc_minus_prevalence": 0.2383011291595328,
+      "random_mean_regret": 0.11813774103930474,
+      "regret80_baseline": 0.05756678186715455,
+      "regret80_model": 0.049170412211018956,
+      "seed9101_i_aurc": 0.2359435344271481,
+      "seed9101_i_regret80": 0.19068012859251424,
+      "seed9202_i_aurc": 0.2604086338674515,
+      "seed9202_i_regret80": 0.18949377848932533,
+      "seed9303_i_aurc": 0.24122044316986085,
+      "seed9303_i_regret80": 0.18328124799494122,
+      "seed9404_i_aurc": 0.2509471865509004,
+      "seed9404_i_regret80": 0.19837016143185354,
+      "seed9505_i_aurc": 0.25375832776285495,
+      "seed9505_i_regret80": 0.19303914697939967,
+      "seed_margin_std_aurc": 0.04059209789140545,
+      "seed_margin_std_pr": 0.10135397370004764,
+      "seed_margin_std_regret80": 0.05756678186715455,
+      "seed_vote_entropy_aurc": 0.04554195542175545,
+      "seed_vote_entropy_pr": 0.14960383512152978,
+      "seed_vote_entropy_regret80": 0.05426645113946744,
+      "spearman_branch": 0.7407317833779399
+    },
+    "point": {
+      "aurc_baseline": 0.037276263420257576,
+      "aurc_model": 0.030011091110063285,
+      "base_mean_regret": 0.05939932000333163,
+      "base_vs_random_improvement": 0.48628713546518276,
+      "high_regret_frac": 0.489,
+      "i_aurc_regret": 0.19490076642837742,
+      "i_regret80": 0.15324321216639517,
+      "idle_mean_regret": 0.10873387011181081,
+      "margin_only_aurc": 0.06554078473011014,
+      "margin_only_pr": 0.008458171720329088,
+      "margin_only_regret80": 0.06267652514640434,
+      "pr_auc_minus_prevalence": 0.2117170347053442,
+      "random_mean_regret": 0.11562747227893454,
+      "regret80_baseline": 0.05347019051902395,
+      "regret80_model": 0.04527624676873959,
+      "seed9101_i_aurc": 0.1690721808695859,
+      "seed9101_i_regret80": 0.14622003825497107,
+      "seed9202_i_aurc": 0.20078766548869026,
+      "seed9202_i_regret80": 0.1411383140684129,
+      "seed9303_i_aurc": 0.1750055961330192,
+      "seed9303_i_regret80": 0.13571475208879014,
+      "seed9404_i_aurc": 0.18620928473461132,
+      "seed9404_i_regret80": 0.15357826865122248,
+      "seed9505_i_aurc": 0.194669725884792,
+      "seed9505_i_regret80": 0.143428097358029,
+      "seed_margin_std_aurc": 0.037276263420257576,
+      "seed_margin_std_pr": 0.0751115485648488,
+      "seed_margin_std_regret80": 0.05347019051902395,
+      "seed_vote_entropy_aurc": 0.03997300731717983,
+      "seed_vote_entropy_pr": 0.12645004442859364,
+      "seed_vote_entropy_regret80": 0.05033658997321529,
+      "spearman_branch": 0.7259421898765034
+    }
+  },
+  "n_groups": 2000,
+  "passed": true,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "quantities_receipt_sha256": "59b0c225f50597e424622d18c3835a710c4a8386b347518ca997469fc8de5677",
+  "status": "D2F_META_DRIVE_EXTERNAL_CONFIRMED",
+  "written_at": "2026-09-25T15:59:26"
+}

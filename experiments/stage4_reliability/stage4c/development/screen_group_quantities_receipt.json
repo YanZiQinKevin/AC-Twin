@@ -1,0 +1,14 @@
+{
+  "groups": 300,
+  "plan_id": "AC-TWIN-RFER-STAGE4C-MULTIACTION-REGRET-2026-09-15-V0.1",
+  "quantities_sha256": "81a6980c217d3ade61f13535a707e434e1b985e247704aed37b379fca66ddece",
+  "role": "development_screen",
+  "task_point": {
+    "base_mean_regret": 0.02335342819190029,
+    "distinct_oracle_count": 7,
+    "idle_mean_regret": 0.08475658797371577,
+    "nonzero_regret_frac": 0.2,
+    "random_mean_regret": 0.08439715569523101
+  },
+  "written_at": "2026-09-16T01:17:32"
+}

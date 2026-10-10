@@ -1,0 +1,439 @@
+{
+  "bindings": {
+    "final_method_selection_sha256": "f35848463b3365762ca459f7894cda9fcdca5dfc32bba041a7fbc2177dd78b78",
+    "stage5_power_code_sha256": "40ed722b875e56060059bca657ff65a7e217a35995df13bdf3ec542106dc1a24",
+    "validation_comparison_report_sha256": "3bb836a2789916690e4587b4c26f9cebef4a3922dfcca2684b03ec07a9016dc8",
+    "validation_risks_sha256": "4052775ed8b9e1ffc093424165daeff88ff39d983342ddf0f29188834bf3d560"
+  },
+  "candidate_ns": [
+    2000,
+    3000,
+    4000,
+    6000
+  ],
+  "ci_z": 1.959963984540054,
+  "materiality": {
+    "i_aurc_min": 0.05,
+    "i_regret80_min": 0.03,
+    "material": true,
+    "shrink": 0.75,
+    "shrunk_i_aurc": 0.10530017083955462,
+    "shrunk_i_regret80": 0.13336407004389406
+  },
+  "n_reference": 1500,
+  "n_resamples": 10000,
+  "per_n": {
+    "2000": {
+      "binding_condition": "r1_i_aurc",
+      "binding_power": 0.4,
+      "joint_power_at_selection": 0.3778,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.1571,
+          "marginal_power": {
+            "r1_i_aurc": 0.1985,
+            "r2_i_regret80": 0.5918,
+            "r3_seed_consistency": 0.8661,
+            "r4_strata_protection": 0.8246,
+            "r5_task_contract": 1.0
+          }
+        },
+        "0.75": {
+          "joint_power": 0.3778,
+          "marginal_power": {
+            "r1_i_aurc": 0.4,
+            "r2_i_regret80": 0.875,
+            "r3_seed_consistency": 0.9646,
+            "r4_strata_protection": 0.8661,
+            "r5_task_contract": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 0.6111,
+          "marginal_power": {
+            "r1_i_aurc": 0.6256,
+            "r2_i_regret80": 0.9791,
+            "r3_seed_consistency": 0.9925,
+            "r4_strata_protection": 0.8958,
+            "r5_task_contract": 1.0
+          }
+        }
+      },
+      "standard_errors": {
+        "aurc_sota": 0.0010613445117011705,
+        "base_mean_regret": 0.0012735004905784551,
+        "base_vs_random": 0.016125644171244853,
+        "high_regret_frac": 0.009564501236650595,
+        "i_aurc": 0.06160383915535276,
+        "i_regret80": 0.044764257453375256,
+        "idle_mean_regret": 0.001759041244351056,
+        "interaction_high_i_aurc": 0.07502204140081842,
+        "interaction_high_share": 0.011192340722077792,
+        "interaction_low_i_aurc": 0.09690739385878877,
+        "interaction_low_share": 0.011192340722077901,
+        "oracle_share_0": 0.007093858653304229,
+        "oracle_share_1": 0.005921179256396325,
+        "oracle_share_2": 0.005698990121840851,
+        "oracle_share_3": 0.004901025705431035,
+        "oracle_share_4": 0.0045533873688885515,
+        "oracle_share_5": 0.004393548295417136,
+        "oracle_share_6": 0.009210309461551179,
+        "oracle_share_7": 0.010400051410783288,
+        "oracle_share_8": 0.005337174357327296,
+        "oracle_share_9": 0.002409786992108417,
+        "random_mean_regret": 0.0011841834716015479,
+        "regret80_sota": 0.0013821446042988393,
+        "seed0_i_aurc": 0.0691267931667152,
+        "seed0_i_regret80": 0.044080071830932384,
+        "seed1_i_aurc": 0.060842147220528976,
+        "seed1_i_regret80": 0.043079210561276504,
+        "seed2_i_aurc": 0.06283221452498226,
+        "seed2_i_regret80": 0.04472548405055522,
+        "seed3_i_aurc": 0.070594896226209,
+        "seed3_i_regret80": 0.038740892283224006,
+        "seed4_i_aurc": 0.06206681728979324,
+        "seed4_i_regret80": 0.04277982454261039,
+        "tstar_high_i_aurc": 0.07860718230937058,
+        "tstar_high_share": 0.011146521402277875,
+        "tstar_low_i_aurc": 0.09869549013006469,
+        "tstar_low_share": 0.01114652140227789
+      },
+      "structural_identities_verified": true
+    },
+    "3000": {
+      "binding_condition": "r1_i_aurc",
+      "binding_power": 0.5605,
+      "joint_power_at_selection": 0.5472,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.2486,
+          "marginal_power": {
+            "r1_i_aurc": 0.2848,
+            "r2_i_regret80": 0.7234,
+            "r3_seed_consistency": 0.9306,
+            "r4_strata_protection": 0.8968,
+            "r5_task_contract": 1.0
+          }
+        },
+        "0.75": {
+          "joint_power": 0.5472,
+          "marginal_power": {
+            "r1_i_aurc": 0.5605,
+            "r2_i_regret80": 0.9592,
+            "r3_seed_consistency": 0.9886,
+            "r4_strata_protection": 0.9261,
+            "r5_task_contract": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 0.7889,
+          "marginal_power": {
+            "r1_i_aurc": 0.7982,
+            "r2_i_regret80": 0.998,
+            "r3_seed_consistency": 0.9993,
+            "r4_strata_protection": 0.9486,
+            "r5_task_contract": 1.0
+          }
+        }
+      },
+      "standard_errors": {
+        "aurc_sota": 0.0008496449986987949,
+        "base_mean_regret": 0.0010269502264900242,
+        "base_vs_random": 0.012923233589864594,
+        "high_regret_frac": 0.007689297352340566,
+        "i_aurc": 0.049954479522351596,
+        "i_regret80": 0.037688639765736894,
+        "idle_mean_regret": 0.0014005284361530961,
+        "interaction_high_i_aurc": 0.06048144334819262,
+        "interaction_high_share": 0.009223593822154003,
+        "interaction_low_i_aurc": 0.07904433780806415,
+        "interaction_low_share": 0.009223593822154003,
+        "oracle_share_0": 0.005780959371478113,
+        "oracle_share_1": 0.004829864387226643,
+        "oracle_share_2": 0.004651799583857989,
+        "oracle_share_3": 0.003976595031727508,
+        "oracle_share_4": 0.0037422510373442967,
+        "oracle_share_5": 0.003594452924571449,
+        "oracle_share_6": 0.007458122744702151,
+        "oracle_share_7": 0.0084972885366859,
+        "oracle_share_8": 0.004344003777007889,
+        "oracle_share_9": 0.0020056725167500494,
+        "random_mean_regret": 0.0009381256851041093,
+        "regret80_sota": 0.00113656635158705,
+        "seed0_i_aurc": 0.05659339271280923,
+        "seed0_i_regret80": 0.03637980578336493,
+        "seed1_i_aurc": 0.04945482473948817,
+        "seed1_i_regret80": 0.03478248115614296,
+        "seed2_i_aurc": 0.050640156394384725,
+        "seed2_i_regret80": 0.03659255399750366,
+        "seed3_i_aurc": 0.057272384289212316,
+        "seed3_i_regret80": 0.03227739793838695,
+        "seed4_i_aurc": 0.05040879253550626,
+        "seed4_i_regret80": 0.03447159071921293,
+        "tstar_high_i_aurc": 0.06356383216082777,
+        "tstar_high_share": 0.009115607512577908,
+        "tstar_low_i_aurc": 0.08117500310980108,
+        "tstar_low_share": 0.00911560751257797
+      },
+      "structural_identities_verified": true
+    },
+    "4000": {
+      "binding_condition": "r1_i_aurc",
+      "binding_power": 0.693,
+      "joint_power_at_selection": 0.6872,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.3473,
+          "marginal_power": {
+            "r1_i_aurc": 0.3752,
+            "r2_i_regret80": 0.8289,
+            "r3_seed_consistency": 0.9591,
+            "r4_strata_protection": 0.9393,
+            "r5_task_contract": 1.0
+          }
+        },
+        "0.75": {
+          "joint_power": 0.6872,
+          "marginal_power": {
+            "r1_i_aurc": 0.693,
+            "r2_i_regret80": 0.9904,
+            "r3_seed_consistency": 0.9962,
+            "r4_strata_protection": 0.9606,
+            "r5_task_contract": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 0.8937,
+          "marginal_power": {
+            "r1_i_aurc": 0.9011,
+            "r2_i_regret80": 0.9997,
+            "r3_seed_consistency": 0.9998,
+            "r4_strata_protection": 0.9732,
+            "r5_task_contract": 1.0
+          }
+        }
+      },
+      "standard_errors": {
+        "aurc_sota": 0.0007374459470230732,
+        "base_mean_regret": 0.0008846340459380996,
+        "base_vs_random": 0.011190883587581957,
+        "high_regret_frac": 0.006574723881562408,
+        "i_aurc": 0.0427940507893473,
+        "i_regret80": 0.03307721902992839,
+        "idle_mean_regret": 0.0012206583940703177,
+        "interaction_high_i_aurc": 0.0519782609834304,
+        "interaction_high_share": 0.007965094380033955,
+        "interaction_low_i_aurc": 0.06858425275070126,
+        "interaction_low_share": 0.00796509438003395,
+        "oracle_share_0": 0.005030522907817117,
+        "oracle_share_1": 0.004230999400847081,
+        "oracle_share_2": 0.003978811982093856,
+        "oracle_share_3": 0.0034559365604348853,
+        "oracle_share_4": 0.003203744997374352,
+        "oracle_share_5": 0.0030948186457763435,
+        "oracle_share_6": 0.006538576801465192,
+        "oracle_share_7": 0.007249523573084304,
+        "oracle_share_8": 0.0037439621004485752,
+        "oracle_share_9": 0.0017278951520682212,
+        "random_mean_regret": 0.0008111492698583965,
+        "regret80_sota": 0.0009983692525676734,
+        "seed0_i_aurc": 0.048564573106626006,
+        "seed0_i_regret80": 0.03135898896415137,
+        "seed1_i_aurc": 0.04260784081225879,
+        "seed1_i_regret80": 0.029967666454036545,
+        "seed2_i_aurc": 0.04417080816775106,
+        "seed2_i_regret80": 0.03188350657449861,
+        "seed3_i_aurc": 0.04971063880785298,
+        "seed3_i_regret80": 0.027501484581629158,
+        "seed4_i_aurc": 0.043345689569634936,
+        "seed4_i_regret80": 0.029987255926707028,
+        "tstar_high_i_aurc": 0.055474277161484474,
+        "tstar_high_share": 0.007924311667838456,
+        "tstar_low_i_aurc": 0.06792724248138643,
+        "tstar_low_share": 0.007924311667838467
+      },
+      "structural_identities_verified": true
+    },
+    "6000": {
+      "binding_condition": "r1_i_aurc",
+      "binding_power": 0.8371,
+      "joint_power_at_selection": 0.8354,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.489,
+          "marginal_power": {
+            "r1_i_aurc": 0.5049,
+            "r2_i_regret80": 0.9248,
+            "r3_seed_consistency": 0.9833,
+            "r4_strata_protection": 0.976,
+            "r5_task_contract": 1.0
+          }
+        },
+        "0.75": {
+          "joint_power": 0.8354,
+          "marginal_power": {
+            "r1_i_aurc": 0.8371,
+            "r2_i_regret80": 0.9992,
+            "r3_seed_consistency": 0.9994,
+            "r4_strata_protection": 0.9865,
+            "r5_task_contract": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9696,
+          "marginal_power": {
+            "r1_i_aurc": 0.9728,
+            "r2_i_regret80": 1.0,
+            "r3_seed_consistency": 1.0,
+            "r4_strata_protection": 0.9921,
+            "r5_task_contract": 1.0
+          }
+        }
+      },
+      "standard_errors": {
+        "aurc_sota": 0.0006080414161562363,
+        "base_mean_regret": 0.0007321453981505491,
+        "base_vs_random": 0.00927023825583723,
+        "high_regret_frac": 0.005502445888442871,
+        "i_aurc": 0.03577133187053002,
+        "i_regret80": 0.028057315745842085,
+        "idle_mean_regret": 0.0010076858375506967,
+        "interaction_high_i_aurc": 0.04293777576731716,
+        "interaction_high_share": 0.006499329589821084,
+        "interaction_low_i_aurc": 0.056200041141866816,
+        "interaction_low_share": 0.006499329589821057,
+        "oracle_share_0": 0.004107547165440211,
+        "oracle_share_1": 0.003440974469088404,
+        "oracle_share_2": 0.00331836110750793,
+        "oracle_share_3": 0.002858169488200828,
+        "oracle_share_4": 0.0025730728068314858,
+        "oracle_share_5": 0.002507623883220591,
+        "oracle_share_6": 0.005317436341428693,
+        "oracle_share_7": 0.006077927922907754,
+        "oracle_share_8": 0.0030804603687323248,
+        "oracle_share_9": 0.0014075470802232483,
+        "random_mean_regret": 0.0006760677461867749,
+        "regret80_sota": 0.0008306733078240517,
+        "seed0_i_aurc": 0.040501467778199025,
+        "seed0_i_regret80": 0.026162188067515423,
+        "seed1_i_aurc": 0.03552186719523207,
+        "seed1_i_regret80": 0.02473690884315661,
+        "seed2_i_aurc": 0.036375703938219754,
+        "seed2_i_regret80": 0.026189211338690652,
+        "seed3_i_aurc": 0.040954362407532925,
+        "seed3_i_regret80": 0.022824397586419437,
+        "seed4_i_aurc": 0.035875725292820966,
+        "seed4_i_regret80": 0.024526711960140255,
+        "tstar_high_i_aurc": 0.04581346446779021,
+        "tstar_high_share": 0.006449721780476187,
+        "tstar_low_i_aurc": 0.056870666062007025,
+        "tstar_low_share": 0.006449721780476244
+      },
+      "structural_identities_verified": true
+    }
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE5-SOTA-COMPARISON-2026-09-27-V0.3",
+  "power_bootstrap_entropy": 2026092721,
+  "power_monte_carlo_entropy": 2026092722,
+  "reference": {
+    "aurc_sota": 0.012761883251380534,
+    "base_mean_regret": 0.023004174391878147,
+    "base_vs_random": 0.7162376522276873,
+    "high_regret_frac": 0.234,
+    "i_aurc": 0.14040022778607283,
+    "i_regret80": 0.17781876005852543,
+    "idle_mean_regret": 0.08178947982603563,
+    "interaction_high_i_aurc": 0.22040813463345466,
+    "interaction_high_share": 0.48333333333333334,
+    "interaction_low_i_aurc": 0.045506751947237085,
+    "interaction_low_share": 0.5166666666666667,
+    "oracle_share_0": 0.11266666666666666,
+    "oracle_share_1": 0.07666666666666666,
+    "oracle_share_2": 0.06866666666666667,
+    "oracle_share_3": 0.051333333333333335,
+    "oracle_share_4": 0.043333333333333335,
+    "oracle_share_5": 0.04,
+    "oracle_share_6": 0.22133333333333333,
+    "oracle_share_7": 0.31333333333333335,
+    "oracle_share_8": 0.06066666666666667,
+    "oracle_share_9": 0.012,
+    "random_mean_regret": 0.0810684524302583,
+    "regret80_sota": 0.01797779475219672,
+    "seed0_i_aurc": 0.13398817981970604,
+    "seed0_i_regret80": 0.17386595921591866,
+    "seed1_i_aurc": 0.2804093817824743,
+    "seed1_i_regret80": 0.22005553880335602,
+    "seed2_i_aurc": 0.2775547546145457,
+    "seed2_i_regret80": 0.16676238593611434,
+    "seed3_i_aurc": 0.19895436764162658,
+    "seed3_i_regret80": 0.24238956287569854,
+    "seed4_i_aurc": 0.1423171978314499,
+    "seed4_i_regret80": 0.14660023983950987,
+    "tstar_high_i_aurc": 0.1792550989595392,
+    "tstar_high_share": 0.4673333333333333,
+    "tstar_low_i_aurc": 0.08987428024208341,
+    "tstar_low_share": 0.5326666666666666
+  },
+  "seed_derivation": "per-n whole-group resample streams derive deterministically from SeedSequence([power_monte_carlo_entropy, n]); the validation comparison bootstrap used the distinct frozen power_bootstrap_entropy; both differ from the adjudication entropy and the holdout schedule entropy",
+  "selected_n": null,
+  "selection_scenario": 0.75,
+  "semantics": "a collection-feasibility decision under the adaptively-used validation; never a promise that the holdout adjudication passes. A selected n permits Task 5 collection; STAGE5_MERGE_COMPARISON_UNDERPOWERED forbids any holdout manifest/lock/collection",
+  "shrink_scenarios": [
+    1.0,
+    0.75,
+    0.5
+  ],
+  "status": "STAGE5_MERGE_COMPARISON_UNDERPOWERED",
+  "strongest_published_baseline": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "target": 0.9,
+  "terminal": true,
+  "typing": {
+    "anchor_slots": [
+      "aurc_sota",
+      "regret80_sota",
+      "base_mean_regret",
+      "idle_mean_regret",
+      "random_mean_regret"
+    ],
+    "effect_slots": [
+      "i_aurc",
+      "i_regret80",
+      "base_vs_random",
+      "tstar_low_i_aurc",
+      "tstar_high_i_aurc",
+      "interaction_low_i_aurc",
+      "interaction_high_i_aurc",
+      "seed0_i_aurc",
+      "seed1_i_aurc",
+      "seed2_i_aurc",
+      "seed3_i_aurc",
+      "seed4_i_aurc",
+      "seed0_i_regret80",
+      "seed1_i_regret80",
+      "seed2_i_regret80",
+      "seed3_i_regret80",
+      "seed4_i_regret80",
+      "d_idle (derived)"
+    ],
+    "rule": "model/decision effects shrink as E_b + (rho-1)*E_ref; D_idle is formed from the same resample's two regrets and shrunk as a DIFFERENCE; scenario/task support keeps its coupled resampled value (oracle/stratum shares sum to 1 on every draw, asserted); CI conditions use the resampling SE at the current n at the two-sided 95% z; marginal powers are never multiplied",
+    "support_slots": [
+      "high_regret_frac",
+      "tstar_low_share",
+      "tstar_high_share",
+      "interaction_low_share",
+      "interaction_high_share",
+      "oracle_share_0",
+      "oracle_share_1",
+      "oracle_share_2",
+      "oracle_share_3",
+      "oracle_share_4",
+      "oracle_share_5",
+      "oracle_share_6",
+      "oracle_share_7",
+      "oracle_share_8",
+      "oracle_share_9"
+    ]
+  },
+  "underpowered": true,
+  "written_at": "2026-09-28T00:44:43"
+}

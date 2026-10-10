@@ -1,0 +1,110 @@
+{
+  "completed": {
+    "BASELINE3_MATCHED:8101": {
+      "best_internal_monitor_loss": 0.5940091013908386,
+      "epochs_run": 13,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\BASELINE3_MATCHED\\seed8101.pt",
+      "sha256": "1ba4ae2468666ae640b779f09502d38926aeafe779882917f122f510814949da",
+      "train_loss": 0.5925869941711426
+    },
+    "BASELINE3_MATCHED:8202": {
+      "best_internal_monitor_loss": 0.5934344530105591,
+      "epochs_run": 20,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\BASELINE3_MATCHED\\seed8202.pt",
+      "sha256": "0822fcc48cbbdd17f18f05f9d0ebe92833c2b6109e7a285813922f9cb81981b6",
+      "train_loss": 0.5925560593605042
+    },
+    "BASELINE3_MATCHED:8303": {
+      "best_internal_monitor_loss": 0.5937860012054443,
+      "epochs_run": 13,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\BASELINE3_MATCHED\\seed8303.pt",
+      "sha256": "e6c52115fe5f3a98c74d85870fb3e4075baf78ab2b2425e8591cdfec9a73a64f",
+      "train_loss": 0.5929441452026367
+    },
+    "BASELINE3_MATCHED:8404": {
+      "best_internal_monitor_loss": 0.5975253582000732,
+      "epochs_run": 15,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\BASELINE3_MATCHED\\seed8404.pt",
+      "sha256": "b59a6f2df544d89a5db086107e2c22057140c8b1272100705171e60f1fd6b54e",
+      "train_loss": 0.5921989679336548
+    },
+    "BASELINE3_MATCHED:8505": {
+      "best_internal_monitor_loss": 0.5958552360534668,
+      "epochs_run": 18,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\BASELINE3_MATCHED\\seed8505.pt",
+      "sha256": "de4e1d547d9d9018b10fa21b7bde054e6691fb849b76a3b29ac95a3b62963cb7",
+      "train_loss": 0.5908083319664001
+    },
+    "FULL_MATCHED:8101": {
+      "best_internal_monitor_loss": 0.5368905067443848,
+      "epochs_run": 23,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\FULL_MATCHED\\seed8101.pt",
+      "sha256": "ffbdcc7abe49664c90400b534517570c4ab7b1fd949e747bdfab8e23e5ed0cda",
+      "train_loss": 0.44903063774108887
+    },
+    "FULL_MATCHED:8202": {
+      "best_internal_monitor_loss": 0.537338376045227,
+      "epochs_run": 24,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\FULL_MATCHED\\seed8202.pt",
+      "sha256": "efd70d62b821ebe7805241c45bc93b0b376e6896ff24cf2118863a01f4c17833",
+      "train_loss": 0.45129531621932983
+    },
+    "FULL_MATCHED:8303": {
+      "best_internal_monitor_loss": 0.5320875644683838,
+      "epochs_run": 40,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\FULL_MATCHED\\seed8303.pt",
+      "sha256": "ad26a4048154f0c8239a56174f4b3d0250c7cabd126dbdf5e8d735ab001a5d11",
+      "train_loss": 0.40220558643341064
+    },
+    "FULL_MATCHED:8404": {
+      "best_internal_monitor_loss": 0.5400155782699585,
+      "epochs_run": 21,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\FULL_MATCHED\\seed8404.pt",
+      "sha256": "dc9218bbc3bfc7674e0260b421824949c13cbf17c8f9550631d822ad8306d28a",
+      "train_loss": 0.4637748599052429
+    },
+    "FULL_MATCHED:8505": {
+      "best_internal_monitor_loss": 0.5238764882087708,
+      "epochs_run": 23,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\FULL_MATCHED\\seed8505.pt",
+      "sha256": "7be10d77d24b2c77e804deee60753ac3f0c7d26841eb32ca3d4184b1ce45d409",
+      "train_loss": 0.4520249664783478
+    },
+    "NO_RISK_MATCHED:8101": {
+      "best_internal_monitor_loss": 0.529544472694397,
+      "epochs_run": 34,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\NO_RISK_MATCHED\\seed8101.pt",
+      "sha256": "06e49bb6f26323e98e7c32f90fda9b374f2ce275af045fac053dbf0838e019af",
+      "train_loss": 0.44552409648895264
+    },
+    "NO_RISK_MATCHED:8202": {
+      "best_internal_monitor_loss": 0.5294788479804993,
+      "epochs_run": 28,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\NO_RISK_MATCHED\\seed8202.pt",
+      "sha256": "f048190b3992cdec1307e38a5654bb4a8826c449e38a8705cd4994d3ca4d9e52",
+      "train_loss": 0.46595385670661926
+    },
+    "NO_RISK_MATCHED:8303": {
+      "best_internal_monitor_loss": 0.5331738591194153,
+      "epochs_run": 26,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\NO_RISK_MATCHED\\seed8303.pt",
+      "sha256": "ff8577247f631c311a9187236d889f927af0e47ac087d58a682f4d9fde35863c",
+      "train_loss": 0.4658275842666626
+    },
+    "NO_RISK_MATCHED:8404": {
+      "best_internal_monitor_loss": 0.5351618528366089,
+      "epochs_run": 20,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\NO_RISK_MATCHED\\seed8404.pt",
+      "sha256": "f6e5caa6630f261f85aeb2302ad7ca9188f2ec506b7a62774a813e4b5d6e8cad",
+      "train_loss": 0.4812071919441223
+    },
+    "NO_RISK_MATCHED:8505": {
+      "best_internal_monitor_loss": 0.5276210904121399,
+      "epochs_run": 26,
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\paper_revision\\m1_supervised_ablation_v02\\models\\NO_RISK_MATCHED\\seed8505.pt",
+      "sha256": "2553b04fa13f74a697ab07871ecb8c36187d883c65ef1059aa1cb5180b7445e4",
+      "train_loss": 0.47291141748428345
+    }
+  },
+  "restarts": []
+}

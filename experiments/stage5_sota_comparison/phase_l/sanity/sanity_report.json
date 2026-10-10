@@ -1,0 +1,107 @@
+{
+  "report_type": "STAGE5_PHASE_L_SANITY",
+  "status": "ENGINEERING_SANITY_ONLY",
+  "torch_seed": 2026092711,
+  "n_checks": 5,
+  "n_pass": 5,
+  "all_pass": true,
+  "families_verified": [
+    "conformal/risk-control rejection",
+    "joint selective/rejection",
+    "joint selective/rejection (technical alternate)",
+    "learned/driving calibrated confidence",
+    "learned/driving calibrated confidence (technical alternate)"
+  ],
+  "results": [
+    {
+      "method_id": "CONFIDNET_TCP_ADAPTED",
+      "family": "learned/driving calibrated confidence",
+      "auc_error_detection": 0.8772840475352589,
+      "spearman_risk_error": 0.3349285911087311,
+      "criteria": {
+        "auc_error_detection_gte": 0.7,
+        "spearman_gt": 0.2
+      },
+      "pass": true
+    },
+    {
+      "method_id": "SELECTIVENET_REGRET_ADAPTED",
+      "family": "joint selective/rejection",
+      "coverage": 0.8,
+      "selective_mse": 0.09613466262817383,
+      "full_mse": 0.13048630952835083,
+      "g_high_noise": 0.6008397340774536,
+      "g_low_noise": 0.9865649342536926,
+      "spearman_risk_abserr": 0.6602171712849444,
+      "criteria": {
+        "coverage_in": [
+          0.7,
+          0.9
+        ],
+        "selective_lt_full": true,
+        "g_high_lt_g_low": true,
+        "spearman_gt": 0.2
+      },
+      "pass": true
+    },
+    {
+      "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+      "family": "joint selective/rejection (technical alternate)",
+      "k": 32,
+      "spearman_score_abserr": 0.645146287125169,
+      "kept80_mse": 0.0034965116064995527,
+      "full_mse": 0.12895387411117554,
+      "criteria": {
+        "spearman_gt": 0.3,
+        "kept80_mse_ratio_lte": 0.9
+      },
+      "pass": true
+    },
+    {
+      "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+      "family": "conformal/risk-control rejection",
+      "alpha": 0.1,
+      "marginal_coverage": 0.8945,
+      "bin_widths": [
+        0.16851294040679932,
+        1.6642385721206665
+      ],
+      "bin_mean_abs_err": [
+        0.04316557198762894,
+        0.39811235666275024
+      ],
+      "kept80_mse": 0.0029712787363678217,
+      "full_mse": 0.12135260552167892,
+      "spearman_width_abserr": 0.7480723813914523,
+      "fit_cal_disjoint": true,
+      "criteria": {
+        "coverage_in": [
+          0.85,
+          0.95
+        ],
+        "width_order_matches_error": true,
+        "kept80_lt_full": true,
+        "spearman_gt": 0.2
+      },
+      "pass": true
+    },
+    {
+      "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+      "family": "learned/driving calibrated confidence (technical alternate)",
+      "nll_sample_temperature": 0.41925132274627686,
+      "nll_constant": 0.42267027497291565,
+      "spearman_sigma_abserr": 0.32956504576484835,
+      "kept80_mse": 0.10755716264247894,
+      "full_mse": 0.1361975520849228,
+      "sigma_finite_positive": true,
+      "criteria": {
+        "nll_lt_constant": true,
+        "spearman_gt": 0.3,
+        "kept80_lt_full": true,
+        "sigma_finite_positive": true
+      },
+      "pass": true
+    }
+  ],
+  "elapsed_seconds": 15.8
+}

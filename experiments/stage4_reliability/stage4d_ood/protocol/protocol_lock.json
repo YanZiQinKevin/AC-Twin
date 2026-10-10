@@ -1,0 +1,836 @@
+{
+  "action_plans": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "action_stream_roots": {
+    "d1_confirm": [
+      2026110994,
+      4
+    ],
+    "pilot_behavior": [
+      2026101000,
+      1
+    ],
+    "pilot_geometry": [
+      2026102001,
+      2
+    ],
+    "pilot_joint": [
+      2026103002,
+      3
+    ],
+    "smoke": [
+      2026100099,
+      0
+    ]
+  },
+  "analysis_manifest": {
+    "code_inventory": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_ood\\protocol\\code_inventory.json",
+    "ood_profile_selection": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_ood\\pilot\\ood_profile_selection.json",
+    "power_report": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_ood\\power\\power_report.json",
+    "seed_inventory": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_ood\\protocol\\seed_inventory.json",
+    "source_inventory": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_ood\\protocol\\source_inventory.json"
+  },
+  "architecture": "SAME_INFORMATION_DIRECT",
+  "bootstrap_resamples": 10000,
+  "candidate_ns": [
+    1000,
+    2000,
+    3000,
+    4000
+  ],
+  "code_inventory_sha256": "e03ff94dc51484da8ee2548e48d90e0cc255994e68ed9b92765925606669c6f4",
+  "code_sha256": {
+    "ac_twin/checkpointing.py": "ff43654a91ec5f3c3ceef739640ea12f507f6072901d2d0bb718e219a368250a",
+    "ac_twin/object_centric.py": "3e1b4288c1009820522da47cde761b488c877118a2bbb33f25c0407bc15462a1",
+    "ac_twin/progress.py": "bcdd740ded3e573d8d4b73ff2ec974b85b4c49c53fa76aef31550467d10bab2e",
+    "ac_twin/stage1_data.py": "4d16921b79264f589a13393e0c9e61a34af63f0694462b0a508dab22f06409f4",
+    "ac_twin/stage2_protocol.py": "b0b0a7d7821fc5b82c573c9ef6ccd5eae241821a14f86ee8377c267645c7351e",
+    "ac_twin/stage2b_protocol.py": "b899ffff90a8cfb21e1fe944ff5e7c39f40cd89960a6ad2fa615843215bf8e2f",
+    "ac_twin/stage3_data.py": "ee174498d6a58fdf0d497ffd1a78e1f46c385ef9aa912462e7d497a7a29e92a5",
+    "ac_twin/stage3r_protocol.py": "cb5eed000d1baa302950890dbe03620c11bae2870fa6a96acfff93613d8145fb",
+    "ac_twin/stage4_protocol.py": "a5caae50d4d318f6fa55c9c46706159f72c84fec50a5688a697339ad77069b83",
+    "ac_twin/stage4c_objective.py": "a20da1805c14b57bc2ad02f363133b7c53c480909190f52fa5a1cc09964ac44e",
+    "ac_twin/stage4c_protocol.py": "afb3faa368429fbe558275027eece657130c4c6696725b90631459bc2246d4f7",
+    "ac_twin/stage4cp_protocol.py": "ee9681aa53dc125a58f5d1fb1c5ab221466d6d9968fe73fde6a7ec5f790d043f",
+    "ac_twin/stage4cr2_confirm_protocol.py": "1dde283e950c033e061918ff2481fb43fe00fab6f55a814d864a742fee191f8a",
+    "ac_twin/stage4cr2_protocol.py": "503ba5c59f42bf541891c0601ecb5d386e6c011ed65f9b71b97bda3770e6a8e9",
+    "ac_twin/stage4d_ood_env.py": "e3e895f788fcac295e57014b393bb10b4366cf69c35a3662152f10e386da56db",
+    "ac_twin/stage4d_protocol.py": "81438f65e796ead39e729ae17da79917f794fd7eb92e37e5a9525b3653065403",
+    "collect_pilot.py": "0eab00c8dd9d5493d238bd11170b97f72d4ea58258dccaef465442d7bc7e4f90",
+    "collect_stage2_holdout.py": "306b9edb8f71c14b5c333a582a8965791bdc9b806d3f1e7371c97250bf1882c2"
+  },
+  "confidence": 0.95,
+  "config": {
+    "action_plans": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "action_stream_roots": {
+      "d1_confirm": [
+        2026110994,
+        4
+      ],
+      "pilot_behavior": [
+        2026101000,
+        1
+      ],
+      "pilot_geometry": [
+        2026102001,
+        2
+      ],
+      "pilot_joint": [
+        2026103002,
+        3
+      ],
+      "smoke": [
+        2026100099,
+        0
+      ]
+    },
+    "action_weights": {
+      "faster": 0.18,
+      "idle_maintain": 0.45,
+      "other": 0.095,
+      "slower": 0.18
+    },
+    "architecture": "SAME_INFORMATION_DIRECT",
+    "baseline_tie_tolerance": 1e-12,
+    "bootstrap_resamples": 10000,
+    "candidate_ns": [
+      1000,
+      2000,
+      3000,
+      4000
+    ],
+    "cf_actions": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "confidence": 0.95,
+    "coverage": 0.8,
+    "d1_bootstrap_entropy": 2026110995,
+    "d1_candidate_schedule_raw_sha256": "aafbba57ecc19096c66a85e59f2a6d248dac518b7523e3924b370c50bb6a536a",
+    "d1_candidate_schedule_size": 30000,
+    "d1_candidate_seed_entropy": 2026110994,
+    "data_root": "data/object_centric_stage/stage4d_merge_ood",
+    "direct_hidden_width": 43,
+    "domain_classifier_auc_ci_lb_min": 0.7,
+    "domain_classifier_bootstrap_entropies": {
+      "behavior": 2026104101,
+      "geometry": 2026104102,
+      "joint": 2026104103
+    },
+    "domain_classifier_bootstrap_resamples": 5000,
+    "domain_classifier_confidence": 0.8,
+    "domain_shift_smd_min": 0.5,
+    "dropout": 0.1,
+    "duration": 100,
+    "ensemble_definition": "arithmetic_mean_of_five_seeds",
+    "env_id": "merge-v0",
+    "expected_trainable_parameters": 15740,
+    "experiment_name": "stage4d_merge_ood",
+    "expert_router_seeds": [
+      1101,
+      1202,
+      1303,
+      1404,
+      1505
+    ],
+    "factual_suffix_steps": 10,
+    "gate_ood_risk": {
+      "i_aurc_min": 0.05,
+      "i_regret80_min": 0.03,
+      "min_positive_seed_metrics": 4
+    },
+    "gate_task_ood": {
+      "domain_auc_ci_lb_min": 0.7,
+      "min_distinct_oracle": 3,
+      "min_high_regret_frac": 0.15,
+      "min_oracle_frac": 0.05,
+      "min_stratum_frac": 0.1,
+      "regret_eps": 0.01,
+      "smd_min": 0.5
+    },
+    "global_dim": 9,
+    "high_regret_threshold": 0.01,
+    "historical_scan_roots": [
+      "data",
+      "experiments"
+    ],
+    "history_len": 10,
+    "horizon": 20,
+    "idle_plan_index": 3,
+    "intervention_durations": [
+      1,
+      3
+    ],
+    "model_seeds": [
+      8101,
+      8202,
+      8303,
+      8404,
+      8505
+    ],
+    "n_actions": 10,
+    "n_branches_per_group": 11,
+    "n_competitors": 9,
+    "n_object_features": 8,
+    "object_capacity": 5,
+    "observed_vehicles_count": 5,
+    "ood_profiles": {
+      "behavior": {
+        "aggressive": {
+          "COMFORT_ACC_MAX": 4.0,
+          "COMFORT_ACC_MIN": -6.0,
+          "DISTANCE_WANTED": 5.0,
+          "LANE_CHANGE_MAX_BRAKING_IMPOSED": 3.0,
+          "LANE_CHANGE_MIN_ACC_GAIN": 0.1,
+          "POLITENESS": 0.0,
+          "TIME_WANTED": 0.8
+        },
+        "cautious": {
+          "COMFORT_ACC_MAX": 2.0,
+          "COMFORT_ACC_MIN": -3.0,
+          "DISTANCE_WANTED": 15.0,
+          "LANE_CHANGE_MAX_BRAKING_IMPOSED": 1.5,
+          "LANE_CHANGE_MIN_ACC_GAIN": 0.3,
+          "POLITENESS": 0.5,
+          "TIME_WANTED": 2.2
+        },
+        "id_reference": {
+          "COMFORT_ACC_MAX": 3.0,
+          "COMFORT_ACC_MIN": -5.0,
+          "DISTANCE_WANTED": 10.0,
+          "LANE_CHANGE_MAX_BRAKING_IMPOSED": 2.0,
+          "LANE_CHANGE_MIN_ACC_GAIN": 0.2,
+          "POLITENESS": 0.0,
+          "TIME_WANTED": 1.5
+        },
+        "n_aggressive": 2,
+        "n_cautious": 2,
+        "n_vehicles": 4,
+        "unchanged": {
+          "ACC_MAX": 6.0,
+          "DELTA": 4.0,
+          "LANE_CHANGE_DELAY": 1.0
+        }
+      },
+      "geometry": {
+        "highway_positions_base": [
+          78.0,
+          58.0,
+          12.0
+        ],
+        "highway_positions_jitter": 8.0,
+        "highway_speeds_base": [
+          27.0,
+          33.0,
+          29.0
+        ],
+        "highway_speeds_jitter": 2.0,
+        "merging_speed_base": 17.0,
+        "merging_speed_jitter": 1.0,
+        "merging_target_speed": 30.0,
+        "merging_x_base": 125.0,
+        "merging_x_jitter": 5.0
+      },
+      "profiles": [
+        "BEHAVIOR_OOD",
+        "GEOMETRY_OOD",
+        "JOINT_OOD"
+      ],
+      "selection_priority": [
+        "JOINT_OOD",
+        "BEHAVIOR_OOD",
+        "GEOMETRY_OOD"
+      ]
+    },
+    "paths": {
+      "code_inventory": "experiments/stage4_reliability/stage4d_ood/protocol/code_inventory.json",
+      "collection_receipt": "experiments/stage4_reliability/stage4d_ood/collection/collection_receipt.json",
+      "confirmation_truth": "experiments/stage4_reliability/stage4d_ood/collection/confirmation_truth.npz",
+      "confirmation_used_lock": "experiments/stage4_reliability/stage4d_ood/confirmation_used.lock",
+      "confirmatory_decision": "experiments/stage4_reliability/stage4d_ood/reports/STAGE4D_OOD_DECISION.md",
+      "confirmatory_report": "experiments/stage4_reliability/stage4d_ood/reports/stage4d_ood_confirmatory_report.json",
+      "determinism_receipt": "experiments/stage4_reliability/stage4d_ood/inference/determinism_receipt.json",
+      "inference_inputs": "experiments/stage4_reliability/stage4d_ood/collection/inference_inputs.npz",
+      "inference_predictions": "experiments/stage4_reliability/stage4d_ood/inference/predictions.npz",
+      "inference_risk_scores": "experiments/stage4_reliability/stage4d_ood/inference/risk_scores.npz",
+      "ood_profile_selection": "experiments/stage4_reliability/stage4d_ood/pilot/ood_profile_selection.json",
+      "power_report": "experiments/stage4_reliability/stage4d_ood/power/power_report.json",
+      "protocol_dir": "experiments/stage4_reliability/stage4d_ood/protocol",
+      "protocol_lock": "experiments/stage4_reliability/stage4d_ood/protocol/protocol_lock.json",
+      "score_freeze_receipt": "experiments/stage4_reliability/stage4d_ood/inference/score_freeze_receipt.json",
+      "seed_inventory": "experiments/stage4_reliability/stage4d_ood/protocol/seed_inventory.json",
+      "source_inventory": "experiments/stage4_reliability/stage4d_ood/protocol/source_inventory.json"
+    },
+    "pilot_accepted_groups": 300,
+    "pilot_behavior_schedule_raw_sha256": "f3605a836186d478d60d652d434f489b771bb312c69242d28f61552bbae11430",
+    "pilot_behavior_seed_entropy": 2026101000,
+    "pilot_geometry_schedule_raw_sha256": "835811b5376aff3b1acef60dfc2411f742d4b1088415536424e8b4e0af1d27b7",
+    "pilot_geometry_seed_entropy": 2026102001,
+    "pilot_joint_schedule_raw_sha256": "fe51c90a86c67bd594107def30aa9f4c55c0489b6e9776875c321dc2d5acb0ad",
+    "pilot_joint_seed_entropy": 2026103002,
+    "pilot_max_candidate_seeds": 6000,
+    "pilot_schedule_size": 6000,
+    "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+    "policy_frequency": 5,
+    "power_and_chain": {
+      "i_aurc_min": 0.05,
+      "i_regret80_min": 0.03,
+      "min_positive_seeds": 4
+    },
+    "power_monte_carlo": 10000,
+    "power_selection_retention": 0.5,
+    "power_target": 0.8,
+    "primary_baseline": "SEED_VOTE_ENTROPY",
+    "primary_score_definition": "risk_score = sigmoid(logit_high) * 0.01 * expm1(softplus(raw_mu)); ensemble = arithmetic mean of the five model seeds' risk_score",
+    "purpose": "stage4d_merge_ood",
+    "r2_development_dir": "experiments/stage4_reliability/stage4c_r2/development",
+    "r2_pinned_sources": {
+      "experiments/stage4_reliability/stage4c_r2/development/feature_scaler.npz": "2f21c11ae248f5883d8e9c4c8fa7efb876ad1afb453ee7eec462509a48104194",
+      "experiments/stage4_reliability/stage4c_r2/development/feature_schema.json": "4d45bb5556502df06630c20ffaea4fcacc5f818bde28854aec8c434ee9d23033",
+      "experiments/stage4_reliability/stage4c_r2/development/final_selection.json": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+      "experiments/stage4_reliability/stage4c_r2/development/model_inventory.json": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+      "experiments/stage4_reliability/stage4c_r2/development/protocol_lock.json": "c19c5bdce54fe039a10003b4ab78d1fb22040ac740ba950457c4534fc5e8aa71",
+      "experiments/stage4_reliability/stage4c_r2/development/screen_group_quantities.npz": "d68a2c89d6e6827bd366ade73a37ed7e9050fcc06a444e3d533e66ba6c7ed20b",
+      "experiments/stage4_reliability/stage4c_r2/development/train_collection_receipt.json": "e5e7a098c8cdc4a1fe00ac27576a337b8f01bbd749f9ebc21921cdaad4f5f126",
+      "experiments/stage4_reliability/stage4cr2_confirm/protocol/recovery_lock_r1.json": "24795b601a02d13725c45704c73248a2f560df7caa1f2d4e6adbcb852c3bacd8",
+      "experiments/stage4_reliability/stage4cr2_confirm/reports/STAGE4CR2_CONFIRMATORY_DECISION.md": "4455ef156cabefad814b0b0ec60be3c27af663c2d8cedd5c9b47b77be85fc969",
+      "experiments/stage4_reliability/stage4cr2_confirm/reports/stage4cr2_confirmatory_report.json": "46798b2d3dac509091d70971ff2b94a556b6b3795c16882dd35290fc8514fe9b"
+    },
+    "reference_baselines": [
+      "COMBINED_TOP2_MAX",
+      "CONSTANT_RANDOM"
+    ],
+    "response_predictor_seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "retention_factors": [
+      1.0,
+      0.75,
+      0.5,
+      0.25
+    ],
+    "run_dir": "experiments/stage4_reliability/stage4d_ood",
+    "scene": "merge",
+    "simulation_frequency": 15,
+    "smoke_schedule_raw_sha256": "5414ba4289044a3af39633c335f69a8c8880fb008b03d459640a4ea47d7f6722",
+    "smoke_schedule_size": 256,
+    "smoke_seed_entropy": 2026100099,
+    "stage_namespace": "stage4d_ood",
+    "standard_baselines": [
+      "MARGIN_ONLY",
+      "SEED_VOTE_ENTROPY",
+      "SEED_MARGIN_STD"
+    ],
+    "t_star_high": 15,
+    "t_star_low": 10,
+    "token_dim": 34,
+    "vehicles_count": 25
+  },
+  "config_signature": "fda7fb50bf98b0333e674e0c4f85f01d7a5f42f2a13e0106b4d249af1cbf1d91",
+  "coverage": 0.8,
+  "d1_bootstrap_entropy": 2026110995,
+  "d1_candidate_schedule_raw_sha256": "aafbba57ecc19096c66a85e59f2a6d248dac518b7523e3924b370c50bb6a536a",
+  "d1_candidate_schedule_size": 30000,
+  "d1_candidate_seed_entropy": 2026110994,
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "environment": {
+    "gymnasium_version": "1.3.0",
+    "highway_env_version": "1.10.2",
+    "numpy_version": "1.26.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.7",
+    "torch_version": "2.9.1+cu130"
+  },
+  "environment_params": {
+    "duration": 100,
+    "env_id": "merge-v0",
+    "history_len": 10,
+    "horizon": 20,
+    "n_actions": 10,
+    "n_branches_per_group": 11,
+    "n_object_features": 8,
+    "object_capacity": 5,
+    "observed_vehicles_count": 5,
+    "policy_frequency": 5,
+    "simulation_frequency": 15,
+    "t_star_high": 15,
+    "t_star_low": 10,
+    "vehicles_count": 25
+  },
+  "expected_trainable_parameters": 15740,
+  "expert_router_seeds": [
+    1101,
+    1202,
+    1303,
+    1404,
+    1505
+  ],
+  "extended_code_sha256": {
+    "ac_twin/checkpointing.py": "ff43654a91ec5f3c3ceef739640ea12f507f6072901d2d0bb718e219a368250a",
+    "ac_twin/object_centric.py": "3e1b4288c1009820522da47cde761b488c877118a2bbb33f25c0407bc15462a1",
+    "ac_twin/progress.py": "bcdd740ded3e573d8d4b73ff2ec974b85b4c49c53fa76aef31550467d10bab2e",
+    "ac_twin/stage1_data.py": "4d16921b79264f589a13393e0c9e61a34af63f0694462b0a508dab22f06409f4",
+    "ac_twin/stage2_protocol.py": "b0b0a7d7821fc5b82c573c9ef6ccd5eae241821a14f86ee8377c267645c7351e",
+    "ac_twin/stage2b_protocol.py": "b899ffff90a8cfb21e1fe944ff5e7c39f40cd89960a6ad2fa615843215bf8e2f",
+    "ac_twin/stage3_data.py": "ee174498d6a58fdf0d497ffd1a78e1f46c385ef9aa912462e7d497a7a29e92a5",
+    "ac_twin/stage3_response.py": "28a2636e93fd1add060a60a5c95241b2ff6124089165527420cfdc1fb54cb5c4",
+    "ac_twin/stage3_scaler.py": "97141967d895b6d56597477d3667e8072c728a72d00e86574d8c7500d4eafb43",
+    "ac_twin/stage3_training.py": "cb31105f3d6ffcc39ec040e4f7f4371db226e8aa9d3074ad543f91d37390c7c2",
+    "ac_twin/stage3b_bridge.py": "f96a736be429da10d2dd8c25030e7c7748d703068e6637b19f4e07d681c3526d",
+    "ac_twin/stage3r_models.py": "346614f90d6d6687230370967adeacf9971c94ea5a349e1a80da8324ea1540a5",
+    "ac_twin/stage3r_protocol.py": "cb5eed000d1baa302950890dbe03620c11bae2870fa6a96acfff93613d8145fb",
+    "ac_twin/stage4_protocol.py": "a5caae50d4d318f6fa55c9c46706159f72c84fec50a5688a697339ad77069b83",
+    "ac_twin/stage4_risk.py": "8a874457c3efa1b450f78342aa33133a819723683b7e2321f4caf96ed00c8dca",
+    "ac_twin/stage4_statistics.py": "8c509785be29ff4ef0586db66617f879d13408f83874134114a000f43adfe584",
+    "ac_twin/stage4b_inference.py": "71246b2a1cbbd5ff8c6a47bebc98c68f5aeedc2a8bc8e77d0766a459f92adede",
+    "ac_twin/stage4c_inference.py": "c3f66b3d81643658aa957a848723ae9f9c384699adf90ae92dde1b9a1308c4bd",
+    "ac_twin/stage4c_objective.py": "a20da1805c14b57bc2ad02f363133b7c53c480909190f52fa5a1cc09964ac44e",
+    "ac_twin/stage4c_protocol.py": "afb3faa368429fbe558275027eece657130c4c6696725b90631459bc2246d4f7",
+    "ac_twin/stage4c_statistics.py": "07ac01bf3b4e35af062c0e49f3c5631354b63e8ebdd9169611de2083453eb851",
+    "ac_twin/stage4cp_features.py": "101c389380dc85974acc43a34d32caf7eeb81599dca4f2b0e2db5cd8bd89ccf0",
+    "ac_twin/stage4cp_models.py": "f4bf0a267d3677aa0d8b5b9b8d05357aa788cc9008a74c2bc51d8c2f9f51111b",
+    "ac_twin/stage4cp_protocol.py": "ee9681aa53dc125a58f5d1fb1c5ab221466d6d9968fe73fde6a7ec5f790d043f",
+    "ac_twin/stage4cp_statistics.py": "64dfe315080ee889bf1f6912426dd0be405e3dc9e5cf59983a4385fc637241bf",
+    "ac_twin/stage4cr2_confirm_protocol.py": "1dde283e950c033e061918ff2481fb43fe00fab6f55a814d864a742fee191f8a",
+    "ac_twin/stage4cr2_confirm_statistics.py": "73e1e11fe0039227ed7dc4ac815883a81d7115f5e62bca5affca7add2a3ee31b",
+    "ac_twin/stage4cr2_power.py": "76f135d7b1948c11ec28e2eb9c9656eef68d111b6695436f1f3ed8db36c15838",
+    "ac_twin/stage4cr2_protocol.py": "503ba5c59f42bf541891c0601ecb5d386e6c011ed65f9b71b97bda3770e6a8e9",
+    "ac_twin/stage4cr2_statistics.py": "fd9737ebceaa40b06f5f2fd47347ec60dc34ec1840bcb1f47d7ef021c933419d",
+    "ac_twin/stage4cr2_training.py": "ad41eb602db4008bba094fcf981efe108c54c2590a47b5f49265d7ab95239040",
+    "ac_twin/stage4d_confirm_protocol.py": "07305a1d424b8774d847949b80c0445edbd84fc2c79bcdb9a0ba289435d33093",
+    "ac_twin/stage4d_ood_env.py": "e3e895f788fcac295e57014b393bb10b4366cf69c35a3662152f10e386da56db",
+    "ac_twin/stage4d_ood_statistics.py": "7507783aedd24f00b8383442bba232a3b77e5bfe93e02cdaecd61351feb2814f",
+    "ac_twin/stage4d_protocol.py": "81438f65e796ead39e729ae17da79917f794fd7eb92e37e5a9525b3653065403",
+    "collect_pilot.py": "0eab00c8dd9d5493d238bd11170b97f72d4ea58258dccaef465442d7bc7e4f90",
+    "collect_stage2_holdout.py": "306b9edb8f71c14b5c333a582a8965791bdc9b806d3f1e7371c97250bf1882c2",
+    "collect_stage4cr2_merge_multiaction.py": "01f6d5bfac3c3b06c380bdeddc5fe90007bf982179a5973d847d1d788bfd1db9",
+    "collect_stage4d_merge_ood.py": "11ac24f6e8779899665022695b0e796e1304cc9eabaad8789686cfb52f442ca7",
+    "run_stage4a.py": "27095a8bf40544351b9fdde63b2bec40be8bbb8233e26fe9f5ad92488891ea2b",
+    "run_stage4d_ood.py": "3ba6c387893f750bff6155c9af491d4186a0b398c2b237f4a58f2c287e6dca44"
+  },
+  "frozen_source_inventory": {
+    "experiments/stage3_routing/stage3r/scaler.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\scaler.json",
+      "sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181"
+    },
+    "experiments/stage4_reliability/stage4a_v3/risk/models/combined_risk_head_mlp.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_mlp.pt",
+      "sha256": "4a5108030536a2838bac868e3f7da19cc0295fe5164da154b7ee1e8d87bc8edc"
+    },
+    "experiments/stage4_reliability/stage4a_v3/risk/models/geometry_only_ridge.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\geometry_only_ridge.pt",
+      "sha256": "602d32a6aeb74f998a6c41151b7b7338d354022098bc2e29af60935f996b8bd9"
+    },
+    "experiments/stage4_reliability/stage4a_v4/risk/candidate_selection.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v4\\risk\\candidate_selection.json",
+      "sha256": "b056593c06d0968f71f3af257e0a28e1d4fa2b6928e9bde27f451bf73ce579b0"
+    },
+    "experiments/stage4_reliability/stage4b/protocol/protocol_lock.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\protocol\\protocol_lock.json",
+      "sha256": "8cdb6ff85514ec16e96eae5999f35458829efa9a6280055709e6f8e0e81aa517"
+    },
+    "experiments/stage4_reliability/stage4b/reports/STAGE4B_CONFIRMATORY_DECISION.md": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\reports\\STAGE4B_CONFIRMATORY_DECISION.md",
+      "sha256": "2cedbf99be3d1d5463cb8896767a92f85df93696eb9d5033aeac140a850c5f2b"
+    },
+    "experiments/stage4_reliability/stage4b/reports/stage4b_confirmatory_report.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\reports\\stage4b_confirmatory_report.json",
+      "sha256": "f6ab4012ba31ed58594fd596bc0c4a1f5bef2cfd0b326d585deaf18976e9bba2"
+    },
+    "experiments/stage4_reliability/stage4c_r2/development/feature_scaler.npz": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\feature_scaler.npz",
+      "pinned_sha256": "2f21c11ae248f5883d8e9c4c8fa7efb876ad1afb453ee7eec462509a48104194",
+      "sha256": "2f21c11ae248f5883d8e9c4c8fa7efb876ad1afb453ee7eec462509a48104194",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4c_r2/development/feature_schema.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\feature_schema.json",
+      "pinned_sha256": "4d45bb5556502df06630c20ffaea4fcacc5f818bde28854aec8c434ee9d23033",
+      "sha256": "4d45bb5556502df06630c20ffaea4fcacc5f818bde28854aec8c434ee9d23033",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4c_r2/development/final_selection.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\final_selection.json",
+      "pinned_sha256": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+      "sha256": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4c_r2/development/model_inventory.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\model_inventory.json",
+      "pinned_sha256": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+      "sha256": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4c_r2/development/protocol_lock.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\protocol_lock.json",
+      "pinned_sha256": "c19c5bdce54fe039a10003b4ab78d1fb22040ac740ba950457c4534fc5e8aa71",
+      "sha256": "c19c5bdce54fe039a10003b4ab78d1fb22040ac740ba950457c4534fc5e8aa71",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4c_r2/development/screen_group_quantities.npz": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\screen_group_quantities.npz",
+      "pinned_sha256": "d68a2c89d6e6827bd366ade73a37ed7e9050fcc06a444e3d533e66ba6c7ed20b",
+      "sha256": "d68a2c89d6e6827bd366ade73a37ed7e9050fcc06a444e3d533e66ba6c7ed20b",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4c_r2/development/train_collection_receipt.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\train_collection_receipt.json",
+      "pinned_sha256": "e5e7a098c8cdc4a1fe00ac27576a337b8f01bbd749f9ebc21921cdaad4f5f126",
+      "sha256": "e5e7a098c8cdc4a1fe00ac27576a337b8f01bbd749f9ebc21921cdaad4f5f126",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4cr2_confirm/protocol/recovery_lock_r1.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\protocol\\recovery_lock_r1.json",
+      "pinned_sha256": "24795b601a02d13725c45704c73248a2f560df7caa1f2d4e6adbcb852c3bacd8",
+      "sha256": "24795b601a02d13725c45704c73248a2f560df7caa1f2d4e6adbcb852c3bacd8",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4cr2_confirm/reports/STAGE4CR2_CONFIRMATORY_DECISION.md": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\reports\\STAGE4CR2_CONFIRMATORY_DECISION.md",
+      "pinned_sha256": "4455ef156cabefad814b0b0ec60be3c27af663c2d8cedd5c9b47b77be85fc969",
+      "sha256": "4455ef156cabefad814b0b0ec60be3c27af663c2d8cedd5c9b47b77be85fc969",
+      "status": "match"
+    },
+    "experiments/stage4_reliability/stage4cr2_confirm/reports/stage4cr2_confirmatory_report.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\reports\\stage4cr2_confirmatory_report.json",
+      "pinned_sha256": "46798b2d3dac509091d70971ff2b94a556b6b3795c16882dd35290fc8514fe9b",
+      "sha256": "46798b2d3dac509091d70971ff2b94a556b6b3795c16882dd35290fc8514fe9b",
+      "status": "match"
+    },
+    "r2_development/models/direct_seed8101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8101.pt",
+      "sha256": "0f6e24059d565495a0aa310955a852305ead9d7e8dca779cf0945c4302926e8a"
+    },
+    "r2_development/models/direct_seed8202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8202.pt",
+      "sha256": "952dcb473d5a9af881df78f5d5c66bccfa5783336d5307afc3c221375b416f89"
+    },
+    "r2_development/models/direct_seed8303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8303.pt",
+      "sha256": "ce82b3646b02606a35fe475df438ce9753fb64a351a23ca726c28ef155ddfcbb"
+    },
+    "r2_development/models/direct_seed8404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8404.pt",
+      "sha256": "e083c01268de4470d66b62d76815cd3c3fb5e18703a1e3120b9a4f2dbedc58d5"
+    },
+    "r2_development/models/direct_seed8505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8505.pt",
+      "sha256": "db349a2b01e6ea35beee938d775703f5e92efdaf69bc728ab9244afa1a4bdfd9"
+    },
+    "stage3b/input_binding_receipt.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3b\\input_binding_receipt.json",
+      "sha256": "881a73c3fd9e378a97e16bdf1a09316119272960b3ba0a730f315474a2d14490"
+    },
+    "stage3b/response_predictor_seed101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed101.pt",
+      "sha256": "d128d4eab19803d14a35485e2f95fda46da59ec260d40da33df6dba38dd9c756"
+    },
+    "stage3b/response_predictor_seed202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed202.pt",
+      "sha256": "2493d45f127f7e517ac08ca5f60543310b6293c1cd239caf7c502cc2f82baa95"
+    },
+    "stage3b/response_predictor_seed303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed303.pt",
+      "sha256": "2c663e0390e21bd6e060f039c29c95e8289c500fd67aa9f0e3b763609d67210c"
+    },
+    "stage3b/response_predictor_seed404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed404.pt",
+      "sha256": "0c7b2c81a64f8c0819a7042270ab84f08b401495921e496241594dea72e77815"
+    },
+    "stage3b/response_predictor_seed505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed505.pt",
+      "sha256": "b30907806b11ad91ebe34f9f2239d5414d97e17e238820c292b91576722e4830"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair0_s1101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair0_s1101.pt",
+      "sha256": "b615e7f7b00cab9452e9a9628930641910a60b602896e50e2302ef4046b25c0e"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair1_s1202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair1_s1202.pt",
+      "sha256": "082dd9cde4e5702a708b340e7c76760f7d0606ff60d6e3e0496cc09c52e2a60b"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair2_s1303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair2_s1303.pt",
+      "sha256": "5a377f02788801ddc5135fa2d4a470e86f14fb53780acb7bd76f4fcdf2d1a70a"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair3_s1404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair3_s1404.pt",
+      "sha256": "de1b3f7d19e70eeb0a90db8b7a101cf5ef738414a6920117f7c3e18ddbd35965"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair4_s1505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair4_s1505.pt",
+      "sha256": "8dad5f3ec53cada1b9776a2cf1c6f9ddc09e6e0f529fb2bf68711bc04964e538"
+    },
+    "stage3r/pair0_fulltrain_full_seed1101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair0_fulltrain_full_seed1101.pt",
+      "sha256": "13a7c61b180b6e71fbb7887282602347917d06c9f296c3c656d47f2574cc009b"
+    },
+    "stage3r/pair0_fulltrain_history_seed1101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair0_fulltrain_history_seed1101.pt",
+      "sha256": "40f2b550591b27672a38c49afd01b65eca6fe8a8695a654c24c7ec39a857d414"
+    },
+    "stage3r/pair1_fulltrain_full_seed1202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair1_fulltrain_full_seed1202.pt",
+      "sha256": "74f697a05b96ede74a6f049f8897da3bd2a506f072a4b71f4679ca5319c74590"
+    },
+    "stage3r/pair1_fulltrain_history_seed1202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair1_fulltrain_history_seed1202.pt",
+      "sha256": "cdd975b51a4067c0c382d000c260e6dd4a20acaa4374ee15684ab6cdd431abbc"
+    },
+    "stage3r/pair2_fulltrain_full_seed1303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair2_fulltrain_full_seed1303.pt",
+      "sha256": "9c3bb5848c1ef5ebf64146040427da02d3e4bb2986756570f2e0791bf2242382"
+    },
+    "stage3r/pair2_fulltrain_history_seed1303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair2_fulltrain_history_seed1303.pt",
+      "sha256": "1cd6769a47972437565d9171284a19df24ea18a723efc31dc46eaeee321bcea8"
+    },
+    "stage3r/pair3_fulltrain_full_seed1404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair3_fulltrain_full_seed1404.pt",
+      "sha256": "494fcc586b07c31265e14b066f6e9e1d2e80b1173a593cd117d13e166d32bfdb"
+    },
+    "stage3r/pair3_fulltrain_history_seed1404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair3_fulltrain_history_seed1404.pt",
+      "sha256": "dbde2b5fb1220c1f4cb23174cd246f5d73a860d310bdc1f3462f9e437c88779a"
+    },
+    "stage3r/pair4_fulltrain_full_seed1505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair4_fulltrain_full_seed1505.pt",
+      "sha256": "9db58c01b836d067d07f8bab190f9d1d76e9d6ea81920c7d7b75ee21500988f7"
+    },
+    "stage3r/pair4_fulltrain_history_seed1505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair4_fulltrain_history_seed1505.pt",
+      "sha256": "584292117ceb780263d7ead9cf2b2b3a3d9b57aeec6f3dad3ab78104d22d60ae"
+    },
+    "stage3r/scaler.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\scaler.json",
+      "sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181"
+    },
+    "stage4a_v3/risk/models/response_only_ridge.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\response_only_ridge.pt",
+      "sha256": "2d1b65e72bb1b799a5510a7d59cf4f0c796458947eed24d2cf44ef9294f2d720"
+    }
+  },
+  "gate_ood_risk": {
+    "i_aurc_min": 0.05,
+    "i_regret80_min": 0.03,
+    "min_positive_seed_metrics": 4
+  },
+  "gate_task_ood": {
+    "domain_auc_ci_lb_min": 0.7,
+    "min_distinct_oracle": 3,
+    "min_high_regret_frac": 0.15,
+    "min_oracle_frac": 0.05,
+    "min_stratum_frac": 0.1,
+    "regret_eps": 0.01,
+    "smd_min": 0.5
+  },
+  "high_regret_threshold": 0.01,
+  "model_seeds": [
+    8101,
+    8202,
+    8303,
+    8404,
+    8505
+  ],
+  "ood_profile": "JOINT_OOD",
+  "ood_profile_selection_sha256": "b448f62d6ecb896ab8b0df38ceba560a8c42a88d022a9f20aa50f1c408278976",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "power_report_sha256": "105a2e9fb88766686e99e2746573631a649ccc29663f470c88d0eb96d38ce10f",
+  "primary_baseline": "SEED_VOTE_ENTROPY",
+  "primary_score_definition": "risk_score = sigmoid(logit_high) * 0.01 * expm1(softplus(raw_mu)); ensemble = arithmetic mean of the five model seeds' risk_score",
+  "reference_baselines": [
+    "COMBINED_TOP2_MAX",
+    "CONSTANT_RANDOM"
+  ],
+  "response_predictor_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "retention_factors": [
+    1.0,
+    0.75,
+    0.5,
+    0.25
+  ],
+  "seed_audit": {
+    "derived": "re-run live at lock/verify time: full historical scan + per-domain zero-overlap + mutual disjointness; never a copied flag",
+    "inventory_sha256": "e9f2aad2241ea9100bafccfeea612b015aa81db59d2dc0d04200c75769266be7",
+    "mutual_disjoint": true,
+    "n_inventory": 432868,
+    "overlap": [],
+    "per_domain": {
+      "d1_confirm": {
+        "entropy": 2026110994,
+        "n_inventory": 432868,
+        "n_schedule": 30000,
+        "overlap": [],
+        "schedule_raw_sha256": "aafbba57ecc19096c66a85e59f2a6d248dac518b7523e3924b370c50bb6a536a",
+        "size": 30000,
+        "zero_overlap": true
+      },
+      "pilot_behavior": {
+        "entropy": 2026101000,
+        "n_inventory": 432868,
+        "n_schedule": 6000,
+        "overlap": [],
+        "schedule_raw_sha256": "f3605a836186d478d60d652d434f489b771bb312c69242d28f61552bbae11430",
+        "size": 6000,
+        "zero_overlap": true
+      },
+      "pilot_geometry": {
+        "entropy": 2026102001,
+        "n_inventory": 432868,
+        "n_schedule": 6000,
+        "overlap": [],
+        "schedule_raw_sha256": "835811b5376aff3b1acef60dfc2411f742d4b1088415536424e8b4e0af1d27b7",
+        "size": 6000,
+        "zero_overlap": true
+      },
+      "pilot_joint": {
+        "entropy": 2026103002,
+        "n_inventory": 432868,
+        "n_schedule": 6000,
+        "overlap": [],
+        "schedule_raw_sha256": "fe51c90a86c67bd594107def30aa9f4c55c0489b6e9776875c321dc2d5acb0ad",
+        "size": 6000,
+        "zero_overlap": true
+      },
+      "smoke": {
+        "entropy": 2026100099,
+        "n_inventory": 432868,
+        "n_schedule": 256,
+        "overlap": [],
+        "schedule_raw_sha256": "5414ba4289044a3af39633c335f69a8c8880fb008b03d459640a4ea47d7f6722",
+        "size": 256,
+        "zero_overlap": true
+      }
+    },
+    "zero_overlap": true
+  },
+  "seed_inventory_sha256": "fb159b6f41f8a76c54b6e1ed786f28bc9a29fa3944fbe1dc51be8cf54f26cb35",
+  "selected_n": 2000,
+  "source_inventory_sha256": "5641bf97e93b603e6f23680b8ea8d18fbcf06b3d40cde33d3b45f1375ec5ec46",
+  "stage_namespace": "stage4d_ood",
+  "standard_baselines": [
+    "MARGIN_ONLY",
+    "SEED_VOTE_ENTROPY",
+    "SEED_MARGIN_STD"
+  ],
+  "strata": {
+    "initial_distance": {
+      "high": "min_ego_distance > threshold",
+      "low": "min_ego_distance <= threshold",
+      "r2_train_npz_sha256": "df240cac7686d885b114b45234a3fa1c9041af2802b68d1c25cfdfe76aac53b8",
+      "rule": "median_of_pre_intervention_min_ego_distance_over_r2_train_groups",
+      "source": "median of the pre-intervention min ego distance over R2 train groups; reads ONLY the R2 train NPZ object_history (hash-verified)",
+      "threshold": 29.128996473819946
+    },
+    "t_star": {
+      "high": "t_star >= 13",
+      "low": "t_star < 13",
+      "source": "stage4cr2_statistics.TSTAR_SPLIT (frozen Stage 4C contract)",
+      "split": 13
+    }
+  },
+  "terminal_states": [
+    "STAGE4D_OOD_TASK_INSUFFICIENT",
+    "STAGE4D_OOD_CONFIRMATION_UNDERPOWERED",
+    "STAGE4D_OOD_TASK_DEGENERATE",
+    "INCONCLUSIVE_STAGE4D_OOD_DECISION_MODEL_INSUFFICIENT",
+    "INCONCLUSIVE_STAGE4D_OOD_INVALID",
+    "STAGE4D_OOD_ROBUSTNESS_NOT_CONFIRMED",
+    "STAGE4D_OOD_ROBUSTNESS_CONFIRMED"
+  ],
+  "written_at": "2026-09-20T15:44:00"
+}

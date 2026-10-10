@@ -1,0 +1,84 @@
+{
+  "best_constant_w": 0.6,
+  "checkpoints": [
+    {
+      "best_validation_ade": 0.2623307704925537,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\cew_distilled_router_lc1_lr0_pair0_s1101.pt",
+      "condition": "cew_distilled_router",
+      "epochs_run": 30,
+      "input_dim": 70,
+      "lambda_cew": 1.0,
+      "lambda_rank": 0.0,
+      "pair_index": 0,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "response_only_features": false,
+      "seed": 1101,
+      "sha256": "1974e8f053da1083e80f445261023e6d7084b2723141e6a0fe6bb12ecfb9daf5"
+    },
+    {
+      "best_validation_ade": 0.25382426381111145,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\cew_distilled_router_lc1_lr0_pair1_s1202.pt",
+      "condition": "cew_distilled_router",
+      "epochs_run": 14,
+      "input_dim": 70,
+      "lambda_cew": 1.0,
+      "lambda_rank": 0.0,
+      "pair_index": 1,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "response_only_features": false,
+      "seed": 1202,
+      "sha256": "d9105265d619fe49f525b2435ee35e7b52d86be315f925f30fc6c95e64149dc1"
+    },
+    {
+      "best_validation_ade": 0.24776378273963928,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\cew_distilled_router_lc1_lr0_pair2_s1303.pt",
+      "condition": "cew_distilled_router",
+      "epochs_run": 24,
+      "input_dim": 70,
+      "lambda_cew": 1.0,
+      "lambda_rank": 0.0,
+      "pair_index": 2,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "response_only_features": false,
+      "seed": 1303,
+      "sha256": "34f28cf02b9f6f2e1f1ff38bdae4ca57f1f9e0e53ab6a53d83cccf488162d527"
+    },
+    {
+      "best_validation_ade": 0.2741956412792206,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\cew_distilled_router_lc1_lr0_pair3_s1404.pt",
+      "condition": "cew_distilled_router",
+      "epochs_run": 8,
+      "input_dim": 70,
+      "lambda_cew": 1.0,
+      "lambda_rank": 0.0,
+      "pair_index": 3,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "response_only_features": false,
+      "seed": 1404,
+      "sha256": "721941667bafe01df9000f490a3fe11ae3de4317e75c626735f56ee524cd635e"
+    },
+    {
+      "best_validation_ade": 0.25694793462753296,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\cew_distilled_router_lc1_lr0_pair4_s1505.pt",
+      "condition": "cew_distilled_router",
+      "epochs_run": 13,
+      "input_dim": 70,
+      "lambda_cew": 1.0,
+      "lambda_rank": 0.0,
+      "pair_index": 4,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "response_only_features": false,
+      "seed": 1505,
+      "sha256": "f0bc0aea9858ed803c8a0fc73df0e78122fa137670b4ec96323151c79ed2a215"
+    }
+  ],
+  "direct_hidden_width": 63,
+  "input_dim": 70,
+  "phase1_report_sha256": "30838b431912b98ae8942dbd659738b1d29fccd94d9f1e85854b7cd412436977",
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "selected": {
+    "lambda_cew": 1.0,
+    "lambda_rank": 0.0
+  },
+  "status": "STAGE3R_FINALIST_FROZEN"
+}

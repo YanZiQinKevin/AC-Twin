@@ -1,0 +1,22 @@
+{
+  "run": "same_information_direct_g32_pair4_r1505",
+  "state": "COMPLETE",
+  "condition": "same_information_direct",
+  "pair_index": 4,
+  "seed_pair": [
+    505,
+    1505
+  ],
+  "gate_hidden_dim": 32,
+  "config": {
+    "condition": "same_information_direct",
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "gate_hidden_dim": 32
+  },
+  "best_val_loss": 0.3038921627281758,
+  "validation_selection_score": 0.3038921627281758,
+  "epochs_run": 20,
+  "signature": "cec5d8ab899cedb353535c3b9c4b8e5b7f502831df2d0dde38fb46835607b59d",
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\same_information_direct_g32_pair4_r1505.pt"
+}

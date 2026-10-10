@@ -1,0 +1,22 @@
+{
+  "run": "dual_channel_learned_router_g64_pair0_r1101",
+  "state": "COMPLETE",
+  "condition": "dual_channel_learned_router",
+  "pair_index": 0,
+  "seed_pair": [
+    101,
+    1101
+  ],
+  "gate_hidden_dim": 64,
+  "config": {
+    "condition": "dual_channel_learned_router",
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "gate_hidden_dim": 64
+  },
+  "best_val_loss": 0.3062080872595737,
+  "validation_selection_score": 0.3062080872595737,
+  "epochs_run": 15,
+  "signature": "833cf389528417c56a86c5960d9965541113402bc24c179f7c84aae442db05d2",
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\screen_gate_hidden\\dual_channel_learned_router_g64_pair0_r1101.pt"
+}

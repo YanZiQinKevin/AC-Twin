@@ -1,0 +1,28 @@
+{
+  "final_config": {
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "lambda_cls": 0.1
+  },
+  "selection_basis": "lowest mean five-seed validation loss (mechanical, deterministic tie-break)",
+  "per_finalist_mean_val_loss": {
+    "h64_r32_l0.1": 0.10169755682349205,
+    "h96_r32_l0.1": 0.09780313938856125
+  },
+  "strongest_baselines": {
+    "strongest_continuous": "constant_zero",
+    "strongest_presence": "multinomial_plus_distance",
+    "strongest_high_vs_lowmid": "multinomial_adh",
+    "strongest_brier": "multinomial_plus_distance"
+  },
+  "strongest_baselines_frozen_on": "validation",
+  "finalist_name": "h96_r32_l0.1",
+  "checkpoint_signatures": [
+    "602b0c544fa356058220d54994c9264c210e41d70e0e6070967ad33a99bd5778",
+    "5038add9fc956ed55844c09b258c41b57ac541f7f1534f76cd4db878954e1f4e",
+    "6238bb89070023aecc5cfe761930d3b4cd35aee3d17c11d40618dbac18365ccd",
+    "f10791b089a3517812663fad32cd87a8068fca8ca2dd8b9ed76447e70fddd064",
+    "6b7446e00249481c5b34b62ae50861762f3e592dcbd6d237ec11a2580c545270"
+  ],
+  "receipt_signature": "45b7de714a479501c0bbc08fe5f08b274a8686f58ee8e9101cfb8d623cf2e7ac"
+}

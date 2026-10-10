@@ -1,0 +1,23 @@
+{
+  "d2e_final_selection_sha256": "c2236a9b7798c702cbe6651c30fcac41d037343b3fd7eb984e75495c25e65259",
+  "d2e_riskfit_receipt_sha256": "c0d8d251c3116bc79aadfcb78a7699e637abe460dd6f197a47d3768fbb645145",
+  "determinism_receipt_sha256": "7f554fd38d01ae23e0cac582218488b2b59ac7a0833565292cb736233ea1a7a7",
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "inference_inputs_sha256": "5626d11b46746409cb7c974be78768cc57a6ce75aa9db82feae3c024f9b1cc56",
+  "model_seeds": [
+    9101,
+    9202,
+    9303,
+    9404,
+    9505
+  ],
+  "n_groups": 2000,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "role": "confirm",
+  "scores_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2f\\confirm\\confirm_scores.npz",
+  "scores_sha256": "2d89afa2aa2f3f0aa8f7e8e3763bdcc6a4190d361589e2c992e45edf86920655",
+  "selected_ego_candidate": "EGO_TRAJECTORY_PLUS_RANK",
+  "split_receipt_sha256": "3d748ca06677ac8d7636f5b09c86e1e8b6f97f98682e716a61931f36e01edf03",
+  "strongest_standard_baseline": "SEED_MARGIN_STD",
+  "written_at": "2026-09-25T15:58:08"
+}

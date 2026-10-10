@@ -1,0 +1,16 @@
+{
+  "check": "prediction episode order equals requested order; shuffled/batched evaluation yields identical per-episode outputs",
+  "requested_first_last": [
+    8,
+    9
+  ],
+  "returned_first_last": [
+    8,
+    9
+  ],
+  "r_hat_sha256": "854c450ffb45e7779d293209c2d7edf8276f65a2e05cfd0ea4a1019c48c216fc",
+  "order_preserved": true,
+  "shuffle_request_preserved": true,
+  "same_episode_outputs_after_reorder": true,
+  "batch_size_1_equals_full_batch": true
+}

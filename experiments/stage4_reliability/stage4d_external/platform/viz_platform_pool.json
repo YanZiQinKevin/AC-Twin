@@ -1,0 +1,133 @@
+{
+  "code_sha256": "1ed656650e2c0f1ee9c443b8703a524d804d69cf598be07a82c99c286323a2e5",
+  "generated_at": "2026-09-22T05:51:04+0800",
+  "k_platform": 20,
+  "n_pilot_accepted": 100,
+  "pilot_groups_meta_sha256": "0bad50a22105ae27c9741f389452a009c03ddc6ead13df24987b106631e7c5d0",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "pool": [
+    {
+      "context_id": "15",
+      "hash": "03b444eedfe56ae005199df12e06dc250ac9ccbb95ea54ee06795a7304758dbb",
+      "rank": 0,
+      "scenario_id": "964675da2d464a37"
+    },
+    {
+      "context_id": "14",
+      "hash": "048d3ac35da33352fc58145d0806c0cf3683d9b235ad268ac41c04266dd7de0f",
+      "rank": 1,
+      "scenario_id": "8da2a28f0c52298e"
+    },
+    {
+      "context_id": "10",
+      "hash": "051b0bbad089b7a106bb6992efdb26183cc734eb22f529654fc6de68d3e532e1",
+      "rank": 2,
+      "scenario_id": "b41eef8e29648854"
+    },
+    {
+      "context_id": "12",
+      "hash": "05b47f5715b19bb36dc218629012b79c82760298b37fbfc9070e73b1db069759",
+      "rank": 3,
+      "scenario_id": "6a0103fb56f69422"
+    },
+    {
+      "context_id": "15",
+      "hash": "067f2b3c4e713a30f2ff279f95dee35078a2e33d2d2c5cf1a527883d9788329e",
+      "rank": 4,
+      "scenario_id": "4d4b548c02d6dbf0"
+    },
+    {
+      "context_id": "13",
+      "hash": "076728417aac8250fea0cdcee1f9b881c6a3a1257b63161005b9fe2fd8ee0766",
+      "rank": 5,
+      "scenario_id": "2f22b927b8e1cd89"
+    },
+    {
+      "context_id": "14",
+      "hash": "098cd3b2973c0cc5b84f96b12662d8305717d435b44fd135b3bfa9526e87d84e",
+      "rank": 6,
+      "scenario_id": "7b6d56c664ef92e1"
+    },
+    {
+      "context_id": "13",
+      "hash": "0e4eda66533d8efac04a5bc3765438090cbd2c159f39b9d733759c022f62846e",
+      "rank": 7,
+      "scenario_id": "1cac180d139c96de"
+    },
+    {
+      "context_id": "11",
+      "hash": "0ec45522853759b59b958114407bb230b9cbdec797f136fa2e2358e04c930712",
+      "rank": 8,
+      "scenario_id": "706842f1eadeddfb"
+    },
+    {
+      "context_id": "12",
+      "hash": "1094b7f02f0752c11979460e91251fe56efabc7938457acf557dd82ef12a7e8d",
+      "rank": 9,
+      "scenario_id": "956409c8398363d5"
+    },
+    {
+      "context_id": "13",
+      "hash": "12577bdc1987d7d096c7c925bf599d70be070b1bcac54d6721c3723285724933",
+      "rank": 10,
+      "scenario_id": "c9134e4491eddf3e"
+    },
+    {
+      "context_id": "10",
+      "hash": "1678ca5df6ae79a882168eded8b34ccec44c5695d61161501ae2140665cb9d07",
+      "rank": 11,
+      "scenario_id": "fb786f321d5da94f"
+    },
+    {
+      "context_id": "14",
+      "hash": "19c1f509921323f5288c1532dd6299f1b4d79d0ddb14c77cad89664f32f459aa",
+      "rank": 12,
+      "scenario_id": "34d329b4840a2587"
+    },
+    {
+      "context_id": "12",
+      "hash": "1a0b800df397977647c299206e9bb957202c95baa54435184466cbe0b1e6a59c",
+      "rank": 13,
+      "scenario_id": "cfdd417da76901bf"
+    },
+    {
+      "context_id": "15",
+      "hash": "1a7f227dd139d64daf522ff1c3a2e5a2798ff7d564190fcaab00dad6a1736eb2",
+      "rank": 14,
+      "scenario_id": "726417c1327aef74"
+    },
+    {
+      "context_id": "10",
+      "hash": "1e8d1da41fe0dffe926dfa5bc599111d9fca9a2570567210ea5471828c5e61ed",
+      "rank": 15,
+      "scenario_id": "b5db70059e5cf3d0"
+    },
+    {
+      "context_id": "14",
+      "hash": "1fd644fc7120e906cc988e100ba9619dab743cfcf7ced8ad04a0a02d50bd74ea",
+      "rank": 16,
+      "scenario_id": "660d02e6cd199ff"
+    },
+    {
+      "context_id": "15",
+      "hash": "206e2bdbd8f2e2f8859351a6a5f495afb08c66e0a416aefc6d5ab0cbec4a88d4",
+      "rank": 17,
+      "scenario_id": "51b46a61929efd3f"
+    },
+    {
+      "context_id": "14",
+      "hash": "20b023f397f6b1440fb0bc13824e027a3c2649924e9456edc4b31f7c6e9a0421",
+      "rank": 18,
+      "scenario_id": "a7b5fd9713ba8682"
+    },
+    {
+      "context_id": "12",
+      "hash": "2864a4f11d00332292edb463fe4baf52552b354ac60b1ded2c6533e0f83bc1c0",
+      "rank": 19,
+      "scenario_id": "5e62b271d4aa808f"
+    }
+  ],
+  "purpose": "freeze platform-overview candidate pool (legibility-only selection later)",
+  "selection": "SHA256(scenario_id || context_id || 'platform-visual') ascending, first K",
+  "status": "VIZ_PLATFORM_POOL_FROZEN"
+}

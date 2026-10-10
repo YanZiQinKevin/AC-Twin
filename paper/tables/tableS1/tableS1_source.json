@@ -1,0 +1,216 @@
+{
+  "source_type": "PAPER_TABLE_1_REVIEWED_SOURCE",
+  "plan_id": "AC-TWIN-RFER-STAGE5-SOTA-COMPARISON-2026-09-27-V0.3",
+  "rebuilt_from": "experiments/stage5_sota_comparison/literature/method_registry.json",
+  "columns": [
+    "Work",
+    "Target and task",
+    "Factual suffix / paired CF truth",
+    "Decision-regret use",
+    "Reject / defer meaning",
+    "Guarantee / evidence boundary",
+    "Original paper"
+  ],
+  "rows": [
+    [
+      "Zhang et al. (2026)",
+      "Retrospective counterfactual prediction for driving world models",
+      "Factual suffix as transported evidence; paired CF for evaluation",
+      "Not the evaluated endpoint",
+      "None",
+      "Empirical paired-CF prediction evaluation; no selective-risk bound",
+      "https://arxiv.org/abs/2608.11601"
+    ],
+    [
+      "Khandelwal et al. (2020)",
+      "What-if counterfactual motion forecasting",
+      "Counterfactual conditioning at inference; no paired CF truth audit",
+      "Not the evaluated endpoint",
+      "None",
+      "Empirical motion-forecasting evaluation",
+      "https://arxiv.org/abs/2008.10587"
+    ],
+    [
+      "Tan et al. (2025)",
+      "Promptable closed-loop traffic simulation",
+      "Prompt-conditioned rollouts; no factual-suffix evidence contract",
+      "Not the evaluated endpoint",
+      "None",
+      "Empirical prompt adherence and closed-loop simulation fidelity",
+      "https://proceedings.mlr.press/v270/tan25a.html"
+    ],
+    [
+      "Fujii et al. (2025)",
+      "Counterfactual treatment outcomes over time in multiagent systems",
+      "Past covariates/treatments/outcomes; simulated paired outcomes for ITE evaluation",
+      "Intervention-effect/timing evaluation; not learned regret ranking",
+      "None",
+      "ITE identification conditional on stated causal/model assumptions",
+      "https://ieeexplore.ieee.org/document/10445111/"
+    ],
+    [
+      "Jiang et al. (2023)",
+      "Continuous-time counterfactual outcome estimation (multi-agent)",
+      "Past covariates/treatments/outcomes; continuous-time potential-outcome prediction",
+      "Not the evaluated endpoint",
+      "None",
+      "Treatment/interference balancing results under model conditions",
+      "https://doi.org/10.1145/3580305.3599272"
+    ],
+    [
+      "Zou et al. (2022)",
+      "Outcome-oriented counterfactual treatment prediction",
+      "Factual outcomes; no driving factual suffix",
+      "Treatment-selection regret is an explicit objective; not post-hoc audit",
+      "None",
+      "Treatment-selection regret bounded by prediction errors",
+      "https://proceedings.mlr.press/v162/zou22a.html"
+    ],
+    [
+      "Zou et al. (2023)",
+      "Counterfactual prediction from factual-observation heterogeneity",
+      "Factual outcome as input evidence; no driving factual suffix",
+      "Not the evaluated endpoint",
+      "None",
+      "Factual-conditioning error comparison under latent-model assumptions",
+      "https://proceedings.mlr.press/v213/zou23a.html"
+    ],
+    [
+      "Corbière et al. (2019)",
+      "Learned model confidence for failure prediction",
+      "No driving factual suffix or paired driving CF",
+      "Not the evaluated endpoint",
+      "Classification failure-risk ranking",
+      "TCP correctness/error implications; not a bound for learned ranking",
+      "https://proceedings.neurips.cc/paper/2019/hash/757f843a169cc678064d9530d12a1881-Abstract.html"
+    ],
+    [
+      "Geifman & El-Yaniv (2017)",
+      "Selective classification with guaranteed risk",
+      "No driving factual suffix or paired driving CF",
+      "Not the evaluated endpoint",
+      "Classification rejection",
+      "High-probability classification selective-risk bound with i.i.d. labeled calibration",
+      "https://proceedings.neurips.cc/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html"
+    ],
+    [
+      "Geifman & El-Yaniv (2019)",
+      "End-to-end selective prediction with integrated reject option",
+      "No driving factual suffix or paired driving CF",
+      "Not the evaluated endpoint",
+      "Learned selection/rejection",
+      "Coverage-calibration bound with independent validation; training alone is not a selective-risk certificate",
+      "https://proceedings.mlr.press/v97/geifman19a.html"
+    ],
+    [
+      "Liu et al. (2019)",
+      "Abstention via portfolio theory (classification)",
+      "No driving factual suffix or paired driving CF",
+      "Not the evaluated endpoint",
+      "Learned abstention",
+      "Portfolio-loss theory; empirical selective classification",
+      "https://proceedings.neurips.cc/paper_files/paper/2019/hash/0c4b1eeb45c90b52bfb9d07943d855ab-Abstract.html"
+    ],
+    [
+      "Li et al. (2024)",
+      "Consistent no-rejection learning for regression with rejection",
+      "No driving factual suffix or paired driving CF",
+      "Not the evaluated endpoint",
+      "Regression deferral at cost",
+      "Consistency under weak realizability; excess-risk analysis otherwise",
+      "https://proceedings.mlr.press/v238/li24g.html"
+    ],
+    [
+      "Angelopoulos et al. (2024)",
+      "Conformal risk control for monotone losses",
+      "General framework; no paired driving CF requirement",
+      "No study of this multi-action regret task",
+      "Output adjustment, not the present decision-group retention task",
+      "Expected bounded monotone-loss control under exchangeability",
+      "https://openreview.net/forum?id=33XGfHLtZg"
+    ],
+    [
+      "Johansson et al. (2024)",
+      "Conformal regression with reject option",
+      "No driving factual suffix or paired driving CF",
+      "Not the evaluated endpoint",
+      "Conformal rejection for regression",
+      "Mondrian interval validity under exchangeability; OOB experiments lack exact ICP guarantee",
+      "https://proceedings.mlr.press/v230/johansson24a.html"
+    ],
+    [
+      "Cao et al. (2024)",
+      "Calibrating trajectory-prediction uncertainty for planning",
+      "No driving factual suffix or paired driving CF",
+      "Not the evaluated endpoint",
+      "None (calibration for planner consumption)",
+      "Empirical calibration and planning improvements; not a regret certificate",
+      "https://ojs.aaai.org/index.php/AAAI/article/view/30085"
+    ],
+    [
+      "Zaoui et al. (2020)",
+      "Regression with reject option (kNN)",
+      "No driving factual suffix or paired driving CF",
+      "Not the evaluated endpoint",
+      "Regression rejection at fixed rate",
+      "Optimal rejection rule, consistency and kNN rates under assumptions",
+      "https://proceedings.neurips.cc/paper/2020/hash/e8219d4c93f6c55c6b10fe6bfe997c6c-Abstract.html"
+    ],
+    [
+      "Farid et al. (2023)",
+      "Task-relevant trajectory-prediction failure detection",
+      "Predicted-cost samples plus subsequently observed cost; not paired action-branch truth",
+      "Cost-quantile anomaly; not action-set oracle regret",
+      "Runtime alarm and offline failure-scene mining",
+      "Sampling-based FPR/FNR bounds for p-quantile anomalies; upper bounds sum to one",
+      "https://proceedings.mlr.press/v205/farid23a.html"
+    ],
+    [
+      "Nakamura et al. (2025)",
+      "System-level trajectory-prediction failure mining",
+      "Observed deployment interactions for hindsight evaluation; not rerun paired action branches",
+      "Canonical/likelihood regret; not learned pre-outcome risk ranking",
+      "Offline high-regret scene mining and predictor fine-tuning",
+      "Context-normalized hindsight metric and empirical downstream improvements",
+      "https://proceedings.mlr.press/v270/nakamura25a.html"
+    ],
+    [
+      "This work",
+      "Response-conditioned factual-evidence value and decision-regret audit",
+      "Factual suffix in frozen predictor; paired CF truth for labels/evaluation only",
+      "Learned regret ranking for a frozen base selector",
+      "Offline decision-group retention at fixed coverage",
+      "Three scoped confirmations vs frozen standard baselines; published-method comparison is development-only",
+      "This paper"
+    ]
+  ],
+  "review": {
+    "date": "2026-10-03",
+    "status": "KEY_CLAIMS_REVIEWED_WORKING_MATRIX",
+    "audit": "paper/references/TABLE_1_AUDIT_2026-10-03.md",
+    "metadata_exception": "Nakamura: proceedings metadata says Thomas Tian; linked final PDF says Ran Tian. Bibliography follows proceedings metadata.",
+    "boundary": "Representative source-anchored comparison, not an exhaustive novelty search or transfer of theoretical guarantees. Refresh search at submission."
+  },
+  "citation_keys": [
+    "zhang2026driving",
+    "khandelwal2020wimp",
+    "tan2024prosim",
+    "fujii2024tgvcrn",
+    "jiang2023cfgode",
+    "zou2022oosr",
+    "zou2023fohl",
+    "corbiere2019confidnet",
+    "geifman2017selective",
+    "geifman2019selectivenet",
+    "liu2019deepgamblers",
+    "li2024rwr",
+    "angelopoulos2024crc",
+    "johansson2024conformal",
+    "cao2024cctr",
+    "zaoui2020regression",
+    "farid2023taskfailure",
+    "nakamura2025regret",
+    null
+  ],
+  "note": "“Not the evaluated endpoint” describes the reported task, not a claim that a method could never be extended. The last column distinguishes theory from empirical evidence; no guarantee is transferred to AC-Twin. Years follow proceedings/issue metadata. Nakamura's author-name discrepancy is disclosed in the reference audit."
+}

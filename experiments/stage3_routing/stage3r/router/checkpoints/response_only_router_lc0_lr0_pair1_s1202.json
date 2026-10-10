@@ -1,0 +1,12 @@
+{
+  "best_validation_ade": 0.25377121567726135,
+  "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\response_only_router_lc0_lr0_pair1_s1202.pt",
+  "condition": "response_only_router",
+  "epochs_run": 18,
+  "input_dim": 70,
+  "lambda_cew": 0.0,
+  "lambda_rank": 0.0,
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "seed": 1202,
+  "sha256": "9bf262ed16239c8a8018765be78bc32eedd21b89d632b668352f4604a16f1ff5"
+}

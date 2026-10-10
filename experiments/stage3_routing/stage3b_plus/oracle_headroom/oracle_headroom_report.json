@@ -1,0 +1,743 @@
+{
+  "architectures": {
+    "state_full": {
+      "a_bootstrap": {
+        "ci80_lower": 0.3955348022259013,
+        "ci80_upper": 0.45629041640373197,
+        "point": 0.42540861263551255
+      },
+      "a_point": 0.42366480802224465,
+      "a_rel_improvements": [
+        0.47640947043422716,
+        0.38556822621114695,
+        0.40901672742135986
+      ],
+      "b_bootstrap": {
+        "ci80_lower": 0.362347669830995,
+        "ci80_upper": 0.4126283940206102,
+        "point": 0.38666193593306036
+      },
+      "b_point": 0.3856638799844754,
+      "b_rel_improvements": [
+        0.4300605153273796,
+        0.37035961013874585,
+        0.3565715144873006
+      ],
+      "passed": true,
+      "runs": {
+        "route_only_oracle": [
+          {
+            "a_effect_ade": 0.1383191732906314,
+            "a_gate_means": {
+              "0": [
+                0.3081432282924652
+              ],
+              "1": [
+                0.34534671902656555
+              ],
+              "2": [
+                0.39166659116744995
+              ],
+              "3": [
+                0.6308444142341614
+              ]
+            },
+            "b_effect_ade": 0.15555873957949842,
+            "b_gate_means": {
+              "0": [
+                0.3080021142959595
+              ],
+              "1": [
+                0.35155749320983887
+              ],
+              "2": [
+                0.3941633105278015
+              ],
+              "3": [
+                0.6308906674385071
+              ]
+            },
+            "seed": 1101,
+            "summary": {
+              "architecture": "state_full",
+              "best_val_loss": 0.16140047706693159,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_full_route_only_oracle_r1101.pt",
+              "condition": "route_only_oracle",
+              "config": {
+                "architecture": "state_full",
+                "condition": "route_only_oracle",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 40,
+              "name": "state_full_route_only_oracle_r1101",
+              "router_seed": 1101,
+              "signature": "c325fdfeb3a8921289e36c4618103862a6a40e8f6a6ba2bbdfeb1785ea678a7a",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.1534925986685094
+          },
+          {
+            "a_effect_ade": 0.14870760858915177,
+            "a_gate_means": {
+              "0": [
+                0.344473272562027
+              ],
+              "1": [
+                0.3713468313217163
+              ],
+              "2": [
+                0.4047498106956482
+              ],
+              "3": [
+                0.6155517101287842
+              ]
+            },
+            "b_effect_ade": 0.16642076697652264,
+            "b_gate_means": {
+              "0": [
+                0.3444112241268158
+              ],
+              "1": [
+                0.3778478503227234
+              ],
+              "2": [
+                0.4068428575992584
+              ],
+              "3": [
+                0.6155136823654175
+              ]
+            },
+            "seed": 1303,
+            "summary": {
+              "architecture": "state_full",
+              "best_val_loss": 0.15559052254720807,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_full_route_only_oracle_r1303.pt",
+              "condition": "route_only_oracle",
+              "config": {
+                "architecture": "state_full",
+                "condition": "route_only_oracle",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 32,
+              "name": "state_full_route_only_oracle_r1303",
+              "router_seed": 1303,
+              "signature": "5d9a9954371888e961bb5232a43d33e890eb01122c30ffbd2bb81172901da711",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.1652788374818696
+          },
+          {
+            "a_effect_ade": 0.1381120553655723,
+            "a_gate_means": {
+              "0": [
+                0.3202407956123352
+              ],
+              "1": [
+                0.34293514490127563
+              ],
+              "2": [
+                0.38879889249801636
+              ],
+              "3": [
+                0.6467189192771912
+              ]
+            },
+            "b_effect_ade": 0.16114965260119013,
+            "b_gate_means": {
+              "0": [
+                0.320130318403244
+              ],
+              "1": [
+                0.3485327959060669
+              ],
+              "2": [
+                0.3909890949726105
+              ],
+              "3": [
+                0.6469249129295349
+              ]
+            },
+            "seed": 1505,
+            "summary": {
+              "architecture": "state_full",
+              "best_val_loss": 0.16449604059162462,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_full_route_only_oracle_r1505.pt",
+              "condition": "route_only_oracle",
+              "config": {
+                "architecture": "state_full",
+                "condition": "route_only_oracle",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 40,
+              "name": "state_full_route_only_oracle_r1505",
+              "router_seed": 1505,
+              "signature": "67e174a99c70207494bfbef790e9a05b4e7c2fae8eec10001f4c1e1fc1981f12",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.16093981982172598
+          }
+        ],
+        "uniform_suffix": [
+          {
+            "a_effect_ade": 0.26417432226160215,
+            "a_gate_means": {
+              "0": [
+                1.0
+              ],
+              "1": [
+                1.0
+              ],
+              "2": [
+                1.0
+              ],
+              "3": [
+                1.0
+              ]
+            },
+            "b_effect_ade": 0.2729390466232623,
+            "b_gate_means": {
+              "0": [
+                1.0
+              ],
+              "1": [
+                1.0
+              ],
+              "2": [
+                1.0
+              ],
+              "3": [
+                1.0
+              ]
+            },
+            "seed": 1101,
+            "summary": {
+              "architecture": "state_full",
+              "best_val_loss": 0.29368778993979733,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_full_uniform_suffix_r1101.pt",
+              "condition": "uniform_suffix",
+              "config": {
+                "architecture": "state_full",
+                "condition": "uniform_suffix",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 27,
+              "name": "state_full_uniform_suffix_r1101",
+              "router_seed": 1101,
+              "signature": "64ece4e463f0a090e1fbee04cd534af8ae40e813f982d7f3299effb19abdb8ea",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.28008178434141856
+          },
+          {
+            "a_effect_ade": 0.2420246070156107,
+            "a_gate_means": {
+              "0": [
+                1.0
+              ],
+              "1": [
+                1.0
+              ],
+              "2": [
+                1.0
+              ],
+              "3": [
+                1.0
+              ]
+            },
+            "b_effect_ade": 0.2643108187725928,
+            "b_gate_means": {
+              "0": [
+                1.0
+              ],
+              "1": [
+                1.0
+              ],
+              "2": [
+                1.0
+              ],
+              "3": [
+                1.0
+              ]
+            },
+            "seed": 1303,
+            "summary": {
+              "architecture": "state_full",
+              "best_val_loss": 0.27101270454063947,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_full_uniform_suffix_r1303.pt",
+              "condition": "uniform_suffix",
+              "config": {
+                "architecture": "state_full",
+                "condition": "uniform_suffix",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 33,
+              "name": "state_full_uniform_suffix_r1303",
+              "router_seed": 1303,
+              "signature": "4cddc730741c5c4832290155e974fb08b3a1a47e12a489f6b878ba50f069c096",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.26028416692625284
+          },
+          {
+            "a_effect_ade": 0.23369875557212866,
+            "a_gate_means": {
+              "0": [
+                1.0
+              ],
+              "1": [
+                1.0
+              ],
+              "2": [
+                1.0
+              ],
+              "3": [
+                1.0
+              ]
+            },
+            "b_effect_ade": 0.250454644501451,
+            "b_gate_means": {
+              "0": [
+                1.0
+              ],
+              "1": [
+                1.0
+              ],
+              "2": [
+                1.0
+              ],
+              "3": [
+                1.0
+              ]
+            },
+            "seed": 1505,
+            "summary": {
+              "architecture": "state_full",
+              "best_val_loss": 0.2856378766274266,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_full_uniform_suffix_r1505.pt",
+              "condition": "uniform_suffix",
+              "config": {
+                "architecture": "state_full",
+                "condition": "uniform_suffix",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 30,
+              "name": "state_full_uniform_suffix_r1505",
+              "router_seed": 1505,
+              "signature": "c1e19497309930d2e9408ee27d4f861a8891a7ea85ce97f667e8d4e966e25c61",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.26321869584212587
+          }
+        ]
+      },
+      "validation_ade": 0.15990375199070164
+    },
+    "state_two_channel": {
+      "a_bootstrap": {
+        "ci80_lower": 0.36807942276693106,
+        "ci80_upper": 0.4274767457995615,
+        "point": 0.3983305583280313
+      },
+      "a_point": 0.3980904188073353,
+      "a_rel_improvements": [
+        0.42094228902521,
+        0.35807714782144084,
+        0.4152518195753552
+      ],
+      "b_bootstrap": {
+        "ci80_lower": 0.3268425121753201,
+        "ci80_upper": 0.3767484951395766,
+        "point": 0.3518591447274927
+      },
+      "b_point": 0.35167251689169715,
+      "b_rel_improvements": [
+        0.37513117282705416,
+        0.321973814382325,
+        0.3579125634657122
+      ],
+      "passed": true,
+      "runs": {
+        "route_only_oracle": [
+          {
+            "a_effect_ade": 0.15013685353578882,
+            "a_gate_means": {
+              "0": [
+                0.33701974153518677,
+                0.36581236124038696
+              ],
+              "1": [
+                0.3907342553138733,
+                0.3942776024341583
+              ],
+              "2": [
+                0.3987572491168976,
+                0.4028211534023285
+              ],
+              "3": [
+                0.6075859069824219,
+                0.6088473796844482
+              ]
+            },
+            "b_effect_ade": 0.17132239897016557,
+            "b_gate_means": {
+              "0": [
+                0.33695194125175476,
+                0.36567071080207825
+              ],
+              "1": [
+                0.4000111222267151,
+                0.39961084723472595
+              ],
+              "2": [
+                0.4011137783527374,
+                0.40537402033805847
+              ],
+              "3": [
+                0.607502818107605,
+                0.6070317029953003
+              ]
+            },
+            "seed": 1101,
+            "summary": {
+              "architecture": "state_two_channel",
+              "best_val_loss": 0.17131714045850147,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_two_channel_route_only_oracle_r1101.pt",
+              "condition": "route_only_oracle",
+              "config": {
+                "architecture": "state_two_channel",
+                "condition": "route_only_oracle",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 33,
+              "name": "state_two_channel_route_only_oracle_r1101",
+              "router_seed": 1101,
+              "signature": "1d54d04cc7610178993c1e9426a31e3bbe28c7226efd6d5d57f1362d0375c656",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.17088862347569553
+          },
+          {
+            "a_effect_ade": 0.15752605991983845,
+            "a_gate_means": {
+              "0": [
+                0.33396852016448975,
+                0.36076200008392334
+              ],
+              "1": [
+                0.3651951253414154,
+                0.400470107793808
+              ],
+              "2": [
+                0.3935398757457733,
+                0.40199199318885803
+              ],
+              "3": [
+                0.6134500503540039,
+                0.6068462133407593
+              ]
+            },
+            "b_effect_ade": 0.17950516604351285,
+            "b_gate_means": {
+              "0": [
+                0.33388128876686096,
+                0.36060982942581177
+              ],
+              "1": [
+                0.37395045161247253,
+                0.4059402644634247
+              ],
+              "2": [
+                0.3961310386657715,
+                0.4046187996864319
+              ],
+              "3": [
+                0.613808810710907,
+                0.6043694615364075
+              ]
+            },
+            "seed": 1303,
+            "summary": {
+              "architecture": "state_two_channel",
+              "best_val_loss": 0.15477298383291974,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_two_channel_route_only_oracle_r1303.pt",
+              "condition": "route_only_oracle",
+              "config": {
+                "architecture": "state_two_channel",
+                "condition": "route_only_oracle",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 34,
+              "name": "state_two_channel_route_only_oracle_r1303",
+              "router_seed": 1303,
+              "signature": "5e8ce14f764053f767dc0d2122c19855281617352612d7729093fed26269bbb6",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.17031551540685963
+          },
+          {
+            "a_effect_ade": 0.13875855765526507,
+            "a_gate_means": {
+              "0": [
+                0.3087051212787628,
+                0.35912972688674927
+              ],
+              "1": [
+                0.35219401121139526,
+                0.37342479825019836
+              ],
+              "2": [
+                0.38469401001930237,
+                0.41261929273605347
+              ],
+              "3": [
+                0.6279454827308655,
+                0.6309223175048828
+              ]
+            },
+            "b_effect_ade": 0.1624434266365919,
+            "b_gate_means": {
+              "0": [
+                0.30865195393562317,
+                0.35897499322891235
+              ],
+              "1": [
+                0.3602057099342346,
+                0.3778030276298523
+              ],
+              "2": [
+                0.38727378845214844,
+                0.4162333905696869
+              ],
+              "3": [
+                0.6282299160957336,
+                0.629129946231842
+              ]
+            },
+            "seed": 1505,
+            "summary": {
+              "architecture": "state_two_channel",
+              "best_val_loss": 0.16014159724033303,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_two_channel_route_only_oracle_r1505.pt",
+              "condition": "route_only_oracle",
+              "config": {
+                "architecture": "state_two_channel",
+                "condition": "route_only_oracle",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 40,
+              "name": "state_two_channel_route_only_oracle_r1505",
+              "router_seed": 1505,
+              "signature": "f4ccac57a2ba85c85a030bc78fc362343fc9d5328b4998f179df64ae96508e22",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.16210485020071777
+          }
+        ],
+        "uniform_suffix": [
+          {
+            "a_effect_ade": 0.25927787626391735,
+            "a_gate_means": {
+              "0": [
+                1.0,
+                1.0
+              ],
+              "1": [
+                1.0,
+                1.0
+              ],
+              "2": [
+                1.0,
+                1.0
+              ],
+              "3": [
+                1.0,
+                1.0
+              ]
+            },
+            "b_effect_ade": 0.2741733809082277,
+            "b_gate_means": {
+              "0": [
+                1.0,
+                1.0
+              ],
+              "1": [
+                1.0,
+                1.0
+              ],
+              "2": [
+                1.0,
+                1.0
+              ],
+              "3": [
+                1.0,
+                1.0
+              ]
+            },
+            "seed": 1101,
+            "summary": {
+              "architecture": "state_two_channel",
+              "best_val_loss": 0.2759048010760832,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_two_channel_uniform_suffix_r1101.pt",
+              "condition": "uniform_suffix",
+              "config": {
+                "architecture": "state_two_channel",
+                "condition": "uniform_suffix",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 26,
+              "name": "state_two_channel_uniform_suffix_r1101",
+              "router_seed": 1101,
+              "signature": "c619ebf9b068a3e6a053c16bba190d33303ceb3632446a5ae04022e8bbef1515",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.27927740412475033
+          },
+          {
+            "a_effect_ade": 0.24539718345471917,
+            "a_gate_means": {
+              "0": [
+                1.0,
+                1.0
+              ],
+              "1": [
+                1.0,
+                1.0
+              ],
+              "2": [
+                1.0,
+                1.0
+              ],
+              "3": [
+                1.0,
+                1.0
+              ]
+            },
+            "b_effect_ade": 0.264746657063083,
+            "b_gate_means": {
+              "0": [
+                1.0,
+                1.0
+              ],
+              "1": [
+                1.0,
+                1.0
+              ],
+              "2": [
+                1.0,
+                1.0
+              ],
+              "3": [
+                1.0,
+                1.0
+              ]
+            },
+            "seed": 1303,
+            "summary": {
+              "architecture": "state_two_channel",
+              "best_val_loss": 0.2703342601426362,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_two_channel_uniform_suffix_r1303.pt",
+              "condition": "uniform_suffix",
+              "config": {
+                "architecture": "state_two_channel",
+                "condition": "uniform_suffix",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 37,
+              "name": "state_two_channel_uniform_suffix_r1303",
+              "router_seed": 1303,
+              "signature": "b9e213afe8373f9d1b1e0914da3b61ff23f5184fd66ae287498a63df9e49c419",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.2700894156626191
+          },
+          {
+            "a_effect_ade": 0.23729626239195553,
+            "a_gate_means": {
+              "0": [
+                1.0,
+                1.0
+              ],
+              "1": [
+                1.0,
+                1.0
+              ],
+              "2": [
+                1.0,
+                1.0
+              ],
+              "3": [
+                1.0,
+                1.0
+              ]
+            },
+            "b_effect_ade": 0.25299268821298193,
+            "b_gate_means": {
+              "0": [
+                1.0,
+                1.0
+              ],
+              "1": [
+                1.0,
+                1.0
+              ],
+              "2": [
+                1.0,
+                1.0
+              ],
+              "3": [
+                1.0,
+                1.0
+              ]
+            },
+            "seed": 1505,
+            "summary": {
+              "architecture": "state_two_channel",
+              "best_val_loss": 0.2908532247424162,
+              "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_two_channel_uniform_suffix_r1505.pt",
+              "condition": "uniform_suffix",
+              "config": {
+                "architecture": "state_two_channel",
+                "condition": "uniform_suffix",
+                "hidden_dim": 64,
+                "horizon": 20,
+                "response_feature_dim": 32
+              },
+              "epochs_run": 33,
+              "name": "state_two_channel_uniform_suffix_r1505",
+              "router_seed": 1505,
+              "signature": "30827af2841f0721cfd0a20360acc0fd915ecacb44664984c5a40519ac7029cc",
+              "state": "COMPLETE"
+            },
+            "validation_effect_ade": 0.26034319273127454
+          }
+        ]
+      },
+      "validation_ade": 0.16776966302775764
+    }
+  },
+  "passed": true,
+  "selected_architecture": "state_full",
+  "status": "ORACLE_HEADROOM_SCREENED"
+}

@@ -1,0 +1,13 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4B-RISK-CONFIRM-2026-09-15-V0.1",
+  "type": "pre_inference_engineering_code_fix",
+  "file": "code/ac_twin/stage4b_inference.py",
+  "fixes": [
+    "run_pair_inference: slice history/factual_suffix/factual_actions/counterfactual_actions to the requested episode indices before build_router_features (subset alignment); bit-identical for the full-set pass",
+    "run_pair_inference: unpack build_router_features triple (features, response_only, meta)"
+  ],
+  "reason": "two engineering bugs crashed infer-confirm before any receipt was written; no prediction, risk score, risk_target or confirmation_used.lock was produced, so no Stage 4B scientific product was consumed",
+  "scientific_effect": "none; seed schedule, selected_n, frozen Stage 4A chain and collected confirm data are unchanged (schedule sha256 + selected_n verified identical to the archived premature lock)",
+  "fixed_at": "2026-09-15T17:23:48",
+  "archived_premature_lock": "protocol_archive_preinferencefix_v1/protocol_lock.json"
+}

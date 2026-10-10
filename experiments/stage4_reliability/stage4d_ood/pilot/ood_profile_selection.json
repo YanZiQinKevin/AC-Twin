@@ -1,0 +1,22 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "priority": [
+    "JOINT_OOD",
+    "BEHAVIOR_OOD",
+    "GEOMETRY_OOD"
+  ],
+  "qualified": {
+    "BEHAVIOR_OOD": false,
+    "GEOMETRY_OOD": true,
+    "JOINT_OOD": true
+  },
+  "report_sha256": {
+    "BEHAVIOR_OOD": "e713267827b62b7e73964237562c23e3a5664818f4847573a92a3c5f3077adfc",
+    "GEOMETRY_OOD": "86e5312d601a366c0c5d94666c0ede674e210a3d4b817da9f3908f6c96422377",
+    "JOINT_OOD": "95831726372e216741d77980e1c720c162d2f7174719fd8fcf7bbc3d781e2077"
+  },
+  "selected_profile": "JOINT_OOD",
+  "selection_basis": "integrity + pre-intervention domain shift + task support ONLY; no Direct/risk effect read (plan \u00a75.3, Global Constraint 3)",
+  "status": "D0_PROFILE_SELECTED",
+  "written_at": "2026-09-20T14:11:08"
+}

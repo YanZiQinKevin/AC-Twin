@@ -1,0 +1,24 @@
+{
+  "d2e_final_selection_sha256": "c2236a9b7798c702cbe6651c30fcac41d037343b3fd7eb984e75495c25e65259",
+  "d2e_riskfit_receipt_sha256": "c0d8d251c3116bc79aadfcb78a7699e637abe460dd6f197a47d3768fbb645145",
+  "determinism_receipt_sha256": "5ac5d8838fb6b88c25be23c882e3de20099decfa4a051796d490b5e994e77e8f",
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "inference_inputs_sha256": "f7175e87e22af9e2dcd40b649be4f7d4583665b5eee1bfeeb6b05bd6aad52b91",
+  "model_seeds": [
+    9101,
+    9202,
+    9303,
+    9404,
+    9505
+  ],
+  "n_groups": 1000,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "role": "development_screen",
+  "scorer_parity_receipt_sha256": "1527029a3e40faa3388b2013567d54edea7f2beeb43af00ef7b40d6e27864dda",
+  "scores_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2f\\development\\screen_scores.npz",
+  "scores_sha256": "d15a7b94c807dcf1dba72ac63cf52fe568962e2d0d06b4c9a1411f63c8682e69",
+  "selected_ego_candidate": "EGO_TRAJECTORY_PLUS_RANK",
+  "split_receipt_sha256": "696a1440db12cfea55eb2ce0defec7ff596a9dc7fe0ac49b0ba9fd8a14115721",
+  "strongest_standard_baseline": "SEED_MARGIN_STD",
+  "written_at": "2026-09-25T04:03:12"
+}

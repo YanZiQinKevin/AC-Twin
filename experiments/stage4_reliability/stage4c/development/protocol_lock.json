@@ -1,0 +1,111 @@
+{
+  "action_plans": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "checkpoint_sha256": {
+    "end_to_end_mixture_pair0_s1101": "b615e7f7b00cab9452e9a9628930641910a60b602896e50e2302ef4046b25c0e",
+    "end_to_end_mixture_pair1_s1202": "082dd9cde4e5702a708b340e7c76760f7d0606ff60d6e3e0496cc09c52e2a60b",
+    "end_to_end_mixture_pair2_s1303": "5a377f02788801ddc5135fa2d4a470e86f14fb53780acb7bd76f4fcdf2d1a70a",
+    "end_to_end_mixture_pair3_s1404": "de1b3f7d19e70eeb0a90db8b7a101cf5ef738414a6920117f7c3e18ddbd35965",
+    "end_to_end_mixture_pair4_s1505": "8dad5f3ec53cada1b9776a2cf1c6f9ddc09e6e0f529fb2bf68711bc04964e538",
+    "pair0_fulltrain_full_seed1101": "13a7c61b180b6e71fbb7887282602347917d06c9f296c3c656d47f2574cc009b",
+    "pair0_fulltrain_history_seed1101": "40f2b550591b27672a38c49afd01b65eca6fe8a8695a654c24c7ec39a857d414",
+    "pair1_fulltrain_full_seed1202": "74f697a05b96ede74a6f049f8897da3bd2a506f072a4b71f4679ca5319c74590",
+    "pair1_fulltrain_history_seed1202": "cdd975b51a4067c0c382d000c260e6dd4a20acaa4374ee15684ab6cdd431abbc",
+    "pair2_fulltrain_full_seed1303": "9c3bb5848c1ef5ebf64146040427da02d3e4bb2986756570f2e0791bf2242382",
+    "pair2_fulltrain_history_seed1303": "1cd6769a47972437565d9171284a19df24ea18a723efc31dc46eaeee321bcea8",
+    "pair3_fulltrain_full_seed1404": "494fcc586b07c31265e14b066f6e9e1d2e80b1173a593cd117d13e166d32bfdb",
+    "pair3_fulltrain_history_seed1404": "dbde2b5fb1220c1f4cb23174cd246f5d73a860d310bdc1f3462f9e437c88779a",
+    "pair4_fulltrain_full_seed1505": "9db58c01b836d067d07f8bab190f9d1d76e9d6ea81920c7d7b75ee21500988f7",
+    "pair4_fulltrain_history_seed1505": "584292117ceb780263d7ead9cf2b2b3a3d9b57aeec6f3dad3ab78104d22d60ae"
+  },
+  "code_sha256": {
+    "ac_twin/stage4c_inference.py": "c3f66b3d81643658aa957a848723ae9f9c384699adf90ae92dde1b9a1308c4bd",
+    "ac_twin/stage4c_objective.py": "a20da1805c14b57bc2ad02f363133b7c53c480909190f52fa5a1cc09964ac44e",
+    "ac_twin/stage4c_power.py": "4bf39e1f7e8ef937f43ed5ed17f74e353dd96ee04ff3b320dbb2fd1b14ea077e",
+    "ac_twin/stage4c_protocol.py": "afb3faa368429fbe558275027eece657130c4c6696725b90631459bc2246d4f7",
+    "ac_twin/stage4c_statistics.py": "07ac01bf3b4e35af062c0e49f3c5631354b63e8ebdd9169611de2083453eb851",
+    "collect_stage4c_merge_multiaction.py": "b9974262b9987316325fc95cf7408350df207be09dbfdd5188261a6a727fde6f",
+    "run_stage4c.py": "2a389111dd9afd2e4e2e5cfaede6b814939f26a79190e201d11044e0000ff1b8"
+  },
+  "config_sha256": "358105ba696d3dd84d8e2513c460d4c86fefab868d16cdc6dfd31eb7b3704422",
+  "config_signature": "04ad4f8e50144fd380834810193ea4353541b87e017d318090468c34691a4991",
+  "dev_schedule_sha256": "804d639a5ade54306380b98680da91ea87f473c26fc3cd83751e4b21e25de19f",
+  "dev_schedule_size": 5000,
+  "dev_screen_groups": 300,
+  "dev_seed_entropy": 2026091801,
+  "dev_selection_groups": 500,
+  "n_historical_episode_seeds": 29224,
+  "plan_id": "AC-TWIN-RFER-STAGE4C-MULTIACTION-REGRET-2026-09-15-V0.1",
+  "purpose_dev": "stage4c_merge_multiaction_dev",
+  "scaler_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\scaler.json",
+  "scaler_sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181",
+  "screen_segment": [
+    2500,
+    5000
+  ],
+  "seed_schedule_zero_overlap": true,
+  "selection_segment": [
+    0,
+    2500
+  ],
+  "stage3b_binding_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3b\\input_binding_receipt.json",
+  "stage3b_binding_sha256": "881a73c3fd9e378a97e16bdf1a09316119272960b3ba0a730f315474a2d14490",
+  "stage4_paths": {
+    "finalist_risk_model": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_mlp.pt",
+    "geometry_risk_model": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\geometry_only_ridge.pt",
+    "scaler": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\scaler.json",
+    "stage4a_candidate_selection": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v4\\risk\\candidate_selection.json",
+    "stage4b_confirmatory_report": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\reports\\stage4b_confirmatory_report.json",
+    "stage4b_decision": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\reports\\STAGE4B_CONFIRMATORY_DECISION.md",
+    "stage4b_protocol_lock": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\protocol\\protocol_lock.json"
+  },
+  "stage4_sha256": {
+    "finalist_risk_model": "4a5108030536a2838bac868e3f7da19cc0295fe5164da154b7ee1e8d87bc8edc",
+    "geometry_risk_model": "602d32a6aeb74f998a6c41151b7b7338d354022098bc2e29af60935f996b8bd9",
+    "scaler": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181",
+    "stage4a_candidate_selection": "b056593c06d0968f71f3af257e0a28e1d4fa2b6928e9bde27f451bf73ce579b0",
+    "stage4b_confirmatory_report": "f6ab4012ba31ed58594fd596bc0c4a1f5bef2cfd0b326d585deaf18976e9bba2",
+    "stage4b_decision": "2cedbf99be3d1d5463cb8896767a92f85df93696eb9d5033aeac140a850c5f2b",
+    "stage4b_protocol_lock": "8cdb6ff85514ec16e96eae5999f35458829efa9a6280055709e6f8e0e81aa517"
+  }
+}

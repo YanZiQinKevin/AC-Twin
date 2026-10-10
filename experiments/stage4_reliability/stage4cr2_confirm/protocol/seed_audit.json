@@ -1,0 +1,15 @@
+{
+  "confirm": {
+    "n_inventory": 420804,
+    "n_schedule": 12000,
+    "overlap": [],
+    "zero_overlap": true
+  },
+  "mutual_overlap": [],
+  "smoke": {
+    "n_inventory": 420804,
+    "n_schedule": 64,
+    "overlap": [],
+    "zero_overlap": true
+  }
+}

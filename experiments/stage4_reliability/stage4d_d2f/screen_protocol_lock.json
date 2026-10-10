@@ -1,0 +1,53 @@
+{
+  "bindings": {
+    "code_inventory_sha256": "19016c30c1ef6a2891992db772fa179ff8de24a1819e800d1ba12b4deecbe7d6",
+    "fresh_id_verification_sha256": "863b2d6acfe2249e0a6256aa253c6efa8f5e2e8a62b24ae7eb4f182a8913f655",
+    "model_inventory_sha256": "3ba5611ec54a079b89510214b6d38983f422ba74040af9d704ddc084c6138aa8",
+    "post_smoke_audit_sha256": "1e2f89b7674142102a9249bd92aef5a7fb3dc1c5baeb6c723ca8048732046d55",
+    "power_report_sha256": "e58cd3ccfbcfbcafc3aa9a45f07f4397c703c4d6c417c31cdb0ccaf3a3df5455",
+    "screen_manifest_sha256": "a01b5faff18c4609d01d126d8d84e4d303496f8e3d330a5d515ed390e332c2cd",
+    "source_binding_sha256": "1fa138c41e93fe57ac6553db9efec621fade9ac578a327999d7d6040c0def052"
+  },
+  "bootstrap": {
+    "confidence": 0.8,
+    "entropy": 2026122407,
+    "resamples": 10000,
+    "unit": "whole-group paired"
+  },
+  "create_once": true,
+  "gates": {
+    "baseline_source": "D2E validation_report candidate_gate[EGO_TRAJECTORY_PLUS_RANK].strongest_baseline (repaired-pipeline old validation, frozen)",
+    "frozen_primary_baseline": "SEED_MARGIN_STD",
+    "risk_x_dev": {
+      "r1": "I_AURC >= 0.05 and CI lower > 0",
+      "r2": "I_REGRET80 >= 0.03 and CI lower > 0",
+      "r3": "PR-AUC minus prevalence > 0 (point + CI lower)",
+      "r4": ">= 4/5 seeds both improvements positive",
+      "r5": "baseline denominators valid",
+      "r6": "no leak / no baseline swap / no model swap (QA)"
+    },
+    "task_x_dev": {
+      "c1": "groups == 1000 and all QA flags",
+      "c2": "high-regret frac >= 0.15",
+      "c3": ">= 3 oracle actions each >= 0.05",
+      "c4": "branch Spearman 80% CI lower > 0",
+      "c5": "base beats random (point + CI lower > 0) and base mean regret <= idle + 1e-12",
+      "c6": "reactive frac >= 0.2",
+      "c7": "every stratum frac >= 0.1",
+      "c8": "denominators / projection / evaluation mask non-degenerate"
+    }
+  },
+  "one_shot": "split -> score (truth-free) -> >=32-group determinism -> freeze scores -> burn development_screen_used.lock -> the SINGLE adjudication opens the sealed truth; no rerun / resample / baseline / model / threshold change after any failure (plan 3.5)",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "role": "development_screen",
+  "salt": "AC-TWIN-D2F-V0.1|",
+  "screen_groups": 1000,
+  "selected_n": 1000,
+  "terminal_states": {
+    "both_pass": "D2F_DEV_READY_FOR_CONFIRM_POWER",
+    "invalid": "INCONCLUSIVE_D2F_EXTERNAL_INVALID",
+    "risk_fail": "D2F_EXTERNAL_DEV_RISK_NOT_READY",
+    "task_fail": "D2F_EXTERNAL_DEV_TASK_NOT_READY"
+  },
+  "written_at": "2026-09-25T00:30:23"
+}

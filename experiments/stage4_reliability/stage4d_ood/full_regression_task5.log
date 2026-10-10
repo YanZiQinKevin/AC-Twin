@@ -1,0 +1,299 @@
+........................................................................ [  4%]
+........................................................................ [  8%]
+........................................................................ [ 12%]
+........................................................................ [ 16%]
+............................................................F.......FFFF [ 20%]
+........................................................................ [ 24%]
+...F.................................................................... [ 29%]
+........................................................................ [ 33%]
+........................................................................ [ 37%]
+........................................................................ [ 41%]
+........................................................................ [ 45%]
+........................................................................ [ 49%]
+........................................................................ [ 53%]
+........................................................................ [ 58%]
+........................................................................ [ 62%]
+........................................................................ [ 66%]
+.....................................................F.................. [ 70%]
+........................................................................ [ 74%]
+........................................................................ [ 78%]
+........................................................................ [ 83%]
+........................................................................ [ 87%]
+........................................................................ [ 91%]
+........................................................................ [ 95%]
+........................................................................ [ 99%]
+......                                                                   [100%]
+================================== FAILURES ===================================
+___________ test_frozen_collection_seed_has_zero_historical_overlap ___________
+
+    def test_frozen_collection_seed_has_zero_historical_overlap():
+        """The frozen collection_seed must yield a schedule disjoint from history."""
+        historical = sp.scan_historical_episode_seeds(ROOT / "data")
+        schedule = sp.make_seed_schedule(20270999, size=18000)
+>       sp.validate_seed_schedule(schedule, historical)  # must not raise
+
+tests\test_stage2_protocol.py:143: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+schedule = array([2070487162, 1330091821,  684154498, ...,  454369454, 1880773264,
+       1678815635], dtype=int64)
+historical = array([     21758,      22088,      67696, ..., 2147234234, 2147243773,
+       2147469639], dtype=int64)
+
+    def validate_seed_schedule(schedule: np.ndarray, historical: np.ndarray) -> None:
+        """Raise unless the schedule is in-range, internally unique and disjoint."""
+        schedule = np.asarray(schedule, dtype=np.int64)
+        historical = np.asarray(historical, dtype=np.int64)
+        if schedule.size == 0:
+            raise ValueError("seed schedule must be non-empty")
+        if int(schedule.min()) < SEED_LOW or int(schedule.max()) > SEED_HIGH_EXCLUSIVE - 1:
+            raise ValueError(
+                f"seed schedule out of range [{SEED_LOW}, {SEED_HIGH_EXCLUSIVE - 1}]")
+        if len(np.unique(schedule)) != schedule.size:
+            raise ValueError("seed schedule contains duplicate seeds")
+        overlap = np.intersect1d(schedule, historical)
+        if overlap.size:
+>           raise ValueError(
+                f"seed schedule overlaps {overlap.size} historical episode seed(s); "
+                "change collection_seed and re-lock")
+E           ValueError: seed schedule overlaps 1 historical episode seed(s); change collection_seed and re-lock
+
+code\ac_twin\stage2_protocol.py:301: ValueError
+__________ test_write_protocol_lock_creates_lock_schedule_and_params __________
+
+tmp_path = WindowsPath('C:/Users/Administrator/AppData/Local/Temp/pytest-of-Administrator/pytest-412/test_write_protocol_lock_creat0')
+
+    def test_write_protocol_lock_creates_lock_schedule_and_params(tmp_path):
+        out_dir = tmp_path / "merge"
+>       lock = sp.write_protocol_lock(
+            CONFIRM_CONFIG, out_dir, params_provider=_stub_params_provider)
+
+tests\test_stage2_protocol.py:221: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\ac_twin\stage2_protocol.py:543: in write_protocol_lock
+    validate_seed_schedule(schedule, historical)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+schedule = array([2070487162, 1330091821,  684154498, ...,  454369454, 1880773264,
+       1678815635], dtype=int64)
+historical = array([     21758,      22088,      67696, ..., 2147234234, 2147243773,
+       2147469639], dtype=int64)
+
+    def validate_seed_schedule(schedule: np.ndarray, historical: np.ndarray) -> None:
+        """Raise unless the schedule is in-range, internally unique and disjoint."""
+        schedule = np.asarray(schedule, dtype=np.int64)
+        historical = np.asarray(historical, dtype=np.int64)
+        if schedule.size == 0:
+            raise ValueError("seed schedule must be non-empty")
+        if int(schedule.min()) < SEED_LOW or int(schedule.max()) > SEED_HIGH_EXCLUSIVE - 1:
+            raise ValueError(
+                f"seed schedule out of range [{SEED_LOW}, {SEED_HIGH_EXCLUSIVE - 1}]")
+        if len(np.unique(schedule)) != schedule.size:
+            raise ValueError("seed schedule contains duplicate seeds")
+        overlap = np.intersect1d(schedule, historical)
+        if overlap.size:
+>           raise ValueError(
+                f"seed schedule overlaps {overlap.size} historical episode seed(s); "
+                "change collection_seed and re-lock")
+E           ValueError: seed schedule overlaps 1 historical episode seed(s); change collection_seed and re-lock
+
+code\ac_twin\stage2_protocol.py:301: ValueError
+____________________ test_lock_records_all_required_hashes ____________________
+
+tmp_path = WindowsPath('C:/Users/Administrator/AppData/Local/Temp/pytest-of-Administrator/pytest-412/test_lock_records_all_required0')
+
+    def test_lock_records_all_required_hashes(tmp_path):
+        out_dir = tmp_path / "merge"
+>       sp.write_protocol_lock(CONFIRM_CONFIG, out_dir, params_provider=_stub_params_provider)
+
+tests\test_stage2_protocol.py:233: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\ac_twin\stage2_protocol.py:543: in write_protocol_lock
+    validate_seed_schedule(schedule, historical)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+schedule = array([2070487162, 1330091821,  684154498, ...,  454369454, 1880773264,
+       1678815635], dtype=int64)
+historical = array([     21758,      22088,      67696, ..., 2147234234, 2147243773,
+       2147469639], dtype=int64)
+
+    def validate_seed_schedule(schedule: np.ndarray, historical: np.ndarray) -> None:
+        """Raise unless the schedule is in-range, internally unique and disjoint."""
+        schedule = np.asarray(schedule, dtype=np.int64)
+        historical = np.asarray(historical, dtype=np.int64)
+        if schedule.size == 0:
+            raise ValueError("seed schedule must be non-empty")
+        if int(schedule.min()) < SEED_LOW or int(schedule.max()) > SEED_HIGH_EXCLUSIVE - 1:
+            raise ValueError(
+                f"seed schedule out of range [{SEED_LOW}, {SEED_HIGH_EXCLUSIVE - 1}]")
+        if len(np.unique(schedule)) != schedule.size:
+            raise ValueError("seed schedule contains duplicate seeds")
+        overlap = np.intersect1d(schedule, historical)
+        if overlap.size:
+>           raise ValueError(
+                f"seed schedule overlaps {overlap.size} historical episode seed(s); "
+                "change collection_seed and re-lock")
+E           ValueError: seed schedule overlaps 1 historical episode seed(s); change collection_seed and re-lock
+
+code\ac_twin\stage2_protocol.py:301: ValueError
+_______________________ test_lock_refuses_to_overwrite ________________________
+
+tmp_path = WindowsPath('C:/Users/Administrator/AppData/Local/Temp/pytest-of-Administrator/pytest-412/test_lock_refuses_to_overwrite0')
+
+    def test_lock_refuses_to_overwrite(tmp_path):
+        out_dir = tmp_path / "merge"
+>       sp.write_protocol_lock(CONFIRM_CONFIG, out_dir, params_provider=_stub_params_provider)
+
+tests\test_stage2_protocol.py:258: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\ac_twin\stage2_protocol.py:543: in write_protocol_lock
+    validate_seed_schedule(schedule, historical)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+schedule = array([2070487162, 1330091821,  684154498, ...,  454369454, 1880773264,
+       1678815635], dtype=int64)
+historical = array([     21758,      22088,      67696, ..., 2147234234, 2147243773,
+       2147469639], dtype=int64)
+
+    def validate_seed_schedule(schedule: np.ndarray, historical: np.ndarray) -> None:
+        """Raise unless the schedule is in-range, internally unique and disjoint."""
+        schedule = np.asarray(schedule, dtype=np.int64)
+        historical = np.asarray(historical, dtype=np.int64)
+        if schedule.size == 0:
+            raise ValueError("seed schedule must be non-empty")
+        if int(schedule.min()) < SEED_LOW or int(schedule.max()) > SEED_HIGH_EXCLUSIVE - 1:
+            raise ValueError(
+                f"seed schedule out of range [{SEED_LOW}, {SEED_HIGH_EXCLUSIVE - 1}]")
+        if len(np.unique(schedule)) != schedule.size:
+            raise ValueError("seed schedule contains duplicate seeds")
+        overlap = np.intersect1d(schedule, historical)
+        if overlap.size:
+>           raise ValueError(
+                f"seed schedule overlaps {overlap.size} historical episode seed(s); "
+                "change collection_seed and re-lock")
+E           ValueError: seed schedule overlaps 1 historical episode seed(s); change collection_seed and re-lock
+
+code\ac_twin\stage2_protocol.py:301: ValueError
+__________________ test_verify_lock_passes_and_detects_drift __________________
+
+tmp_path = WindowsPath('C:/Users/Administrator/AppData/Local/Temp/pytest-of-Administrator/pytest-412/test_verify_lock_passes_and_de0')
+
+    def test_verify_lock_passes_and_detects_drift(tmp_path):
+        out_dir = tmp_path / "merge"
+>       sp.write_protocol_lock(CONFIRM_CONFIG, out_dir, params_provider=_stub_params_provider)
+
+tests\test_stage2_protocol.py:265: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\ac_twin\stage2_protocol.py:543: in write_protocol_lock
+    validate_seed_schedule(schedule, historical)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+schedule = array([2070487162, 1330091821,  684154498, ...,  454369454, 1880773264,
+       1678815635], dtype=int64)
+historical = array([     21758,      22088,      67696, ..., 2147234234, 2147243773,
+       2147469639], dtype=int64)
+
+    def validate_seed_schedule(schedule: np.ndarray, historical: np.ndarray) -> None:
+        """Raise unless the schedule is in-range, internally unique and disjoint."""
+        schedule = np.asarray(schedule, dtype=np.int64)
+        historical = np.asarray(historical, dtype=np.int64)
+        if schedule.size == 0:
+            raise ValueError("seed schedule must be non-empty")
+        if int(schedule.min()) < SEED_LOW or int(schedule.max()) > SEED_HIGH_EXCLUSIVE - 1:
+            raise ValueError(
+                f"seed schedule out of range [{SEED_LOW}, {SEED_HIGH_EXCLUSIVE - 1}]")
+        if len(np.unique(schedule)) != schedule.size:
+            raise ValueError("seed schedule contains duplicate seeds")
+        overlap = np.intersect1d(schedule, historical)
+        if overlap.size:
+>           raise ValueError(
+                f"seed schedule overlaps {overlap.size} historical episode seed(s); "
+                "change collection_seed and re-lock")
+E           ValueError: seed schedule overlaps 1 historical episode seed(s); change collection_seed and re-lock
+
+code\ac_twin\stage2_protocol.py:301: ValueError
+___ test_frozen_collection_seeds_disjoint_from_live_history_and_each_other ____
+
+    def test_frozen_collection_seeds_disjoint_from_live_history_and_each_other():
+        """Every role's frozen collection seed must yield a schedule disjoint from
+        the live historical seed pool and from every other role (plan 3.2)."""
+        historical = sp.scan_historical_episode_seeds(ROOT / "data", ROOT / "experiments")
+        sizes = {"smoke": sp.SMOKE_SEED_SCHEDULE_SIZE,
+                 "pilot_a": sp.PILOT_MAX_ATTEMPTS, "pilot_b": sp.PILOT_MAX_ATTEMPTS,
+                 "development": sp.DEV_SEED_SCHEDULE_SIZE,
+                 "confirm": sp.DEV_SEED_SCHEDULE_SIZE}  # conservative cap for confirm
+        schedules = {role: sp.make_seed_schedule(sp.COLLECTION_SEEDS[role], size)
+                     for role, size in sizes.items()}
+        assert len(set(sp.COLLECTION_SEEDS.values())) == len(sp.COLLECTION_SEEDS)
+        for role, schedule in schedules.items():
+>           sp.validate_seed_schedule(schedule, historical)
+
+tests\test_stage2b_protocol.py:203: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+schedule = array([1091862156,  555139316,  802227386, ...,  251541957,  922579197,
+       1529639869], dtype=int64)
+historical = array([     13821,      21758,      22088, ..., 2147342841, 2147442060,
+       2147469639], dtype=int64)
+other_schedules = None
+
+    def validate_seed_schedule(schedule: np.ndarray, historical: np.ndarray,
+                               other_schedules: Mapping[str, np.ndarray] | None = None
+                               ) -> None:
+        """Raise unless in-range, internally unique and disjoint from history and
+        from every other Stage 2B role schedule supplied."""
+        schedule = np.asarray(schedule, dtype=np.int64)
+        historical = np.asarray(historical, dtype=np.int64)
+        if schedule.size == 0:
+            raise ValueError("seed schedule must be non-empty")
+        if int(schedule.min()) < SEED_LOW or int(schedule.max()) > SEED_HIGH_EXCLUSIVE - 1:
+            raise ValueError(
+                f"seed schedule out of range [{SEED_LOW}, {SEED_HIGH_EXCLUSIVE - 1}]")
+        if len(np.unique(schedule)) != schedule.size:
+            raise ValueError("seed schedule contains duplicate seeds")
+        overlap = np.intersect1d(schedule, historical)
+        if overlap.size:
+>           raise ValueError(
+                f"seed schedule overlaps {overlap.size} historical episode seed(s); "
+                "change the whole candidate schedule (collection_seed), never single seeds")
+E           ValueError: seed schedule overlaps 6 historical episode seed(s); change the whole candidate schedule (collection_seed), never single seeds
+
+code\ac_twin\stage2b_protocol.py:480: ValueError
+_____________ test_global_seed_audit_zero_overlap_real_workspace ______________
+
+    def test_global_seed_audit_zero_overlap_real_workspace():
+        cfg = _config()
+        confirm = prot.build_confirm_seed_schedule(cfg)
+        smoke = prot.build_smoke_seed_schedule(cfg)
+        roots = [ROOT / "data", ROOT / "experiments"]
+        audit_confirm = prot.audit_global_seed_overlap(confirm, roots)
+        audit_smoke = prot.audit_global_seed_overlap(smoke, roots)
+        assert audit_confirm.zero_overlap and audit_smoke.zero_overlap
+        prot.assert_seed_audit_clean(audit_confirm)
+        prot.assert_seed_audit_clean(audit_smoke)
+        # the inventory must include R2's FULL executed 60,000-seed reserved domain —
+        # an omission here is exactly the R2-history failure mode this stage must avoid.
+        inventory = prot.scan_historical_group_seeds(roots)
+        r2_domain = prot.r2_reserved_seed_domain()
+        assert np.isin(r2_domain, inventory).all()
+        # and the explicitly registered Stage 2B legacy (stale, never-persisted) domains.
+        for domain in prot.legacy_stage2b_candidate_domains().values():
+            assert np.isin(domain, inventory).all()
+        # pinned at the authoring-time synced composition: 420,762 from the plan precheck
+        # plus the 42 R2-namespace accepted/ledger seeds the old R2 scanner excluded and
+        # this stage must now count as history. Any drift fails loudly before lock.
+>       assert inventory.size == 420804
+E       assert 430859 == 420804
+E        +  where 430859 = array([      1548,      13821,      21758, ..., 2147461295, 2147469266,\n       2147469639], dtype=int64).size
+
+tests\test_stage4cr2_confirm_protocol.py:215: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_stage2_protocol.py::test_frozen_collection_seed_has_zero_historical_overlap
+FAILED tests/test_stage2_protocol.py::test_write_protocol_lock_creates_lock_schedule_and_params
+FAILED tests/test_stage2_protocol.py::test_lock_records_all_required_hashes
+FAILED tests/test_stage2_protocol.py::test_lock_refuses_to_overwrite - ValueE...
+FAILED tests/test_stage2_protocol.py::test_verify_lock_passes_and_detects_drift
+FAILED tests/test_stage2b_protocol.py::test_frozen_collection_seeds_disjoint_from_live_history_and_each_other
+FAILED tests/test_stage4cr2_confirm_protocol.py::test_global_seed_audit_zero_overlap_real_workspace
+7 failed, 1727 passed in 749.40s (0:12:29)
+EXIT=1

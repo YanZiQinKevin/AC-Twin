@@ -1,0 +1,20 @@
+{
+  "architecture": "state_full",
+  "best_val_loss": 0.31354997594147965,
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_uniform_suffix_r1202.pt",
+  "condition": "uniform_suffix",
+  "config": {
+    "architecture": "state_full",
+    "condition": "uniform_suffix",
+    "hidden_dim": 64,
+    "horizon": 20,
+    "response_feature_dim": 32,
+    "shape_lambda": 0.0,
+    "shape_margin": 0.1
+  },
+  "epochs_run": 18,
+  "name": "state_full_uniform_suffix_r1202",
+  "router_seed": 1202,
+  "signature": "492d6c162de1bc4369d36a3704b53686436e216e9ef231bbd1054af18c7dbfec",
+  "state": "COMPLETE"
+}

@@ -1,0 +1,100 @@
+{
+  "action_contract_sha256": "cab197f1c2e02010b4500ce643c29b99eaf1e3748f2e05597345ec52a4fab0ab",
+  "code_sha256": {
+    "code/ac_twin/stage4c_objective.py": "a20da1805c14b57bc2ad02f363133b7c53c480909190f52fa5a1cc09964ac44e",
+    "code/ac_twin/stage4c_protocol.py": "afb3faa368429fbe558275027eece657130c4c6696725b90631459bc2246d4f7",
+    "code/ac_twin/stage4d_external_features.py": "90e91accde21b1736650fb6fcceb7835f176bca670b85e84a867a71116e17489",
+    "code/collect_stage4d_external.py": "c9c3c45c7ad781ed5a363ee84131560d4fac90b7807c60312585cbed2621dd94",
+    "code/stage4d_action_contract.py": "c6d890c147ffe3815ae5426f7fa92235e4a9d5dda8fb5229592a6eda59174f98",
+    "code/stage4d_metadrive_adapter.py": "72171147a823b513dc1f3ba265dfef0c23e1e5c9330be454055128684b3035a0",
+    "code/stage4d_pilot_adjudicate.py": "5729e66b18b1adcaf7317822aae8a99a8811cdba34eeae29dcb94716752da05e"
+  },
+  "generated_at": "2026-09-22T05:48:39+0800",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "purpose": "bind adapter stack + frozen task contract by hash after D0-X qualification",
+  "status": "ADAPTER_CONTRACT_FROZEN",
+  "task_contract": {
+    "action_plans": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "action_weights": [
+      0.095,
+      0.45,
+      0.095,
+      0.18,
+      0.18
+    ],
+    "cf_actions": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "feature_names": [
+      "presence",
+      "is_ego",
+      "s",
+      "d",
+      "v_s",
+      "v_d",
+      "cos_heading_rel",
+      "sin_heading_rel"
+    ],
+    "future_len": 20,
+    "history_len": 10,
+    "idle_plan_index": 3,
+    "n_object_features": 8,
+    "native_dt": 0.1,
+    "native_per_policy": 2,
+    "object_capacity": 5,
+    "role_salt": "AC-TWIN-D2-V0.1|",
+    "t_star_candidates": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "condition_count": 7,
+  "data_sha256": "7b58eeada97725ba27c530c65b487f3f752b2bcbb3785f77f7d97df6358800e4",
+  "episode_count": 400,
+  "model_lock_sha256": "80ddd0762aa375e7c03bb0ee7edf94f46d9f08cc7958cc14234fff10691de139",
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "predictions_sha256": "03e72b168a2fc0ab75733ead50cf80c8a3bf8382c876c115f865248272563242",
+  "status": "RSCREEN_INFERENCE_COMPLETE"
+}

@@ -1,0 +1,8 @@
+[stage4cr2:power-diagnostic] loaded create-once screen quantities (sha256=d68a2c89d6e6бн); recomputing the 10000-draw whole-group paired bootstrap (entropy 2026092702) for the covariance
+[stage4cr2:power-diagnostic] bootstrap covariance ready; simulating the confirm AND-chain
+[stage4cr2:power-diagnostic] status=STAGE4CR2_DEV_READY_FOR_CONFIRMATION selected_n=2000
+{
+  "stage": "power-diagnostic",
+  "action": "executed",
+  "selected_n": 2000
+}

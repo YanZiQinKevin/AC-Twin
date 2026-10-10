@@ -1,0 +1,76 @@
+{
+  "chain": {
+    "v1_protocol_lock_path": "experiments\\stage4_reliability\\stage4a\\protocol\\protocol_lock.json",
+    "v1_protocol_lock_sha256": "6329051d235d50b9bb0db3f48681aa072b7807f244d4260227653e1dca24a3a1",
+    "v2_recovery_lock_path": "experiments\\stage4_reliability\\stage4a_v2\\protocol\\recovery_lock.json",
+    "v2_recovery_lock_sha256": "d168cc75ef9bd62caefe9f9efa5fa12cdba94d00f2c5f99d5b18d8d011fa5777"
+  },
+  "checkpoint_sha256": {
+    "end_to_end_mixture_pair0_s1101": "b615e7f7b00cab9452e9a9628930641910a60b602896e50e2302ef4046b25c0e",
+    "end_to_end_mixture_pair1_s1202": "082dd9cde4e5702a708b340e7c76760f7d0606ff60d6e3e0496cc09c52e2a60b",
+    "end_to_end_mixture_pair2_s1303": "5a377f02788801ddc5135fa2d4a470e86f14fb53780acb7bd76f4fcdf2d1a70a",
+    "end_to_end_mixture_pair3_s1404": "de1b3f7d19e70eeb0a90db8b7a101cf5ef738414a6920117f7c3e18ddbd35965",
+    "end_to_end_mixture_pair4_s1505": "8dad5f3ec53cada1b9776a2cf1c6f9ddc09e6e0f529fb2bf68711bc04964e538",
+    "pair0_fulltrain_full_seed1101": "13a7c61b180b6e71fbb7887282602347917d06c9f296c3c656d47f2574cc009b",
+    "pair0_fulltrain_history_seed1101": "40f2b550591b27672a38c49afd01b65eca6fe8a8695a654c24c7ec39a857d414",
+    "pair1_fulltrain_full_seed1202": "74f697a05b96ede74a6f049f8897da3bd2a506f072a4b71f4679ca5319c74590",
+    "pair1_fulltrain_history_seed1202": "cdd975b51a4067c0c382d000c260e6dd4a20acaa4374ee15684ab6cdd431abbc",
+    "pair2_fulltrain_full_seed1303": "9c3bb5848c1ef5ebf64146040427da02d3e4bb2986756570f2e0791bf2242382",
+    "pair2_fulltrain_history_seed1303": "1cd6769a47972437565d9171284a19df24ea18a723efc31dc46eaeee321bcea8",
+    "pair3_fulltrain_full_seed1404": "494fcc586b07c31265e14b066f6e9e1d2e80b1173a593cd117d13e166d32bfdb",
+    "pair3_fulltrain_history_seed1404": "dbde2b5fb1220c1f4cb23174cd246f5d73a860d310bdc1f3462f9e437c88779a",
+    "pair4_fulltrain_full_seed1505": "9db58c01b836d067d07f8bab190f9d1d76e9d6ea81920c7d7b75ee21500988f7",
+    "pair4_fulltrain_history_seed1505": "584292117ceb780263d7ead9cf2b2b3a3d9b57aeec6f3dad3ab78104d22d60ae"
+  },
+  "code_sha256": {
+    "ac_twin/stage4_protocol.py": "a5caae50d4d318f6fa55c9c46706159f72c84fec50a5688a697339ad77069b83",
+    "ac_twin/stage4_risk.py": "8a874457c3efa1b450f78342aa33133a819723683b7e2321f4caf96ed00c8dca",
+    "ac_twin/stage4_statistics.py": "8c509785be29ff4ef0586db66617f879d13408f83874134114a000f43adfe584",
+    "collect_stage4a_merge_dev.py": "b14a9e26c38ec5a8565bedb42f8aaa711f6e2e14fabf744439798b7545233a1c",
+    "run_stage4a.py": "ac150e93be6e75c1b75ad0b490692e9b869d20d3a923d14bb41c215a510509b5"
+  },
+  "config_sha256": "8555f0d8b5652c93bcb3ff5d6a06f66af00c6fb25b433c2965ad23ff0face8ea",
+  "data_npz_sha256": "8374cc31ebf10146cc343ac6acd104460d1766b1b1d0e9cba577d11afc5f9c97",
+  "data_output": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4_merge_risk_dev\\object_twinworld_stage4_merge_risk_dev.npz",
+  "lock_type": "recovery_from_v2",
+  "note": "Recovery from v2 after a provable MLP-serialization engineering fix to ac_twin/stage4_risk.py. Reuses v2 frozen inference and the v2-frozen PRIMARY_PREDICTOR read-only; retrains all risk models in v3. No re-collection, no re-inference, no re-selection, no scientific change.",
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "primary_predictor": {
+    "constant_w": 0.6,
+    "primary_predictor": "END_TO_END_MIXTURE",
+    "receipt_path": "experiments\\stage4_reliability\\stage4a_v2\\risk\\primary_predictor_receipt.json",
+    "receipt_sha256": "b171e06fefdb5072631dad282ff28b1f22fda60f61dc1548d6c0eda649f3f4e2"
+  },
+  "purpose": "stage4_merge_risk_dev",
+  "reuse_verification": {
+    "candidate_selection_not_run": true,
+    "checkpoints_match_v1": true,
+    "data_npz_unchanged": true,
+    "development_screen_untouched": true,
+    "only_allowed_code_drifted": true,
+    "predictions_complete_5000": true,
+    "predictions_receipt_consistent": true,
+    "primary_predictor": "END_TO_END_MIXTURE",
+    "primary_predictor_reused_not_reselected": true,
+    "v1_protocol_lock_unchanged": true,
+    "v2_recovery_lock_unchanged": true
+  },
+  "reused_inference": {
+    "prediction_receipt_path": "experiments\\stage4_reliability\\stage4a_v2\\inference\\prediction_receipt.json",
+    "prediction_receipt_sha256": "d35ac2dee73a7f5dd31c926159b5fea15c3d6dc8bad49fd058b866005feb325b",
+    "predictions_npz_path": "experiments\\stage4_reliability\\stage4a_v2\\inference\\predictions.npz",
+    "predictions_npz_sha256": "34bc12e91a1eaea902a30570d3f19996441443fcd47989cc3cf7ed366f47d9ac"
+  },
+  "scaler_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\scaler.json",
+  "scaler_sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181",
+  "seed_schedule_path": "experiments\\stage4_reliability\\stage4a\\protocol\\candidate_seed_schedule.npy",
+  "seed_schedule_sha256": "cd22d3066a2224942bf641de28b1d89c41f6d154a9dbbebeac0a7ec22cfcf5ad",
+  "stage3b_binding_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3b\\input_binding_receipt.json",
+  "stage3b_binding_sha256": "881a73c3fd9e378a97e16bdf1a09316119272960b3ba0a730f315474a2d14490",
+  "stage4_risk_fix": {
+    "after_sha256": "8a874457c3efa1b450f78342aa33133a819723683b7e2321f4caf96ed00c8dca",
+    "before_sha256": "d364502059d126224a7d5165824b8b18254c4fbccb8940133ed11326a60cdff3",
+    "code_location": "code/ac_twin/stage4_risk.py::_TorchEstimator / _fit_mlp",
+    "reason": "fit-risk aborted saving the MLP combined model: _fit_mlp returned a closure-local _TorchEstimator that torch.save/pickle cannot serialize. Fix hoists _TorchEstimator to module level holding the trained model. No change to architecture, optimization, features, candidate set, or any scientific parameter."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "run": "h96_r32_l0.1_seed101",
+  "state": "COMPLETE",
+  "seed": 101,
+  "config": {
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "lambda_cls": 0.1
+  },
+  "best_val_loss": 0.09735450074076653,
+  "epochs_run": 34,
+  "signature": "602b0c544fa356058220d54994c9264c210e41d70e0e6070967ad33a99bd5778",
+  "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r32_l0.1_seed101.pt"
+}

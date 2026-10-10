@@ -1,0 +1,236 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+  "artifact_type": "gate_r_plus_qualification_report",
+  "purpose": "stage3a_plus_qualification",
+  "n_resamples": 10000,
+  "bootstrap_seed": 20260929,
+  "hierarchical_bootstrap_seed": 20267929,
+  "freeze_receipt_sha256": "cb18ffdc3957d18e3269a6d0e654b29038ed34f7eff09b87d2d56da006228127",
+  "qualification_data_sha256": "8d4006aeaeacacd174c9df178247bf5887c0b051731de52d8be657c56e5e3e77",
+  "inference_receipt_sha256": "7afb70df61ba02b33f50427bb17f30d5b3b31fc8e992e0e6415784e8986e1034",
+  "result": {
+    "report": {
+      "core": {
+        "mae": 0.20889890042592185,
+        "spearman": 0.5991762577084975,
+        "pr_auc_presence": 0.8772534198682425,
+        "pr_auc_high_vs_lowmid": 0.6348331330267227,
+        "brier": 0.040285511281594306,
+        "nll": 0.29633331776464084,
+        "ece": 0.02444905099842296,
+        "ece_uncalibrated": 0.031083983654229076,
+        "i_mae": {
+          "point": 0.04937218694134877,
+          "ci_lower": 0.03864037969297742,
+          "ci_upper": 0.059983892057633485,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "confidence_level": 0.95,
+          "bootstrap_seed": 20261929,
+          "n_episodes": 1000
+        },
+        "spearman_boot": {
+          "point": 0.5991762577084975,
+          "ci_lower": 0.5860000115107377,
+          "ci_upper": 0.612189180385658,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "confidence_level": 0.95,
+          "bootstrap_seed": 20261930,
+          "n_episodes": 1000
+        },
+        "i_pr_presence": {
+          "point": 0.49310000882435445,
+          "ci_lower": 0.47177693914498325,
+          "ci_upper": 0.5125149729679109,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "confidence_level": 0.95,
+          "bootstrap_seed": 20261931,
+          "n_episodes": 1000
+        },
+        "i_pr_high_vs_lowmid": {
+          "point": 0.17041021704851828,
+          "ci_lower": 0.1321002058620694,
+          "ci_upper": 0.20809191163479782,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "confidence_level": 0.95,
+          "bootstrap_seed": 20261932,
+          "n_episodes": 1000
+        },
+        "i_brier": {
+          "point": 0.025000774824354595,
+          "ci_lower": 0.023188527967961507,
+          "ci_upper": 0.02675801628766677,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "confidence_level": 0.95,
+          "bootstrap_seed": 20261933,
+          "n_episodes": 1000
+        },
+        "r_ensemble_std": 0.4825325520263875,
+        "non_degenerate": true
+      },
+      "stability": {
+        "per_seed": {
+          "101": {
+            "i_mae": 0.021568310478245117,
+            "spearman": 0.6677268594220086,
+            "i_pr_presence": 0.4038253319073396,
+            "i_pr_high_vs_lowmid": 0.08472355797591252,
+            "i_brier": 0.021252170097338194,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "202": {
+            "i_mae": 0.056329271830513866,
+            "spearman": 0.5913402046445001,
+            "i_pr_presence": 0.48746312409973946,
+            "i_pr_high_vs_lowmid": 0.16783908089953087,
+            "i_brier": 0.025789540402104037,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "303": {
+            "i_mae": 0.033288938483967134,
+            "spearman": 0.5471375888156972,
+            "i_pr_presence": 0.43993816808547237,
+            "i_pr_high_vs_lowmid": 0.11881674473342602,
+            "i_brier": 0.022482136488850918,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "404": {
+            "i_mae": 0.05523276070470337,
+            "spearman": 0.5187586323425184,
+            "i_pr_presence": 0.48182134403846866,
+            "i_pr_high_vs_lowmid": 0.1622708960267472,
+            "i_brier": 0.025019616024335917,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "505": {
+            "i_mae": 0.022957236707501272,
+            "spearman": 0.6729224209923969,
+            "i_pr_presence": 0.3772315827475411,
+            "i_pr_high_vs_lowmid": 0.02997184652332746,
+            "i_brier": 0.020029828960276296,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "606": {
+            "i_mae": 0.03851151534603153,
+            "spearman": 0.7050718826617555,
+            "i_pr_presence": 0.45502162973060223,
+            "i_pr_high_vs_lowmid": 0.1024735787863626,
+            "i_brier": 0.02286760036824055,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "707": {
+            "i_mae": 0.03771629287137668,
+            "spearman": 0.6161579030389552,
+            "i_pr_presence": 0.4653387347465441,
+            "i_pr_high_vs_lowmid": 0.11761395291116122,
+            "i_brier": 0.023191540110617317,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "808": {
+            "i_mae": 0.01801879579939425,
+            "spearman": 0.6254274376888459,
+            "i_pr_presence": 0.3708405008850768,
+            "i_pr_high_vs_lowmid": 0.03058344110246669,
+            "i_brier": 0.019890974410227948,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "909": {
+            "i_mae": 0.019750575574950996,
+            "spearman": 0.5881996242758335,
+            "i_pr_presence": 0.3643810981064707,
+            "i_pr_high_vs_lowmid": 0.04074763406684717,
+            "i_brier": 0.0198616478075056,
+            "non_degenerate": true,
+            "finite": true
+          },
+          "1010": {
+            "i_mae": 0.02885927459418186,
+            "spearman": 0.646893891917874,
+            "i_pr_presence": 0.447902870241751,
+            "i_pr_high_vs_lowmid": 0.09884202961492011,
+            "i_brier": 0.022615520765544996,
+            "non_degenerate": true,
+            "finite": true
+          }
+        },
+        "baseline_brier": 0.0652862861059489,
+        "hierarchical_i_brier": {
+          "point": 0.022300057543504177,
+          "ci_lower": 0.021012645140933255,
+          "ci_upper": 0.02366719643207584,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "seed": 20267929,
+          "n_seeds": 10,
+          "n_episodes": 1000
+        }
+      },
+      "gate_q_passed": true,
+      "gate_q_checks": {
+        "signatures_ok": true,
+        "finite_ok": true,
+        "seed_set_ok": true,
+        "calibration_receipt_ok": true,
+        "plan_id_ok": true,
+        "lock_ok": true
+      }
+    },
+    "evaluation": {
+      "passed": true,
+      "core": {
+        "passed": true,
+        "checks": {
+          "i_mae_ci_lower_gt0": true,
+          "spearman_ci_lower_gt0": true,
+          "i_pr_presence_ci_lower_gt0": true,
+          "i_pr_high_vs_lowmid_ci_lower_gt0": true,
+          "i_brier_ci_lower_gt0": true,
+          "ece_calibrated": true
+        }
+      },
+      "stability": {
+        "passed": true,
+        "checks": {
+          "per_seed_core_metrics_positive": true,
+          "at_least_8_of_10_positive": true,
+          "median_i_brier_positive": true,
+          "worst_seed_noninferior": true,
+          "hierarchical_ci_lower_gt0": true,
+          "all_seeds_nondegenerate": true
+        },
+        "i_brier_per_seed": {
+          "101": 0.021252170097338194,
+          "202": 0.025789540402104037,
+          "303": 0.022482136488850918,
+          "404": 0.025019616024335917,
+          "505": 0.020029828960276296,
+          "606": 0.02286760036824055,
+          "707": 0.023191540110617317,
+          "808": 0.019890974410227948,
+          "909": 0.0198616478075056,
+          "1010": 0.022615520765544996
+        },
+        "n_positive_brier": 10,
+        "median_i_brier": 0.022548828627197957,
+        "worst_i_brier": 0.0198616478075056,
+        "delta_b": 0.0032643143052974452
+      },
+      "gate_q_passed": true
+    },
+    "passed": true
+  },
+  "outcome": "RESPONSE_DEV_QUALIFIED_STAGE3A_PLUS",
+  "generated_at": "2026-09-10T10:08:58"
+}

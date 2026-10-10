@@ -1,0 +1,1202 @@
+[
+  {
+    "scenario_id": "4d4b548c02d6dbf0",
+    "t_star": 15,
+    "eval_track_ids": [
+      "1393",
+      "1171",
+      "1205",
+      "1175",
+      "1202"
+    ],
+    "ego_lane_id": "761"
+  },
+  {
+    "scenario_id": "b5db70059e5cf3d0",
+    "t_star": 10,
+    "eval_track_ids": [
+      "2529",
+      "28",
+      "33",
+      "27",
+      "32"
+    ],
+    "ego_lane_id": "467"
+  },
+  {
+    "scenario_id": "2b30d015e66dd5d0",
+    "t_star": 13,
+    "eval_track_ids": [
+      "135",
+      "6",
+      "5",
+      "9",
+      "11"
+    ],
+    "ego_lane_id": "133"
+  },
+  {
+    "scenario_id": "84c74010c3909b44",
+    "t_star": 15,
+    "eval_track_ids": [
+      "2572",
+      "1000",
+      "999",
+      "1006",
+      "1001"
+    ],
+    "ego_lane_id": "442"
+  },
+  {
+    "scenario_id": "2fc6d05cad79de54",
+    "t_star": 10,
+    "eval_track_ids": [
+      "2653",
+      "2374",
+      "2361",
+      "2369",
+      "2366"
+    ],
+    "ego_lane_id": "398"
+  },
+  {
+    "scenario_id": "d137bc65a49e4ecc",
+    "t_star": 14,
+    "eval_track_ids": [
+      "2185",
+      "1834",
+      "1836",
+      "1835",
+      "1837"
+    ],
+    "ego_lane_id": "308"
+  },
+  {
+    "scenario_id": "47d5a784a08bdefe",
+    "t_star": 10,
+    "eval_track_ids": [
+      "829",
+      "532",
+      "536",
+      "557",
+      "541"
+    ],
+    "ego_lane_id": "376"
+  },
+  {
+    "scenario_id": "34622227c97e7272",
+    "t_star": 15,
+    "eval_track_ids": [
+      "500",
+      "45",
+      "20",
+      "29",
+      "10"
+    ],
+    "ego_lane_id": "201"
+  },
+  {
+    "scenario_id": "bc0165f3ada99785",
+    "t_star": 12,
+    "eval_track_ids": [
+      "196",
+      "1",
+      "29",
+      "16",
+      "23"
+    ],
+    "ego_lane_id": "747"
+  },
+  {
+    "scenario_id": "61025f1ed7b04cd7",
+    "t_star": 15,
+    "eval_track_ids": [
+      "1349",
+      "643",
+      "638",
+      "629",
+      "648"
+    ],
+    "ego_lane_id": "398"
+  },
+  {
+    "scenario_id": "d3126a2c67182635",
+    "t_star": 13,
+    "eval_track_ids": [
+      "1108",
+      "787",
+      "820",
+      "807",
+      "821"
+    ],
+    "ego_lane_id": "767"
+  },
+  {
+    "scenario_id": "b63a947c3b2c1ea1",
+    "t_star": 13,
+    "eval_track_ids": [
+      "1488",
+      "1116",
+      "1113",
+      "1114",
+      "1118"
+    ],
+    "ego_lane_id": "456"
+  },
+  {
+    "scenario_id": "16da8bb64888ba7",
+    "t_star": 10,
+    "eval_track_ids": [
+      "995",
+      "801",
+      "818",
+      "827",
+      "805"
+    ],
+    "ego_lane_id": "524"
+  },
+  {
+    "scenario_id": "cfdd417da76901bf",
+    "t_star": 12,
+    "eval_track_ids": [
+      "3675",
+      "1406",
+      "1412",
+      "1405",
+      "1417"
+    ],
+    "ego_lane_id": "251"
+  },
+  {
+    "scenario_id": "8afa4c6169d19788",
+    "t_star": 13,
+    "eval_track_ids": [
+      "4134",
+      "1404",
+      "1403",
+      "1406",
+      "1413"
+    ],
+    "ego_lane_id": "188"
+  },
+  {
+    "scenario_id": "e3fce032d31d54a5",
+    "t_star": 13,
+    "eval_track_ids": [
+      "114",
+      "4",
+      "9",
+      "16",
+      "17"
+    ],
+    "ego_lane_id": "127"
+  },
+  {
+    "scenario_id": "30a4c701b067962",
+    "t_star": 10,
+    "eval_track_ids": [
+      "2968",
+      "2537",
+      "2535",
+      "2536",
+      "2538"
+    ],
+    "ego_lane_id": "193"
+  },
+  {
+    "scenario_id": "8da2a28f0c52298e",
+    "t_star": 14,
+    "eval_track_ids": [
+      "3147",
+      "888",
+      "903",
+      "923",
+      "899"
+    ],
+    "ego_lane_id": "474"
+  },
+  {
+    "scenario_id": "6a0103fb56f69422",
+    "t_star": 12,
+    "eval_track_ids": [
+      "3848",
+      "2312",
+      "2321",
+      "2315",
+      "2320"
+    ],
+    "ego_lane_id": "269"
+  },
+  {
+    "scenario_id": "51b46a61929efd3f",
+    "t_star": 15,
+    "eval_track_ids": [
+      "285",
+      "265",
+      "266",
+      "279",
+      "268"
+    ],
+    "ego_lane_id": "190"
+  },
+  {
+    "scenario_id": "6d469048d2e446e9",
+    "t_star": 13,
+    "eval_track_ids": [
+      "5880",
+      "1942",
+      "1941",
+      "1935",
+      "1956"
+    ],
+    "ego_lane_id": "383"
+  },
+  {
+    "scenario_id": "2f22b927b8e1cd89",
+    "t_star": 13,
+    "eval_track_ids": [
+      "1031",
+      "992",
+      "1001",
+      "997",
+      "998"
+    ],
+    "ego_lane_id": "223"
+  },
+  {
+    "scenario_id": "a6ed46e0860c1acf",
+    "t_star": 13,
+    "eval_track_ids": [
+      "2332",
+      "1483",
+      "1487",
+      "1485",
+      "1506"
+    ],
+    "ego_lane_id": "464"
+  },
+  {
+    "scenario_id": "8b03909d38c9f9d1",
+    "t_star": 13,
+    "eval_track_ids": [
+      "1959",
+      "1123",
+      "1126",
+      "1173",
+      "1132"
+    ],
+    "ego_lane_id": "320"
+  },
+  {
+    "scenario_id": "3b49835e72fb3a73",
+    "t_star": 11,
+    "eval_track_ids": [
+      "590",
+      "321",
+      "343",
+      "347",
+      "317"
+    ],
+    "ego_lane_id": "971"
+  },
+  {
+    "scenario_id": "d945df77ec246c48",
+    "t_star": 12,
+    "eval_track_ids": [
+      "132",
+      "32",
+      "14",
+      "13",
+      "17"
+    ],
+    "ego_lane_id": "844"
+  },
+  {
+    "scenario_id": "b5bef293285bb1fb",
+    "t_star": 10,
+    "eval_track_ids": [
+      "3305",
+      "2903",
+      "2901",
+      "2908",
+      "2906"
+    ],
+    "ego_lane_id": "431"
+  },
+  {
+    "scenario_id": "8b8f200ccf1d3abc",
+    "t_star": 12,
+    "eval_track_ids": [
+      "824",
+      "712",
+      "711",
+      "715",
+      "710"
+    ],
+    "ego_lane_id": "337"
+  },
+  {
+    "scenario_id": "4a6c12b7c29e3833",
+    "t_star": 12,
+    "eval_track_ids": [
+      "2388",
+      "1750",
+      "1751",
+      "1757",
+      "1756"
+    ],
+    "ego_lane_id": "146"
+  },
+  {
+    "scenario_id": "6ccdcd0939c632db",
+    "t_star": 13,
+    "eval_track_ids": [
+      "56",
+      "4",
+      "7",
+      "2",
+      "6"
+    ],
+    "ego_lane_id": "138"
+  },
+  {
+    "scenario_id": "d517c36a7a969a7e",
+    "t_star": 13,
+    "eval_track_ids": [
+      "900",
+      "568",
+      "600",
+      "571",
+      "580"
+    ],
+    "ego_lane_id": "591"
+  },
+  {
+    "scenario_id": "a2ac4df4966b7bb5",
+    "t_star": 12,
+    "eval_track_ids": [
+      "1508",
+      "138",
+      "128",
+      "130",
+      "116"
+    ],
+    "ego_lane_id": "374"
+  },
+  {
+    "scenario_id": "1ebc77d930326035",
+    "t_star": 11,
+    "eval_track_ids": [
+      "2276",
+      "338",
+      "311",
+      "309",
+      "341"
+    ],
+    "ego_lane_id": "344"
+  },
+  {
+    "scenario_id": "72247d4636b40caa",
+    "t_star": 13,
+    "eval_track_ids": [
+      "1891",
+      "857",
+      "892",
+      "911",
+      "858"
+    ],
+    "ego_lane_id": "889"
+  },
+  {
+    "scenario_id": "4b6f47123bc2c8ac",
+    "t_star": 15,
+    "eval_track_ids": [
+      "101",
+      "26",
+      "28",
+      "15",
+      "8"
+    ],
+    "ego_lane_id": "409"
+  },
+  {
+    "scenario_id": "167cfd73c2c46801",
+    "t_star": 13,
+    "eval_track_ids": [
+      "441",
+      "236",
+      "254",
+      "237",
+      "266"
+    ],
+    "ego_lane_id": "504"
+  },
+  {
+    "scenario_id": "ae4d23d8691df3d3",
+    "t_star": 10,
+    "eval_track_ids": [
+      "2868",
+      "2748",
+      "2745",
+      "2746",
+      "2751"
+    ],
+    "ego_lane_id": "446"
+  },
+  {
+    "scenario_id": "57b69e7da15cc81",
+    "t_star": 14,
+    "eval_track_ids": [
+      "1657",
+      "1387",
+      "1389",
+      "1415",
+      "1391"
+    ],
+    "ego_lane_id": "799"
+  },
+  {
+    "scenario_id": "d475a7be81aa6ad",
+    "t_star": 11,
+    "eval_track_ids": [
+      "1330",
+      "856",
+      "851",
+      "869",
+      "875"
+    ],
+    "ego_lane_id": "333"
+  },
+  {
+    "scenario_id": "376e5c6a3bf5b02f",
+    "t_star": 10,
+    "eval_track_ids": [
+      "3244",
+      "779",
+      "780",
+      "782",
+      "781"
+    ],
+    "ego_lane_id": "145"
+  },
+  {
+    "scenario_id": "7b6d56c664ef92e1",
+    "t_star": 14,
+    "eval_track_ids": [
+      "1898",
+      "1643",
+      "1645",
+      "1637",
+      "1650"
+    ],
+    "ego_lane_id": "929"
+  },
+  {
+    "scenario_id": "3e3b9da1bdaccfd5",
+    "t_star": 14,
+    "eval_track_ids": [
+      "1232",
+      "258",
+      "256",
+      "257",
+      "260"
+    ],
+    "ego_lane_id": "276"
+  },
+  {
+    "scenario_id": "e7414f3b12e5dc6b",
+    "t_star": 11,
+    "eval_track_ids": [
+      "2467",
+      "1897",
+      "1893",
+      "1888",
+      "1905"
+    ],
+    "ego_lane_id": "182"
+  },
+  {
+    "scenario_id": "c6a11d5d694239db",
+    "t_star": 15,
+    "eval_track_ids": [
+      "4075",
+      "3408",
+      "3420",
+      "3417",
+      "3401"
+    ],
+    "ego_lane_id": "556"
+  },
+  {
+    "scenario_id": "5e62b271d4aa808f",
+    "t_star": 12,
+    "eval_track_ids": [
+      "1386",
+      "905",
+      "906",
+      "907",
+      "933"
+    ],
+    "ego_lane_id": "486"
+  },
+  {
+    "scenario_id": "eb83cf628ca4446b",
+    "t_star": 15,
+    "eval_track_ids": [
+      "2360",
+      "1752",
+      "1760",
+      "1773",
+      "1758"
+    ],
+    "ego_lane_id": "309"
+  },
+  {
+    "scenario_id": "34d329b4840a2587",
+    "t_star": 14,
+    "eval_track_ids": [
+      "195",
+      "20",
+      "38",
+      "35",
+      "0"
+    ],
+    "ego_lane_id": "668"
+  },
+  {
+    "scenario_id": "706842f1eadeddfb",
+    "t_star": 11,
+    "eval_track_ids": [
+      "2733",
+      "688",
+      "687",
+      "693",
+      "689"
+    ],
+    "ego_lane_id": "185"
+  },
+  {
+    "scenario_id": "1e55f6b91fa2c534",
+    "t_star": 11,
+    "eval_track_ids": [
+      "3805",
+      "554",
+      "536",
+      "600",
+      "568"
+    ],
+    "ego_lane_id": "691"
+  },
+  {
+    "scenario_id": "2216627dbcfad6c3",
+    "t_star": 15,
+    "eval_track_ids": [
+      "5686",
+      "3728",
+      "3696",
+      "3733",
+      "3708"
+    ],
+    "ego_lane_id": "237"
+  },
+  {
+    "scenario_id": "5aee05964a27e12f",
+    "t_star": 11,
+    "eval_track_ids": [
+      "262",
+      "224",
+      "218",
+      "223",
+      "222"
+    ],
+    "ego_lane_id": "152"
+  },
+  {
+    "scenario_id": "41cbe164e98dc85",
+    "t_star": 13,
+    "eval_track_ids": [
+      "2027",
+      "1799",
+      "1833",
+      "1807",
+      "1804"
+    ],
+    "ego_lane_id": "379"
+  },
+  {
+    "scenario_id": "5e50e29290d92df9",
+    "t_star": 12,
+    "eval_track_ids": [
+      "2685",
+      "1853",
+      "1846",
+      "1852",
+      "1873"
+    ],
+    "ego_lane_id": "200"
+  },
+  {
+    "scenario_id": "b137629e30158e09",
+    "t_star": 12,
+    "eval_track_ids": [
+      "128",
+      "73",
+      "95",
+      "77",
+      "70"
+    ],
+    "ego_lane_id": "165"
+  },
+  {
+    "scenario_id": "b430b5d1e54b2acb",
+    "t_star": 13,
+    "eval_track_ids": [
+      "1086",
+      "706",
+      "704",
+      "712",
+      "709"
+    ],
+    "ego_lane_id": "322"
+  },
+  {
+    "scenario_id": "c8ed664d83154b67",
+    "t_star": 14,
+    "eval_track_ids": [
+      "5451",
+      "3043",
+      "3048",
+      "3032",
+      "3044"
+    ],
+    "ego_lane_id": "412"
+  },
+  {
+    "scenario_id": "c9ea38b78672eed2",
+    "t_star": 14,
+    "eval_track_ids": [
+      "1391",
+      "191",
+      "206",
+      "196",
+      "223"
+    ],
+    "ego_lane_id": "328"
+  },
+  {
+    "scenario_id": "dfa611698689a1bb",
+    "t_star": 12,
+    "eval_track_ids": [
+      "2149",
+      "2009",
+      "2013",
+      "2018",
+      "2016"
+    ],
+    "ego_lane_id": "393"
+  },
+  {
+    "scenario_id": "c9134e4491eddf3e",
+    "t_star": 13,
+    "eval_track_ids": [
+      "992",
+      "650",
+      "648",
+      "661",
+      "657"
+    ],
+    "ego_lane_id": "220"
+  },
+  {
+    "scenario_id": "cdc7ab9211ab899d",
+    "t_star": 11,
+    "eval_track_ids": [
+      "2540",
+      "498",
+      "511",
+      "496",
+      "497"
+    ],
+    "ego_lane_id": "335"
+  },
+  {
+    "scenario_id": "fd536817bf18e968",
+    "t_star": 13,
+    "eval_track_ids": [
+      "2397",
+      "1813",
+      "1817",
+      "1820",
+      "1812"
+    ],
+    "ego_lane_id": "388"
+  },
+  {
+    "scenario_id": "b41eef8e29648854",
+    "t_star": 10,
+    "eval_track_ids": [
+      "2764",
+      "451",
+      "453",
+      "454",
+      "457"
+    ],
+    "ego_lane_id": "83"
+  },
+  {
+    "scenario_id": "f90baace2d253064",
+    "t_star": 15,
+    "eval_track_ids": [
+      "3465",
+      "1252",
+      "1242",
+      "1250",
+      "1251"
+    ],
+    "ego_lane_id": "345"
+  },
+  {
+    "scenario_id": "daaf8e769028af59",
+    "t_star": 10,
+    "eval_track_ids": [
+      "616",
+      "2",
+      "12",
+      "5",
+      "0"
+    ],
+    "ego_lane_id": "351"
+  },
+  {
+    "scenario_id": "81e8a8245c9e444e",
+    "t_star": 13,
+    "eval_track_ids": [
+      "2287",
+      "1672",
+      "1678",
+      "1684",
+      "1715"
+    ],
+    "ego_lane_id": "347"
+  },
+  {
+    "scenario_id": "c4718bb2c0725171",
+    "t_star": 15,
+    "eval_track_ids": [
+      "200",
+      "87",
+      "93",
+      "89",
+      "95"
+    ],
+    "ego_lane_id": "152"
+  },
+  {
+    "scenario_id": "660d02e6cd199ff",
+    "t_star": 14,
+    "eval_track_ids": [
+      "1058",
+      "778",
+      "781",
+      "780",
+      "779"
+    ],
+    "ego_lane_id": "236"
+  },
+  {
+    "scenario_id": "ecc6ff976f7029cc",
+    "t_star": 13,
+    "eval_track_ids": [
+      "364",
+      "0",
+      "113",
+      "3",
+      "11"
+    ],
+    "ego_lane_id": "310"
+  },
+  {
+    "scenario_id": "a7b5fd9713ba8682",
+    "t_star": 14,
+    "eval_track_ids": [
+      "555",
+      "375",
+      "374",
+      "379",
+      "377"
+    ],
+    "ego_lane_id": "121"
+  },
+  {
+    "scenario_id": "ec9c8757be48b0c9",
+    "t_star": 12,
+    "eval_track_ids": [
+      "596",
+      "379",
+      "383",
+      "402",
+      "381"
+    ],
+    "ego_lane_id": "567"
+  },
+  {
+    "scenario_id": "4bfd22330cd97d33",
+    "t_star": 12,
+    "eval_track_ids": [
+      "271",
+      "4",
+      "14",
+      "5",
+      "43"
+    ],
+    "ego_lane_id": "195"
+  },
+  {
+    "scenario_id": "da04e2cb5265da9",
+    "t_star": 12,
+    "eval_track_ids": [
+      "4837",
+      "2197",
+      "2202",
+      "2189",
+      "2191"
+    ],
+    "ego_lane_id": "177"
+  },
+  {
+    "scenario_id": "6358001db4977643",
+    "t_star": 15,
+    "eval_track_ids": [
+      "3932",
+      "2878",
+      "2885",
+      "2874",
+      "2922"
+    ],
+    "ego_lane_id": "133"
+  },
+  {
+    "scenario_id": "fb786f321d5da94f",
+    "t_star": 10,
+    "eval_track_ids": [
+      "934",
+      "759",
+      "758",
+      "757",
+      "756"
+    ],
+    "ego_lane_id": "366"
+  },
+  {
+    "scenario_id": "964675da2d464a37",
+    "t_star": 15,
+    "eval_track_ids": [
+      "2275",
+      "1496",
+      "1557",
+      "1562",
+      "1524"
+    ],
+    "ego_lane_id": "694"
+  },
+  {
+    "scenario_id": "ec0a49b6cf97d93d",
+    "t_star": 13,
+    "eval_track_ids": [
+      "6681",
+      "115",
+      "180",
+      "98",
+      "192"
+    ],
+    "ego_lane_id": "163"
+  },
+  {
+    "scenario_id": "803625c6cc9755b4",
+    "t_star": 10,
+    "eval_track_ids": [
+      "1737",
+      "1444",
+      "1445",
+      "1449",
+      "1446"
+    ],
+    "ego_lane_id": "58"
+  },
+  {
+    "scenario_id": "9c0c097573c33f81",
+    "t_star": 14,
+    "eval_track_ids": [
+      "109",
+      "3",
+      "7",
+      "12",
+      "1"
+    ],
+    "ego_lane_id": "731"
+  },
+  {
+    "scenario_id": "f28ad85e55a70ae2",
+    "t_star": 15,
+    "eval_track_ids": [
+      "4412",
+      "3704",
+      "3697",
+      "3718",
+      "3715"
+    ],
+    "ego_lane_id": "136"
+  },
+  {
+    "scenario_id": "956409c8398363d5",
+    "t_star": 12,
+    "eval_track_ids": [
+      "3169",
+      "1518",
+      "1521",
+      "1540",
+      "1523"
+    ],
+    "ego_lane_id": "133"
+  },
+  {
+    "scenario_id": "ddb27058e18b0533",
+    "t_star": 15,
+    "eval_track_ids": [
+      "884",
+      "753",
+      "755",
+      "763",
+      "754"
+    ],
+    "ego_lane_id": "298"
+  },
+  {
+    "scenario_id": "3f9c41deccbba864",
+    "t_star": 14,
+    "eval_track_ids": [
+      "2130",
+      "530",
+      "526",
+      "535",
+      "528"
+    ],
+    "ego_lane_id": "298"
+  },
+  {
+    "scenario_id": "9ce0fa8619697131",
+    "t_star": 14,
+    "eval_track_ids": [
+      "341",
+      "314",
+      "307",
+      "309",
+      "305"
+    ],
+    "ego_lane_id": "143"
+  },
+  {
+    "scenario_id": "e5eaeb886719cda2",
+    "t_star": 12,
+    "eval_track_ids": [
+      "2648",
+      "2163",
+      "2158",
+      "2162",
+      "2179"
+    ],
+    "ego_lane_id": "249"
+  },
+  {
+    "scenario_id": "242030075a4b19a4",
+    "t_star": 11,
+    "eval_track_ids": [
+      "3291",
+      "1114",
+      "1112",
+      "1106",
+      "1107"
+    ],
+    "ego_lane_id": "419"
+  },
+  {
+    "scenario_id": "9941d2aaefcb9230",
+    "t_star": 11,
+    "eval_track_ids": [
+      "387",
+      "1",
+      "2",
+      "24",
+      "15"
+    ],
+    "ego_lane_id": "114"
+  },
+  {
+    "scenario_id": "8f1b97786e58c17c",
+    "t_star": 15,
+    "eval_track_ids": [
+      "1910",
+      "1698",
+      "1699",
+      "1704",
+      "1702"
+    ],
+    "ego_lane_id": "337"
+  },
+  {
+    "scenario_id": "e2f8f22e634fd966",
+    "t_star": 12,
+    "eval_track_ids": [
+      "804",
+      "532",
+      "535",
+      "533",
+      "545"
+    ],
+    "ego_lane_id": "450"
+  },
+  {
+    "scenario_id": "1cac180d139c96de",
+    "t_star": 13,
+    "eval_track_ids": [
+      "817",
+      "424",
+      "419",
+      "418",
+      "420"
+    ],
+    "ego_lane_id": "200"
+  },
+  {
+    "scenario_id": "69fc3d22b68bcc89",
+    "t_star": 15,
+    "eval_track_ids": [
+      "1413",
+      "147",
+      "168",
+      "165",
+      "169"
+    ],
+    "ego_lane_id": "170"
+  },
+  {
+    "scenario_id": "12070bf7ef52d71b",
+    "t_star": 13,
+    "eval_track_ids": [
+      "2756",
+      "463",
+      "459",
+      "457",
+      "467"
+    ],
+    "ego_lane_id": "821"
+  },
+  {
+    "scenario_id": "2c936fe763473031",
+    "t_star": 11,
+    "eval_track_ids": [
+      "2533",
+      "979",
+      "962",
+      "984",
+      "983"
+    ],
+    "ego_lane_id": "140"
+  },
+  {
+    "scenario_id": "726417c1327aef74",
+    "t_star": 15,
+    "eval_track_ids": [
+      "205",
+      "11",
+      "0",
+      "29",
+      "4"
+    ],
+    "ego_lane_id": "273"
+  },
+  {
+    "scenario_id": "75b846cb28add07f",
+    "t_star": 15,
+    "eval_track_ids": [
+      "1686",
+      "16",
+      "28",
+      "26",
+      "29"
+    ],
+    "ego_lane_id": "447"
+  },
+  {
+    "scenario_id": "cec68fd9dd8ab84b",
+    "t_star": 10,
+    "eval_track_ids": [
+      "629",
+      "348",
+      "350",
+      "355",
+      "349"
+    ],
+    "ego_lane_id": "511"
+  },
+  {
+    "scenario_id": "c7f723d08736de76",
+    "t_star": 11,
+    "eval_track_ids": [
+      "1502",
+      "1392",
+      "1389",
+      "1390",
+      "1391"
+    ],
+    "ego_lane_id": "252"
+  },
+  {
+    "scenario_id": "dbb5b077e2a3899b",
+    "t_star": 15,
+    "eval_track_ids": [
+      "1407",
+      "1197",
+      "1198",
+      "1214",
+      "1206"
+    ],
+    "ego_lane_id": "351"
+  },
+  {
+    "scenario_id": "7e384b53a676b06b",
+    "t_star": 12,
+    "eval_track_ids": [
+      "778",
+      "662",
+      "660",
+      "663",
+      "667"
+    ],
+    "ego_lane_id": "815"
+  },
+  {
+    "scenario_id": "55135b84ac76a891",
+    "t_star": 13,
+    "eval_track_ids": [
+      "419",
+      "345",
+      "337",
+      "344",
+      "339"
+    ],
+    "ego_lane_id": "187"
+  },
+  {
+    "scenario_id": "a7080608cf31897f",
+    "t_star": 11,
+    "eval_track_ids": [
+      "448",
+      "15",
+      "9",
+      "14",
+      "27"
+    ],
+    "ego_lane_id": "244"
+  }
+]

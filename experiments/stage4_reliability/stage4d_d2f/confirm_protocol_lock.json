@@ -1,0 +1,55 @@
+{
+  "bindings": {
+    "confirm_code_inventory_sha256": "e2e6bb17535a6958964aa2ea40e8f2d4742a66e6bc11cfed85d217e071399a05",
+    "confirm_manifest_sha256": "7b10accd09517820516b5e1839bf9aad007fdbe395152cc652f9114603a6f878",
+    "confirm_power_report_sha256": "6671b3d52e4507528f3f686f995969da345ec48eead640540f8226a2ddeeaea9",
+    "model_inventory_sha256": "3ba5611ec54a079b89510214b6d38983f422ba74040af9d704ddc084c6138aa8",
+    "screen_lock_sha256": "d472b101cd8360e2a03bfd4ee6aa177d05b62bc3ffc73c1d3feb9c7b0a6a4d70",
+    "screen_report_sha256": "dc0894fcc6646291ceb511b37318fa6568d30c3a67a6ff8f40f055c24b7f7f0a",
+    "source_binding_sha256": "1fa138c41e93fe57ac6553db9efec621fade9ac578a327999d7d6040c0def052"
+  },
+  "bootstrap": {
+    "confidence": 0.95,
+    "entropy": 2026122409,
+    "resamples": 10000,
+    "unit": "whole-group paired"
+  },
+  "confirm_groups": 2000,
+  "create_once": true,
+  "gates": {
+    "baseline_source": "D2E validation_report candidate_gate[EGO_TRAJECTORY_PLUS_RANK].strongest_baseline (repaired-pipeline old validation, frozen); the confirm-strongest standard baseline is disclosed with 95% CIs but never substituted (D2 10.4)",
+    "frozen_primary_baseline": "SEED_MARGIN_STD",
+    "risk_x_confirm": {
+      "r1": "I_AURC >= 0.05 and 95% CI lower > 0",
+      "r2": "I_REGRET80 >= 0.03 and 95% CI lower > 0",
+      "r3": "PR-AUC minus prevalence > 0 (point + 95% CI lower)",
+      "r4": ">= 4/5 seeds both improvements positive",
+      "r5": "baseline denominators valid",
+      "r6": "no leak / no baseline swap / no model swap (QA)",
+      "source": "D2 plan 10.4 verbatim (two-sided 95% CI)"
+    },
+    "task_x_confirm": {
+      "c1": "groups == 2000 and all QA flags",
+      "c2": "high-regret frac >= 0.15",
+      "c3": ">= 3 oracle actions each >= 0.05",
+      "c4": "branch Spearman 95% CI lower > 0",
+      "c5": "base beats random (point + 95% CI lower > 0) and base mean regret <= idle + 1e-12",
+      "c6": "reactive frac >= 0.2",
+      "c7": "every stratum frac >= 0.1",
+      "c8": "denominators / projection / evaluation mask non-degenerate",
+      "source": "D2 plan 10.3: section 8.2 conditions verbatim with every CI-based condition at the two-sided 95% CI; completeness at selected_n"
+    }
+  },
+  "one_shot": "fresh confirm collection -> split -> score (truth-free) -> >=32-group determinism -> freeze scores -> burn confirmation_used.lock -> the SINGLE adjudication opens the sealed truth; no rerun / resample / baseline / model / threshold change after any failure (plan 4)",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "role": "confirm",
+  "salt": "AC-TWIN-D2F-V0.1|",
+  "screen_selected_n": 1000,
+  "selected_n": 2000,
+  "terminal_states": {
+    "both_pass": "D2F_META_DRIVE_EXTERNAL_CONFIRMED",
+    "risk_fail": "D2F_META_DRIVE_NOT_CONFIRMED",
+    "task_fail_or_invalid": "INCONCLUSIVE_D2F_EXTERNAL_INVALID"
+  },
+  "written_at": "2026-09-25T04:57:53"
+}

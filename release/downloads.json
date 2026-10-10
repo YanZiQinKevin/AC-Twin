@@ -1,0 +1,346 @@
+{
+  "files": [
+    {
+      "path": "data/object_centric_stage/merge_2000/object_twinworld_2000.npz",
+      "bytes": "10507305",
+      "sha256": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+      "category": "data",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "data/object_centric_stage/roundabout_2000/object_twinworld_2000.npz",
+      "bytes": "17160457",
+      "sha256": "7e50bf4a17f55d6666549d7743b1d2e5924f5dfa10411f94bd62431146de8672",
+      "category": "data",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "data/object_centric_stage/stage2b_intersection_development_v04/object_twinworld_stage2b_intersection_development_v04.npz",
+      "bytes": "58919362",
+      "sha256": "ae34d0f6b9b08477311155c7bf28985e69047c6d0b0d0ec50c3ea50b8136d270",
+      "category": "data",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "data/object_centric_stage/stage4_merge_risk_confirm/object_twinworld_stage4_merge_risk_confirm.npz",
+      "bytes": "11576367",
+      "sha256": "a9a381a491e8e9253392f95b0af3bbce5eb27bbcbb43b8ac707d81e8798bde2e",
+      "category": "data",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "data/object_centric_stage/stage4_merge_risk_dev/object_twinworld_stage4_merge_risk_dev.npz",
+      "bytes": "28808409",
+      "sha256": "8374cc31ebf10146cc343ac6acd104460d1766b1b1d0e9cba577d11afc5f9c97",
+      "category": "data",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "data/object_centric_stage/stage4cr2_merge_multiaction_dev/object_twinworld_stage4cr2_screen.npz",
+      "bytes": "54672532",
+      "sha256": "96bed045419cf42e106d74046247292984319211bc62ca430d7703ccd8c135d2",
+      "category": "data",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "data/object_centric_stage/stage4cr2_merge_multiaction_dev/object_twinworld_stage4cr2_train.npz",
+      "bytes": "34073035",
+      "sha256": "df240cac7686d885b114b45234a3fa1c9041af2802b68d1c25cfdfe76aac53b8",
+      "category": "data",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage3_routing/stage3r/oof/oof_teacher.npz",
+      "bytes": "12347176",
+      "sha256": "6e00b5d43b7e63c9a7ea1e0440623a6b9639aad37bc3dc7e505540e6385b5e84",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage3_routing/stage3r/router/response_pair0.npz",
+      "bytes": "22564819",
+      "sha256": "a1beefd91b16853a919f151473d73ef172835bf81d07759118a3aa34634c1c99",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage3_routing/stage3r/router/response_pair1.npz",
+      "bytes": "22636176",
+      "sha256": "f37eeb59f94f995d647e4dce13fee0f67786b6f0d486c5b2ecda23135b249472",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage3_routing/stage3r/router/response_pair2.npz",
+      "bytes": "22638407",
+      "sha256": "614bd7d9bdd66a63960259389a2ed80bab4818cf7038b329bb0fc436bb843db5",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage3_routing/stage3r/router/response_pair3.npz",
+      "bytes": "22588019",
+      "sha256": "993082be65a7947b313a61c7e080bd34506ead554b9fdaec5b144921764326e0",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage3_routing/stage3r/router/response_pair4.npz",
+      "bytes": "22674269",
+      "sha256": "4f7c4250e9575005d2cd349d5f151bfbc465be2ec3396d8b4965809553c127f2",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4a_v2/inference/predictions.npz",
+      "bytes": "100270082",
+      "sha256": "34bc12e91a1eaea902a30570d3f19996441443fcd47989cc3cf7ed366f47d9ac",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4b/inference/predictions.npz",
+      "bytes": "32143842",
+      "sha256": "18cb74aec7adddc388082f0bbb0040d527ed727bcd03fdaddb376555f07c48c9",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4c/development/predictions_development_screen.npz",
+      "bytes": "46760840",
+      "sha256": "cc322600becf1f25ab6ca94cc5c4fb09d71bc48b5d1cca5888216916efb8a435",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4c/development/predictions_development_selection.npz",
+      "bytes": "78082630",
+      "sha256": "716bbd854a82af0ad3f42785d959f443a30463a8d447b54a603c35ea58a4a2ce",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4c_r2/development/screen_predictions.npz",
+      "bytes": "1249861405",
+      "sha256": "2e251c87a56f8eb20219ceead8e46768d72a1440afb1b1a4b649fc34cf0abe91",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4c_r2/development/train_predictions.npz",
+      "bytes": "780648135",
+      "sha256": "a6e2b372c1128b0dc3832879b29326222277f49ceece1fd2ee587cf81425e076",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4c_r2/development/validation_predictions.npz",
+      "bytes": "234092670",
+      "sha256": "4567fc7927ec8fc0922c72354d95b530be15d9ee17e0c6e57ad3464eb9cfc5d1",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4cr2_confirm/inference/predictions.npz",
+      "bytes": "312516123",
+      "sha256": "a805329c546eb7518e62c491e0b8874db5e847cef048b52e265aee297ad1113e",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_d2f/confirm/confirm_split/sealed_truth.npz",
+      "bytes": "21330707",
+      "sha256": "c44c8f5e832c4c8f972aa456bb5e4bb39d5811024ae3dd258497df6273aa2e25",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_d2f/development/screen_split/sealed_truth.npz",
+      "bytes": "10564245",
+      "sha256": "d28341f3068b206cee36a8bb05d25f20dcca47dd3f69c807cc11ab8dea0d462c",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_d2f/roles/confirm/checkpoint.npz",
+      "bytes": "23670231",
+      "sha256": "a81c58ed8ba6912ea85dfe30ee6f020c6763090626764e5f21f58d64b5bd6355",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_d2f/roles/confirm/groups.npz",
+      "bytes": "23585474",
+      "sha256": "c9622ea24045fd8e7b6e043b95953fdc44b104ca936d91315c3bde3544d58d34",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_d2f/roles/development_screen/checkpoint.npz",
+      "bytes": "11734917",
+      "sha256": "ebc38f8038d58e13e9446ac2d0c8084bc7f96bf998e23180d51a8de220c91e23",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_d2f/roles/development_screen/groups.npz",
+      "bytes": "11691929",
+      "sha256": "96ce321eda9c33c1909c5d623276624809634a3c0c6a802a5bcf358eb27319ea",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/development/screen_split/inference_inputs.npz",
+      "bytes": "13391119",
+      "sha256": "2051e470e66486346c2f50239f232c9a09936dce0fe7ce1bd3b4325840f51068",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/development/screen_split/sealed_truth.npz",
+      "bytes": "42596826",
+      "sha256": "5101be5e474bb8e148f16baf32c8702c5170291b59912301238365c2f78331c9",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/development/validation_predictions.npz",
+      "bytes": "168106108",
+      "sha256": "451c71066617046c70bc519e06499605c771e917ef59c358c6485056dd6cdda4",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/platform/raw_scenario_index.jsonl",
+      "bytes": "14269099",
+      "sha256": "89e42b4d921202cc40b50d6fe7ff901c0a14a410623cf7786c8e94581abaf793",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/platform/scenario_split_pools.jsonl",
+      "bytes": "10889813",
+      "sha256": "8b7aaac3f8a62f1e0b31af8f3a221318fc721f1ece64e38b111ce14be0372bf8",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/roles/development_screen/checkpoint.npz",
+      "bytes": "47273885",
+      "sha256": "cf382901c89f15950662d1450bcd7c4a3a7848a2b8fb5fe22327dfc3876dd94e",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/roles/development_screen/groups.npz",
+      "bytes": "47106056",
+      "sha256": "04ae9c444a92d0709bc9c030c9fbc2ac489af01cc70897bc2078fa460acc6a38",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/roles/validation/checkpoint.npz",
+      "bytes": "17826898",
+      "sha256": "c456d43ded3f61acadc49a58be5e0f1c86b2dc672a2a92e891d46d2f28da47e9",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_external/roles/validation/groups.npz",
+      "bytes": "17763205",
+      "sha256": "7befe3dd5d74cacb7a960feedba9df056833209f27514d839e94cffdaf394995",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_ood/collection/confirmation_truth.npz",
+      "bytes": "10960273",
+      "sha256": "f8d766192836f440df57bc7e1f862884c8c98d5c966d77ea3abca6a7ed082845",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    },
+    {
+      "path": "experiments/stage4_reliability/stage4d_ood/inference/predictions.npz",
+      "bytes": "313668670",
+      "sha256": "319d3249629b8d13f705a5bc7c9d141db3c23c6c09d16f8c98380979db084cb5",
+      "category": "experiment_output",
+      "storage": "external-download",
+      "url": null,
+      "availability": "awaiting_host"
+    }
+  ]
+}

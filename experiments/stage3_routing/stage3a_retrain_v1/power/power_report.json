@@ -1,0 +1,180 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3A-REPAIR-2026-09-09-V0.1",
+  "purpose": "stage3a_replacement_development_test",
+  "stage": "3A-replacement-power",
+  "forensic_use_only": true,
+  "per_candidate": {
+    "300": {
+      "marginal_power": {
+        "i_mae": 0.9965,
+        "spearman": 1.0,
+        "i_pr_presence": 1.0,
+        "i_pr_high_vs_lowmid": 1.0,
+        "i_brier": 0.844
+      },
+      "se": {
+        "i_mae": 0.011195880472569796,
+        "spearman": 0.012293848992333552,
+        "i_pr_presence": 0.0182970759273655,
+        "i_pr_high_vs_lowmid": 0.0381841431937091,
+        "i_brier": 0.002856293893314301
+      },
+      "weakest": {
+        "condition": "i_brier",
+        "power": 0.844
+      }
+    },
+    "400": {
+      "marginal_power": {
+        "i_mae": 1.0,
+        "spearman": 1.0,
+        "i_pr_presence": 1.0,
+        "i_pr_high_vs_lowmid": 1.0,
+        "i_brier": 0.9205
+      },
+      "se": {
+        "i_mae": 0.009566322916806933,
+        "spearman": 0.010928726911536719,
+        "i_pr_presence": 0.016193145424847802,
+        "i_pr_high_vs_lowmid": 0.033186311210417936,
+        "i_brier": 0.002537102931572396
+      },
+      "weakest": {
+        "condition": "i_brier",
+        "power": 0.9205
+      }
+    },
+    "500": {
+      "marginal_power": {
+        "i_mae": 1.0,
+        "spearman": 1.0,
+        "i_pr_presence": 1.0,
+        "i_pr_high_vs_lowmid": 1.0,
+        "i_brier": 0.964
+      },
+      "se": {
+        "i_mae": 0.00846249457785734,
+        "spearman": 0.00965229938952462,
+        "i_pr_presence": 0.014316280696072662,
+        "i_pr_high_vs_lowmid": 0.02927329432833876,
+        "i_brier": 0.0022769353429616316
+      },
+      "weakest": {
+        "condition": "i_brier",
+        "power": 0.964
+      }
+    },
+    "600": {
+      "marginal_power": {
+        "i_mae": 1.0,
+        "spearman": 1.0,
+        "i_pr_presence": 1.0,
+        "i_pr_high_vs_lowmid": 1.0,
+        "i_brier": 0.991
+      },
+      "se": {
+        "i_mae": 0.00753429814113314,
+        "spearman": 0.008563351868066673,
+        "i_pr_presence": 0.012847821076872868,
+        "i_pr_high_vs_lowmid": 0.026951306442103286,
+        "i_brier": 0.001990442366937471
+      },
+      "weakest": {
+        "condition": "i_brier",
+        "power": 0.991
+      }
+    },
+    "700": {
+      "marginal_power": {
+        "i_mae": 1.0,
+        "spearman": 1.0,
+        "i_pr_presence": 1.0,
+        "i_pr_high_vs_lowmid": 1.0,
+        "i_brier": 0.992
+      },
+      "se": {
+        "i_mae": 0.00727006081750949,
+        "spearman": 0.008331684046968456,
+        "i_pr_presence": 0.011951916778551565,
+        "i_pr_high_vs_lowmid": 0.025030135045723,
+        "i_brier": 0.001940704993054456
+      },
+      "weakest": {
+        "condition": "i_brier",
+        "power": 0.992
+      }
+    },
+    "800": {
+      "marginal_power": {
+        "i_mae": 1.0,
+        "spearman": 1.0,
+        "i_pr_presence": 1.0,
+        "i_pr_high_vs_lowmid": 1.0,
+        "i_brier": 0.9985
+      },
+      "se": {
+        "i_mae": 0.006797903633608402,
+        "spearman": 0.007464661764763213,
+        "i_pr_presence": 0.011297590404778535,
+        "i_pr_high_vs_lowmid": 0.022938358202972558,
+        "i_brier": 0.0017421869190548682
+      },
+      "weakest": {
+        "condition": "i_brier",
+        "power": 0.9985
+      }
+    }
+  },
+  "selected_episode_count": 400,
+  "status": "POWER_FEASIBLE",
+  "candidates": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+  ],
+  "target_power": 0.9,
+  "monte_carlo_replicates": 2000,
+  "seed": 20260909,
+  "z": 1.959963984540054,
+  "pool_size": 300,
+  "rule": "pass = statistic - Z_95 * SE_n > 0; marginal power = passing fraction; weakest of the five metrics sizes the AND chain; NaN draws fail",
+  "temperature": 1.225,
+  "input_summary": {
+    "source": "data/object_centric_stage/merge_2000/object_twinworld_2000.npz",
+    "source_sha256": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+    "old_run_dir": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a",
+    "old_final_selection_sha256": "dfeb114d6dd314c5f1d258a30ceb09a680ec1fb535653c57d8d355b8f8677c1f",
+    "old_scaler_sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181",
+    "old_checkpoint_sha256": {
+      "h96_r32_l0.1_seed101.pt": "420c1b4458bc26f41970991de8c831baf4c1c885b7983f656f9f58919784d088",
+      "h96_r32_l0.1_seed202.pt": "612da36a4730f2bfde5665f6c236b61dd6011b4d31440b6a1f5719d4efa330c2",
+      "h96_r32_l0.1_seed303.pt": "c1dd31eeae98c071e1d12a782c61f26502096a5feacbb15fb4ba703af24160bc",
+      "h96_r32_l0.1_seed404.pt": "5157d0c0f60d04cd09eac3aed7ab5900ded90c6de557ca625fe72979a09947bc",
+      "h96_r32_l0.1_seed505.pt": "dfad4074d077eb14a543f9f84f19f0ed120991dcbcbc8c3f8d16cac12e621008"
+    },
+    "old_checkpoint_signatures": [
+      "602b0c544fa356058220d54994c9264c210e41d70e0e6070967ad33a99bd5778",
+      "5038add9fc956ed55844c09b258c41b57ac541f7f1534f76cd4db878954e1f4e",
+      "6238bb89070023aecc5cfe761930d3b4cd35aee3d17c11d40618dbac18365ccd",
+      "f10791b089a3517812663fad32cd87a8068fca8ca2dd8b9ed76447e70fddd064",
+      "6b7446e00249481c5b34b62ae50861762f3e592dcbd6d237ec11a2580c545270"
+    ],
+    "invalidation_record_sha256": "df026e38f000212cc031c3de69c75c8b26e448d29cb400c3d1345126953bfa99",
+    "final_config": {
+      "hidden_dim": 96,
+      "response_feature_dim": 32,
+      "lambda_cls": 0.1
+    },
+    "strongest_baselines": {
+      "strongest_continuous": "constant_zero",
+      "strongest_presence": "multinomial_plus_distance",
+      "strongest_high_vs_lowmid": "multinomial_adh",
+      "strongest_brier": "multinomial_plus_distance"
+    }
+  },
+  "script_sha256": "d77896672924efb03ac6285933229afcd1d5bc10a41c544ab801db6e09ba520b",
+  "generated_at": "2026-09-09T14:29:53"
+}

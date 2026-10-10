@@ -1,0 +1,233 @@
+{
+  "candidates": [
+    {
+      "aurc_regret": 0.012854856498940132,
+      "config": {
+        "depth": 3,
+        "hidden_width": 64
+      },
+      "config_key": "grid0",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.013320799994592866,
+      "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+      "param_count": 9794,
+      "regret_at_80": 0.01725003042075246,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.012761883251380534,
+      "config": {
+        "depth": 2,
+        "hidden_width": 96
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.013204933338177701,
+      "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+      "param_count": 11522,
+      "regret_at_80": 0.01797779475219672,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.016819498506661843,
+      "config": {
+        "temperature": 0.5
+      },
+      "config_key": "grid0",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.011586199999631694,
+      "method_id": "CONFIDNET_TCP_ADAPTED",
+      "param_count": 9665,
+      "regret_at_80": 0.019852689411273366,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.01652350643620782,
+      "config": {
+        "temperature": 1.0
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.009656533346666643,
+      "method_id": "CONFIDNET_TCP_ADAPTED",
+      "param_count": 9665,
+      "regret_at_80": 0.018649564202772105,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.016890708055128878,
+      "config": {
+        "temperature": 2.0
+      },
+      "config_key": "grid2",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.00981919999079158,
+      "method_id": "CONFIDNET_TCP_ADAPTED",
+      "param_count": 9665,
+      "regret_at_80": 0.019859195439689153,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.014088857917492741,
+      "config": {
+        "difficulty_bins": 4
+      },
+      "config_key": "grid0",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.005157533334568143,
+      "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+      "param_count": 11201,
+      "regret_at_80": 0.01893739294533933,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.013328684325063959,
+      "config": {
+        "difficulty_bins": 8
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.005782533340000858,
+      "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+      "param_count": 11201,
+      "regret_at_80": 0.018140909015929605,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.0195357941686476,
+      "config": {
+        "k": 16
+      },
+      "config_key": "grid0",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.14496220000243434,
+      "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+      "param_count": 11201,
+      "regret_at_80": 0.023220121364565395,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.020953432786592764,
+      "config": {
+        "k": 32
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.13698586666335663,
+      "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+      "param_count": 11201,
+      "regret_at_80": 0.02326750484730639,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.021158521227102507,
+      "config": {
+        "k": 64
+      },
+      "config_key": "grid2",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.16002593333056817,
+      "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+      "param_count": 11201,
+      "regret_at_80": 0.023793331075532068,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.02295216938578153,
+      "config": {
+        "hidden_width": 64
+      },
+      "config_key": "grid0",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.027303066667324554,
+      "method_id": "SELECTIVENET_REGRET_ADAPTED",
+      "param_count": 11331,
+      "regret_at_80": 0.021330902244790444,
+      "valid": true
+    },
+    {
+      "aurc_regret": 0.0229146902682019,
+      "config": {
+        "hidden_width": 96
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.026753133337479085,
+      "method_id": "SELECTIVENET_REGRET_ADAPTED",
+      "param_count": 23139,
+      "regret_at_80": 0.0214383308821121,
+      "valid": true
+    }
+  ],
+  "rule": "per method: lowest validation AURC_REGRET; ties within 1e-12 by lower REGRET@80, fewer params, faster inference, lexicographic config key; STRONGEST_PUBLISHED_BASELINE = unique lowest-AURC winner across methods (same chain, lexicographic method ID last); validation only, the comparison holdout did not exist at selection time",
+  "selected": {
+    "CCTR_DRIVING_CALIBRATION_ADAPTED": {
+      "aurc_regret": 0.012761883251380534,
+      "config": {
+        "depth": 2,
+        "hidden_width": 96
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.013204933338177701,
+      "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+      "param_count": 11522,
+      "regret_at_80": 0.01797779475219672,
+      "valid": true
+    },
+    "CONFIDNET_TCP_ADAPTED": {
+      "aurc_regret": 0.01652350643620782,
+      "config": {
+        "temperature": 1.0
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.009656533346666643,
+      "method_id": "CONFIDNET_TCP_ADAPTED",
+      "param_count": 9665,
+      "regret_at_80": 0.018649564202772105,
+      "valid": true
+    },
+    "CONFORMAL_REGRESSION_REJECT_ADAPTED": {
+      "aurc_regret": 0.013328684325063959,
+      "config": {
+        "difficulty_bins": 8
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.005782533340000858,
+      "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+      "param_count": 11201,
+      "regret_at_80": 0.018140909015929605,
+      "valid": true
+    },
+    "RWR_NN_KNN_REJECT_ADAPTED": {
+      "aurc_regret": 0.0195357941686476,
+      "config": {
+        "k": 16
+      },
+      "config_key": "grid0",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.14496220000243434,
+      "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+      "param_count": 11201,
+      "regret_at_80": 0.023220121364565395,
+      "valid": true
+    },
+    "SELECTIVENET_REGRET_ADAPTED": {
+      "aurc_regret": 0.0229146902682019,
+      "config": {
+        "hidden_width": 96
+      },
+      "config_key": "grid1",
+      "exclusion_reason": "",
+      "mean_inference_ms": 0.026753133337479085,
+      "method_id": "SELECTIVENET_REGRET_ADAPTED",
+      "param_count": 23139,
+      "regret_at_80": 0.0214383308821121,
+      "valid": true
+    }
+  },
+  "strongest_published_baseline": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "tie_tolerance": 1e-12
+}

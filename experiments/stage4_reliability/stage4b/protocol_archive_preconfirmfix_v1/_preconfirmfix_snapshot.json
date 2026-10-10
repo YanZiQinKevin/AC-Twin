@@ -1,0 +1,10 @@
+{
+  "selected_n": 2000,
+  "per_stratum": 200,
+  "seed_schedule_sha256": "20d33bf751e2ce477d3b8f82ae4a8965ebf84b316692fc2b5b8e23f0faf902a9",
+  "n_historical_episode_seeds": 27224,
+  "config_sha256": "81f6e11ac5d6e766dd8249b6369825da12bb9083b0a46573748053f090b7854b",
+  "protocol_py_hash": "3048ab3eff8183732a098c47984b4c6f2483f920ca50af61d01bc2d31e02a19c",
+  "inference_py_hash": "71246b2a1cbbd5ff8c6a47bebc98c68f5aeedc2a8bc8e77d0766a459f92adede",
+  "schedule_npy_bytes_sha256": "33ffd3e3b0074dbd4713d64e8b95673cb6d962910ae2a14057d407398183dacb"
+}

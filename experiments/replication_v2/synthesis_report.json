@@ -1,0 +1,119 @@
+{
+  "experiment": "replication_v2_synthesis",
+  "run_timestamp": "2026-09-04T15:14:32.039476+08:00",
+  "status": "complete",
+  "independent_unit": "test_episode",
+  "confirmatory_contrast": "shuffled_full_minus_prefix_10",
+  "datasets": {
+    "merge_original": {
+      "prediction_file": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\suffix_evidence_ablation\\test_predictions_and_errors.npz",
+      "n_test_episodes": 300,
+      "primary_contrast": "shuffled_full_minus_prefix_10",
+      "primary_analysis": {
+        "independent_unit": "test_episode",
+        "n": 300,
+        "mean_reference_error": 3.436464819510778,
+        "mean_candidate_error": 2.29747475485007,
+        "mean_paired_difference_reference_minus_candidate": 1.138990064660708,
+        "confidence_level": 0.95,
+        "ci_lower": 0.8936142256036401,
+        "ci_upper": 1.3886938284213344,
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20262000,
+        "relative_improvement_percent": 33.144237595391914
+      },
+      "exploratory_history_minus_prefix_10": {
+        "independent_unit": "test_episode",
+        "n": 300,
+        "mean_reference_error": 3.2428486065069833,
+        "mean_candidate_error": 2.29747475485007,
+        "mean_paired_difference_reference_minus_candidate": 0.9453738516569138,
+        "confidence_level": 0.95,
+        "ci_lower": 0.716933746650815,
+        "ci_upper": 1.1740900366902352,
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20262100,
+        "relative_improvement_percent": 29.152574368102186
+      },
+      "gate_pass": true
+    },
+    "merge_independent_seed": {
+      "prediction_file": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\replication_v2\\merge_seed2\\test_predictions_and_errors.npz",
+      "n_test_episodes": 300,
+      "primary_contrast": "shuffled_full_minus_prefix_10",
+      "primary_analysis": {
+        "independent_unit": "test_episode",
+        "n": 300,
+        "mean_reference_error": 3.335036815702915,
+        "mean_candidate_error": 2.2574991373717785,
+        "mean_paired_difference_reference_minus_candidate": 1.0775376783311368,
+        "confidence_level": 0.95,
+        "ci_lower": 0.8515324449427427,
+        "ci_upper": 1.304548604954034,
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20262001,
+        "relative_improvement_percent": 32.30961869019211
+      },
+      "exploratory_history_minus_prefix_10": {
+        "independent_unit": "test_episode",
+        "n": 300,
+        "mean_reference_error": 3.221039676964283,
+        "mean_candidate_error": 2.2574991373717785,
+        "mean_paired_difference_reference_minus_candidate": 0.9635405395925045,
+        "confidence_level": 0.95,
+        "ci_lower": 0.753836802498748,
+        "ci_upper": 1.1701176532196502,
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20262101,
+        "relative_improvement_percent": 29.913960591153216
+      },
+      "gate_pass": true
+    },
+    "roundabout_independent_scene": {
+      "prediction_file": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\replication_v2\\roundabout\\test_predictions_and_errors.npz",
+      "n_test_episodes": 300,
+      "primary_contrast": "shuffled_full_minus_prefix_10",
+      "primary_analysis": {
+        "independent_unit": "test_episode",
+        "n": 300,
+        "mean_reference_error": 5.88469937423865,
+        "mean_candidate_error": 3.576736823618412,
+        "mean_paired_difference_reference_minus_candidate": 2.307962550620238,
+        "confidence_level": 0.95,
+        "ci_lower": 1.9088020009845497,
+        "ci_upper": 2.725265287958085,
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20262002,
+        "relative_improvement_percent": 39.21971886488828
+      },
+      "exploratory_history_minus_prefix_10": {
+        "independent_unit": "test_episode",
+        "n": 300,
+        "mean_reference_error": 4.512650191485882,
+        "mean_candidate_error": 3.576736823618412,
+        "mean_paired_difference_reference_minus_candidate": 0.9359133678674698,
+        "confidence_level": 0.95,
+        "ci_lower": 0.6616921144227187,
+        "ci_upper": 1.2102258740241327,
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20262102,
+        "relative_improvement_percent": 20.739772155024966
+      },
+      "gate_pass": true
+    }
+  },
+  "decision_gate": {
+    "minimum_relative_improvement_percent": 5.0,
+    "requires_ci_lower_above_zero_in_both_new_datasets": true,
+    "requires_no_action_duration_mean_reversal": true,
+    "new_dataset_gate_pass": true,
+    "action_duration_mean_reversal_count": 0,
+    "overall_verdict": "PASS"
+  },
+  "next_stage": "Implement stable object identities and an object-centric dynamic interaction model.",
+  "limitations": [
+    "All three datasets use Highway-env; simulator-level generalization is not yet tested.",
+    "Action-duration subgroups contain 30 test episodes each and are diagnostic rather than separately powered confirmatory tests.",
+    "The current model predicts ego counterfactual effects and does not yet represent stable identities for neighbouring vehicles."
+  ]
+}

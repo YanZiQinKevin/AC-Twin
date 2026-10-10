@@ -1,0 +1,18 @@
+gate,condition,point,ci95_lower,ci95_upper,passed,notes
+TASK,c1_all_complete_gate_q,,true,n_groups=2000
+TASK,c2_high_regret_frac_ge_15pct,high_regret_frac,true,
+TASK,c3_at_least_3_oracle_actions_ge_5pct,,true,covered=7
+TASK,c4_branch_spearman_ci_lower_positive,spearman_branch,true,
+TASK,c5_base_vs_random_point_and_ci_positive,base_vs_random_improvement,true,
+TASK,c6_base_not_worse_than_idle,base_mean_regret,true,idle_mean_regret=0.084158408080915487
+TASK,c7_strata_ge_200_groups,,true,"{""interaction_high"": 1004, ""interaction_low"": 996, ""tstar_high"": 947, ""tstar_low"": 1053}"
+RISK,r1_i_aurc_regret,i_aurc_regret,true,primary baseline SEED_VOTE_ENTROPY
+RISK,r2_i_regret80,i_regret80,true,primary baseline SEED_VOTE_ENTROPY
+RISK,r3_pr_auc_minus_prevalence,pr_auc_minus_prevalence,true,
+RISK,r4_seeds_i_aurc,,true,positive=5/5
+RISK,r5_seeds_i_regret80,,true,positive=5/5
+RISK,r6_strata_floor,,true,"{""interaction_high"": 0.42767934381749595, ""interaction_low"": 0.4441943962460557, ""tstar_high"": 0.45954218881212083, ""tstar_low"": 0.42403649705636054}"
+RISK,r7_trims_positive,,true,"{""trim_0.01"": 0.4106016238387726, ""trim_0.05"": 0.46935759306722996}"
+RISK,r8_margin_spearman,spearman_ensemble_margin,true,
+RISK,r9_qa_and_one_shot_locks,,true,
+TERMINAL,status,,true,STAGE4CR2_DECISION_RISK_CONFIRMED

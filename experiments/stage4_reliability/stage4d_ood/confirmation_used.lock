@@ -1,0 +1,26 @@
+{
+  "bindings": {
+    "collection_receipt_sha256": "5b9649eba66c6102bf34ccddebf5d458fa0e9ef59a18795405db13e287ab9085",
+    "determinism_receipt_sha256": "fe64859b618d19f6df88e1b3f82b126fabcf509667b655874bb7ce69a3cc44e3",
+    "expected_confirmation_truth_sha256": "f8d766192836f440df57bc7e1f862884c8c98d5c966d77ea3abca6a7ed082845",
+    "inference_inputs_sha256": "d94b29fcd1051e2dda3308a317b35c53e2263368b91e998b31952faad9d90acf",
+    "inference_receipt_sha256": "2e70fd49ec7c5e45bd5a1ac12203ce3bf57d07a995492dbdccf4fffe55a252a1",
+    "predictions_sha256": "319d3249629b8d13f705a5bc7c9d141db3c23c6c09d16f8c98380979db084cb5",
+    "protocol_lock_sha256": "5f4b0ca4d76e861c2d52a8fb33e138f899073af947519ca3884954f9d6f3fa12",
+    "recovery_locks": {
+      "recovery_lock_r1.json": "b64cfb4fe7df38e69525097e54a93986b506570fb6f784451ae00fe12f3d5f6d"
+    },
+    "risk_scores_sha256": "608f27f7ea670bf6679285c50a68c5dc7b57977fb36fde1036a5a6a6848a1037",
+    "score_freeze_receipt_sha256": "c7555c7e29fa2e1b7a9a4feaaaa7d759caf974397d08b85dd601c6eaa1f42535",
+    "statistics_code_sha256": "9892b0f42578d4101c7537010552240d7a82eb6fcd303cc890c13ba93536fb89"
+  },
+  "burned_at": "2026-09-21T16:13:53",
+  "coverage": 0.8,
+  "interaction_threshold": 29.128996473819946,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "primary_baseline": "SEED_VOTE_ENTROPY",
+  "role": "d1_confirm",
+  "selected_n": 2000,
+  "semantics": "one-shot: the sealed confirmation truth may be read only after this lock exists; all confirm scores are frozen and hash-bound above",
+  "t_star_stratum_split": 13
+}

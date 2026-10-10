@@ -1,0 +1,49 @@
+{
+  "selected_profile": "B",
+  "initial_vehicle_count": 15,
+  "status": "V04_PROFILE_B_FROZEN",
+  "source_plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-14-V0.3",
+  "qualification_rule": {
+    "accepted_pairs": 600,
+    "per_stratum_min": 100,
+    "support_rate_min": 0.4,
+    "median_paired_valid_non_ego_min": 3,
+    "positive_bin_episode_min": 100
+  },
+  "metrics": {
+    "accepted_pairs": 600,
+    "support_rate": 0.43,
+    "positive_episodes": 258,
+    "median_paired_valid_non_ego": 6.0,
+    "temporary_terciles": {
+      "t1": 0.10348129272460936,
+      "t2": 0.5058403015136718
+    },
+    "bin_episode_counts": {
+      "positive_low": 250,
+      "positive_mid": 240,
+      "positive_high": 173
+    },
+    "per_stratum_min": 100,
+    "prefix_identity_qa_pass": true
+  },
+  "source_sha256": {
+    "pilot_data": "8218640c5252753f8657fbe28d134db911b27643d6d5f675b61fdfe4850631f5",
+    "pilot_receipt": "5fdd9e3737aa02c4f0dbb40a55f2c4f6d89210c5968db4bb2a17ec10e8768730",
+    "pilot_manifest": "18d9adf5796265d40043c2ad62c98ee3bcbb923af438db15eff71eb32e9d3603",
+    "pilot_schedule": "b8ba4e0ea8f94f61f825bf9abeca73103e635ba95296f23eb3b4ed65bcdeceaa",
+    "v03_selection": "2f532f9ee7086f8d6321234a7d0dd4226e1ebd0b8234f835a37a4be272917424",
+    "v04_plan": "0b0147974eed11f71bf48e92370013d51f176181913415020a33aae68002feb6"
+  },
+  "source_files": {
+    "pilot_data": "data/object_centric_stage/stage2b_intersection_pilot_b/object_twinworld_stage2b_intersection_pilot_b.npz",
+    "pilot_receipt": "data/object_centric_stage/stage2b_intersection_pilot_b/collection_receipt.json",
+    "pilot_manifest": "experiments/stage2b_intersection/pilot_b/collection_manifest.json",
+    "pilot_schedule": "experiments/stage2b_intersection/pilot_b/seed_schedule.npy",
+    "v03_selection": "experiments/stage2b_intersection/profile_selection.json",
+    "v04_plan": "plans/2026-09-15_AC-Twin_Stage2B_Intersection恢复实施计划_v0.4.md"
+  },
+  "note": "Development-only recovery before any model error, V_evt or Gate A2B was produced. The v0.3 terminal receipt remains immutable.",
+  "plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-15-V0.4",
+  "selection_sha256": "2e6a3c77a9dc4e81db55b80b0599c166c364473ab2c53971ed2a17d2dcbe2b43"
+}

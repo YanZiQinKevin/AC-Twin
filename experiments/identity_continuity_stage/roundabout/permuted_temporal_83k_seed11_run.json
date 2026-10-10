@@ -1,0 +1,15 @@
+{
+  "signature": "6b010b423a6a35e598f3fc40ba8ba21fd2e804dff5f692e406c92c1dcdc444d0",
+  "summary": {
+    "status": "complete",
+    "seed": 11,
+    "parameters": 83704,
+    "hidden_dim": 59,
+    "epochs_run": 90,
+    "best_epoch": 65,
+    "best_val_mse": 0.12245154003302257,
+    "runtime_seconds": 31.66687479999382,
+    "ADE": 1.5827518701553345,
+    "FDE": 2.7653110027313232
+  }
+}

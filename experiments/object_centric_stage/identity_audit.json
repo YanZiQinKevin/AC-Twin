@@ -1,0 +1,60 @@
+{
+  "experiment": "stable_identity_audit",
+  "run_timestamp": "2026-09-04T15:31:16.424059+08:00",
+  "audit_seed": 20260930,
+  "identity_scope": "episode_local",
+  "assignment_rule": "ego_first_then_seeded_environment_creation_order",
+  "scenes": {
+    "merge-v0": {
+      "env_id": "merge-v0",
+      "requested_episodes": 100,
+      "completed_episodes": 100,
+      "early_terminated_episodes": 0,
+      "entity_capacity": 5,
+      "object_features": [
+        "presence",
+        "is_ego",
+        "x",
+        "y",
+        "vx",
+        "vy",
+        "cos_heading",
+        "sin_heading"
+      ],
+      "initial_identity_failures": 0,
+      "prefix_state_failures": 0,
+      "unregistered_vehicle_failures": 0,
+      "maximum_same_prefix_state_difference": 0.0,
+      "distance_sorted_rank_transition_count": 202,
+      "episodes_with_distance_sorted_rank_transition": 94,
+      "episodes_with_nonzero_branch_effect": 74,
+      "pass": true
+    },
+    "roundabout-v0": {
+      "env_id": "roundabout-v0",
+      "requested_episodes": 100,
+      "completed_episodes": 78,
+      "early_terminated_episodes": 22,
+      "entity_capacity": 5,
+      "object_features": [
+        "presence",
+        "is_ego",
+        "x",
+        "y",
+        "vx",
+        "vy",
+        "cos_heading",
+        "sin_heading"
+      ],
+      "initial_identity_failures": 0,
+      "prefix_state_failures": 0,
+      "unregistered_vehicle_failures": 0,
+      "maximum_same_prefix_state_difference": 0.0,
+      "distance_sorted_rank_transition_count": 388,
+      "episodes_with_distance_sorted_rank_transition": 78,
+      "episodes_with_nonzero_branch_effect": 51,
+      "pass": true
+    }
+  },
+  "overall_pass": true
+}

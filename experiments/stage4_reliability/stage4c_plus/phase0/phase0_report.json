@@ -1,0 +1,177 @@
+{
+  "candidates": {
+    "DECISION_COMPARATIVE_RISK": {
+      "arch": "DECISION_COMPARATIVE_RISK",
+      "bootstrap_resamples": 5000,
+      "ci_lower": {
+        "i_aurc_regret": -0.026814830531648497,
+        "i_regret80": -0.06955974854027093
+      },
+      "conditions": {
+        "folds_positive": false,
+        "i_aurc_regret": false,
+        "i_regret80": false,
+        "pr_auc": true,
+        "trims_positive": true
+      },
+      "confidence": 0.8,
+      "fold_i_aurc": [
+        -0.027728780166789247,
+        0.1528318850539119,
+        0.39276254821894063,
+        0.26847946318085103,
+        -0.04147616322439625
+      ],
+      "folds_positive": 3,
+      "passed": false,
+      "point": {
+        "i_aurc_regret": 0.12121548623471468,
+        "i_regret80": 0.042384185612237224,
+        "pr_auc_minus_prevalence_cand": 0.07137162383108756,
+        "pr_auc_minus_prevalence_margin": 0.06059023300247604
+      },
+      "trim_i_aurc": {
+        "0.01": 0.17770873100671306,
+        "0.05": 0.24402441948180909
+      }
+    },
+    "SAME_INFORMATION_DIRECT": {
+      "arch": "SAME_INFORMATION_DIRECT",
+      "bootstrap_resamples": 5000,
+      "ci_lower": {
+        "i_aurc_regret": -0.0935260609509468,
+        "i_regret80": -0.028858330133820758
+      },
+      "conditions": {
+        "folds_positive": true,
+        "i_aurc_regret": false,
+        "i_regret80": false,
+        "pr_auc": true,
+        "trims_positive": true
+      },
+      "confidence": 0.8,
+      "fold_i_aurc": [
+        0.05706322938037882,
+        0.17238459985637403,
+        0.4005719226374005,
+        0.2740106079812274,
+        0.019867574293601715
+      ],
+      "folds_positive": 5,
+      "passed": false,
+      "point": {
+        "i_aurc_regret": 0.0950091187079493,
+        "i_regret80": 0.0941444590954493,
+        "pr_auc_minus_prevalence_cand": 0.12371970106690153,
+        "pr_auc_minus_prevalence_margin": 0.06059023300247604
+      },
+      "trim_i_aurc": {
+        "0.01": 0.07739177603063792,
+        "0.05": 0.2710308620710263
+      }
+    }
+  },
+  "feature_schema": {
+    "duration_levels": [
+      1,
+      3
+    ],
+    "global_dim": 9,
+    "global_names": [
+      "top1_top2_margin",
+      "top1_top3_margin",
+      "seed_vote_entropy",
+      "seed_top1_agreement",
+      "mean_pairwise_rank_spearman",
+      "preintervention_min_distance",
+      "preintervention_mean_relative_speed",
+      "visible_vehicle_count",
+      "t_star_normalized"
+    ],
+    "high_regret_threshold": 0.01,
+    "n_actions": 10,
+    "n_competitors": 9,
+    "plan_id": "AC-TWIN-RFER-STAGE4C-PLUS-DECISION-AWARE-RISK-2026-09-16-V0.1",
+    "risk_classes": [
+      "COMBINED_RISK_HEAD",
+      "UNCERTAINTY_ONLY",
+      "GEOMETRY_ONLY",
+      "RESPONSE_ONLY",
+      "DISAGREEMENT_ONLY"
+    ],
+    "token_categorical_names": [
+      "selected_action_0",
+      "selected_action_1",
+      "selected_action_2",
+      "selected_action_3",
+      "selected_action_4",
+      "selected_duration_1",
+      "selected_duration_3",
+      "competitor_action_0",
+      "competitor_action_1",
+      "competitor_action_2",
+      "competitor_action_3",
+      "competitor_action_4",
+      "competitor_duration_1",
+      "competitor_duration_3"
+    ],
+    "token_continuous_names": [
+      "delta_j_mean",
+      "delta_j_seed_std",
+      "beat_vote",
+      "rank_mean",
+      "rank_std",
+      "selected_risk_COMBINED_RISK_HEAD",
+      "competitor_risk_COMBINED_RISK_HEAD",
+      "delta_risk_COMBINED_RISK_HEAD",
+      "selected_risk_UNCERTAINTY_ONLY",
+      "competitor_risk_UNCERTAINTY_ONLY",
+      "delta_risk_UNCERTAINTY_ONLY",
+      "selected_risk_GEOMETRY_ONLY",
+      "competitor_risk_GEOMETRY_ONLY",
+      "delta_risk_GEOMETRY_ONLY",
+      "selected_risk_RESPONSE_ONLY",
+      "competitor_risk_RESPONSE_ONLY",
+      "delta_risk_RESPONSE_ONLY",
+      "selected_risk_DISAGREEMENT_ONLY",
+      "competitor_risk_DISAGREEMENT_ONLY",
+      "delta_risk_DISAGREEMENT_ONLY"
+    ],
+    "token_dim": 34
+  },
+  "hidden_dim": 64,
+  "high_regret_threshold": 0.01,
+  "init_seeds": [
+    6101,
+    6202,
+    6303
+  ],
+  "lambda_cls": 0.25,
+  "marker": "EXPLORATORY_OOF_NOT_CONFIRMATORY",
+  "n_dropped_non_finite": 0,
+  "n_folds": 5,
+  "n_selection_groups": 500,
+  "n_valid_groups": 500,
+  "param_audit": {
+    "dcr_param_count": 15746,
+    "direct_param_count": 15740,
+    "direct_width": 43,
+    "rel_diff": 0.00038104915534103897,
+    "tolerance": 0.05,
+    "within_tolerance": true
+  },
+  "phase0_code_sha256": {
+    "ac_twin/stage4cp_features.py": "101c389380dc85974acc43a34d32caf7eeb81599dca4f2b0e2db5cd8bd89ccf0",
+    "ac_twin/stage4cp_models.py": "f4bf0a267d3677aa0d8b5b9b8d05357aa788cc9008a74c2bc51d8c2f9f51111b",
+    "ac_twin/stage4cp_protocol.py": "ee9681aa53dc125a58f5d1fb1c5ab221466d6d9968fe73fde6a7ec5f790d043f",
+    "run_stage4cp.py": "482ff94dce0df0a77024c96248c6606c07b9308fdb478ce17ed3f2a698166703"
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4C-PLUS-DECISION-AWARE-RISK-2026-09-16-V0.1",
+  "predictions_sha256": "716bbd854a82af0ad3f42785d959f443a30463a8d447b54a603c35ea58a4a2ce",
+  "retained_architectures": [],
+  "risk_scores_sha256": "d9bd9c4aaaf25c541b5a28a18330082e1a666c390610044fb08b38a4dbc97abd",
+  "role": "phase0_oof_on_stage4c_development_selection",
+  "selection_data_sha256": "2447ae8a19192bcefae313f4d454ff0af916b2bf302bd35cddb5068704445dc4",
+  "status": "STAGE4CP_FEASIBILITY_NOT_SUPPORTED",
+  "written_at": "2026-09-16T10:19:31"
+}

@@ -1,0 +1,123 @@
+{
+  "chain": {
+    "v1_protocol_lock_path": "experiments\\stage4_reliability\\stage4a\\protocol\\protocol_lock.json",
+    "v1_protocol_lock_sha256": "6329051d235d50b9bb0db3f48681aa072b7807f244d4260227653e1dca24a3a1",
+    "v2_recovery_lock_path": "experiments\\stage4_reliability\\stage4a_v2\\protocol\\recovery_lock.json",
+    "v2_recovery_lock_sha256": "d168cc75ef9bd62caefe9f9efa5fa12cdba94d00f2c5f99d5b18d8d011fa5777",
+    "v3_recovery_lock_path": "experiments\\stage4_reliability\\stage4a_v3\\protocol\\recovery_lock.json",
+    "v3_recovery_lock_sha256": "e94adf4bb12db1d187fd7d4744528a844b4f65585502ab32fd19af20c58ca5f2"
+  },
+  "checkpoint_sha256": {
+    "end_to_end_mixture_pair0_s1101": "b615e7f7b00cab9452e9a9628930641910a60b602896e50e2302ef4046b25c0e",
+    "end_to_end_mixture_pair1_s1202": "082dd9cde4e5702a708b340e7c76760f7d0606ff60d6e3e0496cc09c52e2a60b",
+    "end_to_end_mixture_pair2_s1303": "5a377f02788801ddc5135fa2d4a470e86f14fb53780acb7bd76f4fcdf2d1a70a",
+    "end_to_end_mixture_pair3_s1404": "de1b3f7d19e70eeb0a90db8b7a101cf5ef738414a6920117f7c3e18ddbd35965",
+    "end_to_end_mixture_pair4_s1505": "8dad5f3ec53cada1b9776a2cf1c6f9ddc09e6e0f529fb2bf68711bc04964e538",
+    "pair0_fulltrain_full_seed1101": "13a7c61b180b6e71fbb7887282602347917d06c9f296c3c656d47f2574cc009b",
+    "pair0_fulltrain_history_seed1101": "40f2b550591b27672a38c49afd01b65eca6fe8a8695a654c24c7ec39a857d414",
+    "pair1_fulltrain_full_seed1202": "74f697a05b96ede74a6f049f8897da3bd2a506f072a4b71f4679ca5319c74590",
+    "pair1_fulltrain_history_seed1202": "cdd975b51a4067c0c382d000c260e6dd4a20acaa4374ee15684ab6cdd431abbc",
+    "pair2_fulltrain_full_seed1303": "9c3bb5848c1ef5ebf64146040427da02d3e4bb2986756570f2e0791bf2242382",
+    "pair2_fulltrain_history_seed1303": "1cd6769a47972437565d9171284a19df24ea18a723efc31dc46eaeee321bcea8",
+    "pair3_fulltrain_full_seed1404": "494fcc586b07c31265e14b066f6e9e1d2e80b1173a593cd117d13e166d32bfdb",
+    "pair3_fulltrain_history_seed1404": "dbde2b5fb1220c1f4cb23174cd246f5d73a860d310bdc1f3462f9e437c88779a",
+    "pair4_fulltrain_full_seed1505": "9db58c01b836d067d07f8bab190f9d1d76e9d6ea81920c7d7b75ee21500988f7",
+    "pair4_fulltrain_history_seed1505": "584292117ceb780263d7ead9cf2b2b3a3d9b57aeec6f3dad3ab78104d22d60ae"
+  },
+  "code_sha256": {
+    "ac_twin/stage4_protocol.py": "a5caae50d4d318f6fa55c9c46706159f72c84fec50a5688a697339ad77069b83",
+    "ac_twin/stage4_recovery.py": "95fcc4bea36b6512794ce0b89a595fb1636b29926400dd8f6cbf4b28f8ac9ccf",
+    "ac_twin/stage4_risk.py": "8a874457c3efa1b450f78342aa33133a819723683b7e2321f4caf96ed00c8dca",
+    "ac_twin/stage4_statistics.py": "8c509785be29ff4ef0586db66617f879d13408f83874134114a000f43adfe584",
+    "collect_stage4a_merge_dev.py": "b14a9e26c38ec5a8565bedb42f8aaa711f6e2e14fabf744439798b7545233a1c",
+    "run_stage4a.py": "27095a8bf40544351b9fdde63b2bec40be8bbb8233e26fe9f5ad92488891ea2b"
+  },
+  "config_sha256": "bebd755ed0c0f14f673b2c65ea4cdbdd6ac8f3698982bd6c9cc42df3c473383e",
+  "data_npz_sha256": "8374cc31ebf10146cc343ac6acd104460d1766b1b1d0e9cba577d11afc5f9c97",
+  "data_output": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4_merge_risk_dev\\object_twinworld_stage4_merge_risk_dev.npz",
+  "lock_type": "recovery_from_v3",
+  "note": "Recovery from v3 after a provable reused-inference receipt-path fix to run_stage4a.py::cmd_select_candidate. Reuses v2 frozen inference, the v2-frozen PRIMARY_PREDICTOR and the complete v3 risk fit read-only; v4 replays select-candidate then adjudicate-dev-screen under the same frozen algorithm. No re-collection, no re-inference, no re-selection, no retraining.",
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "primary_predictor": {
+    "constant_w": 0.6,
+    "primary_predictor": "END_TO_END_MIXTURE",
+    "receipt_path": "experiments\\stage4_reliability\\stage4a_v2\\risk\\primary_predictor_receipt.json",
+    "receipt_sha256": "b171e06fefdb5072631dad282ff28b1f22fda60f61dc1548d6c0eda649f3f4e2"
+  },
+  "purpose": "stage4_merge_risk_dev",
+  "reuse_verification": {
+    "candidate_receipt_not_generated": true,
+    "checkpoints_match_v1": true,
+    "data_npz_unchanged": true,
+    "development_screen_untouched": true,
+    "fit_receipt_copy_matches_v3": true,
+    "five_models_hashed": true,
+    "only_allowed_code_drifted": true,
+    "primary_predictor": "END_TO_END_MIXTURE",
+    "primary_predictor_consistent": true,
+    "risk_dataset_copy_matches_v3": true,
+    "runner_fix_patch_consistent": true,
+    "v1_protocol_lock_unchanged": true,
+    "v2_recovery_lock_unchanged": true,
+    "v3_recovery_lock_unchanged": true,
+    "validation_computed_not_persisted": true
+  },
+  "reused_inference": {
+    "prediction_receipt_path": "experiments\\stage4_reliability\\stage4a_v2\\inference\\prediction_receipt.json",
+    "prediction_receipt_sha256": "d35ac2dee73a7f5dd31c926159b5fea15c3d6dc8bad49fd058b866005feb325b",
+    "predictions_npz_path": "experiments\\stage4_reliability\\stage4a_v2\\inference\\predictions.npz",
+    "predictions_npz_sha256": "34bc12e91a1eaea902a30570d3f19996441443fcd47989cc3cf7ed366f47d9ac"
+  },
+  "reused_risk_fit": {
+    "fitted_models": {
+      "COMBINED_RISK_HEAD:histgb": {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_histgb.pt",
+        "sha256": "2ebd8f0ec5bc7f1b0334a957ca16e984f8cc70cbf71c2c4341317fb9aea5ab02"
+      },
+      "COMBINED_RISK_HEAD:mlp": {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_mlp.pt",
+        "sha256": "4a5108030536a2838bac868e3f7da19cc0295fe5164da154b7ee1e8d87bc8edc"
+      },
+      "COMBINED_RISK_HEAD:ridge": {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_ridge.pt",
+        "sha256": "3124f0593439f23ac67c544f81278f952d57420d928ca00faefee70f69f3de7d"
+      },
+      "GEOMETRY_ONLY:ridge": {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\geometry_only_ridge.pt",
+        "sha256": "602d32a6aeb74f998a6c41151b7b7338d354022098bc2e29af60935f996b8bd9"
+      },
+      "RESPONSE_ONLY:ridge": {
+        "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\response_only_ridge.pt",
+        "sha256": "2d1b65e72bb1b799a5510a7d59cf4f0c796458947eed24d2cf44ef9294f2d720"
+      }
+    },
+    "v3_fit_receipt_path": "experiments\\stage4_reliability\\stage4a_v3\\risk\\fit_receipt.json",
+    "v3_fit_receipt_sha256": "201f8f854bba642b6e5ee341525b3fc598b30efe3e07dcb8a85150a65d1b1dad",
+    "v3_risk_dataset_path": "experiments\\stage4_reliability\\stage4a_v3\\risk\\risk_dataset.npz",
+    "v3_risk_dataset_sha256": "423a7aabde61f6604c2a3acd5b2875a30cef766b1a6f95b9170cd926d3658232"
+  },
+  "runner_recovery": {
+    "code_location": "code/run_stage4a.py::cmd_select_candidate (predictions receipt hash path)",
+    "final_runner_sha256": "27095a8bf40544351b9fdde63b2bec40be8bbb8233e26fe9f5ad92488891ea2b",
+    "note": "scientific_fix_runner_sha256 (a8f57d33...) isolates the ONLY scientific-command-path change vs v3 (cmd_select_candidate reused-inference receipt path), proven by the toggle receipt. final_runner_sha256 additionally carries the additive, recovery-only lock-recovery-v4 command; it does not touch selection/adjudication.",
+    "patch_file_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v4\\protocol\\runner_fix_patch.diff",
+    "patch_file_sha256": "77cc6107df7bdc1236830e3e0bcd70c0f39db110f5d98a9e876aa8635c8e66f9",
+    "patch_receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v4\\protocol\\runner_fix_receipt.json",
+    "patch_receipt_sha256": "b5f3190eaabc3ba497f4496feb11bdd6d6aed05200d5f3da60072e5d78cd5fbc",
+    "reason": "select-candidate aborted on a recovery run before writing its receipt: cmd_select_candidate hardcoded run_dir/inference/predictions.npz, but on a recovery run the frozen inference lives in the parent (v2). Fix resolves the predictions receipt hash via _inference_paths(run_dir, lock). No change to candidates, thresholds, ordering, data, seeds, models or any scientific parameter.",
+    "scientific_fix_runner_sha256": "a8f57d331fb0017171f12679b1f5d8458df71a49fa2dd5b3a704bc6688e1e0d9",
+    "v3_locked_runner_sha256": "ac150e93be6e75c1b75ad0b490692e9b869d20d3a923d14bb41c215a510509b5"
+  },
+  "scaler_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\scaler.json",
+  "scaler_sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181",
+  "seed_schedule_path": "experiments\\stage4_reliability\\stage4a\\protocol\\candidate_seed_schedule.npy",
+  "seed_schedule_sha256": "cd22d3066a2224942bf641de28b1d89c41f6d154a9dbbebeac0a7ec22cfcf5ad",
+  "stage3b_binding_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3b\\input_binding_receipt.json",
+  "stage3b_binding_sha256": "881a73c3fd9e378a97e16bdf1a09316119272960b3ba0a730f315474a2d14490",
+  "v4_reuse_copies": {
+    "fit_receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v4\\risk\\fit_receipt.json",
+    "fit_receipt_sha256": "201f8f854bba642b6e5ee341525b3fc598b30efe3e07dcb8a85150a65d1b1dad",
+    "risk_dataset_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v4\\risk\\risk_dataset.npz",
+    "risk_dataset_sha256": "423a7aabde61f6604c2a3acd5b2875a30cef766b1a6f95b9170cd926d3658232"
+  }
+}

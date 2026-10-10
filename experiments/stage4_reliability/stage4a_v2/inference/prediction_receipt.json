@@ -1,0 +1,8 @@
+{
+  "data_sha256": "8374cc31ebf10146cc343ac6acd104460d1766b1b1d0e9cba577d11afc5f9c97",
+  "episode_count": 5000,
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "predictions_sha256": "34bc12e91a1eaea902a30570d3f19996441443fcd47989cc3cf7ed366f47d9ac",
+  "protocol_lock_seed_schedule_sha256": "cd22d3066a2224942bf641de28b1d89c41f6d154a9dbbebeac0a7ec22cfcf5ad",
+  "status": "DEV_INFERENCE_COMPLETE"
+}

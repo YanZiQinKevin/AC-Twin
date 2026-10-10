@@ -1,0 +1,14 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3-2026-09-08-V0.2",
+  "formal_holdouts": [
+    "gatec_merge_id",
+    "gatec_merge_unseen_duration"
+  ],
+  "seed_schedule_sha256": {
+    "gatec_merge_id": "8d253ede3188cc37eefb982e7dbd3c48a2574131218ba962fb0ba9b05efb785a",
+    "gatec_merge_unseen_duration": "6c9b1e00ce539e33d8cfa43e73a7aa0f83c1ec234a654b25e8d2cc697d616e88"
+  },
+  "config_signature": "75562b106c225ace06eaeda5dbec027c288a07c2de34671bb434e73b4a9172f9",
+  "n_historical_seeds": 10000000,
+  "lock_sha256": "61b3fc61eeb75aa2e3f2f0bf84f8b8995d0d2550d99b255987435b6e235028a4"
+}

@@ -1,0 +1,7 @@
+﻿[d2f confirm-run] phase 1/6 START truth split (physical inference_inputs / sealed_truth separation, n=2000) elapsed=0.3s
+[d2f confirm-run] phase 2/6 START hash-verified frozen component load (stack / ego / Direct inventory) elapsed=1.8s
+[d2f confirm-run] phase 3/6 START truth-free scoring (device=cuda, batch_size=32) elapsed=3.4s
+[d2f confirm-run] phase 4/6 START >=32-group determinism recheck elapsed=91.4s
+[d2f confirm-run] phase 5/6 START score freeze + one-shot lock burn (confirmation_used.lock) elapsed=95.2s
+[d2f confirm-run] phase 6/6 START the SINGLE confirm adjudication (truth opens once; 10,000 paired bootstrap, 95% CI) elapsed=95.6s
+[d2f confirm-run] ADJUDICATED status=D2F_META_DRIVE_EXTERNAL_CONFIRMED task_passed=True risk_passed=True elapsed=173.5s

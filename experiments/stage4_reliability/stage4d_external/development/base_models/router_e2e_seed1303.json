@@ -1,0 +1,7 @@
+{
+  "hidden_dim": 64,
+  "input_dim": 70,
+  "objective": "end_to_end_mixture lambda_cew=0 lambda_rank=0",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "seed": 1303
+}

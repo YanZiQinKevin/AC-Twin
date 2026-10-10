@@ -1,0 +1,70 @@
+{
+  "duration_levels": [
+    1,
+    3
+  ],
+  "global_dim": 9,
+  "global_names": [
+    "top1_top2_margin",
+    "top1_top3_margin",
+    "seed_vote_entropy",
+    "seed_top1_agreement",
+    "mean_pairwise_rank_spearman",
+    "preintervention_min_distance",
+    "preintervention_mean_relative_speed",
+    "visible_vehicle_count",
+    "t_star_normalized"
+  ],
+  "high_regret_threshold": 0.01,
+  "n_actions": 10,
+  "n_competitors": 9,
+  "plan_id": "AC-TWIN-RFER-STAGE4C-R2-DECISION-RISK-SCALING-2026-09-16-V0.2",
+  "reused_feature_module": "code/ac_twin/stage4cp_features.py",
+  "reused_feature_module_sha256": "101c389380dc85974acc43a34d32caf7eeb81599dca4f2b0e2db5cd8bd89ccf0",
+  "risk_classes": [
+    "COMBINED_RISK_HEAD",
+    "UNCERTAINTY_ONLY",
+    "GEOMETRY_ONLY",
+    "RESPONSE_ONLY",
+    "DISAGREEMENT_ONLY"
+  ],
+  "token_categorical_names": [
+    "selected_action_0",
+    "selected_action_1",
+    "selected_action_2",
+    "selected_action_3",
+    "selected_action_4",
+    "selected_duration_1",
+    "selected_duration_3",
+    "competitor_action_0",
+    "competitor_action_1",
+    "competitor_action_2",
+    "competitor_action_3",
+    "competitor_action_4",
+    "competitor_duration_1",
+    "competitor_duration_3"
+  ],
+  "token_continuous_names": [
+    "delta_j_mean",
+    "delta_j_seed_std",
+    "beat_vote",
+    "rank_mean",
+    "rank_std",
+    "selected_risk_COMBINED_RISK_HEAD",
+    "competitor_risk_COMBINED_RISK_HEAD",
+    "delta_risk_COMBINED_RISK_HEAD",
+    "selected_risk_UNCERTAINTY_ONLY",
+    "competitor_risk_UNCERTAINTY_ONLY",
+    "delta_risk_UNCERTAINTY_ONLY",
+    "selected_risk_GEOMETRY_ONLY",
+    "competitor_risk_GEOMETRY_ONLY",
+    "delta_risk_GEOMETRY_ONLY",
+    "selected_risk_RESPONSE_ONLY",
+    "competitor_risk_RESPONSE_ONLY",
+    "delta_risk_RESPONSE_ONLY",
+    "selected_risk_DISAGREEMENT_ONLY",
+    "competitor_risk_DISAGREEMENT_ONLY",
+    "delta_risk_DISAGREEMENT_ONLY"
+  ],
+  "token_dim": 34
+}

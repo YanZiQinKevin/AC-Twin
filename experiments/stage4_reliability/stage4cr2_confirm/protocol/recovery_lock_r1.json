@@ -1,0 +1,76 @@
+{
+  "binds_previous_lock_sha256": "d355653b56d67d196ea58006d9e96df5a20e06b2b79f803b2513f5a50fe2f363",
+  "changed_files": {
+    "ac_twin/stage4cr2_confirm_protocol.py": {
+      "after_sha256": "1dde283e950c033e061918ff2481fb43fe00fab6f55a814d864a742fee191f8a",
+      "before_sha256": "4d2bd0f43d8b433cdbc2d641faa82c9ab3fd8a24c361624816baa6d035c29b3c",
+      "diff_summary": "Recovery-chain verification only: new recovery_lock_paths / _verify_recovery_lock / resolve_locked_code_hashes implement the section-8 chain (the original lock is the immutable root; each recovery lock binds the previous lock file SHA256, may re-bind only this stage's own registered code files, never a frozen prior-stage file, and must declare the exact resulting code set; non-contiguous names, wrong kind, no-op changes and undeclared drift fail closed). verify_protocol now checks the current code against the chain-resolved set instead of the raw original set."
+    },
+    "ac_twin/stage4cr2_confirm_statistics.py": {
+      "after_sha256": "73e1e11fe0039227ed7dc4ac815883a81d7115f5e62bca5affca7add2a3ee31b",
+      "before_sha256": "a5fd63f25258a1f956217a967b97523c548a1816c8c8dcf1827836b2864a2737",
+      "diff_summary": "Recheck fix: new _context_aligned_direct_scores helper zero-pads the Direct scoring inputs (tokens/global_features/group_seed) to the formal forward context (direct_context_rows = formal risk_by_seed group count, 2000) and slices the leading rows back, reproducing the formal single-forward GEMM context bit-for-bit (per-row MLP independence; no tolerance). _recheck_chain_once gains a direct_context_rows kwarg and routes score_fn through the helper; run_determinism_recheck and run_smoke_recheck derive it from the persisted risk_by_seed width and record it in the receipts. _assert_protocol_lock_binding resolves the effective code set through the recovery-lock chain (prot.resolve_locked_code_hashes). No model math, features, inputs, masks, labels, gates or RNG domains changed."
+    },
+    "run_stage4cr2_confirm.py": {
+      "after_sha256": "8baf9c56fbd5e02fb8f982b5948c0a41dae9529e51dd06cc2aaf68a0498bd993",
+      "before_sha256": "3f1b173516b666dd72321faf262666eb052a716376ab7ecdbb0f114cc78e69f8",
+      "diff_summary": "cmd_verify only: the cheap protocol-lock binding check resolves the effective code set via prot.resolve_locked_code_hashes so the stage's own read-only verify accepts a valid recovery chain instead of falsely reporting code drift; fail-closed on a broken chain. Strictly necessary: without it the controller's verify-only resume would halt on a legitimate, locked repair. No stage logic changed."
+    }
+  },
+  "code_sha256": {
+    "ac_twin/checkpointing.py": "ff43654a91ec5f3c3ceef739640ea12f507f6072901d2d0bb718e219a368250a",
+    "ac_twin/object_centric.py": "3e1b4288c1009820522da47cde761b488c877118a2bbb33f25c0407bc15462a1",
+    "ac_twin/progress.py": "bcdd740ded3e573d8d4b73ff2ec974b85b4c49c53fa76aef31550467d10bab2e",
+    "ac_twin/stage1_data.py": "4d16921b79264f589a13393e0c9e61a34af63f0694462b0a508dab22f06409f4",
+    "ac_twin/stage2_protocol.py": "b0b0a7d7821fc5b82c573c9ef6ccd5eae241821a14f86ee8377c267645c7351e",
+    "ac_twin/stage2b_protocol.py": "b899ffff90a8cfb21e1fe944ff5e7c39f40cd89960a6ad2fa615843215bf8e2f",
+    "ac_twin/stage3_data.py": "ee174498d6a58fdf0d497ffd1a78e1f46c385ef9aa912462e7d497a7a29e92a5",
+    "ac_twin/stage3_response.py": "28a2636e93fd1add060a60a5c95241b2ff6124089165527420cfdc1fb54cb5c4",
+    "ac_twin/stage3_scaler.py": "97141967d895b6d56597477d3667e8072c728a72d00e86574d8c7500d4eafb43",
+    "ac_twin/stage3_training.py": "cb31105f3d6ffcc39ec040e4f7f4371db226e8aa9d3074ad543f91d37390c7c2",
+    "ac_twin/stage3b_bridge.py": "f96a736be429da10d2dd8c25030e7c7748d703068e6637b19f4e07d681c3526d",
+    "ac_twin/stage3r_models.py": "346614f90d6d6687230370967adeacf9971c94ea5a349e1a80da8324ea1540a5",
+    "ac_twin/stage3r_protocol.py": "cb5eed000d1baa302950890dbe03620c11bae2870fa6a96acfff93613d8145fb",
+    "ac_twin/stage4_protocol.py": "a5caae50d4d318f6fa55c9c46706159f72c84fec50a5688a697339ad77069b83",
+    "ac_twin/stage4_risk.py": "8a874457c3efa1b450f78342aa33133a819723683b7e2321f4caf96ed00c8dca",
+    "ac_twin/stage4b_inference.py": "71246b2a1cbbd5ff8c6a47bebc98c68f5aeedc2a8bc8e77d0766a459f92adede",
+    "ac_twin/stage4c_inference.py": "c3f66b3d81643658aa957a848723ae9f9c384699adf90ae92dde1b9a1308c4bd",
+    "ac_twin/stage4c_objective.py": "a20da1805c14b57bc2ad02f363133b7c53c480909190f52fa5a1cc09964ac44e",
+    "ac_twin/stage4c_protocol.py": "afb3faa368429fbe558275027eece657130c4c6696725b90631459bc2246d4f7",
+    "ac_twin/stage4cp_features.py": "101c389380dc85974acc43a34d32caf7eeb81599dca4f2b0e2db5cd8bd89ccf0",
+    "ac_twin/stage4cp_models.py": "f4bf0a267d3677aa0d8b5b9b8d05357aa788cc9008a74c2bc51d8c2f9f51111b",
+    "ac_twin/stage4cp_protocol.py": "ee9681aa53dc125a58f5d1fb1c5ab221466d6d9968fe73fde6a7ec5f790d043f",
+    "ac_twin/stage4cr2_confirm_inference.py": "a36b139cbeaf106075313baaa8461712a9d02e9b00f6201dc2731e9b157d8f30",
+    "ac_twin/stage4cr2_confirm_protocol.py": "1dde283e950c033e061918ff2481fb43fe00fab6f55a814d864a742fee191f8a",
+    "ac_twin/stage4cr2_confirm_statistics.py": "73e1e11fe0039227ed7dc4ac815883a81d7115f5e62bca5affca7add2a3ee31b",
+    "ac_twin/stage4cr2_protocol.py": "503ba5c59f42bf541891c0601ecb5d386e6c011ed65f9b71b97bda3770e6a8e9",
+    "ac_twin/stage4cr2_training.py": "ad41eb602db4008bba094fcf981efe108c54c2590a47b5f49265d7ab95239040",
+    "collect_pilot.py": "0eab00c8dd9d5493d238bd11170b97f72d4ea58258dccaef465442d7bc7e4f90",
+    "collect_stage2_holdout.py": "306b9edb8f71c14b5c333a582a8965791bdc9b806d3f1e7371c97250bf1882c2",
+    "collect_stage4cr2_merge_confirm.py": "6430adab1150201685865734e19ff76df9781f7570d61ea55192f69b8a494d3b",
+    "collect_stage4cr2_merge_multiaction.py": "01f6d5bfac3c3b06c380bdeddc5fe90007bf982179a5973d847d1d788bfd1db9",
+    "run_stage4a.py": "27095a8bf40544351b9fdde63b2bec40be8bbb8233e26fe9f5ad92488891ea2b",
+    "run_stage4cr2_confirm.py": "8baf9c56fbd5e02fb8f982b5948c0a41dae9529e51dd06cc2aaf68a0498bd993"
+  },
+  "created_at": "2026-09-20T06:48:10",
+  "kind": "pure_engineering_recovery",
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "previous_lock": "protocol_lock.json",
+  "reason": "run-all attempt 2 (2026-09-20) halted at infer-confirm: RuntimeError \"the recheck Direct score 'risk_by_seed' does not equal the formal risk scores' leading slice\". Root cause (probe-verified on the existing formal artifacts, read-only): the frozen Direct scoring path (stage4cr2_training.score_models -> stage4cp_models.predict_decision_risk -> DirectRiskModel.forward) runs the whole design matrix in ONE unbatched CUDA forward, so the cuBLAS GEMM kernel selection (float32 accumulation order) depends on the row count M. The formal inference scored M=2000 groups; the 32-group determinism recheck scored M=32. Probe: recheck-vs-formal leading slices were bitwise EQUAL for all predictions (6 keys x 5 pairs), all 5 risk classes, all 4 baselines, constant_random, t_star, interaction_min_distance, reference_action, valid_mask and group_seed; ONLY the Direct arrays diverged at float32 ULP level (risk_by_seed 146/160 elements, max 5.992e-08; risk_ensemble 32/32, max 1.769e-08; mu_only_ensemble max 2.117e-07; class_only_ensemble max 9.119e-08; all five seeds affected). Scoring the same 32 groups' tokens zero-padded to the formal M=2000 and slicing back reproduces the formal leading slice BITWISE for risk_by_seed, risk_ensemble, mu_only_ensemble and class_only_ensemble. The repair context-aligns ONLY the recheck; the formal inference path and its create-once artifacts are untouched.",
+  "recovery_lock": "recovery_lock_r1",
+  "stage_namespace": "stage4cr2_confirm",
+  "unchanged_artifacts": {
+    "inference_receipt_sha256": "d8cbdad637bb5177d4baa383fff0664ff9c07f66d86e7ebd1546633584f80f27",
+    "note": "the fix changes only HOW the recheck reproduces the formal numbers and the verification chain; every create-once artifact is byte-identical before/after",
+    "predictions_sha256": "a805329c546eb7518e62c491e0b8874db5e847cef048b52e265aee297ad1113e",
+    "protocol_lock_sha256": "d355653b56d67d196ea58006d9e96df5a20e06b2b79f803b2513f5a50fe2f363",
+    "risk_scores_sha256": "019c93ceaf50aafc16edbdffe14ebcc2622d5e5b8b3954878eaf2f0dbfc1c60c"
+  },
+  "verification": {
+    "determinism_receipt_sha256": "7e2ddb9fef1cf88eeb3cb185c116a31f7c06165478aa9c39913bec3bce1c1285",
+    "infer_confirm_run": "python code/run_stage4cr2_confirm.py infer-confirm --config experiments/stage4_reliability/stage4cr2_confirm/stage4cr2_confirm_config.json -> formal inference verify-skipped (existing_inference_verified_no_overwrite; predictions/risk_scores/inference_receipt hashes unchanged); the determinism recheck passed bitwise over the leading 32 groups (two independent runs elementwise identical AND equal to the formal leading slices)",
+    "probe": "recheck chain pass over the leading 32 groups against the existing formal artifacts: predictions/baselines/strata inputs bitwise EQUAL; Direct arrays diverged standalone (M=32) and matched bitwise when padded to M=2000 (risk_by_seed / risk_ensemble / mu_only_ensemble / class_only_ensemble all np.array_equal True)",
+    "smoke_recheck": "the existing 12-group smoke recheck receipt re-verified (existing_smoke_recheck_verified_no_overwrite; direct_context_rows=12 makes the alignment a no-op on the smoke role)",
+    "tests": "210 passed under -W error: the five stage blocking files (195 pre-existing + 15 new: 6 statistics Direct-context/recovery-chain tests, 9 protocol recovery-chain tests)"
+  }
+}

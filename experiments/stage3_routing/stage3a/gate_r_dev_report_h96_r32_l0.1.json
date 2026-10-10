@@ -1,0 +1,150 @@
+{
+  "verdict": {
+    "passed": false,
+    "checks": {
+      "i_mae_ci_lower_gt0": false,
+      "spearman_ci_lower_gt0": true,
+      "i_pr_presence_ci_lower_gt0": true,
+      "i_pr_high_vs_lowmid_ci_lower_gt0": false,
+      "i_brier_ci_lower_gt0": false,
+      "ece_calibrated": false,
+      "five_seed_consistent_nondegenerate": false
+    }
+  },
+  "metrics": {
+    "i_mae": {
+      "point": -0.03720690616755507,
+      "ci_lower": -0.0601827600827657,
+      "ci_upper": -0.014736565492633687,
+      "n_resamples": 2000,
+      "n_finite_draws": 2000,
+      "confidence_level": 0.95,
+      "bootstrap_seed": 20260908,
+      "n_episodes": 300
+    },
+    "spearman": {
+      "point": 0.539514207584534,
+      "ci_lower": 0.5112493397121448,
+      "ci_upper": 0.5673061689119479,
+      "n_resamples": 2000,
+      "n_finite_draws": 2000,
+      "confidence_level": 0.95,
+      "bootstrap_seed": 20260908,
+      "n_episodes": 300
+    },
+    "i_pr_presence": {
+      "point": 0.29951874257651884,
+      "ci_lower": 0.24407996070512808,
+      "ci_upper": 0.3537479655299872,
+      "n_resamples": 2000,
+      "n_finite_draws": 2000,
+      "confidence_level": 0.95,
+      "bootstrap_seed": 20260908,
+      "n_episodes": 300
+    },
+    "i_pr_high_vs_lowmid": {
+      "point": -0.01839979099174499,
+      "ci_lower": -0.08298404073803628,
+      "ci_upper": 0.04700741881323496,
+      "n_resamples": 2000,
+      "n_finite_draws": 2000,
+      "confidence_level": 0.95,
+      "bootstrap_seed": 20260908,
+      "n_episodes": 300
+    },
+    "i_brier": {
+      "point": 2.0598361725618353e-05,
+      "ci_lower": -0.00534201224351235,
+      "ci_upper": 0.005478576761816811,
+      "n_resamples": 2000,
+      "n_finite_draws": 2000,
+      "confidence_level": 0.95,
+      "bootstrap_seed": 20260908,
+      "n_episodes": 300
+    },
+    "ece_calibrated": 0.05854535584896746,
+    "ece_uncalibrated": 0.06096356273238152,
+    "model_mae": 0.25863202251658685,
+    "model_brier": 0.062273797431651234
+  },
+  "baselines": {
+    "strongest_continuous": "constant_zero",
+    "strongest_presence": "multinomial_plus_distance",
+    "strongest_high_vs_lowmid": "multinomial_adh",
+    "strongest_brier": "multinomial_plus_distance",
+    "frozen_on": "validation",
+    "continuous_mae": {
+      "constant_zero": 0.2214251163490318,
+      "train_mean_by_horizon": 0.40956363150885483,
+      "linear_action_duration_horizon": 0.3153264785298955,
+      "linear_plus_distance": 0.30911312318435336
+    },
+    "classification_brier": {
+      "prevalence": 0.07020579878826531,
+      "multinomial_adh": 0.0695140570771088,
+      "multinomial_plus_distance": 0.06229439579337685
+    }
+  },
+  "five_seed": {
+    "per_seed": {
+      "i_mae": [
+        -0.0858759439881411,
+        -0.031938511691600585,
+        -0.037516410375704606,
+        -0.03624934034021135,
+        -0.03515542423080811
+      ],
+      "spearman": [
+        0.5119783654074563,
+        0.5570284421083612,
+        0.5598021287799986,
+        0.48090204928783176,
+        0.5698843689052219
+      ],
+      "i_pr_presence": [
+        0.2820680093692031,
+        0.2892119987858108,
+        0.29341157148968106,
+        0.316096400551751,
+        0.2712751870659797
+      ],
+      "i_pr_high_vs_lowmid": [
+        -0.025061856803723026,
+        -0.035271534205908894,
+        -0.028237388722044177,
+        -0.0034316963334364847,
+        -0.01456917967262572
+      ],
+      "i_brier": [
+        0.0018886568610665677,
+        -0.001852129332872085,
+        -0.0033034278085237595,
+        -0.004007434669541982,
+        -0.0007525986738126794
+      ]
+    },
+    "consistent": false,
+    "non_degenerate": true
+  },
+  "temperature": 1.5,
+  "bootstrap": {
+    "n_resamples": 2000,
+    "confidence_level": 0.95,
+    "seed": 20260908,
+    "n_episodes": 300
+  },
+  "final_config": {
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "lambda_cls": 0.1
+  },
+  "eval_split": "development_test",
+  "selection_receipt_signature": "45b7de714a479501c0bbc08fe5f08b274a8686f58ee8e9101cfb8d623cf2e7ac",
+  "seed_signatures": [
+    "602b0c544fa356058220d54994c9264c210e41d70e0e6070967ad33a99bd5778",
+    "5038add9fc956ed55844c09b258c41b57ac541f7f1534f76cd4db878954e1f4e",
+    "6238bb89070023aecc5cfe761930d3b4cd35aee3d17c11d40618dbac18365ccd",
+    "f10791b089a3517812663fad32cd87a8068fca8ca2dd8b9ed76447e70fddd064",
+    "6b7446e00249481c5b34b62ae50861762f3e592dcbd6d237ec11a2580c545270"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "MARGIN_ONLY_aurc_regret": {
+      "abs_delta": 0.0,
+      "actual": 0.02082420108993283,
+      "expected": 0.02082420108993283,
+      "within_tolerance": true
+    },
+    "MARGIN_ONLY_regret_at_80": {
+      "abs_delta": 0.0,
+      "actual": 0.021216562557916544,
+      "expected": 0.021216562557916544,
+      "within_tolerance": true
+    },
+    "SEED_MARGIN_STD_aurc_regret": {
+      "abs_delta": 0.0,
+      "actual": 0.02183794003103976,
+      "expected": 0.02183794003103976,
+      "within_tolerance": true
+    },
+    "SEED_MARGIN_STD_regret_at_80": {
+      "abs_delta": 0.0,
+      "actual": 0.02236576473238388,
+      "expected": 0.02236576473238388,
+      "within_tolerance": true
+    },
+    "SEED_VOTE_ENTROPY_aurc_regret": {
+      "abs_delta": 0.0,
+      "actual": 0.01895943489845288,
+      "expected": 0.01895943489845288,
+      "within_tolerance": true
+    },
+    "SEED_VOTE_ENTROPY_regret_at_80": {
+      "abs_delta": 0.0,
+      "actual": 0.020541961739345773,
+      "expected": 0.020541961739345773,
+      "within_tolerance": true
+    },
+    "aurc_regret": {
+      "abs_delta": 0.0,
+      "actual": 0.01097011193590744,
+      "expected": 0.01097011193590744,
+      "within_tolerance": true
+    },
+    "regret_at_80": {
+      "abs_delta": 0.0,
+      "actual": 0.014781005580774434,
+      "expected": 0.014781005580774434,
+      "within_tolerance": true
+    }
+  },
+  "passed": true,
+  "tolerance": 1e-08
+}

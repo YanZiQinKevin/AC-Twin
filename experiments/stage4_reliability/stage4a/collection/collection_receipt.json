@@ -1,0 +1,52 @@
+{
+  "experiment_name": "stage4a_merge_risk_dev",
+  "analysis_status": "stage4_merge_risk_dev",
+  "purpose": "stage4_merge_risk_dev",
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "partial": false,
+  "requested_pairs": 5000,
+  "accepted_pairs": 5000,
+  "attempts": 8160,
+  "collection_seed": 20260911,
+  "seed_entropy": 20260911,
+  "strata_per_cell": 500,
+  "skip_counts": {
+    "prefix_terminated": 3160,
+    "prefix_mismatch": 0,
+    "object_prefix_mismatch": 0,
+    "factual_future_short": 0,
+    "counterfactual_future_short": 0,
+    "non_finite": 0,
+    "short_history": 0,
+    "initial_fingerprint_mismatch": 0,
+    "object_replay_shape_mismatch": 0,
+    "stratum_quota_full": 0
+  },
+  "accepted_strata": {
+    "action_0_duration_1": 500,
+    "action_0_duration_3": 500,
+    "action_1_duration_1": 500,
+    "action_1_duration_3": 500,
+    "action_2_duration_1": 500,
+    "action_2_duration_3": 500,
+    "action_3_duration_1": 500,
+    "action_3_duration_3": 500,
+    "action_4_duration_1": 500,
+    "action_4_duration_3": 500
+  },
+  "prefix_max_abs_diff": 0.0,
+  "identity_max_abs_diff": 0.0,
+  "identity_replay_checks": 20,
+  "protocol_lock_seed_schedule_sha256": "cd22d3066a2224942bf641de28b1d89c41f6d154a9dbbebeac0a7ec22cfcf5ad",
+  "environment": {
+    "python_version": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy_version": "1.26.4",
+    "torch_version": "2.9.1+cu130",
+    "highway_env_version": "1.10.2",
+    "gymnasium_version": "1.3.0"
+  },
+  "config_signature": "1d4355d57686fc3f000f4de0415ad5adcfdeafb656e11e4f094c6a84e926d8d9",
+  "generated_at": "2026-09-11T12:15:05",
+  "data_output_sha256": "8374cc31ebf10146cc343ac6acd104460d1766b1b1d0e9cba577d11afc5f9c97"
+}

@@ -1,0 +1,64 @@
+{
+  "batch_size": 32,
+  "binding_sha256": "881a73c3fd9e378a97e16bdf1a09316119272960b3ba0a730f315474a2d14490",
+  "branches": 20000,
+  "constant_random_rng_seed": 1110219510,
+  "constant_random_streams": {
+    "action_level": {
+      "action_stream_root": [
+        2026093012,
+        0
+      ],
+      "constant_random_salt": 2026093203,
+      "derivation": "int(SeedSequence([*action_stream_root, constant_random_salt]).generate_state(1)[0])",
+      "mirrors": "stage4cr2_inference._curve_reference_seed (salt substituted)",
+      "rng_seed": 1110219510
+    },
+    "group_level": {
+      "derivation": "per group: SeedSequence([int(group_seed)]).generate_state(1)[0] / float(2**32) \u2014 NO salt",
+      "mirrors": "stage4cr2_statistics._constant_random_scores"
+    }
+  },
+  "data_sha256": "ba84748442c21e3dfb9fe9e0c58c24c3314d45af268dd99839dea3301ea254fc",
+  "device": "cuda",
+  "dtype": "float32",
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "feature_scaler_sha256": "2f21c11ae248f5883d8e9c4c8fa7efb876ad1afb453ee7eec462509a48104194",
+  "final_selection_sha256": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+  "groups": 2000,
+  "input_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_confirm\\inference_inputs.npz",
+  "model_inventory_sha256": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+  "model_seeds": [
+    8101,
+    8202,
+    8303,
+    8404,
+    8505
+  ],
+  "n_actions": 10,
+  "n_valid": 2000,
+  "pair_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "predictions_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\inference\\predictions.npz",
+  "predictions_sha256": "a805329c546eb7518e62c491e0b8874db5e847cef048b52e265aee297ad1113e",
+  "receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\inference\\inference_receipt.json",
+  "risk_classes": [
+    "COMBINED_RISK_HEAD",
+    "UNCERTAINTY_ONLY",
+    "GEOMETRY_ONLY",
+    "RESPONSE_ONLY",
+    "DISAGREEMENT_ONLY"
+  ],
+  "risk_scores_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\inference\\risk_scores.npz",
+  "risk_scores_sha256": "019c93ceaf50aafc16edbdffe14ebcc2622d5e5b8b3954878eaf2f0dbfc1c60c",
+  "role": "confirm",
+  "status": "INFERENCE_COMPLETE",
+  "trajectory_scaler_sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181",
+  "written_at": "2026-09-20T06:13:47"
+}

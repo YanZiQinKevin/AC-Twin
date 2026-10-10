@@ -1,0 +1,641 @@
+{
+  "admissible_ns": [
+    1000,
+    1500,
+    2000,
+    2500
+  ],
+  "bindings": {
+    "d2e_power_code_sha256": "595ee1c1ce01f785ad3f3ea6f1f30260746759b81fbfb4e2764a0f5b60e477f7",
+    "d2f_power_code_sha256": "6b625a0eb018a5defea5aac0cb9693f01af78153128edd8b4bf3057c48375538",
+    "d2f_protocol_code_sha256": "5c7b45b3ef248c6aa921b64cd0c2afeed9d34fbf39df93097aec03f7653b6e2b",
+    "pool_capacity_audit_sha256": "e2667f3ecaf6b0469f22ab5ab8c0866b10e9f98381bfa0dc61c509854938b7e1",
+    "power_validation_quantities_sha256": "023b83827cd278707e59dfcb8928917679e761a6993a9514378d66186985f21a",
+    "source_binding_sha256": "1fa138c41e93fe57ac6553db9efec621fade9ac578a327999d7d6040c0def052",
+    "statistics_code_sha256": "58374e081914a6d3b41833b54793f89d3be5f35e9c0d7239ea951a4104b53b84"
+  },
+  "confidence": 0.8,
+  "n_reference": 1500,
+  "n_resamples": 10000,
+  "old_algorithm": {
+    "identity_parity_max_abs_diff": 0.0,
+    "note": "the OLD report is quoted as a preserved terminal state (D2E_SCREEN_UNDERPOWERED); it is never overwritten or re-adjudicated, and its overall 0.75 x theta shrink is a pre-collection power-simulation calibre defect, not evidence about the model",
+    "old_binding_condition_at_n2500": "c6_reactive_frac",
+    "old_bootstrap_seed": 2026122405,
+    "old_joint_power_075_at_n2500": 0.6759,
+    "old_report_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2e\\power\\screen_power_report.json",
+    "old_report_sha256": "d2570e290d42068de32037a6e3ecabe8d4ccc0ffda6f84a5c23904d603b1f75e",
+    "old_selected_n": null,
+    "old_status": "D2E_SCREEN_UNDERPOWERED"
+  },
+  "per_n": {
+    "1000": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.9099,
+      "joint_power_at_selection": 0.8914,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.6077,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.8036,
+            "r2_i_regret80": 0.6989,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9226
+          }
+        },
+        "0.75": {
+          "joint_power": 0.8914,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9697,
+            "r2_i_regret80": 0.9099,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9882
+          }
+        },
+        "1.00": {
+          "joint_power": 0.982,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9976,
+            "r2_i_regret80": 0.984,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9981
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.0025223046310649893,
+        "base_vs_random_improvement": 0.02185866911837316,
+        "high_regret_frac": 0.01573857916990695,
+        "i_aurc_regret": 0.045018465369730726,
+        "i_regret80": 0.03520533911347082,
+        "idle_mean_regret": 0.002796082276090372,
+        "interaction_high_frac": 0.015956925355051298,
+        "interaction_low_frac": 0.0159569253550513,
+        "oracle_share_a0": 0.010753894549641003,
+        "oracle_share_a1": 0.01084556258258525,
+        "oracle_share_a2": 0.005415607001058975,
+        "oracle_share_a3": 0.00830579938298169,
+        "oracle_share_a4": 0.010263186895917178,
+        "oracle_share_a5": 0.010111187495603925,
+        "oracle_share_a6": 0.00904020104386464,
+        "oracle_share_a7": 0.014254803784798094,
+        "oracle_share_a8": 0.003511407152128446,
+        "oracle_share_a9": 0.0025739372710514,
+        "pr_auc_minus_prevalence": 0.019131028544847297,
+        "reactive_frac": 0.01397450509568288,
+        "seed9101_i_aurc": 0.04740490037269925,
+        "seed9101_i_regret80": 0.03490046710708122,
+        "seed9202_i_aurc": 0.04126043585276046,
+        "seed9202_i_regret80": 0.03462474693898387,
+        "seed9303_i_aurc": 0.04854116611837511,
+        "seed9303_i_regret80": 0.036300016146111676,
+        "seed9404_i_aurc": 0.05235467595115411,
+        "seed9404_i_regret80": 0.03631399785286837,
+        "seed9505_i_aurc": 0.038379649701124875,
+        "seed9505_i_regret80": 0.034178929039448566,
+        "spearman_branch": 0.012250823396757758,
+        "tstar_high_frac": 0.015794490245088964,
+        "tstar_low_frac": 0.01579449024508895
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.49266666666666664,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.5034,
+              "joint_power": 0.4376
+            },
+            "0.20": {
+              "c2_marginal_power": 0.999,
+              "joint_power": 0.8904
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.8914
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.272,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.5136,
+              "joint_power": 0.456
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9199,
+              "joint_power": 0.8192
+            },
+            "0.24": {
+              "c6_marginal_power": 0.9977,
+              "joint_power": 0.8893
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    },
+    "1500": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.972,
+      "joint_power_at_selection": 0.9654,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.7599,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.8955,
+            "r2_i_regret80": 0.8238,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.964
+          }
+        },
+        "0.75": {
+          "joint_power": 0.9654,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9919,
+            "r2_i_regret80": 0.972,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9971
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9967,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9997,
+            "r2_i_regret80": 0.997,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9997
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.0020493654893504617,
+        "base_vs_random_improvement": 0.017639980295531942,
+        "high_regret_frac": 0.012749499014613221,
+        "i_aurc_regret": 0.036509570978807686,
+        "i_regret80": 0.02894303204441123,
+        "idle_mean_regret": 0.00229162261175945,
+        "interaction_high_frac": 0.012849344968603179,
+        "interaction_low_frac": 0.012849344968603179,
+        "oracle_share_a0": 0.008858456988752483,
+        "oracle_share_a1": 0.009026255689577036,
+        "oracle_share_a2": 0.004437529762070463,
+        "oracle_share_a3": 0.006752287719732929,
+        "oracle_share_a4": 0.008237916058586725,
+        "oracle_share_a5": 0.00836138012697442,
+        "oracle_share_a6": 0.00750821013511572,
+        "oracle_share_a7": 0.0116135333064503,
+        "oracle_share_a8": 0.00288168709359359,
+        "oracle_share_a9": 0.002105827778638498,
+        "pr_auc_minus_prevalence": 0.01578807589356076,
+        "reactive_frac": 0.01156085546085529,
+        "seed9101_i_aurc": 0.03859389552195732,
+        "seed9101_i_regret80": 0.028779394653709284,
+        "seed9202_i_aurc": 0.03345029799063103,
+        "seed9202_i_regret80": 0.028693321576471843,
+        "seed9303_i_aurc": 0.039458362958704606,
+        "seed9303_i_regret80": 0.02973841278526685,
+        "seed9404_i_aurc": 0.04257920700199352,
+        "seed9404_i_regret80": 0.030043897084792263,
+        "seed9505_i_aurc": 0.03125887217533973,
+        "seed9505_i_regret80": 0.028325773475047826,
+        "spearman_branch": 0.009807035067273283,
+        "tstar_high_frac": 0.012942016373077354,
+        "tstar_low_frac": 0.012942016373077354
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.49266666666666664,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.4948,
+              "joint_power": 0.4762
+            },
+            "0.20": {
+              "c2_marginal_power": 0.9999,
+              "joint_power": 0.9653
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9654
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.272,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.5085,
+              "joint_power": 0.4904
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9567,
+              "joint_power": 0.923
+            },
+            "0.24": {
+              "c6_marginal_power": 0.9997,
+              "joint_power": 0.9651
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    },
+    "2000": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.9923,
+      "joint_power_at_selection": 0.9897,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.855,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9302,
+            "r2_i_regret80": 0.9042,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9861
+          }
+        },
+        "0.75": {
+          "joint_power": 0.9897,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9974,
+            "r2_i_regret80": 0.9923,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9997
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9999,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9999,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 1.0
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.0017905899401321728,
+        "base_vs_random_improvement": 0.015396842788895493,
+        "high_regret_frac": 0.011151919286399853,
+        "i_aurc_regret": 0.03132147527718409,
+        "i_regret80": 0.02451127192384779,
+        "idle_mean_regret": 0.0019688771171904587,
+        "interaction_high_frac": 0.011205669285674727,
+        "interaction_low_frac": 0.011205669285674728,
+        "oracle_share_a0": 0.0076315492538803304,
+        "oracle_share_a1": 0.007596644580233288,
+        "oracle_share_a2": 0.0038536391960723765,
+        "oracle_share_a3": 0.005854391098954182,
+        "oracle_share_a4": 0.007185210172432133,
+        "oracle_share_a5": 0.007222957366017824,
+        "oracle_share_a6": 0.006509717861794321,
+        "oracle_share_a7": 0.00985207408690582,
+        "oracle_share_a8": 0.0024839922743965866,
+        "oracle_share_a9": 0.0018190253771820455,
+        "pr_auc_minus_prevalence": 0.013704610694260952,
+        "reactive_frac": 0.009888146455935679,
+        "seed9101_i_aurc": 0.033156531889162136,
+        "seed9101_i_regret80": 0.0244913547224719,
+        "seed9202_i_aurc": 0.028842849295906286,
+        "seed9202_i_regret80": 0.024355525383998593,
+        "seed9303_i_aurc": 0.03385957184562014,
+        "seed9303_i_regret80": 0.025219220121148467,
+        "seed9404_i_aurc": 0.03674918083397429,
+        "seed9404_i_regret80": 0.025498912834721506,
+        "seed9505_i_aurc": 0.02675056881070806,
+        "seed9505_i_regret80": 0.024033842577823636,
+        "spearman_branch": 0.008538451849489582,
+        "tstar_high_frac": 0.011168422923898472,
+        "tstar_low_frac": 0.011168422923898452
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.49266666666666664,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.4947,
+              "joint_power": 0.4889
+            },
+            "0.20": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9897
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9897
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.272,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.5093,
+              "joint_power": 0.5037
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9777,
+              "joint_power": 0.9675
+            },
+            "0.24": {
+              "c6_marginal_power": 1.0,
+              "joint_power": 0.9897
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    },
+    "2500": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.9974,
+      "joint_power_at_selection": 0.9972,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.8924,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9491,
+            "r2_i_regret80": 0.9311,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9934
+          }
+        },
+        "0.75": {
+          "joint_power": 0.9972,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9997,
+            "r2_i_regret80": 0.9974,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9999
+          }
+        },
+        "1.00": {
+          "joint_power": 1.0,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 1.0,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 1.0
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.001616457858507017,
+        "base_vs_random_improvement": 0.013842327268209286,
+        "high_regret_frac": 0.010026622228613759,
+        "i_aurc_regret": 0.028264804712718816,
+        "i_regret80": 0.022314683889539125,
+        "idle_mean_regret": 0.0017958295448250797,
+        "interaction_high_frac": 0.009940247930272744,
+        "interaction_low_frac": 0.009940247930272742,
+        "oracle_share_a0": 0.00683610096569977,
+        "oracle_share_a1": 0.006945224408513267,
+        "oracle_share_a2": 0.0034303390049627595,
+        "oracle_share_a3": 0.005267777480717901,
+        "oracle_share_a4": 0.006271896923539317,
+        "oracle_share_a5": 0.006431909558479258,
+        "oracle_share_a6": 0.005814538965037348,
+        "oracle_share_a7": 0.009037559050814534,
+        "oracle_share_a8": 0.0022236963197640666,
+        "oracle_share_a9": 0.0016471844346205332,
+        "pr_auc_minus_prevalence": 0.01231189930129254,
+        "reactive_frac": 0.008947188171041046,
+        "seed9101_i_aurc": 0.029842491550804925,
+        "seed9101_i_regret80": 0.022222177618223253,
+        "seed9202_i_aurc": 0.02606288510814294,
+        "seed9202_i_regret80": 0.02223617100169467,
+        "seed9303_i_aurc": 0.03052969248578497,
+        "seed9303_i_regret80": 0.022997445017426715,
+        "seed9404_i_aurc": 0.033063202793344876,
+        "seed9404_i_regret80": 0.023051832023509047,
+        "seed9505_i_aurc": 0.024389166554668235,
+        "seed9505_i_regret80": 0.021709705678870216,
+        "spearman_branch": 0.007651113337129992,
+        "tstar_high_frac": 0.010077360831811743,
+        "tstar_low_frac": 0.010077360831811743
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.49266666666666664,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.501,
+              "joint_power": 0.499
+            },
+            "0.20": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9972
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9972
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.272,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.4997,
+              "joint_power": 0.4977
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9861,
+              "joint_power": 0.9834
+            },
+            "0.24": {
+              "c6_marginal_power": 1.0,
+              "joint_power": 0.9972
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    }
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "power_seed": 2026122406,
+  "reference": {
+    "base_mean_regret": 0.057112465517534065,
+    "base_vs_random_improvement": 0.4921734906774733,
+    "high_regret_frac": 0.49266666666666664,
+    "i_aurc_regret": 0.19366888342529184,
+    "i_regret80": 0.11685124138320663,
+    "idle_mean_regret": 0.10603879854895719,
+    "interaction_high_frac": 0.49533333333333335,
+    "interaction_low_frac": 0.5046666666666667,
+    "oracle_share_a0": 0.134,
+    "oracle_share_a1": 0.13933333333333334,
+    "oracle_share_a2": 0.030666666666666665,
+    "oracle_share_a3": 0.074,
+    "oracle_share_a4": 0.11533333333333333,
+    "oracle_share_a5": 0.11733333333333333,
+    "oracle_share_a6": 0.092,
+    "oracle_share_a7": 0.278,
+    "oracle_share_a8": 0.012666666666666666,
+    "oracle_share_a9": 0.006666666666666667,
+    "pr_auc_minus_prevalence": 0.19327016004989334,
+    "reactive_frac": 0.272,
+    "seed9101_i_aurc": 0.16720203451630186,
+    "seed9101_i_regret80": 0.1312651703820933,
+    "seed9202_i_aurc": 0.20968778821454118,
+    "seed9202_i_regret80": 0.11404704627928554,
+    "seed9303_i_aurc": 0.17849892731976968,
+    "seed9303_i_regret80": 0.13014938134918402,
+    "seed9404_i_aurc": 0.15367316331689057,
+    "seed9404_i_regret80": 0.10562874572348427,
+    "seed9505_i_aurc": 0.20368805449809327,
+    "seed9505_i_regret80": 0.11673849333086733,
+    "spearman_branch": 0.7177268006525653,
+    "tstar_high_frac": 0.534,
+    "tstar_low_frac": 0.466
+  },
+  "scope": "ADAPTIVE_DEVELOPMENT_ONLY",
+  "seed_derivation": "per-n whole-group resample streams derive deterministically from SeedSequence([2026122406, n]); distinct from the D2E power seed 2026122405 and from every consumed stream",
+  "selected_n": 1000,
+  "selection_scenario": 0.75,
+  "semantics": "a collection-feasibility decision under the adaptively-used old validation; never a promise that the new screen passes. A selected n permits Phase S; D2F_SCREEN_UNDERPOWERED forbids any new ID manifest / lock / collection.",
+  "shrink_scenarios": [
+    1.0,
+    0.75,
+    0.5
+  ],
+  "status": "D2F_POWER_CORRECTION_PASS",
+  "stress_table_note": "the per-n scenario-support stress tables (reactive share 0.24/0.22/0.20; high-regret share 0.30/0.20/0.15) are NON-SELECTIVE sensitivity; they never participate in the n selection and never change the c2/c6 thresholds",
+  "target": 0.8,
+  "terminal": false,
+  "typing": {
+    "anchor_slots": [
+      "base_mean_regret",
+      "idle_mean_regret"
+    ],
+    "effect_slots": [
+      "i_aurc_regret",
+      "i_regret80",
+      "pr_auc_minus_prevalence",
+      "spearman_branch",
+      "base_vs_random_improvement",
+      "seed9101_i_aurc",
+      "seed9202_i_aurc",
+      "seed9303_i_aurc",
+      "seed9404_i_aurc",
+      "seed9505_i_aurc",
+      "seed9101_i_regret80",
+      "seed9202_i_regret80",
+      "seed9303_i_regret80",
+      "seed9404_i_regret80",
+      "seed9505_i_regret80",
+      "d_idle (derived)"
+    ],
+    "rule": "model/decision effects shrink as E_b + (rho-1)*E_ref; D_idle is formed from the same resample's two regrets and shrunk as a DIFFERENCE; scenario/task support keeps its coupled resampled value with oracle / stratum shares summing to 1 on every draw; c5 tests ONLY D_idle^(rho) >= -tie_tolerance",
+    "support_slots": [
+      "high_regret_frac",
+      "oracle_share_a0",
+      "oracle_share_a1",
+      "oracle_share_a2",
+      "oracle_share_a3",
+      "oracle_share_a4",
+      "oracle_share_a5",
+      "oracle_share_a6",
+      "oracle_share_a7",
+      "oracle_share_a8",
+      "oracle_share_a9",
+      "reactive_frac",
+      "tstar_low_frac",
+      "tstar_high_frac",
+      "interaction_low_frac",
+      "interaction_high_frac"
+    ]
+  },
+  "underpowered": false,
+  "written_at": "2026-09-24T21:54:27"
+}

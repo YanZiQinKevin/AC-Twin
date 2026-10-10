@@ -1,0 +1,36 @@
+{
+  "baseline_order": [
+    "full",
+    "history",
+    "best_constant",
+    "end_to_end",
+    "direct",
+    "response_only"
+  ],
+  "finalist_receipt_sha256": "ac7ce31ffd8649c0ef548f61f4b806670e28bd6e5d5248d33542fd9f5f71a65e",
+  "joint_power_by_n": {
+    "1000": 1.0,
+    "1200": 1.0,
+    "1500": 1.0,
+    "1800": 1.0,
+    "2000": 1.0,
+    "400": 0.975,
+    "600": 0.998,
+    "800": 0.999
+  },
+  "mdes": 0.05,
+  "observed_validation_relative": {
+    "best_constant": 0.004593312740325928,
+    "direct": 0.060920536518096924,
+    "end_to_end": 0.0005686283111572266,
+    "full": 0.060622215270996094,
+    "history": 0.13067513704299927,
+    "response_only": 0.002957940101623535
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "selected_episode_count": 400,
+  "simulations": 1000,
+  "status": "STAGE3R_RSCREEN_POWER_FEASIBLE",
+  "target_power": 0.8,
+  "validation_effects_sha256": "b787eb8060a0da252a852db9a8c8cdec4d6432ed9a2c7f6a3a15a608fa785309"
+}

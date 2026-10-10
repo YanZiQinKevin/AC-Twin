@@ -1,0 +1,73 @@
+{
+  "decision_type": "STAGE5_COMPATIBILITY_DECISION",
+  "plan_id": "AC-TWIN-RFER-STAGE5-SOTA-COMPARISON-2026-09-27-V0.3",
+  "decided_date": "2026-09-27",
+  "legal_statuses": [
+    "ELIGIBLE_VERIFIED",
+    "ELIGIBLE_ADAPTED_VERIFIED",
+    "NOT_SAME_ENDPOINT",
+    "IMPLEMENTATION_NOT_VERIFIED",
+    "LICENSE_OR_CODE_UNAVAILABLE"
+  ],
+  "sanity_evidence_file": "experiments/stage5_sota_comparison/phase_l/sanity/sanity_report.json",
+  "decisions": [
+    {
+      "method_id": "CONFIDNET_TCP_ADAPTED",
+      "source_work": "corbiere2019confidnet",
+      "status": "ELIGIBLE_ADAPTED_VERIFIED",
+      "verification_path": "formula from paper + toy sanity (no author-code run needed: formula sufficient and sanity established)",
+      "toy_sanity": {"pass": true, "auc_error_detection": 0.877, "spearman_risk_error": 0.335}
+    },
+    {
+      "method_id": "SELECTIVENET_REGRET_ADAPTED",
+      "source_work": "geifman2019selectivenet",
+      "status": "ELIGIBLE_ADAPTED_VERIFIED",
+      "verification_path": "formula from paper Sec. 4 + toy sanity (no author-code run needed)",
+      "toy_sanity": {"pass": true, "coverage": 0.8, "selective_mse": 0.0961, "full_mse": 0.1305, "spearman": 0.66}
+    },
+    {
+      "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+      "source_work": "li2024rwr",
+      "status": "ELIGIBLE_ADAPTED_VERIFIED",
+      "verification_path": "formula from paper Algorithm 1 + toy sanity (no author-code run needed)",
+      "toy_sanity": {"pass": true, "spearman": 0.645, "kept80_mse_ratio": 0.027}
+    },
+    {
+      "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+      "source_work": "johansson2024conformal",
+      "status": "ELIGIBLE_ADAPTED_VERIFIED",
+      "verification_path": "formula from PMLR v230 paper (no official code exists) + toy sanity",
+      "toy_sanity": {"pass": true, "marginal_coverage": 0.894, "spearman_width_abserr": 0.748, "fit_cal_disjoint": true}
+    },
+    {
+      "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+      "source_work": "cao2024cctr",
+      "status": "ELIGIBLE_ADAPTED_VERIFIED",
+      "verification_path": "formula from AAAI paper (no official code exists) + toy sanity; adaptation deviation (seed-disagreement temperature inputs instead of CNN/GRU BEV post-net) recorded in registry",
+      "toy_sanity": {"pass": true, "nll_sample_temperature": 0.4193, "nll_constant": 0.4227, "spearman": 0.33}
+    },
+    {
+      "method_id": "OOSR_DECISION_FOCUSED_ADAPTED",
+      "source_work": "zou2022oosr",
+      "status": "NOT_SAME_ENDPOINT",
+      "verification_path": "endpoint audit only (plan 2.3): it changes the action-consequence prediction/selection objective rather than auditing the frozen base selector",
+      "toy_sanity": null
+    },
+    {
+      "method_id": "CONFORMAL_RISK_CONTROL_ADAPTED",
+      "source_work": "angelopoulos2024crc",
+      "status": "NOT_SAME_ENDPOINT",
+      "verification_path": "endpoint audit only: produces a calibrated guarantee, not a per-input risk ranking compatible with a full risk-coverage curve; remains the registered technical alternate for the conformal family and is NOT activated because P4 passed compatibility",
+      "toy_sanity": null
+    }
+  ],
+  "family_coverage_check": {
+    "learned/driving calibrated confidence": "VERIFIED (P1 first candidate; P5 alternate also verified)",
+    "joint selective/rejection": "VERIFIED (P2 first candidate; P3 alternate also verified)",
+    "conformal/risk-control rejection": "VERIFIED (P4 first candidate)",
+    "minimum_three_families_met": true
+  },
+  "terminal_condition_check": "STAGE5_COMPARISON_SET_INSUFFICIENT NOT triggered: all three required families have at least one ELIGIBLE_*_VERIFIED method; five methods enter Task 3 implementation.",
+  "no_performance_based_exclusion": true,
+  "notes": "No method was excluded for validation performance, expected weakness, training cost, or reproduction difficulty. Literature-only works (zhang2026driving, khandelwal2020wimp, tan2024prosim, fujii2024tgvcrn, jiang2023cfgode, zou2023fohl, geifman2017selective, liu2019deepgamblers, zaoui2020regression) remain in Table I per plan 2.1/2.5."
+}

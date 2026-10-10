@@ -1,0 +1,24 @@
+{
+  "status": "ENGINEERING_SMOKE_ONLY",
+  "episodes": 12,
+  "max_epochs": 1,
+  "device": "cpu",
+  "chain": [
+    "search",
+    "fit-five",
+    "select-final",
+    "lock-replacement-dev",
+    "gate-r-dev-retrain"
+  ],
+  "gate_verdict_passed": false,
+  "gate_checks_present": [
+    "ece_calibrated",
+    "five_seed_consistent_nondegenerate",
+    "i_brier_ci_lower_gt0",
+    "i_mae_ci_lower_gt0",
+    "i_pr_high_vs_lowmid_ci_lower_gt0",
+    "i_pr_presence_ci_lower_gt0",
+    "spearman_ci_lower_gt0"
+  ],
+  "note": "synthetic 12-episode data; no scientific meaning"
+}

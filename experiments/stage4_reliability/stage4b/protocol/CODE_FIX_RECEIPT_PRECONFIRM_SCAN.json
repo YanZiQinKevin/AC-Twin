@@ -1,0 +1,12 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4B-RISK-CONFIRM-2026-09-15-V0.1",
+  "type": "pre_adjudication_engineering_code_fix",
+  "file": "code/ac_twin/stage4b_protocol.py",
+  "fixes": [
+    "scan_historical_seeds: exclude the Stage 4B run dir (experiments/stage4_reliability/stage4b) in addition to the PURPOSE data dir, completing the exclusion the docstring already stated ('Stage 4B role's own partial products are excluded so a resume does not collide with itself'). The implementation previously excluded only the data dir, so the inference-time prediction_receipt.json (which embeds the 32 determinism-recheck episode_seeds) was scanned as 'historical' and produced a false self-overlap of 32 seeds at the Gate Q pre-lock re-scan."
+  ],
+  "reason": "scan_historical_seeds runs only at preflight/lock and at the Gate Q pre-lock re-scan; it is never called during collection or inference, so no prediction, risk score, risk_target or confirmation_used.lock was affected. Verified: the 32 receipt seeds are a strict subset of the 2000 confirm seeds (32/32 overlap), the fixed historical inventory is back to 27224 with zero overlap vs the confirm set, identical to the pre-inference count.",
+  "scientific_effect": "none; seed schedule (npy bytes sha256 33ffd3e3...), seed_schedule_sha256 20d33bf7..., selected_n=2000, per_stratum=200, n_historical_episode_seeds=27224, inventory_sha256 9be16638..., config_sha256 and the other five code hashes are all byte-identical to the archived pre-fix lock; only code:ac_twin/stage4b_protocol.py changed. confirmation_used.lock still does not exist; the confirmation set remains sealed.",
+  "fixed_at": "2026-09-15T18:05:00",
+  "archived_premature_lock": "protocol_archive_preconfirmfix_v1/protocol_lock.json"
+}

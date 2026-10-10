@@ -1,0 +1,39 @@
+{
+  "environment": {
+    "cuda_available": true,
+    "cuda_build": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3070 Ti",
+    "metadrive_source": "D:\\MetaDrive\\metadrive",
+    "numpy": "2.4.6",
+    "python": "3.11.16",
+    "scenarionet_source": "D:\\MetaDrive\\scenarionet",
+    "tensorflow_present": false,
+    "torch": "2.9.1+cu130"
+  },
+  "estimated_scope": {
+    "confirm_candidate_ns": [
+      1000,
+      1500,
+      2000,
+      2500,
+      3000
+    ],
+    "note": "collection volume is decided by the screen/confirm power pre-checks; candidate screen ns 1000-2500, confirm ns 1000-3000; the global ID audit + candidate capacity check run before any collection and stop at D2E_FRESH_POOL_INSUFFICIENT if the fresh pool is inadequate",
+    "screen_candidate_ns": [
+      1000,
+      1500,
+      2000,
+      2500
+    ]
+  },
+  "n_sources": 24,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+  "scenario_db": {
+    "converted_db_dir": "D:\\MetaDrive\\scenarionet_waymo_training_20s",
+    "n_files": 70544
+  },
+  "source_inventory_path": "experiments\\stage4_reliability\\stage4d_d2e\\source_inventory.json",
+  "source_inventory_sha256": "ed10bc5710df7935fc8d598f3e956f3292ed7f75aa6617c080969e866c62ab9c",
+  "status": "D2E_PREFLIGHT_PASS",
+  "written_at": "2026-09-24T16:28:37"
+}

@@ -1,0 +1,47 @@
+{
+  "batch_size": 32,
+  "bindings": {
+    "collection_receipt_sha256": "9d8078a8089b3872387b49c169579bfa9cc0ca2907a32bed66278d17c982a9d4",
+    "inference_inputs_sha256": "73ba88bb909551062eb765a38fac1e699b9cbfef8e75aa309fa5c4239aa82da1",
+    "inference_receipt_sha256": "4e7a27948cd5dd1519a55cd41cb738b1870e76d7cc50f231058435d7949e191d",
+    "predictions_sha256": "6f7a56fb20d7a5ea6d55867a86729cd04a108bb8a59745aad5efe21d9da2a3d6",
+    "risk_scores_sha256": "46ad657f864e7a3fb104b16a8b7936a2b7a90430f9f86b9f733529a5eecdf012"
+  },
+  "bitwise_identical": true,
+  "blocks_compared": [
+    "predictions(6 keys, 5 pairs)",
+    "action_risks(5 classes)",
+    "direct_scores(ensemble, 5 seeds, MU_ONLY, CLASS_ONLY)",
+    "baselines(4)",
+    "constant_random",
+    "t_star",
+    "interaction_min_distance",
+    "reference_action",
+    "valid_mask",
+    "group_seed"
+  ],
+  "context_note": "the frozen e2e router forward and the COMBINED MLP forward are row-count-context dependent; the smoke recheck reproduces the smoke role's original forward context (context_rows = smoke branch count, 120) via zero-padding (GEMM/MLP row independence), so the comparison is a true bitwise one over ALL 12 smoke groups and the FULL persisted arrays",
+  "context_rows": 120,
+  "device": "cuda",
+  "dtype": "float32",
+  "group_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "n_groups_rechecked": 12,
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\smoke\\smoke_recheck_receipt.json",
+  "role": "smoke",
+  "status": "ENGINEERING_SMOKE_ONLY",
+  "written_at": "2026-09-20T03:53:23"
+}

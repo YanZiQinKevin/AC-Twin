@@ -1,0 +1,84 @@
+{
+  "checkpoints": {
+    "8101": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8101.pt",
+      "sha256": "0f6e24059d565495a0aa310955a852305ead9d7e8dca779cf0945c4302926e8a"
+    },
+    "8202": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8202.pt",
+      "sha256": "952dcb473d5a9af881df78f5d5c66bccfa5783336d5307afc3c221375b416f89"
+    },
+    "8303": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8303.pt",
+      "sha256": "ce82b3646b02606a35fe475df438ce9753fb64a351a23ca726c28ef155ddfcbb"
+    },
+    "8404": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8404.pt",
+      "sha256": "e083c01268de4470d66b62d76815cd3c3fb5e18703a1e3120b9a4f2dbedc58d5"
+    },
+    "8505": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8505.pt",
+      "sha256": "db349a2b01e6ea35beee938d775703f5e92efdaf69bc728ab9244afa1a4bdfd9"
+    }
+  },
+  "constant_random_derivation": "per-group SeedSequence([group_seed]) / 2**32; curve reference only",
+  "direct_recheck": {
+    "bitwise_identical": true,
+    "group_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "max_abs_diff": 0.0,
+    "n_groups": 32
+  },
+  "direct_scores_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\screen_direct_scores.npz",
+  "direct_scores_sha256": "15e4b179b16444c11d4e8aae8d8cd93eba7fcdc04af7d553593738c3df7d5339",
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "final_selection_sha256": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+  "inference_receipt_sha256": "4b2efbf34e8a907bd5d9611e3c4e5453a70e83706e129b7da48cc13a684a8a85",
+  "model_inventory_sha256": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+  "model_seeds": [
+    8101,
+    8202,
+    8303,
+    8404,
+    8505
+  ],
+  "n_groups": 8000,
+  "plan_id": "AC-TWIN-RFER-STAGE4C-R2-DECISION-RISK-SCALING-2026-09-16-V0.2",
+  "predictions_sha256": "2e251c87a56f8eb20219ceead8e46768d72a1440afb1b1a4b649fc34cf0abe91",
+  "primary_score_definition": "risk_score = sigmoid(logit_high) * 0.01 * expm1(softplus(raw_mu)); ensemble = arithmetic mean of the five model seeds' risk_score",
+  "role": "development_screen",
+  "scores_sha256": "b36808e09558d301b19e78df6d40cc2a3f0da51ac751a1a289782b937542db6f",
+  "written_at": "2026-09-17T03:28:48"
+}

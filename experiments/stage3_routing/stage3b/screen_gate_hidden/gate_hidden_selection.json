@@ -1,0 +1,24 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3B-2026-09-10-V0.1",
+  "screen_seed_pair": [
+    101,
+    1101
+  ],
+  "candidates": [
+    {
+      "gate_hidden_dim": 32,
+      "validation_effect_ade": 0.2762261050116671,
+      "run": "dual_channel_learned_router_g32_pair0_r1101",
+      "signature": "d4d3bd5a75cb7a363744e228a2f3107e70ac43946e732eb93c2ae990dd98bb05"
+    },
+    {
+      "gate_hidden_dim": 64,
+      "validation_effect_ade": 0.27965643817676195,
+      "run": "dual_channel_learned_router_g64_pair0_r1101",
+      "signature": "833cf389528417c56a86c5960d9965541113402bc24c179f7c84aae442db05d2"
+    }
+  ],
+  "selected_gate_hidden_dim": 32,
+  "selection_basis": "lowest pair-1 validation effect-ADE; deterministic tie selects 32",
+  "selected_on": "validation"
+}

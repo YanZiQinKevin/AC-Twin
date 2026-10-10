@@ -1,0 +1,43 @@
+{
+  "selected_profile": null,
+  "status": "INCONCLUSIVE_INTERSECTION_RESPONSE_SUPPORT",
+  "qualified": {},
+  "metrics": {
+    "A": {
+      "accepted_pairs": 600,
+      "support_rate": 0.36,
+      "positive_episodes": 216,
+      "median_paired_valid_non_ego": 5.0,
+      "temporary_terciles": {
+        "t1": 0.12702941894531247,
+        "t2": 0.5593062388139967
+      },
+      "bin_episode_counts": {
+        "positive_low": 207,
+        "positive_mid": 206,
+        "positive_high": 154
+      },
+      "per_stratum_min": 100,
+      "prefix_identity_qa_pass": true
+    },
+    "B": {
+      "accepted_pairs": 600,
+      "support_rate": 0.43,
+      "positive_episodes": 258,
+      "median_paired_valid_non_ego": 6.0,
+      "temporary_terciles": {
+        "t1": 0.10348129272460936,
+        "t2": 0.5058403015136718
+      },
+      "bin_episode_counts": {
+        "positive_low": 250,
+        "positive_mid": 240,
+        "positive_high": 173
+      },
+      "per_stratum_min": 100,
+      "prefix_identity_qa_pass": true
+    }
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-14-V0.3",
+  "selection_sha256": "4d90cfc571a88edbb4618753ddc46bf229feca17c938febf4b650134094810f1"
+}

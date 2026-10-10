@@ -1,0 +1,381 @@
+{
+  "bindings": {
+    "collection_receipt_sha256": "9d8078a8089b3872387b49c169579bfa9cc0ca2907a32bed66278d17c982a9d4",
+    "inference_inputs_sha256": "73ba88bb909551062eb765a38fac1e699b9cbfef8e75aa309fa5c4239aa82da1",
+    "inference_receipt_sha256": "4e7a27948cd5dd1519a55cd41cb738b1870e76d7cc50f231058435d7949e191d",
+    "predictions_sha256": "6f7a56fb20d7a5ea6d55867a86729cd04a108bb8a59745aad5efe21d9da2a3d6",
+    "recheck_receipt_sha256": "851b4a1e61b6b21cce1f67db9d655af718c49bc3566cb3740edb5959e477210d",
+    "risk_scores_sha256": "46ad657f864e7a3fb104b16a8b7936a2b7a90430f9f86b9f733529a5eecdf012",
+    "smoke_truth_sha256": "9fa7f5a2fa731722a0232335288adc2bed67dea9afa9ff9bbb18c22a5172fbdd"
+  },
+  "bootstrap": {
+    "confidence": 0.95,
+    "frozen_full_resamples": 10000,
+    "n_resamples": 10000,
+    "note": "full frozen 10,000 whole-group paired resamples",
+    "reduced_resamples": false,
+    "seed": 2026093202
+  },
+  "engineering_only": true,
+  "formal_side_effects": {
+    "confirmation_used_lock_burned": false,
+    "formal_artifacts_written": false,
+    "formal_truth_loader_used": false,
+    "protocol_lock_created": false
+  },
+  "gate_diagnostics": {
+    "ablations": {
+      "CLASS_ONLY": {
+        "i_aurc_regret": 0.28461769190092623,
+        "i_aurc_regret_ci95": [
+          NaN,
+          NaN
+        ],
+        "i_regret80": 0.5985362101003241,
+        "i_regret80_ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "MU_ONLY": {
+        "i_aurc_regret": 0.28502471358319753,
+        "i_aurc_regret_ci95": [
+          NaN,
+          NaN
+        ],
+        "i_regret80": 0.5985362101003241,
+        "i_regret80_ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "baseline_curves": {
+        "COMBINED_TOP2_MAX": {
+          "aurc_regret": 0.03302919410898087,
+          "average_precision": 0.30833333333333335,
+          "pr_auc_minus_prevalence": -0.024999999999999967,
+          "regret_at_80": 0.04435983984545033,
+          "role": "historical_reference"
+        },
+        "CONSTANT_RANDOM": {
+          "aurc_regret": 0.015575820823239474,
+          "average_precision": 0.65,
+          "pr_auc_minus_prevalence": 0.3166666666666667,
+          "regret_at_80": 0.036790246468524426,
+          "role": "curve_reference"
+        },
+        "MARGIN_ONLY": {
+          "aurc_regret": 0.010360396173716035,
+          "average_precision": 0.8333333333333333,
+          "i_aurc_regret": 0.3531629734233095,
+          "i_aurc_regret_ci95": [
+            NaN,
+            NaN
+          ],
+          "i_regret80": 0.0,
+          "i_regret80_ci95": [
+            NaN,
+            NaN
+          ],
+          "pr_auc_minus_prevalence": 0.49999999999999994,
+          "regret_at_80": 0.009375549206330686,
+          "role": "standard_baseline"
+        },
+        "SEED_MARGIN_STD": {
+          "aurc_regret": 0.03173420245906359,
+          "average_precision": 0.5654761904761905,
+          "i_aurc_regret": 0.7888244437903309,
+          "i_aurc_regret_ci95": [
+            NaN,
+            NaN
+          ],
+          "i_regret80": 0.7801427330892551,
+          "i_regret80_ci95": [
+            NaN,
+            NaN
+          ],
+          "pr_auc_minus_prevalence": 0.23214285714285715,
+          "regret_at_80": 0.042643799488951445,
+          "role": "standard_baseline"
+        },
+        "SEED_VOTE_ENTROPY": {
+          "aurc_regret": 0.00937303426073429,
+          "average_precision": 0.7083333333333333,
+          "i_aurc_regret": 0.28502471358319753,
+          "i_aurc_regret_ci95": [
+            NaN,
+            NaN
+          ],
+          "i_regret80": 0.5985362101003241,
+          "i_regret80_ci95": [
+            NaN,
+            NaN
+          ],
+          "pr_auc_minus_prevalence": 0.37499999999999994,
+          "regret_at_80": 0.023353411795055276,
+          "role": "primary_standard_baseline"
+        }
+      },
+      "blocking": false,
+      "note": "non-blocking ablations reported alongside the primary score; they never enter the gates and never substitute for the primary score",
+      "primary_model": {
+        "aurc_regret": 0.006701487855163002,
+        "average_precision": 0.875,
+        "name": "DIRECT_ENSEMBLE",
+        "pr_auc_minus_prevalence": 0.5416666666666667,
+        "regret_at_80": 0.009375549206330686
+      }
+    },
+    "bootstrap": {
+      "confidence": 0.95,
+      "design": "whole-group paired bootstrap; every metric of a draw recomputed from the SAME resample index vector; two-sided 95% CI from the resample quantiles (2.5%/97.5%)",
+      "n_resamples": 10000,
+      "seed": 2026093202
+    },
+    "gate_risk_decision_confirm": {
+      "baseline_denominators": {
+        "aurc_regret": 0.00937303426073429,
+        "regret_at_80": 0.023353411795055276
+      },
+      "baseline_valid": true,
+      "conditions": {
+        "r1_i_aurc_regret": false,
+        "r2_i_regret80": false,
+        "r3_pr_auc_minus_prevalence": true,
+        "r4_seeds_i_aurc": true,
+        "r5_seeds_i_regret80": true,
+        "r6_strata_floor": true,
+        "r7_trims_positive": true,
+        "r8_margin_spearman": true,
+        "r9_qa_and_one_shot_locks": false
+      },
+      "seeds_i_aurc_positive": 5,
+      "seeds_i_regret80_positive": 5,
+      "strata_i_aurc": {
+        "interaction_high": 0.011744338954095464,
+        "interaction_low": 0.16505038259035146,
+        "tstar_high": 0.16505038259035146,
+        "tstar_low": 0.37634644617575125
+      },
+      "trims_i_aurc": {
+        "trim_0.01": 0.28502471358319753,
+        "trim_0.05": 0.28502471358319753
+      }
+    },
+    "gate_task_confirm": {
+      "conditions": {
+        "c1_all_complete_gate_q": false,
+        "c2_high_regret_frac_ge_15pct": true,
+        "c3_at_least_3_oracle_actions_ge_5pct": true,
+        "c4_branch_spearman_ci_lower_positive": true,
+        "c5_base_vs_random_point_and_ci_positive": true,
+        "c6_base_not_worse_than_idle": true,
+        "c7_strata_ge_200_groups": false
+      },
+      "high_regret_frac": 0.3333333333333333,
+      "oracle_action_shares": [
+        0.08333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.16666666666666666,
+        0.4166666666666667,
+        0.3333333333333333,
+        0.0
+      ],
+      "oracle_actions_covered_ge_5pct": 4,
+      "status": "STAGE4CR2_CONFIRM_TASK_DEGENERATE",
+      "stratum_counts": {
+        "interaction_high": 8,
+        "interaction_low": 4,
+        "tstar_high": 4,
+        "tstar_low": 8
+      }
+    },
+    "metrics": {
+      "ci_lower": {
+        "ap_combined_top2_max": 0.1,
+        "ap_constant_random": 0.19642857142857142,
+        "ap_margin_only": 0.16666666666666666,
+        "ap_model": 0.2857142857142857,
+        "ap_seed_margin_std": 0.14285714285714285,
+        "ap_seed_vote_entropy": 0.16666666666666666,
+        "aurc_baseline": 0.001101434125773157,
+        "aurc_combined_top2_max": 0.003882780222594936,
+        "aurc_constant_random": 0.0010125526058829264,
+        "aurc_margin_only": 0.0010592219609563034,
+        "aurc_model": 0.0009511301548121898,
+        "aurc_seed_margin_std": 0.0004947542374444814,
+        "base_mean_regret": 0.003047520951964304,
+        "base_vs_random_improvement": 0.19156206313198768,
+        "class_only_i_aurc": NaN,
+        "class_only_i_regret80": NaN,
+        "high_regret_frac": 0.08333333333333333,
+        "i_aurc_regret": NaN,
+        "i_regret80": NaN,
+        "idle_mean_regret": 0.06624122547300672,
+        "interaction_high_i_aurc": NaN,
+        "interaction_low_i_aurc": NaN,
+        "margin_only_i_aurc": NaN,
+        "margin_only_i_regret80": NaN,
+        "mu_only_i_aurc": NaN,
+        "mu_only_i_regret80": NaN,
+        "pr_auc_minus_prevalence": 0.11898809523809575,
+        "random_mean_regret": 0.061594553336794415,
+        "regret80_baseline": 0.00018249885769045654,
+        "regret80_combined_top2_max": 0.0035774623421356544,
+        "regret80_constant_random": 0.00018014244000109648,
+        "regret80_margin_only": 0.0001373853741428524,
+        "regret80_model": 7.871497556631717e-05,
+        "regret80_seed_margin_std": 0.00037855463040984414,
+        "seed8101_i_aurc": NaN,
+        "seed8101_i_regret80": NaN,
+        "seed8202_i_aurc": NaN,
+        "seed8202_i_regret80": NaN,
+        "seed8303_i_aurc": NaN,
+        "seed8303_i_regret80": NaN,
+        "seed8404_i_aurc": NaN,
+        "seed8404_i_regret80": NaN,
+        "seed8505_i_aurc": NaN,
+        "seed8505_i_regret80": NaN,
+        "seed_margin_std_i_aurc": NaN,
+        "seed_margin_std_i_regret80": NaN,
+        "spearman_branch": 0.35725226821234735,
+        "spearman_ensemble_margin": -0.22580645161290322,
+        "trim1_i_aurc": NaN,
+        "trim5_i_aurc": NaN,
+        "tstar_high_i_aurc": NaN,
+        "tstar_low_i_aurc": NaN
+      },
+      "ci_upper": {
+        "ap_combined_top2_max": 0.6944444444444444,
+        "ap_constant_random": 1.0,
+        "ap_margin_only": 1.0,
+        "ap_model": 1.0,
+        "ap_seed_margin_std": 1.0,
+        "ap_seed_vote_entropy": 1.0,
+        "aurc_baseline": 0.03384097247615803,
+        "aurc_combined_top2_max": 0.07795720815594884,
+        "aurc_constant_random": 0.05100876801692426,
+        "aurc_margin_only": 0.029008176499916265,
+        "aurc_model": 0.024382912901416576,
+        "aurc_seed_margin_std": 0.09084068553456917,
+        "base_mean_regret": 0.07917052211370113,
+        "base_vs_random_improvement": 0.9640110276869015,
+        "class_only_i_aurc": NaN,
+        "class_only_i_regret80": NaN,
+        "high_regret_frac": 0.5833333333333334,
+        "i_aurc_regret": NaN,
+        "i_regret80": NaN,
+        "idle_mean_regret": 0.1475133218509168,
+        "interaction_high_i_aurc": NaN,
+        "interaction_low_i_aurc": NaN,
+        "margin_only_i_aurc": NaN,
+        "margin_only_i_regret80": NaN,
+        "mu_only_i_aurc": NaN,
+        "mu_only_i_regret80": NaN,
+        "pr_auc_minus_prevalence": 0.9166666666666666,
+        "random_mean_regret": 0.12442397458912546,
+        "regret80_baseline": 0.06810245321987231,
+        "regret80_combined_top2_max": 0.09124917043162857,
+        "regret80_constant_random": 0.08547691488487967,
+        "regret80_margin_only": 0.06549521502519283,
+        "regret80_model": 0.05390021875431598,
+        "regret80_seed_margin_std": 0.09303609716418985,
+        "seed8101_i_aurc": NaN,
+        "seed8101_i_regret80": NaN,
+        "seed8202_i_aurc": NaN,
+        "seed8202_i_regret80": NaN,
+        "seed8303_i_aurc": NaN,
+        "seed8303_i_regret80": NaN,
+        "seed8404_i_aurc": NaN,
+        "seed8404_i_regret80": NaN,
+        "seed8505_i_aurc": NaN,
+        "seed8505_i_regret80": NaN,
+        "seed_margin_std_i_aurc": NaN,
+        "seed_margin_std_i_regret80": NaN,
+        "spearman_branch": 0.760444798752927,
+        "spearman_ensemble_margin": 0.8924731182795699,
+        "trim1_i_aurc": NaN,
+        "trim5_i_aurc": NaN,
+        "tstar_high_i_aurc": NaN,
+        "tstar_low_i_aurc": NaN
+      },
+      "point": {
+        "ap_combined_top2_max": 0.30833333333333335,
+        "ap_constant_random": 0.65,
+        "ap_margin_only": 0.8333333333333333,
+        "ap_model": 0.875,
+        "ap_seed_margin_std": 0.5654761904761905,
+        "ap_seed_vote_entropy": 0.7083333333333333,
+        "aurc_baseline": 0.00937303426073429,
+        "aurc_combined_top2_max": 0.03302919410898087,
+        "aurc_constant_random": 0.015575820823239474,
+        "aurc_margin_only": 0.010360396173716035,
+        "aurc_model": 0.006701487855163002,
+        "aurc_seed_margin_std": 0.03173420245906359,
+        "base_mean_regret": 0.03697586695232492,
+        "base_vs_random_improvement": 0.6008327368776252,
+        "class_only_i_aurc": 0.28461769190092623,
+        "class_only_i_regret80": 0.5985362101003241,
+        "high_regret_frac": 0.3333333333333333,
+        "i_aurc_regret": 0.28502471358319753,
+        "i_regret80": 0.5985362101003241,
+        "idle_mean_regret": 0.10691098879519038,
+        "interaction_high_i_aurc": 0.011744338954095464,
+        "interaction_low_i_aurc": 0.16505038259035146,
+        "margin_only_i_aurc": 0.3531629734233095,
+        "margin_only_i_regret80": 0.0,
+        "mu_only_i_aurc": 0.28502471358319753,
+        "mu_only_i_regret80": 0.5985362101003241,
+        "pr_auc_minus_prevalence": 0.5416666666666667,
+        "random_mean_regret": 0.09263251365628407,
+        "regret80_baseline": 0.023353411795055276,
+        "regret80_combined_top2_max": 0.04435983984545033,
+        "regret80_constant_random": 0.036790246468524426,
+        "regret80_margin_only": 0.009375549206330686,
+        "regret80_model": 0.009375549206330686,
+        "regret80_seed_margin_std": 0.042643799488951445,
+        "seed8101_i_aurc": 0.34113261572961207,
+        "seed8101_i_regret80": 0.5985362101003241,
+        "seed8202_i_aurc": 0.2588509359894667,
+        "seed8202_i_regret80": 0.33697226362362115,
+        "seed8303_i_aurc": 0.29267154759405306,
+        "seed8303_i_regret80": 0.5985362101003241,
+        "seed8404_i_aurc": 0.285190681677117,
+        "seed8404_i_regret80": 0.5985362101003241,
+        "seed8505_i_aurc": 0.31476198968878166,
+        "seed8505_i_regret80": 0.5985362101003241,
+        "seed_margin_std_i_aurc": 0.7888244437903309,
+        "seed_margin_std_i_regret80": 0.7801427330892551,
+        "spearman_branch": 0.6389082877679655,
+        "spearman_ensemble_margin": 0.4895104895104896,
+        "trim1_i_aurc": 0.28502471358319753,
+        "trim5_i_aurc": 0.28502471358319753,
+        "tstar_high_i_aurc": 0.16505038259035146,
+        "tstar_low_i_aurc": 0.37634644617575125
+      }
+    },
+    "n_groups": 12,
+    "passed": false,
+    "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+    "status": "STAGE4CR2_CONFIRM_INVALID_ANALYSIS"
+  },
+  "n_groups": 12,
+  "no_scientific_content": "engineering exercise only, no scientific content: the gate outputs below are engineering diagnostics from the REAL quantity-assembly/gate code path on 12 smoke groups; the formal gate thresholds cannot pass at 12 groups (strata need >=200 each, condition c1 needs the frozen 2,000); nothing here is a pass/fail verdict on the method and nothing here enters the formal confirmation",
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "qa": {
+    "all_complete": false,
+    "determinism_passed": true,
+    "ensemble_is_arithmetic_mean": true,
+    "hashes_match": true,
+    "one_shot_locks": false,
+    "role_seeds_valid": true
+  },
+  "report_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\smoke\\smoke_engineering_report.json",
+  "role": "smoke",
+  "status": "ENGINEERING_SMOKE_ONLY",
+  "written_at": "2026-09-20T03:53:56"
+}

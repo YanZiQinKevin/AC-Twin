@@ -1,0 +1,122 @@
+{
+  "combined_implementation": "mlp",
+  "finalist": "COMBINED_RISK_HEAD",
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "predictions_sha256": "34bc12e91a1eaea902a30570d3f19996441443fcd47989cc3cf7ed366f47d9ac",
+  "primary_predictor": "END_TO_END_MIXTURE",
+  "risk_dataset_sha256": "423a7aabde61f6604c2a3acd5b2875a30cef766b1a6f95b9170cd926d3658232",
+  "status": "DEV_CANDIDATE_SELECTED",
+  "strongest_standard_baseline": "UNCERTAINTY_ONLY",
+  "top_error_threshold": 0.41601440122246675,
+  "validation_comparisons": {
+    "COMBINED_RISK_HEAD": {
+      "bootstrap_seed": 2026091101,
+      "confidence_level": 0.8,
+      "i_aurc": 0.06917263280423822,
+      "i_aurc_ci_lower": 0.04741491710602682,
+      "i_aurc_ci_upper": 0.09103340036405143,
+      "i_c80": 0.027976814682424703,
+      "i_c80_ci_lower": 0.012496809500710549,
+      "i_c80_ci_upper": 0.04790895725691443,
+      "n_resamples": 5000
+    },
+    "DISAGREEMENT_ONLY": {
+      "bootstrap_seed": 2026091101,
+      "confidence_level": 0.8,
+      "i_aurc": -0.02831135639095832,
+      "i_aurc_ci_lower": -0.05572806978562655,
+      "i_aurc_ci_upper": -0.0013179018252977121,
+      "i_c80": -0.025664671744308882,
+      "i_c80_ci_lower": -0.04290721269956665,
+      "i_c80_ci_upper": -0.004477584447173505,
+      "n_resamples": 5000
+    },
+    "RESPONSE_ONLY": {
+      "bootstrap_seed": 2026091101,
+      "confidence_level": 0.8,
+      "i_aurc": 0.016051363540926285,
+      "i_aurc_ci_lower": -0.013419128920670114,
+      "i_aurc_ci_upper": 0.04527199259346563,
+      "i_c80": 0.01849394450047381,
+      "i_c80_ci_lower": -0.003829369663522455,
+      "i_c80_ci_upper": 0.04414447758556078,
+      "n_resamples": 5000
+    }
+  },
+  "validation_reports": {
+    "COMBINED_RISK_HEAD": {
+      "ade@80": 0.20927464641338897,
+      "ade@90": 0.2316100294621797,
+      "aurc": 0.15689060403697347,
+      "n_episodes": 1000,
+      "pr_auc": 0.5544227512023036,
+      "pr_auc_minus_prevalence": 0.3474227512023036,
+      "prevalence": 0.207
+    },
+    "DISAGREEMENT_ONLY": {
+      "ade@80": 0.2208235510841923,
+      "ade@90": 0.23655989058955365,
+      "aurc": 0.17332149389665208,
+      "n_episodes": 1000,
+      "pr_auc": 0.47266160023463444,
+      "pr_auc_minus_prevalence": 0.2656616002346345,
+      "prevalence": 0.207
+    },
+    "GEOMETRY_ONLY": {
+      "ade@80": 0.2405824403007969,
+      "ade@90": 0.24774832822065973,
+      "aurc": 0.21731503325585821,
+      "n_episodes": 1000,
+      "pr_auc": 0.34183832717527374,
+      "pr_auc_minus_prevalence": 0.13483832717527375,
+      "prevalence": 0.207
+    },
+    "RESPONSE_ONLY": {
+      "ade@80": 0.2113162893847585,
+      "ade@90": 0.23656767582988722,
+      "aurc": 0.16584417407116753,
+      "n_episodes": 1000,
+      "pr_auc": 0.5073074254742476,
+      "pr_auc_minus_prevalence": 0.3003074254742476,
+      "prevalence": 0.207
+    },
+    "UNCERTAINTY_ONLY": {
+      "ade@80": 0.2152979986223432,
+      "ade@90": 0.23561368578598657,
+      "aurc": 0.168549625382875,
+      "n_episodes": 1000,
+      "pr_auc": 0.5077307128520163,
+      "pr_auc_minus_prevalence": 0.30073071285201636,
+      "prevalence": 0.207
+    },
+    "combined_by_impl": {
+      "histgb": {
+        "ade@80": 0.20848842243170312,
+        "ade@90": 0.22955647726405098,
+        "aurc": 0.1583008829343666,
+        "n_episodes": 1000,
+        "pr_auc": 0.568430630050923,
+        "pr_auc_minus_prevalence": 0.361430630050923,
+        "prevalence": 0.207
+      },
+      "mlp": {
+        "ade@80": 0.20927464641338897,
+        "ade@90": 0.2316100294621797,
+        "aurc": 0.15689060403697347,
+        "n_episodes": 1000,
+        "pr_auc": 0.5544227512023036,
+        "pr_auc_minus_prevalence": 0.3474227512023036,
+        "prevalence": 0.207
+      },
+      "ridge": {
+        "ade@80": 0.20839836604669426,
+        "ade@90": 0.23384563298455097,
+        "aurc": 0.1597024971481934,
+        "n_episodes": 1000,
+        "pr_auc": 0.5418613618863088,
+        "pr_auc_minus_prevalence": 0.3348613618863089,
+        "prevalence": 0.207
+      }
+    }
+  }
+}

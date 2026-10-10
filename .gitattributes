@@ -1,0 +1,3 @@
+# Preserve frozen artifact bytes and checksums on every platform.
+* -text
+# Large data are excluded and indexed for external download.

@@ -1,0 +1,94 @@
+{
+  "scope": "ENGINEERING_TIMING_ONLY_NO_SCIENTIFIC_RESULTS",
+  "created_at": "2026-09-28T09:21:16+0800",
+  "definition": "five-seed ensemble risk-head scoring after model/input preload; device-to-host score materialisation included; shared upstream predictor excluded",
+  "data_role": "stage4c_r2_development_validation_legal_inputs_only",
+  "timing_batch_size": 1,
+  "benchmark_group_seed": [
+    95657792
+  ],
+  "n_groups": 1,
+  "warmup_repeats": 50,
+  "timed_repeats": 200,
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "python": "3.12.7",
+    "torch": "2.9.1+cu130",
+    "numpy": "1.26.4",
+    "device": "cuda",
+    "cuda_runtime": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3070 Ti",
+    "gpu_capability": [
+      8,
+      6
+    ]
+  },
+  "source_sha256": {
+    "validation_legal_input": "119dc7db4cf24afd2cbc336ba1eb731e7a5d7bbd58e50addccb9f7db0abb50b7",
+    "r2_model_inventory": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+    "stage5_final_selection": "f35848463b3365762ca459f7894cda9fcdca5dfc32bba041a7fbc2177dd78b78"
+  },
+  "benchmark": {
+    "AC-Twin Direct": {
+      "median_ms_per_group": 2.3571999999999997,
+      "q1_ms_per_group": 2.1525,
+      "q3_ms_per_group": 2.73015,
+      "min_ms_per_group": 1.8832,
+      "max_ms_per_group": 3.9138,
+      "repeat_count": 200,
+      "param_count_per_seed": 15740,
+      "ensemble_seeds": 5
+    },
+    "CCTR_DRIVING_CALIBRATION_ADAPTED": {
+      "median_ms_per_group": 1.57755,
+      "q1_ms_per_group": 1.4496,
+      "q3_ms_per_group": 1.987425,
+      "min_ms_per_group": 1.2982,
+      "max_ms_per_group": 3.2886,
+      "repeat_count": 200,
+      "param_count_per_seed": 11522,
+      "ensemble_seeds": 5
+    },
+    "CONFIDNET_TCP_ADAPTED": {
+      "median_ms_per_group": 1.8667,
+      "q1_ms_per_group": 1.693225,
+      "q3_ms_per_group": 2.272075,
+      "min_ms_per_group": 1.5006,
+      "max_ms_per_group": 3.9596,
+      "repeat_count": 200,
+      "param_count_per_seed": 9665,
+      "ensemble_seeds": 5
+    },
+    "CONFORMAL_REGRESSION_REJECT_ADAPTED": {
+      "median_ms_per_group": 0.0432,
+      "q1_ms_per_group": 0.0423,
+      "q3_ms_per_group": 0.045125,
+      "min_ms_per_group": 0.0416,
+      "max_ms_per_group": 0.1833,
+      "repeat_count": 200,
+      "param_count_per_seed": 11201,
+      "ensemble_seeds": 5
+    },
+    "RWR_NN_KNN_REJECT_ADAPTED": {
+      "median_ms_per_group": 4.48515,
+      "q1_ms_per_group": 4.18,
+      "q3_ms_per_group": 4.88685,
+      "min_ms_per_group": 3.523,
+      "max_ms_per_group": 6.9071,
+      "repeat_count": 200,
+      "param_count_per_seed": 11201,
+      "ensemble_seeds": 5
+    },
+    "SELECTIVENET_REGRET_ADAPTED": {
+      "median_ms_per_group": 3.02745,
+      "q1_ms_per_group": 2.783875,
+      "q3_ms_per_group": 3.5046749999999998,
+      "min_ms_per_group": 2.3896,
+      "max_ms_per_group": 5.0402,
+      "repeat_count": 200,
+      "param_count_per_seed": 23139,
+      "ensemble_seeds": 5
+    }
+  }
+}

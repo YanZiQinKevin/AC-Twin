@@ -1,0 +1,243 @@
+{
+  "status": "FIG5_RENDER_COMPLETE",
+  "purpose": "paper visualization only; no experimental or inferential use",
+  "selection_rule": [
+    "visible_entities descending",
+    "max_branch_separation_m descending",
+    "original_legibility_score descending",
+    "candidate_hash ascending"
+  ],
+  "platform": {
+    "pool_size": 20,
+    "scenario_id": "1cac180d139c96de",
+    "context_id": "13",
+    "pilot_index": 88,
+    "candidate_hash": "0e4eda66533d8efac04a5bc3765438090cbd2c159f39b9d733759c022f62846e",
+    "visible_entities": 5,
+    "max_branch_separation_m": 3.1335322856903076,
+    "legibility_score": 522.6173177832821,
+    "fps_overlay_retained": true,
+    "red_branch_display_span_px": [
+      15.568933919001893,
+      14.936350495641705
+    ]
+  },
+  "ranked_candidates": [
+    {
+      "scenario_id": "1cac180d139c96de",
+      "context_id": "13",
+      "candidate_hash": "0e4eda66533d8efac04a5bc3765438090cbd2c159f39b9d733759c022f62846e",
+      "visible_entities": 5,
+      "max_branch_separation_m": 3.1335322856903076,
+      "legibility_score": 522.6173177832821
+    },
+    {
+      "scenario_id": "4d4b548c02d6dbf0",
+      "context_id": "15",
+      "candidate_hash": "067f2b3c4e713a30f2ff279f95dee35078a2e33d2d2c5cf1a527883d9788329e",
+      "visible_entities": 5,
+      "max_branch_separation_m": 2.839850664138794,
+      "legibility_score": 512.9424029659156
+    },
+    {
+      "scenario_id": "706842f1eadeddfb",
+      "context_id": "11",
+      "candidate_hash": "0ec45522853759b59b958114407bb230b9cbdec797f136fa2e2358e04c930712",
+      "visible_entities": 5,
+      "max_branch_separation_m": 2.7011289596557617,
+      "legibility_score": 517.820906081676
+    },
+    {
+      "scenario_id": "51b46a61929efd3f",
+      "context_id": "15",
+      "candidate_hash": "206e2bdbd8f2e2f8859351a6a5f495afb08c66e0a416aefc6d5ab0cbec4a88d4",
+      "visible_entities": 5,
+      "max_branch_separation_m": 2.1762633323669434,
+      "legibility_score": 517.1670642756385
+    },
+    {
+      "scenario_id": "956409c8398363d5",
+      "context_id": "12",
+      "candidate_hash": "1094b7f02f0752c11979460e91251fe56efabc7938457acf557dd82ef12a7e8d",
+      "visible_entities": 5,
+      "max_branch_separation_m": 1.223520040512085,
+      "legibility_score": 516.1616813584634
+    },
+    {
+      "scenario_id": "c9134e4491eddf3e",
+      "context_id": "13",
+      "candidate_hash": "12577bdc1987d7d096c7c925bf599d70be070b1bcac54d6721c3723285724933",
+      "visible_entities": 5,
+      "max_branch_separation_m": 0.05136475712060928,
+      "legibility_score": 517.8181337194419
+    },
+    {
+      "scenario_id": "8da2a28f0c52298e",
+      "context_id": "14",
+      "candidate_hash": "048d3ac35da33352fc58145d0806c0cf3683d9b235ad268ac41c04266dd7de0f",
+      "visible_entities": 5,
+      "max_branch_separation_m": 0.011613522656261921,
+      "legibility_score": 515.1648276184118
+    },
+    {
+      "scenario_id": "7b6d56c664ef92e1",
+      "context_id": "14",
+      "candidate_hash": "098cd3b2973c0cc5b84f96b12662d8305717d435b44fd135b3bfa9526e87d84e",
+      "visible_entities": 5,
+      "max_branch_separation_m": 0.009983386844396591,
+      "legibility_score": 524.7525463104248
+    },
+    {
+      "scenario_id": "fb786f321d5da94f",
+      "context_id": "10",
+      "candidate_hash": "1678ca5df6ae79a882168eded8b34ccec44c5695d61161501ae2140665cb9d07",
+      "visible_entities": 4,
+      "max_branch_separation_m": 29.155717849731445,
+      "legibility_score": 427.05873665411264
+    },
+    {
+      "scenario_id": "5e62b271d4aa808f",
+      "context_id": "12",
+      "candidate_hash": "2864a4f11d00332292edb463fe4baf52552b354ac60b1ded2c6533e0f83bc1c0",
+      "visible_entities": 4,
+      "max_branch_separation_m": 9.078119277954102,
+      "legibility_score": 420.03125897801556
+    },
+    {
+      "scenario_id": "a7b5fd9713ba8682",
+      "context_id": "14",
+      "candidate_hash": "20b023f397f6b1440fb0bc13824e027a3c2649924e9456edc4b31f7c6e9a0421",
+      "visible_entities": 4,
+      "max_branch_separation_m": 3.5202014446258545,
+      "legibility_score": 414.06079405948435
+    },
+    {
+      "scenario_id": "34d329b4840a2587",
+      "context_id": "14",
+      "candidate_hash": "19c1f509921323f5288c1532dd6299f1b4d79d0ddb14c77cad89664f32f459aa",
+      "visible_entities": 4,
+      "max_branch_separation_m": 0.04689192399382591,
+      "legibility_score": 427.79130935668945
+    },
+    {
+      "scenario_id": "cfdd417da76901bf",
+      "context_id": "12",
+      "candidate_hash": "1a0b800df397977647c299206e9bb957202c95baa54435184466cbe0b1e6a59c",
+      "visible_entities": 4,
+      "max_branch_separation_m": 0.0060194553807377815,
+      "legibility_score": 420.55208300534457
+    },
+    {
+      "scenario_id": "b5db70059e5cf3d0",
+      "context_id": "10",
+      "candidate_hash": "1e8d1da41fe0dffe926dfa5bc599111d9fca9a2570567210ea5471828c5e61ed",
+      "visible_entities": 3,
+      "max_branch_separation_m": 16.866249084472656,
+      "legibility_score": 323.6656353379506
+    },
+    {
+      "scenario_id": "660d02e6cd199ff",
+      "context_id": "14",
+      "candidate_hash": "1fd644fc7120e906cc988e100ba9619dab743cfcf7ced8ad04a0a02d50bd74ea",
+      "visible_entities": 3,
+      "max_branch_separation_m": 4.134779453277588,
+      "legibility_score": 311.93040838826096
+    },
+    {
+      "scenario_id": "964675da2d464a37",
+      "context_id": "15",
+      "candidate_hash": "03b444eedfe56ae005199df12e06dc250ac9ccbb95ea54ee06795a7304758dbb",
+      "visible_entities": 3,
+      "max_branch_separation_m": 3.4365577697753906,
+      "legibility_score": 315.9661690779534
+    },
+    {
+      "scenario_id": "2f22b927b8e1cd89",
+      "context_id": "13",
+      "candidate_hash": "076728417aac8250fea0cdcee1f9b881c6a3a1257b63161005b9fe2fd8ee0766",
+      "visible_entities": 3,
+      "max_branch_separation_m": 0.01380704715847969,
+      "legibility_score": 325.401309967041
+    },
+    {
+      "scenario_id": "726417c1327aef74",
+      "context_id": "15",
+      "candidate_hash": "1a7f227dd139d64daf522ff1c3a2e5a2798ff7d564190fcaab00dad6a1736eb2",
+      "visible_entities": 3,
+      "max_branch_separation_m": 6.041979645488027e-07,
+      "legibility_score": 327.7783088684082
+    },
+    {
+      "scenario_id": "b41eef8e29648854",
+      "context_id": "10",
+      "candidate_hash": "051b0bbad089b7a106bb6992efdb26183cc734eb22f529654fc6de68d3e532e1",
+      "visible_entities": 2,
+      "max_branch_separation_m": 3.9759175777435303,
+      "legibility_score": 222.21719883243853
+    },
+    {
+      "scenario_id": "6a0103fb56f69422",
+      "context_id": "12",
+      "candidate_hash": "05b47f5715b19bb36dc218629012b79c82760298b37fbfc9070e73b1db069759",
+      "visible_entities": 2,
+      "max_branch_separation_m": 0.022476322948932648,
+      "legibility_score": 227.82864665985107
+    }
+  ],
+  "frozen_cases": [
+    {
+      "action_oracle": [
+        0,
+        1
+      ],
+      "action_selected": [
+        3,
+        3
+      ],
+      "baseline_risk_percentile": 0.6975,
+      "context_id": "14",
+      "direct_risk_percentile": 0.835,
+      "group_index": 550,
+      "kind": "Success, best-of-K",
+      "regret": 0.44844928780140175,
+      "scenario_id": "9397491f2c175633",
+      "t_peak_1_based": 20
+    },
+    {
+      "action_oracle": [
+        2,
+        3
+      ],
+      "action_selected": [
+        3,
+        3
+      ],
+      "baseline_risk_percentile": 0.4565,
+      "context_id": "14",
+      "direct_risk_percentile": 0.0155,
+      "group_index": 1821,
+      "kind": "Failure, worst false-negative",
+      "regret": 0.2003840066046333,
+      "scenario_id": "79786346217964e",
+      "t_peak_1_based": 20
+    }
+  ],
+  "source_sha256": {
+    "platform_pool": "968856d43f061ea8fd95cd992df261a4d3c5a059c6a381bec09e89d4da3bbebb",
+    "pilot_groups": "3d56f228b298603c72cc91da9b11fd80d752a65f8bd3b276b0a5447b2e2c28c9",
+    "pilot_metadata": "0bad50a22105ae27c9741f389452a009c03ddc6ead13df24987b106631e7c5d0",
+    "frozen_case_receipt": "d36b7bd921ec6bccbfd42958ecd3f1752a495e0f5ffa1d5df073e63fa01faf5e",
+    "confirm_groups": "c9622ea24045fd8e7b6e043b95953fdc44b104ca936d91315c3bde3544d58d34",
+    "confirm_quantities": "c33558eeaa917ecf586ba1a410ebbd28d9efe7e17753bf6d9c373f484ea7fbd0"
+  },
+  "output_sha256": {
+    "raw_metadrive_capture": "7c96ae60921f951009be90882f373a935831b0b9a2eaad020b97a3500af45a92",
+    "svg": "3adf9f85263a821dc41501fe93a9fa6055d77c448de9ad250cac676efa2eaf49",
+    "png": "9d7e72d16c8fd57ac431508b5b6317d4c7623a8301cdeb0c0a2e0a80aabc3055",
+    "pdf": "53b4f74c62d4a828ad1bf646b99f283554bc7ba5d5b961585fd1d7912ddb610b"
+  },
+  "figure_size_mm": [
+    180,
+    160
+  ]
+}

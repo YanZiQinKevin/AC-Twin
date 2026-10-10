@@ -1,0 +1,3 @@
+# Fig. 1 Legend
+
+**Fig. 1 | Frozen prediction followed by decision-regret auditing.** Historical observations and a factual suffix condition ten candidate branches. The frozen predictor selects the minimum predicted-cost action; legal comparison features feed the audit head. Five-seed scores rank existing selections, retaining the lowest-scored 80% for evaluation. Competing rankings use equal coverage, and full-sample regret is reported separately. The lower path supplies simulator-derived regret for training (red dashed arrow) and evaluation after scores are fixed. Confirmation truth does not enter scoring. Retention leaves the chosen action unchanged. Sections 3.1 and 3.3 define the components and score.

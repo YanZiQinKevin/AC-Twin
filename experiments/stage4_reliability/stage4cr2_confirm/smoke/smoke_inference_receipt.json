@@ -1,0 +1,64 @@
+{
+  "batch_size": 32,
+  "binding_sha256": "881a73c3fd9e378a97e16bdf1a09316119272960b3ba0a730f315474a2d14490",
+  "branches": 120,
+  "constant_random_rng_seed": 1937340616,
+  "constant_random_streams": {
+    "action_level": {
+      "action_stream_root": [
+        2026093100,
+        12
+      ],
+      "constant_random_salt": 2026093203,
+      "derivation": "int(SeedSequence([*action_stream_root, constant_random_salt]).generate_state(1)[0])",
+      "mirrors": "stage4cr2_inference._curve_reference_seed (salt substituted)",
+      "rng_seed": 1937340616
+    },
+    "group_level": {
+      "derivation": "per group: SeedSequence([int(group_seed)]).generate_state(1)[0] / float(2**32) \u2014 NO salt",
+      "mirrors": "stage4cr2_statistics._constant_random_scores"
+    }
+  },
+  "data_sha256": "73ba88bb909551062eb765a38fac1e699b9cbfef8e75aa309fa5c4239aa82da1",
+  "device": "cuda",
+  "dtype": "float32",
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "feature_scaler_sha256": "2f21c11ae248f5883d8e9c4c8fa7efb876ad1afb453ee7eec462509a48104194",
+  "final_selection_sha256": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+  "groups": 12,
+  "input_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_confirm\\smoke\\inference_inputs.npz",
+  "model_inventory_sha256": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+  "model_seeds": [
+    8101,
+    8202,
+    8303,
+    8404,
+    8505
+  ],
+  "n_actions": 10,
+  "n_valid": 12,
+  "pair_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "predictions_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\smoke\\smoke_predictions.npz",
+  "predictions_sha256": "6f7a56fb20d7a5ea6d55867a86729cd04a108bb8a59745aad5efe21d9da2a3d6",
+  "receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\smoke\\smoke_inference_receipt.json",
+  "risk_classes": [
+    "COMBINED_RISK_HEAD",
+    "UNCERTAINTY_ONLY",
+    "GEOMETRY_ONLY",
+    "RESPONSE_ONLY",
+    "DISAGREEMENT_ONLY"
+  ],
+  "risk_scores_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\smoke\\smoke_risk_scores.npz",
+  "risk_scores_sha256": "46ad657f864e7a3fb104b16a8b7936a2b7a90430f9f86b9f733529a5eecdf012",
+  "role": "smoke",
+  "status": "ENGINEERING_SMOKE_ONLY",
+  "trajectory_scaler_sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181",
+  "written_at": "2026-09-20T03:16:39"
+}

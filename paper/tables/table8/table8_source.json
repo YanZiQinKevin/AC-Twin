@@ -1,0 +1,162 @@
+{
+  "table": "Table 8",
+  "title": "Supervised controls and feature ablations on development data",
+  "generated_date": "2026-10-08",
+  "analysis_status": "ADAPTIVE_DEVELOPMENT_ONLY",
+  "independent_unit": "complete ten-action decision group",
+  "validation_groups": 1500,
+  "model_seeds": 5,
+  "bootstrap_draws": 10000,
+  "interval_level": 0.99,
+  "interval_quantiles": [
+    0.005,
+    0.995
+  ],
+  "family_size": 5,
+  "families": [
+    "AURC-regret (primary)",
+    "Regret@80 (secondary)"
+  ],
+  "family_coverage": "Nominal 95% Bonferroni within each family; no joint 95% across families",
+  "unit": "dimensionless fraction; manuscript displays 100 times these values as percent",
+  "source": "experiments/paper_revision/m1_supervised_ablation_v02/evaluation/contrasts.csv",
+  "source_sha256": "956d9aeafa0ef163b7f50bd17bc8ab6a68e8fc8f3ef4f54d706030a79bb5c1b4",
+  "input_arms": [
+    {
+      "name": "Complete input",
+      "active_dimensions": 315,
+      "nominal_parameters": 15740
+    },
+    {
+      "name": "Baseline signals only",
+      "active_dimensions": 3,
+      "nominal_parameters": 15740
+    },
+    {
+      "name": "Explicit risk channels removed",
+      "active_dimensions": 180,
+      "nominal_parameters": 15740
+    }
+  ],
+  "note_zh": "表注：评价来自同一1,500个完整十动作开发组，属于开发性证据。正值表示评价方法相对参照降低regret指标。五项AURC-regret比较和五项Regret@80比较分别组成一个家族，每项99%区间对应其家族名义95%，由10,000次整组配对bootstrap得到；不将两家族合并为整体95%覆盖。",
+  "note_en": "Note. Evaluation uses the same 1,500 complete ten-action development groups. Positive values indicate lower regret metrics for the evaluated method than for its reference. Five AURC-regret contrasts and five Regret@80 contrasts form separate families. Each 99% percentile interval corresponds to nominal 95% Bonferroni family coverage, using 10,000 whole-group paired bootstrap resamples; joint 95% coverage across both families is not claimed. All results are conditional development evidence.",
+  "display_rows": [
+    [
+      "Complete input / Baseline signals only",
+      "43.4 [28.2, 55.4]",
+      "26.5 [14.5, 38.1]"
+    ],
+    [
+      "Complete input / Explicit risk channels removed",
+      "11.6 [-3.1, 22.9]",
+      "-2.0 [-11.8, 7.0]"
+    ],
+    [
+      "Baseline signals only / SEED_VOTE_ENTROPY",
+      "-2.2 [-19.3, 12.5]",
+      "2.1 [-4.2, 5.9]"
+    ],
+    [
+      "Baseline signals only / MARGIN_ONLY",
+      "7.0 [-8.9, 20.6]",
+      "5.2 [-3.0, 14.8]"
+    ],
+    [
+      "Baseline signals only / SEED_MARGIN_STD",
+      "11.3 [-13.0, 30.6]",
+      "10.1 [-4.4, 23.8]"
+    ]
+  ],
+  "contrasts": [
+    {
+      "contrast": "C1",
+      "metric": "aurc_regret",
+      "method": "FULL_MATCHED",
+      "reference": "BASELINE3_MATCHED",
+      "point": 0.4336124276,
+      "ci99_lower": 0.2818735473,
+      "ci99_upper": 0.5540884153
+    },
+    {
+      "contrast": "C1",
+      "metric": "regret_at_80",
+      "method": "FULL_MATCHED",
+      "reference": "BASELINE3_MATCHED",
+      "point": 0.2652591449,
+      "ci99_lower": 0.1449119611,
+      "ci99_upper": 0.3806743774
+    },
+    {
+      "contrast": "C2",
+      "metric": "aurc_regret",
+      "method": "FULL_MATCHED",
+      "reference": "NO_RISK_MATCHED",
+      "point": 0.1159283342,
+      "ci99_lower": -0.03074464792,
+      "ci99_upper": 0.2289026452
+    },
+    {
+      "contrast": "C2",
+      "metric": "regret_at_80",
+      "method": "FULL_MATCHED",
+      "reference": "NO_RISK_MATCHED",
+      "point": -0.01988154929,
+      "ci99_lower": -0.1176592728,
+      "ci99_upper": 0.06964110246
+    },
+    {
+      "contrast": "C3",
+      "metric": "aurc_regret",
+      "method": "BASELINE3_MATCHED",
+      "reference": "SEED_VOTE_ENTROPY",
+      "point": -0.02157899511,
+      "ci99_lower": -0.1929292091,
+      "ci99_upper": 0.1250215199
+    },
+    {
+      "contrast": "C3",
+      "metric": "regret_at_80",
+      "method": "BASELINE3_MATCHED",
+      "reference": "SEED_VOTE_ENTROPY",
+      "point": 0.02067266745,
+      "ci99_lower": -0.04188755424,
+      "ci99_upper": 0.05917450204
+    },
+    {
+      "contrast": "C4",
+      "metric": "aurc_regret",
+      "method": "BASELINE3_MATCHED",
+      "reference": "MARGIN_ONLY",
+      "point": 0.06990139176,
+      "ci99_lower": -0.0886917004,
+      "ci99_upper": 0.2061167237
+    },
+    {
+      "contrast": "C4",
+      "metric": "regret_at_80",
+      "method": "BASELINE3_MATCHED",
+      "reference": "MARGIN_ONLY",
+      "point": 0.05181131295,
+      "ci99_lower": -0.02964512865,
+      "ci99_upper": 0.1479749114
+    },
+    {
+      "contrast": "C5",
+      "metric": "aurc_regret",
+      "method": "BASELINE3_MATCHED",
+      "reference": "SEED_MARGIN_STD",
+      "point": 0.1130774961,
+      "ci99_lower": -0.129539527,
+      "ci99_upper": 0.3058280458
+    },
+    {
+      "contrast": "C5",
+      "metric": "regret_at_80",
+      "method": "BASELINE3_MATCHED",
+      "reference": "SEED_MARGIN_STD",
+      "point": 0.1005313328,
+      "ci99_lower": -0.04369363482,
+      "ci99_upper": 0.2375418809
+    }
+  ]
+}

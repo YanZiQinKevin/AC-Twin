@@ -1,0 +1,20 @@
+{
+  "architecture": "state_full",
+  "best_val_loss": 0.2997823177862451,
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\learned_screen\\candidates\\state_full_learned_router_r1101_ls0p05.pt",
+  "condition": "learned_router",
+  "config": {
+    "architecture": "state_full",
+    "condition": "learned_router",
+    "hidden_dim": 64,
+    "horizon": 20,
+    "response_feature_dim": 32,
+    "shape_lambda": 0.05,
+    "shape_margin": 0.1
+  },
+  "epochs_run": 19,
+  "name": "state_full_learned_router_r1101_ls0p05",
+  "router_seed": 1101,
+  "signature": "60cc907044eeeb29750f0773ff5160794b58dc5f48a8f9b18504c95f41f2a95b",
+  "state": "COMPLETE"
+}

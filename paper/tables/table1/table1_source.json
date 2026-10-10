@@ -1,0 +1,38 @@
+{
+  "table": "Table 1",
+  "caption": "Table 1. Four research strands and their connections to the evaluation questions.",
+  "columns": [
+    "Research strand",
+    "Representative work",
+    "Existing capability",
+    "Measurement or implementation in this work"
+  ],
+  "rows": [
+    [
+      "Factual-outcome conditioning",
+      "FOHL, OOSR, Zhang et al.",
+      "Counterfactual prediction using factual observations, or treatment-selection regret evaluation",
+      "Response-conditioned value of same-event versus shuffled suffix encoding in reactive traffic"
+    ],
+    [
+      "Interaction and multi-action prediction",
+      "WIMP, ProSim, Fujii et al., CF-GODE",
+      "Controllable prediction, reactive rollout, or multi-agent intervention modelling",
+      "Joint evaluation of input value and action consequences under a fixed event record"
+    ],
+    [
+      "Decision-relevant quality and selective prediction",
+      "Farid, Nakamura, CCTR, ConfidNet, SelectiveNet",
+      "Cost-related failure evaluation, calibration, or learned retention ranking",
+      "Regret-supervised auditing after a frozen selector, relative to the candidate action set"
+    ],
+    [
+      "Rejection, risk control and expert deferral",
+      "RwR, conformal risk control, learning-to-defer",
+      "Rejection, risk guarantees, or model–expert collaboration under the corresponding losses and assumptions",
+      "Empirical offline retention of decision groups"
+    ]
+  ],
+  "note": "Representative references are cited in the corresponding paragraphs. Full source details, information timing, targets and guarantee conditions are given in Supplementary Table S1. The connections describe task positioning, rather than a general ranking of methods.",
+  "source": "Current canonical Word Table 1; no new literature or experimental analysis."
+}

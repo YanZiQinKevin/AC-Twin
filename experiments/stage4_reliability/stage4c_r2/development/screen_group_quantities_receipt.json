@@ -1,0 +1,45 @@
+{
+  "bindings": {
+    "collection_receipt_sha256": "afeded0f0644fa3fb3581c47e062924dbfc6d246b6483a10e1b735c2fc3aa605",
+    "data_sha256": "96bed045419cf42e106d74046247292984319211bc62ca430d7703ccd8c135d2",
+    "determinism_receipt_sha256": "68747d2dcd5893a4b6623d46a503e35ed5159614e798bb5eaac021c8c1343103",
+    "direct_scores_sha256": "15e4b179b16444c11d4e8aae8d8cd93eba7fcdc04af7d553593738c3df7d5339",
+    "final_selection_sha256": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+    "inference_receipt_sha256": "4b2efbf34e8a907bd5d9611e3c4e5453a70e83706e129b7da48cc13a684a8a85",
+    "model_inventory_sha256": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+    "predictions_sha256": "2e251c87a56f8eb20219ceead8e46768d72a1440afb1b1a4b649fc34cf0abe91",
+    "scores_sha256": "b36808e09558d301b19e78df6d40cc2a3f0da51ac751a1a289782b937542db6f",
+    "statistics_code_sha256": "fd9737ebceaa40b06f5f2fd47347ec60dc34ec1840bcb1f47d7ef021c933419d"
+  },
+  "bootstrap_entropy": 2026092702,
+  "bootstrap_resamples": 10000,
+  "confidence_screen": 0.8,
+  "interaction_threshold": 29.128996473819946,
+  "interaction_threshold_source": "development_train preintervention_min_distance median (train-only)",
+  "lock_burned_at": "2026-09-17T03:29:42",
+  "lock_sha256": "86876feacedb90ef39fb74838986a8207233994e8d8089de523d386053d324a2",
+  "n_groups": 8000,
+  "plan_id": "AC-TWIN-RFER-STAGE4C-R2-DECISION-RISK-SCALING-2026-09-16-V0.2",
+  "qa": {
+    "all_complete": true,
+    "determinism_passed": true,
+    "ensemble_is_arithmetic_mean": true,
+    "hashes_match": true,
+    "one_shot_locks": true,
+    "role_seeds_valid": true
+  },
+  "role": "development_screen",
+  "screen_group_quantities_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\screen_group_quantities.npz",
+  "screen_group_quantities_sha256": "d68a2c89d6e6827bd366ade73a37ed7e9050fcc06a444e3d533e66ba6c7ed20b",
+  "strongest_standard_baseline": "SEED_VOTE_ENTROPY",
+  "train_support_binding": {
+    "report_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\train_support_report_r1.json",
+    "report_sha256": "7b26ab796d8b04cfb22fd00a94cfa9a8e3c7aa0f9179600951af090c24013fc7",
+    "report_status": "TRAIN_SUPPORT_OK",
+    "superseded_base_report_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\train_support_report.json",
+    "superseded_base_report_sha256": "65224b594c92be49e3269f164ea2b623eebd10073ad8f0a0ba21acbd62ad597e",
+    "superseded_base_report_status": "STAGE4CR2_TRAIN_SUPPORT_INSUFFICIENT"
+  },
+  "tstar_stratum_split": 13,
+  "written_at": "2026-09-17T03:30:40"
+}

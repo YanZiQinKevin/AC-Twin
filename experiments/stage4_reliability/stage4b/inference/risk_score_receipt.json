@@ -1,0 +1,17 @@
+{
+  "finalist_model_sha256": "4a5108030536a2838bac868e3f7da19cc0295fe5164da154b7ee1e8d87bc8edc",
+  "geometry_model_sha256": "602d32a6aeb74f998a6c41151b7b7338d354022098bc2e29af60935f996b8bd9",
+  "plan_id": "AC-TWIN-RFER-STAGE4B-RISK-CONFIRM-2026-09-15-V0.1",
+  "predictions_sha256": "18cb74aec7adddc388082f0bbb0040d527ed727bcd03fdaddb376555f07c48c9",
+  "risk_scores_sha256": "5487a3ec77d14ed4df604983eb0316bbb58d49a7215a8362fc06e9d93f1c335d",
+  "scores": [
+    "COMBINED_RISK_HEAD",
+    "CONSTANT_RANDOM",
+    "DISAGREEMENT_ONLY",
+    "GEOMETRY_ONLY",
+    "RESPONSE_ONLY",
+    "UNCERTAINTY_ONLY"
+  ],
+  "status": "CONFIRM_RISK_SCORES_FROZEN",
+  "written_at": "2026-09-15T17:25:36"
+}

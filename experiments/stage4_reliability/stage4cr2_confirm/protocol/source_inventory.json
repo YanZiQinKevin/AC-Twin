@@ -1,0 +1,183 @@
+{
+  "files": {
+    "experiments/stage3_routing/stage3r/scaler.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\scaler.json",
+      "sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181"
+    },
+    "experiments/stage4_reliability/stage4a_v3/risk/models/combined_risk_head_mlp.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_mlp.pt",
+      "sha256": "4a5108030536a2838bac868e3f7da19cc0295fe5164da154b7ee1e8d87bc8edc"
+    },
+    "experiments/stage4_reliability/stage4a_v3/risk/models/geometry_only_ridge.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\geometry_only_ridge.pt",
+      "sha256": "602d32a6aeb74f998a6c41151b7b7338d354022098bc2e29af60935f996b8bd9"
+    },
+    "experiments/stage4_reliability/stage4a_v4/risk/candidate_selection.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v4\\risk\\candidate_selection.json",
+      "sha256": "b056593c06d0968f71f3af257e0a28e1d4fa2b6928e9bde27f451bf73ce579b0"
+    },
+    "experiments/stage4_reliability/stage4b/protocol/protocol_lock.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\protocol\\protocol_lock.json",
+      "sha256": "8cdb6ff85514ec16e96eae5999f35458829efa9a6280055709e6f8e0e81aa517"
+    },
+    "experiments/stage4_reliability/stage4b/reports/STAGE4B_CONFIRMATORY_DECISION.md": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\reports\\STAGE4B_CONFIRMATORY_DECISION.md",
+      "sha256": "2cedbf99be3d1d5463cb8896767a92f85df93696eb9d5033aeac140a850c5f2b"
+    },
+    "experiments/stage4_reliability/stage4b/reports/stage4b_confirmatory_report.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4b\\reports\\stage4b_confirmatory_report.json",
+      "sha256": "f6ab4012ba31ed58594fd596bc0c4a1f5bef2cfd0b326d585deaf18976e9bba2"
+    },
+    "r2_development/confirmation_power_diagnostic.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\confirmation_power_diagnostic.json",
+      "sha256": "daa4255aaa43aadb8240e46c6395f4cf620637c156d7491a45da4510d29d047a"
+    },
+    "r2_development/development_screen_report.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\development_screen_report.json",
+      "sha256": "c54c3f7be98c659f8172b4523eccb937ab79ed21f32a34d65f5c69068bb76f8e"
+    },
+    "r2_development/feature_scaler.npz": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\feature_scaler.npz",
+      "sha256": "2f21c11ae248f5883d8e9c4c8fa7efb876ad1afb453ee7eec462509a48104194"
+    },
+    "r2_development/feature_schema.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\feature_schema.json",
+      "sha256": "4d45bb5556502df06630c20ffaea4fcacc5f818bde28854aec8c434ee9d23033"
+    },
+    "r2_development/final_selection.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\final_selection.json",
+      "sha256": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461"
+    },
+    "r2_development/model_inventory.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\model_inventory.json",
+      "sha256": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637"
+    },
+    "r2_development/models/direct_seed8101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8101.pt",
+      "sha256": "0f6e24059d565495a0aa310955a852305ead9d7e8dca779cf0945c4302926e8a"
+    },
+    "r2_development/models/direct_seed8202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8202.pt",
+      "sha256": "952dcb473d5a9af881df78f5d5c66bccfa5783336d5307afc3c221375b416f89"
+    },
+    "r2_development/models/direct_seed8303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8303.pt",
+      "sha256": "ce82b3646b02606a35fe475df438ce9753fb64a351a23ca726c28ef155ddfcbb"
+    },
+    "r2_development/models/direct_seed8404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8404.pt",
+      "sha256": "e083c01268de4470d66b62d76815cd3c3fb5e18703a1e3120b9a4f2dbedc58d5"
+    },
+    "r2_development/models/direct_seed8505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\models\\direct_seed8505.pt",
+      "sha256": "db349a2b01e6ea35beee938d775703f5e92efdaf69bc728ab9244afa1a4bdfd9"
+    },
+    "r2_development/protocol_lock.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\protocol_lock.json",
+      "sha256": "c19c5bdce54fe039a10003b4ab78d1fb22040ac740ba950457c4534fc5e8aa71"
+    },
+    "r2_development/screen_group_quantities.npz": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\screen_group_quantities.npz",
+      "sha256": "d68a2c89d6e6827bd366ade73a37ed7e9050fcc06a444e3d533e66ba6c7ed20b"
+    },
+    "r2_development/screen_group_quantities_receipt.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\screen_group_quantities_receipt.json",
+      "sha256": "6abc5b431e9c8cb40ca8f718770bf549de8e52a0a8e9e61bfbbda2e628ce399c"
+    },
+    "r2_development/validation_gate_report.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\validation_gate_report.json",
+      "sha256": "1dce238289b3223aa2607bb1b84f7b6506600a48b5499a5d9b992b58b49c244b"
+    },
+    "stage3b/input_binding_receipt.json": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3b\\input_binding_receipt.json",
+      "sha256": "881a73c3fd9e378a97e16bdf1a09316119272960b3ba0a730f315474a2d14490"
+    },
+    "stage3b/response_predictor_seed101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed101.pt",
+      "sha256": "d128d4eab19803d14a35485e2f95fda46da59ec260d40da33df6dba38dd9c756"
+    },
+    "stage3b/response_predictor_seed202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed202.pt",
+      "sha256": "2493d45f127f7e517ac08ca5f60543310b6293c1cd239caf7c502cc2f82baa95"
+    },
+    "stage3b/response_predictor_seed303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed303.pt",
+      "sha256": "2c663e0390e21bd6e060f039c29c95e8289c500fd67aa9f0e3b763609d67210c"
+    },
+    "stage3b/response_predictor_seed404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed404.pt",
+      "sha256": "0c7b2c81a64f8c0819a7042270ab84f08b401495921e496241594dea72e77815"
+    },
+    "stage3b/response_predictor_seed505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed505.pt",
+      "sha256": "b30907806b11ad91ebe34f9f2239d5414d97e17e238820c292b91576722e4830"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair0_s1101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair0_s1101.pt",
+      "sha256": "b615e7f7b00cab9452e9a9628930641910a60b602896e50e2302ef4046b25c0e"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair1_s1202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair1_s1202.pt",
+      "sha256": "082dd9cde4e5702a708b340e7c76760f7d0606ff60d6e3e0496cc09c52e2a60b"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair2_s1303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair2_s1303.pt",
+      "sha256": "5a377f02788801ddc5135fa2d4a470e86f14fb53780acb7bd76f4fcdf2d1a70a"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair3_s1404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair3_s1404.pt",
+      "sha256": "de1b3f7d19e70eeb0a90db8b7a101cf5ef738414a6920117f7c3e18ddbd35965"
+    },
+    "stage3r/end_to_end_mixture_lc0_lr0_pair4_s1505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\end_to_end_mixture_lc0_lr0_pair4_s1505.pt",
+      "sha256": "8dad5f3ec53cada1b9776a2cf1c6f9ddc09e6e0f529fb2bf68711bc04964e538"
+    },
+    "stage3r/pair0_fulltrain_full_seed1101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair0_fulltrain_full_seed1101.pt",
+      "sha256": "13a7c61b180b6e71fbb7887282602347917d06c9f296c3c656d47f2574cc009b"
+    },
+    "stage3r/pair0_fulltrain_history_seed1101.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair0_fulltrain_history_seed1101.pt",
+      "sha256": "40f2b550591b27672a38c49afd01b65eca6fe8a8695a654c24c7ec39a857d414"
+    },
+    "stage3r/pair1_fulltrain_full_seed1202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair1_fulltrain_full_seed1202.pt",
+      "sha256": "74f697a05b96ede74a6f049f8897da3bd2a506f072a4b71f4679ca5319c74590"
+    },
+    "stage3r/pair1_fulltrain_history_seed1202.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair1_fulltrain_history_seed1202.pt",
+      "sha256": "cdd975b51a4067c0c382d000c260e6dd4a20acaa4374ee15684ab6cdd431abbc"
+    },
+    "stage3r/pair2_fulltrain_full_seed1303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair2_fulltrain_full_seed1303.pt",
+      "sha256": "9c3bb5848c1ef5ebf64146040427da02d3e4bb2986756570f2e0791bf2242382"
+    },
+    "stage3r/pair2_fulltrain_history_seed1303.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair2_fulltrain_history_seed1303.pt",
+      "sha256": "1cd6769a47972437565d9171284a19df24ea18a723efc31dc46eaeee321bcea8"
+    },
+    "stage3r/pair3_fulltrain_full_seed1404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair3_fulltrain_full_seed1404.pt",
+      "sha256": "494fcc586b07c31265e14b066f6e9e1d2e80b1173a593cd117d13e166d32bfdb"
+    },
+    "stage3r/pair3_fulltrain_history_seed1404.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair3_fulltrain_history_seed1404.pt",
+      "sha256": "dbde2b5fb1220c1f4cb23174cd246f5d73a860d310bdc1f3462f9e437c88779a"
+    },
+    "stage3r/pair4_fulltrain_full_seed1505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair4_fulltrain_full_seed1505.pt",
+      "sha256": "9db58c01b836d067d07f8bab190f9d1d76e9d6ea81920c7d7b75ee21500988f7"
+    },
+    "stage3r/pair4_fulltrain_history_seed1505.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\oof\\checkpoints\\pair4_fulltrain_history_seed1505.pt",
+      "sha256": "584292117ceb780263d7ead9cf2b2b3a3d9b57aeec6f3dad3ab78104d22d60ae"
+    },
+    "stage4a_v3/risk/models/response_only_ridge.pt": {
+      "path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\response_only_ridge.pt",
+      "sha256": "2d1b65e72bb1b799a5510a7d59cf4f0c796458947eed24d2cf44ef9294f2d720"
+    }
+  },
+  "inventory_sha256": "bcc204cd0cbb820169e24f932ad03293f1df560218b67b554d382c1d4499b831",
+  "n_files": 44,
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1"
+}

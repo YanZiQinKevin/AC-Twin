@@ -1,0 +1,76 @@
+{
+  "accepted_groups": 300,
+  "action_stream_root": [
+    2026101000,
+    1
+  ],
+  "attempts": 558,
+  "config_signature": "fda7fb50bf98b0333e674e0c4f85f01d7a5f42f2a13e0106b4d249af1cbf1d91",
+  "confirmation_truth": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4d_merge_ood\\pilot\\behavior\\confirmation_truth.npz",
+  "confirmation_truth_sha256": "f4559693feeae8fc38d755e620c7ccaaceb3d0840596dd104303629fe0cf055e",
+  "counterfactual_branches": 3000,
+  "environment": {
+    "gymnasium_version": "1.3.0",
+    "highway_env_version": "1.10.2",
+    "numpy_version": "1.26.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.7",
+    "torch_version": "2.9.1+cu130"
+  },
+  "generated_at": "2026-09-20T13:25:44",
+  "group_order_binding": {
+    "confirmation_truth_group_seed_sha256": "4f0d6e69ca620bcc3b74275f5a77cbeafa2fa47fc51dd0b0d57db57b33189128",
+    "inference_inputs_group_seed_sha256": "4f0d6e69ca620bcc3b74275f5a77cbeafa2fa47fc51dd0b0d57db57b33189128",
+    "n_groups": 300,
+    "order": "acceptance_order",
+    "same_order": true
+  },
+  "inference_inputs": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4d_merge_ood\\pilot\\behavior\\inference_inputs.npz",
+  "inference_inputs_sha256": "025cdc1763a2769104bc0d6611241ea4aeb2a67749d30d65d885d279caeba756",
+  "legal_fields": [
+    "object_history",
+    "object_factual_future",
+    "factual_actions",
+    "cf_actions",
+    "cf_durations",
+    "t_star",
+    "group_seed",
+    "inference_mask"
+  ],
+  "partial": false,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "prefix_max_abs_diff": 0.0,
+  "profile": "BEHAVIOR_OOD",
+  "purpose": "stage4d_merge_ood",
+  "receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_ood\\pilot\\behavior\\collection_receipt.json",
+  "rejection_ledger": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4d_merge_ood\\pilot\\behavior\\rejection_ledger.jsonl",
+  "requested_groups": 300,
+  "role": "pilot_behavior",
+  "seed_schedule_sha256": "f3605a836186d478d60d652d434f489b771bb312c69242d28f61552bbae11430",
+  "skip_counts": {
+    "branch_perturbation_inconsistent": 0,
+    "counterfactual_future_short": 0,
+    "duplicate_seed": 0,
+    "eval_mask_mismatch": 0,
+    "factual_future_short": 0,
+    "initial_fingerprint_mismatch": 0,
+    "no_legal_agent_time": 0,
+    "non_finite": 0,
+    "object_prefix_mismatch": 0,
+    "observation_shape": 0,
+    "prefix_terminated": 258,
+    "present_set_mismatch": 0,
+    "short_history": 0
+  },
+  "stage_namespace": "stage4d_ood",
+  "status": "COLLECTED",
+  "truth_fields": [
+    "object_counterfactual_futures",
+    "cf_actions",
+    "cf_durations",
+    "factual_actions",
+    "t_star",
+    "group_seed",
+    "inference_mask"
+  ]
+}

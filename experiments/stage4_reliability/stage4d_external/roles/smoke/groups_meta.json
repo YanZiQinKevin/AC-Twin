@@ -1,0 +1,146 @@
+[
+  {
+    "scenario_id": "44f15c0feae6a4f1",
+    "t_star": 10,
+    "eval_track_ids": [
+      "2093",
+      "279",
+      "289",
+      "299",
+      "302"
+    ],
+    "ego_lane_id": "99"
+  },
+  {
+    "scenario_id": "201c5278eeeb46da",
+    "t_star": 10,
+    "eval_track_ids": [
+      "177",
+      "12",
+      "8",
+      "3",
+      "26"
+    ],
+    "ego_lane_id": "281"
+  },
+  {
+    "scenario_id": "4ef594ec09ce11b1",
+    "t_star": 11,
+    "eval_track_ids": [
+      "5009",
+      "4207",
+      "4214",
+      "4215",
+      "4208"
+    ],
+    "ego_lane_id": "556"
+  },
+  {
+    "scenario_id": "93f7e25dd3e5d93e",
+    "t_star": 10,
+    "eval_track_ids": [
+      "1299",
+      "1089",
+      "1097",
+      "1100",
+      "1092"
+    ],
+    "ego_lane_id": "565"
+  },
+  {
+    "scenario_id": "97c5f8a474c608a7",
+    "t_star": 10,
+    "eval_track_ids": [
+      "1230",
+      "323",
+      "324",
+      "351",
+      "336"
+    ],
+    "ego_lane_id": "730"
+  },
+  {
+    "scenario_id": "3fc8a3e240a34b6b",
+    "t_star": 11,
+    "eval_track_ids": [
+      "1306",
+      "1026",
+      "1031",
+      "1028",
+      "1029"
+    ],
+    "ego_lane_id": "588"
+  },
+  {
+    "scenario_id": "25b6bdd8b6cb91f5",
+    "t_star": 11,
+    "eval_track_ids": [
+      "4589",
+      "1710",
+      "1711",
+      "1720",
+      "1724"
+    ],
+    "ego_lane_id": "648"
+  },
+  {
+    "scenario_id": "9fe3e6dc1a18738",
+    "t_star": 15,
+    "eval_track_ids": [
+      "2787",
+      "2387",
+      "2378",
+      "2381",
+      "2402"
+    ],
+    "ego_lane_id": "499"
+  },
+  {
+    "scenario_id": "8fca5092c333d4c1",
+    "t_star": 12,
+    "eval_track_ids": [
+      "6125",
+      "2399",
+      "2412",
+      "2435",
+      "2416"
+    ],
+    "ego_lane_id": "441"
+  },
+  {
+    "scenario_id": "497f5b2a6a3fa203",
+    "t_star": 12,
+    "eval_track_ids": [
+      "309",
+      "0",
+      "18",
+      "3",
+      "27"
+    ],
+    "ego_lane_id": "230"
+  },
+  {
+    "scenario_id": "ce6cf1180f1b5c02",
+    "t_star": 13,
+    "eval_track_ids": [
+      "2446",
+      "2177",
+      "2202",
+      "2157",
+      "2151"
+    ],
+    "ego_lane_id": "477"
+  },
+  {
+    "scenario_id": "8e8385e78a0d93c2",
+    "t_star": 13,
+    "eval_track_ids": [
+      "866",
+      "379",
+      "389",
+      "386",
+      "388"
+    ],
+    "ego_lane_id": "206"
+  }
+]

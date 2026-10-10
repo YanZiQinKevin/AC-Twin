@@ -1,0 +1,7 @@
+{
+  "status": "ENGINEERING_SMOKE_ONLY",
+  "accepted_groups": 12,
+  "attempts": 28,
+  "prefix_max_abs_diff": 0.0,
+  "note": "engineering smoke only; not a scientific product"
+}

@@ -1,0 +1,33 @@
+{
+  "groups": [
+    {
+      "int_bool_meta_exact": true,
+      "max_abs_diff": {
+        "object_counterfactual_futures": 0.0,
+        "object_factual_future": 0.0,
+        "object_history": 0.0
+      },
+      "scenario_id": "4aac89517dee0818",
+      "within_tolerance": true
+    },
+    {
+      "int_bool_meta_exact": true,
+      "max_abs_diff": {
+        "object_counterfactual_futures": 0.0,
+        "object_factual_future": 0.0,
+        "object_history": 0.0
+      },
+      "scenario_id": "56ab8fa87a523f0b",
+      "within_tolerance": true
+    }
+  ],
+  "mode": "collector_parity",
+  "passed": true,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "salt_used": "AC-TWIN-D2-V0.1|",
+  "scope": "ENGINEERING_SMOKE_ONLY",
+  "tolerance": 0.0001,
+  "tolerance_source": "pilot-proven cross-process float-noise bound (D2 handoff 2026-09-23 same-scenario re-simulation analysis)",
+  "train_role": "train",
+  "written_at": "2026-09-24T22:37:43"
+}

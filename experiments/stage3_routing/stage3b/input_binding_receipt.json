@@ -1,0 +1,145 @@
+{
+  "receipt_payload": {
+    "plan_id": "AC-TWIN-RFER-STAGE3B-2026-09-10-V0.1",
+    "artifact_type": "stage3b_input_binding",
+    "stage3a_plus_plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+    "stage3a_plus_terminal_state": "RESPONSE_DEV_QUALIFIED_STAGE3A_PLUS",
+    "stage3a_plus_state_sha256": "b43c704b9f7c5de75c827700a1a63fdbf4d864e7558ceb7b028960ad710eb9c8",
+    "stage3a_plus_freeze_file_sha256": "526596acd91bf7a073b318e806bb1a9d982c495ac3ffb43c3cfa27de5f577eeb",
+    "stage3a_plus_freeze_receipt_sha256": "cb18ffdc3957d18e3269a6d0e654b29038ed34f7eff09b87d2d56da006228127",
+    "development_source_sha256": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+    "historical_dev_b_sha256": "4031aaaeb98a51cb101c195adbd10b436a9e69f1addde1fb0f0900d6a442dd82",
+    "seed_pairs": [
+      [
+        101,
+        1101
+      ],
+      [
+        202,
+        1202
+      ],
+      [
+        303,
+        1303
+      ],
+      [
+        404,
+        1404
+      ],
+      [
+        505,
+        1505
+      ]
+    ],
+    "checkpoints": {
+      "101": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed101.pt",
+        "file_sha256": "d128d4eab19803d14a35485e2f95fda46da59ec260d40da33df6dba38dd9c756",
+        "signature": "2dac69182ad082a073163f10e6d76180565f7afc426d451f69478f31c70ac1e6"
+      },
+      "202": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed202.pt",
+        "file_sha256": "2493d45f127f7e517ac08ca5f60543310b6293c1cd239caf7c502cc2f82baa95",
+        "signature": "c4dcf6e205f52dda71ce345287160d51b3505632777993b3ea4d4ff54a7388b2"
+      },
+      "303": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed303.pt",
+        "file_sha256": "2c663e0390e21bd6e060f039c29c95e8289c500fd67aa9f0e3b763609d67210c",
+        "signature": "d0f5106b634a837b32498c4c1d094e217766563abaed1419332fee10f9ca04bc"
+      },
+      "404": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed404.pt",
+        "file_sha256": "0c7b2c81a64f8c0819a7042270ab84f08b401495921e496241594dea72e77815",
+        "signature": "01c943b04c387cb0a9cc9455a765a723d25d78c7ca63259127d56731f8ffbce4"
+      },
+      "505": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed505.pt",
+        "file_sha256": "b30907806b11ad91ebe34f9f2239d5414d97e17e238820c292b91576722e4830",
+        "signature": "cce9a6414d94b7a0358da19f4f5e49a904f9b5d3eca1c84410da20d5db9e1975"
+      }
+    },
+    "calibration": {
+      "selection_file": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\development\\round0\\calibration_selection.json",
+      "selection_file_sha256": "9cb21a27aa9e74c89de5cc100b1f878d6676221b117c5de5b47b9118f852f7d1",
+      "selection_receipt_sha256": "6a8bb0e4cc142137c537cc7a97803f4f6e03b15b1eb1d281e517ebd1caa2d486",
+      "selected_candidate": "CAL_PER_SEED_VECTOR",
+      "calibration_signature": "08b4829b12687df3262405bb15591381a247c2039d19efc1f0becf1c07cec1ba",
+      "fit_split": "validation",
+      "data_signature": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+      "validation_logits_signature": "c4dd4426e926448f45a05546c383b0fe41946aedcf9a30b47a7df95b18000f59",
+      "per_seed_params": [
+        {
+          "a": [
+            0.29624420760974846,
+            0.3591146616072904,
+            0.4336604177684436,
+            0.061104890323405596
+          ],
+          "b": [
+            1.5901432270574423,
+            -0.49046991856188166,
+            -0.4832110347513205,
+            -0.6164668782179357
+          ]
+        },
+        {
+          "a": [
+            0.4346541187003689,
+            0.26383964512978364,
+            -0.07765742601953934,
+            -0.3678821905427992
+          ],
+          "b": [
+            1.5880086113190095,
+            -0.6201693013402083,
+            -0.421698263181045,
+            -0.5461410552900101
+          ]
+        },
+        {
+          "a": [
+            0.8019158833852582,
+            0.42508407596978387,
+            0.6496255167810625,
+            0.050376122143192106
+          ],
+          "b": [
+            2.321232148319203,
+            -0.7325586990313712,
+            -0.816344354347268,
+            -0.7723327853220643
+          ]
+        },
+        {
+          "a": [
+            0.664393229828192,
+            0.03201115471000388,
+            0.3080423067042025,
+            -0.11969443595771143
+          ],
+          "b": [
+            1.818413342609868,
+            -0.7253753464817005,
+            -0.5754552606165646,
+            -0.5175828259218912
+          ]
+        },
+        {
+          "a": [
+            0.5370517242258946,
+            0.6027034093060603,
+            0.7795937473271476,
+            0.4281208893551264
+          ],
+          "b": [
+            1.8974613474525959,
+            -0.5390879768378795,
+            -0.5861119110998325,
+            -0.7722625070748317
+          ]
+        }
+      ]
+    }
+  },
+  "receipt_sha256": "97634c6d145746fc36d9e69083d53638a7e52e03e2e99ecc8e91944bdcf04006"
+}

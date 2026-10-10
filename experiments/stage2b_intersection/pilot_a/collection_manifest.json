@@ -1,0 +1,29 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-14-V0.3",
+  "role": "pilot_a",
+  "experiment_name": "stage2b_intersection_pilot_a",
+  "analysis_status": "PILOT_RESPONSE_SUPPORT",
+  "collection_seed": 2026091501,
+  "seed_schedule_size": 12000,
+  "max_attempts": 12000,
+  "config_signature": "e5e3861b83d746f83ff19aa9ebae9174ae07afa2cc950d12fc040439d8b0edc5",
+  "config_sha256": "107984deafcbf0abe7d76afb8e93b59b6aa2d12d0d2b76524e9092f33ae1f623",
+  "seed_schedule_sha256": "143d494f7bff383790bba053477a4faa0435f104b00cb99d94125846b51617f8",
+  "zero_overlap": {
+    "historical_episode_seeds": 62255,
+    "other_role_schedules": [
+      "smoke"
+    ],
+    "disjoint": true
+  },
+  "bindings": {},
+  "environment": {
+    "python_version": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy_version": "1.26.4",
+    "torch_version": "2.9.1+cu130",
+    "highway_env_version": "1.10.2",
+    "gymnasium_version": "1.3.0"
+  },
+  "manifest_sha256": "dd51e64787cd571192ba7c401be6eb59ed6888a268dcbfc55364bd172a918b9d"
+}

@@ -1,0 +1,14 @@
+{
+  "exempt_nodes": [
+    "tests/test_stage2_protocol.py::test_frozen_collection_seed_has_zero_historical_overlap",
+    "tests/test_stage2_protocol.py::test_write_protocol_lock_creates_lock_schedule_and_params",
+    "tests/test_stage2_protocol.py::test_lock_records_all_required_hashes",
+    "tests/test_stage2_protocol.py::test_lock_refuses_to_overwrite",
+    "tests/test_stage2_protocol.py::test_verify_lock_passes_and_detects_drift",
+    "tests/test_stage2b_protocol.py::test_frozen_collection_seeds_disjoint_from_live_history_and_each_other"
+  ],
+  "evidence": "Full-repo regression run 2026-09-20 (python -m pytest tests/ -q -rf, 1490 passed, 6 failed in 688s). These six are exactly the registered non-blocking historical failures of plan §10: Stage2's 5 live-history lock tests and Stage2B's 1 stale candidate-domain test. All six fail inside frozen Stage2/Stage2B protocol lock/schedule validation because the LIVE historical seed pool has grown since those locks were frozen (later stages' accepted seeds now intersect the old frozen schedules): the five Stage2 tests raise 'ValueError: seed schedule overlaps 1 historical episode seed(s)' from stage2_protocol.py:301, and the Stage2B test raises 'ValueError: seed schedule overlaps 6 historical episode seed(s)' from stage2b_protocol.py:480. No frozen test, lock, or schedule was modified; original failure output preserved in the SDD ledger workspace (full_regression_2026-09-20.log). These failures predate this stage and involve no stage4cr2_confirm artifact.",
+  "registered_by": "controller, operational readiness phase",
+  "registered_on": "2026-09-20",
+  "plan_reference": "plans/2026-09-17_AC-Twin_Stage4CR2独立决策风险确认实施计划_v0.1.md §10"
+}

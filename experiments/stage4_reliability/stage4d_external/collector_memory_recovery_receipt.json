@@ -1,0 +1,38 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "status": "ENGINEERING_MEMORY_RECOVERY_READY",
+  "generated_at": "2026-09-22T19:38:10+08:00",
+  "scope": "collector memory lifecycle and terminal progress only",
+  "scientific_contract_changed": false,
+  "cause": [
+    "compressed NPZ members were repeatedly inflated inside the per-group resume loop",
+    "one long-lived MetaDrive process accumulated native and NumPy allocation pressure"
+  ],
+  "fix": [
+    "bulk-load each checkpoint NPZ member once before constructing per-group views",
+    "default command supervises fresh worker processes capped at 100 candidate attempts",
+    "supervisor emits accepted/total/percent/elapsed/ETA and child PID at least every 30 seconds",
+    "existing atomic checkpoint, append-only ledger, candidate order, acceptance rules and quotas remain unchanged"
+  ],
+  "sha256": {
+    "collector_before_from_adapter_contract": "c9c3c45c7ad781ed5a363ee84131560d4fac90b7807c60312585cbed2621dd94",
+    "collector_after": "227d5b4f4559db8050e67dafc17fcab8cdb2863dff00c1a6a22951edd6b32426",
+    "collector_test_after": "07ae3e10b1b30aaad8c70d6e2c33bbe02a1a00673ce77d20fed89327ddbb3de6",
+    "train_checkpoint_preserved": "add94052036e2ed9ccd48276892a2109ffd78bdc14e19e59dcdfb11764598add",
+    "train_ledger_preserved": "aa7f21ff35700ae9e3c53fa5a8d6ad77a6a079a4f230361bca477c5c4427fd1d"
+  },
+  "checkpoint_state": {
+    "role": "train",
+    "accepted": 2992,
+    "quota": 5000,
+    "burned_total": 11429,
+    "validation_started": false
+  },
+  "verification": {
+    "collector_tests": "8 passed",
+    "stage4d_d2_focused_tests": "90 passed",
+    "real_checkpoint_probe_exit": 0,
+    "real_checkpoint_probe_checkpoint_unchanged": true,
+    "real_checkpoint_probe_ledger_unchanged": true
+  }
+}

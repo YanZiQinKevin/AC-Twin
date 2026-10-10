@@ -1,0 +1,91 @@
+{
+  "code": [
+    {
+      "path": "code/collect_stage4d_external.py",
+      "sha256": "2f3d8c8212a7d6cecf2c9a1fc5d93b241968f437e62161c379325f13bce2a703"
+    },
+    {
+      "path": "code/collect_stage4d_d2f.py",
+      "sha256": "03db569e4bc88d81576c708ff11159eff4f4f4f66994167c63fd8abb617a350c"
+    },
+    {
+      "path": "code/stage4d_metadrive_adapter.py",
+      "sha256": "72171147a823b513dc1f3ba265dfef0c23e1e5c9330be454055128684b3035a0"
+    },
+    {
+      "path": "code/stage4d_sim_entry.py",
+      "sha256": "e498c12b370313c506764a76dd235d23ab2eb057bdc5f25ac187808d249b872d"
+    },
+    {
+      "path": "code/stage4d_split_screen_truth.py",
+      "sha256": "490cf295b362c9eaaaeda44a6c321ff26ac66a124fb08bc190bb84cfd37030b0"
+    },
+    {
+      "path": "code/drive_stage4d_external_screen.py",
+      "sha256": "a0982b2076cee754890dd40abf5995e02be0ccc14f1106fc71a214bfab7c5a45"
+    },
+    {
+      "path": "code/drive_stage4d_d2f.py",
+      "sha256": "52f54e704aaa0ca3d153bd1113d4c0192fe56de61b9173e121ef1fe83cebe279"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_features.py",
+      "sha256": "90e91accde21b1736650fb6fcceb7835f176bca670b85e84a867a71116e17489"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_split.py",
+      "sha256": "b71647b751c0fb97fdb727174170bb97ab0d4091d690dceab1cc106f0eb498b8"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_training.py",
+      "sha256": "8c8c06ab4bc3d935e8b695c6ce939333b82c34010170786275ad03e1cef48c7a"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_inference.py",
+      "sha256": "5dd458b8dae0e6ce123d4acc1557219da52f16f15095724cdc8390448ee5b385"
+    },
+    {
+      "path": "code/ac_twin/stage4d_external_statistics.py",
+      "sha256": "58374e081914a6d3b41833b54793f89d3be5f35e9c0d7239ea951a4104b53b84"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2e_ego.py",
+      "sha256": "5d5209a659bb871db24fa5ff875e61c517560ab59dd812876659a1395f3f7f25"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2e_pipeline.py",
+      "sha256": "d7c21cd126a4ef5a9cb17fcaefaf433d18aa70dcc6701bf0aa364f84296aa400"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2f_protocol.py",
+      "sha256": "aa2e7fd3c6ee15e9185c45ce91d342257f27f1765bb2fa453e76c0161bebf66d"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2f_power.py",
+      "sha256": "6b625a0eb018a5defea5aac0cb9693f01af78153128edd8b4bf3057c48375538"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2f_inference.py",
+      "sha256": "a12c8f96973d57e07a29d69429616854483bcd6d93b84ebd3784f7b5ad93d16e"
+    },
+    {
+      "path": "code/ac_twin/stage4d_d2f_statistics.py",
+      "sha256": "70593f51aa4bfef68275df4b08d44713b474ad1ae79b147a4b15b6c8067719e9"
+    },
+    {
+      "path": "code/ac_twin/stage4c_objective.py",
+      "sha256": "a20da1805c14b57bc2ad02f363133b7c53c480909190f52fa5a1cc09964ac44e"
+    },
+    {
+      "path": "code/ac_twin/stage4cp_features.py",
+      "sha256": "101c389380dc85974acc43a34d32caf7eeb81599dca4f2b0e2db5cd8bd89ccf0"
+    },
+    {
+      "path": "code/ac_twin/stage4cp_statistics.py",
+      "sha256": "64dfe315080ee889bf1f6912426dd0be405e3dc9e5cf59983a4385fc637241bf"
+    }
+  ],
+  "create_once": true,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "written_at": "2026-09-25T00:30:22"
+}

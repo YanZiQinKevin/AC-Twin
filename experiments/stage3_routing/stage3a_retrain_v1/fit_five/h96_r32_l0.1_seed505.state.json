@@ -1,0 +1,19 @@
+{
+  "run": "h96_r32_l0.1_seed505",
+  "state": "COMPLETE",
+  "seed": 505,
+  "config": {
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "lambda_cls": 0.1
+  },
+  "best_val_loss": 0.15124776437294712,
+  "train_lambda_cls": 0.1,
+  "selection_lambda_cls": 0.25,
+  "validation_reg_loss": 0.08689807634395856,
+  "validation_ce_loss": 0.25739875211595425,
+  "validation_selection_score": 0.15124776437294712,
+  "epochs_run": 12,
+  "signature": "cce9a6414d94b7a0358da19f4f5e49a904f9b5d3eca1c84410da20d5db9e1975",
+  "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed505.pt"
+}

@@ -1,0 +1,21 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "recorded_at": "2026-09-11T15:08:13",
+  "runner_scientific_fix": {
+    "file": "code/run_stage4a.py",
+    "before_sha256": "ac150e93be6e75c1b75ad0b490692e9b869d20d3a923d14bb41c215a510509b5",
+    "after_sha256": "a8f57d331fb0017171f12679b1f5d8458df71a49fa2dd5b3a704bc6688e1e0d9",
+    "code_location": "run_stage4a.py::cmd_select_candidate (predictions receipt hash path)",
+    "reason": "cmd_select_candidate hardcoded run_dir/inference/predictions.npz; on a recovery run the frozen inference lives in the parent (v2), so the receipt hash must resolve via _inference_paths(run_dir, lock).",
+    "patch_file": "runner_fix_patch.diff"
+  },
+  "single_point_proof": {
+    "method": "revert both edits -> sha256 must equal v3-locked ac150e93...; re-apply -> a8f57d33...",
+    "reverted_sha256": "ac150e93be6e75c1b75ad0b490692e9b869d20d3a923d14bb41c215a510509b5",
+    "reverted_equals_v3_lock": true,
+    "reapplied_sha256": "a8f57d331fb0017171f12679b1f5d8458df71a49fa2dd5b3a704bc6688e1e0d9",
+    "reapplied_equals_a8f57d33": true,
+    "changed_lines": 2
+  },
+  "note": "This is the ONLY scientific-command-path difference between the v3-locked runner and the v4 runner. The lock-recovery-v4 command added later is additive recovery infrastructure and is captured separately in the v4 lock code_sha256."
+}

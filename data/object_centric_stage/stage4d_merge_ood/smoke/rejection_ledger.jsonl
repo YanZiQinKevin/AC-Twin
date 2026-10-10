@@ -1,0 +1,17 @@
+{"attempt_index": 0, "group_seed": 1820989632, "decision": "accepted", "reason": "", "t_star": 14, "n_mask_cells": 80}
+{"attempt_index": 1, "group_seed": 1249806459, "decision": "accepted", "reason": "", "t_star": 12, "n_mask_cells": 80}
+{"attempt_index": 2, "group_seed": 684016741, "decision": "rejected", "reason": "prefix_terminated", "failed_branch": "cf_0", "t_star": 12}
+{"attempt_index": 3, "group_seed": 801855359, "decision": "accepted", "reason": "", "t_star": 10, "n_mask_cells": 80}
+{"attempt_index": 4, "group_seed": 1662857264, "decision": "accepted", "reason": "", "t_star": 12, "n_mask_cells": 80}
+{"attempt_index": 5, "group_seed": 71173300, "decision": "rejected", "reason": "prefix_terminated", "failed_branch": "factual", "t_star": 11}
+{"attempt_index": 6, "group_seed": 411261821, "decision": "accepted", "reason": "", "t_star": 10, "n_mask_cells": 80}
+{"attempt_index": 7, "group_seed": 1909429468, "decision": "accepted", "reason": "", "t_star": 13, "n_mask_cells": 80}
+{"attempt_index": 8, "group_seed": 341698193, "decision": "accepted", "reason": "", "t_star": 14, "n_mask_cells": 80}
+{"attempt_index": 9, "group_seed": 1825139067, "decision": "accepted", "reason": "", "t_star": 12, "n_mask_cells": 80}
+{"attempt_index": 10, "group_seed": 1490430583, "decision": "accepted", "reason": "", "t_star": 15, "n_mask_cells": 80}
+{"attempt_index": 11, "group_seed": 218903576, "decision": "rejected", "reason": "prefix_terminated", "failed_branch": "cf_6", "t_star": 13}
+{"attempt_index": 12, "group_seed": 1184100247, "decision": "accepted", "reason": "", "t_star": 10, "n_mask_cells": 80}
+{"attempt_index": 13, "group_seed": 1184876144, "decision": "rejected", "reason": "prefix_terminated", "failed_branch": "factual", "t_star": 10}
+{"attempt_index": 14, "group_seed": 1495516318, "decision": "rejected", "reason": "prefix_terminated", "failed_branch": "factual", "t_star": 12}
+{"attempt_index": 15, "group_seed": 1437497153, "decision": "accepted", "reason": "", "t_star": 14, "n_mask_cells": 80}
+{"attempt_index": 16, "group_seed": 1827237469, "decision": "accepted", "reason": "", "t_star": 11, "n_mask_cells": 80}

@@ -1,0 +1,50 @@
+{
+  "bindings": {
+    "collection_receipt_sha256": "5b9649eba66c6102bf34ccddebf5d458fa0e9ef59a18795405db13e287ab9085",
+    "determinism_receipt_sha256": "fe64859b618d19f6df88e1b3f82b126fabcf509667b655874bb7ce69a3cc44e3",
+    "expected_confirmation_truth_sha256": "f8d766192836f440df57bc7e1f862884c8c98d5c966d77ea3abca6a7ed082845",
+    "inference_inputs_sha256": "d94b29fcd1051e2dda3308a317b35c53e2263368b91e998b31952faad9d90acf",
+    "inference_receipt_sha256": "2e70fd49ec7c5e45bd5a1ac12203ce3bf57d07a995492dbdccf4fffe55a252a1",
+    "predictions_sha256": "319d3249629b8d13f705a5bc7c9d141db3c23c6c09d16f8c98380979db084cb5",
+    "protocol_lock_sha256": "5f4b0ca4d76e861c2d52a8fb33e138f899073af947519ca3884954f9d6f3fa12",
+    "recovery_locks": {
+      "recovery_lock_r1.json": "b64cfb4fe7df38e69525097e54a93986b506570fb6f784451ae00fe12f3d5f6d"
+    },
+    "risk_scores_sha256": "608f27f7ea670bf6679285c50a68c5dc7b57977fb36fde1036a5a6a6848a1037"
+  },
+  "bootstrap": {
+    "confidence": 0.95,
+    "entropy": 2026110995,
+    "resamples": 10000
+  },
+  "constant_random_salt": 2026093203,
+  "determinism_rechecked_groups": 32,
+  "engine_binding": {
+    "cinf_sha256": "a36b139cbeaf106075313baaa8461712a9d02e9b00f6201dc2731e9b157d8f30",
+    "engine_config_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\stage4cr2_confirm_config.json",
+    "stage4cr2_protocol_lock_sha256": "d355653b56d67d196ea58006d9e96df5a20e06b2b79f803b2513f5a50fe2f363",
+    "stage4cr2_recovery_lock_sha256": "24795b601a02d13725c45704c73248a2f560df7caa1f2d4e6adbcb852c3bacd8"
+  },
+  "ensemble_definition": "arithmetic_mean_of_five_seeds",
+  "model_seeds": [
+    8101,
+    8202,
+    8303,
+    8404,
+    8505
+  ],
+  "n_groups": 2000,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "primary_baseline": "SEED_VOTE_ENTROPY",
+  "reference_baselines": [
+    "COMBINED_TOP2_MAX",
+    "CONSTANT_RANDOM"
+  ],
+  "role": "d1_confirm",
+  "standard_baselines": [
+    "MARGIN_ONLY",
+    "SEED_VOTE_ENTROPY",
+    "SEED_MARGIN_STD"
+  ],
+  "written_at": "2026-09-21T13:50:23"
+}

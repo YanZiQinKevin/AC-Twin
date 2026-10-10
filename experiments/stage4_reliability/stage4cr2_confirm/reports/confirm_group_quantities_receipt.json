@@ -1,0 +1,51 @@
+{
+  "bindings": {
+    "collection_receipt_sha256": "a562c841b6650129e68058ad62b616b5bf66521a2b9296569394121564389383",
+    "confirmation_truth_sha256": "35e71f4985ac2fe080876bd67a30290be1757161a85a46a334e49bddc3f0dd9e",
+    "determinism_receipt_sha256": "7e2ddb9fef1cf88eeb3cb185c116a31f7c06165478aa9c39913bec3bce1c1285",
+    "inference_inputs_sha256": "ba84748442c21e3dfb9fe9e0c58c24c3314d45af268dd99839dea3301ea254fc",
+    "inference_receipt_sha256": "d8cbdad637bb5177d4baa383fff0664ff9c07f66d86e7ebd1546633584f80f27",
+    "lock_sha256": "f6f4f23cc9c708694cc61365b5c568088a7ee3afeaab5a23b12ef58470836d95",
+    "predictions_sha256": "a805329c546eb7518e62c491e0b8874db5e847cef048b52e265aee297ad1113e",
+    "protocol_lock_sha256": "d355653b56d67d196ea58006d9e96df5a20e06b2b79f803b2513f5a50fe2f363",
+    "risk_scores_sha256": "019c93ceaf50aafc16edbdffe14ebcc2622d5e5b8b3954878eaf2f0dbfc1c60c",
+    "score_freeze_receipt_sha256": "f82aa43eaf703600476af6456f58ee5754b18905ecd1b6636ce3e836a23d0f16",
+    "statistics_code_sha256": "73e1e11fe0039227ed7dc4ac815883a81d7115f5e62bca5affca7add2a3ee31b"
+  },
+  "bootstrap_entropy": 2026093202,
+  "bootstrap_resamples": 10000,
+  "confidence": 0.95,
+  "confirm_group_quantities_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\reports\\confirm_group_quantities.npz",
+  "confirm_group_quantities_sha256": "a116a75b91d3e4630a4a4a935df93fe4a778c45307e8c8dbfd22a0550bba0949",
+  "coverage": 0.8,
+  "high_regret_threshold": 0.01,
+  "interaction_threshold": 29.128996473819946,
+  "interaction_threshold_source": "R2 train-only median, frozen by selection",
+  "lock_burned_at": "2026-09-20T07:26:30",
+  "lock_sha256": "f6f4f23cc9c708694cc61365b5c568088a7ee3afeaab5a23b12ef58470836d95",
+  "n_groups": 2000,
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "primary_baseline": "SEED_VOTE_ENTROPY",
+  "qa": {
+    "all_complete": true,
+    "determinism_passed": true,
+    "ensemble_is_arithmetic_mean": true,
+    "hashes_match": true,
+    "one_shot_locks": true,
+    "role_seeds_valid": true
+  },
+  "role": "confirm",
+  "strata": {
+    "interaction_high": "interaction_min_distance > 29.128996473819946",
+    "interaction_low": "interaction_min_distance <= 29.128996473819946",
+    "note": "two marginal splits, NOT a 4-cell cross; R2 stratum coding/naming kept; quantiles never refit on confirm data",
+    "tstar_high": "t_star >= 13",
+    "tstar_low": "t_star < 13"
+  },
+  "trim_fractions": [
+    0.01,
+    0.05
+  ],
+  "tstar_stratum_split": 13,
+  "written_at": "2026-09-20T07:26:33"
+}

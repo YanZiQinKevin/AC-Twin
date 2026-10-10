@@ -1,0 +1,95 @@
+{
+  "bindings": {
+    "collection_receipt_sha256": "5b9649eba66c6102bf34ccddebf5d458fa0e9ef59a18795405db13e287ab9085",
+    "confirmation_truth_sha256": "f8d766192836f440df57bc7e1f862884c8c98d5c966d77ea3abca6a7ed082845",
+    "determinism_receipt_sha256": "fe64859b618d19f6df88e1b3f82b126fabcf509667b655874bb7ce69a3cc44e3",
+    "inference_inputs_sha256": "d94b29fcd1051e2dda3308a317b35c53e2263368b91e998b31952faad9d90acf",
+    "inference_receipt_sha256": "2e70fd49ec7c5e45bd5a1ac12203ce3bf57d07a995492dbdccf4fffe55a252a1",
+    "lock_sha256": "9a54192e4e400bd4c38466b073541eb7a834880a9f0fc652ba9ca8ffc01a8e14",
+    "predictions_sha256": "319d3249629b8d13f705a5bc7c9d141db3c23c6c09d16f8c98380979db084cb5",
+    "protocol_lock_sha256": "5f4b0ca4d76e861c2d52a8fb33e138f899073af947519ca3884954f9d6f3fa12",
+    "risk_scores_sha256": "608f27f7ea670bf6679285c50a68c5dc7b57977fb36fde1036a5a6a6848a1037",
+    "score_freeze_receipt_sha256": "c7555c7e29fa2e1b7a9a4feaaaa7d759caf974397d08b85dd601c6eaa1f42535",
+    "statistics_code_sha256": "9892b0f42578d4101c7537010552240d7a82eb6fcd303cc890c13ba93536fb89"
+  },
+  "bootstrap_entropy": 2026110995,
+  "bootstrap_resamples": 10000,
+  "confidence": 0.95,
+  "confirm_group_quantities_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_ood\\reports\\d1_group_quantities.npz",
+  "confirm_group_quantities_sha256": "981c9b3b796bf848f32091b3ab6b5054ef88ebd950bcf36a07b3b8502e863f13",
+  "coverage": 0.8,
+  "domain_shift": {
+    "abs_smd": {
+      "clip_ttc": 0.10063910768029395,
+      "density_30m": 1.1685947157018433,
+      "mean_abs_relative_speed": 0.059454823390189024,
+      "merging_longitudinal_gap": 2.3074148916280435,
+      "merging_relative_speed": 0.07715988891923131,
+      "min_ego_distance": 1.0956293171993923
+    },
+    "domain_auc_pass": true,
+    "domain_classifier": {
+      "auc_ci_lb_min": 0.7,
+      "auc_ci_lower": 0.9802688775,
+      "auc_ci_upper": 0.9860228375,
+      "auc_point": 0.9831085000000002,
+      "bootstrap_seed": 2026104103,
+      "ci_side": "two-sided percentile",
+      "confidence": 0.95,
+      "n_folds": 5,
+      "n_id": 5000,
+      "n_ood": 2000,
+      "resamples": 5000,
+      "scope": "proof of shift only; never enters method scoring",
+      "type": "stratified_5fold_logistic_pooled_standardization"
+    },
+    "min_shifted": 2,
+    "n_shifted": 3,
+    "quantities": [
+      "min_ego_distance",
+      "mean_abs_relative_speed",
+      "merging_longitudinal_gap",
+      "merging_relative_speed",
+      "density_30m",
+      "clip_ttc"
+    ],
+    "shift_significant": true,
+    "smd": {
+      "clip_ttc": 0.10063910768029395,
+      "density_30m": 1.1685947157018433,
+      "mean_abs_relative_speed": -0.059454823390189024,
+      "merging_longitudinal_gap": 2.3074148916280435,
+      "merging_relative_speed": 0.07715988891923131,
+      "min_ego_distance": -1.0956293171993923
+    },
+    "smd_min": 0.5,
+    "smd_pass": true
+  },
+  "high_regret_threshold": 0.01,
+  "interaction_threshold": 29.128996473819946,
+  "interaction_threshold_source": "R2 train-only median, frozen by selection",
+  "lock_burned_at": "2026-09-21T16:13:53",
+  "lock_sha256": "9a54192e4e400bd4c38466b073541eb7a834880a9f0fc652ba9ca8ffc01a8e14",
+  "n_groups": 2000,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "primary_baseline": "SEED_VOTE_ENTROPY",
+  "qa": {
+    "all_complete": true,
+    "determinism_passed": true,
+    "ensemble_is_arithmetic_mean": true,
+    "hashes_match": true,
+    "one_shot_locks": true,
+    "role_seeds_valid": true
+  },
+  "role": "d1_confirm",
+  "selected_n": 2000,
+  "strata": {
+    "interaction_high": "interaction_min_distance > 29.128996473819946",
+    "interaction_low": "interaction_min_distance <= 29.128996473819946",
+    "note": "two marginal splits, NOT a 4-cell cross; quantiles never refit on confirm data",
+    "tstar_high": "t_star >= 13",
+    "tstar_low": "t_star < 13"
+  },
+  "tstar_stratum_split": 13,
+  "written_at": "2026-09-21T16:26:33"
+}

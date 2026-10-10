@@ -1,0 +1,12 @@
+{
+  "best_val_loss": 0.28503297865390775,
+  "checkpoint_sha256": "74f697a05b96ede74a6f049f8897da3bd2a506f072a4b71f4679ca5319c74590",
+  "condition": "full",
+  "epochs_run": 33,
+  "label": "pair1_fulltrain",
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "seed": 1202,
+  "signature": "cd07a04f8db77f58c8ecaf898222495a0296ac5943bf8dd7748d506a187e2f93",
+  "train_episode_count": 1400,
+  "validation_episode_count": 300
+}

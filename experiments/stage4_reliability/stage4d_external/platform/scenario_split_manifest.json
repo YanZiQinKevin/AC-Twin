@@ -1,0 +1,94 @@
+{
+  "code_sha256": "b71647b751c0fb97fdb727174170bb97ab0d4091d690dceab1cc106f0eb498b8",
+  "generated_at": "2026-09-22T00:14:03+0800",
+  "oversubscription_factor": 5.175139582721129,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "pools_file": "scenario_split_pools.jsonl",
+  "pools_file_sha256": "8b7aaac3f8a62f1e0b31af8f3a221318fc721f1ece64e38b111ce14be0372bf8",
+  "pools_rows": 70444,
+  "prefilter": {
+    "min_map_features": 10,
+    "min_timesteps": 70,
+    "min_tracks": 5,
+    "rule": "num_timesteps>=70 AND num_tracks>=5 AND num_map_features>=10 AND sdc_track_id present (plan 4.2 items 1-2 at index level)",
+    "survivors": 70444
+  },
+  "role_order": [
+    "smoke",
+    "pilot",
+    "train",
+    "validation",
+    "development_screen",
+    "confirm"
+  ],
+  "role_quotas": {
+    "confirm": 3000,
+    "development_screen": 4000,
+    "pilot": 100,
+    "smoke": 12,
+    "train": 5000,
+    "validation": 1500
+  },
+  "role_salt": "AC-TWIN-D2-V0.1|",
+  "role_stats": {
+    "confirm": {
+      "pool_size": 15528,
+      "primary": 3000,
+      "rank_hi": 70443,
+      "rank_lo": 54916,
+      "reserve": 12528
+    },
+    "development_screen": {
+      "pool_size": 20700,
+      "primary": 4000,
+      "rank_hi": 54915,
+      "rank_lo": 34216,
+      "reserve": 16700
+    },
+    "pilot": {
+      "pool_size": 517,
+      "primary": 100,
+      "rank_hi": 578,
+      "rank_lo": 62,
+      "reserve": 417
+    },
+    "smoke": {
+      "pool_size": 62,
+      "primary": 12,
+      "rank_hi": 61,
+      "rank_lo": 0,
+      "reserve": 50
+    },
+    "train": {
+      "pool_size": 25875,
+      "primary": 5000,
+      "rank_hi": 26453,
+      "rank_lo": 579,
+      "reserve": 20875
+    },
+    "validation": {
+      "pool_size": 7762,
+      "primary": 1500,
+      "rank_hi": 34215,
+      "rank_lo": 26454,
+      "reserve": 6262
+    }
+  },
+  "source_index_file": "raw_scenario_index.jsonl",
+  "source_index_records": 70541,
+  "source_index_sha256": "89e42b4d921202cc40b50d6fe7ff901c0a14a410623cf7786c8e94581abaf793",
+  "status": "SCENARIO_SPLIT_FROZEN",
+  "t_star_rule": {
+    "candidates": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "order": "ascending sha256(role_salt + scenario_id + '|t_star|' + str(t))",
+    "selection": "first candidate passing plan-4.2 eligibility on converted data at collection time; chosen t_star recorded in the role collection receipt",
+    "version": "t_star_hash_order_v1"
+  }
+}

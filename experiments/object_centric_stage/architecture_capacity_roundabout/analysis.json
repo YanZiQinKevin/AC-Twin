@@ -1,0 +1,71 @@
+{
+  "verdict": "PASS_STABLE_ID_CROSS_SCENE_REPLICATION",
+  "endpoint": "effect-FDE@20",
+  "independent_test_episodes": 300,
+  "training_seeds_per_condition": 5,
+  "capacity_tiers": {
+    "65k": {
+      "row_sorted_gru_m": 2.7883949279785156,
+      "stable_id_set_m": 2.463667869567871,
+      "relative_improvement_percent": 11.645662354079082,
+      "row_minus_set_m": 0.3247271391252677,
+      "ci_95_m": [0.13444820915535094, 0.517199258202066]
+    },
+    "83k": {
+      "row_sorted_gru_m": 2.7240641117095947,
+      "stable_id_set_m": 2.479294538497925,
+      "relative_improvement_percent": 8.985455671160949,
+      "row_minus_set_m": 0.2447696580986182,
+      "ci_95_m": [0.06705890578528248, 0.4291443101776143]
+    }
+  },
+  "pooled_capacity_contrast": {
+    "method": "average the two capacity-tier episode errors before paired bootstrap",
+    "row_sorted_gru_m": 2.7562295391162235,
+    "stable_id_set_m": 2.471481145222982,
+    "row_minus_set_m": 0.28474839389324186,
+    "ci_95_m": [0.11449038406461477, 0.4604542139470577],
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261020
+  },
+  "pooled_shuffled_suffix_control": {
+    "shuffled_set_m": 3.321410303314527,
+    "same_episode_set_m": 2.471481145222982,
+    "shuffled_minus_same_episode_m": 0.8499291580915451,
+    "ci_95_m": [0.6495486321325105, 1.049800667586426],
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261021
+  },
+  "seed_direction_check": {
+    "65k_positive_seeds": 5,
+    "65k_total_seeds": 5,
+    "83k_positive_seeds": 4,
+    "83k_total_seeds": 5,
+    "83k_seed33_row_minus_set_m": -0.04802298545837402
+  },
+  "stratified_pooled_row_minus_set": {
+    "actions": {
+      "LANE_LEFT": {"n": 60, "difference_m": 0.4299817899862925, "ci_95_m": [0.07889238304148123, 0.7898831951121489]},
+      "IDLE": {"n": 60, "difference_m": 0.10073599219322205, "ci_95_m": [-0.19371435331801565, 0.39940774504095305]},
+      "LANE_RIGHT": {"n": 60, "difference_m": 0.42756677269935606, "ci_95_m": [0.07566420332839097, 0.842086803950369]},
+      "FASTER": {"n": 60, "difference_m": 0.006404890616734823, "ci_95_m": [-0.4211905871331691, 0.44234566758076327]},
+      "SLOWER": {"n": 60, "difference_m": 0.4590525239706039, "ci_95_m": [0.040889045769969795, 0.9044485390186303]}
+    },
+    "durations": {
+      "1": {"n": 150, "difference_m": 0.18700442453225455, "ci_95_m": [-0.032297025978565215, 0.4235786706258853]},
+      "3": {"n": 150, "difference_m": 0.38249236325422925, "ci_95_m": [0.12518480062981455, 0.6410425509065385]}
+    },
+    "effect_magnitude": {
+      "zero": {"n": 137, "difference_m": 0.11759913685548044, "ci_95_m": [-0.008862090393574532, 0.2523049561809883]},
+      "small_0_1m": {"n": 7, "difference_m": 0.43553862401417326, "ci_95_m": [0.10361371721540179, 0.8427562458174569]},
+      "medium_1_4m": {"n": 48, "difference_m": 0.0051132844140132265, "ci_95_m": [-0.40588516226659205, 0.3605485923898714]},
+      "large_gt_4m": {"n": 108, "difference_m": 0.6112891518407397, "ci_95_m": [0.21768791447911004, 1.022135098637254]}
+    }
+  },
+  "interpretation": {
+    "systematic_mean_direction_reversal_found": false,
+    "heterogeneous_benefit": true,
+    "benefit_concentrated_in": ["lane changes", "slowing", "three-step interventions", "large-effect episodes"],
+    "small_effect_stratum_warning": "Only seven test episodes; do not make a standalone claim."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "architecture": "state_full",
+  "best_val_loss": 0.16449604059162462,
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\fit_five\\checkpoints\\state_full_route_only_oracle_r1505.pt",
+  "condition": "route_only_oracle",
+  "config": {
+    "architecture": "state_full",
+    "condition": "route_only_oracle",
+    "hidden_dim": 64,
+    "horizon": 20,
+    "response_feature_dim": 32,
+    "shape_lambda": 0.0,
+    "shape_margin": 0.1
+  },
+  "epochs_run": 40,
+  "name": "state_full_route_only_oracle_r1505",
+  "router_seed": 1505,
+  "signature": "67e174a99c70207494bfbef790e9a05b4e7c2fae8eec10001f4c1e1fc1981f12",
+  "state": "COMPLETE"
+}

@@ -1,0 +1,7 @@
+{
+  "pair_index": 1,
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "sha256": "f37eeb59f94f995d647e4dce13fee0f67786b6f0d486c5b2ecda23135b249472",
+  "train_feature_role": "two_fold_out_of_fold",
+  "validation_feature_role": "frozen_production_predictor"
+}

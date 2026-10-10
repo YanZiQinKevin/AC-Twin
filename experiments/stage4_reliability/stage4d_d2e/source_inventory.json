@@ -1,0 +1,105 @@
+{
+  "_meta": {
+    "identity_basis": "content SHA256 + scenario ID (absolute paths may differ across computers)",
+    "metadrive_commit": "85e5dadc6c7436d324348f6e3d8f8e680c06b4db",
+    "n_sources": 24,
+    "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+    "scenarionet_commit": "d4acdb5f5a844744fc85cb2dc3880d7d4a6eb170"
+  },
+  "d2_config": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\config.json",
+    "sha256": "855cf55e53d00eae15789ec0037d65c1bcf48a43cb6161824ee5ef2f364d7417"
+  },
+  "d2_config_statistics_code": {
+    "path": "code\\ac_twin\\stage4d_external_statistics.py",
+    "sha256": "58374e081914a6d3b41833b54793f89d3be5f35e9c0d7239ea951a4104b53b84"
+  },
+  "d2_development_screen_lock": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\development\\development_screen_used.lock",
+    "sha256": "598fa731635d9411dbcbd5b3a64f8de61015b461b38c45ebfacf360aaf027797"
+  },
+  "d2_feature_scaler": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\development\\feature_scaler.npz",
+    "sha256": "f293071183d6a294394312807a2a9ef645ca1c0f2d5a09ade40478ce9e884ddc"
+  },
+  "d2_feature_schema": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\development\\feature_schema.json",
+    "sha256": "db8ea04f896ad77094ab86897a611622365a7c3c87fa8f171ab912f9e0bcf667"
+  },
+  "d2_final_selection": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\development\\final_selection.json",
+    "sha256": "8327685d1bfd7123a21e3dc34280db49a56c3f862e9f752df5b98f11117ad39e"
+  },
+  "d2_model_inventory": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\development\\model_inventory.json",
+    "sha256": "770dcb301ec1eedeffbac9f36c0d7a943905e93c844a9f5dbc85b70a1a735bce"
+  },
+  "d2_terminal_screen_report": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\development\\development_screen_report.json",
+    "sha256": "0543510aea64bf8fb4f354e3aca92265564b2e94d35a64c9a23aeafb73229910"
+  },
+  "d2_train_collection_receipt": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\roles\\train\\collection_receipt.json",
+    "sha256": "1c061adcef7221f3fbb5eb55f5fbf30a2b28cff0cbeec448f466dd79c75124b6"
+  },
+  "d2_train_groups": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\roles\\train\\groups.npz",
+    "sha256": "2b6a81bc6bc59937653e896f0cd7b9728667256324a69937fda724ba67b98aa7"
+  },
+  "d2_validation_collection_receipt": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\roles\\validation\\collection_receipt.json",
+    "sha256": "daf6343407bf78e51ce95616d28a61d41ed33c4529d7e28be21c5acd4a07d1be"
+  },
+  "d2_validation_groups": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\roles\\validation\\groups.npz",
+    "sha256": "7befe3dd5d74cacb7a960feedba9df056833209f27514d839e94cffdaf394995"
+  },
+  "d2r_terminal_power_report": {
+    "path": "experiments\\stage4_reliability\\stage4d_d2r\\power\\screen_power_report.json",
+    "sha256": "d0a8f100b23d66a02fd7ac7376ce486ebb0d11eed01edcac5e73bf293fde6ed4"
+  },
+  "objective_code": {
+    "path": "code\\ac_twin\\stage4c_objective.py",
+    "sha256": "a20da1805c14b57bc2ad02f363133b7c53c480909190f52fa5a1cc09964ac44e"
+  },
+  "plan_d2": {
+    "path": "plans\\2026-09-21_AC-Twin_Stage4D-D2复杂平台外部复现实施计划_v0.2.md",
+    "sha256": "b7b1758757621275b3984338e636d2ccff2c4111c31fac72e621f6ea3ff965f0"
+  },
+  "plan_d2e": {
+    "path": "plans\\2026-09-24_AC-Twin_Stage4D-D2E自车合同修复与MetaDrive独立外部确认实施计划_v0.1.md",
+    "sha256": "4e2de5db09d167eb026fcf698bf282e73aab361c769a95bf056a25832a4f8c10"
+  },
+  "plan_d2r": {
+    "path": "plans\\2026-09-24_AC-Twin_Stage4D-D2R同平台风险回退决策开发实施计划_v0.1.md",
+    "sha256": "b5ebba65dd4784aca69e13a26e9aef10f45782078f4e6704586719f82b845302"
+  },
+  "platform_action_contract": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\platform\\action_contract.json",
+    "sha256": "cab197f1c2e02010b4500ce643c29b99eaf1e3748f2e05597345ec52a4fab0ab"
+  },
+  "platform_adapter_contract": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\platform\\adapter_contract.json",
+    "sha256": "709c2d9e4584cc32a65cda76a03b340c5c4cc6d654ee3cc9cc8fb4ecbf938695"
+  },
+  "platform_environment_lock": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\platform\\platform_environment_lock.json",
+    "sha256": "78d75cc496f6b4d7f0d6603dafbfa755ff16bf211a3018004c4e446836a41e74"
+  },
+  "platform_preflight_receipt": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\platform\\preflight_receipt.json",
+    "sha256": "3d73e5341371707e19f258adb1e7e59fbb9ca45752ce154e25297996137a5ac5"
+  },
+  "platform_raw_dataset_root_receipt": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\platform\\raw_dataset_root_receipt.json",
+    "sha256": "0a354cb580212736fb59bce4d45b886d54a49951571f7d1adc59e3c39947f29a"
+  },
+  "platform_scenario_split_manifest": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\platform\\scenario_split_manifest.json",
+    "sha256": "6c243960582a46b3b55ab20adda17e3532cf958d69d17c43b9505b7951c2c874"
+  },
+  "platform_scenario_split_pools": {
+    "path": "experiments\\stage4_reliability\\stage4d_external\\platform\\scenario_split_pools.jsonl",
+    "sha256": "8b7aaac3f8a62f1e0b31af8f3a221318fc721f1ece64e38b111ce14be0372bf8"
+  }
+}

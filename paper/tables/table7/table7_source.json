@@ -1,0 +1,583 @@
+{
+ "plan_id": "AC-TWIN-RFER-STAGE5-SOTA-COMPARISON-2026-09-27-V0.3",
+ "terminal_state": "STAGE5_MERGE_COMPARISON_UNDERPOWERED",
+ "scope": "ADAPTIVE_DEVELOPMENT_ONLY — validation role of the Stage 4C-R2 development split; the Stage 5 comparison holdout was NEVER created (underpowered terminal). These are development diagnostics, not a confirmed comparison.",
+ "strongest_published_baseline": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+ "adaptation_rows": [
+  {
+   "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+   "source": "Chengtai Cao et al. 2024 (AAAI 2024 (38(19):20949-20957))",
+   "family": "learned/driving calibrated confidence",
+   "legal_fields": "J_hat_by_seed, global_features, selected_action, strata metadata",
+   "training_target": "train-truth selected-action regret / consequence error under temperature-rescaled NLL",
+   "risk_output": "calibrated selected-action uncertainty sigma(x) (higher = riskier)",
+   "frozen_grid": "[{\"depth\": 3, \"hidden_width\": 64}, {\"depth\": 2, \"hidden_width\": 96}]",
+   "deviations": "Original CCTR computes temperature from a CNN-over-BEV + GRU post-processing network and does NOT use ensembles; the adaptation uses five-seed frozen prediction disagreement + legal context features as the temperature inputs because AC-Twin's legal bundle carries seed-level consequence predictions, not BEV maps.",
+   "selected_config": "grid1",
+   "param_count": 11522
+  },
+  {
+   "method_id": "CONFIDNET_TCP_ADAPTED",
+   "source": "Charles Corbiere et al. 2019 (NeurIPS 2019 (pp. 2902-2913))",
+   "family": "learned/driving calibrated confidence",
+   "legal_fields": "J_hat, global_features, selected_action",
+   "training_target": "probability the tempered J_hat softmax assigns to the train-time oracle action",
+   "risk_output": "1 - predicted_TCP (higher = riskier)",
+   "frozen_grid": "[{\"temperature\": 0.5}, {\"temperature\": 1.0}, {\"temperature\": 2.0}]",
+   "deviations": "Inputs are AC-Twin legal decision features instead of image encoder features; classifier confidence (TCP over actions) replaces class TCP.",
+   "selected_config": "grid1",
+   "param_count": 9665
+  },
+  {
+   "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+   "source": "Ulf Johansson et al. 2024 (COPA 2024 (PMLR 230:277-294))",
+   "family": "conformal/risk-control rejection",
+   "legal_fields": "tokens, token_mask, global_features, J_hat, selected_action, strata metadata",
+   "training_target": "true selected-action decision regret (fit split only)",
+   "risk_output": "Mondrian interval width (higher = riskier)",
+   "frozen_grid": "[{\"difficulty_bins\": 4}, {\"difficulty_bins\": 8}]",
+   "deviations": "Neural regressor on AC-Twin legal features replaces random forests on tabular data; difficulty rule frozen from legal strata/prediction features.",
+   "selected_config": "grid1",
+   "param_count": 11201
+  },
+  {
+   "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+   "source": "Xiaocheng Li et al. 2024 (AISTATS 2024 (PMLR 238:1126-1134))",
+   "family": "joint selective/rejection",
+   "legal_fields": "tokens, token_mask, global_features, J_hat, selected_action",
+   "training_target": "true selected-action decision regret (train truth only)",
+   "risk_output": "kNN-averaged reference residual in representation space (higher = riskier)",
+   "frozen_grid": "[{\"k\": 16}, {\"k\": 32}, {\"k\": 64}]",
+   "deviations": "Reference residuals are in-sample train residuals (validation is reserved for selection/power and cannot serve as the rejector reference); kernel weights reduce to uniform kNN average in the frozen representation.",
+   "selected_config": "grid0",
+   "param_count": 11201
+  },
+  {
+   "method_id": "SELECTIVENET_REGRET_ADAPTED",
+   "source": "Yonatan Geifman et al. 2019 (ICML 2019 (PMLR 97:2151-2159))",
+   "family": "joint selective/rejection",
+   "legal_fields": "tokens, token_mask, global_features, J_hat, selected_action",
+   "training_target": "true selected-action decision regret (train truth only)",
+   "risk_output": "1 - selection_probability (higher = riskier)",
+   "frozen_grid": "[{\"hidden_width\": 64}, {\"hidden_width\": 96}]",
+   "deviations": "Regression of decision regret on legal driving features replaces image/tabular prediction; single-task auxiliary head mirrors the paper's regression variant.",
+   "selected_config": "grid1",
+   "param_count": 23139
+  }
+ ],
+ "primary_rows": [
+  {
+   "method": "AC-Twin Direct (frozen R2 audit)",
+   "aurc_regret": 0.01097011193590744,
+   "regret_at_70": 0.013533658273820574,
+   "regret_at_80": 0.014781005580774434,
+   "regret_at_90": 0.016172213810446298,
+   "regret_at_95": 0.01773179800061834,
+   "pr_auc_minus_prevalence": 0.3314341963877817,
+   "spearman_risk_regret": 0.43010308533702,
+   "per_seed_aurc_min": 0.010475456218206428,
+   "per_seed_aurc_max": 0.011854997873819724
+  },
+  {
+   "method": "CCTR_DRIVING_CALIBRATION_ADAPTED (selected grid1)",
+   "aurc_regret": 0.012761883251380534,
+   "regret_at_70": 0.015793406423873745,
+   "regret_at_80": 0.01797779475219672,
+   "regret_at_90": 0.018778431622270386,
+   "regret_at_95": 0.019827845516872597,
+   "pr_auc_minus_prevalence": 0.16102528511209127,
+   "spearman_risk_regret": 0.2830216645517153,
+   "per_seed_aurc_min": 0.013393562299467462,
+   "per_seed_aurc_max": 0.015139163719787843
+  },
+  {
+   "method": "CONFIDNET_TCP_ADAPTED (selected grid1)",
+   "aurc_regret": 0.01652350643620782,
+   "regret_at_70": 0.01796938735245155,
+   "regret_at_80": 0.018649564202772105,
+   "regret_at_90": 0.021821276476903073,
+   "regret_at_95": 0.02276512455476536,
+   "pr_auc_minus_prevalence": 0.09539714193567403,
+   "spearman_risk_regret": 0.3227017682959198,
+   "per_seed_aurc_min": 0.01566185857365264,
+   "per_seed_aurc_max": 0.017596076520376834
+  },
+  {
+   "method": "CONFORMAL_REGRESSION_REJECT_ADAPTED (selected grid1)",
+   "aurc_regret": 0.013328684325063959,
+   "regret_at_70": 0.016797750224124056,
+   "regret_at_80": 0.018140909015929605,
+   "regret_at_90": 0.020410915220607527,
+   "regret_at_95": 0.02208263612200442,
+   "pr_auc_minus_prevalence": 0.12227847273419742,
+   "spearman_risk_regret": 0.29276158267775587,
+   "per_seed_aurc_min": 0.013328684325063959,
+   "per_seed_aurc_max": 0.013488892437502318
+  },
+  {
+   "method": "RWR_NN_KNN_REJECT_ADAPTED (selected grid0)",
+   "aurc_regret": 0.0195357941686476,
+   "regret_at_70": 0.021835508293288567,
+   "regret_at_80": 0.023220121364565395,
+   "regret_at_90": 0.023701930228921288,
+   "regret_at_95": 0.023330878036482434,
+   "pr_auc_minus_prevalence": 0.004961104178640735,
+   "spearman_risk_regret": 0.08619515075871392,
+   "per_seed_aurc_min": 0.018686169598353553,
+   "per_seed_aurc_max": 0.023318682789070778
+  },
+  {
+   "method": "SELECTIVENET_REGRET_ADAPTED (selected grid1)",
+   "aurc_regret": 0.0229146902682019,
+   "regret_at_70": 0.021200284959068023,
+   "regret_at_80": 0.0214383308821121,
+   "regret_at_90": 0.021969285017748502,
+   "regret_at_95": 0.023117460540727837,
+   "pr_auc_minus_prevalence": 0.030999621606958433,
+   "spearman_risk_regret": 0.15237658081430466,
+   "per_seed_aurc_min": 0.021371059414635064,
+   "per_seed_aurc_max": 0.024943987331089944
+  },
+  {
+   "method": "MARGIN_ONLY (internal baseline)",
+   "aurc_regret": 0.02082420108993283,
+   "regret_at_70": 0.02121411867930668,
+   "regret_at_80": 0.021216562557916544,
+   "regret_at_90": 0.02169620165257548,
+   "regret_at_95": 0.02271210287759251,
+   "pr_auc_minus_prevalence": 0.05186805318411716,
+   "spearman_risk_regret": 0.07480419809790441,
+   "per_seed_aurc_min": 0.02082420108993283,
+   "per_seed_aurc_max": 0.02082420108993283
+  },
+  {
+   "method": "SEED_MARGIN_STD (internal baseline)",
+   "aurc_regret": 0.02183794003103976,
+   "regret_at_70": 0.022827975007024024,
+   "regret_at_80": 0.02236576473238388,
+   "regret_at_90": 0.02295909816669945,
+   "regret_at_95": 0.022868300630130803,
+   "pr_auc_minus_prevalence": -0.006367855090520652,
+   "spearman_risk_regret": 0.0033413643740137864,
+   "per_seed_aurc_min": 0.02183794003103976,
+   "per_seed_aurc_max": 0.02183794003103976
+  },
+  {
+   "method": "SEED_VOTE_ENTROPY (internal baseline)",
+   "aurc_regret": 0.01895943489845288,
+   "regret_at_70": 0.02007805438843727,
+   "regret_at_80": 0.020541961739345773,
+   "regret_at_90": 0.02164412588627187,
+   "regret_at_95": 0.022256150901928166,
+   "pr_auc_minus_prevalence": 0.054186208873032576,
+   "spearman_risk_regret": 0.11613627426465961,
+   "per_seed_aurc_min": 0.01895943489845288,
+   "per_seed_aurc_max": 0.01895943489845288
+  }
+ ],
+ "secondary_rows": [
+  {
+   "method": "AC-Twin Direct (frozen R2 audit)",
+   "tail_severity_at_20": 0.05589684963629299,
+   "tail_capture_at_20": 0.4444444444444444,
+   "oracle_gap_closure_at_80": 0.37584362261379234,
+   "retained80_regret_p95": 0.09866514531026195,
+   "retained80_regret_max": 0.38906655299921133,
+   "trim1_aurc": 0.00943639773026836,
+   "trim5_aurc": 0.005940018298147084
+  },
+  {
+   "method": "CCTR_DRIVING_CALIBRATION_ADAPTED (selected grid1)",
+   "tail_severity_at_20": 0.043109692950603844,
+   "tail_capture_at_20": 0.33048433048433046,
+   "oracle_gap_closure_at_80": 0.22973293821466817,
+   "retained80_regret_p95": 0.1112135694477043,
+   "retained80_regret_max": 0.38906655299921133,
+   "trim1_aurc": 0.011461521209081414,
+   "trim5_aurc": 0.006783200290005835
+  },
+  {
+   "method": "CONFIDNET_TCP_ADAPTED (selected grid1)",
+   "tail_severity_at_20": 0.040422615148302296,
+   "tail_capture_at_20": 0.3333333333333333,
+   "oracle_gap_closure_at_80": 0.19902941385984688,
+   "retained80_regret_p95": 0.12657295788706444,
+   "retained80_regret_max": 0.38906655299921133,
+   "trim1_aurc": 0.013184318138460554,
+   "trim5_aurc": 0.00802924311224736
+  },
+  {
+   "method": "CONFORMAL_REGRESSION_REJECT_ADAPTED (selected grid1)",
+   "tail_severity_at_20": 0.04245723589567232,
+   "tail_capture_at_20": 0.3646723646723647,
+   "oracle_gap_closure_at_80": 0.22227772755444572,
+   "retained80_regret_p95": 0.12098993923392744,
+   "retained80_regret_max": 0.38906655299921133,
+   "trim1_aurc": 0.01132675263440901,
+   "trim5_aurc": 0.007098631992402899
+  },
+  {
+   "method": "RWR_NN_KNN_REJECT_ADAPTED (selected grid0)",
+   "tail_severity_at_20": 0.022140386501129157,
+   "tail_capture_at_20": 0.1908831908831909,
+   "oracle_gap_closure_at_80": -0.009869953344222235,
+   "retained80_regret_p95": 0.16411496631302636,
+   "retained80_regret_max": 0.38906655299921133,
+   "trim1_aurc": 0.016972018509534878,
+   "trim5_aurc": 0.010575780965125728
+  },
+  {
+   "method": "SELECTIVENET_REGRET_ADAPTED (selected grid1)",
+   "tail_severity_at_20": 0.02926754843094232,
+   "tail_capture_at_20": 0.23646723646723647,
+   "oracle_gap_closure_at_80": 0.07156758065845614,
+   "retained80_regret_p95": 0.14390055642917585,
+   "retained80_regret_max": 0.38906655299921133,
+   "trim1_aurc": 0.020512908504255575,
+   "trim5_aurc": 0.012441779994501433
+  },
+  {
+   "method": "MARGIN_ONLY (internal baseline)",
+   "tail_severity_at_20": 0.030154621727724547,
+   "tail_capture_at_20": 0.2792022792022792,
+   "oracle_gap_closure_at_80": 0.08170360148708128,
+   "retained80_regret_p95": 0.14361460121729952,
+   "retained80_regret_max": 0.38906655299921133,
+   "trim1_aurc": 0.017901110927254348,
+   "trim5_aurc": 0.011166713002047591
+  },
+  {
+   "method": "SEED_MARGIN_STD (internal baseline)",
+   "tail_severity_at_20": 0.025557813029855207,
+   "tail_capture_at_20": 0.19658119658119658,
+   "oracle_gap_closure_at_80": 0.029178800125320325,
+   "retained80_regret_p95": 0.15104630060525603,
+   "retained80_regret_max": 0.38906655299921133,
+   "trim1_aurc": 0.020053398458365367,
+   "trim5_aurc": 0.013294830865244862
+  },
+  {
+   "method": "SEED_VOTE_ENTROPY (internal baseline)",
+   "tail_severity_at_20": 0.03285302500200764,
+   "tail_capture_at_20": 0.27635327635327633,
+   "oracle_gap_closure_at_80": 0.1125365347873813,
+   "retained80_regret_p95": 0.1394070374376506,
+   "retained80_regret_max": 0.3640989463705204,
+   "trim1_aurc": 0.017121092398253872,
+   "trim5_aurc": 0.009376328160823257
+  }
+ ],
+ "all_candidate_rows": [
+  {
+   "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+   "config_key": "grid0",
+   "aurc_regret": 0.012854856498940132,
+   "regret_at_80": 0.01725003042075246,
+   "param_count": 9794,
+   "mean_inference_ms": 0.013320799994592866,
+   "selected": false,
+   "valid": true
+  },
+  {
+   "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+   "config_key": "grid1",
+   "aurc_regret": 0.012761883251380534,
+   "regret_at_80": 0.01797779475219672,
+   "param_count": 11522,
+   "mean_inference_ms": 0.013204933338177701,
+   "selected": true,
+   "valid": true
+  },
+  {
+   "method_id": "CONFIDNET_TCP_ADAPTED",
+   "config_key": "grid0",
+   "aurc_regret": 0.016819498506661843,
+   "regret_at_80": 0.019852689411273366,
+   "param_count": 9665,
+   "mean_inference_ms": 0.011586199999631694,
+   "selected": false,
+   "valid": true
+  },
+  {
+   "method_id": "CONFIDNET_TCP_ADAPTED",
+   "config_key": "grid1",
+   "aurc_regret": 0.01652350643620782,
+   "regret_at_80": 0.018649564202772105,
+   "param_count": 9665,
+   "mean_inference_ms": 0.009656533346666643,
+   "selected": true,
+   "valid": true
+  },
+  {
+   "method_id": "CONFIDNET_TCP_ADAPTED",
+   "config_key": "grid2",
+   "aurc_regret": 0.016890708055128878,
+   "regret_at_80": 0.019859195439689153,
+   "param_count": 9665,
+   "mean_inference_ms": 0.00981919999079158,
+   "selected": false,
+   "valid": true
+  },
+  {
+   "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+   "config_key": "grid0",
+   "aurc_regret": 0.014088857917492741,
+   "regret_at_80": 0.01893739294533933,
+   "param_count": 11201,
+   "mean_inference_ms": 0.005157533334568143,
+   "selected": false,
+   "valid": true
+  },
+  {
+   "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+   "config_key": "grid1",
+   "aurc_regret": 0.013328684325063959,
+   "regret_at_80": 0.018140909015929605,
+   "param_count": 11201,
+   "mean_inference_ms": 0.005782533340000858,
+   "selected": true,
+   "valid": true
+  },
+  {
+   "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+   "config_key": "grid0",
+   "aurc_regret": 0.0195357941686476,
+   "regret_at_80": 0.023220121364565395,
+   "param_count": 11201,
+   "mean_inference_ms": 0.14496220000243434,
+   "selected": true,
+   "valid": true
+  },
+  {
+   "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+   "config_key": "grid1",
+   "aurc_regret": 0.020953432786592764,
+   "regret_at_80": 0.02326750484730639,
+   "param_count": 11201,
+   "mean_inference_ms": 0.13698586666335663,
+   "selected": false,
+   "valid": true
+  },
+  {
+   "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+   "config_key": "grid2",
+   "aurc_regret": 0.021158521227102507,
+   "regret_at_80": 0.023793331075532068,
+   "param_count": 11201,
+   "mean_inference_ms": 0.16002593333056817,
+   "selected": false,
+   "valid": true
+  },
+  {
+   "method_id": "SELECTIVENET_REGRET_ADAPTED",
+   "config_key": "grid0",
+   "aurc_regret": 0.02295216938578153,
+   "regret_at_80": 0.021330902244790444,
+   "param_count": 11331,
+   "mean_inference_ms": 0.027303066667324554,
+   "selected": false,
+   "valid": true
+  },
+  {
+   "method_id": "SELECTIVENET_REGRET_ADAPTED",
+   "config_key": "grid1",
+   "aurc_regret": 0.0229146902682019,
+   "regret_at_80": 0.0214383308821121,
+   "param_count": 23139,
+   "mean_inference_ms": 0.026753133337479085,
+   "selected": true,
+   "valid": true
+  }
+ ],
+ "paired_rows_vs_strongest": [
+  {
+   "endpoint": "I_AURC_REGRET",
+   "point": 0.14040022778607283,
+   "ci95_lower": -0.009656478175281601,
+   "ci95_upper": 0.27098183701897144
+  },
+  {
+   "endpoint": "I_REGRET@80",
+   "point": 0.17781876005852543,
+   "ci95_lower": 0.08069280489545369,
+   "ci95_upper": 0.27890969992655174
+  },
+  {
+   "endpoint": "seed0 I_AURC / I_REGRET@80",
+   "point": 0.13398817981970604,
+   "ci95_lower": 0.17386595921591866,
+   "ci95_upper": null
+  },
+  {
+   "endpoint": "seed1 I_AURC / I_REGRET@80",
+   "point": 0.2804093817824743,
+   "ci95_lower": 0.22005553880335602,
+   "ci95_upper": null
+  },
+  {
+   "endpoint": "seed2 I_AURC / I_REGRET@80",
+   "point": 0.2775547546145457,
+   "ci95_lower": 0.16676238593611434,
+   "ci95_upper": null
+  },
+  {
+   "endpoint": "seed3 I_AURC / I_REGRET@80",
+   "point": 0.19895436764162658,
+   "ci95_lower": 0.24238956287569854,
+   "ci95_upper": null
+  },
+  {
+   "endpoint": "seed4 I_AURC / I_REGRET@80",
+   "point": 0.1423171978314499,
+   "ci95_lower": 0.14660023983950987,
+   "ci95_upper": null
+  },
+  {
+   "endpoint": "tstar_low_i_aurc",
+   "point": 0.08987428024208341,
+   "ci95_lower": null,
+   "ci95_upper": null
+  },
+  {
+   "endpoint": "tstar_high_i_aurc",
+   "point": 0.1792550989595392,
+   "ci95_lower": null,
+   "ci95_upper": null
+  },
+  {
+   "endpoint": "interaction_low_i_aurc",
+   "point": 0.045506751947237085,
+   "ci95_lower": null,
+   "ci95_upper": null
+  },
+  {
+   "endpoint": "interaction_high_i_aurc",
+   "point": 0.22040813463345466,
+   "ci95_lower": null,
+   "ci95_upper": null
+  }
+ ],
+ "materiality": {
+  "i_aurc_min": 0.05,
+  "i_regret80_min": 0.03,
+  "material": true,
+  "point_i_aurc": 0.14040022778607283,
+  "point_i_regret80": 0.17781876005852543,
+  "shrink": 0.75,
+  "terminal_if_not_material": "STAGE5_MERGE_SOTA_NOT_MATERIAL"
+ },
+ "power_rows": [
+  {
+   "n": 2000,
+   "joint_power_rho100": 0.6111,
+   "joint_power_rho075": 0.3778,
+   "joint_power_rho050": 0.1571,
+   "binding_condition": "r1_i_aurc",
+   "binding_power": 0.4
+  },
+  {
+   "n": 3000,
+   "joint_power_rho100": 0.7889,
+   "joint_power_rho075": 0.5472,
+   "joint_power_rho050": 0.2486,
+   "binding_condition": "r1_i_aurc",
+   "binding_power": 0.5605
+  },
+  {
+   "n": 4000,
+   "joint_power_rho100": 0.8937,
+   "joint_power_rho075": 0.6872,
+   "joint_power_rho050": 0.3473,
+   "binding_condition": "r1_i_aurc",
+   "binding_power": 0.693
+  },
+  {
+   "n": 6000,
+   "joint_power_rho100": 0.9696,
+   "joint_power_rho075": 0.8354,
+   "joint_power_rho050": 0.489,
+   "binding_condition": "r1_i_aurc",
+   "binding_power": 0.8371
+  }
+ ],
+ "cost_rows": [
+  {
+   "method": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+   "param_count": 11522,
+   "approx_forward_flops_per_group": 23044,
+   "mean_inference_ms_per_group": 0.013204933338177701,
+   "native_calibration": "OK"
+  },
+  {
+   "method": "CONFIDNET_TCP_ADAPTED",
+   "param_count": 9665,
+   "approx_forward_flops_per_group": 19330,
+   "mean_inference_ms_per_group": 0.009656533346666643,
+   "native_calibration": "OK"
+  },
+  {
+   "method": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+   "param_count": 11201,
+   "approx_forward_flops_per_group": 22402,
+   "mean_inference_ms_per_group": 0.005782533340000858,
+   "native_calibration": "OK"
+  },
+  {
+   "method": "RWR_NN_KNN_REJECT_ADAPTED",
+   "param_count": 11201,
+   "approx_forward_flops_per_group": 22402,
+   "mean_inference_ms_per_group": 0.14496220000243434,
+   "native_calibration": "NOT_APPLICABLE"
+  },
+  {
+   "method": "SELECTIVENET_REGRET_ADAPTED",
+   "param_count": 23139,
+   "approx_forward_flops_per_group": 46278,
+   "mean_inference_ms_per_group": 0.026753133337479085,
+   "native_calibration": "NOT_APPLICABLE"
+  },
+  {
+   "method": "AC-Twin Direct (frozen R2 audit)",
+   "param_count": 15740,
+   "approx_forward_flops_per_group": 31480,
+   "mean_inference_ms_per_group": "frozen (R2 receipt)",
+   "native_calibration": "NOT_APPLICABLE"
+  }
+ ],
+ "native_calibration_selected": {
+  "CCTR_DRIVING_CALIBRATION_ADAPTED": {
+   "coverage_error_95": -0.05666666666666664,
+   "empirical_coverage_95": 0.8933333333333333,
+   "mean_sigma": 0.02787085600034334,
+   "nll": 0.2255420702532918,
+   "status": "OK",
+   "target_coverage_95": 0.95
+  },
+  "CONFIDNET_TCP_ADAPTED": {
+   "brier": 0.265309148635456,
+   "ece": 0.24832125177402053,
+   "empirical_hit_rate": 0.324,
+   "mean_tcp": 0.10356785348275055,
+   "status": "OK",
+   "target": "P(selected action == oracle action)"
+  },
+  "CONFORMAL_REGRESSION_REJECT_ADAPTED": {
+   "coverage_error": 0.05266666666666664,
+   "empirical_coverage": 0.9526666666666667,
+   "mean_interval_width": 0.23148667393902822,
+   "status": "OK",
+   "target_coverage": 0.9
+  },
+  "RWR_NN_KNN_REJECT_ADAPTED": {
+   "status": "NOT_APPLICABLE"
+  },
+  "SELECTIVENET_REGRET_ADAPTED": {
+   "status": "NOT_APPLICABLE"
+  }
+ },
+ "training_cost": {
+  "total_fits": 60,
+  "total_wall_seconds": 468,
+  "note": "aggregate over all 60 (method, config, seed) fits (development_freeze_run.log); per-fit average ≈ 7.3 s; peak GPU memory NOT_MEASURED"
+ }
+}

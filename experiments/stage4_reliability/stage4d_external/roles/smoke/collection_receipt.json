@@ -1,0 +1,49 @@
+{
+  "role": "smoke",
+  "quota": 12,
+  "accepted": 12,
+  "burned_total": 57,
+  "skip_counts": {
+    "no_sdc_track": 0,
+    "sdc_prefix_invalid": 0,
+    "no_future_capacity": 0,
+    "no_drivable_lane": 0,
+    "no_ego_lane_at_t_star": 0,
+    "no_left_lane_at_t_star": 0,
+    "no_right_lane_at_t_star": 0,
+    "fewer_than_4_dynamic_non_ego": 0,
+    "no_eligible_t_star": 45,
+    "branch_incomplete": 0,
+    "non_finite": 0,
+    "map_build_failed": 0,
+    "missing_eval_entity_future": 0
+  },
+  "config_fingerprint": "1c6d3f933b47f3d053a09ef19c60d75c6498f893ede63722fd9c1b0daf8da3da",
+  "output_file": "groups.npz",
+  "meta_file": "groups_meta.json",
+  "contract": {
+    "heading_pid": [
+      1.7,
+      0.01,
+      3.5
+    ],
+    "lateral_pid": [
+      0.3,
+      0.002,
+      0.05
+    ],
+    "delta_speed_kmh": 10.8,
+    "max_target_speed_kmh": 60.0,
+    "min_target_speed_kmh": 0.0,
+    "steering_limit": 1.0,
+    "throttle_limit": 1.0,
+    "idm_acc_factor": 1.0,
+    "idm_deacc_factor": -5.0,
+    "idm_delta": 10.0,
+    "idm_distance_wanted": 10.0,
+    "idm_time_wanted": 1.5,
+    "idm_max_long_dist": 30.0
+  },
+  "status": "COLLECTION_COMPLETE",
+  "elapsed_seconds": 222.40383989992552
+}

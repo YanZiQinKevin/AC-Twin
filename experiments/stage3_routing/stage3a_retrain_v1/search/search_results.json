@@ -1,0 +1,170 @@
+{
+  "screen_seed": 101,
+  "results": [
+    {
+      "run": "h64_r32_l0.1_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "best_val_loss": 0.14321142064117287,
+      "train_lambda_cls": 0.1,
+      "selection_lambda_cls": 0.25,
+      "validation_reg_loss": 0.07845943578082508,
+      "validation_ce_loss": 0.2590079394413912,
+      "validation_selection_score": 0.14321142064117287,
+      "epochs_run": 30,
+      "signature": "ae2245433523c63264743e3434a527bd48774240ec1bd2d10defdf3226de711f",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\search\\h64_r32_l0.1_seed101.pt"
+    },
+    {
+      "run": "h96_r32_l0.1_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "best_val_loss": 0.14714090604914104,
+      "train_lambda_cls": 0.1,
+      "selection_lambda_cls": 0.25,
+      "validation_reg_loss": 0.08396296193263061,
+      "validation_ce_loss": 0.25271177646604165,
+      "validation_selection_score": 0.14714090604914104,
+      "epochs_run": 20,
+      "signature": "2dac69182ad082a073163f10e6d76180565f7afc426d451f69478f31c70ac1e6",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\search\\h96_r32_l0.1_seed101.pt"
+    },
+    {
+      "run": "h96_r64_l0.25_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 64,
+        "lambda_cls": 0.25
+      },
+      "best_val_loss": 0.15134151566831036,
+      "train_lambda_cls": 0.25,
+      "selection_lambda_cls": 0.25,
+      "validation_reg_loss": 0.08703483784303241,
+      "validation_ce_loss": 0.2572267113011118,
+      "validation_selection_score": 0.15134151566831036,
+      "epochs_run": 10,
+      "signature": "ab84682b56cb20baa09c55f0102580986210d83aff5d4f14894c28675b612969",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\search\\h96_r64_l0.25_seed101.pt"
+    },
+    {
+      "run": "h96_r32_l0.25_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.25
+      },
+      "best_val_loss": 0.15139598721100905,
+      "train_lambda_cls": 0.25,
+      "selection_lambda_cls": 0.25,
+      "validation_reg_loss": 0.08713893914957485,
+      "validation_ce_loss": 0.25702819224573675,
+      "validation_selection_score": 0.15139598721100905,
+      "epochs_run": 10,
+      "signature": "812f1c63139b0f60a37ed7cd79df8ddbae34cc851fb744ff39ff0cfa12dc227f",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\search\\h96_r32_l0.25_seed101.pt"
+    },
+    {
+      "run": "h64_r32_l0.25_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.25
+      },
+      "best_val_loss": 0.1527418934955099,
+      "train_lambda_cls": 0.25,
+      "selection_lambda_cls": 0.25,
+      "validation_reg_loss": 0.08842604031573821,
+      "validation_ce_loss": 0.25726341271908676,
+      "validation_selection_score": 0.1527418934955099,
+      "epochs_run": 10,
+      "signature": "d7cd323b5a9bb45c3471c12172c6491250a3ebeb3d1336fce716eb4490a41e8f",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\search\\h64_r32_l0.25_seed101.pt"
+    },
+    {
+      "run": "h64_r64_l0.25_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 64,
+        "lambda_cls": 0.25
+      },
+      "best_val_loss": 0.15280787049317163,
+      "train_lambda_cls": 0.25,
+      "selection_lambda_cls": 0.25,
+      "validation_reg_loss": 0.08841206888548428,
+      "validation_ce_loss": 0.2575832064307494,
+      "validation_selection_score": 0.15280787049317163,
+      "epochs_run": 10,
+      "signature": "65f81efe336886152f42a92faff8ab9bc5a8a7770c4b95d03325ef584352cff2",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\search\\h64_r64_l0.25_seed101.pt"
+    },
+    {
+      "run": "h96_r64_l0.1_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 64,
+        "lambda_cls": 0.1
+      },
+      "best_val_loss": 0.15319790430441446,
+      "train_lambda_cls": 0.1,
+      "selection_lambda_cls": 0.25,
+      "validation_reg_loss": 0.08772659861959554,
+      "validation_ce_loss": 0.26188522273927567,
+      "validation_selection_score": 0.15319790430441446,
+      "epochs_run": 9,
+      "signature": "df3c41333f16025ff840bf8a533929579800941279a8e64b962c1d1b338cd474",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\search\\h96_r64_l0.1_seed101.pt"
+    },
+    {
+      "run": "h64_r64_l0.1_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 64,
+        "lambda_cls": 0.1
+      },
+      "best_val_loss": 0.1544077104733028,
+      "train_lambda_cls": 0.1,
+      "selection_lambda_cls": 0.25,
+      "validation_reg_loss": 0.08842297136133476,
+      "validation_ce_loss": 0.26393895644787213,
+      "validation_selection_score": 0.1544077104733028,
+      "epochs_run": 9,
+      "signature": "e0f81629db7872e09c91170a5b235f5d3f67bb05e06fd81f9ebebe727c1bb6cd",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\search\\h64_r64_l0.1_seed101.pt"
+    }
+  ],
+  "finalists": [
+    {
+      "hidden_dim": 64,
+      "response_feature_dim": 32,
+      "lambda_cls": 0.1
+    },
+    {
+      "hidden_dim": 96,
+      "response_feature_dim": 32,
+      "lambda_cls": 0.1
+    }
+  ],
+  "selection_basis": "validation selection score only (L_reg + 0.25*L_CE, fixed coefficient)"
+}

@@ -1,0 +1,8 @@
+method,information_set,active_dims,nominal_params,aurc_regret,regret_at_80,pr_auc_minus_prevalence
+FULL_MATCHED,"complete 315-dim input",315,15740,0.01097011194,0.01478100558,0.3314341964
+BASELINE3_MATCHED,"three standard baseline scalars only",3,15740,0.01936856045,0.0201173046,0.08060599505
+NO_RISK_MATCHED,"complete input minus 5 explicit risk channels",180,15740,0.01240862292,0.01449286497,0.3240360471
+FULL_FROZEN_REFERENCE,"original frozen Direct (historical continuity)",,15740,0.01097011194,0.01478100558,0.3314341964
+MARGIN_ONLY,"fixed heuristic",,0,0.02082420109,0.02121656256,0.05186805318
+SEED_VOTE_ENTROPY,"fixed heuristic",,0,0.0189594349,0.02054196174,0.05418620887
+SEED_MARGIN_STD,"fixed heuristic",,0,0.02183794003,0.02236576473,-0.006367855091

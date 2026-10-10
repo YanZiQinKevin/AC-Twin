@@ -1,0 +1,121 @@
+{
+  "arch": "SAME_INFORMATION_DIRECT",
+  "checkpoint_paths": {
+    "9101": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2e\\riskfit_EGO_TRAJECTORY_PLUS_RANK\\development\\models\\direct_seed9101.pt",
+    "9202": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2e\\riskfit_EGO_TRAJECTORY_PLUS_RANK\\development\\models\\direct_seed9202.pt",
+    "9303": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2e\\riskfit_EGO_TRAJECTORY_PLUS_RANK\\development\\models\\direct_seed9303.pt",
+    "9404": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2e\\riskfit_EGO_TRAJECTORY_PLUS_RANK\\development\\models\\direct_seed9404.pt",
+    "9505": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2e\\riskfit_EGO_TRAJECTORY_PLUS_RANK\\development\\models\\direct_seed9505.pt"
+  },
+  "checkpoint_sha256": {
+    "9101": "60b41585a3ae51366aef443c76b6e340b3a52ebcc9324c742d26ef3d8bd6a443",
+    "9202": "295eb37fa45ae76291bbe37b1346e370a50744bfb62dde71158a494cd98c4b38",
+    "9303": "86b6d9f2181d70fb1882ccbc73d501f02e1d07e80b1d15978cb5d728128c5ce2",
+    "9404": "89e4515cfe6cbef4aefdf008a82351dcca66183fc3406a9a8b8e13512675f104",
+    "9505": "eaa402b45b34b1f4c50dd659eb2d829e296e4b55886a2d16cda723a3eb427fe2"
+  },
+  "epochs_run": {
+    "9101": 18,
+    "9202": 15,
+    "9303": 15,
+    "9404": 19,
+    "9505": 13
+  },
+  "interaction_threshold": 11.53877460000361,
+  "n_train_groups": 5000,
+  "n_validation_groups": 1500,
+  "param_count": 15740,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "pos_weight": 1.1626297577854672,
+  "run_dir": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2e\\riskfit_EGO_TRAJECTORY_PLUS_RANK",
+  "scaler": {
+    "global_mean": [
+      0.02929796849780697,
+      0.056955458037410395,
+      0.5159032779170976,
+      0.7531200000000081,
+      0.7682724848485036,
+      13.791335230782817,
+      8.776278352465551,
+      4.0,
+      0.5240399999999998
+    ],
+    "global_std": [
+      0.028506848188763062,
+      0.0402405186314536,
+      0.440947013004892,
+      0.21903941563107354,
+      0.21052881532603931,
+      9.14685239958863,
+      5.452059939551513,
+      1e-12,
+      0.3442529279468799
+    ],
+    "token_cont_mean": [
+      0.12031146687704475,
+      0.031318263875663485,
+      0.05518666666666667,
+      5.944813333333332,
+      1.0050995886109868,
+      0.03078037310342845,
+      0.03526942514545806,
+      0.004489052042029611,
+      0.019626760174146267,
+      0.02359667268838359,
+      0.0039699125142373184,
+      0.03875014075178593,
+      0.04301591372528463,
+      0.0042657729734986985,
+      0.038840858491766876,
+      0.043005833976397866,
+      0.004164975484630988,
+      0.03720223290130409,
+      0.041589105145814355,
+      0.004386872244510261
+    ],
+    "token_cont_std": [
+      0.09621196087857369,
+      0.029037696953298914,
+      0.12679549869332465,
+      2.3341005854361403,
+      0.7743307757718005,
+      0.09723807466303012,
+      0.10513213750984854,
+      0.07902319473592258,
+      0.06228181724459371,
+      0.07365895557942974,
+      0.0600966648310379,
+      0.032608035519625135,
+      0.0338715581884617,
+      0.019590734113773257,
+      0.10313399559700831,
+      0.11054559830624162,
+      0.07544555948219986,
+      0.1388678679095761,
+      0.14561674829624097,
+      0.11664918223560375
+    ]
+  },
+  "seeds": [
+    9101,
+    9202,
+    9303,
+    9404,
+    9505
+  ],
+  "train_losses": {
+    "9101": 0.6310456991195679,
+    "9202": 0.6420245170593262,
+    "9303": 0.6397833228111267,
+    "9404": 0.6204317808151245,
+    "9505": 0.6519007682800293
+  },
+  "validation_losses": {
+    "9101": 0.6951829195022583,
+    "9202": 0.690927267074585,
+    "9303": 0.6913643479347229,
+    "9404": 0.7003008127212524,
+    "9505": 0.694810688495636
+  },
+  "written_at": "2026-09-24T17:27:42"
+}

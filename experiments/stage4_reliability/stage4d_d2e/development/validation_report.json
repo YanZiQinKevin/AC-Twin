@@ -1,0 +1,173 @@
+{
+  "adaptive_development_only": true,
+  "candidate_gate": {
+    "EGO_TRAJECTORY": {
+      "baseline_aurc_regret": {
+        "MARGIN_ONLY": 0.0710074104822777,
+        "SEED_MARGIN_STD": 0.038522388574694096,
+        "SEED_VOTE_ENTROPY": 0.051520140436660825
+      },
+      "baseline_pr_auc": {
+        "MARGIN_ONLY": -0.02685920410729903,
+        "SEED_MARGIN_STD": 0.06680816087541885,
+        "SEED_VOTE_ENTROPY": 0.08784478108731109
+      },
+      "baseline_regret80": {
+        "MARGIN_ONLY": 0.0635053171581504,
+        "SEED_MARGIN_STD": 0.05177432204140918,
+        "SEED_VOTE_ENTROPY": 0.053117171217811364
+      },
+      "conditions": {
+        "c1_ego_mae_better": true,
+        "c1_ego_rank_better": true,
+        "c2_a0_le_idle": true,
+        "c3_beats_random": true,
+        "c4_non_ego_ade": true,
+        "c5_direct_risk_gate": true
+      },
+      "direct_pr_auc_minus_prevalence": 0.2200980340318861,
+      "gate_metrics": {
+        "aurc_regret_baseline": 0.038522388574694096,
+        "aurc_regret_ensemble": 0.02900286008604462,
+        "i_aurc_regret": 0.24711677652571595,
+        "i_regret80": 0.16225967462194088,
+        "regret80_baseline": 0.05177432204140918,
+        "regret80_ensemble": 0.043373437393198544,
+        "seed_i_aurc": [
+          0.21738925748281973,
+          0.23220777224155822,
+          0.27473160932870383,
+          0.23370160878715124,
+          0.2260237722642632
+        ],
+        "seed_i_regret80": [
+          0.1588942381118451,
+          0.16121446223674174,
+          0.14968606053404312,
+          0.14984316417476043,
+          0.15306937621640881
+        ],
+        "seeds_i_aurc_positive": 5,
+        "seeds_i_regret80_positive": 5
+      },
+      "passed": true,
+      "strongest_baseline": "SEED_MARGIN_STD"
+    },
+    "EGO_TRAJECTORY_PLUS_RANK": {
+      "baseline_aurc_regret": {
+        "MARGIN_ONLY": 0.06862615410893784,
+        "SEED_MARGIN_STD": 0.036583094805631336,
+        "SEED_VOTE_ENTROPY": 0.04375433614884313
+      },
+      "baseline_pr_auc": {
+        "MARGIN_ONLY": -0.012831481113022125,
+        "SEED_MARGIN_STD": 0.06036935889223988,
+        "SEED_VOTE_ENTROPY": 0.0864322912720456
+      },
+      "baseline_regret80": {
+        "MARGIN_ONLY": 0.060007486058033015,
+        "SEED_MARGIN_STD": 0.05021453014615332,
+        "SEED_VOTE_ENTROPY": 0.051269756995494395
+      },
+      "conditions": {
+        "c1_ego_mae_better": true,
+        "c1_ego_rank_better": true,
+        "c2_a0_le_idle": true,
+        "c3_beats_random": true,
+        "c4_non_ego_ade": true,
+        "c5_direct_risk_gate": true
+      },
+      "direct_pr_auc_minus_prevalence": 0.19327016004989334,
+      "gate_metrics": {
+        "aurc_regret_baseline": 0.036583094805631336,
+        "aurc_regret_ensemble": 0.02949808768238312,
+        "i_aurc_regret": 0.19366888342529184,
+        "i_regret80": 0.11685124138320663,
+        "regret80_baseline": 0.05021453014615332,
+        "regret80_ensemble": 0.04434689996310085,
+        "seed_i_aurc": [
+          0.16720203451630186,
+          0.20968778821454118,
+          0.17849892731976968,
+          0.15367316331689057,
+          0.20368805449809327
+        ],
+        "seed_i_regret80": [
+          0.1312651703820933,
+          0.11404704627928554,
+          0.13014938134918402,
+          0.10562874572348427,
+          0.11673849333086733
+        ],
+        "seeds_i_aurc_positive": 5,
+        "seeds_i_regret80_positive": 5
+      },
+      "passed": true,
+      "strongest_baseline": "SEED_MARGIN_STD"
+    }
+  },
+  "elapsed_seconds": 5.717292070388794,
+  "note": "\u00a73.3 pre-collection development stop-loss on old validation (NOT independent confirmation); validation was adaptively viewed by D2/D2R.",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+  "selected_candidate": "EGO_TRAJECTORY_PLUS_RANK",
+  "selection_rule": "lowest validation a0 mean regret among passing candidates; tie <=1e-12 -> EGO_TRAJECTORY",
+  "status": "D2E_INTERFACE_REPAIR_QUALIFIED",
+  "tie_tolerance": 1e-12,
+  "variants": {
+    "EGO_TRAJECTORY": {
+      "a0_mean_regret": 0.05889301615633193,
+      "branch_spearman_j_hat_j_true": 0.7150027953129012,
+      "ego_effect_ade": 1.328350853957476,
+      "ego_final_progress_mae": 2.065176057784835,
+      "ego_progress_rank_spearman": 0.5285672276106017,
+      "idle_mean_regret": 0.10603879854895719,
+      "non_ego_effect_ade": 0.06168305508800622,
+      "progress_constant_group_frac": 0.0,
+      "random_mean_regret": 0.11246452177875821
+    },
+    "EGO_TRAJECTORY_PLUS_RANK": {
+      "a0_mean_regret": 0.057112465517534065,
+      "branch_spearman_j_hat_j_true": 0.7177268086547857,
+      "ego_effect_ade": 1.3420550561990918,
+      "ego_final_progress_mae": 2.086243776088782,
+      "ego_progress_rank_spearman": 0.5235574580890351,
+      "idle_mean_regret": 0.10603879854895719,
+      "non_ego_effect_ade": 0.06168305508800622,
+      "progress_constant_group_frac": 0.0,
+      "random_mean_regret": 0.11246452177875821
+    },
+    "KINEMATIC": {
+      "a0_mean_regret": 0.1185555509426165,
+      "branch_spearman_j_hat_j_true": 0.20736682628696365,
+      "ego_effect_ade": 15.206023335574567,
+      "ego_final_progress_mae": 28.744751460034532,
+      "ego_progress_rank_spearman": 0.0,
+      "idle_mean_regret": 0.10603879854895719,
+      "non_ego_effect_ade": 0.06168305508800622,
+      "progress_constant_group_frac": 0.0,
+      "random_mean_regret": 0.11246452177875821
+    },
+    "OLD_D2": {
+      "a0_mean_regret": 0.11578359905755864,
+      "branch_spearman_j_hat_j_true": 0.3793678840683017,
+      "ego_effect_ade": 2.4825523555014257,
+      "ego_final_progress_mae": 3.6999841767767068,
+      "ego_progress_rank_spearman": -0.005829811181569894,
+      "idle_mean_regret": 0.10603879854895719,
+      "non_ego_effect_ade": 0.06168305508800622,
+      "progress_constant_group_frac": 0.0,
+      "random_mean_regret": 0.11246452177875821
+    },
+    "TRUTH_ORACLE": {
+      "a0_mean_regret": 0.002673050238398377,
+      "branch_spearman_j_hat_j_true": 0.9835188294876391,
+      "ego_effect_ade": 0.0,
+      "ego_final_progress_mae": 2.339588463655673e-08,
+      "ego_progress_rank_spearman": 0.9999552744151615,
+      "idle_mean_regret": 0.10603879854895719,
+      "non_ego_effect_ade": 0.06168305508800622,
+      "progress_constant_group_frac": 0.0,
+      "random_mean_regret": 0.11246452177875821
+    }
+  }
+}

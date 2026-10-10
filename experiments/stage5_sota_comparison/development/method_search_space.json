@@ -1,0 +1,86 @@
+{
+  "frozen_before_training": true,
+  "methods": {
+    "CCTR_DRIVING_CALIBRATION_ADAPTED": {
+      "grid": [
+        {
+          "depth": 3,
+          "hidden_width": 64
+        },
+        {
+          "depth": 2,
+          "hidden_width": 96
+        }
+      ],
+      "param_counts": [
+        9794,
+        11522
+      ]
+    },
+    "CONFIDNET_TCP_ADAPTED": {
+      "grid": [
+        {
+          "temperature": 0.5
+        },
+        {
+          "temperature": 1.0
+        },
+        {
+          "temperature": 2.0
+        }
+      ],
+      "param_counts": [
+        9665,
+        9665,
+        9665
+      ]
+    },
+    "CONFORMAL_REGRESSION_REJECT_ADAPTED": {
+      "grid": [
+        {
+          "difficulty_bins": 4
+        },
+        {
+          "difficulty_bins": 8
+        }
+      ],
+      "param_counts": [
+        11201,
+        11201
+      ]
+    },
+    "RWR_NN_KNN_REJECT_ADAPTED": {
+      "grid": [
+        {
+          "k": 16
+        },
+        {
+          "k": 32
+        },
+        {
+          "k": 64
+        }
+      ],
+      "param_counts": [
+        11201,
+        11201,
+        11201
+      ]
+    },
+    "SELECTIVENET_REGRET_ADAPTED": {
+      "grid": [
+        {
+          "hidden_width": 64
+        },
+        {
+          "hidden_width": 96
+        }
+      ],
+      "param_counts": [
+        11331,
+        23139
+      ]
+    }
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE5-SOTA-COMPARISON-2026-09-27-V0.3"
+}

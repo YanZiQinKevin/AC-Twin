@@ -1,0 +1,9 @@
+{
+  "constant_w": 0.6,
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "predictions_sha256": "34bc12e91a1eaea902a30570d3f19996441443fcd47989cc3cf7ed366f47d9ac",
+  "primary_predictor": "END_TO_END_MIXTURE",
+  "risk_train_constant_mean_ade": 0.2634826103331911,
+  "risk_train_e2e_mean_ade": 0.26266581423858587,
+  "selection_basis": "lowest 5-pair mean episode effect-ADE on risk-train; tie -> BEST_CONSTANT_W"
+}

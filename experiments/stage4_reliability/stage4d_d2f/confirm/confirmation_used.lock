@@ -1,0 +1,17 @@
+{
+  "bindings": {
+    "d2e_final_selection_sha256": "c2236a9b7798c702cbe6651c30fcac41d037343b3fd7eb984e75495c25e65259",
+    "d2e_riskfit_receipt_sha256": "c0d8d251c3116bc79aadfcb78a7699e637abe460dd6f197a47d3768fbb645145",
+    "determinism_receipt_sha256": "7f554fd38d01ae23e0cac582218488b2b59ac7a0833565292cb736233ea1a7a7",
+    "protocol_lock_sha256": "1a31ca940f3d78f3654b414c2b15d98adc25ac5a3f8c14095cfc099ef8ac52a2",
+    "scores_receipt_sha256": "5fc8f6c4b857a1de6d173882317b725704dfeedd1f0a97a854bb430bad777847",
+    "scores_sha256": "2d89afa2aa2f3f0aa8f7e8e3763bdcc6a4190d361589e2c992e45edf86920655"
+  },
+  "burned_at": "2026-09-25T15:58:08",
+  "interaction_threshold": 11.53877460000361,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "role": "confirm",
+  "selected_ego_candidate": "EGO_TRAJECTORY_PLUS_RANK",
+  "semantics": "one-shot: the confirm truth may be read only after this lock exists; all confirm scores are frozen and hash-bound above",
+  "strongest_standard_baseline": "SEED_MARGIN_STD"
+}

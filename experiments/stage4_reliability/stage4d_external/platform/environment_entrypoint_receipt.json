@@ -1,0 +1,28 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "status": "ENVIRONMENT_ENTRYPOINT_FROZEN",
+  "generated_at": "2026-09-21T23:10:00+0800",
+  "entrypoint": "code/run_stage4d_env.ps1",
+  "sim_python": "C:/ProgramData/anaconda3/envs/ac_twin_d2_sim_py311/python.exe",
+  "sim_bootstrap": "code/stage4d_sim_entry.py",
+  "conversion_wsl_distribution": "Ubuntu-22.04",
+  "conversion_python": "/root/miniconda3/envs/ac_twin_waymo_convert_py39/bin/python",
+  "conversion_staging_root": "/root/ac_twin_stage4d_conversion_work",
+  "sha256": {
+    "code/run_stage4d_env.ps1": "30d967c59810d8f549d2344ff7792cd8bb9c8cac70c4615dad7ddbe531021b2c",
+    "code/stage4d_sim_entry.py": "e498c12b370313c506764a76dd235d23ab2eb057bdc5f25ac187808d249b872d",
+    "code/stage4d_verify_sim_env.py": "cd4574940f17c6fd5df520169ce274cee0f8d2401d395db381008a8c0660f22e",
+    "code/stage4d_verify_conversion_env.py": "0c4fbee3dee2345dc0bb717c8a6b3b25100acd53313e0772d8c1ae308e6efead",
+    "experiments/stage4_reliability/stage4d_external/config.json": "855cf55e53d00eae15789ec0037d65c1bcf48a43cb6161824ee5ef2f364d7417",
+    "platform/platform_environment_lock.json": "78d75cc496f6b4d7f0d6603dafbfa755ff16bf211a3018004c4e446836a41e74",
+    "platform/conversion_smoke_receipt.json": "a99b2af44a34b2e8e41b14fb4c2e0756a2331ea74e936511e825566d004e1276"
+  },
+  "verification": {
+    "focused_tests": "23 passed",
+    "launcher_verify": "STAGE4D_ENVIRONMENT_VERIFY_PASS",
+    "conversion_smoke": "CONVERSION_SMOKE_PASS",
+    "conversion_smoke_pkl_files": 65,
+    "sim_cuda_available": true,
+    "sim_tensorflow_present": false
+  }
+}

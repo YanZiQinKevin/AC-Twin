@@ -1,0 +1,26 @@
+{
+  "conditions": {
+    "all_complete_10_action": true,
+    "continuous_features_finite_with_variance": true,
+    "high_regret_groups_ge_750": true,
+    "nonzero_regret_groups_ge_1250": true,
+    "output_targets_finite": true
+  },
+  "data_sha256": "2b6a81bc6bc59937653e896f0cd7b9728667256324a69937fda724ba67b98aa7",
+  "inference_code_sha256": "5dd458b8dae0e6ce123d4acc1557219da52f16f15095724cdc8390448ee5b385",
+  "passed": true,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "predictions_sha256": "4183f5f1a72aa2e41a261361e845c0f0628ec40ceb384e5a91320ea3d6c56797",
+  "role": "train",
+  "scores_sha256": "10525c8f1b7495616b3005bfbc2abc8ac1d92239b3392659abc4ea5afeb26f57",
+  "status": "TRAIN_SUPPORT_OK",
+  "training_code_sha256": "8c8c06ab4bc3d935e8b695c6ce939333b82c34010170786275ad03e1cef48c7a",
+  "valid_feature_groups": 5000,
+  "values": {
+    "groups": 5000,
+    "high_regret_groups": 3971,
+    "nonzero_regret_groups": 4382,
+    "zero_variance_continuous_columns": []
+  },
+  "written_at": "2026-09-23T13:39:13"
+}

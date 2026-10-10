@@ -1,0 +1,218 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+  "artifact_type": "power_report",
+  "purpose": "stage3a_plus_qualification",
+  "per_candidate": {
+    "400": {
+      "joint_power": 0.7445,
+      "set_joint_power": {
+        "A": 0.7445,
+        "B": 0.9805
+      },
+      "condition_pass_rates": {
+        "i_mae_ci": 1.0,
+        "spearman_ci": 1.0,
+        "i_pr_presence_ci": 1.0,
+        "i_pr_high_vs_lowmid_ci": 1.0,
+        "i_brier_ci": 1.0,
+        "ece_guard": 1.0,
+        "per_seed_core_positive": 0.7445,
+        "at_least_8_of_10_positive": 1.0,
+        "median_i_brier_positive": 1.0,
+        "worst_seed_noninferior": 1.0,
+        "hierarchical_ci": 1.0,
+        "non_degenerate": 1.0
+      },
+      "weakest_condition": {
+        "condition": "per_seed_core_positive",
+        "pass_rate": 0.7445
+      }
+    },
+    "600": {
+      "joint_power": 0.8385,
+      "set_joint_power": {
+        "A": 0.8385,
+        "B": 0.9965
+      },
+      "condition_pass_rates": {
+        "i_mae_ci": 1.0,
+        "spearman_ci": 1.0,
+        "i_pr_presence_ci": 1.0,
+        "i_pr_high_vs_lowmid_ci": 1.0,
+        "i_brier_ci": 1.0,
+        "ece_guard": 1.0,
+        "per_seed_core_positive": 0.8385,
+        "at_least_8_of_10_positive": 1.0,
+        "median_i_brier_positive": 1.0,
+        "worst_seed_noninferior": 1.0,
+        "hierarchical_ci": 1.0,
+        "non_degenerate": 1.0
+      },
+      "weakest_condition": {
+        "condition": "per_seed_core_positive",
+        "pass_rate": 0.8385
+      }
+    },
+    "800": {
+      "joint_power": 0.8785,
+      "set_joint_power": {
+        "A": 0.8785,
+        "B": 0.9995
+      },
+      "condition_pass_rates": {
+        "i_mae_ci": 1.0,
+        "spearman_ci": 1.0,
+        "i_pr_presence_ci": 1.0,
+        "i_pr_high_vs_lowmid_ci": 1.0,
+        "i_brier_ci": 1.0,
+        "ece_guard": 1.0,
+        "per_seed_core_positive": 0.8785,
+        "at_least_8_of_10_positive": 1.0,
+        "median_i_brier_positive": 1.0,
+        "worst_seed_noninferior": 1.0,
+        "hierarchical_ci": 1.0,
+        "non_degenerate": 1.0
+      },
+      "weakest_condition": {
+        "condition": "per_seed_core_positive",
+        "pass_rate": 0.8785
+      }
+    },
+    "1000": {
+      "joint_power": 0.925,
+      "set_joint_power": {
+        "A": 0.925,
+        "B": 1.0
+      },
+      "condition_pass_rates": {
+        "i_mae_ci": 1.0,
+        "spearman_ci": 1.0,
+        "i_pr_presence_ci": 1.0,
+        "i_pr_high_vs_lowmid_ci": 1.0,
+        "i_brier_ci": 1.0,
+        "ece_guard": 1.0,
+        "per_seed_core_positive": 0.925,
+        "at_least_8_of_10_positive": 1.0,
+        "median_i_brier_positive": 1.0,
+        "worst_seed_noninferior": 1.0,
+        "hierarchical_ci": 1.0,
+        "non_degenerate": 1.0
+      },
+      "weakest_condition": {
+        "condition": "per_seed_core_positive",
+        "pass_rate": 0.925
+      }
+    },
+    "1200": {
+      "joint_power": 0.942,
+      "set_joint_power": {
+        "A": 0.942,
+        "B": 1.0
+      },
+      "condition_pass_rates": {
+        "i_mae_ci": 1.0,
+        "spearman_ci": 1.0,
+        "i_pr_presence_ci": 1.0,
+        "i_pr_high_vs_lowmid_ci": 1.0,
+        "i_brier_ci": 1.0,
+        "ece_guard": 1.0,
+        "per_seed_core_positive": 0.942,
+        "at_least_8_of_10_positive": 1.0,
+        "median_i_brier_positive": 1.0,
+        "worst_seed_noninferior": 1.0,
+        "hierarchical_ci": 1.0,
+        "non_degenerate": 1.0
+      },
+      "weakest_condition": {
+        "condition": "per_seed_core_positive",
+        "pass_rate": 0.942
+      }
+    },
+    "1600": {
+      "joint_power": 0.9595,
+      "set_joint_power": {
+        "A": 0.9595,
+        "B": 1.0
+      },
+      "condition_pass_rates": {
+        "i_mae_ci": 1.0,
+        "spearman_ci": 1.0,
+        "i_pr_presence_ci": 1.0,
+        "i_pr_high_vs_lowmid_ci": 1.0,
+        "i_brier_ci": 1.0,
+        "ece_guard": 1.0,
+        "per_seed_core_positive": 0.9595,
+        "at_least_8_of_10_positive": 1.0,
+        "median_i_brier_positive": 1.0,
+        "worst_seed_noninferior": 1.0,
+        "hierarchical_ci": 1.0,
+        "non_degenerate": 1.0
+      },
+      "weakest_condition": {
+        "condition": "per_seed_core_positive",
+        "pass_rate": 0.9595
+      }
+    },
+    "2000": {
+      "joint_power": 0.9765,
+      "set_joint_power": {
+        "A": 0.9765,
+        "B": 1.0
+      },
+      "condition_pass_rates": {
+        "i_mae_ci": 1.0,
+        "spearman_ci": 1.0,
+        "i_pr_presence_ci": 1.0,
+        "i_pr_high_vs_lowmid_ci": 1.0,
+        "i_brier_ci": 1.0,
+        "ece_guard": 1.0,
+        "per_seed_core_positive": 0.9765,
+        "at_least_8_of_10_positive": 1.0,
+        "median_i_brier_positive": 1.0,
+        "worst_seed_noninferior": 1.0,
+        "hierarchical_ci": 1.0,
+        "non_degenerate": 1.0
+      },
+      "weakest_condition": {
+        "condition": "per_seed_core_positive",
+        "pass_rate": 0.9765
+      }
+    }
+  },
+  "selected_episode_count": 1000,
+  "status": "POWER_FEASIBLE",
+  "candidates": [
+    400,
+    600,
+    800,
+    1000,
+    1200,
+    1600,
+    2000
+  ],
+  "target_power": 0.9,
+  "monte_carlo_replicates": 2000,
+  "inner_bootstrap_resamples": 1000,
+  "seed": 20260930,
+  "z": 1.959963984540054,
+  "rank_se_pool": {
+    "A": {
+      "spearman": 0.012754485987530982,
+      "i_pr_presence": 0.019947010395873706,
+      "i_pr_high_vs_lowmid": 0.03509794070546246
+    },
+    "B": {
+      "spearman": 0.011074844484434555,
+      "i_pr_presence": 0.019541149402643707,
+      "i_pr_high_vs_lowmid": 0.028703759337493025
+    }
+  },
+  "rule": "joint power = fraction of draws where ALL twelve Gate R+ sampling conditions hold, minimised over dev sets A/B (worse effect distribution sizes the study); CI conditions use estimate - Z_95*SE > 0 with closed-form bootstrap SE for episode-mean statistics and pool-bootstrap SE * sqrt(E/n) for rank statistics; NaN draws fail; selection is by joint power, never marginals",
+  "freeze_receipt_sha256": "cb18ffdc3957d18e3269a6d0e654b29038ed34f7eff09b87d2d56da006228127",
+  "data_signatures": {
+    "development": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+    "replacement": "4031aaaeb98a51cb101c195adbd10b436a9e69f1addde1fb0f0900d6a442dd82"
+  },
+  "script_sha256": "7ecb2463733de4a3e854a57e7085f4341c4f231aead8cfce3cfc0047a06440cd",
+  "generated_at": "2026-09-10T09:11:59"
+}

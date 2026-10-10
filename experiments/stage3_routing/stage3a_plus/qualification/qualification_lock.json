@@ -1,0 +1,11 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+  "artifact_type": "qualification_lock",
+  "purpose": "stage3a_plus_qualification",
+  "qualification_data_sha256": "8d4006aeaeacacd174c9df178247bf5887c0b051731de52d8be657c56e5e3e77",
+  "collection_receipt_sha256": "2d507847142ec2c5411d930f45177fe9845e5c8721aa61de0f85e2c6d00ffb85",
+  "freeze_receipt_sha256": "cb18ffdc3957d18e3269a6d0e654b29038ed34f7eff09b87d2d56da006228127",
+  "power_report_sha256": "2549679fe1c2ce3326be14dc0775c836d48ba303147667cdb78e9ac024fb810b",
+  "seed_schedule_sha256": "1b82717155c0bf4acb4144de7a488dcc8b9cf2b35f83511f810d43dfe0e45cd5",
+  "locked_at": "2026-09-10T09:17:27"
+}

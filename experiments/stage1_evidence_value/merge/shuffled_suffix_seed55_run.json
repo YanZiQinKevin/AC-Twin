@@ -1,0 +1,12 @@
+{
+  "signature": "d9455aea3605c4dd3eb958d58cc286224fee3331d98f1b56be6203b4d9e4c333",
+  "summary": {
+    "status": "complete",
+    "seed": 55,
+    "parameters": 145066,
+    "epochs_run": 81,
+    "best_epoch": 56,
+    "best_val_mse": 0.41049146016438803,
+    "runtime_seconds": 77.7983363000094
+  }
+}

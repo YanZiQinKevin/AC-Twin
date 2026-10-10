@@ -1,0 +1,31 @@
+{
+  "bindings": {
+    "pool_capacity_audit_sha256": "e2667f3ecaf6b0469f22ab5ab8c0866b10e9f98381bfa0dc61c509854938b7e1",
+    "source_binding_sha256": "1fa138c41e93fe57ac6553db9efec621fade9ac578a327999d7d6040c0def052"
+  },
+  "burned_unique_ids": 41290,
+  "confirm_pool_preserved": 15528,
+  "create_once": true,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "prefrozen_confirm_ns": [
+    1000,
+    1500,
+    2000,
+    2500,
+    3000
+  ],
+  "prefrozen_screen_ns": [
+    1000,
+    1500,
+    2000,
+    2500
+  ],
+  "salt": "AC-TWIN-D2F-V0.1|",
+  "scope": "READ_ONLY_VERIFICATION",
+  "screen_candidate_count": 13626,
+  "screen_order_sha256": "84d17713d841c572a2714e93ab2af3c998b65f80ab3d0b29ffca9c0bde670675",
+  "status": "D2F_POOL_AUDIT_PASS",
+  "written_at": "2026-09-24T22:36:21",
+  "zero_overlap_burned": true,
+  "zero_overlap_confirm": true
+}

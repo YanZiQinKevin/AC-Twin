@@ -1,0 +1,12 @@
+{
+  "best_validation_ade": 0.274922251701355,
+  "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\router\\checkpoints\\cew_distilled_router_lc0.25_lr0_pair3_s1404.pt",
+  "condition": "cew_distilled_router",
+  "epochs_run": 12,
+  "input_dim": 70,
+  "lambda_cew": 0.25,
+  "lambda_rank": 0.0,
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "seed": 1404,
+  "sha256": "12822c62ac9a4bb6220d7bb2f4707db1fc5fb4b7c7f9567d3b9d2d9f0ac93a20"
+}

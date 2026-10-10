@@ -1,0 +1,13 @@
+{
+  "artifact": "power_validation_quantities",
+  "create_once": true,
+  "interaction_threshold": 11.53877460000361,
+  "n_groups": 1500,
+  "note": "per-group OLD-validation screen quantities under the repaired pipeline (selected ego candidate + retrained Direct), for the plan-4.2 power pre-check ONLY; never a confirmation input. Structural-validity flags are conditioned on (set True); the power estimate assumes a structurally valid screen.",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+  "quantities_npz_sha256": "023b83827cd278707e59dfcb8928917679e761a6993a9514378d66186985f21a",
+  "scope": "ADAPTIVE_DEVELOPMENT_ONLY",
+  "selected_candidate": "EGO_TRAJECTORY_PLUS_RANK",
+  "strongest_standard_baseline": "SEED_MARGIN_STD",
+  "written_at": "2026-09-24T18:10:45"
+}

@@ -13,7 +13,7 @@ Panels (blueprint v1.0 section 4, Fig. 4):
         confirmation.
     (d) Prospectively specified mismatch qualification -- which generator-mismatch
         profile was eligible, and which one was selected by frozen priority.
-        The confirmed mismatch effect itself is carried by Fig. 3b and Table II,
+        The confirmed mismatch effect itself is carried by Fig. 3b and Table 6,
         not by this panel.
 
 Run from the repository root:

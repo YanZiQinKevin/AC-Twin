@@ -1,0 +1,21 @@
+{
+  "inventory_sha256": "e0cd6aad9ca4094dad14503af1e1eab087cc536d972ffbd0603a631948282671",
+  "legacy_test_compatibility": {
+    "stage2b_confirm_stale": {
+      "note": "Stage 2B stale module-constant candidate domain; never persisted, never used for collection; conservatively avoided",
+      "size": 60000
+    },
+    "stage2b_development_stale": {
+      "note": "Stage 2B stale module-constant candidate domain; never persisted, never used for collection; conservatively avoided",
+      "size": 60000
+    }
+  },
+  "r2_executed_domain": {
+    "entropy": 2026092880,
+    "fully_contained": true,
+    "size": 60000,
+    "source": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\protocol_lock.json",
+    "source_sha256": "c19c5bdce54fe039a10003b4ab78d1fb22040ac740ba950457c4534fc5e8aa71"
+  },
+  "total_unique_seeds": 420804
+}

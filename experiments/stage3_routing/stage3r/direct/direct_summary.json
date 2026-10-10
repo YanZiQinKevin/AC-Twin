@@ -1,0 +1,67 @@
+{
+  "best_constant_w": 0.6,
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "records": [
+    {
+      "best_validation_ade": 0.27807092666625977,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\direct\\checkpoints\\direct_pair0_s1101.pt",
+      "condition": "same_information_direct",
+      "epochs_run": 7,
+      "hidden_width": 63,
+      "input_dim": 70,
+      "pair_index": 0,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "seed": 1101,
+      "sha256": "059af07bf1e6b110fb68c9285f139904978e4507fbc0cb0b1886c2a28a671e88"
+    },
+    {
+      "best_validation_ade": 0.2611294090747833,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\direct\\checkpoints\\direct_pair1_s1202.pt",
+      "condition": "same_information_direct",
+      "epochs_run": 7,
+      "hidden_width": 63,
+      "input_dim": 70,
+      "pair_index": 1,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "seed": 1202,
+      "sha256": "1361774cb79a364318b3999f892602d937848c281e5e12bc70119e6cfae6bd17"
+    },
+    {
+      "best_validation_ade": 0.2631542980670929,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\direct\\checkpoints\\direct_pair2_s1303.pt",
+      "condition": "same_information_direct",
+      "epochs_run": 12,
+      "hidden_width": 63,
+      "input_dim": 70,
+      "pair_index": 2,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "seed": 1303,
+      "sha256": "49fd2241a2aa71bf50693161a92a49ffa70449849a0b622949f9f42f74ab1e9a"
+    },
+    {
+      "best_validation_ade": 0.3014414608478546,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\direct\\checkpoints\\direct_pair3_s1404.pt",
+      "condition": "same_information_direct",
+      "epochs_run": 7,
+      "hidden_width": 63,
+      "input_dim": 70,
+      "pair_index": 3,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "seed": 1404,
+      "sha256": "934e9480e705ed77d7f547b479ea6e889a56665229693c7b4bcab671624a68e8"
+    },
+    {
+      "best_validation_ade": 0.27528029680252075,
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\direct\\checkpoints\\direct_pair4_s1505.pt",
+      "condition": "same_information_direct",
+      "epochs_run": 7,
+      "hidden_width": 63,
+      "input_dim": 70,
+      "pair_index": 4,
+      "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+      "seed": 1505,
+      "sha256": "6956674294450fc7fda6557fe8a8a6a4feb8ea8a2b33bf07046c833d49535ae4"
+    }
+  ],
+  "status": "DIRECT_COMPLETE"
+}

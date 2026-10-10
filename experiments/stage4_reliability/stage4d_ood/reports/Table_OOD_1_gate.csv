@@ -1,0 +1,15 @@
+gate,condition,point,ci95_lower,ci95_upper,passed,notes
+TASK,c1_complete_gate_q,,true,n_groups=2000
+TASK,c2_domain_shift,,true,n_shifted=3;auc_ci_lower=0.98026887750000002
+TASK,c3_high_regret_frac,high_regret_frac,true,
+TASK,c4_oracle_diversity,,true,covered=6
+TASK,c5_branch_spearman,spearman_branch,true,
+TASK,c6_base_beats_random,base_vs_random_improvement,true,
+TASK,c7_base_not_worse_than_idle,base_mean_regret,true,idle_mean_regret=0.088735143043490589
+TASK,c8_strata_min_10pct,,true,"{""interaction_high"": 0.1375, ""interaction_low"": 0.8625, ""tstar_high"": 0.443, ""tstar_low"": 0.557}"
+RISK,r1_i_aurc_regret,i_aurc_regret,true,primary baseline SEED_VOTE_ENTROPY
+RISK,r2_i_regret80,i_regret80,true,primary baseline SEED_VOTE_ENTROPY
+RISK,r3_pr_auc_minus_prevalence,pr_auc_minus_prevalence,true,
+RISK,r4_seed_consistency,,true,both_directions_positive=5/5
+RISK,r5_validity,,true,"{""aurc_regret"": 0.030887133177597507, ""regret_at_80"": 0.03227521755180211}"
+TERMINAL,status,,true,STAGE4D_OOD_ROBUSTNESS_CONFIRMED

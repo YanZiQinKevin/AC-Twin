@@ -1,0 +1,48 @@
+{
+  "bindings": {
+    "d2e_final_selection_sha256": "c2236a9b7798c702cbe6651c30fcac41d037343b3fd7eb984e75495c25e65259",
+    "d2e_riskfit_receipt_sha256": "c0d8d251c3116bc79aadfcb78a7699e637abe460dd6f197a47d3768fbb645145",
+    "d2e_validation_report_sha256": "ca7890c3035eb564f653f44f58a50dd87c5b0c0b9100c8b0bbcc6f37c2e08787",
+    "determinism_receipt_sha256": "7f554fd38d01ae23e0cac582218488b2b59ac7a0833565292cb736233ea1a7a7",
+    "inference_inputs_sha256": "5626d11b46746409cb7c974be78768cc57a6ce75aa9db82feae3c024f9b1cc56",
+    "protocol_lock_sha256": "1a31ca940f3d78f3654b414c2b15d98adc25ac5a3f8c14095cfc099ef8ac52a2",
+    "scores_receipt_sha256": "5fc8f6c4b857a1de6d173882317b725704dfeedd1f0a97a854bb430bad777847",
+    "scores_sha256": "2d89afa2aa2f3f0aa8f7e8e3763bdcc6a4190d361589e2c992e45edf86920655",
+    "sealed_truth_sha256": "c44c8f5e832c4c8f972aa456bb5e4bb39d5811024ae3dd258497df6273aa2e25",
+    "split_receipt_sha256": "3d748ca06677ac8d7636f5b09c86e1e8b6f97f98682e716a61931f36e01edf03",
+    "statistics_code_sha256": "c726f03aee011beb9d23db407191ad1ce58d06c58256164b9265cc355fc34b51"
+  },
+  "bootstrap_entropy": 2026122409,
+  "bootstrap_resamples": 10000,
+  "confidence_confirm": 0.95,
+  "confirm_group_quantities_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_d2f\\confirm\\confirm_group_quantities.npz",
+  "confirm_group_quantities_sha256": "c33558eeaa917ecf586ba1a410ebbd28d9efe7e17753bf6d9c373f484ea7fbd0",
+  "eval_mask_nondegenerate": true,
+  "interaction_threshold": 11.53877460000361,
+  "interaction_threshold_source": "d2e riskfit fit_receipt.json (frozen)",
+  "lock_burned_at": "2026-09-25T15:58:08",
+  "lock_sha256": "f5d609154e15282e6e2717dfd36f9eb25849797bcd55bf6834ea481df9a8eacc",
+  "map_family_note": "the frozen collector records no finer map_id; the confirm is one Waymo training_20s -> MetaDrive family (map_family all 0).",
+  "n_groups": 2000,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "projection_nondegenerate": true,
+  "qa": {
+    "all_complete": true,
+    "baseline_matches_frozen": true,
+    "checkpoints_match_frozen": true,
+    "determinism_passed": true,
+    "ensemble_is_arithmetic_mean": true,
+    "hashes_match": true,
+    "one_shot_locks": true,
+    "role_seeds_valid": true
+  },
+  "role": "confirm",
+  "selected_ego_candidate": "EGO_TRAJECTORY_PLUS_RANK",
+  "strongest_standard_baseline": "SEED_MARGIN_STD",
+  "trim_fractions": [
+    0.01,
+    0.05
+  ],
+  "tstar_stratum_split": 13,
+  "written_at": "2026-09-25T15:58:09"
+}

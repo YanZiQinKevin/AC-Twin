@@ -1,0 +1,22 @@
+{
+  "run": "dual_channel_learned_router_g32_pair2_r1303",
+  "state": "COMPLETE",
+  "condition": "dual_channel_learned_router",
+  "pair_index": 2,
+  "seed_pair": [
+    303,
+    1303
+  ],
+  "gate_hidden_dim": 32,
+  "config": {
+    "condition": "dual_channel_learned_router",
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "gate_hidden_dim": 32
+  },
+  "best_val_loss": 0.31466593959809447,
+  "validation_selection_score": 0.31466593959809447,
+  "epochs_run": 16,
+  "signature": "2eb434bde0b0c0639a25aa2307527b191124621d157a5c6d5331e49de5c9aff8",
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\dual_channel_learned_router_g32_pair2_r1303.pt"
+}

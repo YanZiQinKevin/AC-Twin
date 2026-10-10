@@ -1,0 +1,360 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3B-2026-09-10-V0.1",
+  "gate_hidden_dim": 32,
+  "conditions": [
+    "uniform_suffix",
+    "direct",
+    "dual_router",
+    "oracle_reference"
+  ],
+  "per_condition": {
+    "uniform_suffix": [
+      {
+        "pair_index": 0,
+        "seed_pair": [
+          101,
+          1101
+        ],
+        "signature": "cf8485170446aed39a73a777e581ec071a659a0212cab892f3d9e9e5e863d0e3",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\uniform_suffix_g32_pair0_r1101.pt",
+        "best_val_loss": 0.2705334478490228,
+        "config": {
+          "condition": "uniform_suffix",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 1,
+        "seed_pair": [
+          202,
+          1202
+        ],
+        "signature": "ade28ed06d95953ffd3636ca0626e11c9324c2463c222793d74026d60f6ded85",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\uniform_suffix_g32_pair1_r1202.pt",
+        "best_val_loss": 0.3027862911010911,
+        "config": {
+          "condition": "uniform_suffix",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 2,
+        "seed_pair": [
+          303,
+          1303
+        ],
+        "signature": "7437df5cd37e163c6ede536622907742ad5076218b0d227600563286520fb0b6",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\uniform_suffix_g32_pair2_r1303.pt",
+        "best_val_loss": 0.2707816441894524,
+        "config": {
+          "condition": "uniform_suffix",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 3,
+        "seed_pair": [
+          404,
+          1404
+        ],
+        "signature": "6c1f42fa1820d28f31c7347093b53e65311ae09ccc47e5ec86354279d8a669be",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\uniform_suffix_g32_pair3_r1404.pt",
+        "best_val_loss": 0.2815483168402648,
+        "config": {
+          "condition": "uniform_suffix",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 4,
+        "seed_pair": [
+          505,
+          1505
+        ],
+        "signature": "7ead9ff97f24db7fef2019cb91f46154265e0573c1e3ecd30c4640d4d64364c8",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\uniform_suffix_g32_pair4_r1505.pt",
+        "best_val_loss": 0.3010231599733553,
+        "config": {
+          "condition": "uniform_suffix",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      }
+    ],
+    "same_information_direct": [
+      {
+        "pair_index": 0,
+        "seed_pair": [
+          101,
+          1101
+        ],
+        "signature": "f8f17d60dd4c29d50461a38d1316dc17e2eeae25794b6051d6679ba902214c18",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\same_information_direct_g32_pair0_r1101.pt",
+        "best_val_loss": 0.3024924994672343,
+        "config": {
+          "condition": "same_information_direct",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 1,
+        "seed_pair": [
+          202,
+          1202
+        ],
+        "signature": "bc9d27a1074f55fa730012c6f6395443d59c2f84b3caabd322598f4c73986fd5",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\same_information_direct_g32_pair1_r1202.pt",
+        "best_val_loss": 0.3283068008749696,
+        "config": {
+          "condition": "same_information_direct",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 2,
+        "seed_pair": [
+          303,
+          1303
+        ],
+        "signature": "4780e8934c43d77a85739d2e174803ccc664d2e40aa84402237b2e44e13caa45",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\same_information_direct_g32_pair2_r1303.pt",
+        "best_val_loss": 0.32273347894681614,
+        "config": {
+          "condition": "same_information_direct",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 3,
+        "seed_pair": [
+          404,
+          1404
+        ],
+        "signature": "6e9b392137dcfbd1fd59f2c70357d6fc4b6e65bb1ec1f729cb6653440c61cd44",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\same_information_direct_g32_pair3_r1404.pt",
+        "best_val_loss": 0.31379209220728477,
+        "config": {
+          "condition": "same_information_direct",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 4,
+        "seed_pair": [
+          505,
+          1505
+        ],
+        "signature": "cec5d8ab899cedb353535c3b9c4b8e5b7f502831df2d0dde38fb46835607b59d",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\same_information_direct_g32_pair4_r1505.pt",
+        "best_val_loss": 0.3038921627281758,
+        "config": {
+          "condition": "same_information_direct",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      }
+    ],
+    "dual_channel_learned_router": [
+      {
+        "pair_index": 0,
+        "seed_pair": [
+          101,
+          1101
+        ],
+        "signature": "d4d3bd5a75cb7a363744e228a2f3107e70ac43946e732eb93c2ae990dd98bb05",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\dual_channel_learned_router_g32_pair0_r1101.pt",
+        "best_val_loss": 0.2913623829341606,
+        "config": {
+          "condition": "dual_channel_learned_router",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 1,
+        "seed_pair": [
+          202,
+          1202
+        ],
+        "signature": "caae7eb5c70b07434e050e7eb157455787c589640ffe3a54ad38778ea5d24237",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\dual_channel_learned_router_g32_pair1_r1202.pt",
+        "best_val_loss": 0.3224104435247339,
+        "config": {
+          "condition": "dual_channel_learned_router",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 2,
+        "seed_pair": [
+          303,
+          1303
+        ],
+        "signature": "2eb434bde0b0c0639a25aa2307527b191124621d157a5c6d5331e49de5c9aff8",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\dual_channel_learned_router_g32_pair2_r1303.pt",
+        "best_val_loss": 0.31466593959809447,
+        "config": {
+          "condition": "dual_channel_learned_router",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 3,
+        "seed_pair": [
+          404,
+          1404
+        ],
+        "signature": "9f7ece5809265f228dca969f69f15d579bb63ec91e0ad2423d4a3fef268f5b23",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\dual_channel_learned_router_g32_pair3_r1404.pt",
+        "best_val_loss": 0.3106128653136499,
+        "config": {
+          "condition": "dual_channel_learned_router",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 4,
+        "seed_pair": [
+          505,
+          1505
+        ],
+        "signature": "cf09ceda9fe1ab4e31cf08fa0576637291174190d563fb4851f06b25666efa3f",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\dual_channel_learned_router_g32_pair4_r1505.pt",
+        "best_val_loss": 0.2970718407865312,
+        "config": {
+          "condition": "dual_channel_learned_router",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      }
+    ],
+    "oracle_response_reference": [
+      {
+        "pair_index": 0,
+        "seed_pair": [
+          101,
+          1101
+        ],
+        "signature": "c8d6d09a5db6024e679776b464b91c52fb61912b3e85bd7f757ba1fc903014ba",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\oracle_response_reference_g32_pair0_r1101.pt",
+        "best_val_loss": 0.25977155966273824,
+        "config": {
+          "condition": "oracle_response_reference",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 1,
+        "seed_pair": [
+          202,
+          1202
+        ],
+        "signature": "1b006263fdedc850a7d8f4f2c3a79a3af9d0fdecc311383f667f142908f82ef2",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\oracle_response_reference_g32_pair1_r1202.pt",
+        "best_val_loss": 0.23114049018319036,
+        "config": {
+          "condition": "oracle_response_reference",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 2,
+        "seed_pair": [
+          303,
+          1303
+        ],
+        "signature": "47f5381bf2a00380118bdcd6bd43bdd514cd7270ed394c78fbeb683b70fbc797",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\oracle_response_reference_g32_pair2_r1303.pt",
+        "best_val_loss": 0.19791628435743636,
+        "config": {
+          "condition": "oracle_response_reference",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 3,
+        "seed_pair": [
+          404,
+          1404
+        ],
+        "signature": "c3401ac52d9adb4c7a5975bde20be6ac529f38357e44871c1ffcf25590592375",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\oracle_response_reference_g32_pair3_r1404.pt",
+        "best_val_loss": 0.2443391035868877,
+        "config": {
+          "condition": "oracle_response_reference",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      },
+      {
+        "pair_index": 4,
+        "seed_pair": [
+          505,
+          1505
+        ],
+        "signature": "7612d494b1eff66a88d91bc53efc6d4d8fb61bc2b86103c135204ebc293e22b1",
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\oracle_response_reference_g32_pair4_r1505.pt",
+        "best_val_loss": 0.20189366642989898,
+        "config": {
+          "condition": "oracle_response_reference",
+          "hidden_dim": 96,
+          "response_feature_dim": 32,
+          "gate_hidden_dim": 32
+        }
+      }
+    ]
+  },
+  "capacity_audit": {
+    "counts": {
+      "uniform_suffix": {
+        "total": 261739,
+        "trainable": 261739
+      },
+      "same_information_direct": {
+        "total": 261739,
+        "trainable": 261739
+      },
+      "dual_channel_learned_router": {
+        "total": 261739,
+        "trainable": 261739
+      }
+    },
+    "max_relative_difference": 0.0,
+    "within_tolerance": true,
+    "tolerance": 0.01
+  },
+  "development_data_signature": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b"
+}

@@ -1,0 +1,67 @@
+{
+  "ci_lower": [
+    -0.9684371386864042,
+    -0.19879462903761705,
+    -0.015430558951477259,
+    -0.754698689135649,
+    -0.4899444070471275,
+    -0.6508924648104014,
+    -0.7752772320686026,
+    -0.9109172838886714,
+    -0.7608034804835103,
+    -1.8592595652739916,
+    -0.9720449380088108,
+    NaN,
+    -1.009124994551938,
+    -1.7757796147624392,
+    0.41464779240916855,
+    0.6685624724101139
+  ],
+  "confidence": 0.8,
+  "gate_risk_decision": {
+    "positive_pairs": 0,
+    "risk_conditions": {
+      "at_least_4_of_5_pairs_positive": false,
+      "i_aurc_regret": false,
+      "i_regret80": false,
+      "no_strata_below_floor": false,
+      "pr_auc_minus_prevalence": false,
+      "trims_positive": false
+    },
+    "risk_passed": false,
+    "status": "RISK_DECISION_FAILED",
+    "strata_min_i_aurc": -0.9576020541427818
+  },
+  "gate_task": {
+    "conditions": {
+      "at_least_3_distinct_oracle": true,
+      "base_not_worse_than_idle": true,
+      "base_vs_random_improvement": true,
+      "nonzero_regret_frac_ge_20pct": true,
+      "spearman_ci_lower_positive": true
+    },
+    "passed": true,
+    "status": "TASK_QUALIFIED"
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4C-MULTIACTION-REGRET-2026-09-15-V0.1",
+  "point": [
+    -0.5076655989345995,
+    0.004622159569731815,
+    0.013627075922646004,
+    -0.40403765816455367,
+    -0.17774965216848018,
+    -0.30734014719867375,
+    -0.38609314075903944,
+    -0.5433394093539832,
+    -0.23756006776574495,
+    -0.9576020541427818,
+    -0.5105677939927457,
+    NaN,
+    -0.5346660484617816,
+    -1.2042332204492265,
+    0.4496807417111974,
+    0.7232912886752663
+  ],
+  "role": "development_screen",
+  "status": "STAGE4C_DEV_NOT_READY_FOR_CONFIRMATION"
+}

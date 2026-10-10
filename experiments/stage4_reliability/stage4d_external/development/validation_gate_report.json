@@ -1,0 +1,76 @@
+{
+  "baseline_receipt": {
+    "aurc_regret": {
+      "MARGIN_ONLY": 0.11242288642702786,
+      "SEED_MARGIN_STD": 0.12245444381609238,
+      "SEED_VOTE_ENTROPY": 0.11781916337781646
+    },
+    "historical_reference_aurc": {
+      "COMBINED_TOP2_MAX": 0.11060180843477496
+    },
+    "n_groups": 1500,
+    "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+    "pr_auc_minus_prevalence": {
+      "MARGIN_ONLY": 0.012637333321046551,
+      "SEED_MARGIN_STD": -0.00955486554120999,
+      "SEED_VOTE_ENTROPY": 0.007320718929882508
+    },
+    "regret_at_80": {
+      "MARGIN_ONLY": 0.11716124732908059,
+      "SEED_MARGIN_STD": 0.11764397074645852,
+      "SEED_VOTE_ENTROPY": 0.1173412943340188
+    },
+    "strongest_standard_baseline": "MARGIN_ONLY",
+    "tie_break_order": [
+      "MARGIN_ONLY",
+      "SEED_VOTE_ENTROPY",
+      "SEED_MARGIN_STD"
+    ],
+    "tie_tolerance": 1e-12
+  },
+  "bindings": {
+    "train_data_sha256": "2b6a81bc6bc59937653e896f0cd7b9728667256324a69937fda724ba67b98aa7",
+    "train_predictions_sha256": "4183f5f1a72aa2e41a261361e845c0f0628ec40ceb384e5a91320ea3d6c56797",
+    "train_scores_sha256": "10525c8f1b7495616b3005bfbc2abc8ac1d92239b3392659abc4ea5afeb26f57",
+    "validation_data_sha256": "7befe3dd5d74cacb7a960feedba9df056833209f27514d839e94cffdaf394995",
+    "validation_predictions_sha256": "451c71066617046c70bc519e06499605c771e917ef59c358c6485056dd6cdda4",
+    "validation_scores_sha256": "52c6f903ff140c7b087681e618fa4aeb763cc78f70d9a31c8cf01e4e9417ec4e"
+  },
+  "conditions": {
+    "c1_i_aurc_regret": true,
+    "c2_i_regret80": true,
+    "c3_seeds_positive": true,
+    "c4_finite_matching": true
+  },
+  "interaction_threshold": 11.53877460000361,
+  "metrics": {
+    "aurc_regret_baseline": 0.11242288642702786,
+    "aurc_regret_ensemble": 0.0772147617633589,
+    "i_aurc_regret": 0.31317577570401617,
+    "i_regret80": 0.18750158933827563,
+    "regret80_baseline": 0.11716124732908059,
+    "regret80_ensemble": 0.09519332724602318,
+    "seed_i_aurc": [
+      0.3152284770882719,
+      0.29967323265197615,
+      0.29189024597526636,
+      0.2914329116413206,
+      0.30761555491330905
+    ],
+    "seed_i_regret80": [
+      0.1871377564260959,
+      0.18617164249307405,
+      0.18439506346128512,
+      0.18689094545267843,
+      0.1895394201369136
+    ],
+    "seeds_i_aurc_positive": 5,
+    "seeds_i_regret80_positive": 5
+  },
+  "n_groups": 1500,
+  "passed": true,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "status": "STAGE4D_EXTERNAL_VALIDATION_QUALIFIED",
+  "strongest_standard_baseline": "MARGIN_ONLY",
+  "written_at": "2026-09-23T13:41:00"
+}

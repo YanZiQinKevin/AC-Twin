@@ -1,0 +1,36 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-15-V0.4",
+  "role": "development",
+  "experiment_name": "stage2b_intersection_development_v04",
+  "analysis_status": "DEVELOPMENT",
+  "collection_seed": 2026091609,
+  "seed_schedule_size": 60000,
+  "max_attempts": 60000,
+  "config_signature": "705dc0aa79834d3e7a52b18e677c29b8b339f7b404f4904167725755e8fc8862",
+  "config_sha256": "a80ad20eed7cb7c880c5746605667b0ad91d64d9b5cdebd19356b565648b8801",
+  "seed_schedule_sha256": "c3630f8b40ec92ccde38578454d17d809a8fbdfb15604c6f2925c5680506ff10",
+  "zero_overlap": {
+    "historical_episode_seeds": 62255,
+    "other_role_schedules": [
+      "pilot_a",
+      "pilot_b",
+      "smoke"
+    ],
+    "disjoint": true
+  },
+  "bindings": {
+    "profile_selection": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage2b_intersection\\profile_selection_v04.json",
+      "sha256": "70702f9d492dbb2e679cff433e8d1982825484fb26acf3dcb57959f7146ac23b"
+    }
+  },
+  "environment": {
+    "python_version": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy_version": "1.26.4",
+    "torch_version": "2.9.1+cu130",
+    "highway_env_version": "1.10.2",
+    "gymnasium_version": "1.3.0"
+  },
+  "manifest_sha256": "5386e3086611ecd1d66a0d6f02d2fa6225541922d3624ae95caf9c3ee968a183"
+}

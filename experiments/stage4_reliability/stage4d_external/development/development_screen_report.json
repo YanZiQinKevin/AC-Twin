@@ -1,0 +1,243 @@
+{
+  "baseline_curves": {
+    "curves": {
+      "MARGIN_ONLY": {
+        "aurc_regret": 0.10920664200916164,
+        "aurc_regret_ci80": [
+          0.10636075969500146,
+          0.1120337708811049
+        ],
+        "pr_auc_minus_prevalence": 0.0012462084598873213,
+        "pr_auc_minus_prevalence_ci80": [
+          -0.006584154227916873,
+          0.010391416862646607
+        ],
+        "regret_at_80": 0.11381288964800165,
+        "regret_at_80_ci80": [
+          0.11146749351273212,
+          0.11617103526898852
+        ],
+        "role": "strongest_standard_baseline"
+      },
+      "SEED_MARGIN_STD": {
+        "aurc_regret": 0.11584589427994128,
+        "aurc_regret_ci80": [
+          0.11287393469145753,
+          0.11878935552807716
+        ],
+        "pr_auc_minus_prevalence": -0.012693221559307521,
+        "pr_auc_minus_prevalence_ci80": [
+          -0.02047764730442143,
+          -0.003994858305297798
+        ],
+        "regret_at_80": 0.11363810055397959,
+        "regret_at_80_ci80": [
+          0.11134908444788207,
+          0.11595729305067859
+        ],
+        "role": "standard_baseline"
+      },
+      "SEED_VOTE_ENTROPY": {
+        "aurc_regret": 0.11531148392421955,
+        "aurc_regret_ci80": [
+          0.11217133192987018,
+          0.11816870828229391
+        ],
+        "pr_auc_minus_prevalence": 0.0017420224094504277,
+        "pr_auc_minus_prevalence_ci80": [
+          -0.0037114760991563303,
+          0.0072072445271240465
+        ],
+        "regret_at_80": 0.11429110355910915,
+        "regret_at_80_ci80": [
+          0.11170840531278178,
+          0.11633060544763317
+        ],
+        "role": "standard_baseline"
+      }
+    },
+    "disclosure": {
+      "frozen_primary_baseline": "MARGIN_ONLY",
+      "note": "only the validation-frozen baseline is adjudicated; a different screen strongest baseline is disclosed but never substituted (plan 8.3)",
+      "screen_strongest_differs_from_frozen": false,
+      "screen_strongest_standard_baseline": "MARGIN_ONLY"
+    }
+  },
+  "bootstrap": {
+    "confidence": 0.8,
+    "design": "whole-group paired bootstrap; every metric of a draw recomputed from the SAME resample index vector; two-sided 80% CI from the resample quantiles",
+    "n_resamples": 10000,
+    "seed": 2026122101
+  },
+  "gate_risk_x_dev": {
+    "baseline_denominators": {
+      "aurc_regret": 0.10920664200916164,
+      "regret_at_80": 0.11381288964800165
+    },
+    "baseline_valid": true,
+    "conditions": {
+      "r1_i_aurc_regret": true,
+      "r2_i_regret80": true,
+      "r3_pr_auc_minus_prevalence": true,
+      "r4_seed_consistency_both_positive": true,
+      "r5_baseline_denominators_valid": true,
+      "r6_no_leak_no_baseline_swap_no_model_swap": true
+    },
+    "min_positive_seeds": 4,
+    "passed": true,
+    "seeds_both_directions_positive": 5
+  },
+  "gate_task_x_dev": {
+    "baseline_valid": true,
+    "conditions": {
+      "c1_completeness_and_qa": true,
+      "c2_high_regret_frac_ge_15pct": true,
+      "c3_at_least_3_oracle_actions_ge_5pct": true,
+      "c4_branch_spearman_ci_lower_positive": true,
+      "c5_base_beats_random_and_not_worse_than_idle": false,
+      "c6_reactive_response_ge_20pct": true,
+      "c7_strata_each_ge_10pct": true,
+      "c8_denominators_projection_mask_valid": true
+    },
+    "eval_mask_nondegenerate": true,
+    "high_regret_frac": 0.7795,
+    "oracle_action_shares": [
+      0.122,
+      0.1345,
+      0.03325,
+      0.07125,
+      0.11575,
+      0.1335,
+      0.095,
+      0.276,
+      0.013,
+      0.00575
+    ],
+    "oracle_actions_covered_ge_5pct": 7,
+    "passed": false,
+    "projection_nondegenerate": true,
+    "reactive_frac": 0.266,
+    "stratum_counts": {
+      "interaction_high": 1970,
+      "interaction_low": 2030,
+      "tstar_high": 2064,
+      "tstar_low": 1936
+    },
+    "stratum_fracs": {
+      "interaction_high": 0.4925,
+      "interaction_low": 0.5075,
+      "tstar_high": 0.516,
+      "tstar_low": 0.484
+    }
+  },
+  "metrics": {
+    "ci_lower": {
+      "aurc_baseline": 0.10636075969500146,
+      "aurc_model": 0.07514572847918477,
+      "base_mean_regret": 0.11004312939785757,
+      "base_vs_random_improvement": 0.007768916583015719,
+      "high_regret_frac": 0.771,
+      "i_aurc_regret": 0.27091315792448645,
+      "i_regret80": 0.17709947966572884,
+      "idle_mean_regret": 0.10836551219705234,
+      "margin_only_aurc": 0.10636075969500146,
+      "margin_only_pr": -0.006584154227916873,
+      "margin_only_regret80": 0.11146749351273212,
+      "pr_auc_minus_prevalence": 0.11523695464894493,
+      "random_mean_regret": 0.11370399336933527,
+      "regret80_baseline": 0.11146749351273212,
+      "regret80_model": 0.09012474662107053,
+      "seed9101_i_aurc": 0.26255071377196854,
+      "seed9101_i_regret80": 0.17737205047663052,
+      "seed9202_i_aurc": 0.25908748843815294,
+      "seed9202_i_regret80": 0.1740991589876561,
+      "seed9303_i_aurc": 0.256549598651477,
+      "seed9303_i_regret80": 0.17271998770403932,
+      "seed9404_i_aurc": 0.2648614359189647,
+      "seed9404_i_regret80": 0.17974834206518292,
+      "seed9505_i_aurc": 0.2647925671202761,
+      "seed9505_i_regret80": 0.17413804533778263,
+      "seed_margin_std_aurc": 0.11287393469145753,
+      "seed_margin_std_pr": -0.02047764730442143,
+      "seed_margin_std_regret80": 0.11134908444788207,
+      "seed_vote_entropy_aurc": 0.11217133192987018,
+      "seed_vote_entropy_pr": -0.0037114760991563303,
+      "seed_vote_entropy_regret80": 0.11170840531278178,
+      "spearman_branch": 0.3985100602180944
+    },
+    "ci_upper": {
+      "aurc_baseline": 0.1120337708811049,
+      "aurc_model": 0.07980524313413359,
+      "base_mean_regret": 0.11417064826087953,
+      "base_vs_random_improvement": 0.03900533591005335,
+      "high_regret_frac": 0.78775,
+      "i_aurc_regret": 0.3094806324864357,
+      "i_regret80": 0.19966342333537218,
+      "idle_mean_regret": 0.11219595269193963,
+      "margin_only_aurc": 0.1120337708811049,
+      "margin_only_pr": 0.010391416862646607,
+      "margin_only_regret80": 0.11617103526898852,
+      "pr_auc_minus_prevalence": 0.12791287901478676,
+      "random_mean_regret": 0.11593691754716137,
+      "regret80_baseline": 0.11617103526898852,
+      "regret80_model": 0.0946068223570878,
+      "seed9101_i_aurc": 0.3026372657383872,
+      "seed9101_i_regret80": 0.2005300999975692,
+      "seed9202_i_aurc": 0.2982031701949541,
+      "seed9202_i_regret80": 0.19720046421123585,
+      "seed9303_i_aurc": 0.29606813184048325,
+      "seed9303_i_regret80": 0.19553735073772743,
+      "seed9404_i_aurc": 0.30505686480160854,
+      "seed9404_i_regret80": 0.2028951890892553,
+      "seed9505_i_aurc": 0.30343047883000823,
+      "seed9505_i_regret80": 0.19747926292729137,
+      "seed_margin_std_aurc": 0.11878935552807716,
+      "seed_margin_std_pr": -0.003994858305297798,
+      "seed_margin_std_regret80": 0.11595729305067859,
+      "seed_vote_entropy_aurc": 0.11816870828229391,
+      "seed_vote_entropy_pr": 0.0072072445271240465,
+      "seed_vote_entropy_regret80": 0.11633060544763317,
+      "spearman_branch": 0.42465585949437573
+    },
+    "point": {
+      "aurc_baseline": 0.10920664200916164,
+      "aurc_model": 0.07745419610562126,
+      "base_mean_regret": 0.11213097555205527,
+      "base_vs_random_improvement": 0.02342858230916389,
+      "high_regret_frac": 0.7795,
+      "i_aurc_regret": 0.2907556291390827,
+      "i_regret80": 0.1886041480330037,
+      "idle_mean_regret": 0.11026176919459037,
+      "margin_only_aurc": 0.10920664200916164,
+      "margin_only_pr": 0.0012462084598873213,
+      "margin_only_regret80": 0.11381288964800165,
+      "pr_auc_minus_prevalence": 0.12152754284827016,
+      "random_mean_regret": 0.11482107045196545,
+      "regret80_baseline": 0.11381288964800165,
+      "regret80_model": 0.09234730656076603,
+      "seed9101_i_aurc": 0.28322074445635975,
+      "seed9101_i_regret80": 0.18947444768209556,
+      "seed9202_i_aurc": 0.27910829549287713,
+      "seed9202_i_regret80": 0.1863866412332838,
+      "seed9303_i_aurc": 0.27682434325685484,
+      "seed9303_i_regret80": 0.18510149465420717,
+      "seed9404_i_aurc": 0.2854612825844508,
+      "seed9404_i_regret80": 0.1914661870334885,
+      "seed9505_i_aurc": 0.2845443889290707,
+      "seed9505_i_regret80": 0.18536354047340725,
+      "seed_margin_std_aurc": 0.11584589427994128,
+      "seed_margin_std_pr": -0.012693221559307521,
+      "seed_margin_std_regret80": 0.11363810055397959,
+      "seed_vote_entropy_aurc": 0.11531148392421955,
+      "seed_vote_entropy_pr": 0.0017420224094504277,
+      "seed_vote_entropy_regret80": 0.11429110355910915,
+      "spearman_branch": 0.4116421407420329
+    }
+  },
+  "n_groups": 4000,
+  "passed": false,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "quantities_receipt_sha256": "e6d14cb84ff952d66d499689d039895683098f456d53bbecf6a8f3e40cd028fa",
+  "status": "STAGE4D_EXTERNAL_DEV_NOT_READY",
+  "written_at": "2026-09-24T08:06:14"
+}

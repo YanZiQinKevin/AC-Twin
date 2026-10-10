@@ -1,0 +1,37 @@
+{
+  "status": "AUTHOR_APPROVED_FULL_PNG",
+  "confirmed_date": "2026-10-03",
+  "authority": "Direct user instruction in this conversation; synchronized to PAPER_CANON",
+  "author_instruction": "fig 5 的图，固定为 Fig5_metadrive_external_validation.png",
+  "manuscript_figure_number": "Fig. 5",
+  "canonical_asset": "paper/figures/fig5/Fig5_metadrive_external_validation.png",
+  "sha256": "9d7e72d16c8fd57ac431508b5b6317d4c7623a8301cdeb0c0a2e0a80aabc3055",
+  "dimensions_pixels": [
+    4251,
+    3779
+  ],
+  "figure_size_mm": [
+    180,
+    160
+  ],
+  "panels": {
+    "a": "MetaDrive native scene",
+    "b": "Same-scene factual and counterfactual tracks",
+    "c": "Correctly flagged high-regret qualitative case",
+    "d": "Mechanically selected worst false-negative"
+  },
+  "legend": "paper/figures/fig5/FIGURE_LEGEND.md",
+  "supporting_formats": [
+    "paper/figures/fig5/Fig5_metadrive_external_validation.svg",
+    "paper/figures/fig5/Fig5_metadrive_external_validation.pdf"
+  ],
+  "historical_assets": [
+    "paper/figures/fig5/Fig5_platform_panel.svg",
+    "paper/figures/fig5/Fig5_platform_panel.png",
+    "paper/figures/fig5/Fig5_platform_panel.pdf",
+    "paper/figures/fig5/archive_author_fixed/"
+  ],
+  "supplementary_cases_status": "ARCHIVE_ONLY; qualitative cases are in main Figure 5c/d; no separate current Fig. S-cases",
+  "inference_scope": "Qualitative illustration only; population results remain Figure 3c and Table 6",
+  "image_bytes_changed": false
+}

@@ -1,0 +1,582 @@
+{
+ "CONFIDNET_TCP_ADAPTED|grid0|8101": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid0\\CONFIDNET_TCP_ADAPTED_seed8101.pt",
+  "state_sha256": "1500b49767b63f0f139438f39e02bbdeee35424b69abbd7ca665435298362a2c",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid0|8202": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid0\\CONFIDNET_TCP_ADAPTED_seed8202.pt",
+  "state_sha256": "1f626c4f21c1a55b8a710a588e51ec0094e9deabaa5db9b9f5b8302c7bc6a927",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid0|8303": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid0\\CONFIDNET_TCP_ADAPTED_seed8303.pt",
+  "state_sha256": "26e14941f6406703e499c3fbc25d28c7713b065a45ebe25b0d78f80c7e515317",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid0|8404": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid0\\CONFIDNET_TCP_ADAPTED_seed8404.pt",
+  "state_sha256": "53c23769a4abce36ad00618675f3e39f49c968ccb8e8c970eca4b8fc021deffb",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid0|8505": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid0\\CONFIDNET_TCP_ADAPTED_seed8505.pt",
+  "state_sha256": "950b56a48cbef5b958e93af7564a718eade9f98d6ab7fa3074ebd84380e35d36",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid1|8101": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid1\\CONFIDNET_TCP_ADAPTED_seed8101.pt",
+  "state_sha256": "0e6eae9480adc5c33e4ac37371b945800d81a8038875cad842791bf4e1db7b8a",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid1|8202": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid1\\CONFIDNET_TCP_ADAPTED_seed8202.pt",
+  "state_sha256": "d26d7262a19e07684de7a6843c76e02a1b455a5ce48e8a979907528672f8a1d6",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid1|8303": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid1\\CONFIDNET_TCP_ADAPTED_seed8303.pt",
+  "state_sha256": "e6f4eb726a538d3ed3a049680568fb80aaa3d9037b4cd08f5d5076f291982c46",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid1|8404": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid1\\CONFIDNET_TCP_ADAPTED_seed8404.pt",
+  "state_sha256": "e2475af95033a06c8b06b5f9bce66dd75a7edd621b0b2ea7f3c33a675ff4246d",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid1|8505": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid1\\CONFIDNET_TCP_ADAPTED_seed8505.pt",
+  "state_sha256": "6c2320a9fb17a5f5996d49d9e709c24494a44f3f4432e7a3b2b931ee5b16afd5",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid2|8101": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid2\\CONFIDNET_TCP_ADAPTED_seed8101.pt",
+  "state_sha256": "dc6ad19a9963f82268d813a557d4b83a3392685180bf6d8a84fbcd7e039f619e",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid2|8202": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid2\\CONFIDNET_TCP_ADAPTED_seed8202.pt",
+  "state_sha256": "b38420aa363fc2b615e5820b198e07ba83acfd0258286bead8dc62ac322acd1f",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid2|8303": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid2\\CONFIDNET_TCP_ADAPTED_seed8303.pt",
+  "state_sha256": "aa9abcb6921a65173719b5dbb33a1c00fe2bf774bfce76110d14fd75e22c6034",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid2|8404": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid2\\CONFIDNET_TCP_ADAPTED_seed8404.pt",
+  "state_sha256": "0b1088083fb8087fd74eb84a29f83d89b116e4ff7481c09ed0cf0316b7cfe840",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "CONFIDNET_TCP_ADAPTED|grid2|8505": {
+  "method_id": "CONFIDNET_TCP_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFIDNET_TCP_ADAPTED\\grid2\\CONFIDNET_TCP_ADAPTED_seed8505.pt",
+  "state_sha256": "d815cab87a4b55bcc0a201bd75c80ead074a710746fb684d1880055de5f15473",
+  "param_count": 9665,
+  "notes": {}
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid0|8101": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid0\\SELECTIVENET_REGRET_ADAPTED_seed8101.pt",
+  "state_sha256": "4a3a571ff167e31c76aab1f3b799cc3a682eed95d062cfc196196fa77eab1235",
+  "param_count": 11331,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid0|8202": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid0\\SELECTIVENET_REGRET_ADAPTED_seed8202.pt",
+  "state_sha256": "59f67dbd9e83e5112345e5bc3064f1cdd63a5e8cbf428a5142babeb129b12a69",
+  "param_count": 11331,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid0|8303": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid0\\SELECTIVENET_REGRET_ADAPTED_seed8303.pt",
+  "state_sha256": "15b8e6658db9ed7c7d1b1b8e2065d1e58bf7d87d28f3e1e882c3245d342d307b",
+  "param_count": 11331,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid0|8404": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid0\\SELECTIVENET_REGRET_ADAPTED_seed8404.pt",
+  "state_sha256": "0845dba2991f91510a5ae83e8cd8e9b05a08b8596726dcf9200814ac91bfc5a5",
+  "param_count": 11331,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid0|8505": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid0\\SELECTIVENET_REGRET_ADAPTED_seed8505.pt",
+  "state_sha256": "f86e754b60590c056f1ac8f010bb85d4ecbe2ae7d9ba81e83460bf2edb762dd1",
+  "param_count": 11331,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid1|8101": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid1\\SELECTIVENET_REGRET_ADAPTED_seed8101.pt",
+  "state_sha256": "abc553bef1946a553a632da6311dc0a6d0d2151ab263ad71df9cca0560e5dee1",
+  "param_count": 23139,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid1|8202": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid1\\SELECTIVENET_REGRET_ADAPTED_seed8202.pt",
+  "state_sha256": "bcc88fa4c6fa844b0f55121804ea1c7f2ef0589991b7feaf3519545426b53f90",
+  "param_count": 23139,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid1|8303": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid1\\SELECTIVENET_REGRET_ADAPTED_seed8303.pt",
+  "state_sha256": "f3290bf61ad814ec67b15d7e642dc5e462e3518fca8ec569a324744687f9f593",
+  "param_count": 23139,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid1|8404": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid1\\SELECTIVENET_REGRET_ADAPTED_seed8404.pt",
+  "state_sha256": "1b3c8e2d54861c520439727cfdb5ad573d16305d941ca6ccf93ada0f7f3773f8",
+  "param_count": 23139,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "SELECTIVENET_REGRET_ADAPTED|grid1|8505": {
+  "method_id": "SELECTIVENET_REGRET_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\SELECTIVENET_REGRET_ADAPTED\\grid1\\SELECTIVENET_REGRET_ADAPTED_seed8505.pt",
+  "state_sha256": "c50eff07182c0cabe57c74868e905beb96983e7f7ddd2d575d0c6013fec8a143",
+  "param_count": 23139,
+  "notes": {
+   "target_coverage": 0.8
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid0|8101": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid0\\RWR_NN_KNN_REJECT_ADAPTED_seed8101.pt",
+  "state_sha256": "8c9648975ed7fffe032dc63188603410375bd2517f9f7ae63d566d88498a113f",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid0|8202": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid0\\RWR_NN_KNN_REJECT_ADAPTED_seed8202.pt",
+  "state_sha256": "35c5d494885bd26a98fcbec8dc4e2429037dc47c034cb3ea93704926b13dbf56",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid0|8303": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid0\\RWR_NN_KNN_REJECT_ADAPTED_seed8303.pt",
+  "state_sha256": "fdc9d2e12e9ad40620444fe6d043f9977351207d1c1b30d8fe78abcc5d16da14",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid0|8404": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid0\\RWR_NN_KNN_REJECT_ADAPTED_seed8404.pt",
+  "state_sha256": "e3c8dae03c1a9428bf2f14bd3134cc457e6245c8eaa35ff6f8fd721cf18ba6df",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid0|8505": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid0\\RWR_NN_KNN_REJECT_ADAPTED_seed8505.pt",
+  "state_sha256": "7693528ba7b0080e44a23bc37886cea64f90602618eb18bae5cd9f4d38f21a46",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid1|8101": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid1\\RWR_NN_KNN_REJECT_ADAPTED_seed8101.pt",
+  "state_sha256": "ff4e8e961cbcd76b0c5c131c5407a550c1db437612bc333b7aa088d4a225b722",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid1|8202": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid1\\RWR_NN_KNN_REJECT_ADAPTED_seed8202.pt",
+  "state_sha256": "6a7857db47be87d2817d699cc13fd36262b0cd5cb1322fdfa9ca91f57cde683d",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid1|8303": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid1\\RWR_NN_KNN_REJECT_ADAPTED_seed8303.pt",
+  "state_sha256": "d8e1c943bbd5a8ca963b26af33b91d3babee0ec1d83fe524451cf0daa00a69b4",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid1|8404": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid1\\RWR_NN_KNN_REJECT_ADAPTED_seed8404.pt",
+  "state_sha256": "33ea7089f8291e1297bf250185b1e6ff550463177e97d3ec332e4003d965ea4a",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid1|8505": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid1\\RWR_NN_KNN_REJECT_ADAPTED_seed8505.pt",
+  "state_sha256": "9b5a244328f8b6a4f9407e97b941dbab90bd3c9e1f68ed2bb406dfadb0f2ba28",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid2|8101": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid2\\RWR_NN_KNN_REJECT_ADAPTED_seed8101.pt",
+  "state_sha256": "fd980724f8f697adeb0fcae136af7f7d393736d3bb5a80bf59353361f98de084",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid2|8202": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid2\\RWR_NN_KNN_REJECT_ADAPTED_seed8202.pt",
+  "state_sha256": "4806ae91a23e7453cbdef33b15ddcc79562001167219b0e790402254fc78fe15",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid2|8303": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid2\\RWR_NN_KNN_REJECT_ADAPTED_seed8303.pt",
+  "state_sha256": "2b38f0a6220c720e9d361ce69c1d9bb7dfd490bda5161515e9a7abfce882f663",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid2|8404": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid2\\RWR_NN_KNN_REJECT_ADAPTED_seed8404.pt",
+  "state_sha256": "33552ff7aac545b29ea03858c10abdfc0e8573694d0b9769532549928141dd19",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "RWR_NN_KNN_REJECT_ADAPTED|grid2|8505": {
+  "method_id": "RWR_NN_KNN_REJECT_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\RWR_NN_KNN_REJECT_ADAPTED\\grid2\\RWR_NN_KNN_REJECT_ADAPTED_seed8505.pt",
+  "state_sha256": "991631c6baeaf30c6cd1dc20c1980457d1a5d3a6f008b9304b6611a8caab1ee9",
+  "param_count": 11201,
+  "notes": {
+   "reference_groups": 5000
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8101": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid0\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8101.pt",
+  "state_sha256": "1be61ee404eba25db8c52fdea8c1db8d01a168b8e3177cc9e4c523e0a9e9f8a3",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8202": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid0\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8202.pt",
+  "state_sha256": "0775bce958f23564ec4eb4b0b90e4361c678f8e290591e0b2025c9c207b04c2a",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8303": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid0\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8303.pt",
+  "state_sha256": "fa996114bb822ee1b61cbc5ddbcb3916af23fc1b575787d4d66410b9d51aa0a5",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8404": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid0\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8404.pt",
+  "state_sha256": "4a2e1295129b0cb5dacd17f45890d1450a82ba4f9078a1d2179699c2e55d3bf0",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8505": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid0\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8505.pt",
+  "state_sha256": "acc91ba241976598294d29f891ea999d73f48830cc78e8a4c16f2a0c2a49c51e",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8101": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid1\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8101.pt",
+  "state_sha256": "231f9be0b76eb96b5e2725b054a7e275fc4f484ce15fb4d3728e06b7d677451b",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8202": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid1\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8202.pt",
+  "state_sha256": "14a704388ab66be3cf069c49c1dc6a716327b546463cb178bf527087a7a3385b",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8303": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid1\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8303.pt",
+  "state_sha256": "13972203fd977ccdbbd12efa94717d4e22156356cf04d2a3ed6b6cac071c3b38",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8404": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid1\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8404.pt",
+  "state_sha256": "5f84603e3e780c855be19bb19f71f3900e00fd88e574d02a03cb8f15ace7d409",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8505": {
+  "method_id": "CONFORMAL_REGRESSION_REJECT_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CONFORMAL_REGRESSION_REJECT_ADAPTED\\grid1\\CONFORMAL_REGRESSION_REJECT_ADAPTED_seed8505.pt",
+  "state_sha256": "1114ec2d72b2796ce4ce663e4ec188b4e11005262d9dcf3d9c05a40d6f24860b",
+  "param_count": 11201,
+  "notes": {
+   "fit_groups": 3988,
+   "calibration_groups": 1012,
+   "fit_calibration_disjoint": true,
+   "qhat_monotone": true
+  }
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8101": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid0\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8101.pt",
+  "state_sha256": "a7dcccbce89b284703008f0ecf6c5b094644c5646dd91f031bdd4d8027c08f9e",
+  "param_count": 9794,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8202": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid0\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8202.pt",
+  "state_sha256": "2f0f7bf457ff75c4dddcb62027e1d773c20b1fdb8f2857a741704e800f648e66",
+  "param_count": 9794,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8303": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid0\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8303.pt",
+  "state_sha256": "bfac4d90d9f2de141d4a3ea34612b779883aa4e19e89f9e122b06e59186ad118",
+  "param_count": 9794,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8404": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid0\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8404.pt",
+  "state_sha256": "9a915c16936d8815efa29070a19f904df49a1efb964a667df42afb2c08645cce",
+  "param_count": 9794,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8505": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid0\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8505.pt",
+  "state_sha256": "0443057daff7cb17f7b075cf15fe528606b368e09189260ee2e876b3767e2120",
+  "param_count": 9794,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8101": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8101,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid1\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8101.pt",
+  "state_sha256": "4afed95119214598f7ddd0f5e7f9379e6a9b0352fbf774db15ea6100569d1faf",
+  "param_count": 11522,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8202": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8202,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid1\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8202.pt",
+  "state_sha256": "661d9340d6c01d17a4e6cd5279f8f7bc8b92c88e1fdb8663c1881fb286b6331a",
+  "param_count": 11522,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8303": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8303,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid1\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8303.pt",
+  "state_sha256": "883638a00f09daccb685da7f65afd57818ac2017e9158c78f0c5adcda813cc1f",
+  "param_count": 11522,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8404": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8404,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid1\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8404.pt",
+  "state_sha256": "bf0e2696d061322aa89db457984e7b4490a44909af9583f3d65175713bc9d601",
+  "param_count": 11522,
+  "notes": {}
+ },
+ "CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8505": {
+  "method_id": "CCTR_DRIVING_CALIBRATION_ADAPTED",
+  "seed": 8505,
+  "state_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage5_sota_comparison\\development\\models\\CCTR_DRIVING_CALIBRATION_ADAPTED\\grid1\\CCTR_DRIVING_CALIBRATION_ADAPTED_seed8505.pt",
+  "state_sha256": "8238d44b08114c0443398617d02009d9252a7216db60abc4205c1d2752beac04",
+  "param_count": 11522,
+  "notes": {}
+ }
+}

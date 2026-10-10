@@ -1,0 +1,36 @@
+{
+  "scene": "merge",
+  "seed": 11,
+  "condition": "uniform_suffix",
+  "intervention": "fixed_m1_checkpoint_suffix_swap",
+  "checkpoint_path": "uniform_suffix_seed11.pt",
+  "checkpoint_sha256": "9fb45cddc16b63c00da4d8a497ad90792b310c31110d1a3d405c48c6d9f4cfeb",
+  "source_data_sha256": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+  "normalization_sha256": "7514e8e327e9a1328b47e6acc9e03cdd11b2c94e5ffc60e800f3011d14be0cae",
+  "validation_manifest_sha256": "0f11d5e1279817e16ad8e49396dcdf9663bb5373bd2a5bb7d7f6f6e687c2d576",
+  "implementation": {
+    "run_stage1_evidence_value.py": "5faccf60f0034abbe33e6545a6c1d65b2703bcf1ff925af1d9f5fd2848997520",
+    "ac_twin/stage1_model.py": "78c520d3f2310e3ee17010316d9ebe566fe0d5ce39fb94bad56181914b164be5",
+    "ac_twin/stage1_data.py": "4d16921b79264f589a13393e0c9e61a34af63f0694462b0a508dab22f06409f4",
+    "ac_twin/stage1_statistics.py": "c70526209b2aae7ffb5456c5618d47a1c71228e6431b9c1434a472e53932b03b"
+  },
+  "inference_device": "cuda:0",
+  "training_performed": false,
+  "checkpoint_modified": false,
+  "correct_suffix_matches_sealed_val": true,
+  "correct_suffix_max_abs_diff_vs_sealed": 0.0,
+  "output_shape": [
+    300,
+    20,
+    5,
+    2
+  ],
+  "output_finite": true,
+  "mask_qa": {
+    "self_match": 0,
+    "n_validation": 300,
+    "correct_suffix_mask_count": 15000,
+    "shuffled_suffix_mask_count": 15000
+  },
+  "generated_at": "2026-09-07T17:45:10"
+}

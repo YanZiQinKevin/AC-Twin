@@ -1,0 +1,12 @@
+﻿profile,eligible,priority,selected
+JOINT_OOD,True,1,True
+BEHAVIOR_OOD,False,2,False
+GEOMETRY_OOD,True,3,False
+
+feature,absolute_smd,threshold,shifted
+mean_abs_relative_speed,0.059454823390189024,0.5,False
+merging_relative_speed,0.07715988891923131,0.5,False
+clip_ttc,0.10063910768029395,0.5,False
+min_ego_distance,1.0956293171993923,0.5,True
+density_30m,1.1685947157018433,0.5,True
+merging_longitudinal_gap,2.3074148916280435,0.5,True

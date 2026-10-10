@@ -1,0 +1,541 @@
+{
+  "experiment": "identity_continuity_final_smoke",
+  "scene": "merge",
+  "device": "cpu",
+  "evaluation_mode": "development_test",
+  "test_index_source": "source_data",
+  "source_data": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\merge_2000\\object_twinworld_2000.npz",
+  "source_data_sha256": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+  "frozen_test_data": null,
+  "frozen_test_data_sha256": null,
+  "test_dataset_sha256": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+  "n_source": 2000,
+  "n_train": 64,
+  "n_validation": 16,
+  "n_test": 16,
+  "n_frozen_test": 0,
+  "config_signature": "1b3a1fa405e3c17ec6797483e6d3736c998c6bf688e66c4f78bfa4c60d7b0145",
+  "config": {
+    "experiment_name": "identity_continuity_final_smoke",
+    "scene": "merge",
+    "smoke_test": true,
+    "source_data": "data/object_centric_stage/merge_2000/object_twinworld_2000.npz",
+    "output_dir": "experiments/identity_continuity_stage/final_smoke",
+    "capacity_tiers": [
+      "65k"
+    ],
+    "conditions": [
+      {
+        "name": "stable_temporal",
+        "order_mode": "stable",
+        "encoder_type": "identity_temporal"
+      },
+      {
+        "name": "distance_temporal",
+        "order_mode": "distance",
+        "encoder_type": "identity_temporal"
+      },
+      {
+        "name": "permuted_temporal",
+        "order_mode": "permuted",
+        "encoder_type": "identity_temporal"
+      },
+      {
+        "name": "set_pool",
+        "order_mode": "stable",
+        "encoder_type": "set"
+      }
+    ],
+    "factual_suffix_steps": 10,
+    "permutation_seed": 20260905,
+    "progress_every_epochs": 1,
+    "sample_limits": {
+      "train": 64,
+      "validation": 16,
+      "test": 16
+    },
+    "model": {
+      "action_embedding_dim": 8,
+      "batch_size": 32,
+      "max_epochs": 2,
+      "early_stopping_patience": 2,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "training_seeds": [
+        11
+      ]
+    },
+    "statistics": {
+      "bootstrap_resamples": 100,
+      "confidence_level": 0.95
+    }
+  },
+  "training_seeds": [
+    11
+  ],
+  "feature_names": [
+    "presence",
+    "is_ego",
+    "x",
+    "y",
+    "vx",
+    "vy",
+    "cos_heading",
+    "sin_heading"
+  ],
+  "train_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    11,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    33,
+    34,
+    36,
+    38,
+    39,
+    40,
+    42,
+    43,
+    45,
+    47,
+    48,
+    52,
+    53,
+    54,
+    55,
+    56,
+    58,
+    59,
+    61,
+    62,
+    63,
+    65,
+    67,
+    70,
+    71,
+    72,
+    74,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    91,
+    92
+  ],
+  "validation_indices": [
+    0,
+    10,
+    20,
+    30,
+    31,
+    32,
+    44,
+    50,
+    51,
+    60,
+    64,
+    68,
+    75,
+    85,
+    89,
+    94
+  ],
+  "test_indices": [
+    6,
+    12,
+    15,
+    27,
+    35,
+    37,
+    41,
+    46,
+    49,
+    57,
+    66,
+    69,
+    73,
+    90,
+    93,
+    95
+  ],
+  "test_episode_seeds": [
+    12653696,
+    1510469925,
+    2133719742,
+    2118945493,
+    649452709,
+    110218289,
+    707781059,
+    1975222700,
+    287544316,
+    1244693880,
+    1791294187,
+    475454963,
+    1803272522,
+    461042131,
+    1970975241,
+    165406362
+  ],
+  "results": {
+    "stable_temporal_65k": {
+      "name": "stable_temporal",
+      "order_mode": "stable",
+      "encoder_type": "identity_temporal",
+      "capacity_tier": "65k",
+      "target_parameters": 65000,
+      "hidden_dim": 52,
+      "parameters": 65770,
+      "training_seeds": [
+        11
+      ],
+      "runs": [
+        {
+          "status": "complete",
+          "seed": 11,
+          "parameters": 65770,
+          "hidden_dim": 52,
+          "epochs_run": 2,
+          "best_epoch": 1,
+          "best_val_mse": 0.712856113910675,
+          "runtime_seconds": 0.15400450000015553,
+          "ADE": 2.4800009727478027,
+          "FDE": 3.6219959259033203
+        }
+      ],
+      "fde_by_seed_episode": [
+        [
+          0.459654837846756,
+          2.474623918533325,
+          0.7111648321151733,
+          0.28838175535202026,
+          1.3862909078598022,
+          11.197564125061035,
+          4.428990840911865,
+          0.551943838596344,
+          4.374950885772705,
+          10.088839530944824,
+          8.572049140930176,
+          0.7011321783065796,
+          0.5264257192611694,
+          0.4765019416809082,
+          0.44796478748321533,
+          11.265451431274414
+        ]
+      ],
+      "ade_by_seed_episode": [
+        [
+          0.502826452255249,
+          1.9177370071411133,
+          0.7008367776870728,
+          0.4023891091346741,
+          1.2007018327713013,
+          6.572464942932129,
+          3.531726360321045,
+          0.5064888596534729,
+          3.6370110511779785,
+          5.521913528442383,
+          5.491617202758789,
+          1.2701003551483154,
+          0.4925301969051361,
+          0.39967483282089233,
+          0.4381054937839508,
+          7.093893527984619
+        ]
+      ],
+      "ADE": 2.4800010956823826,
+      "FDE": 3.6219956669956446
+    },
+    "distance_temporal_65k": {
+      "name": "distance_temporal",
+      "order_mode": "distance",
+      "encoder_type": "identity_temporal",
+      "capacity_tier": "65k",
+      "target_parameters": 65000,
+      "hidden_dim": 52,
+      "parameters": 65770,
+      "training_seeds": [
+        11
+      ],
+      "runs": [
+        {
+          "status": "complete",
+          "seed": 11,
+          "parameters": 65770,
+          "hidden_dim": 52,
+          "epochs_run": 2,
+          "best_epoch": 1,
+          "best_val_mse": 0.7129220366477966,
+          "runtime_seconds": 0.1267744000069797,
+          "ADE": 2.4800076484680176,
+          "FDE": 3.622084140777588
+        }
+      ],
+      "fde_by_seed_episode": [
+        [
+          0.45959022641181946,
+          2.4748752117156982,
+          0.7100322842597961,
+          0.2885976731777191,
+          1.3873010873794556,
+          11.197244644165039,
+          4.429038047790527,
+          0.5514910221099854,
+          4.3756608963012695,
+          10.089751243591309,
+          8.572367668151855,
+          0.7014711499214172,
+          0.5257927775382996,
+          0.47667980194091797,
+          0.4481980800628662,
+          11.265252113342285
+        ]
+      ],
+      "ade_by_seed_episode": [
+        [
+          0.5024273991584778,
+          1.917893409729004,
+          0.7004586458206177,
+          0.40308088064193726,
+          1.2009230852127075,
+          6.572054386138916,
+          3.5317540168762207,
+          0.5064322352409363,
+          3.636845350265503,
+          5.5222320556640625,
+          5.491976261138916,
+          1.270033836364746,
+          0.4924052655696869,
+          0.39980676770210266,
+          0.43810850381851196,
+          7.093687534332275
+        ]
+      ],
+      "ADE": 2.480007477104664,
+      "FDE": 3.6220839954912663
+    },
+    "permuted_temporal_65k": {
+      "name": "permuted_temporal",
+      "order_mode": "permuted",
+      "encoder_type": "identity_temporal",
+      "capacity_tier": "65k",
+      "target_parameters": 65000,
+      "hidden_dim": 52,
+      "parameters": 65770,
+      "training_seeds": [
+        11
+      ],
+      "runs": [
+        {
+          "status": "complete",
+          "seed": 11,
+          "parameters": 65770,
+          "hidden_dim": 52,
+          "epochs_run": 2,
+          "best_epoch": 1,
+          "best_val_mse": 0.7128238677978516,
+          "runtime_seconds": 0.13119770000048447,
+          "ADE": 2.4806244373321533,
+          "FDE": 3.622469902038574
+        }
+      ],
+      "fde_by_seed_episode": [
+        [
+          0.4596784710884094,
+          2.4761595726013184,
+          0.7132276892662048,
+          0.2885023057460785,
+          1.3851064443588257,
+          11.198332786560059,
+          4.428799629211426,
+          0.5534384846687317,
+          4.374725818634033,
+          10.089573860168457,
+          8.57351303100586,
+          0.7025132775306702,
+          0.5272388458251953,
+          0.4749023914337158,
+          0.4472240209579468,
+          11.266583442687988
+        ]
+      ],
+      "ade_by_seed_episode": [
+        [
+          0.5031647086143494,
+          1.919724702835083,
+          0.702614426612854,
+          0.4032275080680847,
+          1.1996084451675415,
+          6.57293701171875,
+          3.5317769050598145,
+          0.5074511766433716,
+          3.6380398273468018,
+          5.523007869720459,
+          5.492302894592285,
+          1.2711613178253174,
+          0.4934726357460022,
+          0.3987160325050354,
+          0.43765291571617126,
+          7.0951337814331055
+        ]
+      ],
+      "ADE": 2.480624509975314,
+      "FDE": 3.6224700044840574
+    },
+    "set_pool_65k": {
+      "name": "set_pool",
+      "order_mode": "stable",
+      "encoder_type": "set",
+      "capacity_tier": "65k",
+      "target_parameters": 65000,
+      "hidden_dim": 48,
+      "parameters": 64266,
+      "training_seeds": [
+        11
+      ],
+      "runs": [
+        {
+          "status": "complete",
+          "seed": 11,
+          "parameters": 64266,
+          "hidden_dim": 48,
+          "epochs_run": 2,
+          "best_epoch": 2,
+          "best_val_mse": 0.7418686747550964,
+          "runtime_seconds": 0.07296979999227915,
+          "ADE": 2.485714912414551,
+          "FDE": 3.660061836242676
+        }
+      ],
+      "fde_by_seed_episode": [
+        [
+          0.5035597085952759,
+          2.471849203109741,
+          0.5964415073394775,
+          0.5407898426055908,
+          1.446119785308838,
+          11.225460052490234,
+          4.488655090332031,
+          0.5868930220603943,
+          4.4635162353515625,
+          9.983257293701172,
+          8.555034637451172,
+          0.750284731388092,
+          0.5728738307952881,
+          0.5429620146751404,
+          0.4921466112136841,
+          11.341146469116211
+        ]
+      ],
+      "ade_by_seed_episode": [
+        [
+          0.4773986339569092,
+          1.9488227367401123,
+          0.69697505235672,
+          0.4633437991142273,
+          1.2411935329437256,
+          6.562809944152832,
+          3.558687210083008,
+          0.45690956711769104,
+          3.568974733352661,
+          5.490479469299316,
+          5.498767852783203,
+          1.3603894710540771,
+          0.46433013677597046,
+          0.44798365235328674,
+          0.4592020511627197,
+          7.075168609619141
+        ]
+      ],
+      "ADE": 2.4857147783041,
+      "FDE": 3.660061877220869
+    }
+  },
+  "predictions_file": "predictions.npz",
+  "normalization_file": "normalization.npz",
+  "hierarchical_paired_contrasts": {
+    "65k": {
+      "primary": {
+        "permuted_temporal_minus_stable_temporal": {
+          "reference_condition": "permuted_temporal",
+          "candidate_condition": "stable_temporal",
+          "training_seeds": [
+            11
+          ],
+          "independent_units": [
+            "training_seed",
+            "test_episode"
+          ],
+          "status": "unavailable",
+          "reason": "At least two training seeds and two test episodes are required for hierarchical bootstrap"
+        },
+        "distance_temporal_minus_stable_temporal": {
+          "reference_condition": "distance_temporal",
+          "candidate_condition": "stable_temporal",
+          "training_seeds": [
+            11
+          ],
+          "independent_units": [
+            "training_seed",
+            "test_episode"
+          ],
+          "status": "unavailable",
+          "reason": "At least two training seeds and two test episodes are required for hierarchical bootstrap"
+        }
+      },
+      "secondary": {
+        "set_pool_minus_stable_temporal": {
+          "reference_condition": "set_pool",
+          "candidate_condition": "stable_temporal",
+          "training_seeds": [
+            11
+          ],
+          "independent_units": [
+            "training_seed",
+            "test_episode"
+          ],
+          "status": "unavailable",
+          "reason": "At least two training seeds and two test episodes are required for hierarchical bootstrap"
+        }
+      }
+    }
+  },
+  "decision": "SMOKE_ONLY",
+  "qa": {
+    "fairness": "PENDING",
+    "object_multiset": "PENDING",
+    "ego_slot": "PENDING",
+    "permutation": "PENDING",
+    "data_consistency": "PENDING",
+    "capacity": "PENDING",
+    "finite_values": "PENDING",
+    "resume": "PENDING",
+    "holdout_collection": "PENDING"
+  }
+}

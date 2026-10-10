@@ -1,0 +1,37 @@
+{
+  "experiment_name": "stage4c_merge_multiaction",
+  "plan_id": "AC-TWIN-RFER-STAGE4C-MULTIACTION-REGRET-2026-09-15-V0.1",
+  "purpose": "stage4c_merge_multiaction_dev",
+  "role": "development_selection",
+  "partial": false,
+  "requested_groups": 500,
+  "accepted_groups": 500,
+  "counterfactual_branches": 5000,
+  "attempts": 1004,
+  "collection_seed": 2026091800,
+  "seed_schedule_sha256": "455af281605b6f13a20e09d2cf05434ae73f00bb32f913aeaec64f629fe980fb",
+  "skip_counts": {
+    "prefix_terminated": 504,
+    "object_prefix_mismatch": 0,
+    "factual_future_short": 0,
+    "counterfactual_future_short": 0,
+    "non_finite": 0,
+    "short_history": 0,
+    "initial_fingerprint_mismatch": 0,
+    "present_set_mismatch": 0,
+    "eval_mask_mismatch": 0,
+    "no_legal_agent_time": 0
+  },
+  "prefix_max_abs_diff": 0.0,
+  "environment": {
+    "python_version": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy_version": "1.26.4",
+    "torch_version": "2.9.1+cu130",
+    "highway_env_version": "1.10.2",
+    "gymnasium_version": "1.3.0"
+  },
+  "config_signature": "04ad4f8e50144fd380834810193ea4353541b87e017d318090468c34691a4991",
+  "generated_at": "2026-09-16T00:56:16",
+  "data_output_sha256": "2447ae8a19192bcefae313f4d454ff0af916b2bf302bd35cddb5068704445dc4"
+}

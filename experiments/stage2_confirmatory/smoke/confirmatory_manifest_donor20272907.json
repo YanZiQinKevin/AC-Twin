@@ -1,0 +1,151 @@
+{
+  "split": 2,
+  "records": [
+    {
+      "recipient_index": 0,
+      "donor_index": 8,
+      "recipient_episode_seed": 233528582,
+      "donor_episode_seed": 1647220831,
+      "split": 2,
+      "tier": 4,
+      "cf_action_match": false,
+      "cf_duration_match": false,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 1,
+      "donor_index": 4,
+      "recipient_episode_seed": 1313688158,
+      "donor_episode_seed": 1733361479,
+      "split": 2,
+      "tier": 4,
+      "cf_action_match": false,
+      "cf_duration_match": false,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 2,
+      "donor_index": 6,
+      "recipient_episode_seed": 1687015559,
+      "donor_episode_seed": 1702062979,
+      "split": 2,
+      "tier": 4,
+      "cf_action_match": false,
+      "cf_duration_match": true,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 3,
+      "donor_index": 1,
+      "recipient_episode_seed": 452397356,
+      "donor_episode_seed": 1313688158,
+      "split": 2,
+      "tier": 4,
+      "cf_action_match": false,
+      "cf_duration_match": true,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 4,
+      "donor_index": 0,
+      "recipient_episode_seed": 1733361479,
+      "donor_episode_seed": 233528582,
+      "split": 2,
+      "tier": 4,
+      "cf_action_match": false,
+      "cf_duration_match": false,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 5,
+      "donor_index": 10,
+      "recipient_episode_seed": 1778414737,
+      "donor_episode_seed": 1629990876,
+      "split": 2,
+      "tier": 2,
+      "cf_action_match": true,
+      "cf_duration_match": true,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 6,
+      "donor_index": 3,
+      "recipient_episode_seed": 1702062979,
+      "donor_episode_seed": 452397356,
+      "split": 2,
+      "tier": 4,
+      "cf_action_match": false,
+      "cf_duration_match": false,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 7,
+      "donor_index": 2,
+      "recipient_episode_seed": 930106944,
+      "donor_episode_seed": 1687015559,
+      "split": 2,
+      "tier": 4,
+      "cf_action_match": true,
+      "cf_duration_match": false,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 8,
+      "donor_index": 7,
+      "recipient_episode_seed": 1647220831,
+      "donor_episode_seed": 930106944,
+      "split": 2,
+      "tier": 4,
+      "cf_action_match": false,
+      "cf_duration_match": false,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 9,
+      "donor_index": 11,
+      "recipient_episode_seed": 1320275236,
+      "donor_episode_seed": 1946853033,
+      "split": 2,
+      "tier": 2,
+      "cf_action_match": true,
+      "cf_duration_match": true,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 10,
+      "donor_index": 5,
+      "recipient_episode_seed": 1629990876,
+      "donor_episode_seed": 1778414737,
+      "split": 2,
+      "tier": 2,
+      "cf_action_match": true,
+      "cf_duration_match": true,
+      "visible_count_match": true
+    },
+    {
+      "recipient_index": 11,
+      "donor_index": 9,
+      "recipient_episode_seed": 1946853033,
+      "donor_episode_seed": 1320275236,
+      "split": 2,
+      "tier": 2,
+      "cf_action_match": true,
+      "cf_duration_match": true,
+      "visible_count_match": true
+    }
+  ],
+  "qa": {
+    "episodes": 12,
+    "self_match": 0,
+    "duplicate_donor": 0,
+    "cross_split": 0,
+    "same_seed": 0,
+    "tier_counts": {
+      "2": 4,
+      "4": 8
+    }
+  },
+  "donor_seed": 20272907,
+  "algorithm_sha256": "4d16921b79264f589a13393e0c9e61a34af63f0694462b0a508dab22f06409f4",
+  "data_sha256": "cdc70c6a98f21ce1eb0a6b907ecfb5c7614c805714be5a56a5e835162114f226"
+}

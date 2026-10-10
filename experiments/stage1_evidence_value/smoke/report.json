@@ -1,0 +1,130 @@
+{
+  "experiment": "stage1_evidence_value_smoke",
+  "scene": "merge",
+  "device": "cpu",
+  "evaluation_mode": "development_test",
+  "smoke_test": true,
+  "source_data": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\merge_2000\\object_twinworld_2000.npz",
+  "source_data_sha256": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+  "validation_manifest_sha256": "19614c1196490cf20e06eea9d9e4503d9573476aaa8af877157d20e3ce5b59ba",
+  "test_manifest_sha256": "b9f9a05177afe9557e920f6bdfddbbb59ba81b93b41a0b54b61cdaccaa480671",
+  "n_train": 64,
+  "n_validation": 16,
+  "n_test": 16,
+  "config_signature": "4dcdedc5d5f4aac413a7be366ed1f748ee38ba9085e0d17568c682f78ee5dd10",
+  "config": {
+    "experiment_name": "stage1_evidence_value_smoke",
+    "scene": "merge",
+    "smoke_test": true,
+    "source_data": "data/object_centric_stage/merge_2000/object_twinworld_2000.npz",
+    "output_dir": "experiments/stage1_evidence_value/smoke",
+    "evaluation_mode": "development_test",
+    "factual_suffix_steps": 10,
+    "progress_every_epochs": 5,
+    "sample_limits": {
+      "train": 64,
+      "validation": 16,
+      "test": 16
+    },
+    "conditions": [
+      {
+        "name": "no_suffix",
+        "suffix_mode": "none"
+      },
+      {
+        "name": "uniform_suffix",
+        "suffix_mode": "correct"
+      },
+      {
+        "name": "shuffled_suffix",
+        "suffix_mode": "shuffled"
+      }
+    ],
+    "derangement": {
+      "base_seed": 20260907,
+      "validation_seed": 20261907,
+      "test_seed": 20262907
+    },
+    "model": {
+      "object_embedding_dim": 64,
+      "hidden_dim": 64,
+      "action_embedding_dim": 8,
+      "batch_size": 32,
+      "max_epochs": 2,
+      "early_stopping_patience": 2,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip_norm": 5.0,
+      "training_seeds": [
+        11
+      ]
+    },
+    "statistics": {
+      "bootstrap_resamples": 100,
+      "confidence_level": 0.95,
+      "zero_response_tolerance_m": 0.0001,
+      "positive_response_quantiles": [
+        0.3333333333,
+        0.6666666667
+      ],
+      "eta_epsilon_m": 0.0001,
+      "eta_sensitivity_epsilons_m": [
+        1e-06,
+        0.001
+      ],
+      "bootstrap_seed": 20260907
+    }
+  },
+  "training_seeds": [
+    11
+  ],
+  "feature_names": [
+    "presence",
+    "is_ego",
+    "x",
+    "y",
+    "vx",
+    "vy",
+    "cos_heading",
+    "sin_heading"
+  ],
+  "response_bins": {
+    "zero_tolerance": 0.0001,
+    "positive_quantiles": [
+      0.3333333333,
+      0.6666666667
+    ],
+    "t1": 0.24198150668691956,
+    "t2": 1.8240865174259548,
+    "n_train_positive": 819
+  },
+  "qa": {
+    "validation_manifest": {
+      "episodes": 16,
+      "self_match": 0,
+      "duplicate_donor": 0,
+      "cross_split": 0,
+      "same_seed": 0,
+      "tier_counts": {
+        "1": 14,
+        "4": 2
+      }
+    },
+    "test_manifest": {
+      "episodes": 16,
+      "self_match": 0,
+      "duplicate_donor": 0,
+      "cross_split": 0,
+      "same_seed": 0,
+      "tier_counts": {
+        "1": 8,
+        "2": 2,
+        "4": 6
+      }
+    }
+  },
+  "analysis": {
+    "decision": "SMOKE_ONLY"
+  },
+  "decision": "SMOKE_ONLY"
+}

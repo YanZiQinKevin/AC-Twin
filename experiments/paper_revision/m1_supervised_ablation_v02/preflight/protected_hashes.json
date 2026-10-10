@@ -1,0 +1,26 @@
+{
+  "hashes": {
+    "paper/figures/fig2/fig2_ac_twin_method_overview_v4.png": "149aa707b0957122e9bdf341069a5a406eb643a14bc14a3cffe4c875c6efb017",
+    "paper/figures/fig4/readme.md": "e797060efc421097d2a5c066ef3d5aefb07c813befe01c317a5e617f508120af",
+    "paper/figures/fig5/fixed_case_cost_explanation.md": "f7225f39fd623bbc0c774e5951e38817d4ee72a8f370478dd20505a0816362fb",
+    "paper/figures/fig5_2/direct_audit_head_architecture_v2.png": "755227bdf6d6f0207bacc43a37af21cb3ec282d8a00ce4fcb3326d3d8ada2235",
+    "paper/manuscript/2026-10-06_正文精简与审稿意见修改说明.md": "ca2473710137196e1ceec1d98a809c83da62d8099c7280e8293078fc4c716d00",
+    "paper/manuscript/ac-twin_5.2节_结构图预览.docx": "5d0576adfec7b509d0e8e032d429b67abdffe5f7f4442e5f0e89568cfbb4e775",
+    "paper/manuscript/ac-twin_论文初稿_中文.md": "c3e7dc9fc5a8133c28bb0a04acda3c098eb4bb61242546ecba50eb9e28dea9a8",
+    "paper/manuscript/ac-twin_论文初稿_中文_word版.docx": "1fb2689749de3aaa51f851b46e62cac2f303c834c7ea2c0760c3ac9fdcf935df",
+    "paper/manuscript/ac-twin_论文初稿_中文_word版_m5修订.docx": "609b5c6f241aac243a50e0991a997cc9aec21ab152b39116421acc034a6c5e62",
+    "paper/manuscript/chapter4_supplementary_values.md": "85b1efd62dd1c9321cf1c5209b4029e024d045212981bef3108c154c877040ca",
+    "paper/manuscript/evidence_map.md": "746ef2a29278f2a7dc468473b787ca3c15855a3b27be0b72f461c98849af9a84",
+    "paper/manuscript/formula_contract.md": "99b0097f1695bd7fceb7a39aab785d9b2bf7952211facef7b1eb11f255f883eb",
+    "paper/manuscript/readme.md": "5b9de720c12b593bb3de2b479932ae881ed5171bcb361a45d0f8aa0e6490cf54",
+    "paper/manuscript/supplementary_methods.md": "28f285787ec2118b54c9b03fb9577a2e9d2c2067430d6f6184e2081a4535b7f3",
+    "paper/manuscript/terminology_ledger.md": "f93117d41c685509c906453a4ca8ece83b57e65df2fc19af9d055fd5566249e9",
+    "paper/tables/table1/table_s_related_work_matrix.md": "f639b85714c0c6f7fb1c73e842c29fffe42d5ee4bf0bc349e1b9427e63247a74",
+    "paper/tables/table2/table_ii.md": "eca4f0fb14ec0654a3803c9db27e694766854d38fce61a8a43ef4a653cc1278b",
+    "paper/tables/table_stage5_sota/table_stage5_comparison_main.md": "01bb64824c6b030123e3555a68c71a7d9b90aab8f2556f7c0180896e8158fe7d",
+    "paper/tables/tables1/readme.md": "2e625ab254f86e2e8a0b8736cd93850f5375b6c6c440efc785eccfa94759df2c",
+    "paper/tables/tables4/readme.md": "4b5e7d7b2bacff5df91c986d80f407f47e8a9a487dc53573420a3a42fa6136c8"
+  },
+  "plan_id": "AC-TWIN-RFER-M1-SUPERVISED-ABLATION-2026-10-07-V0.2",
+  "scope": "paper/manuscript artifacts + manuscript-linked figure/table files (read-only protection)"
+}

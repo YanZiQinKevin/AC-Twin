@@ -1,0 +1,85 @@
+{
+  "architecture": "state_full",
+  "candidates": {
+    "0.0": {
+      "training": {
+        "architecture": "state_full",
+        "best_val_loss": 0.30073786955160214,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\learned_screen\\candidates\\state_full_learned_router_r1101.pt",
+        "condition": "learned_router",
+        "config": {
+          "architecture": "state_full",
+          "condition": "learned_router",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.0,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 19,
+        "name": "state_full_learned_router_r1101",
+        "router_seed": 1101,
+        "signature": "d2b7f2a3842320d237ddfd3b731e5e1522b1ba636ad0a39d4c730c107ecee752",
+        "state": "COMPLETE"
+      },
+      "validation_effect_ade": 0.29434251550145285,
+      "validation_gate_means": {
+        "0": [
+          0.4869588613510132
+        ],
+        "1": [
+          0.49676382541656494
+        ],
+        "2": [
+          0.5003845691680908
+        ],
+        "3": [
+          0.4989646375179291
+        ]
+      }
+    },
+    "0.05": {
+      "training": {
+        "architecture": "state_full",
+        "best_val_loss": 0.2997823177862451,
+        "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\learned_screen\\candidates\\state_full_learned_router_r1101_ls0p05.pt",
+        "condition": "learned_router",
+        "config": {
+          "architecture": "state_full",
+          "condition": "learned_router",
+          "hidden_dim": 64,
+          "horizon": 20,
+          "response_feature_dim": 32,
+          "shape_lambda": 0.05,
+          "shape_margin": 0.1
+        },
+        "epochs_run": 19,
+        "name": "state_full_learned_router_r1101_ls0p05",
+        "router_seed": 1101,
+        "signature": "60cc907044eeeb29750f0773ff5160794b58dc5f48a8f9b18504c95f41f2a95b",
+        "state": "COMPLETE"
+      },
+      "validation_effect_ade": 0.29169317964668146,
+      "validation_gate_means": {
+        "0": [
+          0.5738348960876465
+        ],
+        "1": [
+          0.4726518392562866
+        ],
+        "2": [
+          0.5103386640548706
+        ],
+        "3": [
+          0.5215741991996765
+        ]
+      }
+    }
+  },
+  "oracle_report_sha256": "dffe908d34d6668165e7e17e8d95fb6cdadf4caee9c5de8706e3512173397103",
+  "pair_index": 0,
+  "selection_role": "validation",
+  "shape_lambda": 0.05,
+  "shape_margin": 0.1,
+  "status": "LEARNED_FINALIST_FROZEN"
+}

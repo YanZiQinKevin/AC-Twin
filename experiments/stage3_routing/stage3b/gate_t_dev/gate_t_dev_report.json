@@ -1,0 +1,145 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3B-2026-09-10-V0.1",
+  "gate": "T_dev",
+  "sets": {
+    "A": {
+      "ade": {
+        "uniform_suffix": 0.249113026469362,
+        "direct": 0.25227673966528896,
+        "dual_router": 0.24510877514715398,
+        "oracle_reference": 0.1708066408571914
+      },
+      "c_uniform": 0.004004251322208042,
+      "c_direct": 0.007167964518134934,
+      "rel_uniform": 0.016074034260510732,
+      "rel_direct": 0.028413101135067436,
+      "rel_uniform_ci80_lower": -0.0028247332151454495,
+      "rel_direct_ci80_lower": 0.02154081311084192,
+      "oracle_gap": 0.07830638561217064,
+      "leave_one_pair_out": [
+        {
+          "dropped_pair": 0,
+          "c_uniform": 0.008871093574149358,
+          "c_direct": 0.007890746669097348,
+          "direction_stable": true
+        },
+        {
+          "dropped_pair": 1,
+          "c_uniform": -0.003970404223802992,
+          "c_direct": 0.007932657667857711,
+          "direction_stable": false
+        },
+        {
+          "dropped_pair": 2,
+          "c_uniform": 0.009043892928501537,
+          "c_direct": 0.008749750346558484,
+          "direction_stable": true
+        },
+        {
+          "dropped_pair": 3,
+          "c_uniform": 0.003177738748550339,
+          "c_direct": 0.007147202207258972,
+          "direction_stable": true
+        },
+        {
+          "dropped_pair": 4,
+          "c_uniform": 0.0028989355836419573,
+          "c_direct": 0.004119465699902158,
+          "direction_stable": true
+        }
+      ],
+      "lopo_direction_stable": false,
+      "n_episodes": 300,
+      "checks": {
+        "technical_ok": true,
+        "oracle_beats_uniform": true,
+        "dual_vs_direct_point_ge5": false,
+        "dual_vs_uniform_point_ge5": false,
+        "ci80_lower_gt0": false,
+        "audit_ok": true
+      },
+      "data_signature": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b"
+    },
+    "B": {
+      "ade": {
+        "uniform_suffix": 0.2729519762443365,
+        "direct": 0.27922459032416275,
+        "dual_router": 0.27207347012986494,
+        "oracle_reference": 0.1959341638926812
+      },
+      "c_uniform": 0.0008785061144715134,
+      "c_direct": 0.007151120194297812,
+      "rel_uniform": 0.0032185372920147215,
+      "rel_direct": 0.02561063904148197,
+      "rel_uniform_ci80_lower": -0.014961948065985275,
+      "rel_direct_ci80_lower": 0.019624275879221116,
+      "oracle_gap": 0.07701781235165525,
+      "leave_one_pair_out": [
+        {
+          "dropped_pair": 0,
+          "c_uniform": 0.007817986737139578,
+          "c_direct": 0.006935480764418904,
+          "direction_stable": true
+        },
+        {
+          "dropped_pair": 1,
+          "c_uniform": -0.0038073622187755475,
+          "c_direct": 0.009000632319001979,
+          "direction_stable": false
+        },
+        {
+          "dropped_pair": 2,
+          "c_uniform": 0.004866847582834682,
+          "c_direct": 0.008938317002355438,
+          "direction_stable": true
+        },
+        {
+          "dropped_pair": 3,
+          "c_uniform": -0.0023315445952928286,
+          "c_direct": 0.007592345900239776,
+          "direction_stable": false
+        },
+        {
+          "dropped_pair": 4,
+          "c_uniform": -0.002153396933548315,
+          "c_direct": 0.0032888249854729754,
+          "direction_stable": false
+        }
+      ],
+      "lopo_direction_stable": false,
+      "n_episodes": 400,
+      "checks": {
+        "technical_ok": true,
+        "oracle_beats_uniform": true,
+        "dual_vs_direct_point_ge5": false,
+        "dual_vs_uniform_point_ge5": false,
+        "ci80_lower_gt0": false,
+        "audit_ok": true
+      },
+      "data_signature": "4031aaaeb98a51cb101c195adbd10b436a9e69f1addde1fb0f0900d6a442dd82"
+    }
+  },
+  "six_checks_pass": {
+    "A": false,
+    "B": false
+  },
+  "technical": {
+    "reconstruction_ok": true,
+    "ablation_ok": true,
+    "no_oracle_leakage": true
+  },
+  "audit_ok": true,
+  "n_resamples": 2000,
+  "confidence_level": 0.8,
+  "note": "A/B 分别计算并各自裁判，episode 不合并；开发门非确认结果。",
+  "status": "STAGE3_DEV_NOT_READY_FOR_CONFIRMATION",
+  "passed": false,
+  "verdict": {
+    "passed": false,
+    "checks": {
+      "six_A": false,
+      "six_B": false
+    },
+    "status": "STAGE3_DEV_NOT_READY_FOR_CONFIRMATION"
+  }
+}

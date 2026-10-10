@@ -1,0 +1,130 @@
+{
+  "screen_seed": 101,
+  "results": [
+    {
+      "run": "h64_r32_l0.1_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "best_val_loss": 0.0996728204190731,
+      "epochs_run": 33,
+      "signature": "b7e753ca3146aa9dd9f2003b167945257ade6fd6f6bc3e795c5b8c333d1dcbc7",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r32_l0.1_seed101.pt"
+    },
+    {
+      "run": "h96_r32_l0.1_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "best_val_loss": 0.10753054469823838,
+      "epochs_run": 20,
+      "signature": "2dac69182ad082a073163f10e6d76180565f7afc426d451f69478f31c70ac1e6",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r32_l0.1_seed101.pt"
+    },
+    {
+      "run": "h96_r64_l0.1_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 64,
+        "lambda_cls": 0.1
+      },
+      "best_val_loss": 0.11262583062052726,
+      "epochs_run": 9,
+      "signature": "df3c41333f16025ff840bf8a533929579800941279a8e64b962c1d1b338cd474",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r64_l0.1_seed101.pt"
+    },
+    {
+      "run": "h64_r64_l0.1_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 64,
+        "lambda_cls": 0.1
+      },
+      "best_val_loss": 0.11333227753639222,
+      "epochs_run": 14,
+      "signature": "399f9cc450fd322b183569d69bd293e09feb20790ce5f7dd27a3d66be48d59fa",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r64_l0.1_seed101.pt"
+    },
+    {
+      "run": "h96_r64_l0.25_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 64,
+        "lambda_cls": 0.25
+      },
+      "best_val_loss": 0.14926787465810776,
+      "epochs_run": 11,
+      "signature": "e2b2d915aaf4e7e441690fa595c7cbfa2333183dbb8673e13af7ba259c28dd26",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r64_l0.25_seed101.pt"
+    },
+    {
+      "run": "h96_r32_l0.25_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.25
+      },
+      "best_val_loss": 0.1496390864253044,
+      "epochs_run": 10,
+      "signature": "812f1c63139b0f60a37ed7cd79df8ddbae34cc851fb744ff39ff0cfa12dc227f",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h96_r32_l0.25_seed101.pt"
+    },
+    {
+      "run": "h64_r32_l0.25_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.25
+      },
+      "best_val_loss": 0.15088205486536027,
+      "epochs_run": 10,
+      "signature": "d7cd323b5a9bb45c3471c12172c6491250a3ebeb3d1336fce716eb4490a41e8f",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r32_l0.25_seed101.pt"
+    },
+    {
+      "run": "h64_r64_l0.25_seed101",
+      "state": "COMPLETE",
+      "seed": 101,
+      "config": {
+        "hidden_dim": 64,
+        "response_feature_dim": 64,
+        "lambda_cls": 0.25
+      },
+      "best_val_loss": 0.15104457139968872,
+      "epochs_run": 10,
+      "signature": "65f81efe336886152f42a92faff8ab9bc5a8a7770c4b95d03325ef584352cff2",
+      "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3a\\h64_r64_l0.25_seed101.pt"
+    }
+  ],
+  "finalists": [
+    {
+      "hidden_dim": 64,
+      "response_feature_dim": 32,
+      "lambda_cls": 0.1
+    },
+    {
+      "hidden_dim": 96,
+      "response_feature_dim": 32,
+      "lambda_cls": 0.1
+    }
+  ],
+  "selection_basis": "validation loss only"
+}

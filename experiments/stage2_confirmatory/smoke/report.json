@@ -1,0 +1,23 @@
+{
+  "experiment_name": "stage2_confirmatory_merge_smoke",
+  "analysis_status": "ENGINEERING_SMOKE_ONLY",
+  "plan_id": "AC-TWIN-RFER-STAGE2-HOLDOUT-2026-09-07-V1",
+  "note": "Engineering smoke only: validates the pipeline mechanics. No formal Gate S*/A/B is executed and no scientific claim is made.",
+  "gate_q": {
+    "lock_artifact_hashes": true,
+    "expected_lock_sha256_match": true,
+    "seed_schedule_valid_zero_overlap": true,
+    "accepted_pairs_matches": true,
+    "prefix_consistency": true,
+    "identity_replay": true,
+    "no_training": true,
+    "inference_no_training": true,
+    "predictions_hash_verified": true,
+    "manifests_hash_verified": true,
+    "data_output_hash_verified": true
+  },
+  "gate_q_pass": true,
+  "lock_sha256": "c1f9ffacee0951e6085d0f9246f838ffb3fed8b9cd37fda1354abef4d24d9cd0",
+  "elapsed_seconds": 0.0,
+  "output_signature": "da9de7f744490b22a56435b074f0f5da180f1bc8876c9d60ebb6c01a59e679a9"
+}

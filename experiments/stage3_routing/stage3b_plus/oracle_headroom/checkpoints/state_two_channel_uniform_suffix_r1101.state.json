@@ -1,0 +1,18 @@
+{
+  "architecture": "state_two_channel",
+  "best_val_loss": 0.2759048010760832,
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_two_channel_uniform_suffix_r1101.pt",
+  "condition": "uniform_suffix",
+  "config": {
+    "architecture": "state_two_channel",
+    "condition": "uniform_suffix",
+    "hidden_dim": 64,
+    "horizon": 20,
+    "response_feature_dim": 32
+  },
+  "epochs_run": 26,
+  "name": "state_two_channel_uniform_suffix_r1101",
+  "router_seed": 1101,
+  "signature": "c619ebf9b068a3e6a053c16bba190d33303ceb3632446a5ae04022e8bbef1515",
+  "state": "COMPLETE"
+}

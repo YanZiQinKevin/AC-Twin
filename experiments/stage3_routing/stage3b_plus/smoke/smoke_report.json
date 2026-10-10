@@ -1,0 +1,31 @@
+{
+  "checkpoint_roundtrip": true,
+  "episodes": 12,
+  "epochs": 1,
+  "fairness": {
+    "counts": {
+      "direct": {
+        "total": 11306,
+        "trainable": 11306
+      },
+      "learned": {
+        "total": 11306,
+        "trainable": 11306
+      }
+    },
+    "max_relative_difference": 0.0,
+    "same_state_keys": true,
+    "within_tolerance": true
+  },
+  "losses": {
+    "learned_router": 0.38125520944595337,
+    "route_only_oracle": 0.38222354650497437,
+    "same_information_direct": 0.38034895062446594,
+    "uniform_suffix": 0.38003870844841003
+  },
+  "resumed": false,
+  "state": "ENGINEERING_SMOKE_ONLY",
+  "temporary_gate": {
+    "crossfit_receipt_seen": true
+  }
+}

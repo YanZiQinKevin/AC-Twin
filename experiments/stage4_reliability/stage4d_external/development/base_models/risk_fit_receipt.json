@@ -1,0 +1,22 @@
+{
+  "combined_implementation": "mlp",
+  "paths": {
+    "COMBINED_RISK_HEAD": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\development\\base_models\\risk_combined_risk_head.pt",
+    "GEOMETRY_ONLY": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\development\\base_models\\risk_geometry_only.pt",
+    "RESPONSE_ONLY": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\development\\base_models\\risk_response_only.pt"
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "primary": {
+    "constant_w": 0.6,
+    "primary_predictor": "END_TO_END_MIXTURE",
+    "selection_basis": "lowest 5-pair mean episode effect-ADE on train; tie -> BEST_CONSTANT_W",
+    "train_constant_mean_ade": 0.05345098705346402,
+    "train_e2e_mean_ade": 0.04833440903540893
+  },
+  "risk_fit_config": {
+    "ridge_alpha": 1.0,
+    "winsor_lower_q": 0.01,
+    "winsor_upper_q": 0.99
+  },
+  "written_at": "2026-09-23T13:38:24"
+}

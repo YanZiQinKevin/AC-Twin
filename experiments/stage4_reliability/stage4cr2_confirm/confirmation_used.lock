@@ -1,0 +1,22 @@
+{
+  "bindings": {
+    "collection_receipt_sha256": "a562c841b6650129e68058ad62b616b5bf66521a2b9296569394121564389383",
+    "determinism_receipt_sha256": "7e2ddb9fef1cf88eeb3cb185c116a31f7c06165478aa9c39913bec3bce1c1285",
+    "expected_confirmation_truth_sha256": "35e71f4985ac2fe080876bd67a30290be1757161a85a46a334e49bddc3f0dd9e",
+    "inference_inputs_sha256": "ba84748442c21e3dfb9fe9e0c58c24c3314d45af268dd99839dea3301ea254fc",
+    "inference_receipt_sha256": "d8cbdad637bb5177d4baa383fff0664ff9c07f66d86e7ebd1546633584f80f27",
+    "predictions_sha256": "a805329c546eb7518e62c491e0b8874db5e847cef048b52e265aee297ad1113e",
+    "protocol_lock_sha256": "d355653b56d67d196ea58006d9e96df5a20e06b2b79f803b2513f5a50fe2f363",
+    "risk_scores_sha256": "019c93ceaf50aafc16edbdffe14ebcc2622d5e5b8b3954878eaf2f0dbfc1c60c",
+    "score_freeze_receipt_sha256": "f82aa43eaf703600476af6456f58ee5754b18905ecd1b6636ce3e836a23d0f16",
+    "statistics_code_sha256": "73e1e11fe0039227ed7dc4ac815883a81d7115f5e62bca5affca7add2a3ee31b"
+  },
+  "burned_at": "2026-09-20T07:26:30",
+  "coverage": 0.8,
+  "interaction_threshold": 29.128996473819946,
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "primary_baseline": "SEED_VOTE_ENTROPY",
+  "role": "confirm",
+  "semantics": "one-shot: the sealed confirmation truth may be read only after this lock exists; all confirm scores are frozen and hash-bound above",
+  "t_star_stratum_split": 13
+}

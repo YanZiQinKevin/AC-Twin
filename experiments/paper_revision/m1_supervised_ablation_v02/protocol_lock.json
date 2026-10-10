@@ -1,0 +1,111 @@
+{
+  "arms": [
+    "FULL_MATCHED",
+    "BASELINE3_MATCHED",
+    "NO_RISK_MATCHED"
+  ],
+  "bootstrap": {
+    "draws": 10000,
+    "entropy": 2026100701,
+    "main_ci_quantiles": [
+      0.005,
+      0.995
+    ]
+  },
+  "code_hashes": {
+    "ac_twin/m1_ablation_features.py": "a89185c3cab3f85c14e073c16c3e6fcf15f24e598ce5ad292467a135d822d240",
+    "ac_twin/m1_ablation_protocol.py": "0ac4bc600844dad73d88073d00b06a5d460d051e5f20227922899f8644a395ad",
+    "ac_twin/m1_ablation_statistics.py": "9282844887f98e969754e75905e063fceff31652584f75ee02beb7bd21c4301e",
+    "ac_twin/m1_ablation_training.py": "639cd37117d2366d7b285e7144999780a2f00ad8d012d7f90adcb019822f29a7",
+    "run_m1_ablation.py": "10937b87d81ff6ee7886e765f3bfdde0bfb852dba5fb0d1f839eab617ee20fcd"
+  },
+  "config_sha256": "5e1392f212979328d8b995251c3398f4e77f45206c10b222fd4702dec29acdb0",
+  "contrasts": [
+    [
+      "C1",
+      "FULL_MATCHED",
+      "BASELINE3_MATCHED"
+    ],
+    [
+      "C2",
+      "FULL_MATCHED",
+      "NO_RISK_MATCHED"
+    ],
+    [
+      "C3",
+      "BASELINE3_MATCHED",
+      "SEED_VOTE_ENTROPY"
+    ],
+    [
+      "C4",
+      "BASELINE3_MATCHED",
+      "MARGIN_ONLY"
+    ],
+    [
+      "C5",
+      "BASELINE3_MATCHED",
+      "SEED_MARGIN_STD"
+    ]
+  ],
+  "locked_at": "2026-10-08T01:59:23",
+  "model_seeds": [
+    8101,
+    8202,
+    8303,
+    8404,
+    8505
+  ],
+  "plan_id": "AC-TWIN-RFER-M1-SUPERVISED-ABLATION-2026-10-07-V0.2",
+  "protected_manuscript_hashes": {
+    "paper/figures/fig2/fig2_ac_twin_method_overview_v4.png": "149aa707b0957122e9bdf341069a5a406eb643a14bc14a3cffe4c875c6efb017",
+    "paper/figures/fig4/readme.md": "e797060efc421097d2a5c066ef3d5aefb07c813befe01c317a5e617f508120af",
+    "paper/figures/fig5/fixed_case_cost_explanation.md": "f7225f39fd623bbc0c774e5951e38817d4ee72a8f370478dd20505a0816362fb",
+    "paper/figures/fig5_2/direct_audit_head_architecture_v2.png": "755227bdf6d6f0207bacc43a37af21cb3ec282d8a00ce4fcb3326d3d8ada2235",
+    "paper/manuscript/2026-10-06_\u6b63\u6587\u7cbe\u7b80\u4e0e\u5ba1\u7a3f\u610f\u89c1\u4fee\u6539\u8bf4\u660e.md": "ca2473710137196e1ceec1d98a809c83da62d8099c7280e8293078fc4c716d00",
+    "paper/manuscript/ac-twin_5.2\u8282_\u7ed3\u6784\u56fe\u9884\u89c8.docx": "5d0576adfec7b509d0e8e032d429b67abdffe5f7f4442e5f0e89568cfbb4e775",
+    "paper/manuscript/ac-twin_\u8bba\u6587\u521d\u7a3f_\u4e2d\u6587.md": "c3e7dc9fc5a8133c28bb0a04acda3c098eb4bb61242546ecba50eb9e28dea9a8",
+    "paper/manuscript/ac-twin_\u8bba\u6587\u521d\u7a3f_\u4e2d\u6587_word\u7248.docx": "1fb2689749de3aaa51f851b46e62cac2f303c834c7ea2c0760c3ac9fdcf935df",
+    "paper/manuscript/ac-twin_\u8bba\u6587\u521d\u7a3f_\u4e2d\u6587_word\u7248_m5\u4fee\u8ba2.docx": "609b5c6f241aac243a50e0991a997cc9aec21ab152b39116421acc034a6c5e62",
+    "paper/manuscript/chapter4_supplementary_values.md": "85b1efd62dd1c9321cf1c5209b4029e024d045212981bef3108c154c877040ca",
+    "paper/manuscript/evidence_map.md": "746ef2a29278f2a7dc468473b787ca3c15855a3b27be0b72f461c98849af9a84",
+    "paper/manuscript/formula_contract.md": "99b0097f1695bd7fceb7a39aab785d9b2bf7952211facef7b1eb11f255f883eb",
+    "paper/manuscript/readme.md": "5b9de720c12b593bb3de2b479932ae881ed5171bcb361a45d0f8aa0e6490cf54",
+    "paper/manuscript/supplementary_methods.md": "28f285787ec2118b54c9b03fb9577a2e9d2c2067430d6f6184e2081a4535b7f3",
+    "paper/manuscript/terminology_ledger.md": "f93117d41c685509c906453a4ca8ece83b57e65df2fc19af9d055fd5566249e9",
+    "paper/tables/table1/table_s_related_work_matrix.md": "f639b85714c0c6f7fb1c73e842c29fffe42d5ee4bf0bc349e1b9427e63247a74",
+    "paper/tables/table2/table_ii.md": "eca4f0fb14ec0654a3803c9db27e694766854d38fce61a8a43ef4a653cc1278b",
+    "paper/tables/table_stage5_sota/table_stage5_comparison_main.md": "01bb64824c6b030123e3555a68c71a7d9b90aab8f2556f7c0180896e8158fe7d",
+    "paper/tables/tables1/readme.md": "2e625ab254f86e2e8a0b8736cd93850f5375b6c6c440efc785eccfa94759df2c",
+    "paper/tables/tables4/readme.md": "4b5e7d7b2bacff5df91c986d80f407f47e8a9a487dc53573420a3a42fa6136c8"
+  },
+  "scaler_sha256": {
+    "baseline3": "af1fad8b609c39f3e9e448f55901e1cfc1c350ed256409f0306c1414ea29a57b",
+    "full": "3dc8c2113c8e5054ad19e72f65516206ab2f055927abdbd8e0e09552e5db12e8"
+  },
+  "source_hashes": {
+    "direct_checkpoint_8101": "0f6e24059d565495a0aa310955a852305ead9d7e8dca779cf0945c4302926e8a",
+    "direct_checkpoint_8202": "952dcb473d5a9af881df78f5d5c66bccfa5783336d5307afc3c221375b416f89",
+    "direct_checkpoint_8303": "ce82b3646b02606a35fe475df438ce9753fb64a351a23ca726c28ef155ddfcbb",
+    "direct_checkpoint_8404": "e083c01268de4470d66b62d76815cd3c3fb5e18703a1e3120b9a4f2dbedc58d5",
+    "direct_checkpoint_8505": "db349a2b01e6ea35beee938d775703f5e92efdaf69bc728ab9244afa1a4bdfd9",
+    "feature_scaler": "2f21c11ae248f5883d8e9c4c8fa7efb876ad1afb453ee7eec462509a48104194",
+    "final_selection": "f135fdab973cca25a5ccb37d9c164a6cd3aaae9d5037d8a8099d33d64534b461",
+    "fit_receipt": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+    "model_inventory": "982ec5ea9287f6f82d20e6ea6870f690e60227be3566aea8f17a290d73e77637",
+    "train_collection_receipt": "e5e7a098c8cdc4a1fe00ac27576a337b8f01bbd749f9ebc21921cdaad4f5f126",
+    "train_data": "df240cac7686d885b114b45234a3fa1c9041af2802b68d1c25cfdfe76aac53b8",
+    "train_inference_receipt": "01091c7a010701449b11f7060c6601f112f5c47be111bc6529ef0d685e2a1f15",
+    "train_predictions": "a6e2b372c1128b0dc3832879b29326222277f49ceece1fd2ee587cf81425e076",
+    "train_scores": "fd4747c82ad072ff73896f63b019336248520f10e62c4d966c2704ad4092e3b0",
+    "validation_collection_receipt": "9e7c1d7ca90ef590a88de26d2074692386f587d77db64b9595da04ec97eaa982",
+    "validation_data": "119dc7db4cf24afd2cbc336ba1eb731e7a5d7bbd58e50addccb9f7db0abb50b7",
+    "validation_gate_report": "1dce238289b3223aa2607bb1b84f7b6506600a48b5499a5d9b992b58b49c244b",
+    "validation_inference_receipt": "a39d5459f5fed8b508cae9206a66aba93ba8136677c3cef038a703a16dd78c48",
+    "validation_predictions": "4567fc7927ec8fc0922c72354d95b530be15d9ee17e0c6e57ad3464eb9cfc5d1",
+    "validation_scores": "a5a0ed3475410e9e1274993d5b0ede5c03a8d079db99f86a8f25c6c99c010f72"
+  },
+  "split": {
+    "main": 4500,
+    "monitor": 500
+  }
+}

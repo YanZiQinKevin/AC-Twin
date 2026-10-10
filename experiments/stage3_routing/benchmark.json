@@ -1,0 +1,33 @@
+{
+  "device": "cuda",
+  "date": "2026-09-09",
+  "response": {
+    "epoch_seconds": 36.97003880000193,
+    "peak_memory_gb": 0.14641427993774414,
+    "memory_kind": "VRAM",
+    "device": "cuda",
+    "episodes": 1400,
+    "batch_size": 32,
+    "config": {
+      "hidden_dim": 96,
+      "response_feature_dim": 64
+    },
+    "date": "2026-09-09",
+    "source": "full-epoch response benchmark (full train epoch at widest config)"
+  },
+  "router": {
+    "epoch_seconds": 26.99600719999944,
+    "peak_memory_gb": 0.14893484115600586,
+    "memory_kind": "VRAM",
+    "device": "cuda",
+    "episodes": 1400,
+    "batch_size": 32,
+    "config": {
+      "hidden_dim": 96,
+      "response_feature_dim": 64
+    },
+    "date": "2026-09-09",
+    "source": "full-epoch router benchmark (full train epoch at widest config)"
+  },
+  "note": "Real VRAM measured via torch.cuda.max_memory_allocated."
+}

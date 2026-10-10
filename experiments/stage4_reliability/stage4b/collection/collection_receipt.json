@@ -1,0 +1,53 @@
+{
+  "experiment_name": "stage4b_merge_risk_confirm",
+  "analysis_status": "stage4_merge_risk_confirm",
+  "purpose": "stage4_merge_risk_confirm",
+  "plan_id": "AC-TWIN-RFER-STAGE4B-RISK-CONFIRM-2026-09-15-V0.1",
+  "partial": false,
+  "requested_pairs": 2000,
+  "accepted_pairs": 2000,
+  "attempts": 3251,
+  "collection_seed": 2026091701,
+  "seed_entropy": 2026091701,
+  "strata_per_cell": 200,
+  "selected_n": 2000,
+  "skip_counts": {
+    "prefix_terminated": 1251,
+    "prefix_mismatch": 0,
+    "object_prefix_mismatch": 0,
+    "factual_future_short": 0,
+    "counterfactual_future_short": 0,
+    "non_finite": 0,
+    "short_history": 0,
+    "initial_fingerprint_mismatch": 0,
+    "object_replay_shape_mismatch": 0,
+    "stratum_quota_full": 0
+  },
+  "accepted_strata": {
+    "action_0_duration_1": 200,
+    "action_0_duration_3": 200,
+    "action_1_duration_1": 200,
+    "action_1_duration_3": 200,
+    "action_2_duration_1": 200,
+    "action_2_duration_3": 200,
+    "action_3_duration_1": 200,
+    "action_3_duration_3": 200,
+    "action_4_duration_1": 200,
+    "action_4_duration_3": 200
+  },
+  "prefix_max_abs_diff": 0.0,
+  "identity_max_abs_diff": 0.0,
+  "identity_replay_checks": 20,
+  "protocol_lock_seed_schedule_sha256": "20d33bf751e2ce477d3b8f82ae4a8965ebf84b316692fc2b5b8e23f0faf902a9",
+  "environment": {
+    "python_version": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy_version": "1.26.4",
+    "torch_version": "2.9.1+cu130",
+    "highway_env_version": "1.10.2",
+    "gymnasium_version": "1.3.0"
+  },
+  "config_signature": "2ea216ec029ad411bc93a07ff2e59322cabe985386eaa77268830818ef8a8a0e",
+  "generated_at": "2026-09-15T17:10:02",
+  "data_output_sha256": "a9a381a491e8e9253392f95b0af3bbce5eb27bbcbb43b8ac707d81e8798bde2e"
+}

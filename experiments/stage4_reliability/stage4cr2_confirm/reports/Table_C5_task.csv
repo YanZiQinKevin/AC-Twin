@@ -1,0 +1,35 @@
+section,key,value
+regret_distribution,mean,0.022478492401723511
+regret_distribution,median,0
+regret_distribution,p90,0.087570203257091764
+regret_distribution,p99,0.250949107734592
+regret_distribution,max,0.36778098406497034
+regret_distribution,high_regret_frac,0.22950000000000001
+reference_mean_regret,base_action,0.022478492401723511
+reference_mean_regret,random_action_ten_action_mean,0.082715202868560461
+reference_mean_regret,"always_idle_plan_(1,3)",0.084158408080915487
+within_group_rank_corr,mean,0.35551914528450151
+within_group_rank_corr,median,0.42332902003932971
+within_group_rank_corr,p10,-0.23175527942309687
+within_group_rank_corr,p90,0.82961730886670193
+within_group_rank_corr,frac_negative,0.18149999999999999
+oracle_action_frequency,"a_star=(0, 1)",0.107
+oracle_action_frequency,"a_star=(0, 3)",0.071499999999999994
+oracle_action_frequency,"a_star=(1, 1)",0.075999999999999998
+oracle_action_frequency,"a_star=(1, 3)",0.0545
+oracle_action_frequency,"a_star=(2, 1)",0.047
+oracle_action_frequency,"a_star=(2, 3)",0.029499999999999998
+oracle_action_frequency,"a_star=(3, 1)",0.2145
+oracle_action_frequency,"a_star=(3, 3)",0.32800000000000001
+oracle_action_frequency,"a_star=(4, 1)",0.057500000000000002
+oracle_action_frequency,"a_star=(4, 3)",0.014500000000000001
+selected_action_frequency,"a_hat=(0, 1)",0.00050000000000000001
+selected_action_frequency,"a_hat=(0, 3)",0.001
+selected_action_frequency,"a_hat=(1, 1)",0
+selected_action_frequency,"a_hat=(1, 3)",0
+selected_action_frequency,"a_hat=(2, 1)",0.0035000000000000001
+selected_action_frequency,"a_hat=(2, 3)",0.0089999999999999993
+selected_action_frequency,"a_hat=(3, 1)",0.030499999999999999
+selected_action_frequency,"a_hat=(3, 3)",0.95450000000000002
+selected_action_frequency,"a_hat=(4, 1)",0
+selected_action_frequency,"a_hat=(4, 3)",0.001

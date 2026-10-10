@@ -2,7 +2,7 @@
 
 AC-Twin studies retrospective counterfactual traffic prediction in reactive multi-agent simulations. The code covers response-conditioned factual-evidence evaluation, multi-action prediction, decision-regret supervision, and risk-based auditing of a frozen action selector. Earlier ablation and architecture source is retained for implementation traceability.
 
-This is a **code-only repository, currently private**. It contains source, tests, run configurations, dependencies and plotting scripts. Manuscripts, plans, discussion drafts, datasets, numerical result exports, model weights, reports and rendered figures are excluded. No open-source licence has been selected yet.
+This repository contains source, tests, run configurations, model weights, simulation datasets below 10 MiB per file, experimental reports, numerical exports and figure/table source data. Larger products are indexed separately for external download; see [data availability](DATA_AVAILABILITY.md). MetaDrive training samples and their prediction caches, raw Waymo TFRecords and converted third-party scenarios are excluded. Manuscripts, research plans and discussion drafts remain outside the release. No open-source licence has been selected yet.
 
 ## Layout
 
@@ -10,15 +10,17 @@ This is a **code-only repository, currently private**. It contains source, tests
 code/                 Collection, training, inference, statistics and staged runners
 code/ac_twin/         Model, feature, objective and protocol implementations
 config/               Standalone experiment configurations
-experiments/          Source scripts and configuration JSON only; no data or results
+experiments/          Weights, configuration, frozen reports and smaller experiment outputs
 legacy/               Earlier baseline source and its requirements
-paper/figures/        Figure-generation source only
-paper/tables/         Table-generation source only
+data/                 Smaller highway-env simulation datasets and collection metadata
+paper/figures/        Figure scripts, plotted source data and rendered assets
+paper/tables/         Numbered table source data and editable exports
 tests/                Unit, integration and historical-artifact checks
-tools/check_release.py  Code-only boundary, size, syntax and credential-pattern check
+release/              File checksums, exclusions, size summary and external download index
+tools/check_release.py  Release boundary, hash, size, syntax and credential checks
 ```
 
-The `paper/` and `experiments/` paths preserve source imports and input/configuration locations; they do not distribute manuscripts or experiment products. Generated outputs remain local and ignored.
+The original relative data and experiment paths are preserved. Files at least 10 MiB are excluded from Git and listed in `release/downloads.json`; restore downloaded files to their recorded paths and verify SHA-256. A listed file with `availability: awaiting_host` does not yet have a published download route. See [reproduction paths](REPRODUCIBILITY.md).
 
 ## Main environment
 
@@ -40,11 +42,11 @@ $env:CUBLAS_WORKSPACE_CONFIG = ':4096:8'
 
 ## Data sources
 
-- **Merge, intersection and roundabout simulation:** generated locally with [Farama highway-env](https://github.com/Farama-Foundation/HighwayEnv), using the collection configurations included here. No simulator episodes are distributed.
+- **Merge, intersection and roundabout simulation:** generated locally with [Farama highway-env](https://github.com/Farama-Foundation/HighwayEnv), using the collection configurations included here. Smaller generated episode archives are included; larger archives are recorded in the external download index.
 - **External scenarios:** [Waymo Open Motion Dataset](https://waymo.com/open/data/motion/), scenario release v1.2.0, `training_20s`, converted with [ScenarioNet](https://github.com/metadriverse/scenarionet) and simulated with [MetaDrive](https://github.com/metadriverse/metadrive). Obtain the dataset from the provider and comply with its terms. Raw TFRecords and converted scenario files are not redistributed.
-- **Analysis inputs:** checkpoints, predictions, paired branch outcomes, group metadata, result tables and figure CSVs are local products of the collection/training/analysis workflows, not additional public datasets. None are included.
+- **Analysis inputs:** checkpoints, predictions, paired branch outcomes, group metadata, result tables and figure CSVs are generated products. Weights and smaller outputs are included. Large products require separate download; MetaDrive training arrays and train prediction caches are excluded regardless of size.
 
-The configurations specify expected local input and output paths. External-platform paths must be configured consistently with the corresponding environment checks. Figure icon/screenshot assets are also excluded from this code-only repository.
+The configurations specify expected local input and output paths. External-platform paths must be configured consistently with the corresponding environment checks. Current figure source assets and rendered evaluation illustrations are included. Raw Waymo and converted ScenarioNet databases are not included.
 
 ## Commands
 
@@ -72,6 +74,7 @@ python code/run_stage1_evidence_value.py --config config/stage1_evidence_value_s
 | Independent Merge audit | `code/run_stage4cr2_confirm.py` | `experiments/stage4_reliability/stage4cr2_confirm/stage4cr2_confirm_config.json`; frozen development stack |
 | Generator mismatch | `code/run_stage4d_ood.py` | `experiments/stage4_reliability/stage4d_ood/config.json`; frozen Merge stack |
 | MetaDrive audit | `code/drive_stage4d_d2f.py` | Separate platform environments, scenarios and D2/D2E upstream products |
+| Supervised controls and feature ablations | `code/run_m1_ablation.py` | `experiments/paper_revision/m1_supervised_ablation_v02/`; development evidence only |
 | Published-method comparison | `code/ac_twin/stage5_*.py` | `config/stage5_sota_comparison_v0.3.json`; local development inputs |
 
 ```powershell
@@ -85,7 +88,7 @@ python code/drive_stage4d_d2f.py --help
 python code/run_stage4cr2.py run-all --config experiments/stage4_reliability/stage4c_r2/stage4cr2_config.json
 ```
 
-Historical runners bind upstream hashes, split manifests, seed roles, protocol locks and sometimes internal protocol documents. Those dependencies are deliberately not shipped as datasets or manuscripts. This checkout alone is **not a complete reconstruction of a historical confirmation run**. Missing inputs must be prepared through the relevant upstream workflow; do not bypass fail-closed checks. Use fresh output namespaces for new studies, never reuse consumed confirmation resources and do not count reruns as independent confirmations.
+Historical runners bind upstream hashes, split manifests, seed roles, protocol locks and sometimes internal protocol documents. Shipped reports and weights support inspection of completed results; exact runner reconstruction can still require external large files, excluded MetaDrive training data or internal protocol documents. This checkout alone is **not a complete reconstruction of every historical run**. Do not bypass fail-closed checks. Use fresh output namespaces for new studies, never reuse consumed confirmation resources and do not count reruns as independent confirmations.
 
 ## MetaDrive / Waymo environments
 
@@ -104,18 +107,18 @@ powershell -ExecutionPolicy Bypass -File code/run_stage4d_env.ps1 sim code/drive
 
 ## Figure and table source
 
-Directory names retain older figure numbering. Current manuscript numbering and excluded prerequisites:
+Directory names retain older figure numbering. Current manuscript numbering and input locations:
 
 | Figure | Source | Required local input |
 |---|---|---|
-| Fig. 1: evidence value | `paper/figures/fig1/build_fig1.py` | Figure-folder bin and contrast CSV exports |
-| Fig. 2: overview | `paper/figures/fig2/build_fig2.py` | `icon/` SVG/PNG assets, including the observed-prefix illustration |
-| Fig. 3: audit head | `paper/figures/fig5_2/draw_direct_audit_v2.py` | None; drawn from code |
+| Fig. 3: evidence value | `paper/figures/fig1/build_fig1.py` | Figure-folder bin and contrast CSV exports |
+| Fig. 1: overview | `paper/figures/fig2/build_fig2.py` | `icon/` SVG/PNG assets, including the observed-prefix illustration |
+| Fig. 2: audit head | `paper/figures/fig5_2/draw_direct_audit_v2.py` | None; drawn from code |
 | Fig. 4: audit scopes | `paper/figures/fig3/build_fig3.py` | Local per-group outputs and confirmation reports |
 | Fig. 5: MetaDrive cases | `paper/figures/fig5/build_fig5.py` | Scenario database, case metadata, render provenance and upstream outputs |
 | Fig. 6: robustness | `paper/figures/fig4/build_fig4.py` | Confirmation tables and mismatch-selection products |
 
-Additional source includes the graphical abstract, external-platform render/export helpers, the author-fixed Fig. 5 assembly helper and Stage 5 table builders. Original relative input paths are retained. Exact asset-dependent reproduction requires the excluded local assets; scripts do not substitute invented values or replacement images.
+Additional source includes the graphical abstract, external-platform render/export helpers, the author-fixed Fig. 5 assembly helper and Stage 5 table builders. Original relative input paths are retained. Bundled plotting inputs and figure assets support rebuilding those outputs; scenario-dependent rendering still requires provider scenarios. Scripts do not substitute invented values or replacement images.
 
 ```powershell
 # Self-contained schematic; creates ignored outputs beside the source.
@@ -136,9 +139,9 @@ python tools/check_release.py
 python -m pytest tests/test_progress.py tests/test_checkpointing.py tests/test_stage1_model.py tests/test_stage1_statistics.py tests/test_stage4c_objective.py -q
 ```
 
-The release check parses Python/configuration JSON, scans for credential patterns and rejects files of 1 MiB or larger. `.gitignore` uses an explicit file allowlist: new generated data/media stay excluded, and new source paths must be added deliberately.
+The release check validates inventory hashes, rejects excluded training data and unregistered files, parses source/JSON and scans text for credential patterns. `.gitignore` remains an explicit allowlist. Files at least 10 MiB are recorded for external download rather than committed. Newly generated products remain ignored until deliberately synchronized.
 
-The full test collection includes platform-specific and historical-artifact checks requiring local datasets, checkpoints, internal documents or external environments omitted here. A passing standalone test subset does not establish full scientific reproduction.
+The full test collection includes platform-specific and historical-artifact checks requiring externally hosted large data, excluded MetaDrive training data, internal documents or separate environments. A passing standalone test subset does not establish full scientific reproduction.
 
 ## Interpretation boundaries
 

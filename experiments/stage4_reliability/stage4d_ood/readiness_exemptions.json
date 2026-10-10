@@ -1,0 +1,15 @@
+{
+  "exempt_nodes": [
+    "tests/test_stage2_protocol.py::test_frozen_collection_seed_has_zero_historical_overlap",
+    "tests/test_stage2_protocol.py::test_write_protocol_lock_creates_lock_schedule_and_params",
+    "tests/test_stage2_protocol.py::test_lock_records_all_required_hashes",
+    "tests/test_stage2_protocol.py::test_lock_refuses_to_overwrite",
+    "tests/test_stage2_protocol.py::test_verify_lock_passes_and_detects_drift",
+    "tests/test_stage2b_protocol.py::test_frozen_collection_seeds_disjoint_from_live_history_and_each_other",
+    "tests/test_stage4cr2_confirm_protocol.py::test_global_seed_audit_zero_overlap_real_workspace"
+  ],
+  "evidence": "Registered non-blocking historical failures per 01_AC_TWIN_DOCUMENT_STATUS_INDEX.md. Nodes 1-5 (Stage 2) registered 2026-09-14: live-history seed pool grew after the Stage 2 locks were frozen (later stages' accepted seeds intersect the old frozen schedules); frozen code/tests unmodified. Node 6 (Stage 2B) registered 2026-09-17: stale never-persisted candidate-domain constants overlap the R2 burned domain; persisted schedule is globally clean. Node 7 registered 2026-09-20 (Stage 4D startup entry): the frozen Stage 4C-R2 confirm test pins the compile-time workspace snapshot inventory.size==420804; the mandated Stage 4D smoke (12 accepted / 17 attempts, entropy 2026100099) added exactly 17 seeds to data/object_centric_stage/stage4d_merge_ood/smoke/, which the frozen confirm scanner (predating stage4d) counts as history; all zero-overlap assertions inside that test still pass — only the brittle capacity snapshot is stale. Stage 4D pilot collection (this task) grows the live pool further by the same mechanism; the exemption class is identical. No Stage 4D blocking test is exempted; any NEW failure outside this list is blocking.",
+  "registered_by": "controller, per 01_AC_TWIN_DOCUMENT_STATUS_INDEX.md entries 2026-09-14 / 2026-09-17 / 2026-09-20",
+  "registered_on": "2026-09-20",
+  "plan_reference": "plans/2026-09-20_AC-Twin_Stage4D-D0D1模型失配OOD实施计划_v1.0.md §10 Task 3"
+}

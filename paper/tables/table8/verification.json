@@ -1,0 +1,12 @@
+{
+  "table": "Table 8",
+  "five_comparisons_verified": true,
+  "ten_interval_values_match_source": true,
+  "manuscript_display_matches": true,
+  "formula_recalculation_verified": true,
+  "manuscript_and_word_unchanged": true,
+  "scientific_sources_unchanged": true,
+  "visual_review": "PASS: both sheets inspected; labels, numbers and notes legible",
+  "saved_xlsx_numeric_values_match_source": true,
+  "saved_formula_caches_present": true
+}

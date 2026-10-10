@@ -1,0 +1,39 @@
+{
+  "candidates": {
+    "EGO_TRAJECTORY": {
+      "n_train_groups": 5000,
+      "n_validation_groups": 1500,
+      "param_count": 15740,
+      "run_dir": "experiments\\stage4_reliability\\stage4d_d2e\\riskfit_EGO_TRAJECTORY",
+      "train_base_mean_regret": 0.055326967876136154,
+      "train_high_regret_frac": 0.4564,
+      "validation_losses": {
+        "9101": 0.6703999042510986,
+        "9202": 0.6666971445083618,
+        "9303": 0.6657910346984863,
+        "9404": 0.6690822839736938,
+        "9505": 0.6684219241142273
+      }
+    },
+    "EGO_TRAJECTORY_PLUS_RANK": {
+      "n_train_groups": 5000,
+      "n_validation_groups": 1500,
+      "param_count": 15740,
+      "run_dir": "experiments\\stage4_reliability\\stage4d_d2e\\riskfit_EGO_TRAJECTORY_PLUS_RANK",
+      "train_base_mean_regret": 0.054761184343475065,
+      "train_high_regret_frac": 0.4624,
+      "validation_losses": {
+        "9101": 0.6951829195022583,
+        "9202": 0.690927267074585,
+        "9303": 0.6913643479347229,
+        "9404": 0.7003008127212524,
+        "9505": 0.694810688495636
+      }
+    }
+  },
+  "device": "cuda",
+  "elapsed_seconds": 33.808024644851685,
+  "note": "Direct head retrained on repaired train predictions; the three standard baselines share the identical repaired J_hat; risk features unchanged by the slot-0 repair (ego is masked out of the inference_mask risk features).",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+  "status": "D2E_RISK_FIT_COMPLETE"
+}

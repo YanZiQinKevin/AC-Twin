@@ -1,0 +1,29 @@
+{
+  "bindings": {
+    "pool_capacity_audit_sha256": "e2667f3ecaf6b0469f22ab5ab8c0866b10e9f98381bfa0dc61c509854938b7e1",
+    "power_report_sha256": "e58cd3ccfbcfbcafc3aa9a45f07f4397c703c4d6c417c31cdb0ccaf3a3df5455",
+    "smoke_ledger_sha256": "a6037bfcc8c859f143c665ed9b672b4afed4179f03f899eb063ae078653d4c79"
+  },
+  "confirm_capacity_ok": true,
+  "confirm_pool_preserved": 15528,
+  "confirm_prefrozen_ns": [
+    1000,
+    1500,
+    2000,
+    2500,
+    3000
+  ],
+  "create_once": true,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "scope": "READ_ONLY_AUDIT",
+  "screen_available_post_smoke": 13582,
+  "screen_available_pre_smoke": 13626,
+  "screen_capacity_ok": true,
+  "screen_capacity_required": 5000,
+  "selected_n": 1000,
+  "smoke_budget": 160,
+  "smoke_burned_ids": 44,
+  "status": "D2F_POOL_AUDIT_PASS",
+  "terminal": false,
+  "written_at": "2026-09-24T22:43:14"
+}

@@ -1,0 +1,124 @@
+{
+  "candidates": [
+    "EGO_TRAJECTORY",
+    "EGO_TRAJECTORY_PLUS_RANK"
+  ],
+  "device": "cuda",
+  "elapsed_seconds": 80.15383386611938,
+  "input_dim": 1002,
+  "models": [
+    {
+      "best_epoch": 41,
+      "best_val_loss": 1.2339870929718018,
+      "candidate": "EGO_TRAJECTORY",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_seed1101.pt",
+      "checkpoint_sha256": "1286e88dfee2151d30a815d35c1a8756c4a5cd034e4039b70d803fdbff76470f",
+      "epochs_run": 54,
+      "seed": 1101,
+      "train_seconds": 7.7326719760894775
+    },
+    {
+      "best_epoch": 35,
+      "best_val_loss": 1.2584023475646973,
+      "candidate": "EGO_TRAJECTORY",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_seed1202.pt",
+      "checkpoint_sha256": "b9d9afd847452044684ad7e9765cb72b6109d7a8ddf58fc905849d35ad9ce5e6",
+      "epochs_run": 48,
+      "seed": 1202,
+      "train_seconds": 6.422636270523071
+    },
+    {
+      "best_epoch": 35,
+      "best_val_loss": 1.2437632083892822,
+      "candidate": "EGO_TRAJECTORY",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_seed1303.pt",
+      "checkpoint_sha256": "f6dca5f65075f47462a1ae5e1e6a5fe11910cc438cfb39fbeb764c162b973359",
+      "epochs_run": 48,
+      "seed": 1303,
+      "train_seconds": 6.2602479457855225
+    },
+    {
+      "best_epoch": 33,
+      "best_val_loss": 1.2485086917877197,
+      "candidate": "EGO_TRAJECTORY",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_seed1404.pt",
+      "checkpoint_sha256": "4eddeb95f17e589fe3917dbc1a1afb2b710180f7ae8b8b294a10b4794d945e2e",
+      "epochs_run": 46,
+      "seed": 1404,
+      "train_seconds": 6.350464344024658
+    },
+    {
+      "best_epoch": 32,
+      "best_val_loss": 1.2487705945968628,
+      "candidate": "EGO_TRAJECTORY",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_seed1505.pt",
+      "checkpoint_sha256": "9f8994533db7e0a9896a1e2e5bf7da0a681750862f88765b25377ebe777f58e2",
+      "epochs_run": 45,
+      "seed": 1505,
+      "train_seconds": 6.64521598815918
+    },
+    {
+      "best_epoch": 24,
+      "best_val_loss": 1.301846981048584,
+      "candidate": "EGO_TRAJECTORY_PLUS_RANK",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_PLUS_RANK_seed1101.pt",
+      "checkpoint_sha256": "dcbccaf8c5f8d3641ffa61935b3cd735a891d2303b51326689ce6cf9420ef553",
+      "epochs_run": 37,
+      "seed": 1101,
+      "train_seconds": 7.257316827774048
+    },
+    {
+      "best_epoch": 28,
+      "best_val_loss": 1.2936973571777344,
+      "candidate": "EGO_TRAJECTORY_PLUS_RANK",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_PLUS_RANK_seed1202.pt",
+      "checkpoint_sha256": "ebc0fe2c7123842d52fa7b6075d4ab1120efe07e89bc8a1a44afea8158d47c63",
+      "epochs_run": 41,
+      "seed": 1202,
+      "train_seconds": 7.678884029388428
+    },
+    {
+      "best_epoch": 30,
+      "best_val_loss": 1.2997157573699951,
+      "candidate": "EGO_TRAJECTORY_PLUS_RANK",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_PLUS_RANK_seed1303.pt",
+      "checkpoint_sha256": "d237f5a10745737b1f1277af3ff55f0616fe0da005ed393f7fd8ff807f20c3bf",
+      "epochs_run": 43,
+      "seed": 1303,
+      "train_seconds": 8.35837173461914
+    },
+    {
+      "best_epoch": 34,
+      "best_val_loss": 1.2848531007766724,
+      "candidate": "EGO_TRAJECTORY_PLUS_RANK",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_PLUS_RANK_seed1404.pt",
+      "checkpoint_sha256": "75d083d150518b861fdb66a3b866cfc436abcf06ee23b1e83776d043d3a0f6eb",
+      "epochs_run": 47,
+      "seed": 1404,
+      "train_seconds": 9.134216547012329
+    },
+    {
+      "best_epoch": 35,
+      "best_val_loss": 1.281677007675171,
+      "candidate": "EGO_TRAJECTORY_PLUS_RANK",
+      "checkpoint": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_EGO_TRAJECTORY_PLUS_RANK_seed1505.pt",
+      "checkpoint_sha256": "2d54837b9549d2cc5bb780b5fa6bec20de0d5b98edbac5a41d84d43e3039c435",
+      "epochs_run": 48,
+      "seed": 1505,
+      "train_seconds": 8.977012634277344
+    }
+  ],
+  "n_train_branches": 50000,
+  "n_validation_branches": 15000,
+  "param_count": 150568,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+  "rank_scale": 5.7689655291593995,
+  "seeds": [
+    1101,
+    1202,
+    1303,
+    1404,
+    1505
+  ],
+  "status": "D2E_EGO_FIT_COMPLETE"
+}

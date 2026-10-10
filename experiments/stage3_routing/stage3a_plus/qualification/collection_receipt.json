@@ -1,0 +1,84 @@
+{
+  "experiment_name": "stage3a_plus_qualification",
+  "analysis_status": "stage3a_plus_qualification",
+  "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+  "partial": false,
+  "requested_pairs": 1000,
+  "accepted_pairs": 1000,
+  "attempts": 1598,
+  "collection_seed": 20261009,
+  "skip_counts": {
+    "prefix_terminated": 598,
+    "prefix_mismatch": 0,
+    "object_prefix_mismatch": 0,
+    "factual_future_short": 0,
+    "counterfactual_future_short": 0,
+    "non_finite": 0,
+    "short_history": 0,
+    "initial_fingerprint_mismatch": 0,
+    "object_replay_shape_mismatch": 0
+  },
+  "accepted_strata": {
+    "action_0_duration_1": 100,
+    "action_0_duration_3": 100,
+    "action_1_duration_1": 100,
+    "action_1_duration_3": 100,
+    "action_2_duration_1": 100,
+    "action_2_duration_3": 100,
+    "action_3_duration_1": 100,
+    "action_3_duration_3": 100,
+    "action_4_duration_1": 100,
+    "action_4_duration_3": 100
+  },
+  "prefix_max_abs_diff": 0.0,
+  "identity_max_abs_diff": 0.0,
+  "identity_replay_checks": 20,
+  "vcs": {
+    "git_commit": null,
+    "vcs_status": "no_git_repository"
+  },
+  "environment": {
+    "python_version": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy_version": "1.26.4",
+    "torch_version": "2.9.1+cu130",
+    "highway_env_version": "1.10.2",
+    "gymnasium_version": "1.3.0"
+  },
+  "config_signature": "71eb304d3b174fb8c5c01693b2c3ea98686a662b306af908e4858fe673652b5c",
+  "generated_at": "2026-09-10T09:17:26",
+  "data_output_sha256": "8d4006aeaeacacd174c9df178247bf5887c0b051731de52d8be657c56e5e3e77",
+  "purpose": "stage3a_plus_qualification",
+  "data_sha256": "8d4006aeaeacacd174c9df178247bf5887c0b051731de52d8be657c56e5e3e77",
+  "seed_schedule_sha256": "1b82717155c0bf4acb4144de7a488dcc8b9cf2b35f83511f810d43dfe0e45cd5",
+  "power_report_sha256": "2549679fe1c2ce3326be14dc0775c836d48ba303147667cdb78e9ac024fb810b",
+  "config_fingerprint": "71eb304d3b174fb8c5c01693b2c3ea98686a662b306af908e4858fe673652b5c",
+  "qa": {
+    "episode_count": 1000,
+    "duration_set": [
+      1,
+      3
+    ],
+    "actions": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "strata_equal_counts": true,
+    "episodes_per_stratum": 100,
+    "historical_seed_overlap": 0,
+    "episode_seeds_from_frozen_schedule": true,
+    "rejection_reasons": [
+      "prefix_terminated"
+    ],
+    "gate_loader": "ok"
+  },
+  "code_sha256": {
+    "collect_stage3a_plus_qualification.py": "59dff86efdff694f44c7a58e630e3e7c6b47ecfee1d83a64f551b7238f6cfd81",
+    "collect_stage2_holdout.py": "306b9edb8f71c14b5c333a582a8965791bdc9b806d3f1e7371c97250bf1882c2",
+    "ac_twin/stage3_data.py": "ee174498d6a58fdf0d497ffd1a78e1f46c385ef9aa912462e7d497a7a29e92a5",
+    "ac_twin/stage2_protocol.py": "b0b0a7d7821fc5b82c573c9ef6ccd5eae241821a14f86ee8377c267645c7351e"
+  }
+}

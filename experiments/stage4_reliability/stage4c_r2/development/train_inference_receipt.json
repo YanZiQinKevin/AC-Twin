@@ -1,0 +1,34 @@
+{
+  "binding_sha256": "881a73c3fd9e378a97e16bdf1a09316119272960b3ba0a730f315474a2d14490",
+  "branches": 50000,
+  "data_sha256": "df240cac7686d885b114b45234a3fa1c9041af2802b68d1c25cfdfe76aac53b8",
+  "device": "cuda",
+  "dtype": "float32",
+  "groups": 5000,
+  "n_actions": 10,
+  "pair_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "plan_id": "AC-TWIN-RFER-STAGE4C-R2-DECISION-RISK-SCALING-2026-09-16-V0.2",
+  "predictions_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\train_predictions.npz",
+  "predictions_sha256": "a6e2b372c1128b0dc3832879b29326222277f49ceece1fd2ee587cf81425e076",
+  "receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\train_inference_receipt.json",
+  "risk_classes": [
+    "COMBINED_RISK_HEAD",
+    "UNCERTAINTY_ONLY",
+    "GEOMETRY_ONLY",
+    "RESPONSE_ONLY",
+    "DISAGREEMENT_ONLY"
+  ],
+  "role": "development_train",
+  "scaler_sha256": "9f546efe3bf6e2a907e7115924f7d1dec55491b11b6a1e09c469b104c5db9181",
+  "scores_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\development\\train_scores.npz",
+  "scores_sha256": "fd4747c82ad072ff73896f63b019336248520f10e62c4d966c2704ad4092e3b0",
+  "status": "INFERENCE_COMPLETE",
+  "verification": "",
+  "written_at": "2026-09-16T18:38:48"
+}

@@ -1,0 +1,22 @@
+{
+  "run": "uniform_suffix_g32_pair1_r1202",
+  "state": "COMPLETE",
+  "condition": "uniform_suffix",
+  "pair_index": 1,
+  "seed_pair": [
+    202,
+    1202
+  ],
+  "gate_hidden_dim": 32,
+  "config": {
+    "condition": "uniform_suffix",
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "gate_hidden_dim": 32
+  },
+  "best_val_loss": 0.3027862911010911,
+  "validation_selection_score": 0.3027862911010911,
+  "epochs_run": 21,
+  "signature": "ade28ed06d95953ffd3636ca0626e11c9324c2463c222793d74026d60f6ded85",
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\uniform_suffix_g32_pair1_r1202.pt"
+}

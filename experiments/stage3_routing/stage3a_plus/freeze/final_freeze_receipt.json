@@ -1,0 +1,274 @@
+{
+  "receipt_payload": {
+    "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+    "artifact_type": "final_freeze",
+    "round": 0,
+    "config": {
+      "final_config": {
+        "hidden_dim": 96,
+        "response_feature_dim": 32,
+        "lambda_cls": 0.1
+      },
+      "training": {
+        "max_epochs": 40,
+        "early_stopping_patience": 6,
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "device": "cuda"
+      }
+    },
+    "calibration": {
+      "selected_candidate": "CAL_PER_SEED_VECTOR",
+      "selected_artifact": {
+        "method": "CAL_PER_SEED_VECTOR",
+        "params": {
+          "per_seed": [
+            {
+              "a": [
+                0.29624420760974846,
+                0.3591146616072904,
+                0.4336604177684436,
+                0.061104890323405596
+              ],
+              "b": [
+                1.5901432270574423,
+                -0.49046991856188166,
+                -0.4832110347513205,
+                -0.6164668782179357
+              ]
+            },
+            {
+              "a": [
+                0.4346541187003689,
+                0.26383964512978364,
+                -0.07765742601953934,
+                -0.3678821905427992
+              ],
+              "b": [
+                1.5880086113190095,
+                -0.6201693013402083,
+                -0.421698263181045,
+                -0.5461410552900101
+              ]
+            },
+            {
+              "a": [
+                0.8019158833852582,
+                0.42508407596978387,
+                0.6496255167810625,
+                0.050376122143192106
+              ],
+              "b": [
+                2.321232148319203,
+                -0.7325586990313712,
+                -0.816344354347268,
+                -0.7723327853220643
+              ]
+            },
+            {
+              "a": [
+                0.664393229828192,
+                0.03201115471000388,
+                0.3080423067042025,
+                -0.11969443595771143
+              ],
+              "b": [
+                1.818413342609868,
+                -0.7253753464817005,
+                -0.5754552606165646,
+                -0.5175828259218912
+              ]
+            },
+            {
+              "a": [
+                0.5370517242258946,
+                0.6027034093060603,
+                0.7795937473271476,
+                0.4281208893551264
+              ],
+              "b": [
+                1.8974613474525959,
+                -0.5390879768378795,
+                -0.5861119110998325,
+                -0.7722625070748317
+              ]
+            },
+            {
+              "a": [
+                0.48633202980352636,
+                0.33450781988188577,
+                0.49944064193555826,
+                0.19740966169908367
+              ],
+              "b": [
+                2.0537896350891933,
+                -0.9264383305777989,
+                -0.6164434573679544,
+                -0.510904852396023
+              ]
+            },
+            {
+              "a": [
+                0.7096419010331193,
+                0.15156485599229008,
+                0.5551745047358452,
+                0.14734426740385992
+              ],
+              "b": [
+                1.9019250101440146,
+                -0.6765586738216285,
+                -0.553917333383998,
+                -0.6714502266693027
+              ]
+            },
+            {
+              "a": [
+                0.586325829635866,
+                0.5739980351881043,
+                0.5546359264043542,
+                0.22296558292386645
+              ],
+              "b": [
+                1.8242631621151864,
+                -0.4103875033831741,
+                -0.5615028177462544,
+                -0.8523730791713346
+              ]
+            },
+            {
+              "a": [
+                0.5372479571049104,
+                0.4570821449357117,
+                0.6945932527031441,
+                0.3671044765582226
+              ],
+              "b": [
+                1.9649125276777397,
+                -0.6881041116930313,
+                -0.6053155531299,
+                -0.6714954247496363
+              ]
+            },
+            {
+              "a": [
+                0.5510333083244348,
+                0.08066180862005046,
+                0.5345466210030486,
+                0.037840059698888595
+              ],
+              "b": [
+                1.9365086837924488,
+                -0.650402095962193,
+                -0.6019470375412128,
+                -0.6841565598476147
+              ]
+            }
+          ]
+        },
+        "fit_split": "validation",
+        "n_fit": 240000,
+        "input_signature": "",
+        "output_signature": ""
+      },
+      "calibration_signature": "08b4829b12687df3262405bb15591381a247c2039d19efc1f0becf1c07cec1ba",
+      "selection_receipt_sha256": "6a8bb0e4cc142137c537cc7a97803f4f6e03b15b1eb1d281e517ebd1caa2d486"
+    },
+    "checkpoints": {
+      "101": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed101.pt",
+        "signature": "2dac69182ad082a073163f10e6d76180565f7afc426d451f69478f31c70ac1e6"
+      },
+      "202": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed202.pt",
+        "signature": "c4dcf6e205f52dda71ce345287160d51b3505632777993b3ea4d4ff54a7388b2"
+      },
+      "303": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed303.pt",
+        "signature": "d0f5106b634a837b32498c4c1d094e217766563abaed1419332fee10f9ca04bc"
+      },
+      "404": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed404.pt",
+        "signature": "01c943b04c387cb0a9cc9455a765a723d25d78c7ca63259127d56731f8ffbce4"
+      },
+      "505": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_retrain_v1\\fit_five\\h96_r32_l0.1_seed505.pt",
+        "signature": "cce9a6414d94b7a0358da19f4f5e49a904f9b5d3eca1c84410da20d5db9e1975"
+      },
+      "606": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\checkpoints\\h96_r32_l0.1_seed606.pt",
+        "signature": "2a74e6c16776d140817028c3c30d798d7fcb3bad7efac6ff0fd1b02bbf422473"
+      },
+      "707": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\checkpoints\\h96_r32_l0.1_seed707.pt",
+        "signature": "f5f05c4ddccd3c0575c18f0e6efcddf020923fc556dac3e2bc6ad4503aea79da"
+      },
+      "808": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\checkpoints\\h96_r32_l0.1_seed808.pt",
+        "signature": "5a4d0a11dc98c4af6a8631c2b775cb30047c9d18e8428ec6f97b6e38f4f6c443"
+      },
+      "909": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\checkpoints\\h96_r32_l0.1_seed909.pt",
+        "signature": "0d3d0c82a5cb6b47203eef5c6cc5e86cc864a45d9a07d1a087e2a027358cce0f"
+      },
+      "1010": {
+        "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\checkpoints\\h96_r32_l0.1_seed1010.pt",
+        "signature": "1001a47a14cf355705602243401b40e39e686a2ecf15decdde721779da02fe14"
+      }
+    },
+    "baselines": {
+      "strongest": {
+        "strongest_continuous": "constant_zero",
+        "strongest_presence": "multinomial_plus_distance",
+        "strongest_high_vs_lowmid": "multinomial_adh",
+        "strongest_brier": "multinomial_plus_distance"
+      }
+    },
+    "gate": {
+      "definition": "GATE_R_PLUS = core AND stability AND Q+",
+      "core_metrics": [
+        "i_mae",
+        "spearman",
+        "i_pr_presence",
+        "i_pr_high_vs_lowmid",
+        "i_brier"
+      ],
+      "ece_guard": 0.05,
+      "ece_relative_improvement": 0.2,
+      "min_positive_brier_seeds": 8,
+      "worst_seed_noninferiority_frac": 0.05,
+      "nondegenerate_std_floor": 1e-06,
+      "dev_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "stress_seeds": [
+        606,
+        707,
+        808,
+        909,
+        1010
+      ]
+    },
+    "code_sha256": {
+      "run_stage3a_plus.py": "789cab911fa9ada57e1c1a21613ef48bc90a9ef3ee7661241a4e39bf54d13fad",
+      "run_stage3a.py": "1f71dee90eb60a42d31de449047f67883a8c6577a191798a4da15cd262816e37",
+      "ac_twin/stage3a_plus_statistics.py": "788f0364e916e3536414884b0146b70f0109252918b76b94dc4ac94e267ce23f",
+      "ac_twin/stage3a_plus_calibration.py": "bd9ce0f96cbb2456df4ca51b1401509d4da12089347b1568a20ede231c2bb7ec",
+      "ac_twin/stage3_data.py": "ee174498d6a58fdf0d497ffd1a78e1f46c385ef9aa912462e7d497a7a29e92a5",
+      "ac_twin/stage3_response.py": "28a2636e93fd1add060a60a5c95241b2ff6124089165527420cfdc1fb54cb5c4",
+      "ac_twin/stage3_training.py": "cb31105f3d6ffcc39ec040e4f7f4371db226e8aa9d3074ad543f91d37390c7c2",
+      "ac_twin/stage3_statistics.py": "62163f8768ba11f559fb5b60068a0e4a8d3b2bb99829b4d5547be6c0579e8c31",
+      "ac_twin/stage1_statistics.py": "c70526209b2aae7ffb5456c5618d47a1c71228e6431b9c1434a472e53932b03b"
+    },
+    "dev_report_sha256": {
+      "A": "40b4b8eab7c3bc8cb1b9ef2308a014c01f44dac3dfe26c0f486b671a5c192b32",
+      "B": "7393ea6914ca0025c4edd3e30e49f9a892ff3f30b30f16c83780716663912842",
+      "file": "14e9373669fe9703dbdac004baa6e4c4327ed1d61c1fede3458356349f12dc51"
+    },
+    "generated_at": "2026-09-10T00:00:35"
+  },
+  "receipt_sha256": "cb18ffdc3957d18e3269a6d0e654b29038ed34f7eff09b87d2d56da006228127"
+}

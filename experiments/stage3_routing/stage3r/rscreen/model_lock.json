@@ -1,0 +1,15 @@
+{
+  "code_sha256": {
+    "code/ac_twin/stage3r_models.py": "346614f90d6d6687230370967adeacf9971c94ea5a349e1a80da8324ea1540a5",
+    "code/ac_twin/stage3r_screen.py": "05116fd92ffc4b356e2c6f3d992121a52ce31d6ceb13ab604425c252ae0880a3",
+    "code/ac_twin/stage3r_statistics.py": "318f318de6c2f3a9ff33dca0c6dc9528971f5e229599510582d2f2c424885e7b",
+    "code/collect_stage3r_screen.py": "b60df854bd10698a1260f605381afad176a4f44b240ece95d4387b0e91e2b229",
+    "code/run_stage3r.py": "1f630085111602f2607d36008d77e161c41cd8765e23c0fcf8678f3047489892"
+  },
+  "direct_summary_sha256": "d064839c30a32b61478facafdb754eb3f8bc7bac26c82c9f96c9400af85d85f4",
+  "finalist_receipt_sha256": "ac7ce31ffd8649c0ef548f61f4b806670e28bd6e5d5248d33542fd9f5f71a65e",
+  "oof_receipt_sha256": "6535dff3e785e38174341d26411343f4f7cf6a0e061f7a92ac32773a621e4d66",
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "router_training_summary_sha256": "6d28dab2eab4230f85f41c4dc78ccd48f58e3bdb686a911eaae2d30f19ac5ea6",
+  "status": "STAGE3R_RSCREEN_MODEL_LOCKED"
+}

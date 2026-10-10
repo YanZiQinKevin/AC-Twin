@@ -1,0 +1,49 @@
+{
+  "requested_pairs": 2000,
+  "accepted_pairs": 2000,
+  "attempts": 3184,
+  "acceptance_rate": 0.628140703517588,
+  "skip_counts": {
+    "prefix_terminated": 617,
+    "short_future": 567
+  },
+  "prefix_max_abs_diff": 0.0,
+  "identity_replay_checks": 20,
+  "identity_max_abs_diff": 0.0,
+  "obs_shape": [
+    5,
+    5
+  ],
+  "action_mapping": {
+    "LANE_LEFT": 0,
+    "IDLE": 1,
+    "LANE_RIGHT": 2,
+    "FASTER": 3,
+    "SLOWER": 4
+  },
+  "stratum_counts": {
+    "action_0_duration_1": 200,
+    "action_0_duration_3": 200,
+    "action_1_duration_1": 200,
+    "action_1_duration_3": 200,
+    "action_2_duration_1": 200,
+    "action_2_duration_3": 200,
+    "action_3_duration_1": 200,
+    "action_3_duration_3": 200,
+    "action_4_duration_1": 200,
+    "action_4_duration_3": 200
+  },
+  "split_counts": {
+    "train": 1400,
+    "val": 300,
+    "test": 300
+  },
+  "effect_fde_mean_m": 5.567330360412598,
+  "effect_fde_median_m": 1.5502114295959473,
+  "effect_fde_bins": {
+    "zero_le_1e-6": 894,
+    "small_0_to_1m": 37,
+    "medium_1_to_4m": 312,
+    "large_gt_4m": 757
+  }
+}

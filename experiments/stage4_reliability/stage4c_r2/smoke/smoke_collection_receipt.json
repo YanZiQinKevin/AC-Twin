@@ -1,0 +1,41 @@
+{
+  "accepted_groups": 12,
+  "attempts": 26,
+  "config_signature": "72088c80d5479aef9197e0058afa71b8c5d963b5eb756e701868bd6c33321a1f",
+  "counterfactual_branches": 120,
+  "data_output": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_dev\\smoke\\object_twinworld_stage4cr2_smoke.npz",
+  "data_output_sha256": "a525a751188eee5504d6b806f65a3f33ce86379492bd949b994aa9d03fac8465",
+  "environment": {
+    "gymnasium_version": "1.3.0",
+    "highway_env_version": "1.10.2",
+    "numpy_version": "1.26.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.7",
+    "torch_version": "2.9.1+cu130"
+  },
+  "generated_at": "2026-09-16T14:33:52",
+  "partial": false,
+  "plan_id": "AC-TWIN-RFER-STAGE4C-R2-DECISION-RISK-SCALING-2026-09-16-V0.2",
+  "prefix_max_abs_diff": 0.0,
+  "receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4c_r2\\smoke\\smoke_collection_receipt.json",
+  "rejection_ledger": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_dev\\smoke\\rejection_ledger_smoke.jsonl",
+  "requested_groups": 12,
+  "role": "smoke",
+  "seed_schedule_sha256": "66eb5fe9e5593e5a06883d4ebe423589dc047326e9285350b069d162d50e98c5",
+  "skip_counts": {
+    "counterfactual_future_short": 0,
+    "duplicate_seed": 0,
+    "eval_mask_mismatch": 0,
+    "factual_future_short": 0,
+    "initial_fingerprint_mismatch": 0,
+    "no_legal_agent_time": 0,
+    "non_finite": 0,
+    "object_prefix_mismatch": 0,
+    "observation_shape": 0,
+    "prefix_terminated": 14,
+    "present_set_mismatch": 0,
+    "short_history": 0
+  },
+  "status": "ENGINEERING_SMOKE_ONLY",
+  "verification": ""
+}

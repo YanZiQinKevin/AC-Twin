@@ -1,0 +1,18 @@
+{
+  "architecture": "state_two_channel",
+  "best_val_loss": 0.16014159724033303,
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b_plus\\oracle_headroom\\checkpoints\\state_two_channel_route_only_oracle_r1505.pt",
+  "condition": "route_only_oracle",
+  "config": {
+    "architecture": "state_two_channel",
+    "condition": "route_only_oracle",
+    "hidden_dim": 64,
+    "horizon": 20,
+    "response_feature_dim": 32
+  },
+  "epochs_run": 40,
+  "name": "state_two_channel_route_only_oracle_r1505",
+  "router_seed": 1505,
+  "signature": "f4ccac57a2ba85c85a030bc78fc362343fc9d5328b4998f179df64ae96508e22",
+  "state": "COMPLETE"
+}

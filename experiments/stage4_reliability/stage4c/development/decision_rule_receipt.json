@@ -1,0 +1,79 @@
+{
+  "action_plans": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "combined_risk_mean": 0.23249351116082118,
+  "combined_risk_std": 0.1139081412505869,
+  "consequence_weights": [
+    0.8,
+    0.2
+  ],
+  "density_threshold": 1.0,
+  "high_regret_quantile": 0.8,
+  "high_regret_threshold": 0.017763832710675755,
+  "idle_plan_index": 3,
+  "jhat_mean": 0.14818108285068926,
+  "jhat_std": 0.11035442600118872,
+  "lambda_candidates": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "lambda_selection_regret": {
+    "0.0": 0.024127435794186438,
+    "0.25": 0.030521080731730918,
+    "0.5": 0.03987979185155999,
+    "1.0": 0.060694286538484736
+  },
+  "n_selection_groups": 500,
+  "plan_id": "AC-TWIN-RFER-STAGE4C-MULTIACTION-REGRET-2026-09-15-V0.1",
+  "reranking_lambda": 0.0,
+  "selection_aurc_regret": {
+    "GEOMETRY_TOP2_MAX": 0.028956369674513746,
+    "MARGIN_ONLY": 0.018719428949996432,
+    "UNCERTAINTY_TOP2_MAX": 0.02971202662330881
+  },
+  "selection_data_sha256": "2447ae8a19192bcefae313f4d454ff0af916b2bf302bd35cddb5068704445dc4",
+  "selection_group_seed_sha256": "9e4df11c3c2409b4196e43f3ec4ac43b9a48d4703331005d663f357fdfd29a64",
+  "strongest_standard_baseline": "MARGIN_ONLY"
+}

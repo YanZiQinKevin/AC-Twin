@@ -1,0 +1,44 @@
+{
+  "bindings": {
+    "determinism_receipt_sha256": "15b044bb7ae4a5fb079cecab045dfc6e1f7c5be7bdd9d42255fc0b542dc7361c",
+    "final_selection_sha256": "8327685d1bfd7123a21e3dc34280db49a56c3f862e9f752df5b98f11117ad39e",
+    "inference_inputs_sha256": "2051e470e66486346c2f50239f232c9a09936dce0fe7ce1bd3b4325840f51068",
+    "scores_receipt_sha256": "099faf9d361b218af17a0cb1f4b9d1e28eef714f56ae55d8c8f2ee460da38e51",
+    "scores_sha256": "da000b2ba5bac657ff84794849aeea85eaa1c0b5fa356194fb486df2430f3451",
+    "sealed_truth_sha256": "5101be5e474bb8e148f16baf32c8702c5170291b59912301238365c2f78331c9",
+    "split_receipt_sha256": "ce99353ea0240e5cd98fa01287492e3c84d5ec0a4f9d671c299decb7665821fd",
+    "statistics_code_sha256": "58374e081914a6d3b41833b54793f89d3be5f35e9c0d7239ea951a4104b53b84"
+  },
+  "bootstrap_entropy": 2026122101,
+  "bootstrap_resamples": 10000,
+  "confidence_screen": 0.8,
+  "eval_mask_nondegenerate": true,
+  "interaction_threshold": 11.53877460000361,
+  "interaction_threshold_source": "train preintervention_min_distance median (train-only)",
+  "lock_burned_at": "2026-09-24T08:03:51",
+  "lock_sha256": "598fa731635d9411dbcbd5b3a64f8de61015b461b38c45ebfacf360aaf027797",
+  "map_family_note": "the frozen collector records no finer map_id; the screen is one Waymo training_20s -> MetaDrive family (map_family all 0). FLAGGED plan-7.1 lists map_id but the collector meta has none.",
+  "n_groups": 4000,
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "projection_nondegenerate": true,
+  "qa": {
+    "all_complete": true,
+    "baseline_matches_frozen": true,
+    "checkpoints_match_frozen": true,
+    "determinism_passed": true,
+    "ensemble_is_arithmetic_mean": true,
+    "hashes_match": true,
+    "one_shot_locks": true,
+    "role_seeds_valid": true
+  },
+  "role": "development_screen",
+  "screen_group_quantities_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4d_external\\development\\screen_group_quantities.npz",
+  "screen_group_quantities_sha256": "faa78ce074c45391b8966deca94a37035d0f36ff4ca4ad8cf3ee653a243e92ea",
+  "strongest_standard_baseline": "MARGIN_ONLY",
+  "trim_fractions": [
+    0.01,
+    0.05
+  ],
+  "tstar_stratum_split": 13,
+  "written_at": "2026-09-24T08:03:52"
+}

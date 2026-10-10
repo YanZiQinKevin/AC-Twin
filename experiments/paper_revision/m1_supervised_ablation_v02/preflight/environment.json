@@ -1,0 +1,12 @@
+{
+  "cuda": "13.0",
+  "cuda_available": true,
+  "executable": "C:\\ProgramData\\anaconda3\\python.exe",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti",
+  "numpy": "1.26.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.7",
+  "scipy": "1.13.1",
+  "sklearn": "1.5.1",
+  "torch": "2.9.1+cu130"
+}

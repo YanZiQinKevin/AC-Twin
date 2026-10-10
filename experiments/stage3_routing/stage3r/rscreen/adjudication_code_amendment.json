@@ -1,0 +1,23 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "status": "PRE_ADJUDICATION_ENGINEERING_FIX",
+  "model_lock_sha256": "80ddd0762aa375e7c03bb0ee7edf94f46d9f08cc7958cc14234fff10691de139",
+  "predictions_sha256": "03e72b168a2fc0ab75733ead50cf80c8a3bf8382c876c115f865248272563242",
+  "report_existed_before_fix": false,
+  "files": [
+    {
+      "file": "code/ac_twin/stage3r_screen.py",
+      "locked_sha256": "05116fd92ffc4b356e2c6f3d992121a52ce31d6ceb13ab604425c252ae0880a3",
+      "corrected_sha256": "22f09d3f6d416da7b7d1e4455c9c4925c3d9623bca8fc798dc53a3a684f2539f"
+    },
+    {
+      "file": "code/run_stage3r.py",
+      "locked_sha256": "1f630085111602f2607d36008d77e161c41cd8765e23c0fcf8678f3047489892",
+      "corrected_sha256": "c3c75d7f00f2c7d32d60f1076f57b0fba39a7f5d0d297fc07e7135e8ba9f5069"
+    }
+  ],
+  "scope": "Preserve pair-by-episode shape during stratum indexing and attach immutable input/amendment hashes to the adjudication report.",
+  "scientific_contract_change": false,
+  "data_model_seed_threshold_change": false,
+  "verification": "The regression test reproduces the pre-fix dimension error and passes after the indexing correction; focused screen and driver tests are required again after this final amendment."
+}

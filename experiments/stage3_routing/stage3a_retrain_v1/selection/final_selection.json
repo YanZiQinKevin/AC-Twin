@@ -1,0 +1,36 @@
+{
+  "final_config": {
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "lambda_cls": 0.1
+  },
+  "selection_basis": "lowest mean five-seed validation selection score (L_reg + 0.25*L_CE; mechanical, deterministic tie-break)",
+  "per_finalist_mean_validation_selection_score": {
+    "h64_r32_l0.1": 0.14420530862709136,
+    "h96_r32_l0.1": 0.14161221352566677
+  },
+  "selection_scores": [
+    0.14714090604914104,
+    0.13901672733248815,
+    0.13541584910605603,
+    0.13523982076770158,
+    0.15124776437294712
+  ],
+  "fit_five_results_sha256": "14f67928f2ebdad6927afef004033a2e18b2f7ee2ee0431377ebfcab84a6e38b",
+  "strongest_baselines": {
+    "strongest_continuous": "constant_zero",
+    "strongest_presence": "multinomial_plus_distance",
+    "strongest_high_vs_lowmid": "multinomial_adh",
+    "strongest_brier": "multinomial_plus_distance"
+  },
+  "strongest_baselines_frozen_on": "validation",
+  "finalist_name": "h96_r32_l0.1",
+  "checkpoint_signatures": [
+    "2dac69182ad082a073163f10e6d76180565f7afc426d451f69478f31c70ac1e6",
+    "c4dcf6e205f52dda71ce345287160d51b3505632777993b3ea4d4ff54a7388b2",
+    "d0f5106b634a837b32498c4c1d094e217766563abaed1419332fee10f9ca04bc",
+    "01c943b04c387cb0a9cc9455a765a723d25d78c7ca63259127d56731f8ffbce4",
+    "cce9a6414d94b7a0358da19f4f5e49a904f9b5d3eca1c84410da20d5db9e1975"
+  ],
+  "receipt_signature": "f29644cec61f8b9dfc04144df461e4096896c4bcafa11368f3339ed1b908bc85"
+}

@@ -1,0 +1,15 @@
+section,layer,n_groups,mean_regret,high_regret_frac,mean_within_group_rank_corr,value,support
+a_hat_action_semantics,LANE_LEFT,3,0.11721635189239588,1,-0.0069696730913259008,,low_support_exploratory
+a_hat_action_semantics,IDLE,0,,,,,low_support_exploratory
+a_hat_action_semantics,LANE_RIGHT,25,0.051106869825309945,0.40000000000000002,0.23047688296325103,,low_support_exploratory
+a_hat_action_semantics,FASTER,1970,0.021909110535317227,0.22538071065989848,0.358352440254743,,preregistered_secondary
+a_hat_action_semantics,SLOWER,2,0.083358123781076571,1,-0.32851489382405763,,low_support_exploratory
+a_hat_duration,duration_1,69,0.031060963987426318,0.3188405797101449,0.44258990097364431,,low_support_exploratory
+a_hat_duration,duration_3,1931,0.022171816824606221,0.22630761263593993,0.35240786504496185,,preregistered_secondary
+within_group_rank_corr_distribution,mean,2000,,,,0.35551914528450151,preregistered_secondary
+within_group_rank_corr_distribution,median,2000,,,,0.42332902003932971,preregistered_secondary
+within_group_rank_corr_distribution,p10,2000,,,,-0.23175527942309687,preregistered_secondary
+within_group_rank_corr_distribution,p25,2000,,,,0.12325855701962615,preregistered_secondary
+within_group_rank_corr_distribution,p75,2000,,,,0.6991387029797651,preregistered_secondary
+within_group_rank_corr_distribution,p90,2000,,,,0.82961730886670193,preregistered_secondary
+within_group_rank_corr_distribution,frac_negative,2000,,,,0.18149999999999999,preregistered_secondary

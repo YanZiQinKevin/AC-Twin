@@ -1,0 +1,22 @@
+{
+  "run": "dual_channel_learned_router_g32_pair4_r1505",
+  "state": "COMPLETE",
+  "condition": "dual_channel_learned_router",
+  "pair_index": 4,
+  "seed_pair": [
+    505,
+    1505
+  ],
+  "gate_hidden_dim": 32,
+  "config": {
+    "condition": "dual_channel_learned_router",
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "gate_hidden_dim": 32
+  },
+  "best_val_loss": 0.2970718407865312,
+  "validation_selection_score": 0.2970718407865312,
+  "epochs_run": 23,
+  "signature": "cf09ceda9fe1ab4e31cf08fa0576637291174190d563fb4851f06b25666efa3f",
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\dual_channel_learned_router_g32_pair4_r1505.pt"
+}

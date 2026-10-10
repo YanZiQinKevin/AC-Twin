@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-09-21T21:44:10+0800",
+  "inventory_file": "raw_dataset_inventory.jsonl",
+  "inventory_sha256": "0c511bf5e8c88941ac3bebc61cc522cdb653f8f15702624177c5a5480d1ef8d9",
+  "leaf_order": "filename_sorted",
+  "merkle_root_sha256": "3e8d988826c18fac9de9c7b0f39fd6fbf1828a76b4560d467fa41ebe40b0c582",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2-METADRIVE-EXTERNAL-2026-09-21-V0.2",
+  "shard_count": 1000,
+  "total_bytes": 92534476631
+}

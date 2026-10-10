@@ -1,0 +1,324 @@
+{
+  "bindings": {
+    "final_selection_sha256": "c2236a9b7798c702cbe6651c30fcac41d037343b3fd7eb984e75495c25e65259",
+    "power_code_sha256": "595ee1c1ce01f785ad3f3ea6f1f30260746759b81fbfb4e2764a0f5b60e477f7",
+    "power_validation_quantities_sha256": "023b83827cd278707e59dfcb8928917679e761a6993a9514378d66186985f21a",
+    "statistics_code_sha256": "58374e081914a6d3b41833b54793f89d3be5f35e9c0d7239ea951a4104b53b84",
+    "validation_report_sha256": "ca7890c3035eb564f653f44f58a50dd87c5b0c0b9100c8b0bbcc6f37c2e08787"
+  },
+  "bootstrap": {
+    "confidence": 0.8,
+    "design": "covariance taken DIRECTLY from the validation whole-group paired bootstrap draws (frozen entropy); an 80% SE is never reverse-derived from the CI width",
+    "n_resamples": 10000,
+    "seed": 2026122405
+  },
+  "candidate_ns": [
+    1000,
+    1500,
+    2000,
+    2500
+  ],
+  "conditioned_on": "a structurally valid screen: Gate Q isolation, n/n completeness, zero new/old ID overlap, no outcome rejection, and the denominator / projection / mask validity are NOT statistical; their failure is STAGE4D_EXTERNAL_INVALID_ANALYSIS, not a power shortfall",
+  "monte_carlo": 10000,
+  "n_reference": 1500,
+  "per_n": {
+    "1000": {
+      "binding_condition": "c6_reactive_frac",
+      "binding_power": 0.6119,
+      "joint_power_at_selection": 0.5352,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.0,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 0.9998,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.8107,
+            "r2_i_regret80": 0.651,
+            "r3_pr_auc_minus_prevalence": 0.9996,
+            "r4_seed_consistency_both_positive": 0.9115
+          }
+        },
+        "0.75": {
+          "joint_power": 0.5352,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.6119,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.975,
+            "r2_i_regret80": 0.8921,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9878
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9783,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9987,
+            "r2_i_regret80": 0.9794,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.999
+          }
+        }
+      }
+    },
+    "1500": {
+      "binding_condition": "c6_reactive_frac",
+      "binding_power": 0.6391,
+      "joint_power_at_selection": 0.614,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.0,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.8995,
+            "r2_i_regret80": 0.7742,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9612
+          }
+        },
+        "0.75": {
+          "joint_power": 0.614,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.6391,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9952,
+            "r2_i_regret80": 0.9659,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.998
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9976,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9976,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 1.0
+          }
+        }
+      }
+    },
+    "2000": {
+      "binding_condition": "c6_reactive_frac",
+      "binding_power": 0.6582,
+      "joint_power_at_selection": 0.6501,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.0,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9302,
+            "r2_i_regret80": 0.8681,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9828
+          }
+        },
+        "0.75": {
+          "joint_power": 0.6501,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.6582,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9991,
+            "r2_i_regret80": 0.9893,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9998
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9997,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9997,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 1.0
+          }
+        }
+      }
+    },
+    "2500": {
+      "binding_condition": "c6_reactive_frac",
+      "binding_power": 0.6795,
+      "joint_power_at_selection": 0.6759,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.0,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9512,
+            "r2_i_regret80": 0.8999,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9899
+          }
+        },
+        "0.75": {
+          "joint_power": 0.6759,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.6795,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9995,
+            "r2_i_regret80": 0.9952,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 1.0
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9999,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9999,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 1.0
+          }
+        }
+      }
+    }
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+  "scope": "ADAPTIVE_DEVELOPMENT_ONLY",
+  "se_reference": {
+    "base_mean_regret": 0.0020690334795515036,
+    "base_vs_random_improvement": 0.01775625788458696,
+    "high_regret_frac": 0.012903622948169212,
+    "i_aurc_regret": 0.03640944111096377,
+    "i_regret80": 0.028371286403738705,
+    "idle_mean_regret": 0.0022800188142959666,
+    "interaction_high_frac": 0.01282955153019244,
+    "interaction_low_frac": 0.01282955153019244,
+    "oracle_share_a0": 0.008761625248327715,
+    "oracle_share_a1": 0.008883619045302289,
+    "oracle_share_a2": 0.004409111706698943,
+    "oracle_share_a3": 0.006734136357999269,
+    "oracle_share_a4": 0.00833421250727795,
+    "oracle_share_a5": 0.008312395444730152,
+    "oracle_share_a6": 0.007488671532693026,
+    "oracle_share_a7": 0.01152447141635376,
+    "oracle_share_a8": 0.002893950504730726,
+    "oracle_share_a9": 0.0021033793825982416,
+    "pr_auc_minus_prevalence": 0.015763878394263704,
+    "reactive_frac": 0.01144442079370542,
+    "seed9101_i_aurc": 0.038422228501090415,
+    "seed9101_i_regret80": 0.02816744038538234,
+    "seed9202_i_aurc": 0.033340411670241134,
+    "seed9202_i_regret80": 0.028085353479908797,
+    "seed9303_i_aurc": 0.03933768671978118,
+    "seed9303_i_regret80": 0.02930762924287215,
+    "seed9404_i_aurc": 0.04233153272580992,
+    "seed9404_i_regret80": 0.029551840076298713,
+    "seed9505_i_aurc": 0.03121354811991739,
+    "seed9505_i_regret80": 0.027539555608185814,
+    "spearman_branch": 0.009953799212095285,
+    "tstar_high_frac": 0.013037182328718781,
+    "tstar_low_frac": 0.01303718232871878
+  },
+  "selected_n": null,
+  "selection_scenario": 0.75,
+  "semantics": "conservative development power pre-check from the adaptively-used validation role under the repaired pipeline; never a promise that the screen passes. A selected n permits the plan to continue to manifest/lock/collection; D2E_SCREEN_UNDERPOWERED is a terminal state that forbids collection.",
+  "sensitivity_at_max_n": {
+    "0.50": 0.0,
+    "0.75": 0.6759,
+    "1.00": 0.9999
+  },
+  "shrink_scenarios": [
+    1.0,
+    0.75,
+    0.5
+  ],
+  "status": "D2E_SCREEN_UNDERPOWERED",
+  "target": 0.8,
+  "terminal": true,
+  "theta_hat": {
+    "base_mean_regret": 0.057112465517534065,
+    "base_vs_random_improvement": 0.4921734906774733,
+    "high_regret_frac": 0.49266666666666664,
+    "i_aurc_regret": 0.19366888342529184,
+    "i_regret80": 0.11685124138320663,
+    "idle_mean_regret": 0.10603879854895719,
+    "interaction_high_frac": 0.49533333333333335,
+    "interaction_low_frac": 0.5046666666666667,
+    "oracle_share_a0": 0.134,
+    "oracle_share_a1": 0.13933333333333334,
+    "oracle_share_a2": 0.030666666666666665,
+    "oracle_share_a3": 0.074,
+    "oracle_share_a4": 0.11533333333333333,
+    "oracle_share_a5": 0.11733333333333333,
+    "oracle_share_a6": 0.092,
+    "oracle_share_a7": 0.278,
+    "oracle_share_a8": 0.012666666666666666,
+    "oracle_share_a9": 0.006666666666666667,
+    "pr_auc_minus_prevalence": 0.19327016004989334,
+    "reactive_frac": 0.272,
+    "seed9101_i_aurc": 0.16720203451630186,
+    "seed9101_i_regret80": 0.1312651703820933,
+    "seed9202_i_aurc": 0.20968778821454118,
+    "seed9202_i_regret80": 0.11404704627928554,
+    "seed9303_i_aurc": 0.17849892731976968,
+    "seed9303_i_regret80": 0.13014938134918402,
+    "seed9404_i_aurc": 0.15367316331689057,
+    "seed9404_i_regret80": 0.10562874572348427,
+    "seed9505_i_aurc": 0.20368805449809327,
+    "seed9505_i_regret80": 0.11673849333086733,
+    "spearman_branch": 0.7177268006525653,
+    "tstar_high_frac": 0.534,
+    "tstar_low_frac": 0.466
+  },
+  "underpowered": true,
+  "written_at": "2026-09-24T18:11:51"
+}

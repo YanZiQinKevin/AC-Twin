@@ -1,0 +1,19 @@
+{
+  "decision": "B2-b: caches store source_row_index + group_id bound to source relpath/SHA256/identity digest; raw group_seed never persisted",
+  "expected_new_scanner_seeds": 0,
+  "forbidden_npz_keys": [
+    "episode_seed",
+    "episode_seeds",
+    "group_seed",
+    "group_seeds"
+  ],
+  "plan_id": "AC-TWIN-RFER-M1-SUPERVISED-ABLATION-2026-10-07-V0.2",
+  "seed_json_hints": [
+    "episode_seed",
+    "episode_seeds",
+    "group_seed",
+    "group_seeds",
+    "seed_schedule"
+  ],
+  "verification": "verify phase scans every new NPZ/JSON in the namespace with the mirrored historical extraction rules"
+}

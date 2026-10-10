@@ -1,0 +1,59 @@
+{
+  "architecture": "Linear(1002,128)->LayerNorm->ReLU->Linear(128,128)->LayerNorm->ReLU->Linear(128,40)->reshape(20,2)",
+  "artifact": "ego_fit",
+  "candidates": [
+    "EGO_TRAJECTORY",
+    "EGO_TRAJECTORY_PLUS_RANK"
+  ],
+  "create_once": true,
+  "data_roles": {
+    "train": "adaptive_development_only",
+    "validation": "early_stop_and_checkpoint_only"
+  },
+  "early_stop_patience": 12,
+  "feature_layout": {
+    "counterfactual_plan_onehot": [
+      900,
+      1000
+    ],
+    "duration_norm": "(duration - 1.0) / 2.0",
+    "duration_norm_index": 1001,
+    "factual_plan_onehot": [
+      800,
+      900
+    ],
+    "factual_suffix": [
+      400,
+      800
+    ],
+    "history": [
+      0,
+      400
+    ],
+    "input_dim": 1002,
+    "scaler_channels": "motion (2,3,4,5) only; binary/unit-circle/one-hot unscaled",
+    "t_star_norm": "(t_star - 10.0) / 5.0",
+    "t_star_norm_index": 1000
+  },
+  "max_epochs": 100,
+  "optimizer": {
+    "lr": 0.001,
+    "name": "AdamW",
+    "weight_decay": 0.0001
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2E-EGO-CONSISTENT-EXTERNAL-2026-09-24-V0.1",
+  "rank_aux_weight": 0.25,
+  "rank_scale": 5.7689655291593995,
+  "report_path": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_fit_report.json",
+  "scaler_path": "experiments\\stage4_reliability\\stage4d_d2e\\development\\ego_models\\ego_scaler.json",
+  "scaler_sha256": "22175c6c14255e796ec132bec7c8c2f365482e714fd62843bb2f8081940e07aa",
+  "seeds": [
+    1101,
+    1202,
+    1303,
+    1404,
+    1505
+  ],
+  "train_batch_groups": 64,
+  "written_at": "2026-09-24T17:04:31"
+}

@@ -1,0 +1,31 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3B-2026-09-10-V0.1",
+  "device": "cuda",
+  "benchmark": {
+    "episodes": 12,
+    "epochs": 1,
+    "router_epoch_seconds": 0.29914049999206327,
+    "peak_memory_gb": 0.09862756729125977,
+    "date": "2026-09-10"
+  },
+  "extrapolation": {
+    "train_episodes": 1400,
+    "max_epochs": 40,
+    "per_run_seconds": 1395.9889999629622,
+    "tier1_runs": 20,
+    "crossfit_runs": 10,
+    "screen_runs": 2,
+    "total_runs": 32
+  },
+  "stage3b_plus_crossfit_hours": 12.408791110781886,
+  "approved": {
+    "point_hours": 15.0,
+    "interval_hours": [
+      7.5,
+      30.0
+    ],
+    "tolerance": 0.25
+  },
+  "within_approved_budget": true,
+  "verdict": "REUSE_APPROVED_BUDGET"
+}

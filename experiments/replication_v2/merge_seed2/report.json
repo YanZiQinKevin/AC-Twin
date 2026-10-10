@@ -1,0 +1,209 @@
+{
+  "experiment": "replication_merge_seed2",
+  "run_timestamp": "2026-09-04T14:54:16.101769+08:00",
+  "status": "complete",
+  "source_data": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\data\\replication_v2\\merge_seed2\\twinworld_multi_action_2000.npz",
+  "device": "cpu",
+  "conditions": [
+    "history_only",
+    "shuffled_full",
+    "prefix_10"
+  ],
+  "dataset_counts": {
+    "total": 2000,
+    "train": 1400,
+    "val": 300,
+    "test": 300
+  },
+  "independent_unit": "episode_pair",
+  "coordinate_transform": "episode_anchor_relative",
+  "shuffle_matching": {
+    "n": 2000,
+    "self_matches": 0,
+    "cross_split_matches": 0,
+    "cf_action_match_rate": 1.0,
+    "duration_match_rate": 1.0,
+    "factual_action_0_match_rate": 0.995,
+    "exact_four_field_match_count": 1990
+  },
+  "residual_model": {
+    "status": "not_trained",
+    "reason": "No configured condition uses residual evidence."
+  },
+  "condition_metrics": {
+    "history_only": {
+      "effect_ADE_at_20": 1.8306455612182617,
+      "effect_FDE_at_20": 3.2210395336151123,
+      "effect_ADE_sd_across_training_seeds": 0.09799469262361526,
+      "effect_FDE_sd_across_training_seeds": 0.17455165088176727,
+      "n_training_seeds": 5
+    },
+    "shuffled_full": {
+      "effect_ADE_at_20": 1.9249699115753174,
+      "effect_FDE_at_20": 3.3350369930267334,
+      "effect_ADE_sd_across_training_seeds": 0.13116595149040222,
+      "effect_FDE_sd_across_training_seeds": 0.19062300026416779,
+      "n_training_seeds": 5
+    },
+    "prefix_10": {
+      "effect_ADE_at_20": 1.2861329317092896,
+      "effect_FDE_at_20": 2.2574992179870605,
+      "effect_ADE_sd_across_training_seeds": 0.03725016117095947,
+      "effect_FDE_sd_across_training_seeds": 0.10024530440568924,
+      "n_training_seeds": 5
+    }
+  },
+  "training_runs": {
+    "history_only": [
+      {
+        "seed": 11,
+        "effect_ADE_at_20": 1.8384333848953247,
+        "effect_FDE_at_20": 3.2375903129577637,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.22386659562587738
+      },
+      {
+        "seed": 22,
+        "effect_ADE_at_20": 1.746537685394287,
+        "effect_FDE_at_20": 3.0948779582977295,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.213015726407369
+      },
+      {
+        "seed": 33,
+        "effect_ADE_at_20": 1.995849370956421,
+        "effect_FDE_at_20": 3.50563645362854,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.2536357502142588
+      },
+      {
+        "seed": 44,
+        "effect_ADE_at_20": 1.7903603315353394,
+        "effect_FDE_at_20": 3.0650737285614014,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.21660627126693727
+      },
+      {
+        "seed": 55,
+        "effect_ADE_at_20": 1.7820466756820679,
+        "effect_FDE_at_20": 3.2020206451416016,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.2102842124303182
+      }
+    ],
+    "shuffled_full": [
+      {
+        "seed": 11,
+        "effect_ADE_at_20": 1.948747992515564,
+        "effect_FDE_at_20": 3.342613935470581,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.2611740001042684
+      },
+      {
+        "seed": 22,
+        "effect_ADE_at_20": 1.9366182088851929,
+        "effect_FDE_at_20": 3.400503635406494,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.27218907117843627
+      },
+      {
+        "seed": 33,
+        "effect_ADE_at_20": 2.0835530757904053,
+        "effect_FDE_at_20": 3.5910067558288574,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.27840269207954405
+      },
+      {
+        "seed": 44,
+        "effect_ADE_at_20": 1.9378483295440674,
+        "effect_FDE_at_20": 3.2738723754882812,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.28654453019301096
+      },
+      {
+        "seed": 55,
+        "effect_ADE_at_20": 1.718082308769226,
+        "effect_FDE_at_20": 3.0671870708465576,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.24956883033116659
+      }
+    ],
+    "prefix_10": [
+      {
+        "seed": 11,
+        "effect_ADE_at_20": 1.2917687892913818,
+        "effect_FDE_at_20": 2.245404005050659,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.13075717975695927
+      },
+      {
+        "seed": 22,
+        "effect_ADE_at_20": 1.235694408416748,
+        "effect_FDE_at_20": 2.1658430099487305,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.12460392206907273
+      },
+      {
+        "seed": 33,
+        "effect_ADE_at_20": 1.3272886276245117,
+        "effect_FDE_at_20": 2.3781259059906006,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.14127404938141505
+      },
+      {
+        "seed": 44,
+        "effect_ADE_at_20": 1.2627170085906982,
+        "effect_FDE_at_20": 2.156984806060791,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.139431600968043
+      },
+      {
+        "seed": 55,
+        "effect_ADE_at_20": 1.3131957054138184,
+        "effect_FDE_at_20": 2.341137647628784,
+        "epochs_run": 60,
+        "best_val_mse_normalized": 0.1406300860643387
+      }
+    ]
+  },
+  "primary_contrast": "shuffled_full_minus_prefix_10",
+  "primary_reference_condition": "shuffled_full",
+  "primary_candidate_condition": "prefix_10",
+  "primary_analysis": {
+    "independent_unit": "test_episode",
+    "n": 300,
+    "mean_reference_error": 3.335036815702915,
+    "mean_candidate_error": 2.2574991373717785,
+    "mean_paired_difference_reference_minus_candidate": 1.0775376783311368,
+    "confidence_level": 0.95,
+    "ci_lower": 0.8508860173424085,
+    "ci_upper": 1.3077863400739929,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260917
+  },
+  "decision": {
+    "verdict": "STRONG_PASS",
+    "relative_improvement_percent": 32.3096186901921,
+    "minimum_practical_improvement_percent": 5.0,
+    "strong_improvement_percent": 10.0
+  },
+  "exploratory_contrasts_against_candidate": {
+    "history_only_minus_prefix_10": {
+      "independent_unit": "test_episode",
+      "n": 300,
+      "mean_reference_error": 3.221039676964283,
+      "mean_candidate_error": 2.2574991373717785,
+      "mean_paired_difference_reference_minus_candidate": 0.9635405395925045,
+      "confidence_level": 0.95,
+      "ci_lower": 0.7573942981188497,
+      "ci_upper": 1.1708828878998756,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260926
+    }
+  },
+  "limitations": [
+    "Each replication run contains one simulator scene family; generalization is assessed only after cross-run synthesis.",
+    "Shuffled suffixes are action/duration matched and episode-relative, but cannot match every latent scene property.",
+    "Only the shuffled_full versus prefix_10 contrast is confirmatory; all other contrasts are exploratory."
+  ]
+}

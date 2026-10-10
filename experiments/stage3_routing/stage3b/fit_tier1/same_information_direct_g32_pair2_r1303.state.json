@@ -1,0 +1,22 @@
+{
+  "run": "same_information_direct_g32_pair2_r1303",
+  "state": "COMPLETE",
+  "condition": "same_information_direct",
+  "pair_index": 2,
+  "seed_pair": [
+    303,
+    1303
+  ],
+  "gate_hidden_dim": 32,
+  "config": {
+    "condition": "same_information_direct",
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "gate_hidden_dim": 32
+  },
+  "best_val_loss": 0.32273347894681614,
+  "validation_selection_score": 0.32273347894681614,
+  "epochs_run": 12,
+  "signature": "4780e8934c43d77a85739d2e174803ccc664d2e40aa84402237b2e44e13caa45",
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3b\\fit_tier1\\same_information_direct_g32_pair2_r1303.pt"
+}

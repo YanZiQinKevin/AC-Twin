@@ -1,0 +1,74 @@
+{
+  "accepted_groups": 12,
+  "action_stream_root": [
+    2026093100,
+    12
+  ],
+  "attempts": 21,
+  "config_signature": "f5ed9e0a9ea4f6ce55acb47c8644d275708482d8293f7e36a36b6af97a7fb934",
+  "confirmation_truth": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_confirm\\smoke\\confirmation_truth.npz",
+  "confirmation_truth_sha256": "9fa7f5a2fa731722a0232335288adc2bed67dea9afa9ff9bbb18c22a5172fbdd",
+  "counterfactual_branches": 120,
+  "environment": {
+    "gymnasium_version": "1.3.0",
+    "highway_env_version": "1.10.2",
+    "numpy_version": "1.26.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.7",
+    "torch_version": "2.9.1+cu130"
+  },
+  "generated_at": "2026-09-20T03:16:38",
+  "group_order_binding": {
+    "confirmation_truth_group_seed_sha256": "3c26d27a231aeaf3f1be741b6c653f02cd8ed2e33988376cdb9ba4b7d5e77ac9",
+    "inference_inputs_group_seed_sha256": "3c26d27a231aeaf3f1be741b6c653f02cd8ed2e33988376cdb9ba4b7d5e77ac9",
+    "n_groups": 12,
+    "order": "acceptance_order",
+    "same_order": true
+  },
+  "inference_inputs": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_confirm\\smoke\\inference_inputs.npz",
+  "inference_inputs_sha256": "73ba88bb909551062eb765a38fac1e699b9cbfef8e75aa309fa5c4239aa82da1",
+  "legal_fields": [
+    "object_history",
+    "object_factual_future",
+    "factual_actions",
+    "cf_actions",
+    "cf_durations",
+    "t_star",
+    "group_seed",
+    "inference_mask"
+  ],
+  "partial": false,
+  "plan_id": "AC-TWIN-RFER-STAGE4CR2-CONFIRM-2026-09-17-V0.1",
+  "prefix_max_abs_diff": 0.0,
+  "purpose": "stage4cr2_merge_multiaction_confirm",
+  "receipt_path": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4cr2_confirm\\smoke\\smoke_collection_receipt.json",
+  "rejection_ledger": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\data\\object_centric_stage\\stage4cr2_merge_multiaction_confirm\\smoke\\rejection_ledger.jsonl",
+  "requested_groups": 12,
+  "role": "smoke",
+  "seed_schedule_sha256": "8e35067e0be88e2ac7b20679e07ed2765b0cb5bcb564a3307fd80560bff5d04f",
+  "skip_counts": {
+    "counterfactual_future_short": 0,
+    "duplicate_seed": 0,
+    "eval_mask_mismatch": 0,
+    "factual_future_short": 0,
+    "initial_fingerprint_mismatch": 0,
+    "no_legal_agent_time": 0,
+    "non_finite": 0,
+    "object_prefix_mismatch": 0,
+    "observation_shape": 0,
+    "prefix_terminated": 9,
+    "present_set_mismatch": 0,
+    "short_history": 0
+  },
+  "stage_namespace": "stage4cr2_confirm",
+  "status": "ENGINEERING_SMOKE_ONLY",
+  "truth_fields": [
+    "object_counterfactual_futures",
+    "cf_actions",
+    "cf_durations",
+    "factual_actions",
+    "t_star",
+    "group_seed",
+    "inference_mask"
+  ]
+}

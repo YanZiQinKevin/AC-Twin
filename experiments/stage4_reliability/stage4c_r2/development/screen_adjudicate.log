@@ -1,0 +1,17 @@
+[stage4cr2-screen] truth assembled create-once -> screen_group_quantities.npz (4.5s)
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=25s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=50s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=75s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=100s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=125s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=150s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=175s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=200s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=225s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=250s
+[stage4cr2-screen] bootstrap running (10000 whole-group paired resamples, entropy 2026092702) elapsed=275s
+[stage4cr2-screen] paired bootstrap done in 295.1s
+[stage4cr2-screen] Gate TASK-R2 status=TASK_R2_QUALIFIED conditions={'c1_all_complete_gate_q': True, 'c2_high_regret_frac_ge_15pct': True, 'c3_at_least_3_oracle_actions_ge_5pct': True, 'c4_branch_spearman_ci_lower_positive': True, 'c5_base_vs_random_point_and_ci_positive': True, 'c6_base_not_worse_than_idle': True, 'c7_strata_ge_800_groups': True}
+[stage4cr2-screen] Gate RISK-DECISION-R2_dev conditions={'r1_i_aurc_regret': True, 'r2_i_regret80': True, 'r3_pr_auc_minus_prevalence': True, 'r4_seeds_i_aurc': True, 'r5_seeds_i_regret80': True, 'r6_strata_floor': True, 'r7_trims_positive': True, 'r8_margin_spearman': True, 'r9_qa_and_one_shot_locks': True}
+[stage4cr2-screen] I_AURC=0.432452 (CI80 lower 0.396432) I_R80=0.291028 (CI80 lower 0.265663) seeds 5/5+ 5/5+
+[stage4cr2-screen] TERMINAL STATE: STAGE4CR2_DEV_READY_FOR_CONFIRMATION

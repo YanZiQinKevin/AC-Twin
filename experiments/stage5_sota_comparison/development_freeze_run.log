@@ -1,0 +1,70 @@
+[stage5-dev] load bundles/truth: 1/4 (25.0%) elapsed=4s eta=12s train
+[stage5-dev] load bundles/truth: DONE status=bundles_ok total=2/4 elapsed=5s
+[stage5-dev] scoring AC-Twin on validation (device=cuda) + R2-gate parity check
+[stage5-dev] parity OK on device=cuda (|dAURC|=0.00e+00, |dR80|=0.00e+00)
+[stage5-dev] fit methods: 1/60 (1.7%) elapsed=6s eta=374s CONFIDNET_TCP_ADAPTED|grid0|8101
+[stage5-dev] fit methods: 2/60 (3.3%) elapsed=12s eta=339s CONFIDNET_TCP_ADAPTED|grid0|8202
+[stage5-dev] fit methods: 3/60 (5.0%) elapsed=17s eta=323s CONFIDNET_TCP_ADAPTED|grid0|8303
+[stage5-dev] fit methods: 4/60 (6.7%) elapsed=23s eta=321s CONFIDNET_TCP_ADAPTED|grid0|8404
+[stage5-dev] fit methods: 5/60 (8.3%) elapsed=28s eta=311s CONFIDNET_TCP_ADAPTED|grid0|8505
+[stage5-dev] fit methods: 6/60 (10.0%) elapsed=34s eta=303s CONFIDNET_TCP_ADAPTED|grid1|8101
+[stage5-dev] fit methods: 7/60 (11.7%) elapsed=40s eta=299s CONFIDNET_TCP_ADAPTED|grid1|8202
+[stage5-dev] fit methods: 8/60 (13.3%) elapsed=45s eta=292s CONFIDNET_TCP_ADAPTED|grid1|8303
+[stage5-dev] fit methods: 9/60 (15.0%) elapsed=51s eta=286s CONFIDNET_TCP_ADAPTED|grid1|8404
+[stage5-dev] fit methods: 10/60 (16.7%) elapsed=56s eta=282s CONFIDNET_TCP_ADAPTED|grid1|8505
+[stage5-dev] fit methods: 11/60 (18.3%) elapsed=62s eta=275s CONFIDNET_TCP_ADAPTED|grid2|8101
+[stage5-dev] fit methods: 12/60 (20.0%) elapsed=67s eta=270s CONFIDNET_TCP_ADAPTED|grid2|8202
+[stage5-dev] fit methods: 13/60 (21.7%) elapsed=73s eta=265s CONFIDNET_TCP_ADAPTED|grid2|8303
+[stage5-dev] fit methods: 14/60 (23.3%) elapsed=79s eta=259s CONFIDNET_TCP_ADAPTED|grid2|8404
+[stage5-dev] fit methods: 15/60 (25.0%) elapsed=84s eta=253s CONFIDNET_TCP_ADAPTED|grid2|8505
+[stage5-dev] fit methods: 16/60 (26.7%) elapsed=95s eta=261s SELECTIVENET_REGRET_ADAPTED|grid0|8101
+[stage5-dev] fit methods: 17/60 (28.3%) elapsed=105s eta=266s SELECTIVENET_REGRET_ADAPTED|grid0|8202
+[stage5-dev] fit methods: 18/60 (30.0%) elapsed=115s eta=269s SELECTIVENET_REGRET_ADAPTED|grid0|8303
+[stage5-dev] fit methods: 19/60 (31.7%) elapsed=125s eta=270s SELECTIVENET_REGRET_ADAPTED|grid0|8404
+[stage5-dev] fit methods: 20/60 (33.3%) elapsed=135s eta=271s SELECTIVENET_REGRET_ADAPTED|grid0|8505
+[stage5-dev] fit methods: 21/60 (35.0%) elapsed=147s eta=274s SELECTIVENET_REGRET_ADAPTED|grid1|8101
+[stage5-dev] fit methods: 22/60 (36.7%) elapsed=160s eta=277s SELECTIVENET_REGRET_ADAPTED|grid1|8202
+[stage5-dev] fit methods: 23/60 (38.3%) elapsed=173s eta=278s SELECTIVENET_REGRET_ADAPTED|grid1|8303
+[stage5-dev] fit methods: 24/60 (40.0%) elapsed=186s eta=278s SELECTIVENET_REGRET_ADAPTED|grid1|8404
+[stage5-dev] fit methods: 25/60 (41.7%) elapsed=199s eta=278s SELECTIVENET_REGRET_ADAPTED|grid1|8505
+[stage5-dev] fit methods: 26/60 (43.3%) elapsed=205s eta=268s RWR_NN_KNN_REJECT_ADAPTED|grid0|8101
+[stage5-dev] fit methods: 27/60 (45.0%) elapsed=213s eta=260s RWR_NN_KNN_REJECT_ADAPTED|grid0|8202
+[stage5-dev] fit methods: 28/60 (46.7%) elapsed=220s eta=251s RWR_NN_KNN_REJECT_ADAPTED|grid0|8303
+[stage5-dev] fit methods: 29/60 (48.3%) elapsed=227s eta=242s RWR_NN_KNN_REJECT_ADAPTED|grid0|8404
+[stage5-dev] fit methods: 30/60 (50.0%) elapsed=234s eta=234s RWR_NN_KNN_REJECT_ADAPTED|grid0|8505
+[stage5-dev] fit methods: 31/60 (51.7%) elapsed=241s eta=225s RWR_NN_KNN_REJECT_ADAPTED|grid1|8101
+[stage5-dev] fit methods: 32/60 (53.3%) elapsed=248s eta=217s RWR_NN_KNN_REJECT_ADAPTED|grid1|8202
+[stage5-dev] fit methods: 33/60 (55.0%) elapsed=255s eta=209s RWR_NN_KNN_REJECT_ADAPTED|grid1|8303
+[stage5-dev] fit methods: 34/60 (56.7%) elapsed=262s eta=201s RWR_NN_KNN_REJECT_ADAPTED|grid1|8404
+[stage5-dev] fit methods: 35/60 (58.3%) elapsed=269s eta=192s RWR_NN_KNN_REJECT_ADAPTED|grid1|8505
+[stage5-dev] fit methods: 36/60 (60.0%) elapsed=276s eta=184s RWR_NN_KNN_REJECT_ADAPTED|grid2|8101
+[stage5-dev] fit methods: 37/60 (61.7%) elapsed=283s eta=176s RWR_NN_KNN_REJECT_ADAPTED|grid2|8202
+[stage5-dev] fit methods: 38/60 (63.3%) elapsed=290s eta=168s RWR_NN_KNN_REJECT_ADAPTED|grid2|8303
+[stage5-dev] fit methods: 39/60 (65.0%) elapsed=297s eta=160s RWR_NN_KNN_REJECT_ADAPTED|grid2|8404
+[stage5-dev] fit methods: 40/60 (66.7%) elapsed=305s eta=152s RWR_NN_KNN_REJECT_ADAPTED|grid2|8505
+[stage5-dev] fit methods: 41/60 (68.3%) elapsed=310s eta=144s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8101
+[stage5-dev] fit methods: 42/60 (70.0%) elapsed=316s eta=135s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8202
+[stage5-dev] fit methods: 43/60 (71.7%) elapsed=322s eta=127s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8303
+[stage5-dev] fit methods: 44/60 (73.3%) elapsed=327s eta=119s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8404
+[stage5-dev] fit methods: 45/60 (75.0%) elapsed=333s eta=111s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid0|8505
+[stage5-dev] fit methods: 46/60 (76.7%) elapsed=338s eta=103s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8101
+[stage5-dev] fit methods: 47/60 (78.3%) elapsed=344s eta=95s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8202
+[stage5-dev] fit methods: 48/60 (80.0%) elapsed=349s eta=87s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8303
+[stage5-dev] fit methods: 49/60 (81.7%) elapsed=355s eta=80s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8404
+[stage5-dev] fit methods: 50/60 (83.3%) elapsed=361s eta=72s CONFORMAL_REGRESSION_REJECT_ADAPTED|grid1|8505
+[stage5-dev] fit methods: 51/60 (85.0%) elapsed=368s eta=65s CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8101
+[stage5-dev] fit methods: 52/60 (86.7%) elapsed=376s eta=58s CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8202
+[stage5-dev] fit methods: 53/60 (88.3%) elapsed=383s eta=51s CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8303
+[stage5-dev] fit methods: 54/60 (90.0%) elapsed=391s eta=43s CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8404
+[stage5-dev] fit methods: 55/60 (91.7%) elapsed=398s eta=36s CCTR_DRIVING_CALIBRATION_ADAPTED|grid0|8505
+[stage5-dev] fit methods: 56/60 (93.3%) elapsed=405s eta=29s CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8101
+[stage5-dev] fit methods: 57/60 (95.0%) elapsed=414s eta=22s CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8202
+[stage5-dev] fit methods: 58/60 (96.7%) elapsed=421s eta=15s CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8303
+[stage5-dev] fit methods: 59/60 (98.3%) elapsed=429s eta=7s CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8404
+[stage5-dev] fit methods: 60/60 (100.0%) elapsed=437s eta=0s CCTR_DRIVING_CALIBRATION_ADAPTED|grid1|8505
+[stage5-dev] fit methods: DONE status=all_fits_complete total=60/60 elapsed=437s
+[stage5-dev] validation evaluation: 1/12 (8.3%) elapsed=0s eta=0s CONFIDNET_TCP_ADAPTED#grid0
+[stage5-dev] validation evaluation: DONE status=validation_evaluated total=12/12 elapsed=1s
+[stage5-dev] STRONGEST_PUBLISHED_BASELINE = CCTR_DRIVING_CALIBRATION_ADAPTED (config grid1, validation AURC 0.012762)
+[stage5-dev] development freeze COMPLETE: strongest=CCTR_DRIVING_CALIBRATION_ADAPTED, material=True, i_aurc=0.1404, i_regret80=0.1778, elapsed=468s
+[stage5-dev] summary: strongest=CCTR_DRIVING_CALIBRATION_ADAPTED material=True

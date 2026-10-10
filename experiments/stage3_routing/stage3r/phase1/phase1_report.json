@@ -1,0 +1,106 @@
+{
+  "best_constant_w": 0.6,
+  "calibration_deciles": [
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.48969891694560647,
+      "teacher_mean": 0.5437438192500146
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.5154604620188474,
+      "teacher_mean": 0.5549665878558929
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.5294608929057916,
+      "teacher_mean": 0.5494754329943341
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.5400266831964254,
+      "teacher_mean": 0.5615116743915254
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.5519726578195889,
+      "teacher_mean": 0.5785635365262375
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.5662342450072368,
+      "teacher_mean": 0.5573938643249324
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.5770132717986901,
+      "teacher_mean": 0.5759021446106636
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.5882435354391734,
+      "teacher_mean": 0.5959709697752308
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.6090541862646739,
+      "teacher_mean": 0.576786476295633
+    },
+    {
+      "fraction": 0.1,
+      "predicted_mean": 0.6806026958177487,
+      "teacher_mean": 0.612184958084501
+    }
+  ],
+  "cew_mae": 0.22667026122230577,
+  "diagnostic_mean_validation_ade": {
+    "end_to_end_mixture": 0.2591598242521286,
+    "response_only_router": 0.25978087782859804
+  },
+  "passed": true,
+  "per_pair_pr_auc_minus_prevalence": [
+    0.015147518505996604,
+    0.022885911126778957,
+    1.776743359083177e-05,
+    0.00894941638264135,
+    0.014352318813334097
+  ],
+  "per_pair_router_relative": [
+    0.008511505073164005,
+    0.003836818225506855,
+    0.004745410476520884,
+    0.0056256442615174596,
+    5.405059005236801e-05
+  ],
+  "per_pair_spearman": [
+    0.06718323232466679,
+    0.15076953349324138,
+    0.1017034719855733,
+    0.09823551431928253,
+    0.10414038707556164
+  ],
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "positive_pairs": 5,
+  "pr_auc_minus_prevalence_ci80_lower": 0.002456576440089604,
+  "pr_auc_minus_prevalence_ci80_upper": 0.022975161289733467,
+  "pr_auc_minus_prevalence_mean": 0.012270586452468368,
+  "prevalence_mean": 0.6152083333333334,
+  "provisional_candidate": {
+    "lambda_cew": 1.0,
+    "lambda_rank": 0.0
+  },
+  "router_relative_vs_best_constant": 0.004593342718150373,
+  "spearman_ci80_lower": 0.08284682644522175,
+  "spearman_ci80_upper": 0.12676400928452775,
+  "spearman_mean": 0.10440642783966511,
+  "status": "STAGE3R_VALUE_WEIGHT_PREDICTABLE",
+  "weight_bin_fraction": [
+    0.0,
+    0.0011416666666666667,
+    0.8210166666666666,
+    0.17769166666666666,
+    0.00015
+  ],
+  "weight_mean": 0.5647767547213783,
+  "weight_std": 0.05414286921960497
+}

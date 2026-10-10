@@ -1,0 +1,334 @@
+{
+  "experiment": "pilot_2000",
+  "run_timestamp": "2026-09-04T12:15:56.206178+08:00",
+  "status": "complete",
+  "device": "cpu",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "torch": "2.9.0+cpu"
+  },
+  "dataset_path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\data\\pilot_2000\\twinworld_multi_action_2000.npz",
+  "dataset_counts": {
+    "total": 2000,
+    "train": 1400,
+    "val": 300,
+    "test": 300
+  },
+  "collection_integrity": {
+    "requested_pairs": 2000,
+    "accepted_pairs": 2000,
+    "attempts": 3081,
+    "acceptance_rate": 0.6491398896462187,
+    "skip_counts": {
+      "short_future": 1081
+    },
+    "prefix_max_abs_diff": 0.0,
+    "identity_replay_checks": 20,
+    "identity_max_abs_diff": 0.0,
+    "obs_shape": [
+      5,
+      5
+    ],
+    "action_mapping": {
+      "LANE_LEFT": 0,
+      "IDLE": 1,
+      "LANE_RIGHT": 2,
+      "FASTER": 3,
+      "SLOWER": 4
+    },
+    "stratum_counts": {
+      "action_0_duration_1": 200,
+      "action_0_duration_3": 200,
+      "action_1_duration_1": 200,
+      "action_1_duration_3": 200,
+      "action_2_duration_1": 200,
+      "action_2_duration_3": 200,
+      "action_3_duration_1": 200,
+      "action_3_duration_3": 200,
+      "action_4_duration_1": 200,
+      "action_4_duration_3": 200
+    },
+    "split_counts": {
+      "train": 1400,
+      "val": 300,
+      "test": 300
+    },
+    "effect_fde_mean_m": 3.9669742584228516,
+    "effect_fde_median_m": 1.0008468627929688,
+    "effect_fde_bins": {
+      "zero_le_1e-6": 539,
+      "small_0_to_1m": 448,
+      "medium_1_to_4m": 367,
+      "large_gt_4m": 646
+    }
+  },
+  "action_mapping": {
+    "LANE_LEFT": 0,
+    "IDLE": 1,
+    "LANE_RIGHT": 2,
+    "FASTER": 3,
+    "SLOWER": 4
+  },
+  "independent_unit": "episode_pair",
+  "primary_endpoint": "effect_FDE_at_20",
+  "aggregate_test_metrics": {
+    "zero_effect": {
+      "effect_ADE_at_20": 2.7308568954467773,
+      "effect_FDE_at_20": 3.9935123920440674
+    },
+    "action_pair_mean": {
+      "effect_ADE_at_20": 2.4461584091186523,
+      "effect_FDE_at_20": 3.7674059867858887
+    },
+    "history_only": {
+      "effect_ADE_at_20": 1.8253271579742432,
+      "effect_FDE_at_20": 3.123764753341675
+    },
+    "factual_suffix": {
+      "effect_ADE_at_20": 1.4798344373703003,
+      "effect_FDE_at_20": 2.4833459854125977
+    }
+  },
+  "aggregate_definition": "For learned models, compute each test-episode error for every training seed, then average errors across seeds. Training seeds are not treated as independent n.",
+  "ensemble_prediction_metrics_descriptive_only": {
+    "history_only": {
+      "effect_ADE_at_20": 1.6686064004898071,
+      "effect_FDE_at_20": 2.9079902172088623
+    },
+    "factual_suffix": {
+      "effect_ADE_at_20": 1.3299819231033325,
+      "effect_FDE_at_20": 2.287015199661255
+    }
+  },
+  "training_seed_summary": {
+    "history_only": {
+      "effect_ADE_at_20": {
+        "mean": 1.8253271341323853,
+        "sd_across_training_seeds": 0.06278740781404188,
+        "n_training_seeds": 5
+      },
+      "effect_FDE_at_20": {
+        "mean": 3.1237646102905274,
+        "sd_across_training_seeds": 0.1267301148338085,
+        "n_training_seeds": 5
+      },
+      "runs": [
+        {
+          "seed": 11,
+          "effect_ADE_at_20": 1.7538063526153564,
+          "effect_FDE_at_20": 2.9787251949310303,
+          "best_val_mse_normalized": 0.2379426258802414,
+          "epochs_run": 60
+        },
+        {
+          "seed": 22,
+          "effect_ADE_at_20": 1.8846997022628784,
+          "effect_FDE_at_20": 3.189836025238037,
+          "best_val_mse_normalized": 0.2470486452182134,
+          "epochs_run": 60
+        },
+        {
+          "seed": 33,
+          "effect_ADE_at_20": 1.7999541759490967,
+          "effect_FDE_at_20": 3.014742851257324,
+          "best_val_mse_normalized": 0.2624221189816793,
+          "epochs_run": 60
+        },
+        {
+          "seed": 44,
+          "effect_ADE_at_20": 1.8978511095046997,
+          "effect_FDE_at_20": 3.285893201828003,
+          "best_val_mse_normalized": 0.2535723175605138,
+          "epochs_run": 60
+        },
+        {
+          "seed": 55,
+          "effect_ADE_at_20": 1.790324330329895,
+          "effect_FDE_at_20": 3.149625778198242,
+          "best_val_mse_normalized": 0.21573444406191508,
+          "epochs_run": 60
+        }
+      ]
+    },
+    "factual_suffix": {
+      "effect_ADE_at_20": {
+        "mean": 1.4798344373703003,
+        "sd_across_training_seeds": 0.08109753299793929,
+        "n_training_seeds": 5
+      },
+      "effect_FDE_at_20": {
+        "mean": 2.4833460330963133,
+        "sd_across_training_seeds": 0.1546142518237303,
+        "n_training_seeds": 5
+      },
+      "runs": [
+        {
+          "seed": 11,
+          "effect_ADE_at_20": 1.4949036836624146,
+          "effect_FDE_at_20": 2.4737725257873535,
+          "best_val_mse_normalized": 0.18454146802425384,
+          "epochs_run": 60
+        },
+        {
+          "seed": 22,
+          "effect_ADE_at_20": 1.378092646598816,
+          "effect_FDE_at_20": 2.277745008468628,
+          "best_val_mse_normalized": 0.15831451406081518,
+          "epochs_run": 60
+        },
+        {
+          "seed": 33,
+          "effect_ADE_at_20": 1.4368799924850464,
+          "effect_FDE_at_20": 2.4099152088165283,
+          "best_val_mse_normalized": 0.18148787677288056,
+          "epochs_run": 60
+        },
+        {
+          "seed": 44,
+          "effect_ADE_at_20": 1.5970029830932617,
+          "effect_FDE_at_20": 2.6834170818328857,
+          "best_val_mse_normalized": 0.18094441384077073,
+          "epochs_run": 60
+        },
+        {
+          "seed": 55,
+          "effect_ADE_at_20": 1.492292881011963,
+          "effect_FDE_at_20": 2.571880340576172,
+          "best_val_mse_normalized": 0.14870668123165767,
+          "epochs_run": 60
+        }
+      ]
+    }
+  },
+  "primary_analysis": {
+    "independent_unit": "test_episode",
+    "n": 300,
+    "mean_reference_error": 3.1237646160523096,
+    "mean_candidate_error": 2.483346028029919,
+    "mean_paired_difference_reference_minus_candidate": 0.640418588022391,
+    "confidence_level": 0.95,
+    "ci_lower": 0.4022546982268492,
+    "ci_upper": 0.8802027897064884,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260906
+  },
+  "decision": {
+    "verdict": "STRONG_PASS",
+    "relative_improvement_percent": 20.501499528211138,
+    "minimum_practical_improvement_percent": 5.0,
+    "strong_improvement_percent": 10.0
+  },
+  "stratified_test_metrics": {
+    "history_only": {
+      "action_0_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.1526906490325928,
+        "effect_FDE_at_20": 1.8379234075546265
+      },
+      "action_0_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 1.9281518459320068,
+        "effect_FDE_at_20": 3.245884656906128
+      },
+      "action_1_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.759757161140442,
+        "effect_FDE_at_20": 2.899688959121704
+      },
+      "action_1_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 1.851905107498169,
+        "effect_FDE_at_20": 3.082397699356079
+      },
+      "action_2_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.1585267782211304,
+        "effect_FDE_at_20": 1.8172752857208252
+      },
+      "action_2_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 1.9071853160858154,
+        "effect_FDE_at_20": 3.3862524032592773
+      },
+      "action_3_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.701852798461914,
+        "effect_FDE_at_20": 2.683350086212158
+      },
+      "action_3_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 2.303334951400757,
+        "effect_FDE_at_20": 4.473054885864258
+      },
+      "action_4_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 2.2179644107818604,
+        "effect_FDE_at_20": 3.8244690895080566
+      },
+      "action_4_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 2.2719032764434814,
+        "effect_FDE_at_20": 3.987349271774292
+      }
+    },
+    "factual_suffix": {
+      "action_0_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.2253574132919312,
+        "effect_FDE_at_20": 1.9354687929153442
+      },
+      "action_0_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 1.3291828632354736,
+        "effect_FDE_at_20": 2.1082510948181152
+      },
+      "action_1_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.2570335865020752,
+        "effect_FDE_at_20": 2.055626153945923
+      },
+      "action_1_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 1.6617199182510376,
+        "effect_FDE_at_20": 2.753333568572998
+      },
+      "action_2_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.0854579210281372,
+        "effect_FDE_at_20": 1.7903090715408325
+      },
+      "action_2_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 1.4002442359924316,
+        "effect_FDE_at_20": 2.326460361480713
+      },
+      "action_3_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.7738043069839478,
+        "effect_FDE_at_20": 2.8954076766967773
+      },
+      "action_3_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 1.9857243299484253,
+        "effect_FDE_at_20": 3.7190427780151367
+      },
+      "action_4_duration_1": {
+        "n": 30,
+        "effect_ADE_at_20": 1.4879664182662964,
+        "effect_FDE_at_20": 2.328575849533081
+      },
+      "action_4_duration_3": {
+        "n": 30,
+        "effect_ADE_at_20": 1.5918537378311157,
+        "effect_FDE_at_20": 2.920985460281372
+      }
+    }
+  },
+  "limitations": [
+    "Highway-env seed-and-replay is not a universal full simulator snapshot.",
+    "The primary target is the ego effect because nearby-agent row identity is not stable across branches.",
+    "This retrospective task uses a factual future that is unavailable to online planning.",
+    "Secondary endpoints are exploratory and receive no confirmatory multiplicity claim in this pilot."
+  ]
+}

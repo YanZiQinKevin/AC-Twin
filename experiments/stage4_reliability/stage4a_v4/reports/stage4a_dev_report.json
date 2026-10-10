@@ -1,0 +1,134 @@
+{
+  "combined_implementation": "mlp",
+  "finalist": "COMBINED_RISK_HEAD",
+  "finalist_report": {
+    "ade@80": 0.1984329440259825,
+    "ade@90": 0.22239731242644648,
+    "aurc": 0.14978641484409774,
+    "n_episodes": 1000,
+    "pr_auc": 0.5537923065050258,
+    "pr_auc_minus_prevalence": 0.35179230650502574,
+    "prevalence": 0.202
+  },
+  "improvement_bootstrap": {
+    "bootstrap_seed": 2026091101,
+    "confidence_level": 0.8,
+    "i_aurc": 0.08664196927584214,
+    "i_aurc_ci_lower": 0.06643702368898315,
+    "i_aurc_ci_upper": 0.1057707262390713,
+    "i_c80": 0.04908738473713897,
+    "i_c80_ci_lower": 0.024401014778886253,
+    "i_c80_ci_upper": 0.06184814807091237,
+    "n_resamples": 5000
+  },
+  "n_screen_episodes": 1000,
+  "note": "Stage 4A \u662f\u5f00\u53d1\u7b5b\u9009\uff0c\u975e\u8bba\u6587\u786e\u8ba4\u6027\u7ed3\u679c\uff1b\u901a\u8fc7\u4e5f\u9700\u53e6\u7acb Stage 2B \u4e0e\u72ec\u7acb\u98ce\u9669\u786e\u8ba4\u8ba1\u5212\u3002",
+  "per_pair_i_aurc": [
+    0.07671737334498813,
+    0.1086320061883399,
+    0.10133488525419854,
+    0.05210848040552397,
+    0.09881061275145363
+  ],
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "primary_predictor": "END_TO_END_MIXTURE",
+  "qa": {
+    "checks": {
+      "features_finite": true,
+      "primary_predictor_frozen": true,
+      "protocol_lock": true,
+      "role_counts": true,
+      "unique_seeds": true
+    },
+    "passed": true
+  },
+  "risk_dataset_sha256": "423a7aabde61f6604c2a3acd5b2875a30cef766b1a6f95b9170cd926d3658232",
+  "selection_receipt_sha256": "b056593c06d0968f71f3af257e0a28e1d4fa2b6928e9bde27f451bf73ce579b0",
+  "standard_report": {
+    "ade@80": 0.2086763187710257,
+    "ade@90": 0.22675667919743298,
+    "aurc": 0.16399528969525703,
+    "n_episodes": 1000,
+    "pr_auc": 0.5075985913880342,
+    "pr_auc_minus_prevalence": 0.3055985913880342,
+    "prevalence": 0.202
+  },
+  "status": "STAGE4A_RISK_SIGNAL_FEASIBLE",
+  "stratified": {
+    "major_reversal": false,
+    "reversal_strata": [],
+    "strata": {
+      "action_0": {
+        "aurc_candidate": 0.18073067167695975,
+        "aurc_standard": 0.20018425130841727,
+        "i_aurc": 0.09717837194638271,
+        "major_reversal": false,
+        "n_episodes": 200
+      },
+      "action_1": {
+        "aurc_candidate": 0.13722785394846373,
+        "aurc_standard": 0.14490652195346657,
+        "i_aurc": 0.05299049277760363,
+        "major_reversal": false,
+        "n_episodes": 200
+      },
+      "action_2": {
+        "aurc_candidate": 0.1439184179386866,
+        "aurc_standard": 0.15448550378929254,
+        "i_aurc": 0.06840179558218433,
+        "major_reversal": false,
+        "n_episodes": 200
+      },
+      "action_3": {
+        "aurc_candidate": 0.13605204026497933,
+        "aurc_standard": 0.1455978894813029,
+        "i_aurc": 0.06556310156919827,
+        "major_reversal": false,
+        "n_episodes": 200
+      },
+      "action_4": {
+        "aurc_candidate": 0.1654542981050876,
+        "aurc_standard": 0.19215572563080296,
+        "i_aurc": 0.13895723085045072,
+        "major_reversal": false,
+        "n_episodes": 200
+      },
+      "duration_1": {
+        "aurc_candidate": 0.12730366445741612,
+        "aurc_standard": 0.13679753061205688,
+        "i_aurc": 0.0694008591541345,
+        "major_reversal": false,
+        "n_episodes": 500
+      },
+      "duration_3": {
+        "aurc_candidate": 0.18174113909351117,
+        "aurc_standard": 0.19772336090453702,
+        "i_aurc": 0.08083122670943389,
+        "major_reversal": false,
+        "n_episodes": 500
+      }
+    }
+  },
+  "strongest_standard_baseline": "UNCERTAINTY_ONLY",
+  "top_error_threshold": 0.41601440122246675,
+  "verdict": {
+    "conditions": {
+      "at_least_4_of_5_pairs_positive": true,
+      "i_aurc_ge_0.02_and_ci_lower_gt0": true,
+      "i_c80_ge_0.02_and_ci_lower_gt0": true,
+      "no_stratified_reversal": true,
+      "pr_auc_minus_prevalence_gt0": true,
+      "qa_passed": true
+    },
+    "passed": true,
+    "per_pair_i_aurc": [
+      0.07671737334498813,
+      0.1086320061883399,
+      0.10133488525419854,
+      0.05210848040552397,
+      0.09881061275145363
+    ],
+    "positive_pairs": 5,
+    "status": "STAGE4A_RISK_SIGNAL_FEASIBLE"
+  }
+}

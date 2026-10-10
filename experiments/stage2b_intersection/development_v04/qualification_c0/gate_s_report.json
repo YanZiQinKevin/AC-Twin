@@ -1,0 +1,199 @@
+{
+  "status": "GATE_S_PASS",
+  "data_scope": "development_train_validation_only",
+  "S1": {
+    "pass": true,
+    "finite_losses": true,
+    "nondegenerate": true,
+    "parameter_counts": [
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066,
+      145066
+    ],
+    "equal_parameters": true
+  },
+  "S2": {
+    "pass": true,
+    "spearman": {
+      "point": 0.38466418652509204,
+      "ci_lower": 0.3700058247770229,
+      "ci_upper": 0.39931153052354634,
+      "n_resamples": 10000,
+      "n_finite_draws": 10000,
+      "confidence_level": 0.95,
+      "bootstrap_seed": 20260916,
+      "n_episodes": 1200
+    },
+    "mae_improvement_vs_action_duration": {
+      "point": 0.04936424462426517,
+      "ci_lower": 0.04536686598268215,
+      "ci_upper": 0.053508345957124524,
+      "n_resamples": 10000,
+      "n_finite_draws": 10000,
+      "confidence_level": 0.95,
+      "bootstrap_seed": 20260917,
+      "n_episodes": 1200
+    },
+    "mae_improvement_vs_action_duration_geometry": {
+      "point": 0.051220628041237844,
+      "ci_lower": 0.04728520085683846,
+      "ci_upper": 0.055184768966338504,
+      "n_resamples": 10000,
+      "n_finite_draws": 10000,
+      "confidence_level": 0.95,
+      "bootstrap_seed": 20260918,
+      "n_episodes": 1200
+    },
+    "per_seed": [
+      {
+        "spearman": 0.34492977696891225,
+        "mae_vs_basic": 0.049891077172971234,
+        "mae_vs_geometry": 0.05174746058994391
+      },
+      {
+        "spearman": 0.3543129884718419,
+        "mae_vs_basic": 0.05117269179555149,
+        "mae_vs_geometry": 0.05302907521252417
+      },
+      {
+        "spearman": 0.33992023481180555,
+        "mae_vs_basic": 0.04540999120582492,
+        "mae_vs_geometry": 0.0472663746227976
+      },
+      {
+        "spearman": 0.3540848035187098,
+        "mae_vs_basic": 0.04942925496475934,
+        "mae_vs_geometry": 0.051285638381732016
+      },
+      {
+        "spearman": 0.3089135118247707,
+        "mae_vs_basic": 0.042516035414339765,
+        "mae_vs_geometry": 0.04437241883131244
+      }
+    ],
+    "four_of_five_metricwise": true
+  },
+  "S3": {
+    "pass": true,
+    "nonzero_prediction_change": true,
+    "vehicle_specific_change": true,
+    "eligible_regions": [
+      "zero",
+      "positive_low",
+      "positive_mid"
+    ],
+    "regions": {
+      "zero": {
+        "bootstrap": {
+          "point": 0.053080083445294565,
+          "ci_lower": 0.04812725463003616,
+          "ci_upper": 0.05844247188591486,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "confidence_level": 0.95,
+          "bootstrap_seed": 20260925,
+          "n_episodes": 1200
+        },
+        "per_seed_point": [
+          0.04670081663750261,
+          0.011535163364622474,
+          0.061578182650361246,
+          0.15627564656780008,
+          0.020459666316315062
+        ],
+        "positive_seed_count": 5,
+        "n_agent_time": 135000
+      },
+      "positive_low": {
+        "bootstrap": {
+          "point": 0.0716769927093147,
+          "ci_lower": 0.05216500878318382,
+          "ci_upper": 0.09475482617600044,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "confidence_level": 0.95,
+          "bootstrap_seed": 20260926,
+          "n_episodes": 480
+        },
+        "per_seed_point": [
+          0.02875686607603983,
+          0.013674557455918708,
+          0.09264634104962362,
+          0.11569867998011861,
+          0.19168237340771616
+        ],
+        "positive_seed_count": 5,
+        "n_agent_time": 3226
+      },
+      "positive_mid": {
+        "bootstrap": {
+          "point": 0.21078609995377803,
+          "ci_lower": 0.17577141325429274,
+          "ci_upper": 0.24798609627434343,
+          "n_resamples": 10000,
+          "n_finite_draws": 10000,
+          "confidence_level": 0.95,
+          "bootstrap_seed": 20260927,
+          "n_episodes": 467
+        },
+        "per_seed_point": [
+          0.17224675508991785,
+          0.16927848948302057,
+          0.28199757612541176,
+          0.26426878625949674,
+          0.7104146834560939
+        ],
+        "positive_seed_count": 5,
+        "n_agent_time": 3349
+      }
+    }
+  },
+  "cross_seed_consistency": true,
+  "plan_id": "AC-TWIN-RFER-STAGE2B-INTERSECTION-2026-09-15-V0.4",
+  "variant": "C0",
+  "source_data": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\data\\object_centric_stage\\stage2b_intersection_development_v04\\object_twinworld_stage2b_intersection_development_v04.npz",
+  "source_data_sha256": "ae34d0f6b9b08477311155c7bf28985e69047c6d0b0d0ec50c3ea50b8136d270",
+  "validation_manifest_sha256": "443a6e0c94e409faa54739a68508fc8bd8f62fcd516af2c36cdc76a96c9fb919",
+  "normalization_sha256": "81578051dad0a61f859ee089b8fc968612385bb06a3372a0fc90ce36fdfd629b",
+  "response_bins_sha256": "d8127491ca88d1caf14e77fcd1c8ac357b0467721af072b4c4e4d459f791aba9",
+  "implementation_sha256": {
+    "runner": "8100c2c2b165f16d5c465eeec38b5a9547603bcb1f5855b38b832fc8d1cdf69e",
+    "training": "fcd4b4ce5ee27dc2924c87159856d555f69251c2969bf31c987e9c11d8d3539b",
+    "data": "4d16921b79264f589a13393e0c9e61a34af63f0694462b0a508dab22f06409f4",
+    "statistics": "46807d74d3910987d3828739a1487951f3a20f59a3ee95c6936bc84df7775bc5",
+    "model": "78c520d3f2310e3ee17010316d9ebe566fe0d5ce39fb94bad56181914b164be5",
+    "stage1_training": "5faccf60f0034abbe33e6545a6c1d65b2703bcf1ff925af1d9f5fd2848997520"
+  },
+  "training_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "device": "cuda",
+  "n_train": 4800,
+  "n_validation": 1200,
+  "response_bins": {
+    "zero_tolerance": 0.0001,
+    "positive_quantiles": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "t1": 0.12050628662109375,
+    "t2": 0.559999942779541,
+    "n_train_positive": 40102
+  }
+}

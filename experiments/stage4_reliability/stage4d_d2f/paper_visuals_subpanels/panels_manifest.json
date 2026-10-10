@@ -1,0 +1,113 @@
+{
+  "purpose": "six unassembled, independently reusable panels from the frozen D2F qualitative cases",
+  "source_selection_receipt_sha256": "d877bb44ca0a6f75b40a0b51a021b8f1484de6d5895a511e66fea4e804d215e5",
+  "source_groups_sha256": "c9622ea24045fd8e7b6e043b95953fdc44b104ca936d91315c3bde3544d58d34",
+  "source_quantities_sha256": "c33558eeaa917ecf586ba1a410ebbd28d9efe7e17753bf6d9c373f484ea7fbd0",
+  "script_sha256": "28d04508df3eb1edaa962eb185910254b0c58b4dcb30110755cb447783456ffd",
+  "k_success": 205,
+  "selection_boundary": "same frozen cases; no new ranking, model inference, or statistical adjudication",
+  "panels": [
+    {
+      "filename": "success_01_factual.png",
+      "case": "success",
+      "group_index": 550,
+      "branch": "factual",
+      "sha256": "fc26a7845f1861905a86eddebe1863bd49728b8d975bec285f7b8e7010628378",
+      "bytes": 329521,
+      "scenario_id": "9397491f2c175633",
+      "action": "observed factual plan",
+      "t_peak_1_based": 20,
+      "pixel_size": [
+        3600,
+        2160
+      ]
+    },
+    {
+      "filename": "success_02_selected.png",
+      "case": "success",
+      "group_index": 550,
+      "branch": "selected",
+      "sha256": "4c5685b31cfe36c229b327e8665832981c7d226ef0ce80b569bd5d9d7b1f00dc",
+      "bytes": 333222,
+      "scenario_id": "9397491f2c175633",
+      "action": [
+        3,
+        3
+      ],
+      "t_peak_1_based": 20,
+      "pixel_size": [
+        3600,
+        2160
+      ]
+    },
+    {
+      "filename": "success_03_oracle.png",
+      "case": "success",
+      "group_index": 550,
+      "branch": "oracle",
+      "sha256": "744746086d07c91fec8525624f09a830800fa55985e7b2ec331a4b4672b292d9",
+      "bytes": 333366,
+      "scenario_id": "9397491f2c175633",
+      "action": [
+        0,
+        1
+      ],
+      "t_peak_1_based": 20,
+      "pixel_size": [
+        3600,
+        2160
+      ]
+    },
+    {
+      "filename": "failure_01_factual.png",
+      "case": "failure",
+      "group_index": 1821,
+      "branch": "factual",
+      "sha256": "67eda942346bbfabfe05aafcc85d0e79f9ba3241a1072c9b9c05bbd372584299",
+      "bytes": 431565,
+      "scenario_id": "79786346217964e",
+      "action": "observed factual plan",
+      "t_peak_1_based": 20,
+      "pixel_size": [
+        3600,
+        2160
+      ]
+    },
+    {
+      "filename": "failure_02_selected.png",
+      "case": "failure",
+      "group_index": 1821,
+      "branch": "selected",
+      "sha256": "5483a30c062015399d2ab5adbeb8d772d8e4158a6cd738f4b1a847c05b6bd942",
+      "bytes": 435312,
+      "scenario_id": "79786346217964e",
+      "action": [
+        3,
+        3
+      ],
+      "t_peak_1_based": 20,
+      "pixel_size": [
+        3600,
+        2160
+      ]
+    },
+    {
+      "filename": "failure_03_oracle.png",
+      "case": "failure",
+      "group_index": 1821,
+      "branch": "oracle",
+      "sha256": "e501fe8da311d3e2f0d6b8ba4e34820e47ab5de4c0cf7cf482d15af49c0c9157",
+      "bytes": 441376,
+      "scenario_id": "79786346217964e",
+      "action": [
+        2,
+        3
+      ],
+      "t_peak_1_based": 20,
+      "pixel_size": [
+        3600,
+        2160
+      ]
+    }
+  ]
+}

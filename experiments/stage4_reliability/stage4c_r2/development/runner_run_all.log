@@ -1,0 +1,46 @@
+[stage4cr2:preflight] starting (1/15)
+[stage4cr2:preflight] config valid; 11 frozen sources hash-match
+[stage4cr2:preflight] executed
+[stage4cr2:lock-development] starting (2/15)
+[stage4cr2-lock] existing lock verified, no overwrite: D:\OneDrive\兰州交大\博士课题-大模型\世界模型\AC-Twin\experiments\stage4_reliability\stage4c_r2\development\protocol_lock.json
+[stage4cr2:lock-development] executed
+[stage4cr2:smoke] starting (3/15)
+[stage4cr2:smoke] existing smoke receipts verified, no rerun
+[stage4cr2:smoke] skipped_complete
+[stage4cr2:collect-train] starting (4/15)
+[stage4cr2:collect-train] development_train receipt hash-verified, no re-collection
+[stage4cr2:collect-train] skipped_complete
+[stage4cr2:infer-train] starting (5/15)
+[stage4cr2:infer-train] development_train inference receipt hash-verified, no rerun
+[stage4cr2:infer-train] skipped_complete
+[stage4cr2:check-train-support] starting (6/15)
+[stage4cr2:check-train-support] status=TRAIN_SUPPORT_OK
+[stage4cr2:check-train-support] skipped_complete
+[stage4cr2:train-five-seeds] starting (7/15)
+[stage4cr2:train-five-seeds] five checkpoints hash-verified, no retraining
+[stage4cr2:train-five-seeds] skipped_complete
+[stage4cr2:collect-validation] starting (8/15)
+[stage4cr2:collect-validation] development_validation receipt hash-verified, no re-collection
+[stage4cr2:collect-validation] skipped_complete
+[stage4cr2:infer-validation] starting (9/15)
+[stage4cr2:infer-validation] development_validation inference receipt hash-verified, no rerun
+[stage4cr2:infer-validation] skipped_complete
+[stage4cr2:adjudicate-validation] starting (10/15)
+[stage4cr2:adjudicate-validation] frozen final selection verified, no rerun
+[stage4cr2:adjudicate-validation] verified_terminal
+[stage4cr2:freeze-final-selection] starting (11/15)
+[stage4cr2:freeze-final-selection] final selection frozen and verified
+[stage4cr2:freeze-final-selection] skipped_complete
+[stage4cr2:collect-screen] starting (12/15)
+[stage4cr2:collect-screen] screen already adjudicated; collection chain complete
+[stage4cr2:collect-screen] skipped_complete
+[stage4cr2:infer-screen] starting (13/15)
+[stage4cr2:infer-screen] screen already adjudicated; score chain complete
+[stage4cr2:infer-screen] skipped_complete
+[stage4cr2:adjudicate-screen] starting (14/15)
+[stage4cr2:adjudicate-screen] existing one-shot report verified: STAGE4CR2_DEV_READY_FOR_CONFIRMATION
+[stage4cr2:adjudicate-screen] verified_terminal
+[stage4cr2:power-diagnostic] starting (15/15)
+[stage4cr2:power-diagnostic] existing diagnostic verified: STAGE4CR2_DEV_READY_FOR_CONFIRMATION
+[stage4cr2:power-diagnostic] skipped_complete
+[stage4cr2:run-all] SUCCESS summary: terminal_state=STAGE4CR2_DEV_READY_FOR_CONFIRMATION exit_code=0 stages=15/15 elapsed=9.7s

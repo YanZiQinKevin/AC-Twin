@@ -1,0 +1,138 @@
+{
+  "fitted_models": {
+    "COMBINED_RISK_HEAD:histgb": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_histgb.pt",
+    "COMBINED_RISK_HEAD:mlp": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_mlp.pt",
+    "COMBINED_RISK_HEAD:ridge": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\combined_risk_head_ridge.pt",
+    "GEOMETRY_ONLY:ridge": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\geometry_only_ridge.pt",
+    "RESPONSE_ONLY:ridge": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage4_reliability\\stage4a_v3\\risk\\models\\response_only_ridge.pt"
+  },
+  "inference_reused_from": "experiments\\stage4_reliability\\stage4a_v2\\inference\\predictions.npz",
+  "learning_curves": {
+    "curves": {
+      "histgb": [
+        {
+          "ade80_validation": 0.2173571197636523,
+          "adjacent_aurc_improvement": null,
+          "aurc_train": 0.12386240033556643,
+          "aurc_validation": 0.17764396598950113,
+          "train_episodes": 500,
+          "train_validation_aurc_gap": -0.0537815656539347
+        },
+        {
+          "ade80_validation": 0.21085062390798676,
+          "adjacent_aurc_improvement": 0.013631644168326157,
+          "aurc_train": 0.1251704268585139,
+          "aurc_validation": 0.16401232182117498,
+          "train_episodes": 1000,
+          "train_validation_aurc_gap": -0.03884189496266108
+        },
+        {
+          "ade80_validation": 0.20704216717827925,
+          "adjacent_aurc_improvement": 0.005412956397011892,
+          "aurc_train": 0.13040345247927174,
+          "aurc_validation": 0.15859936542416309,
+          "train_episodes": 2000,
+          "train_validation_aurc_gap": -0.02819591294489135
+        },
+        {
+          "ade80_validation": 0.20848842243170312,
+          "adjacent_aurc_improvement": 0.0002984824897964977,
+          "aurc_train": 0.1377561089743826,
+          "aurc_validation": 0.1583008829343666,
+          "train_episodes": 3000,
+          "train_validation_aurc_gap": -0.020544773959983997
+        }
+      ],
+      "mlp": [
+        {
+          "ade80_validation": 0.2093745168922387,
+          "adjacent_aurc_improvement": null,
+          "aurc_train": 0.16937465213046698,
+          "aurc_validation": 0.16122777194804735,
+          "train_episodes": 500,
+          "train_validation_aurc_gap": 0.00814688018241963
+        },
+        {
+          "ade80_validation": 0.20975625615752747,
+          "adjacent_aurc_improvement": 0.0015060541426850649,
+          "aurc_train": 0.16300253354936986,
+          "aurc_validation": 0.1597217178053623,
+          "train_episodes": 1000,
+          "train_validation_aurc_gap": 0.0032808157440075703
+        },
+        {
+          "ade80_validation": 0.20742245514742566,
+          "adjacent_aurc_improvement": 0.003942093698893395,
+          "aurc_train": 0.15170478691741746,
+          "aurc_validation": 0.1557796241064689,
+          "train_episodes": 2000,
+          "train_validation_aurc_gap": -0.004074837189051439
+        },
+        {
+          "ade80_validation": 0.20927464641338897,
+          "adjacent_aurc_improvement": -0.0011109799305045742,
+          "aurc_train": 0.16191831620383415,
+          "aurc_validation": 0.15689060403697347,
+          "train_episodes": 3000,
+          "train_validation_aurc_gap": 0.005027712166860682
+        }
+      ],
+      "ridge": [
+        {
+          "ade80_validation": 0.21032955869148137,
+          "adjacent_aurc_improvement": null,
+          "aurc_train": 0.1683862461069499,
+          "aurc_validation": 0.16062433550023217,
+          "train_episodes": 500,
+          "train_validation_aurc_gap": 0.007761910606717742
+        },
+        {
+          "ade80_validation": 0.21473219069443247,
+          "adjacent_aurc_improvement": 0.0005760284198847165,
+          "aurc_train": 0.16129285329320134,
+          "aurc_validation": 0.16004830708034745,
+          "train_episodes": 1000,
+          "train_validation_aurc_gap": 0.0012445462128538864
+        },
+        {
+          "ade80_validation": 0.20848430301359838,
+          "adjacent_aurc_improvement": 0.00032960222350439383,
+          "aurc_train": 0.15944832725549665,
+          "aurc_validation": 0.15971870485684306,
+          "train_episodes": 2000,
+          "train_validation_aurc_gap": -0.00027037760134640543
+        },
+        {
+          "ade80_validation": 0.20839836604669426,
+          "adjacent_aurc_improvement": 1.6207708649657038e-05,
+          "aurc_train": 0.16608022884676252,
+          "aurc_validation": 0.1597024971481934,
+          "train_episodes": 3000,
+          "train_validation_aurc_gap": 0.006377731698569117
+        }
+      ]
+    },
+    "evaluation": "risk_validation",
+    "note": "data/capacity/signal-limited diagnostic only; final candidate uses the 3000-scale model",
+    "per_stratum": [
+      50,
+      100,
+      200,
+      300
+    ],
+    "scales_train_episodes": [
+      500,
+      1000,
+      2000,
+      3000
+    ]
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4A-RISK-DEV-2026-09-11-V0.1",
+  "predictions_sha256": "34bc12e91a1eaea902a30570d3f19996441443fcd47989cc3cf7ed366f47d9ac",
+  "primary_predictor": "END_TO_END_MIXTURE",
+  "primary_predictor_reused_from": "experiments\\stage4_reliability\\stage4a_v2\\risk\\primary_predictor_receipt.json",
+  "primary_predictor_reused_receipt_sha256": "b171e06fefdb5072631dad282ff28b1f22fda60f61dc1548d6c0eda649f3f4e2",
+  "risk_dataset_sha256": "423a7aabde61f6604c2a3acd5b2875a30cef766b1a6f95b9170cd926d3658232",
+  "status": "RISK_FIT_COMPLETE",
+  "top_error_threshold": 0.41601440122246675
+}

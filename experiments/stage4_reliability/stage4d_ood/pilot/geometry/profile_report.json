@@ -1,0 +1,120 @@
+{
+  "bindings": {
+    "collection_receipt_sha256": "44c050bf00da063ba1a6867b242a7d2d2d24b6e80a843288ca0992a0656a5ba9",
+    "confirmation_truth_sha256": "f1d496fbf2b1a3a4b34ce0512dfa759ab7173cd39c3706502136101c88d2ff92",
+    "inference_inputs_sha256": "ac8f3a5b319e0e3279bf6064ae4b29cc6576599fd0edc5a3640f64d817a30d3b"
+  },
+  "collection": {
+    "accepted_groups": 300,
+    "action_stream_root": [
+      2026102001,
+      2
+    ],
+    "attempts": 1043,
+    "role": "pilot_geometry",
+    "seed_schedule_sha256": "835811b5376aff3b1acef60dfc2411f742d4b1088415536424e8b4e0af1d27b7",
+    "status": "COLLECTED"
+  },
+  "domain_shift": {
+    "abs_smd": {
+      "clip_ttc": 0.08833846510004006,
+      "density_30m": 1.0899551245426777,
+      "mean_abs_relative_speed": 0.015888831732586726,
+      "merging_longitudinal_gap": 2.430998881572066,
+      "merging_relative_speed": 0.02495629249550052,
+      "min_ego_distance": 1.1028081699945271
+    },
+    "domain_auc_pass": true,
+    "domain_classifier": {
+      "auc_ci_lb_min": 0.7,
+      "auc_ci_lower": 0.9805102666666666,
+      "auc_ci_upper": 0.9900022666666667,
+      "auc_point": 0.9848180000000001,
+      "bootstrap_seed": 2026104102,
+      "ci_side": "two-sided percentile",
+      "confidence": 0.8,
+      "n_folds": 5,
+      "n_id": 5000,
+      "n_ood": 300,
+      "resamples": 5000,
+      "scope": "proof of shift only; never enters method scoring",
+      "type": "stratified_5fold_logistic_pooled_standardization"
+    },
+    "min_shifted": 2,
+    "n_shifted": 3,
+    "quantities": [
+      "min_ego_distance",
+      "mean_abs_relative_speed",
+      "merging_longitudinal_gap",
+      "merging_relative_speed",
+      "density_30m",
+      "clip_ttc"
+    ],
+    "shift_significant": true,
+    "smd": {
+      "clip_ttc": 0.08833846510004006,
+      "density_30m": 1.0899551245426777,
+      "mean_abs_relative_speed": 0.015888831732586726,
+      "merging_longitudinal_gap": 2.430998881572066,
+      "merging_relative_speed": 0.02495629249550052,
+      "min_ego_distance": -1.1028081699945271
+    },
+    "smd_min": 0.5,
+    "smd_pass": true
+  },
+  "gate": {
+    "failed_conditions": [],
+    "integrity_pass": true,
+    "qualified": true,
+    "shift_pass": true,
+    "task_pass": true
+  },
+  "integrity": {
+    "attempts": 1043,
+    "candidate_pool_not_exhausted": true,
+    "entity_mask_action_integrity": true,
+    "groups_complete": true,
+    "integrity_pass": true,
+    "max_candidate_seeds": 6000,
+    "n_groups": 300,
+    "no_capacity_nan_early_termination": true
+  },
+  "pilot": "geometry",
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D0D1-OOD-2026-09-20-V1.0",
+  "profile": "GEOMETRY_OOD",
+  "qualified": true,
+  "stage_namespace": "stage4d_ood",
+  "task_support": {
+    "base_action_beats_references": true,
+    "base_beats_random": true,
+    "base_mean_regret": 0.039362061144267185,
+    "base_not_above_idle": true,
+    "high_regret_frac": 0.31,
+    "high_regret_support": true,
+    "idle_mean_regret": 0.09391257918717062,
+    "min_distinct_oracle": 3,
+    "min_high_regret_frac": 0.15,
+    "min_oracle_frac": 0.05,
+    "n_groups": 300,
+    "n_oracle_plans_ge_min_frac": 6,
+    "oracle_diversity": true,
+    "oracle_plan_fractions": {
+      "0": 0.09666666666666666,
+      "1": 0.05,
+      "2": 0.09333333333333334,
+      "3": 0.02666666666666667,
+      "4": 0.04,
+      "5": 0.03333333333333333,
+      "6": 0.22,
+      "7": 0.36,
+      "8": 0.07,
+      "9": 0.01
+    },
+    "random_mean_regret": 0.08864460796235721,
+    "regret_eps": 0.01,
+    "spearman_jhat_jtrue": 0.4186750301716856,
+    "spearman_positive": true,
+    "task_supported": true
+  },
+  "written_at": "2026-09-20T13:51:01"
+}

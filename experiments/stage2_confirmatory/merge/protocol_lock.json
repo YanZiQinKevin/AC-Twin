@@ -1,0 +1,86 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE2-HOLDOUT-2026-09-07-V1",
+  "experiment_name": "stage2_confirmatory_merge",
+  "analysis_status": "CONFIRMATORY_HOLDOUT",
+  "scene": "merge",
+  "collection_seed": 20270999,
+  "seed_schedule_size": 18000,
+  "n_historical_episode_seeds": 12000,
+  "seed_schedule_zero_overlap": true,
+  "donor_seeds": {
+    "primary": 20272907,
+    "alternates": [
+      20272917,
+      20272927,
+      20272937,
+      20272947
+    ]
+  },
+  "paths": {
+    "config": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\config\\stage2_holdout_merge_confirm.json",
+    "stage1_output_dir": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage1_evidence_value\\merge",
+    "normalization_npz": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage1_evidence_value\\merge\\normalization.npz",
+    "response_bins_json": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage1_evidence_value\\merge\\response_bins.json",
+    "stage1_gate_s_report": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage1_evidence_value\\merge\\report.json",
+    "stage1_source_data": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\data\\object_centric_stage\\merge_2000\\object_twinworld_2000.npz",
+    "stage1_config": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\config\\stage1_evidence_value_merge.json",
+    "seed_schedule": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage2_confirmatory\\merge\\seed_schedule.npy",
+    "frozen_params": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage2_confirmatory\\merge\\frozen_gate_s_star_params.npz"
+  },
+  "code_sha256": {
+    "run_stage2_confirmatory.py": "fc7a7268aed9c428c7bbad9f3ef7fae6e339748d200f5015b0899fb6bc547147",
+    "collect_stage2_holdout.py": "306b9edb8f71c14b5c333a582a8965791bdc9b806d3f1e7371c97250bf1882c2",
+    "ac_twin/stage2_protocol.py": "b0b0a7d7821fc5b82c573c9ef6ccd5eae241821a14f86ee8377c267645c7351e",
+    "ac_twin/stage2_inference.py": "183b5eaadc0c5dbb3f9b1820a7c6811b2ecd045e00690bf2d308e7d920ae7fd9",
+    "ac_twin/stage2_statistics.py": "69777bf23b5e331cb4ed5274f4c8025a88d3c42ab4a1074d735023581f901a43",
+    "ac_twin/stage1_model.py": "78c520d3f2310e3ee17010316d9ebe566fe0d5ce39fb94bad56181914b164be5",
+    "ac_twin/stage1_data.py": "4d16921b79264f589a13393e0c9e61a34af63f0694462b0a508dab22f06409f4",
+    "ac_twin/stage1_statistics.py": "c70526209b2aae7ffb5456c5618d47a1c71228e6431b9c1434a472e53932b03b",
+    "ac_twin/stage1_plus_statistics.py": "d5ce99096342744fcb2d4c545277c6f69d87d4d6153f8eabf9297222f6367c54",
+    "ac_twin/checkpointing.py": "ff43654a91ec5f3c3ceef739640ea12f507f6072901d2d0bb718e219a368250a",
+    "ac_twin/object_centric.py": "3e1b4288c1009820522da47cde761b488c877118a2bbb33f25c0407bc15462a1",
+    "ac_twin/progress.py": "3a413b6a26f43d80a93bca01f7b623eedc9c87e5908cdb08f58b6f14b6aa9576"
+  },
+  "checkpoint_sha256": {
+    "no_suffix_seed11.pt": "c79eb9b9300275ae8d27b62a709c13f61c1359c805c4f3b2edf0161eeb3a0547",
+    "no_suffix_seed22.pt": "d68455b7350f61d9643532b49569ef74e485fbd54d99d587e7996487f2c2690f",
+    "no_suffix_seed33.pt": "9268714fa9803d418311b0ad684ce86dd1c1f768b0920d16df725cadd29ec45c",
+    "no_suffix_seed44.pt": "dc5a6f772098a1421294313fceb3340b18720e5ee7be2e1821ecfdc1ca735aa7",
+    "no_suffix_seed55.pt": "610cdcfd93b49c99184c284734cfdd24c0a719916a349273d60768da483725f0",
+    "uniform_suffix_seed11.pt": "9fb45cddc16b63c00da4d8a497ad90792b310c31110d1a3d405c48c6d9f4cfeb",
+    "uniform_suffix_seed22.pt": "206088f9da837fd1d0b8cc45c4cfe6fd10037b1fbe4f5199687d6a222d912b4a",
+    "uniform_suffix_seed33.pt": "05f66068e1828c02733d7ca579d5be4b3445a1a79a44fd84fec988284b765517",
+    "uniform_suffix_seed44.pt": "3d0d88d3a7ed27c2ec80d6d923960f7d0f9d7c7e3e474c1eb36e9f461ffff063",
+    "uniform_suffix_seed55.pt": "5625dc46bc6bd1763d89fba27ec766d2ebd4311a6fb138845234824bb387dce7",
+    "shuffled_suffix_seed11.pt": "c6961e6a88dca862f12098deb3bfb9daa0c6696ac61e89864af644a2013ec12b",
+    "shuffled_suffix_seed22.pt": "a9ae880638722a665e56404266394948840c9b726e2b5bf99c6c862fb22e326c",
+    "shuffled_suffix_seed33.pt": "770e14e3595b51ff5c04ee8abd1956c939cbebe4b9b3f9f0aea96e7ceba94f83",
+    "shuffled_suffix_seed44.pt": "f41b935421930186ccfdffcd03a7cb42ed939b60992e7f64819b42b08bae3e7b",
+    "shuffled_suffix_seed55.pt": "b7a0d0798e9a2d6581a4462b5fb3473c4f349b765831b313acbd51f2afa5146e"
+  },
+  "config_sha256": "bf1123d2ce341acd77bababec8b351d780291b526ecfd1e72e56ba91ade8bcf7",
+  "normalization_npz_sha256": "7514e8e327e9a1328b47e6acc9e03cdd11b2c94e5ffc60e800f3011d14be0cae",
+  "response_bins_sha256": "8f6aeb078b12007b84da55d3c682cfce861f74a199640e2e1cad4bf45e5cc15f",
+  "stage1_gate_s_report_sha256": "2c2bef6c85fbac550d2eb77d88c7993c7566fecc93833d9faf726dd77f0d1dd6",
+  "stage1_source_data_sha256": "eb6122ac62af20219fc0b27d346740a935587ff32d82e4000127a50a41466e2b",
+  "stage1_config_sha256": "8cb71d294b77595ac2af001e80d5d46f2facabdbed52890944d02c93586cd762",
+  "seed_schedule_sha256": "1d066fa9d49c4caee0e1a0e7867d3b7c03e70e6bca6a9483c8b3b6fd26ab0d7b",
+  "frozen_params_sha256": "188e51cfe9810b710bcc2cd0c51741042bbf11c1c41b0abbe9adc91fa88ceccd",
+  "frozen_params_keys": [
+    "beta_action_horizon",
+    "beta_action_horizon_distance",
+    "probe_coefficients",
+    "probe_coefficients_shuffled",
+    "probe_scene_mean"
+  ],
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy_version": "2.1.3",
+    "torch_version": "2.14.0+cu132",
+    "highway_env_version": "1.10.2",
+    "gymnasium_version": "1.2.3"
+  },
+  "config_signature": "33002e88e8f6d3066794f7b9cf5f492dda5fb240224b440769cdde2c35c79b10",
+  "lock_sha256": "8939478b1f57619d2c8cd37b48dcdd571c852accf9a968b89ebda6a58be4adab"
+}

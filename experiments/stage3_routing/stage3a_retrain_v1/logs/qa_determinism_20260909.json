@@ -1,0 +1,34 @@
+{
+  "check": "same config/seed across two fresh run dirs -> identical signatures",
+  "configs": [
+    "h64_r32_l0.1_seed101",
+    "h64_r32_l0.25_seed101",
+    "h64_r64_l0.1_seed101",
+    "h64_r64_l0.25_seed101",
+    "h96_r32_l0.1_seed101",
+    "h96_r32_l0.25_seed101",
+    "h96_r64_l0.1_seed101",
+    "h96_r64_l0.25_seed101"
+  ],
+  "signatures_run_a": {
+    "h64_r32_l0.25_seed101": "32a2aab8322bd2c50badbf980918960408240fe6a58c4bf8b645b30365877c32",
+    "h64_r32_l0.1_seed101": "0d84b40bb6a75d5e4bf9c74d5c725de40cb81bd6abd8246556914aa385c135d3",
+    "h64_r64_l0.25_seed101": "5ca51db7958409f999fc32c0ddbe550d83841a281305938e49d557b61f872429",
+    "h64_r64_l0.1_seed101": "2e2ad90c8ee748ce39f292af18372baf21efe34790d6edfa435ea2c9d6d2ff3c",
+    "h96_r32_l0.25_seed101": "ecf008149244fd7dbbecaf88634fba468b405bf7683184ea6d619423807ce4c3",
+    "h96_r32_l0.1_seed101": "064a1a7c462261d920062f6ba76eb6bd38e7139c8cc30361cc68460b279c8b2d",
+    "h96_r64_l0.1_seed101": "dedfdd29e0166ac5ef5221c35aba7074ac4472da5505a28d49428b6c3ab89be0",
+    "h96_r64_l0.25_seed101": "e2872328964b5c243d776a778f5031dba02ac866bae76df425ee6c3178dbe07a"
+  },
+  "signatures_run_b": {
+    "h64_r32_l0.25_seed101": "32a2aab8322bd2c50badbf980918960408240fe6a58c4bf8b645b30365877c32",
+    "h64_r32_l0.1_seed101": "0d84b40bb6a75d5e4bf9c74d5c725de40cb81bd6abd8246556914aa385c135d3",
+    "h64_r64_l0.25_seed101": "5ca51db7958409f999fc32c0ddbe550d83841a281305938e49d557b61f872429",
+    "h64_r64_l0.1_seed101": "2e2ad90c8ee748ce39f292af18372baf21efe34790d6edfa435ea2c9d6d2ff3c",
+    "h96_r32_l0.25_seed101": "ecf008149244fd7dbbecaf88634fba468b405bf7683184ea6d619423807ce4c3",
+    "h96_r32_l0.1_seed101": "064a1a7c462261d920062f6ba76eb6bd38e7139c8cc30361cc68460b279c8b2d",
+    "h96_r64_l0.1_seed101": "dedfdd29e0166ac5ef5221c35aba7074ac4472da5505a28d49428b6c3ab89be0",
+    "h96_r64_l0.25_seed101": "e2872328964b5c243d776a778f5031dba02ac866bae76df425ee6c3178dbe07a"
+  },
+  "all_identical": true
+}

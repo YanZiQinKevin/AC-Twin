@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-10",
+  "files": 3360,
+  "bytes": 5374659430,
+  "categories": {
+    "source": 401,
+    "data": 74,
+    "experiment_output": 1951,
+    "weights": 934
+  },
+  "excluded_files": 8440,
+  "excluded_metadrive_training_files": 4,
+  "largest_file_bytes": 1249861405,
+  "source_read_only": true,
+  "external_files": 38,
+  "external_bytes": 3981971515,
+  "git_product_files": 3322,
+  "git_product_bytes": 1392687915,
+  "download_status": "AWAITING_USER_HOSTING_ROUTE"
+}

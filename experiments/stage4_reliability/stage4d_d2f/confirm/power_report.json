@@ -1,0 +1,758 @@
+{
+  "admissible_ns": [
+    1000,
+    1500,
+    2000,
+    2500,
+    3000
+  ],
+  "bindings": {
+    "d2f_power_code_sha256": "61bf8276f0ee5695f84a00682075888116d13e31a71c046e0b8599bfe09b90ec",
+    "pool_capacity_audit_sha256": "e2667f3ecaf6b0469f22ab5ab8c0866b10e9f98381bfa0dc61c509854938b7e1",
+    "screen_group_quantities_receipt_sha256": "72284008694b453bebedd8a7ad47e784d6867bbb22c72dd708d8b509e039ea36",
+    "screen_group_quantities_sha256": "cf61f240da74127943953309112fa033864b2539a833935b7323717bab629709",
+    "screen_lock_sha256": "d472b101cd8360e2a03bfd4ee6aa177d05b62bc3ffc73c1d3feb9c7b0a6a4d70",
+    "screen_report_sha256": "dc0894fcc6646291ceb511b37318fa6568d30c3a67a6ff8f40f055c24b7f7f0a"
+  },
+  "ci_z": 1.959963984540054,
+  "confidence": 0.95,
+  "n_reference": 1000,
+  "n_resamples": 10000,
+  "per_n": {
+    "1000": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.607,
+      "joint_power_at_selection": 0.605,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.2989,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.9985,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.8398,
+            "r2_i_regret80": 0.3149,
+            "r3_pr_auc_minus_prevalence": 0.9992,
+            "r4_seed_consistency_both_positive": 0.891
+          }
+        },
+        "0.75": {
+          "joint_power": 0.605,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.9985,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9896,
+            "r2_i_regret80": 0.607,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.972
+          }
+        },
+        "1.00": {
+          "joint_power": 0.8427,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.9985,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9998,
+            "r2_i_regret80": 0.8439,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9935
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.0024838684981422395,
+        "base_vs_random_improvement": 0.021131501804800463,
+        "high_regret_frac": 0.015720255918865184,
+        "i_aurc_regret": 0.03711641297851892,
+        "i_regret80": 0.03574354652560588,
+        "idle_mean_regret": 0.002751269180180767,
+        "interaction_high_frac": 0.015652118638759035,
+        "interaction_low_frac": 0.015652118638759052,
+        "oracle_share_a0": 0.01000140171994088,
+        "oracle_share_a1": 0.01090913681445987,
+        "oracle_share_a2": 0.00504702187462867,
+        "oracle_share_a3": 0.008151550437643979,
+        "oracle_share_a4": 0.009819773695739813,
+        "oracle_share_a5": 0.011395041050213625,
+        "oracle_share_a6": 0.00872103112472303,
+        "oracle_share_a7": 0.014181426925629325,
+        "oracle_share_a8": 0.003553494888499526,
+        "oracle_share_a9": 0.002257612730634763,
+        "pr_auc_minus_prevalence": 0.01826471808643245,
+        "reactive_frac": 0.013439151334398275,
+        "seed9101_i_aurc": 0.04056435162730414,
+        "seed9101_i_regret80": 0.036017603912722455,
+        "seed9202_i_aurc": 0.036786227251957106,
+        "seed9202_i_regret80": 0.03525915353888528,
+        "seed9303_i_aurc": 0.037467083703388415,
+        "seed9303_i_regret80": 0.03718958786712429,
+        "seed9404_i_aurc": 0.037272034090446694,
+        "seed9404_i_regret80": 0.035976953484182644,
+        "seed9505_i_aurc": 0.033674707074178065,
+        "seed9505_i_regret80": 0.035407171277461506,
+        "spearman_branch": 0.011465091730310366,
+        "tstar_high_frac": 0.015838211220130436,
+        "tstar_low_frac": 0.01583821122013042
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.513,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.5032,
+              "joint_power": 0.2807
+            },
+            "0.20": {
+              "c2_marginal_power": 0.9988,
+              "joint_power": 0.604
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.605
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.239,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.5112,
+              "joint_power": 0.3106
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9385,
+              "joint_power": 0.569
+            },
+            "0.24": {
+              "c6_marginal_power": 0.999,
+              "joint_power": 0.6053
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    },
+    "1500": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.7971,
+      "joint_power_at_selection": 0.7968,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.4595,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.9997,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9501,
+            "r2_i_regret80": 0.4652,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9365
+          }
+        },
+        "0.75": {
+          "joint_power": 0.7968,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.9997,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9996,
+            "r2_i_regret80": 0.7971,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.99
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9546,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 0.9997,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9549,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.999
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.002041254476312629,
+        "base_vs_random_improvement": 0.01736370976137845,
+        "high_regret_frac": 0.012832346101403365,
+        "i_aurc_regret": 0.03006506966829287,
+        "i_regret80": 0.028783461653131358,
+        "idle_mean_regret": 0.0022685391806634256,
+        "interaction_high_frac": 0.013067816924266229,
+        "interaction_low_frac": 0.013067816924266224,
+        "oracle_share_a0": 0.008252509558798976,
+        "oracle_share_a1": 0.008811020751296588,
+        "oracle_share_a2": 0.004114520632967468,
+        "oracle_share_a3": 0.006659693357338879,
+        "oracle_share_a4": 0.007963644766298681,
+        "oracle_share_a5": 0.009289202303460191,
+        "oracle_share_a6": 0.007097225767174658,
+        "oracle_share_a7": 0.011546773123126465,
+        "oracle_share_a8": 0.002908263946436161,
+        "oracle_share_a9": 0.0018127757592634327,
+        "pr_auc_minus_prevalence": 0.01490990855376223,
+        "reactive_frac": 0.011180004359210663,
+        "seed9101_i_aurc": 0.03276593286053091,
+        "seed9101_i_regret80": 0.029270725995469135,
+        "seed9202_i_aurc": 0.02983631264127832,
+        "seed9202_i_regret80": 0.028672394781662155,
+        "seed9303_i_aurc": 0.03031332799762808,
+        "seed9303_i_regret80": 0.03006046105432352,
+        "seed9404_i_aurc": 0.030178186281142223,
+        "seed9404_i_regret80": 0.02890487295529803,
+        "seed9505_i_aurc": 0.027122711413672732,
+        "seed9505_i_regret80": 0.02872446136402956,
+        "spearman_branch": 0.009289890383613345,
+        "tstar_high_frac": 0.012779782970716334,
+        "tstar_low_frac": 0.012779782970716334
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.513,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.502,
+              "joint_power": 0.385
+            },
+            "0.20": {
+              "c2_marginal_power": 0.9998,
+              "joint_power": 0.7966
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.7968
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.239,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.4989,
+              "joint_power": 0.3951
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9658,
+              "joint_power": 0.7698
+            },
+            "0.24": {
+              "c6_marginal_power": 0.9999,
+              "joint_power": 0.797
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    },
+    "2000": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.895,
+      "joint_power_at_selection": 0.895,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.5681,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9854,
+            "r2_i_regret80": 0.5698,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9635
+          }
+        },
+        "0.75": {
+          "joint_power": 0.895,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9999,
+            "r2_i_regret80": 0.895,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9976
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9888,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9888,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9998
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.001775644699849806,
+        "base_vs_random_improvement": 0.015092348419073013,
+        "high_regret_frac": 0.01125605130881193,
+        "i_aurc_regret": 0.026080532652299395,
+        "i_regret80": 0.024907332288997934,
+        "idle_mean_regret": 0.0019771194569274926,
+        "interaction_high_frac": 0.011141735106621338,
+        "interaction_low_frac": 0.011141735106621357,
+        "oracle_share_a0": 0.007287940752231785,
+        "oracle_share_a1": 0.00767093622944837,
+        "oracle_share_a2": 0.0036066578983346294,
+        "oracle_share_a3": 0.005777528660356616,
+        "oracle_share_a4": 0.006965793788636768,
+        "oracle_share_a5": 0.008024049459404693,
+        "oracle_share_a6": 0.006176480939959272,
+        "oracle_share_a7": 0.009894591557598975,
+        "oracle_share_a8": 0.0025280144057508,
+        "oracle_share_a9": 0.0015999946213280931,
+        "pr_auc_minus_prevalence": 0.01298141980525754,
+        "reactive_frac": 0.009721337419826708,
+        "seed9101_i_aurc": 0.02851688034397485,
+        "seed9101_i_regret80": 0.025553273975680513,
+        "seed9202_i_aurc": 0.026025849694308788,
+        "seed9202_i_regret80": 0.024628150346119114,
+        "seed9303_i_aurc": 0.026289494233673605,
+        "seed9303_i_regret80": 0.02588621042893487,
+        "seed9404_i_aurc": 0.026297895404120097,
+        "seed9404_i_regret80": 0.02500406046665684,
+        "seed9505_i_aurc": 0.023588583813760864,
+        "seed9505_i_regret80": 0.024865589940262188,
+        "spearman_branch": 0.008076561905445418,
+        "tstar_high_frac": 0.01109771580865257,
+        "tstar_low_frac": 0.011097715808652549
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.513,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.5102,
+              "joint_power": 0.4495
+            },
+            "0.20": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.895
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.895
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.239,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.5164,
+              "joint_power": 0.4598
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9835,
+              "joint_power": 0.88
+            },
+            "0.24": {
+              "c6_marginal_power": 1.0,
+              "joint_power": 0.895
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    },
+    "2500": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.9426,
+      "joint_power_at_selection": 0.9426,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.6514,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9915,
+            "r2_i_regret80": 0.6529,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9762
+          }
+        },
+        "0.75": {
+          "joint_power": 0.9426,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9426,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9984
+          }
+        },
+        "1.00": {
+          "joint_power": 0.9961,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9961,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 1.0
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.0015841602938040055,
+        "base_vs_random_improvement": 0.013407844791755153,
+        "high_regret_frac": 0.010022241401736014,
+        "i_aurc_regret": 0.023555264470952422,
+        "i_regret80": 0.022464528366837037,
+        "idle_mean_regret": 0.001796056853399905,
+        "interaction_high_frac": 0.010072709954475146,
+        "interaction_low_frac": 0.010072709954475146,
+        "oracle_share_a0": 0.00643693636561505,
+        "oracle_share_a1": 0.006795742280937006,
+        "oracle_share_a2": 0.00322026645437978,
+        "oracle_share_a3": 0.0051665438038874445,
+        "oracle_share_a4": 0.006154573625983506,
+        "oracle_share_a5": 0.007211703911956686,
+        "oracle_share_a6": 0.005540318113798178,
+        "oracle_share_a7": 0.008986911343590176,
+        "oracle_share_a8": 0.002248203330711353,
+        "oracle_share_a9": 0.001415531792163448,
+        "pr_auc_minus_prevalence": 0.01158153064013146,
+        "reactive_frac": 0.008602643862124124,
+        "seed9101_i_aurc": 0.02563138965300436,
+        "seed9101_i_regret80": 0.023073259972622818,
+        "seed9202_i_aurc": 0.02355849800396211,
+        "seed9202_i_regret80": 0.022313199190568928,
+        "seed9303_i_aurc": 0.023784151231157416,
+        "seed9303_i_regret80": 0.02344568759205707,
+        "seed9404_i_aurc": 0.023627421361755708,
+        "seed9404_i_regret80": 0.022602857327470843,
+        "seed9505_i_aurc": 0.02131896825785994,
+        "seed9505_i_regret80": 0.022448865035943285,
+        "spearman_branch": 0.007229523668212893,
+        "tstar_high_frac": 0.009998916510079357,
+        "tstar_low_frac": 0.009998916510079357
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.513,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.5061,
+              "joint_power": 0.4715
+            },
+            "0.20": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9426
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9426
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.239,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.4945,
+              "joint_power": 0.4659
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9908,
+              "joint_power": 0.934
+            },
+            "0.24": {
+              "c6_marginal_power": 1.0,
+              "joint_power": 0.9426
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    },
+    "3000": {
+      "binding_condition": "r2_i_regret80",
+      "binding_power": 0.9695,
+      "joint_power_at_selection": 0.9695,
+      "scenarios": {
+        "0.50": {
+          "joint_power": 0.7302,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 0.9956,
+            "r2_i_regret80": 0.7313,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9851
+          }
+        },
+        "0.75": {
+          "joint_power": 0.9695,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.9695,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 0.9994
+          }
+        },
+        "1.00": {
+          "joint_power": 0.999,
+          "marginal_power": {
+            "c2_high_regret_frac": 1.0,
+            "c3_oracle_coverage": 1.0,
+            "c4_spearman_ci_lower_positive": 1.0,
+            "c5_base_vs_random_and_not_worse_than_idle": 1.0,
+            "c6_reactive_frac": 1.0,
+            "c7_strata_floor": 1.0,
+            "r1_i_aurc_regret": 1.0,
+            "r2_i_regret80": 0.999,
+            "r3_pr_auc_minus_prevalence": 1.0,
+            "r4_seed_consistency_both_positive": 1.0
+          }
+        }
+      },
+      "standard_errors": {
+        "base_mean_regret": 0.0014425819430256722,
+        "base_vs_random_improvement": 0.012308711881364096,
+        "high_regret_frac": 0.009178376558984421,
+        "i_aurc_regret": 0.02151517464509046,
+        "i_regret80": 0.020557696986794043,
+        "idle_mean_regret": 0.0015942741889012535,
+        "interaction_high_frac": 0.009247277677301076,
+        "interaction_low_frac": 0.00924727767730107,
+        "oracle_share_a0": 0.005895657463471021,
+        "oracle_share_a1": 0.0062508196709791875,
+        "oracle_share_a2": 0.0029042498392760764,
+        "oracle_share_a3": 0.004789829671425966,
+        "oracle_share_a4": 0.005699927073235004,
+        "oracle_share_a5": 0.006652083029044885,
+        "oracle_share_a6": 0.0050740729486572714,
+        "oracle_share_a7": 0.008275116848540374,
+        "oracle_share_a8": 0.0020501399398413877,
+        "oracle_share_a9": 0.0012939762825045097,
+        "pr_auc_minus_prevalence": 0.010495911289773775,
+        "reactive_frac": 0.007776330981690409,
+        "seed9101_i_aurc": 0.02352072160814869,
+        "seed9101_i_regret80": 0.0211530297698253,
+        "seed9202_i_aurc": 0.021409784358368447,
+        "seed9202_i_regret80": 0.020373216135553786,
+        "seed9303_i_aurc": 0.021691647923682354,
+        "seed9303_i_regret80": 0.021436313339651274,
+        "seed9404_i_aurc": 0.021564740397236198,
+        "seed9404_i_regret80": 0.020838126157741645,
+        "seed9505_i_aurc": 0.01944528119854228,
+        "seed9505_i_regret80": 0.020636501254614924,
+        "spearman_branch": 0.006592506434621269,
+        "tstar_high_frac": 0.009169650429239654,
+        "tstar_low_frac": 0.009169650429239656
+      },
+      "stress_table": {
+        "high_regret_frac": {
+          "gate_floor": 0.15,
+          "reference": 0.513,
+          "scenarios": {
+            "0.15": {
+              "c2_marginal_power": 0.5092,
+              "joint_power": 0.4912
+            },
+            "0.20": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9695
+            },
+            "0.30": {
+              "c2_marginal_power": 1.0,
+              "joint_power": 0.9695
+            }
+          }
+        },
+        "label": "scenario-support shift (NON-SELECTIVE; never used for the n selection, never changes the c2/c6 thresholds)",
+        "model_effect_retention": 0.75,
+        "reactive_frac": {
+          "gate_floor": 0.2,
+          "reference": 0.239,
+          "scenarios": {
+            "0.20": {
+              "c6_marginal_power": 0.5132,
+              "joint_power": 0.4978
+            },
+            "0.22": {
+              "c6_marginal_power": 0.9955,
+              "joint_power": 0.9651
+            },
+            "0.24": {
+              "c6_marginal_power": 1.0,
+              "joint_power": 0.9695
+            }
+          }
+        }
+      },
+      "structural_identities_verified": true
+    }
+  },
+  "plan_id": "AC-TWIN-RFER-STAGE4D-D2F-POWER-CORRECTION-EXTERNAL-CONFIRM-2026-09-24-V0.1",
+  "power_seed": 2026122408,
+  "reference": {
+    "base_mean_regret": 0.057890969960970026,
+    "base_vs_random_improvement": 0.4838691900845109,
+    "high_regret_frac": 0.513,
+    "i_aurc_regret": 0.21879523978502424,
+    "i_regret80": 0.1065294348850511,
+    "idle_mean_regret": 0.1027214931918748,
+    "interaction_high_frac": 0.478,
+    "interaction_low_frac": 0.522,
+    "oracle_share_a0": 0.117,
+    "oracle_share_a1": 0.137,
+    "oracle_share_a2": 0.026,
+    "oracle_share_a3": 0.072,
+    "oracle_share_a4": 0.108,
+    "oracle_share_a5": 0.155,
+    "oracle_share_a6": 0.083,
+    "oracle_share_a7": 0.284,
+    "oracle_share_a8": 0.013,
+    "oracle_share_a9": 0.005,
+    "pr_auc_minus_prevalence": 0.18870338483347093,
+    "reactive_frac": 0.239,
+    "seed9101_i_aurc": 0.19871937074212218,
+    "seed9101_i_regret80": 0.09244898038213586,
+    "seed9202_i_aurc": 0.20837260917782832,
+    "seed9202_i_regret80": 0.12773455695021135,
+    "seed9303_i_aurc": 0.22081715817955513,
+    "seed9303_i_regret80": 0.08949761614869782,
+    "seed9404_i_aurc": 0.21351272175641076,
+    "seed9404_i_regret80": 0.0909699354613246,
+    "seed9505_i_aurc": 0.2265447783662436,
+    "seed9505_i_regret80": 0.09813573362600764,
+    "spearman_branch": 0.7307389063161389,
+    "tstar_high_frac": 0.53,
+    "tstar_low_frac": 0.47
+  },
+  "scope": "CONDITIONAL_POWER_GIVEN_SCREEN_PASSED",
+  "seed_derivation": "per-n whole-group resample streams derive deterministically from SeedSequence([2026122408, n]); distinct from the D2F screen power seed 2026122406 and the screen adjudication entropy 2026122407",
+  "selected_n": 2000,
+  "selection_scenario": 0.75,
+  "semantics": "conditional power GIVEN the D2F screen passed both gates; never an unconditional success probability. A selected n permits the confirm lock; D2F_CONFIRM_UNDERPOWERED forbids any confirm manifest / lock / collection (plan 4 / plan 7).",
+  "shrink_scenarios": [
+    1.0,
+    0.75,
+    0.5
+  ],
+  "status": "D2F_CONFIRM_POWER_PASS",
+  "target": 0.8,
+  "terminal": false,
+  "typing": {
+    "anchor_slots": [
+      "base_mean_regret",
+      "idle_mean_regret"
+    ],
+    "effect_slots": [
+      "i_aurc_regret",
+      "i_regret80",
+      "pr_auc_minus_prevalence",
+      "spearman_branch",
+      "base_vs_random_improvement",
+      "seed9101_i_aurc",
+      "seed9202_i_aurc",
+      "seed9303_i_aurc",
+      "seed9404_i_aurc",
+      "seed9505_i_aurc",
+      "seed9101_i_regret80",
+      "seed9202_i_regret80",
+      "seed9303_i_regret80",
+      "seed9404_i_regret80",
+      "seed9505_i_regret80",
+      "d_idle (derived)"
+    ],
+    "rule": "the Phase-P effect/support separation is unchanged: model/decision effects shrink as E_b + (rho-1)*E_ref with the screen point estimates as the reference; scenario/task support keeps its coupled resampled value; CI conditions use the two-sided 95% z (D2 10.3/10.4)",
+    "support_slots": [
+      "high_regret_frac",
+      "oracle_share_a0",
+      "oracle_share_a1",
+      "oracle_share_a2",
+      "oracle_share_a3",
+      "oracle_share_a4",
+      "oracle_share_a5",
+      "oracle_share_a6",
+      "oracle_share_a7",
+      "oracle_share_a8",
+      "oracle_share_a9",
+      "reactive_frac",
+      "tstar_low_frac",
+      "tstar_high_frac",
+      "interaction_low_frac",
+      "interaction_high_frac"
+    ]
+  },
+  "underpowered": false,
+  "written_at": "2026-09-25T04:56:42"
+}

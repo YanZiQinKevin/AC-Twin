@@ -1,0 +1,90 @@
+{
+  "contrasts": {
+    "best_constant": {
+      "ci80_lower": 0.0029959902261414207,
+      "ci80_upper": 0.008166482845666123,
+      "point_relative": 0.005535962062704791
+    },
+    "direct": {
+      "ci80_lower": 0.051534773350784414,
+      "ci80_upper": 0.06419600496248509,
+      "point_relative": 0.057618729613468034
+    },
+    "end_to_end": {
+      "ci80_lower": -0.002861173897887248,
+      "ci80_upper": 0.001514175383510375,
+      "point_relative": -0.000716647876888743
+    },
+    "full": {
+      "ci80_lower": 0.03559115644650929,
+      "ci80_upper": 0.05985333360227314,
+      "point_relative": 0.047420192678364836
+    },
+    "history": {
+      "ci80_lower": 0.1461975046486507,
+      "ci80_upper": 0.1761106430580389,
+      "point_relative": 0.16136133237007444
+    },
+    "response_only": {
+      "ci80_lower": -0.0008607857117124861,
+      "ci80_upper": 0.004002790369860609,
+      "point_relative": 0.0015570029021814147
+    }
+  },
+  "material_stratum_reversal": false,
+  "pair_relative_against_strongest": [
+    0.01270673998800298,
+    -0.0007139330924827991,
+    -0.011548456763269987,
+    0.00022099918690776654,
+    -0.005294972052426683
+  ],
+  "passed": false,
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "positive_pairs_against_strongest": 2,
+  "provenance": {
+    "adjudication_code_amendment_sha256": "b8633c60c8a108152c85ee9b1e6c25d23eaa82906fdcd8da1d27523f90bd8f5c",
+    "inference_receipt_sha256": "b8c642e7abf1248344d0b698f5ad60b2cba51c028af02114e8098178f0e6d461",
+    "model_lock_sha256": "80ddd0762aa375e7c03bb0ee7edf94f46d9f08cc7958cc14234fff10691de139",
+    "predictions_sha256": "03e72b168a2fc0ab75733ead50cf80c8a3bf8382c876c115f865248272563242"
+  },
+  "status": "STAGE3R_DEV_NOT_READY_FOR_CONFIRMATION",
+  "strata": {
+    "cf_action=0": {
+      "ci80_lower": -0.002749499847258452,
+      "ci80_upper": 0.0054393969566490005,
+      "point_relative": 0.0012748354212541724
+    },
+    "cf_action=1": {
+      "ci80_lower": -0.012650505710832326,
+      "ci80_upper": 0.00011926880261810011,
+      "point_relative": -0.006300544511310235
+    },
+    "cf_action=2": {
+      "ci80_lower": -0.005389909003890913,
+      "ci80_upper": 0.004952113794435492,
+      "point_relative": -0.0003527474782900608
+    },
+    "cf_action=3": {
+      "ci80_lower": 0.0036503177140742803,
+      "ci80_upper": 0.010656345259552703,
+      "point_relative": 0.007025679196645429
+    },
+    "cf_action=4": {
+      "ci80_lower": -0.008639499203669488,
+      "ci80_upper": 0.0008766940661132489,
+      "point_relative": -0.004175294732127854
+    },
+    "cf_duration=1": {
+      "ci80_lower": 0.00029067911013136444,
+      "ci80_upper": 0.006556503134996174,
+      "point_relative": 0.0034436444114360754
+    },
+    "cf_duration=3": {
+      "ci80_lower": -0.007666668294102385,
+      "ci80_upper": -0.0013410290733945945,
+      "point_relative": -0.004561526254069248
+    }
+  },
+  "strongest_baseline": "end_to_end"
+}

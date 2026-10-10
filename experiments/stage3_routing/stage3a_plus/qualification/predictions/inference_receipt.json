@@ -1,0 +1,60 @@
+{
+  "plan_id": "AC-TWIN-RFER-STAGE3A-PLUS-2026-09-09-V0.1",
+  "artifact_type": "qualification_inference",
+  "data_sha256": "8d4006aeaeacacd174c9df178247bf5887c0b051731de52d8be657c56e5e3e77",
+  "freeze_receipt_sha256": "cb18ffdc3957d18e3269a6d0e654b29038ed34f7eff09b87d2d56da006228127",
+  "n_episodes": 1000,
+  "seeds": {
+    "101": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_101.npz",
+      "sha256": "e7e11b3da109222e367ceb42f6911cc6b0c57d1508792664981578b4bd445f02",
+      "checkpoint_signature": "2dac69182ad082a073163f10e6d76180565f7afc426d451f69478f31c70ac1e6"
+    },
+    "202": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_202.npz",
+      "sha256": "8569e0915693189618b2ae2a353bda18f953878d27c01bdba2f000a82aae5476",
+      "checkpoint_signature": "c4dcf6e205f52dda71ce345287160d51b3505632777993b3ea4d4ff54a7388b2"
+    },
+    "303": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_303.npz",
+      "sha256": "984a81cd571554ef5cc035dfc32ff0138ee63c04417c48b6aa28610e17b785f6",
+      "checkpoint_signature": "d0f5106b634a837b32498c4c1d094e217766563abaed1419332fee10f9ca04bc"
+    },
+    "404": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_404.npz",
+      "sha256": "41e1e974d44c829baab97622addb757aa89c3384583850930073de334156a26e",
+      "checkpoint_signature": "01c943b04c387cb0a9cc9455a765a723d25d78c7ca63259127d56731f8ffbce4"
+    },
+    "505": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_505.npz",
+      "sha256": "1f9e5c383813789d93802da4505eac02684eb741abba3a75f5f879cdaaa8339a",
+      "checkpoint_signature": "cce9a6414d94b7a0358da19f4f5e49a904f9b5d3eca1c84410da20d5db9e1975"
+    },
+    "606": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_606.npz",
+      "sha256": "84a69a57d895067d7e0198b8eea7c6221508ae592065ab74f84a115860212b61",
+      "checkpoint_signature": "2a74e6c16776d140817028c3c30d798d7fcb3bad7efac6ff0fd1b02bbf422473"
+    },
+    "707": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_707.npz",
+      "sha256": "d95650c655aa78efc80ce8a95e3221ba279ebe7c7fd15f67cd2e052eaa9e09a4",
+      "checkpoint_signature": "f5f05c4ddccd3c0575c18f0e6efcddf020923fc556dac3e2bc6ad4503aea79da"
+    },
+    "808": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_808.npz",
+      "sha256": "f957d90c31d50602b28b181dd27ee5be8e41da72bcdf7dc672607601e3b2e82f",
+      "checkpoint_signature": "5a4d0a11dc98c4af6a8631c2b775cb30047c9d18e8428ec6f97b6e38f4f6c443"
+    },
+    "909": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_909.npz",
+      "sha256": "b8bd1c6ce580d6f70d74cd38d70313370afb76865b20eb2ac6ed8b662a2f7054",
+      "checkpoint_signature": "0d3d0c82a5cb6b47203eef5c6cc5e86cc864a45d9a07d1a087e2a027358cce0f"
+    },
+    "1010": {
+      "path": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\qualification\\predictions\\seed_1010.npz",
+      "sha256": "38cd08160a6fe06d719214e3f2e0359c62b68aec6dc49bff1032c0f164ccd984",
+      "checkpoint_signature": "1001a47a14cf355705602243401b40e39e686a2ecf15decdde721779da02fe14"
+    }
+  },
+  "generated_at": "2026-09-10T09:17:28"
+}

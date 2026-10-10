@@ -1,0 +1,15 @@
+{
+  "run": "h96_r32_l0.1_seed909",
+  "state": "COMPLETE",
+  "seed": 909,
+  "config": {
+    "hidden_dim": 96,
+    "response_feature_dim": 32,
+    "lambda_cls": 0.1
+  },
+  "best_val_loss": 0.1504580437442755,
+  "validation_selection_score": 0.1504580437442755,
+  "epochs_run": 11,
+  "signature": "0d3d0c82a5cb6b47203eef5c6cc5e86cc864a45d9a07d1a087e2a027358cce0f",
+  "checkpoint": "D:\\OneDrive\\兰州交大\\博士课题-大模型\\世界模型\\AC-Twin\\experiments\\stage3_routing\\stage3a_plus\\checkpoints\\h96_r32_l0.1_seed909.pt"
+}

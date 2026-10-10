@@ -1,0 +1,11 @@
+{
+  "best_validation_ade": 0.2631542980670929,
+  "checkpoint": "D:\\OneDrive\\\u5170\u5dde\u4ea4\u5927\\\u535a\u58eb\u8bfe\u9898-\u5927\u6a21\u578b\\\u4e16\u754c\u6a21\u578b\\AC-Twin\\experiments\\stage3_routing\\stage3r\\direct\\checkpoints\\direct_pair2_s1303.pt",
+  "condition": "same_information_direct",
+  "epochs_run": 12,
+  "hidden_width": 63,
+  "input_dim": 70,
+  "plan_id": "AC-TWIN-RFER-STAGE3R-2026-09-10-V0.1",
+  "seed": 1303,
+  "sha256": "49fd2241a2aa71bf50693161a92a49ffa70449849a0b622949f9f42f74ab1e9a"
+}
